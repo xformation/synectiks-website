@@ -1,12 +1,14 @@
 import * as React from 'react';
 import './Hello.css';
+import Sliders from './slider/sliders';
+import '../components/slider/slider.css';
+
 export interface Props {
     name: string;
     enthusiasmLevel?: number;
     onIncrement?: () => void;
     onDecrement?: () => void;
   }
-
  class Hello extends React.Component<Props, object> {
     render() {
       const { name, enthusiasmLevel = 1 ,onIncrement, onDecrement } = this.props;
@@ -16,13 +18,16 @@ export interface Props {
       }
   
       return (
-        <div className="hello">
+         <div className="hello">
           <div className="greeting">
             Hello {name + getExclamationMarks(enthusiasmLevel)}
           </div>
           <div>
             <button onClick={onDecrement}>-</button>
             <button onClick={onIncrement}>+</button>
+          </div>
+          <div>
+          <Sliders/>
           </div>
         </div>
       );

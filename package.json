@@ -59,6 +59,14 @@
     "source-map-loader": "^0.2.4",
     "svg-inline-loader": "^0.8.0",
     "typescript": "^3.1.6",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "@types/core-js": "^0.9.37",
+    "babelify": "^7.3.0",
+    "browserify": "^14.0.0",
+    "core-js": "^2.4.1",
+    "tsify": "^3.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
   }
 }
