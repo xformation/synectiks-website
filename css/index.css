@@ -1,5 +1,7 @@
 @import url("https://use.typekit.net/yuc5kgr.css");
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
