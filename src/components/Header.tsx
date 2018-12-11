@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Header: React.StatelessComponent<{}> = () => {
   return (
@@ -27,46 +27,86 @@ export const Header: React.StatelessComponent<{}> = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto text-capitalize">
               <li className="nav-item hvrcenter">
-                <Link className="nav-link" to="/about">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  to="/about"
+                >
                   {" "}
-                  About
-                </Link>
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbardrop"
+                  data-toggle="dropdown"
+                >
+                  Services
+                </a>
+                <div className="dropdown-menu">
+                  <NavLink className="dropdown-item" to="/enterprise">
+                    {" "}
+                    Enterprise Transformation{" "}
+                  </NavLink>
+                  <NavLink className="dropdown-item" to="/foundation">
+                    {" "}
+                    Foundation{" "}
+                  </NavLink>
+                  <NavLink className="dropdown-item" to="/migration">
+                    {" "}
+                    Migration & Deployment{" "}
+                  </NavLink>
+                  <NavLink className="dropdown-item" to="/operation">
+                    {" "}
+                    Operations{" "}
+                  </NavLink>
+                  <NavLink className="dropdown-item" to="/optimization">
+                    {" "}
+                    Optimization{" "}
+                  </NavLink>
+                </div>
               </li>
               <li className="nav-item hvrcenter">
-                <Link className="nav-link" to="/members">
-                  {" "}
-                  Clolud Services{" "}
-                </Link>
-              </li>
-              <li className="nav-item hvrcenter">
-                <Link className="nav-link" to="/members">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  to="/solution"
+                >
                   {" "}
                   Solution{" "}
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item hvrcenter">
-                <Link className="nav-link" to="/members">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  to="/scloud"
+                >
                   {" "}
                   Scloud{" "}
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item hvrcenter">
-                <Link className="nav-link" to="/members">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  to="/resources"
+                >
                   {" "}
                   Resources{" "}
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item hvrcenter">
-                <Link className="nav-link" to="/members">
-                  {" "}
-                  Technology Partners{" "}
-                </Link>
-              </li>
-              <li className="nav-item hvrcenter">
-                <Link className="nav-link" to="/members">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  to="/company"
+                >
                   {" "}
                   Company{" "}
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

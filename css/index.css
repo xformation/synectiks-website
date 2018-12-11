@@ -1,6 +1,12 @@
 @import url("https://use.typekit.net/yuc5kgr.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
 * {
   box-sizing: border-box;
+}
+
+.rfont {
+  font-family: "Roboto", brother-1816;
+  font-size: 2rem;
 }
 body {
   margin: 0;
@@ -480,6 +486,23 @@ h6 {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 1) !important;
+}
+.nav-link .active {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  background: #ecf0f1;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  color: rgba(314, 010, 255, 1) !important;
 }
 .bg-footer {
   background-color: rgba(112, 112, 112, 1);

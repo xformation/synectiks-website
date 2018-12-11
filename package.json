@@ -7,13 +7,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run-script",
-    "deploy": "gh-pages -d run-script"
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/google-maps-react": "^2.0.0",
+    "@types/material-ui": "^0.21.5",
     "@types/radium": "^0.24.2",
     "@types/react": "^16.7.7",
     "@types/react-bootstrap": "^0.32.15",

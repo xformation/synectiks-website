@@ -99,7 +99,7 @@ class Background extends React.Component {
                     <h1 className="text-white">
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
-                    <p className="text-white">
+                    <p className="text-white rfont">
                       HELPING CUSTOMERS TO <br /> CONSOLIDATE & MODERNIZE <br />{" "}
                       THEIR IT STACK.
                     </p>
@@ -128,7 +128,7 @@ class Background extends React.Component {
                     <h1 className="text-white">
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
-                    <p className="text-white">
+                    <p className="text-white rfont">
                       HELPING CUSTOMERS TO <br /> CONSOLIDATE & MODERNIZE <br />{" "}
                       THEIR IT STACK.
                     </p>
@@ -157,7 +157,7 @@ class Background extends React.Component {
                     <h1 className="text-white">
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
-                    <p className="text-white">
+                    <p className="text-white rfont">
                       HELPING CUSTOMERS TO <br /> CONSOLIDATE & MODERNIZE <br />{" "}
                       THEIR IT STACK.
                     </p>
