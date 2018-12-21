@@ -16,8 +16,8 @@ export const Footer: React.StatelessComponent<{}> = () => {
       <div>
         <h5 className="text-white">Get In Touch</h5>
         <small className="text-white">
-          3rd Floor, Plot # 25 & 26, <br /> Survey # 71, Madhapur, <br />{" "}
-          Hyderabad, IN 500081 <br /> Office: +91 (40) 4857 4411
+        300 Alexander Park Drive, Suite 215, <br /> Princeton, NJ 08540 <br />{" "}
+        Sales: +1 (609) 608-0429 X 112 <br />  Office: +1 (609) 608-0429
         </small>
       </div>
       <div>

@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Background from "./Background/Background";
 import { Main } from "./Main/Main";
 
+
 export const Header: React.StatelessComponent<{}> = () => {
   return (
     <div>
@@ -12,20 +13,9 @@ export const Header: React.StatelessComponent<{}> = () => {
             className="px-6 navbar fixed-top navbar-expand-lg navbar-dark menu-bg w-100"
             id="navbar"
           >
-            <div className="nav-top">
-              <div className="navtop-heading">
-                <h6 className="nav-line">Contact Us</h6>
-              </div>
-              <div className="social-icon">
-                <i className="fa fa-facebook-square mr-2" aria-hidden="true" />
-                <i className="fa fa-twitter-square mr-2" aria-hidden="true" />
-                <i className="fa fa-youtube-play mr-2" aria-hidden="true" />
-                <i className="fa fa-linkedin-square" aria-hidden="true" />
-              </div>
-            </div>
-            <NavLink className="navbar-brand" to="/">
+            <a className="navbar-brand" href="#">
               <img className="navbar-icon" src="img/logo.png" alt="logo" />
-            </NavLink>
+            </a>
             <button
               className="navbar-toggler"
               type="button"
@@ -44,109 +34,157 @@ export const Header: React.StatelessComponent<{}> = () => {
             >
               <ul className="navbar-nav ml-auto text-capitalize">
                 <li className="nav-item dropdown">
-                  <a
-                    className="nav-link "
+                  <a className="nav-link"
                     href="#"
                     id="navbardrop"
-                    data-toggle="dropdown"
-                  >
-                    Solutions
-                  </a>
+                    data-toggle="dropdown">
+                    Enterprise Transformation
+                </a>
                   <div className="dropdown-menu">
-                    <NavLink className="dropdown-item" to="/enterprise">
+                    <NavLink className="dropdown-item" to="/devops">
                       {" "}
-                      Cloud{" "}
+                      DevOps Transformation{" "}
                     </NavLink>
-
-                    <NavLink className="dropdown-item" to="/optimization">
+                    <NavLink className="dropdown-item" to="/foundation">
                       {" "}
-                      Digital Transformation{" "}
+                      Foundation{" "}
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/migration">
+                      {" "}
+                      Migration & Optimization{" "}
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/microservices">
+                      {" "}
+                      Microservices Transformation{" "}
                     </NavLink>
                   </div>
                 </li>
-
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link "
+                    className="nav-link"
                     href="#"
-                    id="navbardrop"
-                    data-toggle="dropdown"
-                  >
+                    id="navbardrop1"
+                    data-toggle="dropdown" >
+                    Cloud Solutions
+                  </a>
+                  <div className="dropdown-menu">
+                    <NavLink className="dropdown-item" to="/privatecloud">
+                      {" "}
+                      Private Cloud{" "}
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/hybridcloud">
+                      {" "}
+                      Hybrid Cloud{" "}
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/publiccloud">
+                      {" "}
+                      Public Cloud{" "}
+                    </NavLink>
+                  </div>
+                </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link"
+                    href="#"
+                    id="navbardrop2"
+                    data-toggle="dropdown" >
+                    SaaS
+                   </a>
+                  <div className="dropdown-menu">
+                    <NavLink className="dropdown-item" to="/universitymanagement">
+                      {" "}
+                      University Management System{" "}
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/projectmanagement">
+                      {" "}
+                      Project Management System{" "}
+                    </NavLink>
+                  </div>
+                </li>
+                <li className="nav-item dropdown">
+                  <a className="nav-link"
+                    href="#"
+                    id="navbardrop3"
+                    data-toggle="dropdown">
                     Services
                   </a>
                   <div className="dropdown-menu">
-                    <NavLink className="dropdown-item" to="/enterprise">
+                    <NavLink className="dropdown-item" to="/migrationservices">
                       {" "}
-                      Assessments{" "}
+                      Migration Services{" "}
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/foundation">
+                    <NavLink className="dropdown-item" to="/applicationdevelopment">
                       {" "}
-                      Security Assessments{" "}
+                      Application Development{" "}
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/migration">
-                      {" "}
-                      Cloud Services{" "}
-                    </NavLink>
-                    <NavLink className="dropdown-item" to="/operation">
+                    <NavLink className="dropdown-item" to="/managedservices">
                       {" "}
                       Managed Services{" "}
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/discovery">
+                      {" "}
+                      Discovery & Assesment{" "}
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/automation">
+                      {" "}
+                      Automation & Monitoring{" "}
                     </NavLink>
                   </div>
                 </li>
 
                 <li className="nav-item dropdown">
-                  <a
-                    className="nav-link "
+                <a className="nav-link"
                     href="#"
-                    id="navbardrop"
-                    data-toggle="dropdown"
-                  >
+                    id="navbardrop4"
+                    data-toggle="dropdown">
                     Resources
                   </a>
                   <div className="dropdown-menu">
-                    <NavLink className="dropdown-item" to="/foundation">
+                  <NavLink className="dropdown-item" to="/resources">
                       {" "}
                       Featured{" "}
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/migration">
+                    <NavLink className="dropdown-item" to="/foundation">
                       {" "}
                       Case Studies{" "}
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/operation">
+                    <NavLink className="dropdown-item" to="/videos">
                       {" "}
                       Videos{" "}
                     </NavLink>
                   </div>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
-                    className="nav-link "
+                  <a className="nav-link"
                     href="#"
-                    id="navbardrop"
+                    id="navbardrop5"
                     data-toggle="dropdown"
-                  >
-                    Company
+                    >
+                  Company
                   </a>
                   <div className="dropdown-menu">
-                    <NavLink className="dropdown-item" to="/foundation">
+                    <NavLink className="dropdown-item" to="/aboutus">
                       {" "}
                       About Us{" "}
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/migration">
+                    <NavLink className="dropdown-item" to="/careers">
                       {" "}
                       Careers{" "}
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/migration">
+                    <NavLink className="dropdown-item" to="/partners">
                       {" "}
                       Partners{" "}
                     </NavLink>
                   </div>
+
                 </li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
+      {/* <Background /> */}
+      {/* <Main /> */}
     </div>
   );
 };
