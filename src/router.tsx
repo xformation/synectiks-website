@@ -7,6 +7,13 @@ import Background from "./components/Background/Background";
 import { Main } from "./components/Main/Main";
 import { Forms } from "./components/Forms/Forms";
 import { Foundation } from "./components/Forms/Foundation";
+import { Contact } from "./components/Forms/Contact";
+import { Featured } from "./components/Forms/Featured";
+import { Casestudy } from "./components/Forms/Casestudy";
+import { Videos } from "./components/Forms/Videos";
+import { Aboutus } from "./components/Forms/Aboutus";
+import { Careers } from "./components/Forms/Careers";
+import { Partners } from "./components/Forms/Partners";
 
 import { Services, Company, Solutions, Resources } from "./components";
 
@@ -24,6 +31,13 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
           <Route path="/resources" component={Resources} />
           <Route path="/Forms" component={Forms} />
           <Route path="/foundation" component={Foundation} />
+          <Route path="/contactus" component={Contact} />
+          <Route path="/featured" component={Featured} />
+          <Route path="/casestudy" component={Casestudy} />
+          <Route path="/videos" component={Videos} />
+          <Route path="/aboutus" component={Aboutus} />
+          <Route path="/careers" component={Careers} />
+          <Route path="/partners" component={Partners} />          
         </Switch>
         <Route component={Footer} />
       </div>

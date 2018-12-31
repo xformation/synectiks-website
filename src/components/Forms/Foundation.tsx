@@ -53,7 +53,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
                     <h1></h1>
                     <h5>INDIA</h5>
                     <small style={italic} className="text-left">
-                        3rd Floor, Plot# 25 & 26,<br />
+                        3rd Floor, Plot# 25 &amp; 26,<br />
                         Survey # 71, Madhapur,<br />
                         Hyderabad, IN 500 081<br />
                         Office: +91 (40) 4857 4411<br />

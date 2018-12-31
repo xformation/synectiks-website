@@ -7,7 +7,6 @@ export const Resources: React.StatelessComponent<{}> = () => {
     <div>
       <h1>Resources</h1>
       <Forms/>
-      <Foundation/>
     </div>
   );
 };

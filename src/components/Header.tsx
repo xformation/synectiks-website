@@ -4,18 +4,27 @@ import Background from "./Background/Background";
 import { Main } from "./Main/Main";
 
 
+
+const colorWhite = {
+  color: '#ffffff',
+};
+
+const float = {
+marginLeft: '60em',
+marginBottom: '-1em',
+
+};
 export const Header: React.StatelessComponent<{}> = () => {
-  return (
-    <div>
+  return (  
+    <div>    
       <div className="container">
-        <div className="row">
+        <div className="row">     
           <nav
             className="px-6 navbar fixed-top navbar-expand-lg navbar-dark menu-bg w-100"
             id="navbar"
-          >
-            <a className="navbar-brand" href="#">
-              <img className="navbar-icon" src="img/logo.png" alt="logo" />
-            </a>
+          >   
+          
+            <div>                        
             <button
               className="navbar-toggler"
               type="button"
@@ -28,10 +37,22 @@ export const Header: React.StatelessComponent<{}> = () => {
               <span className="navbar-toggler-icon" />
             </button>
 
+            <div style={float}>
+                <NavLink className="navlink" to="/contactus"><small style={colorWhite}>Contact Us |</small></NavLink>&emsp;
+                  <a className="fa fa-facebook-square" style={colorWhite} href="https://www.facebook.com/synectikscloud/" target="_blank" aria-hidden="true"></a>&emsp;
+                  <a className="fa fa-twitter-square" style={colorWhite} href="https://twitter.com/synectiks" target="_blank" aria-hidden="true"></a>&emsp;
+                  <a className="fa fa-youtube-play" style={colorWhite} href="https://www.youtube.com/channel/UChsy8OZwS-JpNQUpC24ff2g/featured" target="_blank" aria-hidden="true"></a>&emsp;
+                  <a className="fa fa-linkedin-square" style={colorWhite} href="https://www.linkedin.com/company/synectiks/" target="_blank" aria-hidden="true"></a>&emsp;
+            </div> 
+
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
+              <a className="navbar-brand" href="/">
+              <img className="navbar-icon" src="img/logo.png" alt="logo" />
+            </a>
+                         
               <ul className="navbar-nav ml-auto text-capitalize">
                 <li className="nav-item dropdown">
                   <a className="nav-link"
@@ -63,6 +84,25 @@ export const Header: React.StatelessComponent<{}> = () => {
                   <a
                     className="nav-link"
                     href="#"
+                    id="navbardrop2"
+                    data-toggle="dropdown" >
+                    SaaS
+                   </a>
+                  <div className="dropdown-menu">
+                    <NavLink className="dropdown-item" to="/universitymanagement">
+                      {" "}
+                      University Management System{" "}
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/projectmanagement">
+                      {" "}
+                      Project Management System{" "}
+                    </NavLink>
+                  </div>
+                </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link"
+                    href="#"
                     id="navbardrop1"
                     data-toggle="dropdown" >
                     Cloud Solutions
@@ -82,25 +122,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                     </NavLink>
                   </div>
                 </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link"
-                    href="#"
-                    id="navbardrop2"
-                    data-toggle="dropdown" >
-                    SaaS
-                   </a>
-                  <div className="dropdown-menu">
-                    <NavLink className="dropdown-item" to="/universitymanagement">
-                      {" "}
-                      University Management System{" "}
-                    </NavLink>
-                    <NavLink className="dropdown-item" to="/projectmanagement">
-                      {" "}
-                      Project Management System{" "}
-                    </NavLink>
-                  </div>
-                </li>
+                
                 <li className="nav-item dropdown">
                   <a className="nav-link"
                     href="#"
@@ -123,7 +145,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                     </NavLink>
                     <NavLink className="dropdown-item" to="/discovery">
                       {" "}
-                      Discovery & Assesment{" "}
+                      Discovery &amp; Assesment{" "}
                     </NavLink>
                     <NavLink className="dropdown-item" to="/automation">
                       {" "}
@@ -140,11 +162,11 @@ export const Header: React.StatelessComponent<{}> = () => {
                     Resources
                   </a>
                   <div className="dropdown-menu">
-                  <NavLink className="dropdown-item" to="/resources">
+                  <NavLink className="dropdown-item" to="/featured">
                       {" "}
                       Featured{" "}
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/foundation">
+                    <NavLink className="dropdown-item" to="/casestudy">
                       {" "}
                       Case Studies{" "}
                     </NavLink>
@@ -180,8 +202,21 @@ export const Header: React.StatelessComponent<{}> = () => {
                 </li>
               </ul>
             </div>
+
+          
+              {/* <div style={float}>
+                <a href="/"><small style={colorWhite}>Contact Us |</small></a>&emsp;
+                  <a className="fa fa-facebook-square" style={colorWhite} href="https://www.facebook.com/synectikscloud/" target="_blank" aria-hidden="true"></a>&emsp;
+                  <a className="fa fa-twitter-square" style={colorWhite} href="https://twitter.com/synectiks" target="_blank" aria-hidden="true"></a>&emsp;
+                  <a className="fa fa-youtube-play" style={colorWhite} href="https://www.youtube.com/channel/UChsy8OZwS-JpNQUpC24ff2g/featured" target="_blank" aria-hidden="true"></a>&emsp;
+                  <a className="fa fa-linkedin-square" style={colorWhite} href="https://www.linkedin.com/company/synectiks/" target="_blank" aria-hidden="true"></a>&emsp;
+            </div>  */}
+           
+
+            </div>
           </nav>
         </div>
+
       </div>
       {/* <Background /> */}
       {/* <Main /> */}
