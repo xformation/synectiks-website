@@ -15,14 +15,14 @@ class Background extends React.Component {
                 value: 20,
                 density: {
                   enable: true,
-                  value_area: 1200
+                  value_area: 1000
                 }
               },
               line_linked: {
                 enable: false
               },
               move: {
-                speed: 1,
+                speed: 5,
                 out_mode: "out"
               },
               shape: {
@@ -88,22 +88,22 @@ class Background extends React.Component {
               <li data-target="#carouselExampleIndicators" data-slide-to="2" />
             </ol>
             <div className="carousel-inner mr-auto">
-              <div className="carousel-item active">
-                <div className="text-img">
-                  <img
-                    className="d-block w-50 text-right animated fadeInRightBig slow dealy-4s"
+              <div className="carousel-item active  justify-content-around ">
+                <div className="text-img ">
+                  <img height="auto"
+                    className="w-50 text-right animated fadeInRightBig slow dealy-4s"
                     src="img/oxp.png"
                     alt="First slide"
                   />
                   <div className="animated fadeInLeftBig slow dealy-4s">
-                    <h1 className="text-white">
+                    <h1 className="text-white h1font">
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
                     <p className="text-white rfont">
-                      HELPING CUSTOMERS TO <br /> CONSOLIDATE & MODERNIZE <br />{" "}
+                      HELPING CUSTOMERS TO <br /> CONSOLIDATE &amp; MODERNIZE <br />{" "}
                       THEIR IT STACK.
                     </p>
-                    <p className="text-white">
+                    <p className="text-white sfont">
                       IMPLEMENT AN OUTCOME BASED OPEN PLATFORM THAT INCLUDES{" "}
                       <br /> CONTINUOUS AUDIT, COMPLIANCE, DELIVERY, BILLING,
                       ELASTICITY, RESILIENCE.
@@ -117,22 +117,22 @@ class Background extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
-                <div className="text-img">
-                  <img
-                    className="d-block w-50 text-right animated fadeInRightBig slow dealy-4s"
+              <div className="carousel-item  justify-content-around ">
+                <div className="text-img ">
+                  <img  width="50%"
+                    className="w-50 text-right animated fadeInRightBig slow dealy-4s"
                     src="img/oxp.png"
                     alt="First slide"
                   />
                   <div className="animated fadeInLeftBig slow dealy-4s">
-                    <h1 className="text-white">
+                    <h1 className="text-white ">
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
                     <p className="text-white rfont">
-                      HELPING CUSTOMERS TO <br /> CONSOLIDATE & MODERNIZE <br />{" "}
+                      HELPING CUSTOMERS TO <br /> CONSOLIDATE &amp; MODERNIZE <br />{" "}
                       THEIR IT STACK.
                     </p>
-                    <p className="text-white">
+                    <p className="text-white sfont">
                       IMPLEMENT AN OUTCOME BASED OPEN PLATFORM THAT INCLUDES{" "}
                       <br /> CONTINUOUS AUDIT, COMPLIANCE, DELIVERY, BILLING,
                       ELASTICITY, RESILIENCE.
@@ -146,10 +146,10 @@ class Background extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
-                <div className="text-img">
-                  <img
-                    className="d-block w-50 text-right animated fadeInRightBig slow dealy-4s"
+              <div className="carousel-item  justify-content-around ">
+                <div className="text-img ">
+                  <img width="50%"
+                    className="w-50 text-right animated fadeInRightBig slow dealy-4s"
                     src="img/oxp.png"
                     alt="First slide"
                   />
@@ -158,10 +158,10 @@ class Background extends React.Component {
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
                     <p className="text-white rfont">
-                      HELPING CUSTOMERS TO <br /> CONSOLIDATE & MODERNIZE <br />{" "}
+                      HELPING CUSTOMERS TO <br /> CONSOLIDATE &amp; MODERNIZE <br />{" "}
                       THEIR IT STACK.
                     </p>
-                    <p className="text-white">
+                    <p className="text-white sfont">
                       IMPLEMENT AN OUTCOME BASED OPEN PLATFORM THAT INCLUDES{" "}
                       <br /> CONTINUOUS AUDIT, COMPLIANCE, DELIVERY, BILLING,
                       ELASTICITY, RESILIENCE.

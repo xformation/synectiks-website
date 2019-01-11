@@ -6,6 +6,7 @@ const btn = {
     borderRadius: '6px',
     width: '110px',
     height: '36px',
+    color: '#ffffff',   
     background: 'linear-gradient(to bottom, #9a56ff, #d78afc)',
 };
 const map = {
@@ -21,6 +22,12 @@ const inputBox = {
     backgroundColor: '#f2f2f2',
     width: '150%',
 };
+const inputBoxFlex = {
+    border: 'none',
+    backgroundColor: '#f2f2f2',
+    width: '20em',
+    height: "1.8em"
+};
 const textArea = {
     border: 'none',
     backgroundColor: '#f2f2f2',
@@ -31,7 +38,7 @@ const borderRadius_6 = {
     borderRadius: '6px',
 };
 const inline = {
-    display: 'inline-flex',
+    display: 'inline',
 };
 
 export const Contact: React.StatelessComponent<{}> = () => {
@@ -46,36 +53,39 @@ export const Contact: React.StatelessComponent<{}> = () => {
             </div>
 
             <div>
-                <h2 className='text-center mt-5'>CONTACT FORM</h2>
+                <h2 className='text-center mt-2'>CONTACT FORM</h2>
             </div>
 
-            <div className="d-flex justify-content-around ">
+            <div className="d-flex justify-content-around text-left mr-5 py-2">
+       
+                <div className="d-flex" >
+                    <p className="px-6 mx-2" style={inline}>Name&nbsp;*</p>
+                    <input style={inputBoxFlex} />
+                </div>        
 
-                <div >
-                    <p>Name *</p>
-                    <input style={inputBox} />
+                <div className="d-flex ml-3">
+                    <p className="px-6 mx-1" style={inline}>E-Mail&nbsp;*</p>
+                    <input style={inputBoxFlex} />
                 </div>
-                <div >
-                    <p>E-Mail *</p>
-                    <input style={inputBox} />
-                </div>
+
             </div>
 
-            <div className="d-flex justify-content-around ">
-                <div >
-                    <p>Phone *</p>
-                    <input style={inputBox} />
+            <div className="d-flex justify-content-around text-left mr-5 py-2">            
+                <div className="d-flex">
+                    <p className="px-6 mx-1" style={inline}>Phone&nbsp;*</p>
+                    <input style={inputBoxFlex} />
                 </div>
-                <div >
-                    <p>Subject *</p>
-                    <input style={inputBox} />
-                </div>
+                
+                <div className="d-flex">
+                    <p className="px-6 mx-2" style={inline}>Subject&nbsp;*</p>
+                    <input style={inputBoxFlex}/>
+                </div>               
             </div>
 
-            <div className="d-flex justify-content-around ">
-                <div >
-                    <p>Services *</p>
-                    <select style={inputBox} >
+            <div className="d-flex justify-content-around text-left mr-5 py-2">
+                <div className="d-flex">
+                    <p className="px-6" style={inline}>Services&nbsp;*</p>
+                    <select style={inputBoxFlex}>
                         <option value="enterprise">Enterprise Transformation</option>
                         <option value="foundation">Foundation</option>
                         <option value="migration">Migration &amp; Deployment</option>
@@ -84,9 +94,13 @@ export const Contact: React.StatelessComponent<{}> = () => {
                         <option value="others">Others</option>
                     </select>
                 </div>
-                <div >
-                    <p>Comment *</p>
+                {/* <div >
+                    <p style={inline}>Comment *</p>
                     <input style={inputBox} />
+                </div> */}
+                 <div className="d-flex">
+                    <p className="px-6" style={inline}>Comment&nbsp;*</p>
+                    <textarea style={inputBoxFlex} />
                 </div>
 
             </div>

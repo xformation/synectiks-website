@@ -84,13 +84,6 @@ export const Forms: React.StatelessComponent<{}> = () => {
             <p>Comment *</p>
                 <input style={inputBox} />
             </div>
-
-            {/* <select name="carlist" form="carform">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-</select> */}
             </div>
 
             <div className='text-center p-5'>
@@ -115,7 +108,7 @@ export const Forms: React.StatelessComponent<{}> = () => {
                 <div>
                     <h5>INDIA</h5>
                     <small style={italic} >
-                        3rd Floor, Plot# 25 & 26,<br />
+                        3rd Floor, Plot# 25 &amp; 26,<br />
                         Survey # 71, Madhapur,<br />
                         Hyderabad, IN 500 081<br />
                         Office: +91 (40) 4857 4411<br />

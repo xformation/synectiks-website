@@ -2,14 +2,18 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Background from "../Background/Background";
 
+const fontSize3={
+  fontSize : '2vw'
+}
 export const Main: React.StatelessComponent<{}> = () => {
   return (
     <div>
       <Background />
-      <div className="container-fluid pl-5">
+      <div className="container">
         <div className="row main-card">
           <div className="col-md-12 col-12-lg card-deck">
-            <div className="card card-shadow">
+{/* */}
+            <div className="card card-shadow mx-3">
               <img
                 className="card-img-top"
                 src="img/Foundation.png"
@@ -19,18 +23,19 @@ export const Main: React.StatelessComponent<{}> = () => {
                 <h2 className="text-center text-uppercase">Foundation</h2>
               </div>
             </div>
-            <div className="card card-shadow mx-5">
+
+            <div className="card card-shadow mx-3">
               <img
                 className="card-img-top"
                 src="img/Transformation.png"
                 alt="Card image cap"
               />
-
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Transformation</h2>
               </div>
             </div>
-            <div className="card card-shadow">
+
+            <div className="card card-shadow mx-3">
               <img
                 className="card-img-top"
                 src="img/Operation.png"
@@ -39,10 +44,11 @@ export const Main: React.StatelessComponent<{}> = () => {
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Operation</h2>
               </div>
-            </div>
+            </div> 
+            {/*  */}
           </div>
         </div>
-        <div className="d-flex mb-5">
+        <div className="d-flex justify-content-around align-items-center mb-5">
           <div className="p-2 flex-fill">
             <img
               src="img/jumbotron.png"
@@ -53,7 +59,9 @@ export const Main: React.StatelessComponent<{}> = () => {
             <div />
           </div>
         </div>
-        <div className="d-flex justify-content-around align-items-center mt-5">
+        
+        <div className="flex-col">
+        <div className="d-flex justify-content-around align-items-center flex-col mt-5">
           <div className="w-30 p-5 bg-card-theme">
             <img src="img/SDT.png" width="100%" alt="" />{" "}
           </div>
@@ -70,11 +78,12 @@ export const Main: React.StatelessComponent<{}> = () => {
             </a>
           </div>
         </div>
-        <div className="d-flex flex-row-reverse justify-content-around align-items-center">
+
+        <div className="d-flex flex-row-reverse justify-content-around align-items-center flex-col">
           <div className="w-30 p-5 bg-card-theme">
             <img src="img/RTM.png" width="100%" alt="" />{" "}
           </div>
-          <div className="text-group align-self-center">
+          <div className="text-group align-self-center  flex-col">
             <h4 className="font-weight-bold">Realtime Monitoring </h4>
             <p>
               Highly Scalable extremely customizable realtime monitoring
@@ -85,7 +94,7 @@ export const Main: React.StatelessComponent<{}> = () => {
             </a>
           </div>
         </div>
-        <div className="d-flex justify-content-around align-items-center">
+        <div className="d-flex justify-content-around align-items-center flex-col">
           <div className="w-25 p-5 bg-card-theme">
             <img src="img/SM.png" width="100%" alt="" />{" "}
           </div>
@@ -100,6 +109,8 @@ export const Main: React.StatelessComponent<{}> = () => {
             </a>
           </div>
         </div>
+        </div>
+
       </div>
     </div>
   );

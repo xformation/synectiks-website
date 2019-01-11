@@ -3,6 +3,78 @@
 * {
   box-sizing: border-box;
 }
+@media(max-width: 65em){
+#particle-js{
+  height: 42em !important;
+  padding-left: 3em !important;  
+}
+.text-white{
+  font-size: 3vw;
+}
+.sfont{
+  font-size: 2vw !important;
+}
+.rfont{
+  font-size: 3vw !important;
+}
+.card-deck{
+  padding-top: 15em;
+}
+/* .text-img {
+  padding-top: 5em !important;
+} */
+}
+
+@media(max-width:985px) {
+ .card-deck{
+ padding-top: 7em !important;
+ }
+ .flex-col{
+  orientation: portrait !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding-bottom: 1em;
+}
+.flex-col-rev{
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  /* align-items: center !important; */
+  /* transform: translate(280px,150px); */
+}
+.pb2{
+  padding-bottom: 2em;
+}
+}
+@media(max-width:540px) {
+  .card-deck{
+  /* padding-top: 7em !important; */
+width:20em  !important;
+margin-left:2.5em  !important;
+margin-left:2.5em  !important;
+  }
+ }
+
+.width38em{
+  width:38em !important;
+}
+.mr-l-8{
+margin-left: 8em;
+}
+@media(max-width: 75em){
+  #toggler{
+    /* padding-top: 3em; */
+    /* text-align:right;    */
+    float: right !important;
+  }
+  #logo{
+    align-content: center;
+  }
+  .alignRight{
+    text-align: right;
+    padding-right: 4em;
+  }
+}
 
 .rfont {
   font-family: "Roboto", brother-1816;
@@ -360,16 +432,21 @@ h6 {
   top: -500px;
 }
 .menu-bg {
-  background: linear-gradient(to right, #9a56ff, #d78afd);
+  background: linear-gradient(to right,  #9a56ff, #d78afd );
 }
 #particle-js {
-  background: linear-gradient(to right, #9a56ff, #d78afd);
-  clip-path: polygon(-2px 700px, 1373px 598px, 1350px 4px, 0px 0px);
-  -webkit-clip-path: polygon(-2px 700px, 1373px 598px, 1350px 4px, 0px 0px);
+  background: linear-gradient(to right, #9a56ff, #d78afd );
+  /* clip-path: polygon(-2px 700px, 1373px 598px, 1350px 4px, 0px 0px); 
+  -webkit-clip-path: polygon(-2px 700px, 1373px 598px, 1350px 4px, 0px 0px); */
+  /* clip-path: rect(0px, 80px, 100px, 0px);
+ -webkit-clip-path: rect(0px, 800px, 1000px, 0px); */
+  /*  #66a6ff,#4facfe */
   box-shadow: 1px 3px 40px;
   border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   position: relative;
   top: 3.5em;
+  height: 52em;
 }
 .top-buffer {
   margin-top: 20px;
@@ -378,6 +455,12 @@ h6 {
 .navbar-icon {
   /* width: 5em; */
   height: 2em;
+}
+.navfont{
+  font-size: 1.2rem;
+}
+.alignRight{
+  text-align: right;
 }
 
 .about-page .jumbotron {
@@ -436,6 +519,7 @@ h6 {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+  padding: 5em;
 }
 #carouselExampleIndicators {
   position: absolute;
