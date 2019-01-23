@@ -56,7 +56,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
                 <h2 className='text-center mt-2'>CONTACT FORM</h2>
             </div>
 
-            <div className="d-flex justify-content-around text-left mr-5 py-2">
+            <div className="d-flex justify-content-around text-left mr-5 py-2 flex-col">
        
                 <div className="d-flex" >
                     <p className="px-6 mx-2" style={inline}>Name&nbsp;*</p>
@@ -70,7 +70,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
 
             </div>
 
-            <div className="d-flex justify-content-around text-left mr-5 py-2">            
+            <div className="d-flex justify-content-around text-left mr-5 py-2 flex-col">            
                 <div className="d-flex">
                     <p className="px-6 mx-1" style={inline}>Phone&nbsp;*</p>
                     <input style={inputBoxFlex} />
@@ -113,9 +113,9 @@ export const Contact: React.StatelessComponent<{}> = () => {
                 <h2 className='text-center'>CONTACT US</h2>
             </div>
 
-            <div className="d-flex justify-content-around mt-5">
+            <div className="d-flex justify-content-around mt-5 flex-col">
 
-                <div>
+                <div className="pb2 pl-5" >
                     <h5>USA</h5>
                     <small style={italic} >
                         300 Alexander Park Drive, Suite 215,<br />
@@ -124,7 +124,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
                         Office: +1 (609) 608-0429<br />
                     </small>
                 </div>
-                <div>
+                <div className="pb2">
                     <h5>INDIA</h5>
                     <small style={italic} >
                         3rd Floor, Plot# 25 &amp; 26,<br />
@@ -133,7 +133,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
                         Office: +91 (40) 4857 4411<br />
                     </small>
                 </div>
-                <div>
+                <div className="pb2">
                     <h5>SINGAPORE</h5>
                     <small style={italic} >
                         1 Sophia Road, #05-23,<br />
@@ -144,7 +144,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
 
             </div>
 
-            <div className='text-center p-5'>
+            <div className='text-center p-5 flex-col'>
                 <h5>SOCIALS</h5>
                 <i className="fa fa-twitter" aria-hidden="true"></i>
                 <small style={italic}>Twitter</small>&emsp;

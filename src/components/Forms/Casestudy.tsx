@@ -17,8 +17,9 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
                 <h2 className='text-center'>CASE STUDIES</h2>
             </div>
 
-            <div className="d-flex justify-content-around align-items-center mt-5">
-          <div className="w-25 p-5  ">
+ <div className="container">
+            <div className="d-flex justify-content-around align-items-center mt-5 flex-col">
+          <div className="w-40 p-5">
             <img src="img/SDT.png" width="100%" alt="" />{" "}
           </div>
           <div className="text-group align-self-center">
@@ -26,8 +27,7 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
               Software Defined Transformtaion{" "}
             </h4>
             <p>
-              Moving to AWS cloud with Data Center retirement for Motor
-              Industry.
+              Moving to AWS cloud with Data Center retirement for Motor Industry.
             </p>{" "}
             <a href="">
               Learn more <i className="fa fa-arrow-right" />
@@ -35,8 +35,8 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-row-reverse justify-content-around align-items-center">
-          <div className="w-25 p-5  ">
+        <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col">
+          <div className="w-40 p-5">
             <img src="img/RTM.png" width="100%" alt="" />{" "}
           </div>
           <div className="text-group align-self-center">
@@ -51,8 +51,8 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
           </div>
         </div>
 
-            <div className="d-flex justify-content-around align-items-center">
-                <div className="w-25 p-5 ">
+            <div className="d-flex justify-content-around align-items-center flex-col">
+                <div className="w-40 p-5">
                     <img src="img/SM.png" width="100%" alt="Img" />{" "}
                 </div>
                 <div className="text-group">
@@ -67,8 +67,8 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className="d-flex flex-row-reverse justify-content-around align-items-center">
-          <div className="w-25 p-5  ">
+            <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col">
+          <div className="w-40 p-5">
             <img src="img/NetworkDesign.png" width="100%" alt="NetworkDesign" />{" "}
           </div>
           <div className="text-group align-self-center">
@@ -84,8 +84,8 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
           </div>
         </div>
 
-        <div className="d-flex justify-content-around align-items-center">
-          <div className="w-25 p-5  ">
+        <div className="d-flex justify-content-around align-items-center flex-col">
+          <div className="w-40 p-5">
             <img src="img/StorageTier.png" width="100%" alt="StorageTier" />{" "}
           </div>
           <div className="text-group align-self-center">
@@ -101,8 +101,8 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-row-reverse justify-content-around align-items-center">
-          <div className="w-25 p-5  ">
+        <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col">
+          <div className="w-40 p-5">
             <img src="img/NetworkDesign.png" width="100%" alt="DisasterRecovery" />{" "}
           </div>
           <div className="text-group align-self-center">
@@ -117,7 +117,9 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
             </a>
           </div>
         </div>
-        
+
+        </div>
+
         </div>
 
     );

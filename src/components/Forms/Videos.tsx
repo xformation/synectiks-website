@@ -17,7 +17,7 @@ export const Videos: React.StatelessComponent<{}> = () => {
                 <h2 className='text-center'>VIDEOS</h2>
             </div>
 
-            <div className="d-flex justify-content-around ">
+            <div className="d-flex justify-content-around flex-col">
 
                 <div>
                     <div className="p-5">

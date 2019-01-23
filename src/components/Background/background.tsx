@@ -89,14 +89,14 @@ class Background extends React.Component {
             </ol>
             <div className="carousel-inner mr-auto">
               <div className="carousel-item active  justify-content-around ">
-                <div className="text-img ">
-                  <img height="auto"
-                    className="w-50 text-right animated fadeInRightBig slow dealy-4s"
+                <div className="text-img flex-col">
+                  <img height="auto" width="50%"
+                    className="w-40 text-right animated fadeInRightBig slow dealy-4s"
                     src="img/oxp.png"
                     alt="First slide"
                   />
                   <div className="animated fadeInLeftBig slow dealy-4s">
-                    <h1 className="text-white h1font">
+                    <h1 className="text-white hfont">
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
                     <p className="text-white rfont">
@@ -108,24 +108,25 @@ class Background extends React.Component {
                       <br /> CONTINUOUS AUDIT, COMPLIANCE, DELIVERY, BILLING,
                       ELASTICITY, RESILIENCE.
                     </p>
+                    <p>
                     <a
                       href=""
                       className="btn text-violet text-uppercase sliderBtn"
                     >
                       learn more
-                    </a>
+                    </a></p>
                   </div>
                 </div>
               </div>
               <div className="carousel-item  justify-content-around ">
-                <div className="text-img ">
+                <div className="text-img flex-col">
                   <img  width="50%"
-                    className="w-50 text-right animated fadeInRightBig slow dealy-4s"
+                    className="w-40 text-right animated fadeInRightBig slow dealy-4s"
                     src="img/oxp.png"
                     alt="First slide"
                   />
                   <div className="animated fadeInLeftBig slow dealy-4s">
-                    <h1 className="text-white ">
+                    <h1 className="text-white hfont">
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
                     <p className="text-white rfont">
@@ -137,24 +138,25 @@ class Background extends React.Component {
                       <br /> CONTINUOUS AUDIT, COMPLIANCE, DELIVERY, BILLING,
                       ELASTICITY, RESILIENCE.
                     </p>
+                    <p>
                     <a
                       href=""
                       className="btn text-violet text-uppercase sliderBtn"
                     >
                       learn more
-                    </a>
+                    </a></p>
                   </div>
                 </div>
               </div>
               <div className="carousel-item  justify-content-around ">
-                <div className="text-img ">
+                <div className="text-img flex-col">
                   <img width="50%"
-                    className="w-50 text-right animated fadeInRightBig slow dealy-4s"
+                    className="w-40 text-right animated fadeInRightBig slow dealy-4s"
                     src="img/oxp.png"
                     alt="First slide"
                   />
                   <div className="animated fadeInLeftBig slow dealy-4s">
-                    <h1 className="text-white">
+                    <h1 className="text-white hfont">
                       SYNECTIKS <br /> OPEN XFORMATION PLATFORM
                     </h1>
                     <p className="text-white rfont">
@@ -166,12 +168,14 @@ class Background extends React.Component {
                       <br /> CONTINUOUS AUDIT, COMPLIANCE, DELIVERY, BILLING,
                       ELASTICITY, RESILIENCE.
                     </p>
+                    <p>
                     <a
                       href=""
                       className="btn text-violet text-uppercase sliderBtn"
                     >
                       learn more
                     </a>
+                    </p>
                   </div>
                 </div>
               </div>

@@ -3,19 +3,37 @@
 * {
   box-sizing: border-box;
 }
+@media(max-width: 75em){
+  #toggler{
+    float: right !important;
+  }
+  #logo{
+    align-content: center;
+  }
+  .alignRight{
+    text-align: right;
+    padding-right: 4em;
+  }
+}
+@media(max-width: 1190px){
+  .navbar{
+    padding-right: 8em!important;
+    float: left!important;
+  }
+}
 @media(max-width: 65em){
 #particle-js{
-  height: 42em !important;
+  height: 55em !important;
   padding-left: 3em !important;  
 }
-.text-white{
-  font-size: 3vw;
+.hfont{
+  font-size: 3.5vw;
 }
 .sfont{
-  font-size: 2vw !important;
+  font-size: 2vw;
 }
 .rfont{
-  font-size: 3vw !important;
+  font-size: 3vw !important; 
 }
 .card-deck{
   padding-top: 15em;
@@ -23,8 +41,31 @@
 /* .text-img {
   padding-top: 5em !important;
 } */
+
 }
 
+@media(max-width:1240px) {
+  .alignRight{
+    text-align: left !important;
+  }
+}
+@media(max-width:1040px) {
+.navList{
+  flex-direction: column !important;
+}
+.card-deck{
+  flex-direction: column !important;
+  padding-top: 8em;
+}
+.card{
+  width: 50%;
+  align-self: center;
+  margin-bottom: 1em !important;;
+}
+#particle-js{
+  height: 47em !important;
+}
+}
 @media(max-width:985px) {
  .card-deck{
  padding-top: 7em !important;
@@ -36,46 +77,107 @@
   align-items: center !important;
   padding-bottom: 1em;
 }
-.flex-col-rev{
-  display: flex !important;
-  flex-direction: column-reverse !important;
-  /* align-items: center !important; */
-  /* transform: translate(280px,150px); */
-}
 .pb2{
   padding-bottom: 2em;
 }
+#particle-js{
+  height: 57em !important;
+}
+}
+@media(max-width:890px) {
+.carousel-item>div>img{
+  width: 100%;
+}
+#particle-js{
+  height: 70em !important;
+  /* padding-left: 3em !important;   */
+}
+
+}
+@media(max-width: 770px) {
+  .card{
+    width: 56%;
+    align-self: center;
+  }
+  #particle-js{
+    height: 62em !important;
+  }
+}
+@media(max-width: 660px) {
+  #particle-js{
+    height: 55em !important;
+  }
 }
 @media(max-width:540px) {
+  .card{
+    width: 100%;
+    align-self: center;
+  }
   .card-deck{
   /* padding-top: 7em !important; */
 width:20em  !important;
 margin-left:2.5em  !important;
-margin-left:2.5em  !important;
+margin-right:2.5em  !important;
+  }
+  #particle-js{
+    height: 47em !important;
+  }
+  .w17em{
+    width: 17em;
   }
  }
+ @media(max-width:455px) {
+  .hfont{
+    font-size : 5vw;
+  }
+  .rfont{
+    font-size : 4.5vw !important;
+  }
+  .sfont{
+    font-size : 3.5vw;
+  }
+  .btn{
+    font-size: 3.5vw !important;
+  }
+  #particle-js{
+    height: 48em !important;
+    padding-left: 3em !important;  
+  }
+ }
+@media(max-width: 320px){
+   #root{
+     width: 113%;
+   }
+   .card-deck{
+    padding-right: 33px!important;
+   }
+ }
+/* Toggle Button */
+
+.navbar-toggler>.close {
+  display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+  display:none;
+}
+/* Toggle Button End */
+
+/* Hover */
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+/* Hover End */
 
 .width38em{
   width:38em !important;
 }
+
 .mr-l-8{
 margin-left: 8em;
 }
-@media(max-width: 75em){
-  #toggler{
-    /* padding-top: 3em; */
-    /* text-align:right;    */
-    float: right !important;
-  }
-  #logo{
-    align-content: center;
-  }
-  .alignRight{
-    text-align: right;
-    padding-right: 4em;
-  }
+.flex-row-rev{
+  flex-direction: row-reverse;  
 }
-
 .rfont {
   font-family: "Roboto", brother-1816;
   font-size: 2rem;
@@ -509,7 +611,7 @@ h6 {
 
 .card-body h2 {
   font-family: Brother-1816;
-  font-size: 20px;
+  font-size: 19px;
   color: rgba(0, 0, 0, 1);
   font-weight: 600;
   font-style: normal;

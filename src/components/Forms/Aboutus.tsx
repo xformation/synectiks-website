@@ -37,7 +37,7 @@ export const Aboutus: React.StatelessComponent<{}> = () => {
             </p><br/>
             </div>
 
-            <div className="d-flex justify-content-around p-3 px-5">
+            <div className="d-flex justify-content-around p-3 px-5 flex-col">
                 <div>
                     <img
                         className="card-img-Foundation text-center px-3"
@@ -56,7 +56,7 @@ export const Aboutus: React.StatelessComponent<{}> = () => {
             </p><br />
             </div>
 
-            <div className="d-flex flex-row-reverse justify-content-around p-3 px-5">
+            <div className="d-flex flex-row-rev justify-content-around p-3 px-5 flex-col">
                 <div>
                     <img
                         className="card-img-Foundation text-center px-3"
@@ -76,7 +76,7 @@ export const Aboutus: React.StatelessComponent<{}> = () => {
             </p><br />
             </div>
 
-            <div className="d-flex justify-content-around p-3 px-5">
+            <div className="d-flex justify-content-around p-3 px-5 flex-col">
                 <div>
                     <img
                         className="card-img-Foundation text-center px-3"

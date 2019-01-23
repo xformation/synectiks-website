@@ -25,7 +25,7 @@ export const Careers: React.StatelessComponent<{}> = () => {
                 <h2 className='text-center'>We are Hiring!</h2>
             </div>
 
-            <div className="d-flex justify-content-around p-5">
+            <div className="d-flex justify-content-around p-5 flex-col">
                 <div className='text-left'>
                     <h5>Account Manager</h5>
                     <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
@@ -64,7 +64,7 @@ export const Careers: React.StatelessComponent<{}> = () => {
 
             </div>
 
-            <div className="d-flex justify-content-around px-5">
+            <div className="d-flex justify-content-around px-5 flex-col">
                 <div className='text-left'>
                     <h5>Technical Support</h5>
                     <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
