@@ -110,7 +110,7 @@ class Background extends React.Component {
                     </p>
                     <p>
                     <a
-                      href=""
+                      href="../foundation"
                       className="btn text-violet text-uppercase sliderBtn"
                     >
                       learn more

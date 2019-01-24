@@ -43,6 +43,13 @@
 } */
 
 }
+.px6{
+  padding-left: 6em !important;
+  padding-right: 6em !important;
+}
+.mr05{
+  margin-right: 0.5em;
+}
 
 @media(max-width:1240px) {
   .alignRight{
@@ -106,6 +113,15 @@
 @media(max-width: 660px) {
   #particle-js{
     height: 55em !important;
+  }
+  .px6{
+    padding: 0.5em !important;
+  }
+  .contFields{
+    padding-left: 4em !important;
+  }
+  .inputBoxFlex{
+    width: 15em !important;
   }
 }
 @media(max-width:540px) {
@@ -704,6 +720,28 @@ h6 {
   height: 150px;
   width: 360px;
   border: 'none';
-  background-color : '#f2f2f2';
-  
+  background-color : '#f2f2f2';  
+}
+.italic{
+  font-style: italic !important;
+}
+.btnSend{
+  border-radius: 6px;
+  width: 110px;
+  height: 36px;
+  color: #ffffff;  
+  background: linear-gradient(to bottom, #9a56ff, #d78afc)';
+};
+.map{
+  height: 20em !important;
+  width: 60em !important; 
+}
+.inline{
+  display: inline;
+}
+.inputBoxFlex{
+  border: none;
+    background-color: #f2f2f2;
+    width: 20em;
+    height: 1.8em;
 }
