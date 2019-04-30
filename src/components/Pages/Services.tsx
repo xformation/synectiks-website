@@ -1,11 +1,11 @@
-import * as React from "react";
+// import * as React from "react";
 
-export const Services: React.StatelessComponent<{}> = () => {
-  return (
-    <div>
-      <h1>Services</h1>
-    </div>
-  );
-};
+// export const Services: React.StatelessComponent<{}> = () => {
+//   return (
+//     <div>
+//       <h1>Services</h1>
+//     </div>
+//   );
+// };
 
-export default Services;
+// export default Services;

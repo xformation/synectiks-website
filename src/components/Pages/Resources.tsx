@@ -1,11 +1,14 @@
-import * as React from "react";
+// import * as React from "react";
+// import Forms from "../Forms/Forms";
+// import Foundation from "../Forms/Foundation";
 
-export const Resources: React.StatelessComponent<{}> = () => {
-  return (
-    <div>
-      <h1>Resources</h1>
-    </div>
-  );
-};
+// export const Resources: React.StatelessComponent<{}> = () => {
+//   return (
+//     <div>
+//       <h1>Resources</h1>
+//       <Forms/>
+//     </div>
+//   );
+// };
 
-export default Resources;
+// export default Resources;
