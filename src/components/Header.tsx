@@ -253,7 +253,7 @@ export const Header: React.StatelessComponent<{}> = () => {
             </div>
             <div>
             <div className="btn btn-demo noLine">
-            <Link to="/askfordemo" className="noLine">Ask For Demo</Link>
+            <Link to="/askfordemo" className="noLine text-white">Ask For Demo</Link>
           </div>
           </div>
             

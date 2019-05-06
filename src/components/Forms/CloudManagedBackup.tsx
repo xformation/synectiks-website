@@ -10,7 +10,8 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
     return (
         <div className='bg-lightgrey' >
 
-              <div className='bg-lightgrey  text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify'>
+              <div className='bg-lightgrey  text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify'
+              data-aos="fade-up" data-aos-duration="2000">
 
             <div className="w-100 mt-5 pt-3 pr-5  text-black">
                     <h1 className=" hfont">
@@ -59,7 +60,8 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
 
 
                   
- <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+ <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
+ data-aos="fade-up" data-aos-duration="2000">
             <div className="py-3 col-md-2" >
                     <Link to="/publiccloud" className='text-black bg-white noLine'>
                         <b>Public Cloud</b>
@@ -108,13 +110,13 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
                 
             </div>
    
-            <div className="d-flex justify-content-around align-items-center flex-col">
+            <div className="d-flex justify-content-around align-items-center flex-col text-center" data-aos="fade-up" data-aos-duration="2000">
                     <div className="w-40 p-5">
-                        <img src="img/CloudBackupSlider.png" width="100%" alt="Cloud Backup" />{" "}
+                        <img src="img/CloudBackupSlider.png" width="75%" alt="Cloud Backup" />{" "}
                     </div>
                 </div>  
 
-            <div className="w-100 px-5 text-black text-justify">
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
                 <h4 className='my-3'>Efficiently Protect, Manage and Recover Your</h4>
             <p className="lineHeight-34 list-tick">                
                 <ul>
@@ -125,7 +127,7 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
             </p>
             </div>
 
-            <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify">
+            <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify" data-aos="fade-up" data-aos-duration="2000">
             <div className="w-100">
                     <img height="auto" width="100%"
                         className=""
@@ -149,7 +151,7 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
                 </p>
                 </div>
             </div>
-            <div className="w-100 px-5 text-black text-justify">
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
             <p className="lineHeight-34 py-3 list-tick">
                 SYNECTIKS protects all of your structured and unstructured data while enabling self-service restoration 
                 capability to your application teams. We provide support for:
@@ -163,7 +165,7 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
                 </p>          
             </div>
          
-            <div className="w-100 px-5 text-black text-justify">
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
             <p ><h3>Why choose SYNECTIKS?</h3></p>
            
             <p className="lineHeight-34 list-tick">
@@ -193,12 +195,7 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
             </p>
             </div>
 
-            <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div>
-
-        
-
+       
             {/* Contact Starts */}
               {/* <input  className="inputBoxFlex" placeholder="&nbsp;&nbsp;Contact&nbsp;Source"  width="90%"/> */}
               {/* <input  className="inputBoxFlex" placeholder="&nbsp;&nbsp;Select Service"  width="90%"/> */}

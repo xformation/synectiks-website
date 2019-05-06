@@ -81,9 +81,9 @@ export const Devops: React.StatelessComponent<{}> = () => {
                     Cultural Transformation:
                </h4>
                <div className="text-center">
-          <img src="img/Microservice_9.png" width="100%" alt="DevOps Transformation" />{" "}
+          <img src="img/Microservice_9.png" width="75%" alt="Cultural Transformation" />{" "}
         </div>
-                <p className="lineHeight-24 pt-5">
+                <p className="lineHeight-24 pt-5" data-aos="fade-up" data-aos-duration="2000">
                 <h4>Why Transformation Matter?</h4><br />
                     Competition, new products and continuing pressure to monetize older services severely taxing many
                     businesses driven by legacy applications and infrastructure. To maintain competitive edge in a highly dynamic market, 
@@ -92,52 +92,52 @@ export const Devops: React.StatelessComponent<{}> = () => {
                     address operational complexity, and the need for monitoring/tracing/resilience. Modernize your legacy application and infrastructure with ease and
                     speed with our open platform.
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2000">
                     Ensuring that you stay ahead of race and keep disrupting by
                   adopting most modern technologies intelligently and effectively,
                   requires a managed services partner who understand your requirements for:
             </p>
             </div>
 
-            <div className="d-flex  px-5 py-2 flex-col text-center col-lg-12">
-                <div className="pb-3 col-sm-4 text-center" >
-                    <div className="w-75 ">
-                        <img height="auto" width="75%" 
+            <div className="d-flex  px-5 py-2 flex-col text-center col-lg-12" data-aos="fade-up" data-aos-duration="2000">
+                <div className="p-3 m-1 col-sm-4 text-center border-grey-2px">
+                    <div className=" ">
+                        <img height="auto" width="50%" 
                             className="pb-3"
                             src="img/Devopsspeed.png"
-                            alt="First slide"
+                            alt="Devopsspeed"
                         />
                         <p><b>SPEED</b></p>
-                        <p className="text-center">
+                        <p className="text-justify">
                         Introduction of New products or transforming your existing legacy 
                         monolith applications to microservices faster while maintaining Operational Control and Customer Visibility.        
                     </p>
                     </div>
                 </div>
-                <div className="pb-3 col-sm-4 text-center" >
-                    <div className="w-75 ">
-                        <img height="auto" width="75%" 
+                <div className="p-3 m-1 col-sm-4 text-center border-grey-2px" >
+                    <div className="">
+                        <img height="auto" width="50%" 
                             className="pb-3"
                             src="img/Devopsscale.png"
-                            alt="First slide"
+                            alt="Devopsscale"
                         />
                         <p><b>SCALE</b></p>
-                        <p className="text-center">
+                        <p className="text-justify">
                         Grow cost-effectively to meet new organizational and business requirements across the enterprise using a
                         highly scalable architecture that can distribute the workloads across clouds, enables hybrid cloud adoption with 
                         maximum security and highest flexibility.
                     </p>
                     </div>
                 </div>
-                <div className="pb-3 col-sm-4 text-center" >
-                    <div className="w-75 ">
-                        <img height="auto" width="50%" 
+                <div className="p-3 m-1 col-sm-4 text-center border-grey-2px" >
+                    <div className=" ">
+                        <img height="auto" width="30%" 
                             className="pb-3"
                             src="img/Devopssecurity.png"
-                            alt="First slide"
+                            alt="Devopssecurity"
                         />
                         <p><b>SECURITY</b></p>
-                        <p className="text-center">
+                        <p className="text-justify ">
                         Provision and Manage infrastructure, application services in complete software-defined way with maximum
                         automation so that you never fall into security loopholes. Enables Continuous Audit, Continuous Security/Compliance to have
                         real time checks and visibility on security guidelines.
@@ -153,7 +153,7 @@ export const Devops: React.StatelessComponent<{}> = () => {
                </h4>                         
             </div>
 
-            <div className="d-flex px-5 py-3 flex-col text-center col-lg-12">
+            <div className="d-flex px-5 py-3 flex-col text-center col-lg-12" data-aos="fade-up" data-aos-duration="2000">
           
           <div className="p-3 m-1 col-md-6 border-grey-2px text-center" >
               <div className="w-100 ">                       
@@ -190,7 +190,7 @@ export const Devops: React.StatelessComponent<{}> = () => {
             </h4>
             </div>
 
-        <div className="d-flex px-5 py-3 flex-col text-center col-lg-12">
+        <div className="d-flex px-5 py-3 flex-col text-center col-lg-12" data-aos="fade-up" data-aos-duration="2000"> 
           
           <div className="p-3 m-1 col-md-3 border-grey-2px text-center" >
               <div className="w-100 ">                       
@@ -247,7 +247,7 @@ export const Devops: React.StatelessComponent<{}> = () => {
             Where do you find your current DevOps Maturity!
             </h4>
             <div className="text-center pb-3">
-            <img src="img/Devops_Maturity.png" width="100%" alt="DevOps Transformation" />{" "}
+            <img src="img/Devops_Maturity.png" width="75%" alt="DevOps Maturity" />{" "}
             </div>
             <p>Want to Asses in Detail?</p>
             <p><NavLink className="navlink navfont noLine" to="/contactus"><small>Contact&nbsp;Us&nbsp;</small></NavLink>to learn more  about SYNECTIKS DevOps Transformation Service.</p>
@@ -271,7 +271,7 @@ export const Devops: React.StatelessComponent<{}> = () => {
         <Modal.Footer>
           {/* <Button onClick={this.props.onHide}>Close</Button> */}
         {/* </Modal.Footer>
-      </Modal> */} */}
+      </Modal> */} 
 {/*  */}
             <div className="container">
             <div className="d-flex justify-content-around align-items-center mt-5 flex-col">

@@ -53,8 +53,8 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                     Rehost-
                </h4>
                 <div className="d-flex justify-content-around align-items-center flex-col">
-                    <div className="">
-                        <img src="img/Rehost.png" width="100%" alt="DevOps Transformation" />{" "}
+                    <div className="text-center">
+                        <img src="img/Rehost.png" width="75%" alt="Rehost" />{" "}
                     </div>
                 </div>             
             </div>
@@ -64,8 +64,8 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 Refactor-
                </h4>
                 <div className="d-flex justify-content-around align-items-center flex-col">
-                    <div className="">
-                        <img src="img/Refactor.png" width="100%" alt="DevOps Transformation" />{" "}
+                    <div className="text-center">
+                        <img src="img/Refactor.png" width="75%" alt="Refactor" />{" "}
                     </div>
                 </div>             
             </div>
@@ -82,8 +82,8 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                where they 'assemble apps' rather than write apps.
                </p>
                 <div className="d-flex justify-content-around align-items-center flex-col">
-                    <div className="">
-                        <img src="img/LegacyApp2.png" width="100%" alt="DevOps Transformation" />{" "}
+                    <div className="text-center">
+                        <img src="img/LegacyApp2.png" width="75%" alt="Legacy App Migration" />{" "}
                     </div>
                 </div>             
             </div>
@@ -101,7 +101,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 rapidly with adequate security and governance.
             </p>
             <div className=" text-center">
-                    <img src="img/Foundation.svg" width="75%" alt="DevOps Transformation" />{" "}
+                    <img src="img/Foundation.svg" width="75%" alt="Accelerated Migration" />{" "}
                 </div>
             </div>
 
@@ -118,7 +118,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 with ever increasing security and compliance guidelines.
                 </p>
             <div className=" text-center">
-                    <img src="img/transformation_2.png" width="75%" alt="DevOps Transformation" />{" "}
+                    <img src="img/transformation_2.png" width="75%" alt="Transformation" />{" "}
                 </div>
             </div>
 
@@ -138,7 +138,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 microservice based enterprise application component diagram is below:
             </p>
             <div className=" text-center">
-                    <img src="img/Enterprise-Platform.png" width="75%" alt="DevOps Transformation" />{" "}
+                    <img src="img/Enterprise-Platform.png" width="75%" alt=" Redevelopment Microservices" />{" "}
                 </div>
             </div>
 
@@ -157,7 +157,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 workloads inside a single cluster platform and can truly focus on outcomes.
                 </p>
             <div className=" text-center">
-                    <img src="img/Migration_1.png" width="75%" alt="DevOps Transformation" />{" "}
+                    <img src="img/Migration_1.png" width="50%" alt="Bigdata Analytic" />{" "}
                 </div>
             </div>
 

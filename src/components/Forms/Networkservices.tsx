@@ -9,15 +9,16 @@ export const Networkservices: React.StatelessComponent<{}> = () => {
     return (
         <div  className='bg-lightgrey'>
 
-<div className="w-100 py-5 mt-5">
+<div className="w-100 py-5 mt-5" data-aos="fade-up" data-aos-duration="2000">
                 <img height="auto" width="100%"
                     className=""
                     src="img/NetworkServices.png"
-                    alt="Application Services"
+                    alt="Network Services"
                 />
             </div>
 
-            <div className=' text-black w-100  text-white px-5 flex-col d-flex text-justify'>
+            <div className=' text-black w-100  text-white px-5 flex-col d-flex text-justify'
+            data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
                     <p className="w-100  text-black"><h2 className='mt-3'>Network Services</h2></p>
                     <p className="lineHeight-24">
@@ -38,7 +39,8 @@ export const Networkservices: React.StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+            data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
                 <p className="lineHeight-24 list-tick">
                     <p><b>Services Offered</b>                        
@@ -54,10 +56,7 @@ export const Networkservices: React.StatelessComponent<{}> = () => {
                 </div>
 
 
-            <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div>
-
+        
             {/* Contact Starts */}
             {/* <div className='py-3 '>
                 <h2 className='text-center text-black'>Ask for Demo</h2>

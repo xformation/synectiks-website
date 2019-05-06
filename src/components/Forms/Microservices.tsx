@@ -13,7 +13,7 @@ export const Microservices: React.StatelessComponent<{}> = () => {
                 <img height="auto" width="100%"
                     className=""
                     src="img/Microservicesmain.png"
-                    alt="Devopsmain Services"
+                    alt="Microservices"
                 />
             </div>
 
@@ -41,14 +41,14 @@ export const Microservices: React.StatelessComponent<{}> = () => {
           </div>
 
   <div className="pt-3 text-center" data-aos="fade-up" data-aos-duration="2000">
-        <img src="img/Microservice_1.png" width="75%" alt="DevOps Transformation" />{" "}
+        <img src="img/Microservice_1.png" width="60%" alt="Microservices Migration" />{" "}
       </div>
       <div className="pt-3 px-5" data-aos="fade-up" data-aos-duration="2000">
         <h2 className="py-3">
           Monolith Vs Microservices
         </h2>
         <div className="text-center">
-          <img src="img/monovsmicro.png" width="75%" alt="DevOps Transformation" />{" "}
+          <img src="img/monovsmicro.png" width="75%" alt="Monolith Vs Microservices" />{" "}
         </div>
       </div>
 

@@ -5,6 +5,42 @@
 * {
   box-sizing: border-box;
 }
+
+@media(min-width: 2531px) and (max-width: 2700px){
+  .mt-card{
+    margin-top: 35em !important;
+  }
+}
+@media(min-width: 2341px) and (max-width: 2530px){
+  .mt-card{
+    margin-top: 30em !important;
+  }
+}
+@media(min-width: 2151px) and (max-width: 2340px){
+  .mt-card{
+    margin-top: 25em !important;
+  }
+}
+@media(min-width: 1970px) and (max-width: 2150px){
+  .mt-card{
+    margin-top: 20em !important;
+  }
+}
+@media(min-width: 1780px) and (max-width: 1969px){
+  .mt-card{
+    margin-top: 15em !important;
+  }
+}
+@media(min-width: 1605px) and (max-width: 1779px){
+  .mt-card{
+    margin-top: 10em !important;
+  }
+}
+@media(min-width: 1405px){
+  .mt-card{
+    margin-top: 5em ;
+  }
+}
 @media(min-width: 1040px){
   .ml-15{
     margin-left: 15em !important;

@@ -9,7 +9,7 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
     return (
         <div className='bg-lightgrey'>
 
-            <div className=' text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify' data-aos="fade-up" data-aos-duration="2000">
 
                 <div className="w-100 mt-5 pt-3 pr-5 text-black">
                     <h1 className=" hfont">
@@ -51,13 +51,14 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
                     <img height="auto" width="100%"
                         className=""
                         src="img/CloudCommon.png"
-                        alt="First slide"
+                        alt="Cloud"
                     />
                 </div>
             </div>
 
 
-            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
+            data-aos="fade-up" data-aos-duration="2000">
                 <div className="py-3 col-md-2" >
                     <Link to="/publiccloud" className='text-black bg-white noLine'>
                         <b>Public Cloud</b>
@@ -108,7 +109,8 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
 
             </div>
 
-            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+            data-aos="fade-up" data-aos-duration="2000">
 
                 <div className="w-100">
                     <img height="auto" width="100%"
@@ -132,12 +134,12 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
     
             {/*  */}
 
-<p className="px-5 py-3">
+<p className="px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
     <b>
     How Private Cloud Helps Your Business:
     </b>
 </p>
-            <div className="container-fluid px-5">
+            <div className="container-fluid px-5" data-aos="fade-up" data-aos-duration="2000">
                 <div className="row justify-content-around align-items-center">
 
                     <div className="card card-pvtcld mx-2 ">
@@ -198,9 +200,7 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
                 </p>
             </div>
 
-            <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div>
+           
 
             {/* Contact Starts */}
             {/* <div className='py-3 '>

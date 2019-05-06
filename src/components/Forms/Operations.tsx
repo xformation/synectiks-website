@@ -19,7 +19,7 @@ export const Operations: React.StatelessComponent<{}> = () => {
               <img
                 className="card-img-top"
                 src="img/Foundation.png"
-                alt="Card image cap"
+                alt="Foundation"
               />
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Foundation</h2>
@@ -32,7 +32,7 @@ export const Operations: React.StatelessComponent<{}> = () => {
               <img
                 className="card-img-top"
                 src="img/Transformation.png"
-                alt="Card image cap"
+                alt="Transformation"
               />
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Transformation</h2>
@@ -45,7 +45,7 @@ export const Operations: React.StatelessComponent<{}> = () => {
               <img
                 className="card-img-top"
                 src="img/Operation.png"
-                alt="Card image cap"
+                alt="Operation"
               />
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Operation</h2>
@@ -67,7 +67,7 @@ export const Operations: React.StatelessComponent<{}> = () => {
             </div>
             <div  data-aos="fade-up" data-aos-duration="2000">
                 <div className="pb-3">
-                    <img src="img/Operations-graph.png" width="100%" alt="Featured" />{" "}
+                    <img src="img/Operations-graph.png" width="100%" alt="Operations for enterprise managed services" />{" "}
                 </div>
             </div>
 

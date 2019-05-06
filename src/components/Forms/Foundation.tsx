@@ -49,7 +49,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
                 <img
                   className="card-img-top"
                   src="img/Foundation.png"
-                  alt="Card image cap"
+                  alt="Foundation"
                 />
                 <div className="card-body">
                   <h2 className="text-center text-uppercase">Foundation</h2>
@@ -66,7 +66,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
                 <img
                   className="card-img-top"
                   src="img/Transformation.png"
-                  alt="Card image cap"
+                  alt="Transformation"
                 />
                 <div className="card-body">
                   <h2 className="text-center text-uppercase">Transformation</h2>
@@ -79,7 +79,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
                 <img
                   className="card-img-top"
                   src="img/Operation.png"
-                  alt="Card image cap"
+                  alt="Operation"
                 />
                 <div className="card-body">
                   <h2 className="text-center text-uppercase">Operation</h2>
@@ -127,8 +127,8 @@ export const Foundation: React.StatelessComponent<{}> = () => {
         <div className="text-center">
           <img
             className="text-center"
-            src="img/Foundation.svg" width="90%"
-            alt="Card image Foundation"
+            src="img/Foundation.svg" width="75%"
+            alt="How Foundation Works?"
           />
         </div>
 
@@ -165,7 +165,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
           <h3 className="text-center">Key&nbsp;Features</h3>
         </div>
         <div className="text-center" data-aos="fade-up" data-aos-duration="2000">
-          <img src="img/Foundation_2.png" width="75%" alt="DevOps Transformation" />{" "}
+          <img src="img/Foundation_2.png" width="75%" alt="Synectiks Open Xformation Platform" />{" "}
         </div>
 
         <ol type="1" className="lineHeight-24 pt-3" data-aos="fade-up" data-aos-duration="2000">
@@ -200,7 +200,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
       <div className="p-5 text-justify lineHeight-24" data-aos="fade-up" data-aos-duration="2000">
         <h3 className="text-center pb-3">System Architecture of Xformation Platform</h3>
         <div className=" text-center">
-          <img src="img/Microservice_7.png" width="75%" alt="DevOps Transformation" />{" "}
+          <img src="img/Microservice_7.png" width="75%" alt="System Architecture of Xformation Platform" />{" "}
         </div>
         <b className="pt-3">Notes--</b>
         <p>This is overall system architecture. The architecture attempts to ensure scalability across every
@@ -242,7 +242,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
       <div className="px-5 text-justify " data-aos="fade-up" data-aos-duration="2000">
         <h3 className="text-center pb-3">Application Block Architecture</h3>
         <div className=" text-center">
-          <img src="img/Microservice_2.png" width="75%" alt="DevOps Transformation" />{" "}
+          <img src="img/Microservice_2.png" width="75%" alt="Application Block Architecture" />{" "}
         </div>
         <b className="pt-3">Notes--</b>
         <p>
@@ -310,7 +310,7 @@ lifecycle. <br />Here follows the list of basic services along with their functi
 
           <div className="">
             <a href="https://www.youtube.com/channel/UChsy8OZwS-JpNQUpC24ff2g/featured" target="_blank" aria-hidden="true">
-              <img src="img/Video.png" width="80%" alt="" />{" "}
+              <img src="img/Video.png" width="80%" alt="Synectiks Enterprise Transformtaion" />{" "}
             </a>
           </div>
           <div className="text-group  align-self-center">

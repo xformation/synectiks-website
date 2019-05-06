@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 export const Casestudy: React.StatelessComponent<{}> = () => {
     return (
         <div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="2000">
                 <img
                     className="  text-center py-5 mt-5"
                     src="img/Careers.png" width="100%"
-                    alt="Card image Resource"
+                    alt="Careers"
                 />
                     <div className="text-center centered ">
                 <div className="text-white">
@@ -19,7 +19,8 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
+            <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12"
+            data-aos="fade-up" data-aos-duration="2000">
             <div className="pb-3 col-sm-4" >
             <Link to="/featured">
                         <button className='btn btnResource menu-bg'>Featured</button>
@@ -38,9 +39,10 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
                     </div>
                     
  <div className="container">
-            <div className="d-flex justify-content-around align-items-center mt-5 flex-col animated fadeInUp slow dealy-4s">
+            <div className="d-flex justify-content-around align-items-center mt-5 flex-col  "
+            data-aos="fade-up" data-aos-duration="2000">
           <div className="w-40 p-5">
-            <img src="img/SDT.png" width="100%" alt="" />{" "}
+            <img src="img/SDT.png" width="100%" alt="Software Defined Transformtaion" />{" "}
           </div>
           <div className="text-group align-self-center">
             <h4 className="font-weight-bold">
@@ -55,9 +57,10 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col animated fadeInUp slow dealy-4s">
+        <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col  "
+        data-aos="fade-up" data-aos-duration="2000">
           <div className="w-40 p-5">
-            <img src="img/RTM.png" width="100%" alt="" />{" "}
+            <img src="img/RTM.png" width="100%" alt="Realtime Monitoring" />{" "}
           </div>
           <div className="text-group align-self-center">
             <h4 className="font-weight-bold">Realtime Monitoring </h4>
@@ -71,9 +74,10 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
           </div>
         </div>
 
-            <div className="d-flex justify-content-around align-items-center flex-col animated fadeInUp slow dealy-4s">
+            <div className="d-flex justify-content-around align-items-center flex-col  "
+            data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-40 p-5">
-                    <img src="img/SM.png" width="100%" alt="Img" />{" "}
+                    <img src="img/SM.png" width="100%" alt="Software Migration" />{" "}
                 </div>
                 <div className="text-group">
                     <h4 className="font-weight-bold">Software Migration </h4>
@@ -87,7 +91,8 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col animated fadeInUp slow dealy-4s">
+            <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col  "
+            data-aos="fade-up" data-aos-duration="2000">
           <div className="w-40 p-5">
             <img src="img/NetworkDesign.png" width="100%" alt="NetworkDesign" />{" "}
           </div>
@@ -104,7 +109,8 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
           </div>
         </div>
 
-        <div className="d-flex justify-content-around align-items-center flex-col animated fadeInUp slow dealy-4s">
+        <div className="d-flex justify-content-around align-items-center flex-col  "
+        data-aos="fade-up" data-aos-duration="2000">
           <div className="w-40 p-5">
             <img src="img/StorageTier.png" width="100%" alt="StorageTier" />{" "}
           </div>
@@ -121,9 +127,10 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col animated fadeInUp slow dealy-4s">
+        <div className="d-flex flex-row-rev justify-content-around align-items-center flex-col  "
+        data-aos="fade-up" data-aos-duration="2000">
           <div className="w-40 p-5">
-            <img src="img/NetworkDesign.png" width="100%" alt="DisasterRecovery" />{" "}
+            <img src="img/NetworkDesign.png" width="100%" alt="NetworkDesign" />{" "}
           </div>
           <div className="text-group align-self-center">
             <h4 className="font-weight-bold">

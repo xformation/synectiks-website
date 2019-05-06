@@ -13,7 +13,8 @@ const cursorGrab ={
 }
 
 const mapWidth ={
-  width:'115%'
+  width:'100%',
+  height:'10em'
 }
 
 export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6Gmc9u7rr2JHijOERAmC_j0gWYtR2c'
@@ -29,7 +30,7 @@ export const Footer: React.StatelessComponent<{}> = () => {
         </p>
       </div>
       
-    <div className="d-flex justify-content-around bg-footer flex-col p-5 col-lg-12">
+    <div className="d-flex justify-content-around bg-footer flex-col p-4 col-lg-12">
       <div className="col-md-4 pb2">
         <h5 className="text-white">Synectiks</h5>
         <small className="text-white">
@@ -38,16 +39,16 @@ export const Footer: React.StatelessComponent<{}> = () => {
           delivering world class professional <br /> services to our patrons.
         </small>
       </div>
-      <div className="col-md-4 ftr pb2">
+      <div className="col-md-3 ftr pb2">
         <h5 className="text-white">Get In Touch</h5>
         <small className="text-white">
         300 Alexander Park Drive, Suite 215, <br /> Princeton, NJ 08540 <br />{" "}
         Sales: +1 (609) 608-0429 X 112 <br />  Office: +1 (609) 608-0429
         </small>
       </div>
-      <div className="col-md-4 pb2">
-        <h5 className="text-white">Map</h5>
-        <div className="w-75">       
+      <div className="col-md-5 pb2">
+        {/* <h5 className="text-white">Map</h5> */}
+        <div className="w-100">       
         <iframe style={mapWidth}
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.0341342304914!2d-74.63367698460706!3d40.31939997937661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e0d086f7514f%3A0x8f04ec41f160a353!2s300+Alexander+Park+Dr+%23215%2C+Princeton%2C+NJ+08540%2C+USA!5e0!3m2!1sen!2sin!4v1526621065289"
         frameBorder='0'        

@@ -9,7 +9,8 @@ export const Colocation: React.StatelessComponent<{}> = () => {
     return (
         <div className='bg-lightgrey'>
 
-            <div className=' text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify'
+            data-aos="fade-up" data-aos-duration="2000">
 
                 <div className="w-100 mt-5 pt-3 pr-5 text-black">
                     <h1 className=" hfont">
@@ -52,13 +53,14 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                     <img height="auto" width="100%"
                         className=""
                         src="img/CloudCommon.png"
-                        alt="First slide"
+                        alt="Cloud"
                     />
                 </div>
             </div>
 
 
-            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
+            data-aos="fade-up" data-aos-duration="2000">
                 <div className="py-3 col-md-2" >
                     <Link to="/publiccloud" className='text-black bg-white noLine'>
                         <b>Public Cloud</b>
@@ -107,14 +109,15 @@ export const Colocation: React.StatelessComponent<{}> = () => {
 
             </div>
 
-            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+            data-aos="fade-up" data-aos-duration="2000">
 
 
                 <div className="w-100 ">
                     <img height="auto" width="100%"
                         className=""
                         src="img/Colocation.png"
-                        alt="First slide"
+                        alt="Colocation"
                     />
                 </div>
 
@@ -161,7 +164,7 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                     <img
                         className="   py-3"
                         src="img/Costcontrol.png" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="Costcontrol"
                     />
                     <p>Cost Control</p>
                 </div>
@@ -169,7 +172,7 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                     <img
                         className="   py-3"
                         src="img/ITModern.png" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="IT Modernization"
                     />
                     <p>IT Modernization</p>
                 </div>
@@ -177,7 +180,7 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                     <img
                         className="   py-3"
                         src="img/Staff.png" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="Staff"
                     />
                     <p>Knowledgeable Staff</p>
                 </div>
@@ -185,7 +188,7 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                     <img
                         className="   py-3 "
                         src="img/Scale.png" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="Scale"
                     />
                     <p>Scale Up or Down</p>
                 </div>
@@ -199,9 +202,7 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                 </p>
             </div>
 
-            <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div>
+    
 
             {/* Contact Starts */}
             {/* <div className='py-3 '>

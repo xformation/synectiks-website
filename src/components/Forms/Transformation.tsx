@@ -30,7 +30,7 @@ export const Transformation: React.StatelessComponent<{}> = () => {
               <img
                 className="card-img-top"
                 src="img/Foundation.png"
-                alt="Card image cap"
+                alt="Foundation"
               />
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Foundation</h2>
@@ -43,7 +43,7 @@ export const Transformation: React.StatelessComponent<{}> = () => {
               <img
                 className="card-img-top"
                 src="img/Transformation.png"
-                alt="Card image cap"
+                alt="Transformation"
               />
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Transformation</h2>
@@ -59,7 +59,7 @@ export const Transformation: React.StatelessComponent<{}> = () => {
               <img
                 className="card-img-top"
                 src="img/Operation.png"
-                alt="Card image cap"
+                alt="Operation"
               />
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Operation</h2>
@@ -76,36 +76,36 @@ export const Transformation: React.StatelessComponent<{}> = () => {
                 <div  className="my-5">
             <img data-aos="fade-up" data-aos-duration="2000"
                    
-                    src="img/Refactor.png" width="90%"
+                    src="img/Refactor.png" width="75%"
                     alt="Refactor"
                 />
                 </div>
                 <div  className="my-5">
             <img data-aos="fade-up" data-aos-duration="2000"
                     className="  mx-auto"
-                    src="img/transformation_2.png" width="90%"
-                    alt="Card image Foundation"
+                    src="img/transformation_2.png" width="75%"
+                    alt="Transformation"
                 />
                 </div>
                  <div  className="my-5">
             <img data-aos="fade-up" data-aos-duration="2000"
                     className=" mx-auto"
-                    src="img/Enterprise-Platform.png" width="90%"
-                    alt="Card image Foundation"
+                    src="img/Enterprise-Platform.png" width="75%"
+                    alt="Redevelopment Microservice"
                 />
                 </div>
                  <div  className="my-5">
             <img data-aos="fade-up" data-aos-duration="2000"
                     className="   mx-auto"
-                    src="img/Redevelopment.png" width="90%"
-                    alt="Card image Foundation"
+                    src="img/Redevelopment.png" width="75%"
+                    alt="Redevelopment Analytics"
                 />
                 </div>
                  <div  className="my-5">
                  <img data-aos="fade-up" data-aos-duration="2000"
-                    className="   mx-auto"
-                    src="img/Rehost.png" width="90%"
-                    alt="Card image Foundation"
+                    className="mx-auto"
+                    src="img/Rehost.png" width="75%"
+                    alt="Rehost"
                 />
                 </div>
             </div>

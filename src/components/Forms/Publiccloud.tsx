@@ -9,7 +9,7 @@ export const Publiccloud: React.StatelessComponent<{}> = () => {
     return (
         <div  className='bg-lightgrey'>
 
-            <div className=' text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify' data-aos="fade-up" data-aos-duration="2000">
 
                 <div className="w-100 mt-5 pt-3 pr-5 text-black">
                     <h1 className=" hfont">
@@ -56,7 +56,8 @@ export const Publiccloud: React.StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
+            data-aos="fade-up" data-aos-duration="2000" >
             <div className="py-3 col-md-2" >
                     <Link to="/publiccloud" id="public" className='text-black bg-white noLine'>
                         <b>Public Cloud</b>
@@ -105,7 +106,7 @@ export const Publiccloud: React.StatelessComponent<{}> = () => {
                 
             </div>
               
-                <div className="text-black w-100 mt-3 px-5 py-3 flex-col d-flex text-justify">
+                <div className="text-black w-100 mt-3 px-5 py-3 flex-col d-flex text-justify" data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100">
                     <img height="auto" width="100%"
                         className=""
@@ -125,11 +126,11 @@ export const Publiccloud: React.StatelessComponent<{}> = () => {
                </div>
                </div>
            
-            <div>
+            <div data-aos="fade-up" data-aos-duration="2000">
                 <h2 className='text-center mt-3'>Cloud Services for AWS</h2>
             </div>
 
-            <div className=' text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify' data-aos="fade-up" data-aos-duration="2000">
 
                 <div className="w-100  text-black">
                     <p className="lineHeight-24">
@@ -153,11 +154,11 @@ export const Publiccloud: React.StatelessComponent<{}> = () => {
                     <img height="auto" width="100%"
                         className=""
                         src="img/CloudAWS.png"
-                        alt="First slide"
+                        alt="Cloud AWS"
                     />
                 </div>
             </div>
-            <div className="w-100 px-5 text-black text-justify">
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
                 <p className="lineHeight-24">
                 We offer managed service bundles suited to your IT and financial objectives. Whether or not 
                 you've got critical workloads that demand a full suite of services or you’re merely searching 
@@ -179,11 +180,11 @@ export const Publiccloud: React.StatelessComponent<{}> = () => {
                 <p className="seperator-grey"></p>
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-duration="2000">
                 <h2 className='text-center'>Cloud Services for Microsoft Azure</h2>
             </div>
 
-            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify' data-aos="fade-up" data-aos-duration="2000">
 
                 <div className="w-100  text-black">
                     <p className="lineHeight-24">
@@ -217,7 +218,7 @@ export const Publiccloud: React.StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className="w-100 px-5 text-black text-justify">
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
               <p className="lineHeight-24">
                 <NavLink className="navlink navfont noLine" to="/contactus"><small>Contact&nbsp;Us&nbsp;</small></NavLink>to learn more about SYNECTIKS Cloud Services for Microsoft Azure.
                 <br />{" "}
@@ -240,9 +241,7 @@ export const Publiccloud: React.StatelessComponent<{}> = () => {
                  */}
             </div>
 
-            <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div>
+        
 
             {/* Contact Starts */}
             {/* <div className='py-3 '>

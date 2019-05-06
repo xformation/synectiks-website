@@ -19,7 +19,7 @@ export const Aboutus: React.StatelessComponent<{}> = () => {
                 <img
                     className="  text-center py-5 mt-5"
                     src="img/AboutUs.png" width="100%"
-                    alt="Card image About"
+                    alt="AboutUs"
                 />
                 <div className="text-center centered ">
                     <div className="text-white">
@@ -107,42 +107,42 @@ export const Aboutus: React.StatelessComponent<{}> = () => {
                     <img
                         className="   py-3"
                         src="img/vmware.svg" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="VMware"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
                         className="   py-3"
                         src="img/dell.svg" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="Dell"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
                         className="   py-3"
                         src="img/equinix.svg" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="Equinix"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
                         className="   py-3 "
                         src="img/microsoft.svg" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="Microsoft"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
                         className="   py-3"
                         src="img/nutanix.svg" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="Nutanix"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
                         className="   py-3"
                         src="img/simplivity.svg" width="75%"
-                        alt="Card image PartnersOrg"
+                        alt="Simplivity"
                     />
                 </div>
 

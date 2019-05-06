@@ -51,13 +51,14 @@ export const HostedInfrastructure: React.StatelessComponent<{}> = () => {
                     <img height="auto" width="100%"
                         className=""
                         src="img/CloudCommon.png"
-                        alt="First slide"
+                        alt="Cloud"
                     />
                 </div>
             </div>
 
             
- <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+ <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12" 
+ data-aos="fade-up" data-aos-duration="2000">
             <div className="py-3 col-md-2" >
                     <Link to="/publiccloud" className='text-black bg-white noLine'>
                         <b>Public Cloud</b>
@@ -112,10 +113,10 @@ export const HostedInfrastructure: React.StatelessComponent<{}> = () => {
                 <h2 className='text-center mt-3'>Cloud Hosted Services</h2>
             </div> */}
         
-            <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify">
+            <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify" data-aos="fade-up" data-aos-duration="2000">
            
                     <div className="w-100">
-                        <img src="img/HostedInfra.png" width="100%" alt="Cloud Backup" />{" "}
+                        <img src="img/HostedInfra.png" width="100%" alt="Hosted Infrastructure" />{" "}
                     </div>
                 
                 <div className="w-100 px-5 text-black">
@@ -131,7 +132,8 @@ export const HostedInfrastructure: React.StatelessComponent<{}> = () => {
             </p>
             </div>
             </div>
-            <div className="w-100 px-5  text-black">
+
+            <div className="w-100 px-5  text-black" data-aos="fade-up" data-aos-duration="2000">
             <h4 className='my-3'>Quickly Provision Infrastructure for all Your Workloads</h4>
             <p className="lineHeight-24">
             Whether your mission-critical applications powered by Linux, Windows Server, SAP, or Oracle, SYNECTIKS offers 
@@ -158,9 +160,7 @@ export const HostedInfrastructure: React.StatelessComponent<{}> = () => {
 
             </div>
 
-            <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div>
+         
 
             {/* Contact Starts */}
             {/* <div className='py-3 '>

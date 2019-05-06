@@ -9,7 +9,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
     return (
         <div className='bg-lightgrey'>
 
-            <div className="w-100 py-5 mt-5">
+            <div className="w-100 py-5 mt-5" data-aos="fade-up" data-aos-duration="2000">
                 <img height="auto" width="100%"
                     className=""
                     src="img/ApplicationServices.png"
@@ -17,7 +17,8 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                 />
             </div>
 
-            <div className=' text-black w-100  text-white px-5  flex-col d-flex text-justify'>
+            <div className=' text-black w-100  text-white px-5  flex-col d-flex text-justify'
+            data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
 <p className="w-100  text-black"><h2 className='mt-3'>Application Services - Overview</h2></p>
                     <p className="lineHeight-24">
@@ -36,7 +37,8 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+            data-aos="fade-up" data-aos-duration="2000">
             
                 <div className="w-100 pr-5 text-black">
                 <p className="w-100  text-black"><h2 className='mt-3'>Application Services</h2></p>
@@ -69,7 +71,8 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                     />
                 </div>
             </div>
-            <div className="w-100 px-5 pt-3 text-black text-justify">
+            <div className="w-100 px-5 pt-3 text-black text-justify"
+            data-aos="fade-up" data-aos-duration="2000">
                 <p className="lineHeight-24">
                     <h4>We offer a range of services to help companies get the most value from their existing applications:</h4>
                     <br />{" "}
@@ -81,7 +84,8 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                 </p> */}
             </div>
 
-            <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+            <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
+            data-aos="fade-up" data-aos-duration="2000">
                 <div className="pb-3 col-sm-3" >
                     <div className="w-100 p-5">
                         <img height="auto" width="100%"
@@ -159,9 +163,9 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
             </div>
 
             <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
-            <div className="">
+            <div className="text-center">
                     <div className="w-40 ">
-                        <img src="img/ERP.png" width="100%" alt="DevOps Transformation" />{" "}
+                        <img src="img/ERP.png" width="75%" alt="DevOps Transformation" />{" "}
                     </div>
                 </div>
                 </div>
@@ -180,7 +184,8 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
             </p>
             </div>
         
-                <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+                <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+                data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
                 <p className="w-100  text-black"><h2 className='mt-3'>Education Management System</h2></p>
                     <p className="lineHeight-24">
@@ -206,7 +211,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                         <img height="auto" width="100%"
                             className="w-25"
                             src="img/CheckMark.png"
-                            alt="First slide"
+                            alt="Simple"
                         />
                         <p><b>Simple</b></p>
                         <p className="text-center">
@@ -219,7 +224,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                         <img height="auto" width="100%"
                             className="w-25"
                             src="img/CheckMark.png"
-                            alt="First slide"
+                            alt="Powerful"
                         />
                         <p><b>Powerful</b></p>
                         <p className="text-center">
@@ -233,7 +238,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                         <img height="auto" width="100%"
                             className="w-25"
                             src="img/CheckMark.png"
-                            alt="First slide"
+                            alt="Cost-Effective"
                         />
                         <p><b>Cost-Effective</b></p>
                         <p className="text-center">
@@ -371,13 +376,14 @@ An All-in-One HR and Payroll solution built to meet the demands of today’s wor
 
             <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
             <div className="">
-                    <div className="w-40 ">
-                        <img src="img/Office365.png" width="100%" alt="DevOps Transformation" />{" "}
+                    <div className="w-40 text-center">
+                        <img src="img/Office365.png" width="75%" alt="Office365" />{" "}
                     </div>
                 </div>
                 </div>
 
-                <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+                <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+                data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
                     <p className="lineHeight-24">
                         Microsoft is the recognized leader in cloud productivity solutions for business with Office 365 - transforming the workplace experience.
@@ -410,12 +416,12 @@ An All-in-One HR and Payroll solution built to meet the demands of today’s wor
                 </div>
             </div>
 
-            <div className="w-100 px-5  text-black">
+            <div className="w-100 px-5  text-black" data-aos="fade-up" data-aos-duration="2000">
             <p className="lineHeight-24">
                     <b>Find Out Why Users Are Choosing Office 365</b>                                            
                     </p>
                     </div>
-            <div className="d-flex px-5 py-3 flex-col text-center col-lg-12">
+            <div className="d-flex px-5 py-3 flex-col text-center col-lg-12" data-aos="fade-up" data-aos-duration="2000">
           
                 <div className="p-3 m-1 col-sm-3 border-grey-2px text-center" >
                     <div className="w-100 ">                       
@@ -453,7 +459,8 @@ An All-in-One HR and Payroll solution built to meet the demands of today’s wor
                 </div>                
                 </div>
 
-                <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+                <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+                data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
                 <p className="lineHeight-24 list-tick">
                     <p><b>Built by Microsoft, Made Easy by SYNECTIKS</b>                        
@@ -469,9 +476,7 @@ An All-in-One HR and Payroll solution built to meet the demands of today’s wor
                 </div>
                 </div>
 
-            <div className="p-5" >
-                <p className="seperator-grey"></p>
-            </div>
+           
             {/* Contact Starts */}
             {/* <div className='py-3 '>
                 <h2 className='text-center text-black'>Ask for Demo</h2>

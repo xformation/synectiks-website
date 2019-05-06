@@ -9,15 +9,16 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
     return (
         <div  className='bg-lightgrey'>
 
-        <div className="w-100 py-5 mt-5">
+        <div className="w-100 py-5 mt-5" data-aos="fade-up" data-aos-duration="2000">
                 <img height="auto" width="100%"
                     className=""
                     src="img/Managedservice.png"
-                    alt="Application Services"
+                    alt="Managed Services"
                 />
             </div>
 
-            <div className=' text-black w-100  text-white px-5 flex-col d-flex text-justify'>
+            <div className=' text-black w-100  text-white px-5 flex-col d-flex text-justify'
+            data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
                     <p className="w-100  text-black"><h2 className='mt-3'>We are SYNECTIKS Managed Services.</h2></p>
                     <p className="lineHeight-24">
@@ -45,14 +46,14 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className="w-100 px-5  text-black">
+            <div className="w-100 px-5  text-black" data-aos="fade-up" data-aos-duration="2000">
             <p className="lineHeight-24">
                     SYNECTIKS offers a full suite of Managed Services capabilities for some of the most demanding 
                     and complex businesses and governments in the world. Our world-class services, include:                   
                     </p>
             </div>
 {/* border-grey-2px */}
-        <div className="d-flex  p-2 flex-col text-center col-lg-12">          
+        <div className="d-flex  p-2 flex-col text-center col-lg-12" data-aos="fade-up" data-aos-duration="2000">          
           <div className="pb-3 col-sm-4  m-1" >
               <div className="w-75  py-3">                       
                   <p><b>Architecture, Design and Deployment</b></p>                                       
@@ -70,7 +71,8 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
           </div>
 
           </div>
-          <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">          
+          <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
+          data-aos="fade-up" data-aos-duration="2000">          
           <div className="pb-3 col-sm-4" >
               <div className="w-75 px-5 py-3">                       
                   <p><b>Software Defined Infrastructure Services</b></p>                                       
@@ -88,7 +90,8 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
           </div>
 
           </div>
-          <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">          
+          <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
+          data-aos="fade-up" data-aos-duration="2000">          
           <div className="pb-3 col-sm-4" >
               <div className="w-75 px-5 py-3">                       
                   <p><b>Project Management</b></p>                                       
@@ -107,7 +110,8 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
 
           </div>
 
-          <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
+          <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+          data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
                 <p className="lineHeight-24 list-tick">
                     <p><b>Benefit of leveraging SYNECTIKS Managed Services:</b>                        
@@ -128,9 +132,7 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
                 </div>
 
 
-            <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div>
+          
 
             {/* Contact Starts */}
             {/* <div className='py-3 '>

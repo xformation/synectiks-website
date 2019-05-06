@@ -10,7 +10,7 @@ export const CloudDisasterRecovery: React.StatelessComponent<{}> = () => {
     return (
         <div  className='bg-lightgrey'>
 
-<div className='bg-lightgrey  text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify'>
+<div className='bg-lightgrey  text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify' data-aos="fade-up" data-aos-duration="2000">
 
 <div className="w-100 mt-5 pt-3 pr-5  text-black">
         <h1 className=" hfont">
@@ -52,13 +52,14 @@ export const CloudDisasterRecovery: React.StatelessComponent<{}> = () => {
         <img height="auto" width="100%"
             className=""
             src="img/CloudCommon.png"
-            alt="First slide"
+            alt="Cloud"
         />
     </div>
 </div>
 
                   
- <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+ <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
+ data-aos="fade-up" data-aos-duration="2000">
             <div className="py-3 col-md-2" >
                     <Link to="/publiccloud" className='text-black bg-white noLine'>
                         <b>Public Cloud</b>
@@ -108,14 +109,14 @@ export const CloudDisasterRecovery: React.StatelessComponent<{}> = () => {
                 
             </div>
 
-            <div className="d-flex justify-content-around align-items-center flex-col">
+            <div className="d-flex justify-content-around align-items-center text-center flex-col" data-aos="fade-up" data-aos-duration="2000">
                     <div className="w-40 p-5">
-                        <img src="img/CloudDisRecoverySlider.png" width="100%" alt="Cloud Backup" />{" "}
+                        <img src="img/CloudDisRecoverySlider.png" width="75%" alt="Cloud Disaster Recovery" />{" "}
                     </div>
                 </div>  
 
    
-            <div className="w-100 px-5 text-black text-justify">
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
                 <h4 className='my-3'>Protect your enterprise data with recovery capabilities that keep the lights on!</h4>           
             <p className="lineHeight-34 list-tick">                 
             {/* Take a Smarter Approach to Data Protection, Avoid Disruptions to Your Data – and Your Business */}
@@ -126,7 +127,7 @@ export const CloudDisasterRecovery: React.StatelessComponent<{}> = () => {
             </p>
             </div>
 
-            <div className="w-100 px-5 text-black text-justify">
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
             <p className='my-3'><h3>Why choose SYNECTIKS?</h3></p>
            
             <p className="lineHeight-34 list-tick">
@@ -150,13 +151,7 @@ export const CloudDisasterRecovery: React.StatelessComponent<{}> = () => {
             <br />{" "}
             </p>
             </div>
-          
-        
-
-            <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div>
-
+         
             {/* Contact Starts */}
             {/* <div className='py-3 '>
                 <h2 className='text-center text-black'>Ask for Demo</h2>

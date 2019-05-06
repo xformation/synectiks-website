@@ -38,12 +38,12 @@ export const Careers: React.StatelessComponent<{}> = () => {
                 </p>
             </div>
 
-            <div className='text-center mt-3 lineHeight-24'>
+            <div className='text-center mt-3 lineHeight-24' data-aos="fade-up" data-aos-duration="2000">
                 <h2>Careers</h2>
                 <p>Opportunity is infinite!</p>
             </div>
 
-            <div className="w-100 px-5 text-black text-justify">
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
                 <p className="lineHeight-24">
                     <h4>Changing the game takes talent - Yours!</h4><br />{" "}
                     Work where you’re encouraged to explore your passions, where your skills are nurtured and respected. Introduce
