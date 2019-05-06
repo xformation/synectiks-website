@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     // "baseUrl": ".",
     // "paths": { "*": ["types/*"] },
-=======
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,

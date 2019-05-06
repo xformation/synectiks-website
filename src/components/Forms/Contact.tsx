@@ -1,5 +1,4 @@
 import * as React from "react";
-<<<<<<< HEAD
 // // import { Right } from "react-bootstrap/lib/Media";
 import { LinearProgress } from "material-ui";
 
@@ -94,68 +93,6 @@ export const Contact: React.StatelessComponent<{}> = () => {
 
             {/* <div className="contFields">
             <div className="d-flex justify-content-around text-left mr-5 py-2 flex-col">       
-=======
-import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-
-// const btn = {
-//     borderRadius: '6px',
-//     width: '110px',
-//     height: '36px',
-//     color: '#ffffff',   
-//     background: 'linear-gradient(to bottom, #9a56ff, #d78afc)',
-// };
-// const map = {
-//     height: '20em',
-//     width: '60em',
-// }
-
-// const italic = {
-//     fontStyle: 'italic',
-// };
-// const inputBox = {
-//     border: 'none',
-//     backgroundColor: '#f2f2f2',
-//     width: '150%',
-// };
-// const inputBoxFlex = {
-//     border: 'none',
-//     backgroundColor: '#f2f2f2',
-//     width: '20em',
-//     height: "1.8em"
-// };
-// const textArea = {
-//     border: 'none',
-//     backgroundColor: '#f2f2f2',
-//     width: '150%',
-//     height: '110px',
-// };
-// const borderRadius_6 = {
-//     borderRadius: '6px',
-// };
-// const inline = {
-//     display: 'inline',
-// };
-
-export const Contact: React.StatelessComponent<{}> = () => {
-    return (
-        <div>
-            <div>
-                <img
-                    className="card-img-Foundation text-center py-5 mt-5"
-                    src="img/NiceToMeet.png" width="100%"
-                    alt="Card image Foundation"
-                />
-            </div>
-
-            <div>
-                <h2 className='text-center mt-2'>CONTACT FORM</h2>
-            </div>
-
-            <div className="contFields">
-            <div className="d-flex justify-content-around text-left mr-5 py-2 flex-col">
-       
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
                 <div className="d-flex" >
                     <p className="px6 mr-2 inline" >Name&nbsp;*</p>
                     <input  className="inputBoxFlex"/>
@@ -165,10 +102,6 @@ export const Contact: React.StatelessComponent<{}> = () => {
                     <p className="px6 mr-2 inline" >E&nbsp;Mail&nbsp;*</p>
                     <input className="inputBoxFlex" />
                 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
             </div>
 
             <div className="d-flex justify-content-around text-left mr-5 py-2 flex-col">            
@@ -200,28 +133,16 @@ export const Contact: React.StatelessComponent<{}> = () => {
                     <textarea className="inputBoxFlex mr05" />
                 </div>
             </div>
-<<<<<<< HEAD
             </div>
             <div className='text-center p-5'>
                 <button  className='btn menu-bg btnSend'>Send</button>
             </div> */}
-=======
-
-            </div>
-            <div className='text-center p-5'>
-                <button  className='btn menu-bg btnSend'>Send</button>
-            </div>
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
             <div>
                 <h2 className='text-center'>CONTACT US</h2>
             </div>
 
-<<<<<<< HEAD
             <div className="d-flex justify-content-around my-5 flex-col">
-=======
-            <div className="d-flex justify-content-around mt-5 flex-col">
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
                 <div className="pb2 pl-5" >
                     <h5>USA</h5>
@@ -252,11 +173,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
 
             </div>
 
-<<<<<<< HEAD
             {/* <div className='text-center p-5 flex-col'>
-=======
-            <div className='text-center p-5 flex-col'>
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
                 <h5>SOCIALS</h5>
                 <i className="fa fa-twitter" aria-hidden="true"></i>
                 <small className="italic">Twitter</small>&emsp;
@@ -264,19 +181,11 @@ export const Contact: React.StatelessComponent<{}> = () => {
                 <small className="italic">Facebook</small>&emsp;
                     <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                 <small className="italic">Linkedin</small>
-<<<<<<< HEAD
             </div> */}
 
             {/* <div>
                 <img
                     className="  text-img mx-auto" style={borderRadius_6}
-=======
-            </div>
-
-            {/* <div>
-                <img
-                    className="card-img-Foundation text-img mx-auto" style={borderRadius_6}
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
                     src="img/location.png" width="90%"
                     alt="Card image Foundation"
                 />

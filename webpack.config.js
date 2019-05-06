@@ -4,12 +4,8 @@ module.exports = {
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
-<<<<<<< HEAD
         path: __dirname + "/dist",
         publicPath: '/'
-=======
-        path: __dirname + "/dist"
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
     },
 
     // Enable sourcemaps for debugging webpack's output.
@@ -19,13 +15,9 @@ module.exports = {
         // Add '.ts' and '.tsx' as resolvable extensions.
         extensions: [".ts", ".tsx", ".js", ".json",".svg"]
     },
-<<<<<<< HEAD
     devServer: {
         historyApiFallback: true,
       },    
-=======
-
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
     module: {
         rules: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.

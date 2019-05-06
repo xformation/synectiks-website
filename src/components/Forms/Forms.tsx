@@ -1,9 +1,5 @@
 import * as React from "react";
-<<<<<<< HEAD
 // // import { Right } from "react-bootstrap/lib/Media";
-=======
-import { Right } from "react-bootstrap/lib/Media";
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 import { LinearProgress } from "material-ui";
 
 const btn = {
@@ -39,11 +35,7 @@ export const Forms: React.StatelessComponent<{}> = () => {
         <div>
             <div>
                 <img
-<<<<<<< HEAD
                     className="  text-center"
-=======
-                    className="card-img-Foundation text-center"
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
                     src="img/NiceToMeet.png" width="100%"
                     alt="Card image Foundation"
                 />
@@ -145,11 +137,7 @@ export const Forms: React.StatelessComponent<{}> = () => {
 
             <div>
                 <img
-<<<<<<< HEAD
                     className="  text-img mx-auto" style={borderRadius_6}
-=======
-                    className="card-img-Foundation text-img mx-auto" style={borderRadius_6}
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
                     src="img/location.png" width="90%"
                     alt="Card image Foundation"
                 />

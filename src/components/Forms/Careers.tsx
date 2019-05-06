@@ -1,5 +1,4 @@
 import * as React from "react";
-<<<<<<< HEAD
 // import { Right } from "react-bootstrap/lib/Media";
 import { LinearProgress } from "material-ui";
 import { NavLink } from "react-router-dom";
@@ -9,21 +8,11 @@ const btn = {
     // width: '110px',
     height: '35px',
     color: '#ffffff',
-=======
-import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-
-const btn = {
-    width: '110px',
-    height: '35px',
-    color: '#ffffff',    
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
     background: 'linear-gradient(to bottom, #9a56ff, #d78afc)',
 };
 
 export const Careers: React.StatelessComponent<{}> = () => {
     return (
-<<<<<<< HEAD
         <div className='bg-lightgrey'>
 
             <div>
@@ -110,23 +99,6 @@ export const Careers: React.StatelessComponent<{}> = () => {
             </div>
 
             {/* <div className="d-flex justify-content-around p-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
-=======
-        <div>
-
-            <div>
-                <img
-                    className="card-img-Foundation text-center py-5 mt-5"
-                    src="img/Careers.png" width="100%"
-                    alt="Card image Careers"
-                />
-            </div>
-
-            <div>
-                <h2 className='text-center'>We are Hiring!</h2>
-            </div>
-
-            <div className="d-flex justify-content-around p-5 flex-col">
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
                 <div className='text-left'>
                     <h5>Account Manager</h5>
                     <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
@@ -163,15 +135,9 @@ export const Careers: React.StatelessComponent<{}> = () => {
                     </div>
                 </div>
 
-<<<<<<< HEAD
             </div> */}
 
             {/* <div className="d-flex justify-content-around px-5 pb-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
-=======
-            </div>
-
-            <div className="d-flex justify-content-around px-5 flex-col">
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
                 <div className='text-left'>
                     <h5>Technical Support</h5>
                     <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
@@ -208,11 +174,7 @@ export const Careers: React.StatelessComponent<{}> = () => {
                     </div>
                 </div>           
 
-<<<<<<< HEAD
             </div> */}
-=======
-            </div>
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
         </div>
 

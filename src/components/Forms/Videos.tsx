@@ -1,19 +1,13 @@
 import * as React from "react";
-<<<<<<< HEAD
 // // import { Right } from "react-bootstrap/lib/Media";
 import { LinearProgress } from "material-ui";
 import { Link } from "react-router-dom";
-=======
-import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
 export const Videos: React.StatelessComponent<{}> = () => {
     return (
         <div>
             <div>
                 <img
-<<<<<<< HEAD
                     className="  text-center py-5 mt-5"
                     src="img/Careers.png" width="100%"
                     alt="Card image Resource"
@@ -43,17 +37,6 @@ export const Videos: React.StatelessComponent<{}> = () => {
                     </div>
                     </div>
 
-=======
-                    className="card-img-Foundation text-center py-5 mt-5"
-                    src="img/Resources.png" width="100%"
-                    alt="Card image Resource"
-                />
-            </div>
-
-            <div>
-                <h2 className='text-center'>VIDEOS</h2>
-            </div>
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
             <div className="d-flex justify-content-around flex-col">
 

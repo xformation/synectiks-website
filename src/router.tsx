@@ -1,16 +1,10 @@
 import * as React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
-<<<<<<< HEAD
 import { HashRouter } from 'react-router-dom'
 import { render } from 'react-dom';
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 // import { About } from "./components/About";
-=======
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { About } from "./components/About";
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 import Background from "./components/Background/Background";
 import { Main } from "./components/Main/Main";
 import { Forms } from "./components/Forms/Forms";
@@ -22,7 +16,6 @@ import { Videos } from "./components/Forms/Videos";
 import { Aboutus } from "./components/Forms/Aboutus";
 import { Careers } from "./components/Forms/Careers";
 import { Partners } from "./components/Forms/Partners";
-<<<<<<< HEAD
 import { Audit } from "./components/Forms/Audit";
 import { EnterpriseManagedservice } from "./components/Forms/EnterpriseManagedservice";
 import { Operations } from "./components/Forms/Operations";
@@ -54,15 +47,10 @@ import { Privacypolicy } from "./components/Forms/Privacypolicy";
 import { Askfordemo } from "./components/Forms/Askfordemo";
 
 // import { Services, Company, Solutions, Resources } from "./components";
-=======
-
-import { Services, Company, Solutions, Resources } from "./components";
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
 export const AppRouter: React.StatelessComponent<{}> = () => {
   return (
     <BrowserRouter>
-<<<<<<< HEAD
     <HashRouter>
       <div>
         <Route component={Header} />    
@@ -74,17 +62,6 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
           <Route path="/services" component={Services} />
           <Route path="/solutions" component={Solutions} />
           <Route path="/resources" component={Resources} /> */}
-=======
-      <div>
-        <Route component={Header} />
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/" component={Forms} />
-          <Route exact path="/company" component={Company} />
-          <Route path="/services" component={Services} />
-          <Route path="/solutions" component={Solutions} />
-          <Route path="/resources" component={Resources} />
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
           <Route path="/Forms" component={Forms} />
           <Route path="/foundation" component={Foundation} />
           <Route path="/contactus" component={Contact} />
@@ -93,7 +70,6 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
           <Route path="/videos" component={Videos} />
           <Route path="/aboutus" component={Aboutus} />
           <Route path="/careers" component={Careers} />
-<<<<<<< HEAD
           <Route path="/partners" component={Partners} />  
           <Route path="/audit" component={Audit} />
           <Route path="/enterprisemanagedservice" component={EnterpriseManagedservice} />
@@ -134,12 +110,3 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
 };
 
 export default AppRouter;
-=======
-          <Route path="/partners" component={Partners} />          
-        </Switch>
-        <Route component={Footer} />
-      </div>
-    </BrowserRouter>
-  );
-};
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691

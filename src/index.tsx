@@ -12,8 +12,5 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
-<<<<<<< HEAD
 
 // export default App;
-=======
->>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
