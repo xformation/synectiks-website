@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import * as ReactDOM from 'react-dom'
 import {GoogleMap, withGoogleMap, withScriptjs} from 'react-google-maps'
 // import MapContainer from "./Map";
+<<<<<<< HEAD
 import { NavLink } from "react-router-dom";
+=======
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
 const rootId = 'root'
 const root = document.getElementById(rootId)
@@ -13,14 +16,19 @@ const cursorGrab ={
 }
 
 const mapWidth ={
+<<<<<<< HEAD
   width:'100%',
   height:'10em'
+=======
+  width:'115%'
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 }
 
 export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6Gmc9u7rr2JHijOERAmC_j0gWYtR2c'
 
 export const Footer: React.StatelessComponent<{}> = () => {
   return (
+<<<<<<< HEAD
 //  target="_blank"
     <div>      
       <div className="text-center fixed-bottom bg-grey content ">
@@ -31,6 +39,9 @@ export const Footer: React.StatelessComponent<{}> = () => {
       </div>
       
     <div className="d-flex justify-content-around bg-footer flex-col p-4 col-lg-12">
+=======
+    <div className="d-flex justify-content-around bg-footer flex-col p-5 mt-5 col-lg-12">
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
       <div className="col-md-4 pb2">
         <h5 className="text-white">Synectiks</h5>
         <small className="text-white">
@@ -39,16 +50,26 @@ export const Footer: React.StatelessComponent<{}> = () => {
           delivering world class professional <br /> services to our patrons.
         </small>
       </div>
+<<<<<<< HEAD
       <div className="col-md-3 ftr pb2">
+=======
+      <div className="col-md-4 ftr pb2">
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
         <h5 className="text-white">Get In Touch</h5>
         <small className="text-white">
         300 Alexander Park Drive, Suite 215, <br /> Princeton, NJ 08540 <br />{" "}
         Sales: +1 (609) 608-0429 X 112 <br />  Office: +1 (609) 608-0429
         </small>
       </div>
+<<<<<<< HEAD
       <div className="col-md-5 pb2">
         {/* <h5 className="text-white">Map</h5> */}
         <div className="w-100">       
+=======
+      <div className="col-md-4 pb2">
+        <h5 className="text-white">Map</h5>
+        <div className="w-75">       
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
         <iframe style={mapWidth}
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.0341342304914!2d-74.63367698460706!3d40.31939997937661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e0d086f7514f%3A0x8f04ec41f160a353!2s300+Alexander+Park+Dr+%23215%2C+Princeton%2C+NJ+08540%2C+USA!5e0!3m2!1sen!2sin!4v1526621065289"
         frameBorder='0'        
@@ -59,8 +80,11 @@ export const Footer: React.StatelessComponent<{}> = () => {
         </div>
       </div>
     </div>
+<<<<<<< HEAD
 
     </div>
+=======
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
   );
 };
 // AIzaSyCdBpR3676ds4Yf9tNeKOJRFZyjGAmzw7A

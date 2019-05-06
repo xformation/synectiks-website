@@ -1,5 +1,9 @@
 import * as React from "react";
+<<<<<<< HEAD
 // import { Right } from "react-bootstrap/lib/Media";
+=======
+import { Right } from "react-bootstrap/lib/Media";
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 import { LinearProgress } from "material-ui";
 
 const btn = {
@@ -15,6 +19,7 @@ export const Partners: React.StatelessComponent<{}> = () => {
 
             <div>
                 <img
+<<<<<<< HEAD
                     className="  text-center py-5 mt-5"
                     src="img/AboutUS.png" width="100%"
                     alt="Card image Partners"
@@ -81,6 +86,26 @@ export const Partners: React.StatelessComponent<{}> = () => {
 
 </div>
 
+=======
+                    className="card-img-Foundation text-center py-5 mt-5"
+                    src="img/Partners.png" width="100%"
+                    alt="Card image Partners"
+                />
+            </div>
+
+            <div>
+                <h2 className='text-center'>Our Technology Partners</h2>
+            </div>
+
+            <div>
+                <img
+                    className="card-img-Foundation text-center py-5 mt-5"
+                    src="img/PartnersTemp.png" width="100%"
+                    alt="Card image PartnersOrg"
+                />
+            </div>
+
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
          
         </div>
 

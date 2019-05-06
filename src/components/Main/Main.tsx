@@ -1,4 +1,5 @@
 import * as React from "react";
+<<<<<<< HEAD
 // import App from '../App';
 import { Link } from "react-router-dom";
 import Background from "../Background/Background";
@@ -21,6 +22,23 @@ export const Main: React.StatelessComponent<{}> = () => {
 
             <div className="card btn card-shadow mx-3 pt-3">
             <Link to="/foundation" className="noLine">
+=======
+import { Link } from "react-router-dom";
+import Background from "../Background/Background";
+
+const fontSize3={
+  fontSize : '2vw'
+}
+export const Main: React.StatelessComponent<{}> = () => {
+  return (
+    <div>
+      <Background />
+      <div className="container">
+        <div className="row main-card">
+          <div className="col-md-12 col-12-lg card-deck">
+{/* */}
+            <div className="card card-shadow mx-3">
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
               <img
                 className="card-img-top"
                 src="img/Foundation.png"
@@ -29,11 +47,17 @@ export const Main: React.StatelessComponent<{}> = () => {
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Foundation</h2>
               </div>
+<<<<<<< HEAD
               </Link>
             </div>
 
             <div className="card btn card-shadow mx-3 pt-3">
             <Link to="/transformation" className="noLine">
+=======
+            </div>
+
+            <div className="card card-shadow mx-3">
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
               <img
                 className="card-img-top"
                 src="img/Transformation.png"
@@ -42,11 +66,17 @@ export const Main: React.StatelessComponent<{}> = () => {
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Transformation</h2>
               </div>
+<<<<<<< HEAD
               </Link>
             </div>
 
             <div className="card btn card-shadow mx-3 pt-3">
             <Link to="/operations" className="noLine">
+=======
+            </div>
+
+            <div className="card card-shadow mx-3">
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
               <img
                 className="card-img-top"
                 src="img/Operation.png"
@@ -55,6 +85,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Operation</h2>
               </div>
+<<<<<<< HEAD
               </Link>
             </div> 
           
@@ -265,11 +296,20 @@ export const Main: React.StatelessComponent<{}> = () => {
 
 
         {/* <div className="p-2 flex-fill mt-8">
+=======
+            </div> 
+            {/*  */}
+          </div>
+        </div>
+        <div className="d-flex justify-content-around align-items-center mb-5">
+          <div className="p-2 flex-fill">
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
             <img
               src="img/jumbotron.png"
               width="100%"
               alt=""
               className="w-100"
+<<<<<<< HEAD
             />            
           </div> */}
 
@@ -325,6 +365,63 @@ export const Main: React.StatelessComponent<{}> = () => {
               </Link>
             </div>
           </div>
+=======
+            />
+            <div />
+          </div>
+        </div>
+        
+        <div className="">
+        
+        <div className="d-flex justify-content-around align-items-center flex-col">
+          <div className="w-40 p-5">
+            <img src="img/SDT.png" width="100%" alt="" />{" "}
+          </div>
+          <div className="text-group align-self-center">
+            <h4 className="font-weight-bold">Software Defined Transformtaion{" "}</h4>
+            <p>
+            Moving to AWS cloud with Data Center retirement for Motor Industry.
+            </p>{" "}
+            <a href="">
+              Learn more <i className="fa fa-arrow-right" />
+            </a>
+          </div>
+        </div>
+        
+        <div className="d-flex flex-row-rev justify-content-around align-items-center  flex-col ">       
+       
+          <div className="w-40 p-5">
+            <img src="img/RTM.png" width="100%" alt="" />{" "}
+          </div>
+          <div className="text-group align-self-center ">
+            <h4 className="font-weight-bold">Realtime Monitoring </h4>
+            <p>
+              Highly Scalable extremely customizable realtime monitoring
+              platform for a large telco.
+            </p>{" "}
+            <a href="">
+              Learn more <i className="fa fa-arrow-right" />
+            </a>
+          </div>
+        </div>
+        
+
+        <div className="d-flex justify-content-around align-items-center flex-col">
+          <div className="w-40 p-5">
+            <img src="img/SM.png" width="100%" alt="" />{" "}
+          </div>
+          <div className="text-group align-self-center">
+            <h4 className="font-weight-bold">Software Migration </h4>
+            <p>
+              Zero downtime, Zero Fault Petabytes storage migration of Largest
+              Financial Sector.
+            </p>{" "}
+            <a href="">
+              Learn more <i className="fa fa-arrow-right" />
+            </a>
+          </div>
+        </div>
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
         </div>
 
@@ -332,5 +429,8 @@ export const Main: React.StatelessComponent<{}> = () => {
     </div>
   );
 };
+<<<<<<< HEAD
 
 export default Main;
+=======
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691

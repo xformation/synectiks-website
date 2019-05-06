@@ -3,15 +3,22 @@ import "./background.css";
 import { Animated } from "react-animated-css";
 
 import Particles from "react-particles-js";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
+=======
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
 
 class Background extends React.Component {
   public render() {
     return (
       <div id="particle-js">
+<<<<<<< HEAD
       
         {/* <Particles
+=======
+        <Particles
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
           params={{
             particles: {
               number: {
@@ -29,6 +36,7 @@ class Background extends React.Component {
                 out_mode: "out"
               },
               shape: {
+<<<<<<< HEAD
                 type: ["circle"]
                 images: [
                   {
@@ -57,6 +65,36 @@ class Background extends React.Component {
                     width: 20
                   }
                 ]
+=======
+                type: ["circle", "polygon", "triangle"]
+                // images: [
+                //   {
+                //     src: "img/html.png",
+                //     height: 20,
+                //     width: 23
+                //   },
+                //   {
+                //     src: "img/js.png",
+                //     height: 20,
+                //     width: 20
+                //   },
+                //   {
+                //     src: "img/jscode.png",
+                //     height: 20,
+                //     width: 20
+                //   },
+                //   {
+                //     src: "img/ts.png",
+                //     height: 20,
+                //     width: 20
+                //   },
+                //   {
+                //     src: "img/node.png",
+                //     height: 20,
+                //     width: 20
+                //   }
+                // ]
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
               },
               color: {
                 value: "#CCC"
@@ -74,8 +112,12 @@ class Background extends React.Component {
             },
             retina_detect: true
           }}
+<<<<<<< HEAD
         /> */}
 
+=======
+        />
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
         <div className="container">
           <div
             id="carouselExampleIndicators"
@@ -90,11 +132,17 @@ class Background extends React.Component {
               />
               <li data-target="#carouselExampleIndicators" data-slide-to="1" />
               <li data-target="#carouselExampleIndicators" data-slide-to="2" />
+<<<<<<< HEAD
               <li data-target="#carouselExampleIndicators" data-slide-to="3" />
               <li data-target="#carouselExampleIndicators" data-slide-to="4" />
             </ol>
             <div className="carousel-inner mr-auto">
               {/* <div className="carousel-item active  justify-content-around ">
+=======
+            </ol>
+            <div className="carousel-inner mr-auto">
+              <div className="carousel-item active  justify-content-around ">
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
                 <div className="text-img flex-col">
                   <img height="auto" width="50%"
                     className="w-40 text-right animated fadeInRightBig slow dealy-4s"
@@ -115,6 +163,7 @@ class Background extends React.Component {
                       ELASTICITY, RESILIENCE.
                     </p>
                     <p>
+<<<<<<< HEAD
                     <Link to="/foundation" className="btn text-violet text-uppercase sliderBtn">learn more</Link>
                     </p>              
                   </div>
@@ -261,6 +310,78 @@ class Background extends React.Component {
               </div> */}
 
           
+=======
+                    <a
+                      href="../foundation"
+                      className="btn text-violet text-uppercase sliderBtn"
+                    >
+                      learn more
+                    </a></p>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item  justify-content-around ">
+                <div className="text-img flex-col">
+                  <img  width="50%"
+                    className="w-40 text-right animated fadeInRightBig slow dealy-4s"
+                    src="img/oxp.png"
+                    alt="First slide"
+                  />
+                  <div className="animated fadeInLeftBig slow dealy-4s">
+                    <h1 className="text-white hfont">
+                      SYNECTIKS <br /> OPEN XFORMATION PLATFORM
+                    </h1>
+                    <p className="text-white rfont">
+                      HELPING CUSTOMERS TO <br /> CONSOLIDATE &amp; MODERNIZE <br />{" "}
+                      THEIR IT STACK.
+                    </p>
+                    <p className="text-white sfont">
+                      IMPLEMENT AN OUTCOME BASED OPEN PLATFORM THAT INCLUDES{" "}
+                      <br /> CONTINUOUS AUDIT, COMPLIANCE, DELIVERY, BILLING,
+                      ELASTICITY, RESILIENCE.
+                    </p>
+                    <p>
+                    <a
+                      href=""
+                      className="btn text-violet text-uppercase sliderBtn"
+                    >
+                      learn more
+                    </a></p>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item  justify-content-around ">
+                <div className="text-img flex-col">
+                  <img width="50%"
+                    className="w-40 text-right animated fadeInRightBig slow dealy-4s"
+                    src="img/oxp.png"
+                    alt="First slide"
+                  />
+                  <div className="animated fadeInLeftBig slow dealy-4s">
+                    <h1 className="text-white hfont">
+                      SYNECTIKS <br /> OPEN XFORMATION PLATFORM
+                    </h1>
+                    <p className="text-white rfont">
+                      HELPING CUSTOMERS TO <br /> CONSOLIDATE &amp; MODERNIZE <br />{" "}
+                      THEIR IT STACK.
+                    </p>
+                    <p className="text-white sfont">
+                      IMPLEMENT AN OUTCOME BASED OPEN PLATFORM THAT INCLUDES{" "}
+                      <br /> CONTINUOUS AUDIT, COMPLIANCE, DELIVERY, BILLING,
+                      ELASTICITY, RESILIENCE.
+                    </p>
+                    <p>
+                    <a
+                      href=""
+                      className="btn text-violet text-uppercase sliderBtn"
+                    >
+                      learn more
+                    </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+>>>>>>> 967866ad488f3fb8a92c0a0379416efc44500691
             </div>
             {/* <a
               className="carousel-control-prev"
