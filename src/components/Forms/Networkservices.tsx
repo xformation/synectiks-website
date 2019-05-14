@@ -9,10 +9,10 @@ export const Networkservices: React.StatelessComponent<{}> = () => {
     return (
         <div  className='bg-lightgrey'>
 
-<div className="w-100 py-5 mt-5" data-aos="fade-up" data-aos-duration="2000">
+<div className="w-100 py-5 mt-5" >
                 <img height="auto" width="100%"
                     className=""
-                    src="img/NetworkServices.png"
+                    src="img/NetworkServices.jpg"
                     alt="Network Services"
                 />
             </div>

@@ -5,7 +5,7 @@ import { LARGE } from "material-ui/utils/withWidth";
 
 export const Storagetier: React.StatelessComponent<{}> = () => {
     return (
-        <div>
+        <div  className="bg-lightgrey">
 
             <div className='bg-theme mt-3'>
                 <h1 className='text-center text-white pt-theme mt-2'>INDIAN METEOROLOGY DEPARTMENT-CASE STUDY</h1>

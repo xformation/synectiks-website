@@ -127,7 +127,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
         <div className="text-center">
           <img
             className="text-center"
-            src="img/Foundation.svg" width="75%"
+            src="img/Foundation.svg" width="60%"
             alt="How Foundation Works?"
           />
         </div>
@@ -164,8 +164,11 @@ export const Foundation: React.StatelessComponent<{}> = () => {
         <div className="px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
           <h3 className="text-center">Key&nbsp;Features</h3>
         </div>
+        <div className="px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
+          <h3 className="text-center">Synectiks Open Xformation Platform</h3>
+        </div>
         <div className="text-center" data-aos="fade-up" data-aos-duration="2000">
-          <img src="img/Foundation_2.png" width="75%" alt="Synectiks Open Xformation Platform" />{" "}
+          <img src="img/OpenXformationPlatform.png" width="75%" alt="Synectiks Open Xformation Platform" />{" "}
         </div>
 
         <ol type="1" className="lineHeight-24 pt-3" data-aos="fade-up" data-aos-duration="2000">
@@ -202,7 +205,7 @@ export const Foundation: React.StatelessComponent<{}> = () => {
         <div className=" text-center">
           <img src="img/Microservice_7.png" width="75%" alt="System Architecture of Xformation Platform" />{" "}
         </div>
-        <b className="pt-3">Notes--</b>
+        <b className="pt-3">Notes :</b>
         <p>This is overall system architecture. The architecture attempts to ensure scalability across every
           layer (Infrastructure/Application Services) to ensure horizontal scalability everywhere. This is the master
           architecture to write a highly scale-out application, it talks about application services, compute and network platform.
@@ -241,11 +244,12 @@ export const Foundation: React.StatelessComponent<{}> = () => {
 
       <div className="px-5 text-justify " data-aos="fade-up" data-aos-duration="2000">
         <h3 className="text-center pb-3">Application Block Architecture</h3>
-        <div className=" text-center">
-          <img src="img/Microservice_2.png" width="75%" alt="Application Block Architecture" />{" "}
+        <div className="text-center bg-white border-grey-2px ">
+          <img src="img/ApplicationBlockArchitechture.jpg" width="75%" alt="Application Block Architecture" />{" "}
         </div>
-        <b className="pt-3">Notes--</b>
-        <p>
+        
+        <p className="pt-2">
+        <b >Notes :</b><br/>
           This is a standard microservice based basic application architecture. We tried to carefully refactor the
           basic services what any enterprise application would require and provision them separately. Each microservice
           uses some combination of Cache/SQL/NoSQL/GRAPH/Bigdata databases to make them individually scalable. The real
@@ -306,7 +310,7 @@ lifecycle. <br />Here follows the list of basic services along with their functi
       </div>
 {/* justify-content-around align-items-center */}
       <div className="container" data-aos="fade-up" data-aos-duration="2000">
-        <div className="d-flex justify-content-around align-items-center my-5 flex-col">
+        <div className="d-flex justify-content-around align-items-center mt-5 pb-5 flex-col">
 
           <div className="">
             <a href="https://www.youtube.com/channel/UChsy8OZwS-JpNQUpC24ff2g/featured" target="_blank" aria-hidden="true">
@@ -322,7 +326,7 @@ lifecycle. <br />Here follows the list of basic services along with their functi
             </p>{" "}
             <div className="pb-3" >
               <Link to="/videos">
-                <button className='btn btnResource menu-bg'>View More</button>
+                <button className='btn btnResource bg-logoblue text-white'>View More</button>
               </Link>
             </div>
           </div>

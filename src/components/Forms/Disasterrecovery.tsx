@@ -5,12 +5,18 @@ import { LARGE } from "material-ui/utils/withWidth";
 
 export const Disasterrecovery: React.StatelessComponent<{}> = () => {
     return (
-        <div>        
+        <div  className="bg-lightgrey">        
             
-            <div className='bg-theme mt-3'>
+            {/* <div className='bg-theme mt-3'>
             <h1 className='text-center text-white pt-theme mt-2'>DISASTER RECOVERY</h1>
-            </div>
-            <div className="px-5 pt-5">
+            </div> */}
+
+<div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
+                    <div className=" py-5">
+                        <img src="img/DisasterRecovery_Subpage.jpg" width="100%" alt="Cloud Backup" />{" "}
+                    </div>
+                </div> 
+            <div className="px-5 pt-2">
             <p className='lineHeight-24'>
             Background - As we all know, a potential business disorder will directly impact CAPEX and OPEX of the business. 
             When a proper disaster recovery plan is set, any business can continue to run its critical operations without thwarting their customer expectations. 

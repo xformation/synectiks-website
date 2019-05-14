@@ -132,6 +132,12 @@
   align-items: center;
   height: 11vh;
 }
+.bg-yellow{
+  background: #fbba00 !important;
+}
+.bg-night {
+  background-color: #2b2b2b;
+}
 .bg-maroon {
   background-color: #b23531;
 }
@@ -842,8 +848,8 @@ h6 {
 }
 .carousel-indicators>li {
   border-radius: 100% !important;
-  width: 16px !important;
-  height: 16px !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 .bg-card-theme {
   background-color: rgba(112, 112, 112, 0.14) !important;
@@ -1018,7 +1024,7 @@ h6 {
 .btnLearnmore {
   position: absolute;
   top: 70%;
-  left: -19em;
+  left: -20.5em;
   transform: translate(50%,50%);
   vertical-align: middle;
   /* padding: 1rem; */
@@ -1090,7 +1096,7 @@ color: #4290CE;
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 .seperator-grey{
-  border: 2px solid grey;
+  border: 1px solid grey;
 }
 .animate:hover{  
     /* transform: translateX(0px) translateY(20px) translateZ(0px) !important;
@@ -1147,9 +1153,37 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   right: -3rem;
   top: 36%;
   transform: rotate(-90deg);
-  background: #fbba00;
-  color: black;
+  background: #fbba00 !important;
+  /* color: black; */
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-
+.dropdown-menu {
+  margin: 0rem !important;
+}
+.card-hd-img{
+  position: relative;
+ 
+  top: -3rem;
+  left: 4rem;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center !important;
+}
+.brdr-maroon{
+  border: 5px solid #b23131;
+}
+.brdr-teal {
+  border: 5px solid #2da1b6 !important;
+}
+.brdr-orange {
+  border: 5px solid #f47b21;
+}
+.brdr-green {
+  border: 5px solid #4db748;
+}
+.brdr-pink {
+  border: 5px solid #9c355c;
+}

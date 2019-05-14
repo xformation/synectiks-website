@@ -12,7 +12,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
             <div className="w-100 py-5 mt-5" data-aos="fade-up" data-aos-duration="2000">
                 <img height="auto" width="100%"
                     className=""
-                    src="img/ApplicationServices.png"
+                    src="img/ApplicationServices.jpg"
                     alt="Application Services"
                 />
             </div>
@@ -65,7 +65,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                 </div>
                 <div className=" ">
                     <img height="auto" width="100%"
-                        className=""
+                        className="pt-5"
                         src="img/Growth.png"
                         alt="Growth"
                     />
@@ -158,14 +158,14 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
 
                 </div>
 
-            <div className=" p-5" >
+            <div className=" pb-5 px-5" >
                 <p className="seperator-grey"></p>
             </div>
 
-            <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
+            <div className="" data-aos="fade-up" data-aos-duration="2000">
             <div className="text-center">
-                    <div className="w-40 ">
-                        <img src="img/ERP.png" width="75%" alt="DevOps Transformation" />{" "}
+                    <div className=" ">
+                        <img src="img/ApplicationServices_Erp.jpg" width="100%" alt="Application Services-Erp" />{" "}
                     </div>
                 </div>
                 </div>
@@ -209,7 +209,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                 <div className="pb-3 col-sm-4" >
                     <div className="w-100 ">
                         <img height="auto" width="100%"
-                            className="w-25"
+                            className="w-25 pl-3"
                             src="img/CheckMark.png"
                             alt="Simple"
                         />
@@ -222,7 +222,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                 <div className="pb-3 col-sm-4" >
                     <div className="w-100 ">
                         <img height="auto" width="100%"
-                            className="w-25"
+                            className="w-25 pl-3"
                             src="img/CheckMark.png"
                             alt="Powerful"
                         />
@@ -236,7 +236,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                 <div className="pb-3 col-sm-4" >
                     <div className="w-100 ">
                         <img height="auto" width="100%"
-                            className="w-25"
+                            className="w-25 pl-3"
                             src="img/CheckMark.png"
                             alt="Cost-Effective"
                         />
@@ -374,33 +374,33 @@ An All-in-One HR and Payroll solution built to meet the demands of today’s wor
                 <p className="seperator-grey"></p>
             </div> */}
 
-            <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
+            <div className="px-1 " data-aos="fade-up" data-aos-duration="2000">
             <div className="">
-                    <div className="w-40 text-center">
-                        <img src="img/Office365.png" width="75%" alt="Office365" />{" "}
+                    <div className=" text-center">
+                        <img src="img/Office365.jpg" width="100%" alt="Office365" />{" "}
                     </div>
                 </div>
                 </div>
 
-                <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+                <div className=' text-black w-100 mt-3 text-white px-5 pb-2 pt-5 flex-col d-flex text-justify'
                 data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
                     <p className="lineHeight-24">
                         Microsoft is the recognized leader in cloud productivity solutions for business with Office 365 - transforming the workplace experience.
-                    </p> <br />{" "}
+                    </p> 
                     <p className="lineHeight-24">
                     With a certified team of Microsoft Partner Professionals, SYNECTIKS delivers on all Microsoft Cloud Solutions, including 
                     Office 365, SharePoint, Skype for Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility + Security), and Azure.
-                    <br />{" "}
+                    <br />
                     </p>                    
                     <p className="lineHeight-24">
                     Imagine what we can do for you!
-                    <br />{" "}
+                    <br />
                     </p>
                     <p className="lineHeight-24">
                     We don’t just move you to Office 365. We help you create and sustain a cost-efficient, highly responsive and 
                     secure evergreen workplace platform. We provide a holistic set of transformational and managed services to modernize your workplace.
-                    <br />{" "}
+                    <br />
                     </p>
                     <p className="lineHeight-24 list-tick">
                     <p><b>We can help accelerate your move to a digital workplace through our:</b>                        

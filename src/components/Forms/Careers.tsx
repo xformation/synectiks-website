@@ -18,17 +18,17 @@ export const Careers: React.StatelessComponent<{}> = () => {
             <div>
                 <img
                     className="  text-center py-5 mt-5"
-                    src="img/Careers.png" width="100%"
+                    src="img/CareersNew.jpg" width="100%"
                     alt="Card image Careers"
                 />
-                <div className="text-center centered ">
+                {/* <div className="text-center centered ">
                     <div className="text-white">
                         <h3>Careers</h3>
                     </div>
-                </div>
+                </div> */}
             </div>
 
-            <div className="px-5 pt-3 text-center" data-aos="fade-up" data-aos-duration="2000">
+            {/* <div className="px-5 pt-3 text-center" data-aos="fade-up" data-aos-duration="2000">
                 <h4><i>
                     “Talented, hardworking, and passionate personalities. We love what we do.<br />
                     Together as a Team, We work for the success of Our Customer.”
@@ -36,11 +36,10 @@ export const Careers: React.StatelessComponent<{}> = () => {
                 <p>Our motto<br />
                     Work Hard, Be Kind, Stay Humble
                 </p>
-            </div>
+            </div> */}
 
-            <div className='text-center mt-3 lineHeight-24' data-aos="fade-up" data-aos-duration="2000">
-                <h2>Careers</h2>
-                <p>Opportunity is infinite!</p>
+            <div className='text-center pb-3 lineHeight-24' data-aos="fade-up" data-aos-duration="2000">
+                <h2>Careers - Opportunity is infinite!</h2>
             </div>
 
             <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">

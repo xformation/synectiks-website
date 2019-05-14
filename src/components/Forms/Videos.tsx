@@ -22,17 +22,17 @@ export const Videos: React.StatelessComponent<{}> = () => {
             <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
             <div className="pb-3 col-sm-4" >
             <Link to="/featured">
-                        <button className='btn btnResource menu-bg'>Featured</button>
+                        <button className='btn btnResource bg-logoblue text-white'>Featured</button>
                         </Link>
                     </div>
                     <div className="pb-3 col-sm-4" >
                     <Link to="/casestudy">
-                        <button className='btn btnResource menu-bg'>Case Studies</button>
+                        <button className='btn btnResource bg-logoblue text-white'>Case Studies</button>
                         </Link>
                     </div>
                     <div className="pb-3 col-sm-4" >
                     <Link to="/videos">
-                        <button className='btn btnResource menu-bg'>Videos</button>
+                        <button className='btn btnResource bg-logoblue text-white'>Videos</button>
                         </Link>
                     </div>
                     </div>

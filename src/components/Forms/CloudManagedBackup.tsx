@@ -111,8 +111,8 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
             </div>
    
             <div className="d-flex justify-content-around align-items-center flex-col text-center" data-aos="fade-up" data-aos-duration="2000">
-                    <div className="w-40 p-5">
-                        <img src="img/CloudBackupSlider.png" width="75%" alt="Cloud Backup" />{" "}
+                    <div className=" pb-5">
+                        <img src="img/CloudManagedBackup_Subpage.jpg" width="100%" alt="Cloud Backup" />{" "}
                     </div>
                 </div>  
 

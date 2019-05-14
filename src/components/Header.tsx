@@ -63,7 +63,7 @@ export const Header: React.StatelessComponent<{}> = () => {
           
               <ul className="navbar-nav navfont ml-auto text-capitalize pt-6">
                 <li className="nav-item dropdown  " >
-                  <a className="nav-link px-3"     
+                  <a className="nav-link px-4"     
                     href="#"
                     id="navbardrop"
                     data-toggle="dropdown" >
@@ -110,7 +110,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                 </li> */}
                 <li className="nav-item dropdown  ">
                   <a
-                    className="nav-link px-3" 
+                    className="nav-link px-4" 
                     href="#"
                     id="navbardrop1"
                     data-toggle="dropdown" >
@@ -150,7 +150,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                 </li>
                 
                 <li className="nav-item dropdown  ">
-                  <a className="nav-link px-3" 
+                  <a className="nav-link px-4" 
                     href="#"
                     id="navbardrop3"
                     data-toggle="dropdown">
@@ -196,7 +196,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                 
             
                     <li className="nav-item dropdown">
-                <a className="nav-link px-3" 
+                <a className="nav-link px-4" 
                     href="#"
                     id="navbardrop4"
                     data-toggle="dropdown">
@@ -211,15 +211,15 @@ export const Header: React.StatelessComponent<{}> = () => {
                       {" "}
                       Case Studies{" "}
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/videos">
+                    {/* <NavLink className="dropdown-item" to="/videos">
                       {" "}
                       Videos{" "}
-                    </NavLink>
+                    </NavLink> */}
                   </div>
                 </li>
                 
                 <li className="nav-item dropdown  ">
-                  <a className="nav-link px-3"
+                  <a className="nav-link px-4"
                     href="#"
                     id="navbardrop5"
                     data-toggle="dropdown"

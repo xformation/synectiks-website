@@ -110,13 +110,13 @@ export const CloudDisasterRecovery: React.StatelessComponent<{}> = () => {
             </div>
 
             <div className="d-flex justify-content-around align-items-center text-center flex-col" data-aos="fade-up" data-aos-duration="2000">
-                    <div className="w-40 p-5">
-                        <img src="img/CloudDisRecoverySlider.png" width="75%" alt="Cloud Disaster Recovery" />{" "}
+                    <div className=" pb-5">
+                        <img src="img/DisasterRecovery_Subpage.jpg" width="100%" alt="Cloud Disaster Recovery" />{" "}
                     </div>
                 </div>  
 
    
-            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
+            <div className="w-100 px-5 text-black text-justify" >
                 <h4 className='my-3'>Protect your enterprise data with recovery capabilities that keep the lights on!</h4>           
             <p className="lineHeight-34 list-tick">                 
             {/* Take a Smarter Approach to Data Protection, Avoid Disruptions to Your Data – and Your Business */}

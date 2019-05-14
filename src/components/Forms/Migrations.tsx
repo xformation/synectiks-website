@@ -9,10 +9,14 @@ import { NavLink } from "react-router-dom";
 export const Migrations: React.StatelessComponent<{}> = () => {
     return (
         <div className='bg-lightgrey'>
+          <div className="w-100 py-5 mt-5">
+          <img height="auto" width="100%" className="" src="img/CloudMigrationOptimization.jpg" alt="Microservices"/>
+        </div>
 
-            <div className='bg-theme mt-3'>
+
+            {/* <div className='bg-theme mt-3'>
                 <h1 className='text-center text-white pt-theme mt-2'>Cloud Migrations &amp; Optimization</h1>
-            </div>
+            </div> */}
          
             <div className="px-5 pt-4 text-center" data-aos="fade-up" data-aos-duration="2000">
                 <h4><i>
@@ -50,7 +54,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
             </div>
             <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
                 <h4>
-                    Rehost-
+                    Rehost :
                </h4>
                 <div className="d-flex justify-content-around align-items-center flex-col">
                     <div className="text-center">
@@ -61,7 +65,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
 
             <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
                 <h4>
-                Refactor-
+                Refactor :
                </h4>
                 <div className="d-flex justify-content-around align-items-center flex-col">
                     <div className="text-center">
@@ -72,7 +76,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
 
             <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
                 <h4>
-                Legacy Application Migration– 
+                Legacy Application Migration : 
                </h4>
                <p className="lineHeight-24 pt-3">
                Two ways to extract value from legacy apps Extracting the data in a Data Lake and exposing that
@@ -92,7 +96,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
 
             <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
                 <h4>
-                Accelerated Migration– 
+                Accelerated Migration : 
                </h4>               
                 <p className="lineHeight-24 pt-3">
                 With synectiks xformation  platform, companies can take advantage of an API-driven cloud 
@@ -101,13 +105,13 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 rapidly with adequate security and governance.
             </p>
             <div className=" text-center">
-                    <img src="img/Foundation.svg" width="75%" alt="Accelerated Migration" />{" "}
+                    <img src="img/Foundation.svg" width="65%" alt="Accelerated Migration" />{" "}
                 </div>
             </div>
 
             <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
                 <h4>
-                Delivery Pipeline– 
+                Delivery Pipeline : 
                </h4>               
                 <p className="lineHeight-24 pt-3">
                 Synectiks xformation platform comes with industry standard CI/CD blueprint infrastructure 
@@ -118,7 +122,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 with ever increasing security and compliance guidelines.
                 </p>
             <div className=" text-center">
-                    <img src="img/transformation_2.png" width="75%" alt="Transformation" />{" "}
+                    <img src="img/transformation_2.png" width="65%" alt="Transformation" />{" "}
                 </div>
             </div>
 
@@ -126,7 +130,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
             <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
                 <h4>
                 Redevelopment –
-                Microservices Based App Development – 
+                Microservices Based App Development : 
                </h4>               
                 <p className="lineHeight-24 pt-3">
                 Synectiks application development service offering allow customers to realize the real 
@@ -138,14 +142,14 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 microservice based enterprise application component diagram is below:
             </p>
             <div className=" text-center">
-                    <img src="img/Enterprise-Platform.png" width="75%" alt=" Redevelopment Microservices" />{" "}
+                    <img src="img/Enterprise-Platform.png" width="65%" alt=" Redevelopment Microservices" />{" "}
                 </div>
             </div>
 
             
             <div className="px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
                 <h4>
-                Bigdata Analytic – 
+                Bigdata Analytic : 
                </h4>               
                 <p className="lineHeight-24 pt-3">
                 Synectiks analytic service offering allow customers to create data lake for their 
@@ -157,7 +161,7 @@ export const Migrations: React.StatelessComponent<{}> = () => {
                 workloads inside a single cluster platform and can truly focus on outcomes.
                 </p>
             <div className=" text-center">
-                    <img src="img/Migration_1.png" width="50%" alt="Bigdata Analytic" />{" "}
+                    <img src="img/Redevelopment.jpg" width="75%" alt="Bigdata Analytic" />{" "}
                 </div>
             </div>
 

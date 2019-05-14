@@ -9,10 +9,10 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
     return (
         <div  className='bg-lightgrey'>
 
-        <div className="w-100 py-5 mt-5" data-aos="fade-up" data-aos-duration="2000">
+        <div className="w-100 py-5 mt-5" >
                 <img height="auto" width="100%"
                     className=""
-                    src="img/Managedservice.png"
+                    src="img/ManagedServices.jpg"
                     alt="Managed Services"
                 />
             </div>
@@ -52,63 +52,92 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
                     and complex businesses and governments in the world. Our world-class services, include:                   
                     </p>
             </div>
+
+        <div
+        className="d-flex px-5 py-3 flex-col text-center col-lg-12"
+        data-aos="fade-up"
+        data-aos-duration="2000">
+
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Architecture, Design and Deployment</b>
+            </p>
+          </div>
+        </div>
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Data Center Consolidation Services</b>
+            </p>
+          </div>
+        </div>
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Data Migration Services</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="d-flex px-5 py-3 flex-col text-center col-lg-12"
+        data-aos="fade-up"
+        data-aos-duration="2000">
+
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Software Defined Infrastructure Services</b>
+            </p>
+          </div>
+        </div>
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Automation</b>
+            </p>
+          </div>
+        </div>
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Operations &amp; Support Services</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="d-flex px-5 py-3 flex-col text-center col-lg-12"
+        data-aos="fade-up"
+        data-aos-duration="2000">
+
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Project Management</b>
+            </p>
+          </div>
+        </div>
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Auditing &amp; Monitoring Services</b>
+            </p>
+          </div>
+        </div>
+        <div className="p-3 m-1 col-md-4 border-grey-2px text-center">
+          <div className="w-100 ">
+            <p className="borderbtm-grey-1px">
+              <b>Managed Security Services</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
 {/* border-grey-2px */}
-        <div className="d-flex  p-2 flex-col text-center col-lg-12" data-aos="fade-up" data-aos-duration="2000">          
-          <div className="pb-3 col-sm-4  m-1" >
-              <div className="w-75  py-3">                       
-                  <p><b>Architecture, Design and Deployment</b></p>                                       
-              </div>
-          </div>
-          <div className="pb-3 col-sm-4  m-1" >
-              <div className="w-75  py-3">                       
-                  <p><b>Data Center Consolidation Services</b></p>                                       
-              </div>
-          </div>
-          <div className="pb-3 col-sm-4  m-1" >
-              <div className="w-75  py-3">                       
-                  <p><b>Data Migration Services</b></p>                                       
-              </div>
-          </div>
-
-          </div>
-          <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
-          data-aos="fade-up" data-aos-duration="2000">          
-          <div className="pb-3 col-sm-4" >
-              <div className="w-75 px-5 py-3">                       
-                  <p><b>Software Defined Infrastructure Services</b></p>                                       
-              </div>
-          </div>
-          <div className="pb-3 col-sm-4" >
-              <div className="w-75 px-5 py-3">                       
-                  <p><b>Automation</b></p>                                       
-              </div>
-          </div>
-          <div className="pb-3 col-sm-4" >
-              <div className="w-75 px-5 py-3">                       
-                  <p><b>Operations &amp; Support Services</b></p>                                       
-              </div>
-          </div>
-
-          </div>
-          <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
-          data-aos="fade-up" data-aos-duration="2000">          
-          <div className="pb-3 col-sm-4" >
-              <div className="w-75 px-5 py-3">                       
-                  <p><b>Project Management</b></p>                                       
-              </div>
-          </div>
-          <div className="pb-3 col-sm-4" >
-              <div className="w-75 px-5 py-3">                       
-                  <p><b>Auditing &amp; Monitoring Services</b></p>                                       
-              </div>
-          </div>
-          <div className="pb-3 col-sm-4" >
-              <div className="w-75 px-5 py-3">                       
-                  <p><b>Managed Security Services</b></p>                                       
-              </div>
-          </div>
-
-          </div>
 
           <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
           data-aos="fade-up" data-aos-duration="2000">

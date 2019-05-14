@@ -86,7 +86,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
             </div>
 
             <div className='text-center p-5'>
-                <button className='btn menu-bg btnSend'>Submit</button>
+                <button className='btn bg-logoblue text-white btnSend'>Submit</button>
             </div>
             {/* Contact Ends */}
 
@@ -141,12 +141,13 @@ export const Contact: React.StatelessComponent<{}> = () => {
             <div>
                 <h2 className='text-center'>CONTACT US</h2>
             </div>
+            {/* className="italic" */}
 
             <div className="d-flex justify-content-around my-5 flex-col">
 
                 <div className="pb2 pl-5" >
                     <h5>USA</h5>
-                    <small className="italic" >
+                    <small  >
                         300 Alexander Park Drive, Suite 215,<br />
                         Princeton, NJ 08540<br />
                         Sales: +1 (609) 608-0429 X 112<br />
@@ -155,7 +156,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
                 </div>
                 <div className="pb2">
                     <h5>INDIA</h5>
-                    <small className="italic" >
+                    <small  >
                         3rd Floor, Plot# 25 &amp; 26,<br />
                         Survey # 71, Madhapur,<br />
                         Hyderabad, IN 500 081<br />
@@ -164,7 +165,7 @@ export const Contact: React.StatelessComponent<{}> = () => {
                 </div>
                 <div className="pb2">
                     <h5>SINGAPORE</h5>
-                    <small className="italic" >
+                    <small  >
                         1 Sophia Road, #05-23,<br />
                         Peace Center,<br />
                         Singapore 228149<br />

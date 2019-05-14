@@ -5,13 +5,18 @@ import { LARGE } from "material-ui/utils/withWidth";
 
 export const Softwaredefined: React.StatelessComponent<{}> = () => {
     return (
-        <div>        
+        <div className="bg-lightgrey">        
             
-            <div className='bg-theme mt-3'>
+            {/* <div className='bg-theme mt-3'>
             <h1 className='text-center text-white pt-theme mt-2'>Large Motor Company</h1>
-            </div>
+            </div> */}
+                        <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
+                    <div className="w-40 py-5">
+                        <img src="img/LargeMotorComapny.jpg" width="100%" alt="Cloud Backup" />{" "}
+                    </div>
+                </div> 
             <div className="px-5">
-            <p className='lineHeight-24 pt-5'>
+            <p className='lineHeight-24 pt-2'>
             The leadership took a decision to become Harwdare/OS/Operation/vendor agnostic and achive scalability and reliability across the organisation.
              We helped them with all the technologies, training to make that happen. Our open platform helped them to become complete software defined, automate all operations. 
             We helped them to learn to manage IT in most modern way.

@@ -5,13 +5,18 @@ import { LARGE } from "material-ui/utils/withWidth";
 
 export const Storagemigration: React.StatelessComponent<{}> = () => {
     return (
-        <div>
+        <div className="bg-lightgrey">
 
-            <div className='bg-theme mt-3'>
+            {/* <div className='bg-theme mt-3'>
                 <h1 className='text-center text-white pt-theme mt-2'>Storage Migration</h1>
-            </div>
+            </div> */}
+            <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
+                    <div className="w-40 py-5">
+                        <img src="img/StorageMigration.jpg" width="100%" alt="Cloud Backup" />{" "}
+                    </div>
+                </div> 
 
-            <div className="p-5">
+            <div className="px-5 py-3">
                 <h4 className='lineHeight-24 text-center'>
                     San connectivity via Synectiks Storage Network Solutions
             </h4><br />

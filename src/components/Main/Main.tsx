@@ -84,10 +84,10 @@ export const Main: React.StatelessComponent<{}> = () => {
             <div className="img-np flex-col">
               <img width="100%" height=""
                 className="w-100 text-right animated fadeInRightBig slow dealy-4s"
-                src="img/Slider1.jpg"
+                src="img/Slider1.svg"
                 alt="Synectiks Open Xformation"
               />
-              <div className="text-center btnLearnmore">
+              <div className="text-center pt-4 btnLearnmore">
                 <div className="text-white  animated fadeInRightBig slow dealy-4s">
                   <p>
                     <Link to="/foundation" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -153,13 +153,13 @@ export const Main: React.StatelessComponent<{}> = () => {
             <div className="img-np flex-col">
               <img width="100%"
                 className="w-100 height-38 text-right animated fadeInRightBig slow dealy-4s"
-                src="img/CloudBackupSlider.png"
+                src="img/CloudManagedBackup_Slider5.jpg"
                 alt="Cloud Managed Backup"
               />
               <div className="text-center btnLearnmore ">
                 <div className="text-white  animated fadeInRightBig slow dealy-4s">
                   <p>
-                    <Link to="/CloudManagedBackup" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
+                    <Link to="/CloudManagedBackup" className="btn text-white bg-yellow text-uppercase btnLearn">learn more</Link>
                   </p>
                 </div>
               </div>
@@ -273,12 +273,10 @@ export const Main: React.StatelessComponent<{}> = () => {
             />            
           </div> */}
 
-        <div className="p-2 flex-fill mt-8">
-
-          <div className="d-flex justify-content-around align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000" >
-            {/* <Fade bottom> */}
-            <div className="w-40 p-5">
-              <img src="img/SDT.png" width="100%" alt="Software Defined Transformtaion" />{" "}
+        {/* <div className="p-2 flex-fill mt-8">
+          <div className="d-flex p-5 justify-content-around align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000" >
+            <div className="text-center ">
+              <img src="img/CS_SoftwareDefinedTransformation.jpg" width="75%" alt="Software Defined Transformtaion" />{" "}
             </div>
             <div className="text-group align-self-center">
               <h4 className="font-weight-bold">Software Defined Transformtaion{" "}</h4>
@@ -289,13 +287,10 @@ export const Main: React.StatelessComponent<{}> = () => {
                 Learn more <i className="fa fa-arrow-right" />
               </Link>
             </div>
-            {/* </Fade> */}
           </div>
-
-          <div className="d-flex flex-row-rev justify-content-around align-items-center  flex-col" data-aos="fade-up" data-aos-duration="2000">
-
-            <div className="w-40 p-5">
-              <img src="img/RTM.png" width="100%" alt="Realtime Monitoring" />{" "}
+          <div className="d-flex flex-row-rev  p-5 justify-content-around align-items-center  flex-col" data-aos="fade-up" data-aos-duration="2000">
+            <div className="text-center">
+              <img src="img/CS_Realtime_Monitoring.jpg" width="75%" alt="Realtime Monitoring" />{" "}
             </div>
             <div className="text-group align-self-center ">
               <h4 className="font-weight-bold">Realtime Monitoring </h4>
@@ -308,14 +303,12 @@ export const Main: React.StatelessComponent<{}> = () => {
               </Link>
             </div>
           </div>
-
-          {/* animated fadeInUp slow dealy-4s  data-aos="zoom-in-up"*/}
-          <div className="d-flex justify-content-around align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
-            <div className="w-40 p-5">
-              <img src="img/SM.png" width="100%" alt="Software Migration" />{" "}
+          <div className="d-flex p-5 justify-content-around align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
+            <div className="text-center ">
+              <img src="img/CS_Software_Migration.jpg" width="75%" alt="Software Migration" />{" "}
             </div>
             <div className="text-group align-self-center">
-              <h4 className="font-weight-bold">Software Migration </h4>
+              <h4 className="font-weight-bold">Storage Migration </h4>
               <p>
                 Zero downtime, Zero Fault Petabytes storage migration of Largest
                 Financial Sector.
@@ -325,8 +318,61 @@ export const Main: React.StatelessComponent<{}> = () => {
               </Link>
             </div>
           </div>
+        </div> */}
+{/* <div className="p-2 flex-fill mt-8"></div> */}
 
-        </div>
+        <div className="d-flex justify-content-around pt-2 flex-fill mt-8 align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
+<div>
+    <div className="p-5">
+        <img src="img/CS_SoftwareDefinedTransformation.jpg" width="100%" alt="Enterprise-DevOps" />{" "}
+
+        <div className="text-group align-self-center">
+              <h4 className="font-weight-bold pt-2">Software Defined Transformtaion{" "}</h4>
+              <p>
+                Moving to AWS cloud with Data Center retirement for Motor Industry.
+            </p>{" "}
+              <Link to="/softwaredefined">
+                Learn more <i className="fa fa-arrow-right" />
+              </Link>
+            </div>
+    </div>
+</div>
+
+<div>
+    <div className="p-5">
+        <img src="img/CS_Realtime_Monitoring.jpg" width="100%" alt="Enterprise-Transformation" />{" "}
+
+        <div className="text-group align-self-center ">
+              <h4 className="font-weight-bold pt-2">Realtime Monitoring </h4>
+              <p>
+                Highly Scalable extremely customizable realtime monitoring
+                platform for a large telco.
+            </p>{" "}
+              <Link to="/realtime">
+                Learn more <i className="fa fa-arrow-right" />
+              </Link>
+            </div>
+    </div>
+</div>
+
+<div>
+    <div className="p-5">
+        <img src="img/CS_Software_Migration.jpg" width="100%" alt="Enterprise-Transformation" />{" "}
+
+        <div className="text-group align-self-center">
+              <h4 className="font-weight-bold pt-2">Storage Migration </h4>
+              <p>
+                Zero downtime, Zero Fault Petabytes storage migration of Largest
+                Financial Sector.
+            </p>{" "}
+              <Link to="/storagemigration">
+                Learn more <i className="fa fa-arrow-right" />
+              </Link>
+            </div>
+    </div>
+</div>
+
+</div>
 
       </div>
     </div>

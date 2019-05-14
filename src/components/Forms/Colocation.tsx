@@ -134,21 +134,22 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                         facility management and monitoring of client-owned equipment in a secured SYNECTIKS data center environment.
                     <br />{" "}
                     </p>
+                    <p className="lineHeight-24">
+                    Organizations are exploring cloud solutions to scale capacity according to changing business requirements quickly.
+                    <br />{" "}
+                    </p>
+                    <p className="lineHeight-24">
+                    SYNECTIKS Colocation Services host and care for your IT equipment in highly efficient and secure data
+                    center facilities. As your organization grows, SYNECTIKS can assist in transforming your environment
+                    to a traditional, managed cloud or a hybrid environment, and we can manage and monitor that environment for you.
+                    <br />{" "}
+                    </p>
 
                 </div>
             </div>
 
             <div className="w-100 px-5 text-black text-justify">
-                <p className="lineHeight-24">
-                    Organizations are exploring cloud solutions to scale capacity according to changing business requirements quickly.
-                    <br />{" "}
-                </p>
-                <p className="lineHeight-24">
-                    SYNECTIKS Colocation Services host and care for your IT equipment in highly efficient and secure data
-                    center facilities. As your organization grows, SYNECTIKS can assist in transforming your environment
-                    to a traditional, managed cloud or a hybrid environment, and we can manage and monitor that environment for you.
-                    <br />{" "}
-                </p>
+                            
                 <p className="lineHeight-24">
                     You can add data center capacity as you need it &amp; when you need it, without capital outlay, by
                     hosting client-owned and operated hardware in our best-in-class facilities on a "pay-for-what-you-use" basis.
@@ -162,8 +163,8 @@ export const Colocation: React.StatelessComponent<{}> = () => {
             <div className="d-flex justify-content-around col-lg-12 py-5 text-center flex-col" data-aos="fade-up" data-aos-duration="2000">
                 <div className='col-md-3'>
                     <img
-                        className="   py-3"
-                        src="img/Costcontrol.png" width="75%"
+                        className="py-3"
+                        src="img/Costcontrol.png" width="60%"
                         alt="Costcontrol"
                     />
                     <p>Cost Control</p>
@@ -179,7 +180,7 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                 <div className='col-md-3'>
                     <img
                         className="   py-3"
-                        src="img/Staff.png" width="75%"
+                        src="img/Staff.png" width="81%"
                         alt="Staff"
                     />
                     <p>Knowledgeable Staff</p>
@@ -187,7 +188,7 @@ export const Colocation: React.StatelessComponent<{}> = () => {
                 <div className='col-md-3'>
                     <img
                         className="   py-3 "
-                        src="img/Scale.png" width="75%"
+                        src="img/Scale.png" width="89%"
                         alt="Scale"
                     />
                     <p>Scale Up or Down</p>
