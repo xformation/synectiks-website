@@ -136,9 +136,7 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
           </div>
         </div>
       </div>
-
 {/* border-grey-2px */}
-
           <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
           data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
@@ -160,80 +158,6 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
                 </div>
                 </div>
 
-
-          
-
-            {/* Contact Starts */}
-            {/* <div className='py-3 '>
-                <h2 className='text-center text-black'>Ask for Demo</h2>
-                <h5 className='text-center text-black'>Straight talk on your challenges.</h5>
-            </div>
-
-            <div className="px-5 py-3 ">
-
-                <div className="d-flex text-center col-md-12 p-2 flex-col">
-                    <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;First Name" width="90%" />
-                    </div>
-                    <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Last Name" width="90%" />
-                    </div>
-                    <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Email" width="90%" />
-                    </div>
-                </div>
-
-                <div className="d-flex text-center col-md-12 p-2 flex-col">
-                    <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Company" width="90%" />
-                    </div>
-                    <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;City" width="90%" />
-                    </div>
-                    <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Mobile" width="90%" />
-                    </div>
-                </div>
-
-                <div className="d-flex text-center col-md-12 p-2 flex-col">
-                    <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Phone" width="90%" />
-                    </div>
-                    <div className="col-sm-4 p-2 " >
-                       
-                        <select className="inputBoxFlex">
-                            <option value="enterprise">&nbsp;Contact&nbsp;Source</option>
-                            <option value="enterprise">&nbsp;Advertisement</option>
-                            <option value="foundation">&nbsp;Customer&nbsp;Event</option>
-                            <option value="migration">&nbsp;Employee&nbsp;Referral</option>
-                            <option value="operations">&nbsp;Google&nbsp;Adwords</option>
-                            <option value="others">&nbsp;Other</option>
-                            <option value="optimization">&nbsp;Partner</option>
-                            <option value="optimization">&nbsp;Purchased&nbsp;List</option>
-                            <option value="optimization">&nbsp;Trade&nbsp;Show</option>
-                            <option value="optimization">&nbsp;Webinar</option>
-                            <option value="optimization">&nbsp;Website</option>
-                        </select>
-                    </div>
-                    <div className="col-sm-4 p-2" >
-                      
-                        <select className="inputBoxFlex">
-                            <option value="enterprise">&nbsp;Select&nbsp;Service</option>
-                            <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
-                            <option value="foundation">&nbsp;Foundation</option>
-                            <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
-                            <option value="operations">&nbsp;Operations</option>
-                            <option value="optimization">&nbsp;Optimization</option>
-                            <option value="others">&nbsp;Others</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div className='text-center p-5'>
-                <button className='btn menu-bg btnSend'>Submit</button>
-            </div> */}
-            {/* Contact Ends */}
 
         </div>
 

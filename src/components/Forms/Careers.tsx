@@ -96,84 +96,10 @@ export const Careers: React.StatelessComponent<{}> = () => {
                 </p>
 
             </div>
+            <div className="container">
+        <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
+      </div>
 
-            {/* <div className="d-flex justify-content-around p-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
-                <div className='text-left'>
-                    <h5>Account Manager</h5>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                     Quisque dolor elit, rutrum venenatis libero in, vulputate tortor.<br/>                      
-                     Aenean mollis nibh ut consectetur eleifend.<br/>
-                     Nam fringilla et massa a euismod.
-                    </small>
-                    <div className="pt-3" >
-                        <button style={btn} className='btn menu-bg'>Apply Now</button>
-                    </div>
-                </div>
-
-                <div className='text-left'>
-                    <h5>Programmer</h5>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                     Quisque dolor elit, rutrum venenatis libero in, vulputate tortor.<br/>                      
-                     Aenean mollis nibh ut consectetur eleifend.<br/>
-                     Nam fringilla et massa a euismod.
-                    </small>
-                    <div className="pt-3" >
-                        <button style={btn} className='btn menu-bg'>Apply Now</button>
-                    </div>
-                </div>
-
-                <div className='text-left'>
-                    <h5>Web Developer</h5>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                     Quisque dolor elit, rutrum venenatis libero in, vulputate tortor.<br/>                      
-                     Aenean mollis nibh ut consectetur eleifend.<br/>
-                     Nam fringilla et massa a euismod.
-                    </small>
-                    <div className="pt-3" >
-                        <button style={btn} className='btn menu-bg'>Apply Now</button>
-                    </div>
-                </div>
-
-            </div> */}
-
-            {/* <div className="d-flex justify-content-around px-5 pb-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
-                <div className='text-left'>
-                    <h5>Technical Support</h5>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                     Quisque dolor elit, rutrum venenatis libero in, vulputate tortor.<br/>                      
-                     Aenean mollis nibh ut consectetur eleifend.<br/>
-                     Nam fringilla et massa a euismod.
-                    </small>
-                    <div className="pt-3" >
-                        <button style={btn} className='btn menu-bg'>Apply Now</button>
-                    </div>
-                </div>
-        
-                <div className='text-left'>
-                    <h5>UI Designer</h5>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                     Quisque dolor elit, rutrum venenatis libero in, vulputate tortor.<br/>                      
-                     Aenean mollis nibh ut consectetur eleifend.<br/>
-                     Nam fringilla et massa a euismod.
-                    </small>
-                    <div className="text-left pt-3" >
-                        <button style={btn} className='btn menu-bg'>Apply Now</button>
-                    </div>
-                </div>    
-
-                     <div className='text-left'>
-                    <h5>Design Engineer</h5>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                     Quisque dolor elit, rutrum venenatis libero in, vulputate tortor.<br/>                      
-                     Aenean mollis nibh ut consectetur eleifend.<br/>
-                     Nam fringilla et massa a euismod.
-                    </small>
-                    <div className="text-left pt-3" >
-                        <button style={btn} className='btn menu-bg'>Apply Now</button>
-                    </div>
-                </div>           
-
-            </div> */}
 
         </div>
 

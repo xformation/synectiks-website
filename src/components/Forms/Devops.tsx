@@ -247,10 +247,6 @@ export const Devops: React.StatelessComponent<{}> = () => {
         <h4 className="">Key Benefits</h4>
       </div>
 
-      {/*  */}
-
-      {/*  */}
-
       <div
         className="d-flex px-5 py-3 flex-col text-center col-lg-12"
         data-aos="fade-up"

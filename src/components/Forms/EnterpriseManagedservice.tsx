@@ -14,7 +14,7 @@ export const EnterpriseManagedservice: React.StatelessComponent<{}> = () => {
                 <div className="text-center centered p-3 mt-5">
                     <div className="text-white">
                         <h3>Managed&nbsp;Services</h3>
-                        {/* <br /> */}
+                       
                         <h5>Cutting&nbsp;Edge&nbsp;Capabilities.&nbsp;Significant&nbsp;Cost&nbsp;Benefits.</h5>
                     </div>
                 </div>

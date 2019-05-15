@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Input,Label,Form,FormGroup } from 'reactstrap';
 
-
 // export const Microservices: React.StatelessComponent<{}> = () => {
 
 export class Microservices extends React.Component<any,any,any> {

@@ -147,8 +147,7 @@ export const Microservicehelp: React.StatelessComponent<{}> = () => {
               <NavLink className="navlink navfont noLine" to="/contactus">Contact us&nbsp;</NavLink>to learn more about 
               SYNECTIKS Microservice Transformation Service.
               </p> */}
-   
-   
+              
   {/* Help End */}
       <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
             <div className="pb-3 col-sm-3" >
@@ -176,8 +175,6 @@ export const Microservicehelp: React.StatelessComponent<{}> = () => {
       {/* Contact Starts */}
      
       {/* Contact Ends */}
-
-
 
       </div>
     </div>

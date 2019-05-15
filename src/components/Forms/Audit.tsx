@@ -79,10 +79,7 @@ export const Audit: React.StatelessComponent<{}> = () => {
                         <img src="img/4-icons.png" width="100%" alt="Featured" />{" "}                  
                     </div>
                 </div> */}
-
-
             {/* <div className="d-flex col-lg-12 justify-content-around align-items-center flex-col m-3">
-                            
                             </div> */}
 
 

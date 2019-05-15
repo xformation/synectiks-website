@@ -125,7 +125,7 @@ class Background extends React.Component {
                 <div className="img-np flex-col">
                   <img width="100%" height="auto"
                     className="w-100  text-right animated fadeInRightBig slow dealy-4s"
-                    src="img/Slider1.png"
+                    src="img/Slider1.jpg"
                     alt="Second slide"
                   />
                     <div className="text-center btnLearnmore">

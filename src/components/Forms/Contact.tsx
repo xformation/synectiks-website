@@ -90,54 +90,6 @@ export const Contact: React.StatelessComponent<{}> = () => {
             </div>
             {/* Contact Ends */}
 
-
-            {/* <div className="contFields">
-            <div className="d-flex justify-content-around text-left mr-5 py-2 flex-col">       
-                <div className="d-flex" >
-                    <p className="px6 mr-2 inline" >Name&nbsp;*</p>
-                    <input  className="inputBoxFlex"/>
-                </div>        
-
-                <div className="d-flex">
-                    <p className="px6 mr-2 inline" >E&nbsp;Mail&nbsp;*</p>
-                    <input className="inputBoxFlex" />
-                </div>
-            </div>
-
-            <div className="d-flex justify-content-around text-left mr-5 py-2 flex-col">            
-                <div className="d-flex">
-                    <p className="px6 mr-2 inline">Phone&nbsp;*</p>
-                    <input className="inputBoxFlex" />
-                </div>
-                
-                <div className="d-flex">
-                    <p className="px6 inline" >Subject&nbsp;*</p>
-                    <input className="inputBoxFlex"/>
-                </div>               
-            </div>
-
-            <div className="d-flex justify-content-around text-left mr-5 py-2 flex-col">
-                <div className="d-flex">
-                    <p className="px6 inline" >Services&nbsp;*</p>
-                    <select className="inputBoxFlex">
-                        <option value="enterprise">Enterprise Transformation</option>
-                        <option value="foundation">Foundation</option>
-                        <option value="migration">Migration &amp; Deployment</option>
-                        <option value="operations">Operations</option>
-                        <option value="optimization">Optimization</option>
-                        <option value="others">Others</option>
-                    </select>
-                </div>            
-                 <div className="d-flex">
-                    <p className="px6 inline" >Comment&nbsp;*</p>
-                    <textarea className="inputBoxFlex mr05" />
-                </div>
-            </div>
-            </div>
-            <div className='text-center p-5'>
-                <button  className='btn menu-bg btnSend'>Send</button>
-            </div> */}
-
             <div>
                 <h2 className='text-center'>CONTACT US</h2>
             </div>
@@ -176,12 +128,8 @@ export const Contact: React.StatelessComponent<{}> = () => {
 
             {/* <div className='text-center p-5 flex-col'>
                 <h5>SOCIALS</h5>
-                <i className="fa fa-twitter" aria-hidden="true"></i>
+                <i className="fa fa-twitter fa fa-facebook-square fa-linkedin-square" aria-hidden="true"></i>
                 <small className="italic">Twitter</small>&emsp;
-                    <i className="fa fa-facebook-square" aria-hidden="true"></i>
-                <small className="italic">Facebook</small>&emsp;
-                    <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                <small className="italic">Linkedin</small>
             </div> */}
 
             {/* <div>

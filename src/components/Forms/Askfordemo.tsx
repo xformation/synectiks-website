@@ -87,7 +87,7 @@ export const Askfordemo: React.StatelessComponent<{}> = () => {
    </div>
 
    <div className='text-center p-5'>
-       <button className='btn menu-bg btnSend'>Submit</button>
+       <button className='btn bg-logoblue text-white btnSend'>Submit</button>
    </div>
    {/* Contact Ends */}
 
