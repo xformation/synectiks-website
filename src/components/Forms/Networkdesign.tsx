@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 
-export const Networkdesign: React.StatelessComponent<{}> = () => {
+// export const Networkdesign: React.StatelessComponent<{}> = () => {
+    export class Networkdesign extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div  className="bg-lightgrey">        
             
@@ -95,5 +104,6 @@ With just a few added scripts the customized solution merges with their existing
 
     );
 };
+    }
 
 export default Networkdesign;

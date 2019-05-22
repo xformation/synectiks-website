@@ -6,7 +6,16 @@ import { Link } from "react-router-dom";
 
 
 
-export const Transformation: React.StatelessComponent<{}> = () => {
+// export const Transformation: React.StatelessComponent<{}> = () => {
+    export class Transformation extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div className='bg-lightgrey'>        
             {/* <div>
@@ -185,5 +194,5 @@ export const Transformation: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+    }
 export default Transformation;

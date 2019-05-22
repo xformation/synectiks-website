@@ -6,7 +6,16 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 
-export const Migrations: React.StatelessComponent<{}> = () => {
+// export const Migrations: React.StatelessComponent<{}> = () => {
+    export class Migrations extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div className='bg-lightgrey'>
           <div className="w-100 py-5 mt-5">
@@ -169,5 +178,6 @@ export const Migrations: React.StatelessComponent<{}> = () => {
 
     );
 };
+    }
 
 export default Migrations;

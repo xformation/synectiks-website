@@ -11,7 +11,16 @@ const red = {
 const lineHeight = {
     lineHeight: "35px"
 }
-export const Aboutus: React.StatelessComponent<{}> = () => {
+// export const Aboutus: React.StatelessComponent<{}> = () => {
+    export class Aboutus extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div className='bg-lightgrey'>
 
@@ -152,6 +161,6 @@ export const Aboutus: React.StatelessComponent<{}> = () => {
         </div>
 
     );
-};
+}}
 
 export default Aboutus;

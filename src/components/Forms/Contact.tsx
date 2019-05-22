@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 
 
-export const Contact: React.StatelessComponent<{}> = () => {
+// export const Contact: React.StatelessComponent<{}> = () => {
+    export class Contact extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div className="bg-lightgrey">
             <div>
@@ -151,5 +160,5 @@ export const Contact: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+    }
 export default Contact;

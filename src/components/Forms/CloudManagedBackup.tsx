@@ -6,7 +6,16 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 
-export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
+// export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
+    export class CloudManagedBackup extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div className='bg-lightgrey' >
 
@@ -202,5 +211,6 @@ export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
 
     );
 };
+    }
 
 export default CloudManagedBackup;

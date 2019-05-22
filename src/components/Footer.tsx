@@ -24,9 +24,10 @@ export const Footer: React.StatelessComponent<{}> = () => {
 //  target="_blank"
     <div>      
       <div className="text-center fixed-bottom bg-grey content ">
-        <p >
+        <p className="mb-1 pt-2">
         SYNECTIKS uses proprietary and third-party cookies. By using our sites, you agree to our cookie policy.&nbsp;
         <NavLink className="navlink navfont noLine" to="/privacypolicy" ><small>View&nbsp;Policy&nbsp;</small></NavLink>
+        <button className='btn bg-logoblue text-white btnSend'>Agree</button>
         </p>
       </div>
       

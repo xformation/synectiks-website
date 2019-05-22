@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Privacypolicy: React.StatelessComponent<{}> = () => {
+// export const Privacypolicy: React.StatelessComponent<{}> = () => {
+    export class Privacypolicy extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div className='bg-lightgrey'>
 
@@ -302,5 +311,6 @@ export const Privacypolicy: React.StatelessComponent<{}> = () => {
 
     );
 };
+    }
 
 export default Privacypolicy;

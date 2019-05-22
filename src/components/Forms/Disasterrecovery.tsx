@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 
-export const Disasterrecovery: React.StatelessComponent<{}> = () => {
+// export const Disasterrecovery: React.StatelessComponent<{}> = () => {
+    export class Disasterrecovery extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div  className="bg-lightgrey">        
             
@@ -96,5 +105,6 @@ microservices, devops</p>
 
     );
 };
+    }
 
 export default Disasterrecovery;

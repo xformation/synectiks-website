@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Privatecloud: React.StatelessComponent<{}> = () => {
+// export const Privatecloud = () => {
+    export class Privatecloud extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div className='bg-lightgrey'>
 
@@ -142,7 +151,7 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
             <div className="container-fluid px-5" data-aos="fade-up" data-aos-duration="2000">
                 <div className="row justify-content-around align-items-center">
 
-                    <div className="card card-pvtcld mx-2 ">
+                    <div className="card card-pvtcld mx-2 mb-3">
                         <div className="w-100 card-bd  py-4 text-white bg-logoblue text-center"><span>Optimize &amp; Secure</span></div>
                         <div className="card-body">
                             <p className="lineHeight-24">
@@ -153,7 +162,7 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
                         </div>
                     </div>
 
-                    <div className="card card-pvtcld mx-2 ">
+                    <div className="card card-pvtcld mx-2 mb-3">
                         <div className="w-100 card-bd  py-4 text-white bg-logoblue text-center">Harness Powerful Cloud Services</div>
                         <div className="card-body">
                             <p className="lineHeight-24">
@@ -164,7 +173,7 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
                         </div>
                     </div>
 
-                    <div className="card card-pvtcld mx-2 ">
+                    <div className="card card-pvtcld mx-2 mb-3">
                         <div className="w-100 card-bd py-4 text-white bg-logoblue text-center">Modernize Your Existing Applications</div>
                         <div className="card-body">
                             <p className="lineHeight-24">
@@ -175,7 +184,7 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
                         </div>
                     </div>
 
-                    <div className="card card-pvtcld mx-2 ">
+                    <div className="card card-pvtcld mx-2 mb-3">
                         <div className="w-100 card-bd py-4 text-white bg-logoblue text-center">Customize Your Resources</div>
                         <div className="card-body">
                             <p className="lineHeight-24">
@@ -207,5 +216,5 @@ export const Privatecloud: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+    }
 export default Privatecloud;

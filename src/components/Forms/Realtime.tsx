@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 
-export const Realtime: React.StatelessComponent<{}> = () => {
+// export const Realtime: React.StatelessComponent<{}> = () => {
+    export class Realtime extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div className="bg-lightgrey">        
             
@@ -94,5 +103,5 @@ A highly cost-effective scalable monitoring platform.
 
     );
 };
-
+    }
 export default Realtime;

@@ -11,8 +11,17 @@ const btn = {
     background: 'linear-gradient(to bottom, #9a56ff, #d78afc)',
 };
 
-export const Careers: React.StatelessComponent<{}> = () => {
-    return (
+// export const Careers: React.StatelessComponent<{}> = () => {
+    export class Careers extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
+return (
         <div className='bg-lightgrey'>
 
             <div>
@@ -104,6 +113,6 @@ export const Careers: React.StatelessComponent<{}> = () => {
         </div>
 
     );
-};
+}}
 
 export default Careers;

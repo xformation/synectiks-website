@@ -5,8 +5,17 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Microservicebenefit: React.StatelessComponent<{}> = () => {
-    return (
+// export const Microservicebenefit: React.StatelessComponent<{}> = () => {
+    export class Microservicebenefit extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {   
+        return (
         <div className='bg-lightgrey text-justify '>
 
             <div className="w-100 py-5 mt-5">
@@ -100,5 +109,6 @@ export const Microservicebenefit: React.StatelessComponent<{}> = () => {
 
     );
 };
+    }
 
 export default Microservicebenefit;

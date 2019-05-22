@@ -3,7 +3,17 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 
-export const Softwaredefined: React.StatelessComponent<{}> = () => {
+// export const Softwaredefined: React.StatelessComponent<{}> = () => {
+
+    export class Softwaredefined extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+
+        render() {      
     return (
         <div className="bg-lightgrey">        
             
@@ -105,6 +115,7 @@ To achieve continuous delivery, we release quality codes every hour.
         </div>
 
     );
-};
+}
+    }
 
 export default Softwaredefined;

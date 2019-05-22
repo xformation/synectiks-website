@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 
-export const Storagetier: React.StatelessComponent<{}> = () => {
+// export const Storagetier: React.StatelessComponent<{}> = () => {
+    export class Storagetier extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div  className="bg-lightgrey">
 
@@ -92,5 +101,5 @@ Then we integrated the original data processing application with Alfresco API, t
 
     );
 };
-
+    }
 export default Storagetier;

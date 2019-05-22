@@ -2,7 +2,16 @@ import * as React from "react";
 // import { Right } from "react-bootstrap/lib/Media";
 import { LinearProgress } from "material-ui";
 
-export const EnterpriseManagedservice: React.StatelessComponent<{}> = () => {
+// export const EnterpriseManagedservice: React.StatelessComponent<{}> = () => {
+    export class EnterpriseManagedservice extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div>
             <div>
@@ -199,5 +208,5 @@ export const EnterpriseManagedservice: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+    }
 export default EnterpriseManagedservice;

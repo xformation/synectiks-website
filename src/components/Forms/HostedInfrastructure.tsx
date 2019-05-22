@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const HostedInfrastructure: React.StatelessComponent<{}> = () => {
+// export const HostedInfrastructure: React.StatelessComponent<{}> = () => {
+    export class HostedInfrastructure extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div  className='bg-lightgrey' data-aos="fade-up" data-aos-duration="2000">
 
@@ -167,5 +176,6 @@ export const HostedInfrastructure: React.StatelessComponent<{}> = () => {
 
     );
 };
+    }
 
 export default HostedInfrastructure;

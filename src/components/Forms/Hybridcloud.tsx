@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Hybridcloud: React.StatelessComponent<{}> = () => {
+// export const Hybridcloud: React.StatelessComponent<{}> = () => {
+    export class Hybridcloud extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div  className='bg-lightgrey'>
 
@@ -198,5 +207,6 @@ export const Hybridcloud: React.StatelessComponent<{}> = () => {
 
     );
 };
+    }
 
 export default Hybridcloud;

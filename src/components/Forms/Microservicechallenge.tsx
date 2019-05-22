@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Microservicechallenge: React.StatelessComponent<{}> = () => {
+// export const Microservicechallenge: React.StatelessComponent<{}> = () => {
+    export class Microservicechallenge extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div className='bg-lightgrey text-justify '>
 
@@ -173,5 +182,6 @@ export const Microservicechallenge: React.StatelessComponent<{}> = () => {
 
     );
 };
+    }
 
 export default Microservicechallenge;

@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { Link } from "react-router-dom";
 
-export const Casestudy: React.StatelessComponent<{}> = () => {
+// export const Casestudy: React.StatelessComponent<{}> = () => {
+  export class Casestudy extends React.Component<{},{}> {
+    constructor(props:any) {
+      super(props);  
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+
+    render() { 
     return (
         <div className="bg-lightgrey">
             <div >
@@ -265,5 +274,5 @@ export const Casestudy: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+  }
 export default Casestudy;

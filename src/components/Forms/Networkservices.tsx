@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Networkservices: React.StatelessComponent<{}> = () => {
+// export const Networkservices: React.StatelessComponent<{}> = () => {
+    export class Networkservices extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div  className='bg-lightgrey'>
 
@@ -59,5 +68,5 @@ export const Networkservices: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+    }
 export default Networkservices;

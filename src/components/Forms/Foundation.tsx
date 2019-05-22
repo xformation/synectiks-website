@@ -36,7 +36,16 @@ const inline = {
   display: 'inline-flex',
 };
 
-export const Foundation: React.StatelessComponent<{}> = () => {
+// export const Foundation: React.StatelessComponent<{}> = () => {
+  export class Foundation extends React.Component<{},{}> {
+    constructor(props:any) {
+      super(props);  
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+
+    render() { 
   return (
     <div className="bg-lightgrey">
 
@@ -407,5 +416,6 @@ lifecycle. <br />Here follows the list of basic services along with their functi
 
   );
 };
+  }
 
 export default Foundation;

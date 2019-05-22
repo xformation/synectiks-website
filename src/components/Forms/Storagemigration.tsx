@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 
-export const Storagemigration: React.StatelessComponent<{}> = () => {
+// export const Storagemigration: React.StatelessComponent<{}> = () => {
+    export class Storagemigration extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() {
     return (
         <div className="bg-lightgrey">
 
@@ -146,5 +155,5 @@ export const Storagemigration: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+    }
 export default Storagemigration;

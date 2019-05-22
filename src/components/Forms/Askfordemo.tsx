@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 
 
-export const Askfordemo: React.StatelessComponent<{}> = () => {
+// export const Askfordemo: React.StatelessComponent<{}> = () => {
+    export class Askfordemo extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div className="bg-lightgrey">
             <div>
@@ -95,6 +104,6 @@ export const Askfordemo: React.StatelessComponent<{}> = () => {
         </div>
 
     );
-};
+}}
 
 export default Askfordemo;

@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { Link } from "react-router-dom";
 
-export const Featured: React.StatelessComponent<{}> = () => {
+// export const Featured: React.StatelessComponent<{}> = () => {
+    export class Featured extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div className="bg-lightgrey">
             <div>
@@ -20,8 +29,8 @@ export const Featured: React.StatelessComponent<{}> = () => {
             </div>
 
 
-            <div className="container">
-            <div className="d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
+            <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
+            <div className="d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col" >
 <div>
     <div className="p-5">
         <img src="img/FeDevOps-Strategies.png" width="100%" alt="Enterprise-DevOps" />{" "}
@@ -31,7 +40,7 @@ export const Featured: React.StatelessComponent<{}> = () => {
                             how it optimizes Enterprise DevOps Strategies.{" "}</h6>
               {/* <p>
               Synectiks is one of very few technology company who delivers managed services on advanced technologies backed by an open xformation platform
-                            that accelerates your transformation journey @50% time &amp; cost.
+               that accelerates your transformation journey @50% time &amp; cost.
             </p>{" "} */}
               <a href="doc/Synectiks-Enterprise-DevOps-Strategies.pdf" target="_blank">
                 Learn more <i className="fa fa-arrow-right" />
@@ -42,7 +51,7 @@ export const Featured: React.StatelessComponent<{}> = () => {
 
 <div>
     <div className="p-5">
-        <img src="img/FeEnterprise-Transformation.png" width="100%" alt="Enterprise-Transformation" />{" "}
+        <img  className="border-grey-2px"  src="img/FeEnterprise-Transformation.png" width="100%" alt="Enterprise-Transformation" />{" "}
 
         <div className="text-group align-self-center ">
               <h6 className="font-weight-bold pt-2"> Discover how Synectiks open products based service delivery
@@ -63,9 +72,9 @@ export const Featured: React.StatelessComponent<{}> = () => {
 
 
 </div>
-
-<div className="container">
-            <div className="d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
+{/* className="container" */}
+<div className="">
+            <div className="d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col" >
             <div>
     <div className="p-5">
         <img src="img/FeMicroservice-Platform.png" width="100%" alt="Enterprise-Transformation" />{" "}
@@ -222,5 +231,5 @@ export const Featured: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+    }
 export default Featured;

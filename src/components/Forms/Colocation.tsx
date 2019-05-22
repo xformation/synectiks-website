@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Colocation: React.StatelessComponent<{}> = () => {
+// export const Colocation: React.StatelessComponent<{}> = () => {
+    export class Colocation extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div className='bg-lightgrey'>
 
@@ -210,5 +219,6 @@ export const Colocation: React.StatelessComponent<{}> = () => {
 
     );
 };
+    }
 
 export default Colocation;

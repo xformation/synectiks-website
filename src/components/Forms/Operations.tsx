@@ -3,7 +3,16 @@ import * as React from "react";
 import { LinearProgress } from "material-ui";
 import { Link } from "react-router-dom";
 
-export const Operations: React.StatelessComponent<{}> = () => {
+// export const Operations: React.StatelessComponent<{render()}> = () => {
+  export class Operations extends React.Component<{},{}> {
+    constructor(props:any) {
+      super(props);  
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+
+    render() {
   return (
     <div className="bg-lightgrey">
       {/* <div className='bg-theme mt-3'>
@@ -162,5 +171,6 @@ export const Operations: React.StatelessComponent<{}> = () => {
     </div>
   );
 };
+  }
 
 export default Operations;

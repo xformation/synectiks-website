@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Managedservices: React.StatelessComponent<{}> = () => {
+// export const Managedservices: React.StatelessComponent<{}> = () => {
+  export class Managedservices extends React.Component<{},{}> {
+    constructor(props:any) {
+      super(props);  
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+
+    render() {
     return (
         <div  className='bg-lightgrey'>
 
@@ -163,5 +172,5 @@ export const Managedservices: React.StatelessComponent<{}> = () => {
 
     );
 };
-
+  }
 export default Managedservices;

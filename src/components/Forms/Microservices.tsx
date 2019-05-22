@@ -17,6 +17,7 @@ export class Microservices extends React.Component<any,any,any> {
       fields: {},
       errors: {}
     };
+    
 
     this.toggle = this.toggle.bind(this);
   }
@@ -25,6 +26,9 @@ export class Microservices extends React.Component<any,any,any> {
     this.setState(prevState => ({
       modal: !prevState.modal
     }));
+  }
+  componentDidMount() {
+    window.scrollTo(0, 0)
   }
 
   handleValidation(){
@@ -141,34 +145,26 @@ export class Microservices extends React.Component<any,any,any> {
 
         <div className="d-flex justify-content-around align-items-center p-5 flex-col ">
           <p>
-            <NavLink className="navlink navfont noLine" to="/contactus">
+            <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
               <small>Contact&nbsp;Us&nbsp;</small>
-            </NavLink>
+            </a>
             to learn more about SYNECTIKS DevOps Transformation Service.
           </p>
         </div>
         {/*  */}
-        {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col ">
-          <Button color="primary" onClick={this.toggle}>
-            Learn More
-          </Button>
+        <div className="">
+          {/* <Button color="primary" onClick={this.toggle}>
+          Contact&nbsp;Us&nbsp;
+          </Button> */}
           <Modal isOpen={this.state.modal} toggle={this.toggle} >
             <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
             <ModalBody className="bg-lightgrey">
            
-              <div
-                className="px-5 py-3"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <div className="   text-center  p-2 flex-col">
-                  <div className="  p-2">
-                    <input  
-                    type="text"  placeholder="&nbsp;&nbsp;Email" onChange={this.handleChange.bind(this, "email")} value={this.state.fields["email"]}
-                      className="inputBoxFlex"
-                     
-                      width="90%"
-                    />
+              <div className="px-5 py-3">
+                <div className="text-center  p-2 flex-col">
+                  <div className="p-2">
+                   <input  type="text"  placeholder="&nbsp;&nbsp;Email" onChange={this.handleChange.bind(this, "email")} value={this.state.fields["email"]}
+                      className="inputBoxFlex" width="90%"/>
                   </div>
                   <div className="  p-2">
                     <input
@@ -239,23 +235,20 @@ export class Microservices extends React.Component<any,any,any> {
                 </div>
               </div>
 
-            
             </ModalBody>
             <ModalFooter className="bg-lightgrey">
               <div className="text-center p-2" onClick={this.toggle}>
                 <button className="btn bg-logoblue text-white btnSend" id="submit" value="Submit">Submit</button>
               </div>{" "}
-              
             </ModalFooter>
           </Modal>
-        </div> */}
+        </div> 
+        
 
-        {/* <Button color="secondary" onClick={this.toggle}>
-                Cancel
-              </Button> */}
-        {/*  */}
+        {/* <Button color="secondary" onClick={this.toggle}>Cancel</Button> */}
+        
 
-        {/* <Button color="secondary" onClick={this.toggleAlert.bind(this)} >Contact&nbsp;Us&nbsp;</Button> */}
+        {/* <Button color="secondary" onClick={this.toggleAlert.bind(this)} >Contact&nbsp;Us&nbsp;</Button>
 
         {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
             <div className="pb-3 col-sm-3" >

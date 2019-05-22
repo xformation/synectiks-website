@@ -63,7 +63,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                     </ul>
                     </p>
                 </div>
-                <div className=" ">
+                <div className="text-center">
                     <img height="auto" width="100%"
                         className="pt-5"
                         src="img/Growth.png"
@@ -86,10 +86,10 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
 
             <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
             data-aos="fade-up" data-aos-duration="2000">
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-100 p-5">
-                        <img height="auto" width="100%"
-                            className="w-75"
+                <div className="p-3 col-sm-3 " >
+                    <div className="w-100 ">
+                        <img height="auto" width="50%"
+                            className=""
                             src="img/Discovery.png"
                             alt="First slide"
                         />
@@ -101,10 +101,10 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                     </div>
                 </div>
 
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-100 p-5">
-                        <img height="auto" width="100%"
-                            className="w-75"
+                <div className="p-3 col-sm-3" >
+                    <div className="w-100 ">
+                        <img height="auto" width="40%"
+                            className=""
                             src="img/Remedition.png"
                             alt="First slide"
                         />
@@ -115,10 +115,10 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                     </div>
                 </div>
 
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-100 p-5">
-                        <img height="auto" width="100%"
-                            className="w-75"
+                <div className="p-3 col-sm-3" >
+                    <div className="w-100">
+                        <img height="auto" width="55%"
+                            className=""
                             src="img/Replatform.png"
                             alt="First slide"
                         />
@@ -143,10 +143,10 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                     </div>
                 </div> */}
 
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-100 p-5">
-                        <img height="auto" width="100%"
-                            className="w-75"
+                <div className="p-3 col-sm-3" >
+                    <div className="w-100">
+                        <img height="auto" width="50%"
+                            className=""
                             src="img/Migration.png"
                             alt="First slide"
                         />
