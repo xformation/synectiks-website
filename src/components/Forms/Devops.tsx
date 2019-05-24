@@ -11,7 +11,9 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form,
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 // export const Devops: React.StatelessComponent<{}> = () => {
-  
+  const wid = {
+    width: '91%',
+  };
 
   export class Devops extends React.Component<any,any,any> {
     constructor(props:any) {
@@ -102,16 +104,16 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
         </h4>
       </div>
       <div className="px-5 pt-3">
-        <p className="lineHeight-24">
+        <p className="lineHeight-24 text-justify">
           Enterprises looking for modernization of their legacy stack and
           operate in more fast and competitive way, can use SYNECTIKS - Open
           Platform to bring the cultural transformation and agility needed for
           today’s business. Whether it is a new business application or
           transformation of legacy applications, our open platform coupled with
-          our experience and expertise accelerate the project execution @50%
+          our experience and expertise accelerates the project execution @50%
           time &amp; cost.
         </p>
-        <p className="lineHeight-24">
+        <p className="lineHeight-24 text-justify">
           <i>
             “DevOps is the combination of cultural philosophies, practices, and
             tools that increases an organization’s ability to deliver
@@ -125,7 +127,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
       </div>
       <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
         <h4>Technology Transformation:</h4>
-        <p className="lineHeight-24">
+        <p className="lineHeight-24 text-justify">
           SYNECTIKS build the most powerful open product that helps customers to
           provision resources across clouds in complete Software-Defined way and
           deliver modern Container and FAAS driven workloads on it. The platform
@@ -143,7 +145,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             />{" "}
           </div>
         </div>
-        <p className="lineHeight-24 pt-3">
+        <p className="lineHeight-24 pt-3 text-justify">
           <i>
             “Over 85% of enterprise IT organizations will commit to multi-cloud
             architectures by 2018, IDC. End User experience, Security, Agility,
@@ -166,7 +168,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
           />{" "}
         </div>
         <p
-          className="lineHeight-24 px-5 pt-5"
+          className="lineHeight-24 px-5 pt-5 text-justify"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
@@ -182,7 +184,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
           for monitoring/tracing/resilience. Modernize your legacy application
           and infrastructure with ease and speed with our open platform.
         </p>
-        <p className="px-5" data-aos="fade-up" data-aos-duration="2000">
+        <p className="px-5 text-justify" data-aos="fade-up" data-aos-duration="2000">
           Ensuring that you stay ahead of race and keep disrupting by adopting
           most modern technologies intelligently and effectively, requires a
           managed services partner who understand your requirements for:
@@ -298,7 +300,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
       </div>
 
       <p
-        className="px-5 pt-3 lineHeight-24"
+        className="px-5 pt-3 lineHeight-24 text-justify"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
@@ -322,7 +324,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p className="borderbtm-grey-1px">
               <b>Maximum Flexibility</b>
             </p>
-            <p>
+            <p className="text-justify">
               Synectiks Xformation platform coupled with its cross-cloud
               infrastructure delivers the maximum flexibility to run/move your
               high performant workloads across clouds and manage them through a
@@ -336,7 +338,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p className="borderbtm-grey-1px">
               <b>Faster Delivery</b>
             </p>
-            <p>
+            <p className="text-justify">
               Synectiks Xformation platform enabled infrastructure and
               application provisioning is complete software defined manner with
               regulatory compliant architectures. The existing assets and best
@@ -350,7 +352,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p className="borderbtm-grey-1px">
               <b>Better Quality</b>
             </p>
-            <p>
+            <p className="text-justify">
               Through Synectiks Xformation platform, you can continuously
               deliver containerized and serverless microservices verified
               through stringent quality gates that run across clouds and
@@ -364,7 +366,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p className="borderbtm-grey-1px">
               <b>Lower Costs</b>
             </p>
-            <p>
+            <p className="text-justify">
               Everything software-defined and maximum automation ensure lowest
               TCO. A successful Digital Modernization project delivers 10X
               agility, 30X reliability and 10X operational efficiency. At least
@@ -443,34 +445,38 @@ Contact&nbsp;Us&nbsp;
   <ModalBody className="bg-lightgrey">
  
     <div className="px-5 py-3">
-      <div className="text-center  p-2 flex-col">
-        <div className="p-2">
-         <input  type="text"  placeholder="&nbsp;&nbsp;Email" onChange={this.handleChange.bind(this, "email")} value={this.state.fields["email"]}
-            className="inputBoxFlex" width="90%"/>
+      <div className="text-center col-md-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-6">
+         <input  type="text"  placeholder="&nbsp;&nbsp;First Name" className="inputBoxFlex" width="90%"/>
         </div>
-        <div className="  p-2">
-          <input
-            className="inputBoxFlex"
-            placeholder="&nbsp;&nbsp;Company"
-            width="90%"
-          />
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Last Name" width="90%"/>
         </div>
-        <div className="  p-2">
-          <input
-            className="inputBoxFlex"
-            placeholder="&nbsp;&nbsp;City"
-            width="90%"
-          />
         </div>
-
-        <div className="  p-2">
-          <input
-            className="inputBoxFlex"
-            placeholder="&nbsp;&nbsp;Phone"
-            width="90%"
-          />
+        <div className="text-center col-sm-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-12">
+        <input className="inputBoxFlex"   style={wid} placeholder="&nbsp;&nbsp;Business Email Address" width="91%"
+        onChange={this.handleChange.bind(this, "email")} value={this.state.fields["email"]}/>
         </div>
-        <div className="  p-2 ">
+        </div>
+        <div className="text-center col-md-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Company" width="90%"/>
+        </div>
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Job Title" width="90%"/>
+        </div>
+        </div>
+        <div className="text-center col-md-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Country/Region" width="90%"/>
+        </div>
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Telephone" width="90%"/>
+        </div>
+        </div>
+        <div className="text-center col-md-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-6">
           <select className="inputBoxFlex">
             <option value="enterprise">
               &nbsp;Contact&nbsp;Source
@@ -497,7 +503,7 @@ Contact&nbsp;Us&nbsp;
             <option value="optimization">&nbsp;Website</option>
           </select>
         </div>
-        <div className="  p-2">
+        <div className="p-2 col-sm-6">
           <select className="inputBoxFlex">
             <option value="enterprise">
               &nbsp;Select&nbsp;Service

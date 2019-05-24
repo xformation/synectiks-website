@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Applicationservices: React.StatelessComponent<{}> = () => {
+// export const Applicationservices: React.StatelessComponent<{}> = () => {
+    export class Applicationservices extends React.Component<{},{}> {
+        constructor(props:any) {
+          super(props);  
+        }
+        componentDidMount() {
+            window.scrollTo(0, 0)
+          }
+    
+        render() { 
     return (
         <div className='bg-lightgrey'>
 
@@ -177,7 +186,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
             </div>
             <div className="px-5 pt-3"  data-aos="fade-up" data-aos-duration="2000">
             <p className="lineHeight-24">
-            Enterprise Resource Planning (ERP) applications are essential to running your business, but they 
+            Enterprise Resource Planning (ERP) applications are essential to run your business, but they 
             can be time consuming and expensive to create, customize, and maintain. We offer ERP Solutions for 
             businesses of all sizes - small, midsize, and large. We also provide industry and company-specific 
             functionality to meet unique business needs. 
@@ -189,7 +198,7 @@ export const Applicationservices: React.StatelessComponent<{}> = () => {
                 <div className="w-100  text-black">
                 <p className="w-100  text-black"><h2 className='mt-3'>Education Management System</h2></p>
                     <p className="lineHeight-24">
-                    Easy-to-use All-in-One College and School Management Software, to help your school or college save time!
+                    Easy-to-use All-in-One College and School Management Software, to help you save time!
                     <br />{" "}
                     </p>
                     <p className="lineHeight-24">
@@ -480,5 +489,6 @@ An All-in-One HR and Payroll solution built to meet the demands of today’s wor
 
     );
 };
+    }
 
 export default Applicationservices;

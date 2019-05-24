@@ -9,7 +9,12 @@ import Media from "reactstrap/lib/Media";
 const fontSize3 = {
   fontSize: '2vw'
 }
-
+const s1 = {
+  left: '-16em'
+}
+const s2 = {
+  left: '-18em'
+}
 export const Main: React.StatelessComponent<{}> = () => {
   return (
     <div className='bg-lightgrey pt-1'>
@@ -73,7 +78,6 @@ export const Main: React.StatelessComponent<{}> = () => {
               <li data-target="#carouselExampleIndicators" data-slide-to="3" />
               <li data-target="#carouselExampleIndicators" data-slide-to="4" />
               <li data-target="#carouselExampleIndicators" data-slide-to="5" />
-             
             </ol>
           </div> */}
           {/* <div className="carousel-inner mr-auto">
@@ -87,7 +91,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider1.jpg"
                   alt="Synectiks Open Xformation"
                 />
-                <div className="text-center pt-4 btnLearnmore">
+                <div className="text-center pt-4 btnLearnmore" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/foundation" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -122,7 +126,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider3.jpg"
                   alt="AWS Security"
                 />
-                <div className="text-center btnLearnmore ">
+                <div className="text-center btnLearnmore" style={s2}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/audit" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -192,7 +196,6 @@ export const Main: React.StatelessComponent<{}> = () => {
                 />
               </div>
             </div>
-
           </div>
 
           {/* Check Learn More */}
@@ -207,8 +210,15 @@ export const Main: React.StatelessComponent<{}> = () => {
               <span className="sr-only">Next</span>
             </a>
           </div>
+          <div>
+          <div className="text-center w-100 mb-2  mt-card ">
+            <h4 className="mb-1 py-1 bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
+          </div>
+          </div>
+
 
         </div>
+        
         {/* <div className="text-center ">
             <h4 className="mb-1 bg-orange">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
           </div> */}
@@ -218,11 +228,11 @@ export const Main: React.StatelessComponent<{}> = () => {
         {/* Card Start */}
 
         <div className="row main-card card-margin " >
-          <div className="text-center w-100 mb-2 txt mt-card ">
-            <h4 className="mb-1 bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
-          </div>
+          {/* <div className="text-center w-100 mb-2 txt mt-card ">
+            <h4 className="mb-1 py-1 bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
+          </div> */}
           <div className="text-center w-100 py-3 mt-1 txt mt-card ">
-            <h4 className="">Outcome-based Service Offerings</h4>
+            <h3 className=""><b>Outcome-based Service Offerings</b></h3>
           </div>
           {/*<div className="text-center px-5 txt ">
         <h4 >ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
@@ -351,8 +361,11 @@ export const Main: React.StatelessComponent<{}> = () => {
           </div>
         </div> */}
         {/* <div className="p-2 flex-fill mt-8"></div> */}
+        <div className="text-center w-100 pt-5 mt-1 txt mt-card ">
+            <h3 className=""><b>Success Stories</b></h3>
+          </div>
 
-        <div className="d-flex justify-content-around pt-2 flex-fill mt-5 align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
+        <div className="d-flex justify-content-around pt-2 flex-fill mt-2 align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
           <Link to="/softwaredefined" className="noLine">
             <div className="p-3">
               <div className="border-grey-2px cs_boxshadow">

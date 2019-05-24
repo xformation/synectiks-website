@@ -333,11 +333,11 @@ lifecycle. <br />Here follows the list of basic services along with their functi
             <p>
               Moving to AWS cloud with Data Center retirement for Motor Industry.
             </p>{" "}
-            <div className="pb-3" >
+            {/* <div className="pb-3" >
               <Link to="/videos">
                 <button className='btn btnResource bg-logoblue text-white'>View More</button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

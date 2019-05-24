@@ -169,7 +169,7 @@ import { NavLink } from "react-router-dom";
                 with its analytics services offerings, customers can seamlessly run every mission critical 
                 workloads inside a single cluster platform and can truly focus on outcomes.
                 </p>
-            <div className=" text-center">
+            <div className=" text-center pb-5">
                     <img src="img/Redevelopment.jpg" width="75%" alt="Bigdata Analytic" />{" "}
                 </div>
             </div>

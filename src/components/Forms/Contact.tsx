@@ -111,7 +111,7 @@ import { LinearProgress } from "material-ui";
                     <small  >
                         300 Alexander Park Drive, Suite 215,<br />
                         Princeton, NJ 08540<br />
-                        Sales: +1 (609) 608-0429 X 112<br />
+                        Sales: +1 (609) 608-0429 X 102<br />
                         Office: +1 (609) 608-0429<br />
                     </small>
                 </div>

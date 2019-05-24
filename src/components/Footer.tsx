@@ -19,15 +19,27 @@ const mapWidth ={
 
 export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6Gmc9u7rr2JHijOERAmC_j0gWYtR2c'
 
-export const Footer: React.StatelessComponent<{}> = () => {
+// export const Footer: React.StatelessComponent<{}> = () => {
+  export class Footer extends React.Component<{},{}> {
+    constructor(props:any) {
+      super(props);  
+      // this.toggle = this.toggle.bind(this);
+    }
+    // toggle() {
+    //   this.setState(prevState => ({
+    //     content: !prevState.content
+    //   }));
+    // }
+    render() { 
+  
   return (
 //  target="_blank"
     <div>      
-      <div className="text-center fixed-bottom bg-grey content ">
-        <p className="mb-1 pt-2">
+      <div className="text-center fixed-bottom bg-grey content " >
+        <p className="mb-1 pt-2 policy">
         SYNECTIKS uses proprietary and third-party cookies. By using our sites, you agree to our cookie policy.&nbsp;
         <NavLink className="navlink navfont noLine" to="/privacypolicy" ><small>View&nbsp;Policy&nbsp;</small></NavLink>
-        <button className='btn bg-logoblue text-white btnSend'>Agree</button>
+        <button className='btn bg-logoblue text-white btnSend' type="submit" id="hide">Agree</button>
         </p>
       </div>
       
@@ -44,7 +56,7 @@ export const Footer: React.StatelessComponent<{}> = () => {
         <h5 className="text-white">Get In Touch</h5>
         <small className="text-white">
         300 Alexander Park Drive, Suite 215, <br /> Princeton, NJ 08540 <br />{" "}
-        Sales: +1 (609) 608-0429 X 112 <br />  Office: +1 (609) 608-0429
+        Sales: +1 (609) 608-0429 X 102 <br />  Office: +1 (609) 608-0429
         </small>
       </div>
       <div className="col-md-5 pb2">
@@ -64,6 +76,9 @@ export const Footer: React.StatelessComponent<{}> = () => {
     </div>
   );
 };
+  }
+
+  export default Footer;
 // AIzaSyCdBpR3676ds4Yf9tNeKOJRFZyjGAmzw7A
 // google api key
 
@@ -97,4 +112,6 @@ export const Footer: React.StatelessComponent<{}> = () => {
               {map}
           </div>,
           root)
+
   }
+
