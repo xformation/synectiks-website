@@ -51,7 +51,7 @@ const inline = {
 
       <div className="container pb-5">
         <div className="row main-card pb-5">
-          <div className="col-md-12 col-12-lg card-deck">
+          <div className="col-md-12   card-deck">
             {/* */}
             <div className="card btn card-shadow mx-3 pt-3">
               <Link to="/foundation" className="noLine">

@@ -23,7 +23,7 @@ export const Main: React.StatelessComponent<{}> = () => {
 
         {/* ---------------------- */}
         {/* <div className="row main-card">
-          <div className="col-md-12 col-12-lg card-deck">
+          <div className="col-md-12   card-deck">
 
             <div className="card btn card-shadow mx-3 pt-3">
             <Link to="/foundation" className="noLine">
@@ -85,7 +85,7 @@ export const Main: React.StatelessComponent<{}> = () => {
 
           <div className="carousel-inner mr-auto" role="listbox">
             <div className="carousel-item  active justify-content-around ">
-              <div className="img-np flex-col">
+              <div className="img-np flex-col pb-0">
                 <img width="100%" height=""
                   className="w-100 text-right animated fadeInRightBig slow dealy-4s"
                   src="img/Slider1.jpg"
@@ -103,7 +103,7 @@ export const Main: React.StatelessComponent<{}> = () => {
 
             {/* Check Learn More */}
             <div className="carousel-item  justify-content-around ">
-              <div className="img-np flex-col">
+              <div className="img-np flex-col pb-0">
                 <img width="100%" height="auto"
                   className="w-100 height-38 text-right animated fadeInRightBig slow dealy-4s"
                   src="img/Slider2.svg"
@@ -120,7 +120,7 @@ export const Main: React.StatelessComponent<{}> = () => {
             </div>
 
             <div className="carousel-item  justify-content-around ">
-              <div className="img-np flex-col">
+              <div className="img-np flex-col pb-0">
                 <img width="100%"
                   className="w-100 height-38 text-right animated fadeInRightBig slow dealy-4s"
                   src="img/Slider3.jpg"
@@ -137,7 +137,7 @@ export const Main: React.StatelessComponent<{}> = () => {
             </div>
 
             <div className="carousel-item  justify-content-around ">
-              <div className="img-np flex-col">
+              <div className="img-np flex-col pb-0">
                 <img width="100%"
                   className="w-100 height-38 text-right animated fadeInRightBig slow dealy-4s"
                   src="img/Slider4.jpg"
@@ -154,7 +154,7 @@ export const Main: React.StatelessComponent<{}> = () => {
             </div>
 
             <div className="carousel-item  justify-content-around ">
-              <div className="img-np flex-col">
+              <div className="img-np flex-col pb-0">
                 <img width="100%"
                   className="w-100 height-38 text-right animated fadeInRightBig slow dealy-4s"
                   src="img/Slider5.jpg"
@@ -188,7 +188,7 @@ export const Main: React.StatelessComponent<{}> = () => {
           </div> */}
 
             <div className="carousel-item  justify-content-around ">
-              <div className="img-np flex-col">
+              <div className="img-np flex-col pb-0">
                 <img width="100%"
                   className="w-100 height-38 text-right animated fadeInRightBig slow dealy-4s"
                   src="img/Slider6.jpg"
@@ -227,11 +227,11 @@ export const Main: React.StatelessComponent<{}> = () => {
 
         {/* Card Start */}
 
-        <div className="row main-card card-margin " >
+        <div className="row main-card card-margin" >
           {/* <div className="text-center w-100 mb-2 txt mt-card ">
             <h4 className="mb-1 py-1 bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
           </div> */}
-          <div className="text-center w-100 py-3 mt-1 txt mt-card ">
+          <div className="text-center w-100 py-5 mt-1 txt mt-card ">
             <h3 className=""><b>Outcome-based Service Offerings</b></h3>
           </div>
           {/*<div className="text-center px-5 txt ">
@@ -242,7 +242,7 @@ export const Main: React.StatelessComponent<{}> = () => {
           </h1> 
         </ScrollAnimation>          
         </div> */}
-          <div className="col-md-12 col-12-lg card-deck ">
+          <div className="col-md-12   card-deck ">
 
             {/* justify-content-around align-items-center  */}
             <div className="card btn card-shadow mx-3 pt-3">

@@ -107,7 +107,7 @@ export class Careers extends React.Component<any, any, any> {
                     </p>
                     <div>
                         <div>
-                            <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Sr. Systems Administrator </Button>
+                            <Button color="primary" className = "w-75 text-left" onClick={this.toggle} style={{ marginBottom: '1rem' }} >Sr. Systems Administrator </Button>
                             <Collapse isOpen={this.state.collapse} className="pb-3">
                                 <Card>
                                     <CardBody>
@@ -133,7 +133,7 @@ export class Careers extends React.Component<any, any, any> {
                         </div>
                         <div>
                         <div>
-                            <Button color="primary" onClick={this.toggle2} style={{ marginBottom: '1rem' }}>Lead Software Architect</Button>
+                            <Button color="primary" className = "w-75 text-left" onClick={this.toggle2} style={{ marginBottom: '1rem' }} >Lead Software Architect</Button>
                             <Collapse isOpen={this.state.collapse2} className="pb-3">
                                 <Card>
                                     <CardBody>
@@ -150,8 +150,8 @@ export class Careers extends React.Component<any, any, any> {
                                         Must have experience in designing, developing and implementing applications. 
                                         Relocation and travel to unanticipated locations within USA possible.<br/> 
 
-                                        <b>Send resumes to careers@synectiks.com<br/> 
-                                        Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite 215, Princeton, NJ 08540.</b>
+                                        <b>Send resumes to </b>careers@synectiks.com<br/> 
+                                        <b>Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite 215, Princeton, NJ 08540.</b>
                                         </p>
                                     </CardBody>
                                 </Card>
@@ -160,7 +160,7 @@ export class Careers extends React.Component<any, any, any> {
                     </div>
                     <div>
                         <div>
-                            <Button color="primary" onClick={this.toggle3} style={{ marginBottom: '1rem' }}>Infrastructure Engineer</Button>
+                            <Button color="primary" className = "w-75 text-left" onClick={this.toggle3} style={{ marginBottom: '1rem' }}>Infrastructure Engineer</Button>
                             <Collapse isOpen={this.state.collapse3} className="pb-3">
                                 <Card>
                                     <CardBody>
@@ -176,8 +176,8 @@ export class Careers extends React.Component<any, any, any> {
                                         Perl, Python, UNIX Shell Scripting, Ruby, OpenQRM and OpenStack. Relocation and travel to unanticipated 
                                         locations within USA possible.<br/>  
                                                                             
-                                        <b>Send resumes to careers@synectiks.com<br/> 
-                                        Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite 215, Princeton, NJ 08540.</b>
+                                        <b>Send resumes to </b>careers@synectiks.com<br/> 
+                                        <b>Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite 215, Princeton, NJ 08540.</b>
                                         </p>
                                     </CardBody>
                                 </Card>

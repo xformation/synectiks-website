@@ -10,7 +10,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Input,Label,Form,For
   const wid = {
     width: '91%',
   };
-  
+
 export class Microservices extends React.Component<any,any,any> {
   constructor(props:any) {
     super(props);
@@ -145,8 +145,7 @@ export class Microservices extends React.Component<any,any,any> {
             />{" "}
           </div>
         </div>
-
-        <div className="d-flex justify-content-around align-items-center p-5 flex-col ">
+   <div className="d-flex  p-5 flex-col ">
           <p>
             <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
               <small>Contact&nbsp;Us&nbsp;</small>
@@ -154,6 +153,7 @@ export class Microservices extends React.Component<any,any,any> {
             to learn more about SYNECTIKS DevOps Transformation Service.
           </p>
         </div>
+     
         {/*  */}
         <div className="">
 {/* <Button color="primary" onClick={this.toggle}>

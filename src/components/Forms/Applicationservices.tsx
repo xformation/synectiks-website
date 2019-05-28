@@ -18,7 +18,7 @@ import { NavLink } from "react-router-dom";
     return (
         <div className='bg-lightgrey'>
 
-            <div className="w-100 py-5 mt-5" data-aos="fade-up" data-aos-duration="2000">
+            <div className="w-100 py-5 mt-5" >
                 <img height="auto" width="100%"
                     className=""
                     src="img/ApplicationServices.jpg"

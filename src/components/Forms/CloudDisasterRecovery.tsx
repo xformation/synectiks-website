@@ -4,17 +4,74 @@ import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Input,Label,Form,FormGroup } from 'reactstrap';
 
+const wid = {
+    width: '91%',
+  };
 
 // export const CloudDisasterRecovery: React.StatelessComponent<{}> = () => {
-    export class CloudDisasterRecovery extends React.Component<{},{}> {
+    export class CloudDisasterRecovery extends React.Component<any,any,any>{
         constructor(props:any) {
-          super(props);  
-        }
-        componentDidMount() {
-            window.scrollTo(0, 0)
+            super(props);  
+  
+            this.state = {
+              modal: false,
+              fields: {},
+              errors: {}
+            };
+            
+            this.toggle = this.toggle.bind(this);
           }
-    
+          toggle() {
+              this.setState(prevState => ({
+                modal: !prevState.modal
+              }));
+            }
+          componentDidMount() {
+              window.scrollTo(0, 0)
+            }
+  
+            handleValidation(){
+              let fields = this.state.fields;
+              let errors = {};
+              let formIsValid = true;
+          
+              if(!fields["email"]){
+                formIsValid = false;
+                errors["email"] = "Cannot be empty";
+              }
+          
+              if(typeof fields["email"] !== "undefined"){
+                let lastAtPos = fields["email"].lastIndexOf('@');
+                let lastDotPos = fields["email"].lastIndexOf('.');
+          
+                if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') == -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
+                  formIsValid = false;
+                  errors["email"] = "Email is not valid";
+                }
+              }
+          
+              this.setState({errors: errors});
+              return formIsValid;
+            }
+          
+            contactSubmit(e){
+              e.preventDefault();
+              if(this.handleValidation()){
+                alert("Form submitted");
+              }else{
+                alert("Form has errors.")
+              }
+          
+            }
+          
+            handleChange(field, e){    		
+              let fields = this.state.fields;
+              fields[field] = e.target.value;        
+              this.setState({fields});
+            }
+  
         render() { 
     return (
         <div  className='bg-lightgrey'>
@@ -155,11 +212,124 @@ import { NavLink } from "react-router-dom";
             </ul>
             </p>
             <p className="lineHeight-24">
-                <NavLink className="navlink navfont noLine" to="/contactus"><small>Contact&nbsp;Us&nbsp;</small></NavLink>
+                {/* <NavLink className="navlink navfont noLine" to="/contactus"><small>Contact&nbsp;Us&nbsp;</small></NavLink> */}
+                <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
+              <small>Contact&nbsp;Us&nbsp;</small></a>
                 to learn more about SYNECTIKS Disaster Recover as a Service.
             <br />{" "}
             </p>
             </div>
+
+             {/*  */}
+        
+
+             {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col ">
+          <p>
+            <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
+              <small>Contact&nbsp;Us&nbsp;</small>
+            </a>
+            to learn more about SYNECTIKS DevOps Transformation Service.
+          </p>
+        </div> */}
+
+                <div className="">
+{/* <Button color="primary" onClick={this.toggle}>
+Contact&nbsp;Us&nbsp;
+</Button> */}
+<Modal isOpen={this.state.modal} toggle={this.toggle} >
+  <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
+  <ModalBody className="bg-lightgrey">
+ 
+    <div className="px-5 py-3">
+      <div className="text-center col-md-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-6">
+         <input  type="text"  placeholder="&nbsp;&nbsp;First Name" className="inputBoxFlex" width="90%"/>
+        </div>
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Last Name" width="90%"/>
+        </div>
+        </div>
+        <div className="text-center col-sm-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-12">
+        <input className="inputBoxFlex"   style={wid} placeholder="&nbsp;&nbsp;Business Email Address" width="91%"
+        onChange={this.handleChange.bind(this, "email")} value={this.state.fields["email"]}/>
+        </div>
+        </div>
+        <div className="text-center col-md-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Company" width="90%"/>
+        </div>
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Job Title" width="90%"/>
+        </div>
+        </div>
+        <div className="text-center col-md-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Country/Region" width="90%"/>
+        </div>
+        <div className="p-2 col-sm-6">
+          <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Telephone" width="90%"/>
+        </div>
+        </div>
+        <div className="text-center col-md-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-6">
+          <select className="inputBoxFlex">
+            <option value="enterprise">
+              &nbsp;Contact&nbsp;Source
+            </option>
+            <option value="enterprise">&nbsp;Advertisement</option>
+            <option value="foundation">
+              &nbsp;Customer&nbsp;Event
+            </option>
+            <option value="migration">
+              &nbsp;Employee&nbsp;Referral
+            </option>
+            <option value="operations">
+              &nbsp;Google&nbsp;Adwords
+            </option>
+            <option value="others">&nbsp;Other</option>
+            <option value="optimization">&nbsp;Partner</option>
+            <option value="optimization">
+              &nbsp;Purchased&nbsp;List
+            </option>
+            <option value="optimization">
+              &nbsp;Trade&nbsp;Show
+            </option>
+            <option value="optimization">&nbsp;Webinar</option>
+            <option value="optimization">&nbsp;Website</option>
+          </select>
+        </div>
+        <div className="p-2 col-sm-6">
+          <select className="inputBoxFlex">
+            <option value="enterprise">
+              &nbsp;Select&nbsp;Service
+            </option>
+            <option value="enterprise">
+              &nbsp;Enterprise&nbsp;Transformation
+            </option>
+            <option value="foundation">&nbsp;Foundation</option>
+            <option value="migration">
+              &nbsp;Migration&nbsp;&amp;&nbsp;Deployment
+            </option>
+            <option value="operations">&nbsp;Operations</option>
+            <option value="optimization">&nbsp;Optimization</option>
+            <option value="others">&nbsp;Others</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+  </ModalBody>
+  <ModalFooter className="bg-lightgrey">
+    <div className="text-center p-2" onClick={this.toggle}>
+      <button className="btn bg-logoblue text-white btnSend" id="submit" value="Submit">Submit</button>
+    </div>{" "}
+  </ModalFooter>
+</Modal>
+</div>  
+            {/*  */}
+
+
             <div className="container">
         <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
       </div>
