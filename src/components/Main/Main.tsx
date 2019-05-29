@@ -15,6 +15,9 @@ const s1 = {
 const s2 = {
   left: '-18em'
 }
+const s4 = {
+  left: '-13em'
+}
 export const Main: React.StatelessComponent<{}> = () => {
   return (
     <div className='bg-lightgrey pt-1'>
@@ -106,7 +109,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               <div className="img-np flex-col pb-0">
                 <img width="100%" height="auto"
                   className="w-100 height-38 text-right animated fadeInRightBig slow dealy-4s"
-                  src="img/Slider2.svg"
+                  src="img/Slider2.jpg"
                   alt="Enterprise Transformation"
                 />
                 <div className="text-center btnLearnmore">
@@ -143,7 +146,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider4.jpg"
                   alt="Enterprise Managed Services"
                 />
-                <div className="text-center btnLearnmore ">
+                <div className="text-center btnLearnmore pt-4 mt-2" style={s4}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/enterprisemanagedservice" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>

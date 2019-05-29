@@ -349,6 +349,15 @@ background-color: #007cc2 !important;
   text-decoration: none;
   background-color: #fbba00  !important ;
 }
+/* .dropdown > .show {
+
+  .nav-link{
+    background-color: bl
+  };
+
+  background-color: #c9ddf1 !important;
+  border-radius: 5px;
+} */
 .nav-link:hover{
   /* background-color: blueviolet; */
   /* background-color: #fbba00; */
@@ -1200,7 +1209,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 .carsCtrl{
   position: absolute;
-  top: 40%;
+  top: 34%;
   font-size:2.5em;
   transform: translate(50%,50%);
   vertical-align: middle;

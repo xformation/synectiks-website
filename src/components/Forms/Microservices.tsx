@@ -156,9 +156,7 @@ export class Microservices extends React.Component<any,any,any> {
      
         {/*  */}
         <div className="">
-{/* <Button color="primary" onClick={this.toggle}>
-Contact&nbsp;Us&nbsp;
-</Button> */}
+  {/* <Button color="primary" onClick={this.toggle}> Contact&nbsp;Us&nbsp; </Button>  */}
 <Modal isOpen={this.state.modal} toggle={this.toggle} >
   <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
   <ModalBody className="bg-lightgrey">

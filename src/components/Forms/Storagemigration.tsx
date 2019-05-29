@@ -25,6 +25,9 @@ import { LARGE } from "material-ui/utils/withWidth";
                     </div>
                 </div> 
 
+                <div className="px-5 pb-2">
+                <h1 className='text-center'>Storage Migration</h1>
+                </div>
             <div className="px-5 py-3">
                 <h4 className='lineHeight-24 text-center'>
                     San connectivity via Synectiks Storage Network Solutions

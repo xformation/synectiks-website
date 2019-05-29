@@ -25,6 +25,9 @@ import { LARGE } from "material-ui/utils/withWidth";
                         <img src="img/RelianceJioCasestudy.jpg" width="100%" alt="Cloud Backup" />{" "}
                     </div>
                 </div> 
+                <div className="px-5 pb-2">
+                <h1 className='text-center'>Reliance Jio Casestudy</h1>
+                </div>
             <div className="px-5 pt-2">
             <p className='lineHeight-24'>
             The leadership took a decision to become Harwdare/OS/Operation/vendor agnostic and achive scalability and reliability across the organisation. 
