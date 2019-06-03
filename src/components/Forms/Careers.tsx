@@ -44,8 +44,8 @@ export class Careers extends React.Component<any, any, any> {
                 <div>
                     <img
                         className="  text-center py-5 mt-5"
-                        src="img/CareersNew.jpg" width="100%"
-                        alt="Card image Careers"
+                        src="img/Careers.jpg" width="100%"
+                        alt="Careers"
                     />
                     {/* <div className="text-center centered ">
                     <div className="text-white">

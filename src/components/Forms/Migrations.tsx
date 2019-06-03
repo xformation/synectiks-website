@@ -27,11 +27,11 @@ import { NavLink } from "react-router-dom";
                 <h1 className='text-center text-white pt-theme mt-2'>Cloud Migrations &amp; Optimization</h1>
             </div> */}
          
-            <div className="px-5 pt-4 text-center" data-aos="fade-up" data-aos-duration="2000">
+            {/* <div className="px-5 pt-4 text-center" data-aos="fade-up" data-aos-duration="2000">
                 <h4><i>
                     Transformation for Todays Digital Business!
                 </i></h4>
-            </div>
+            </div> */}
             <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
                 <p className="lineHeight-24">
                     Synectiks accelerated migration allows customer to leverage the data processing benefits of cloud

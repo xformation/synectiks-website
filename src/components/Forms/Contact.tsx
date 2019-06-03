@@ -17,7 +17,7 @@ import { LinearProgress } from "material-ui";
         <div className="bg-lightgrey">
             <div>
                 <img
-                    className="  text-center py-5 mt-5"
+                    className="  text-center pt-5 pb-3 mt-5"
                     src="img/NiceToMeet.png" width="100%"
                     alt="Card image Foundation"
                 />
@@ -29,11 +29,11 @@ import { LinearProgress } from "material-ui";
             </div>
 
             <div>
-                <h2 className='text-center py-3'>CONTACT FORM</h2>
+                <h2 className='text-center '>CONTACT FORM</h2>
             </div>
 
              {/* Contact Starts */}
-            <div className="px-5 py-3 ">
+            <div className="px-5  ">
 
                 <div className="d-flex text-center col-md-12 p-2 flex-col">
                     <div className="col-sm-4 p-2" >
@@ -83,6 +83,7 @@ import { LinearProgress } from "material-ui";
                         {/* <input  className="inputBoxFlex" placeholder="&nbsp;&nbsp;Select Service"  width="90%"/> */}
                         <select className="inputBoxFlex">
                             <option value="enterprise">&nbsp;Select&nbsp;Service</option>
+                            <option value="enterprise">&nbsp;Cloud</option>
                             <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
                             <option value="foundation">&nbsp;Foundation</option>
                             <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
@@ -94,17 +95,17 @@ import { LinearProgress } from "material-ui";
                 </div>
             </div>
 
-            <div className='text-center p-5'>
+            <div className='text-center px-5 pt-3 pb-5'>
                 <button className='btn bg-logoblue text-white btnSend'>Submit</button>
             </div>
             {/* Contact Ends */}
 
-            <div>
+            {/* <div>
                 <h2 className='text-center'>CONTACT US</h2>
-            </div>
+            </div> */}
             {/* className="italic" */}
 
-            <div className="d-flex justify-content-around my-5 flex-col">
+            {/* <div className="d-flex justify-content-around my-5 flex-col">
 
                 <div className="pb2 pl-5" >
                     <h5>USA</h5>
@@ -133,7 +134,7 @@ import { LinearProgress } from "material-ui";
                     </small>
                 </div>
 
-            </div>
+            </div> */}
 
             {/* <div className='text-center p-5 flex-col'>
                 <h5>SOCIALS</h5>

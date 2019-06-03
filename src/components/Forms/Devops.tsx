@@ -508,6 +508,7 @@ Contact&nbsp;Us&nbsp;
             <option value="enterprise">
               &nbsp;Select&nbsp;Service
             </option>
+            <option value="enterprise">&nbsp;Cloud</option>
             <option value="enterprise">
               &nbsp;Enterprise&nbsp;Transformation
             </option>

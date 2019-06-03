@@ -145,12 +145,12 @@ export class Microservices extends React.Component<any,any,any> {
             />{" "}
           </div>
         </div>
-   <div className="d-flex  p-5 flex-col ">
+   <div className="d-flex  px-5 py-4 flex-col ">
           <p>
             <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
               <small>Contact&nbsp;Us&nbsp;</small>
             </a>
-            to learn more about SYNECTIKS DevOps Transformation Service.
+            to learn more about SYNECTIKS MicroServices.
           </p>
         </div>
      
@@ -225,6 +225,7 @@ export class Microservices extends React.Component<any,any,any> {
             <option value="enterprise">
               &nbsp;Select&nbsp;Service
             </option>
+            <option value="enterprise">&nbsp;Cloud</option>
             <option value="enterprise">
               &nbsp;Enterprise&nbsp;Transformation
             </option>
@@ -253,9 +254,9 @@ export class Microservices extends React.Component<any,any,any> {
         {/* <Button color="secondary" onClick={this.toggle}>Cancel</Button> */}
         
 
-        {/* <Button color="secondary" onClick={this.toggleAlert.bind(this)} >Contact&nbsp;Us&nbsp;</Button>
+        {/* <Button color="secondary" onClick={this.toggleAlert.bind(this)} >Contact&nbsp;Us&nbsp;</Button> */}
 
-        {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
+        <div className="d-flex justify-content-around align-items-center px-5 pb-3 flex-col text-center col-md-12">
             <div className="pb-3 col-sm-3" >
             <Link to="/microserviceexample">
                         <button className='btn text-white bg-logoblue  btnLearn  '>Example of Microservices</button>
@@ -276,7 +277,7 @@ export class Microservices extends React.Component<any,any,any> {
                         <button className='btn text-white bg-logoblue  btnLearn '>How we can help you?</button>
                         </Link>
                     </div>
-                    </div> */}
+                    </div> 
 
         {/* Contact Starts */}
         {/* <div className='py-3' data-aos="fade-up" data-aos-duration="2000">

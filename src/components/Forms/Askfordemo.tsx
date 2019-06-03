@@ -84,6 +84,7 @@ import { LinearProgress } from "material-ui";
                {/* <input  className="inputBoxFlex" placeholder="&nbsp;&nbsp;Select Service"  width="90%"/> */}
                <select className="inputBoxFlex">
                    <option value="enterprise">&nbsp;Select&nbsp;Service</option>
+                   <option value="enterprise">&nbsp;Cloud</option>
                    <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
                    <option value="foundation">&nbsp;Foundation</option>
                    <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>

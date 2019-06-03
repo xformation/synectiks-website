@@ -41,15 +41,15 @@ const lineHeight = {
                 <p style={lineHeight}>
                     &quot;<span style={blue}>syn</span>-<span style={blue}>ec</span>-tics – [si-nek-<span style={blue}>t</span><span style={red}>i</span><span style={blue}>ks</span>] –
              the study of creative processes, esp. as applied to the solution of problems by a group of diverse individuals.&quot; <br />
-                    SYNECTIKS enables organizations to realize their business ambitions through an array of services from strategy to operations.<br />
+                    SYNECTIKS enables organizations to realize their business ambitions through an array of services from strategy to operations.
                     We harness the power of computing, automation, cloud, analytics and evolving technologies to
-             help our customers adapt to the digital transformation and make them agile. <br />
+             help our customers adapt to the digital transformation and make them agile. 
                     Solves challenges by providing unmatched services in consulting, technology and operations. A global technology firm who specializes in
                     helping highly-regulated enterprises transform faster, modernizing their way of working, helping optimize
-             your resources and lower your costs. <br />
+             your resources and lower your costs.
              Combined with Synectiks’ full vary of advanced technology solutions, managed and skilled services, 
              we provide the leading portfolios within the technology services.
-            </p><br />
+            </p>
             </div>
 
             <div className="d-flex text-justify justify-content-around p-3 px-5 flex-col" data-aos="fade-up" data-aos-duration="2000">

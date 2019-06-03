@@ -115,7 +115,7 @@
 .noLine:hover{
   color: #007cc2 !important;
 }
-#public,#private,#hybrid,#colocation,#hosted, .noLine.active , .noLine:active{
+#hosted,#private,#hybrid,#public,#colocation, .noLine.active , .noLine:active{
   color: #007cc2 !important;
 }
 .card-hd{

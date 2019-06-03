@@ -11,7 +11,7 @@ export const Microserviceexample: React.StatelessComponent<{}> = () => {
 <div className="w-100 py-5 mt-5">
                 <img height="auto" width="100%"
                     className=""
-                    src="img/Microservicesmain.png"
+                    src="img/Microservicesmain.jpg"
                     alt="Devopsmain Services"
                 />
             </div>
@@ -32,7 +32,7 @@ Say a Travel &amp; Tourism business have major functionalities like Booking/CRM/
         <p>
           The typical product component diagram will be as follows:
             </p>
-        <div className="w-40 p-5 text-center">
+        <div className="w-40 p-5 text-center bg-white border-grey-2px">
           <img src="img/Microservice_2.png" width="75%" alt="DevOps Transformation" />{" "}
         </div>
         

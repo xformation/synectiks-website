@@ -11,7 +11,7 @@ export const Microservicehelp: React.StatelessComponent<{}> = () => {
 <div className="w-100 py-5 mt-5">
                 <img height="auto" width="100%"
                     className=""
-                    src="img/Microservicesmain.png"
+                    src="img/Microservicesmain.jpg"
                     alt="Devopsmain Services"
                 />
             </div>

@@ -120,17 +120,23 @@ export const Header: React.StatelessComponent<{}> = () => {
                 <li className="nav-item dropdown  ">
                   <a
                     className="nav-link px-4" 
-                    href="#"
+                    href="/HostedInfrastructure"
                     id="navbardrop1"
                     data-toggle="dropdown" >
-                  
                     Cloud
                   </a>
                   <div className="dropdown-menu w17em">
-                  <NavLink className="dropdown-item" to="/publiccloud">
-                      {" "}
-                      Public&nbsp;Cloud{" "}                      
-                    </NavLink>
+
+{/*  */}
+                  <NavLink className=" dropdown-item" to="/HostedInfrastructure">
+                     Cloud Hosted Services{" "} 
+                     </NavLink>
+                   
+                       {/* <NavLink className="dropdown-item" to="/HostedInfrastructure">
+                          Hosted Infrastructure
+                      </NavLink> */}
+
+{/*  */}
                     <NavLink className="dropdown-item" to="/privatecloud">
                       {" "}
                       Private&nbsp;Cloud{" "}                      
@@ -138,6 +144,10 @@ export const Header: React.StatelessComponent<{}> = () => {
                     <NavLink className="dropdown-item" to="/hybridcloud">
                       {" "}
                       Hybrid&nbsp;Cloud{" "}                      
+                    </NavLink>
+                    <NavLink className="dropdown-item" to="/publiccloud">
+                      {" "}
+                      Public&nbsp;Cloud{" "}                      
                     </NavLink>
                     {/* <NavLink className="dropdown-item" to="/synectikscloud">
                       {" "}
@@ -151,10 +161,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                       {" "}
                       Colocation{" "}                      
                     </NavLink>
-                    <NavLink className="dropdown-item" to="/HostedInfrastructure">
-                      {" "}
-                     Cloud Hosted Services{" "}                     
-                    </NavLink>
+                 
                   </div>
                 </li>
                 
@@ -218,7 +225,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                     </NavLink>
                     <NavLink className="dropdown-item" to="/casestudy">
                       {" "}
-                      Case Studies{" "}
+                      Success Stories{" "}
                     </NavLink>
                     {/* <NavLink className="dropdown-item" to="/videos">
                       {" "}

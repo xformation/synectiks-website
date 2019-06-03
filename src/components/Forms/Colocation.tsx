@@ -29,7 +29,7 @@ const wid = {
               }));
             }
           componentDidMount() {
-              window.scrollTo(0, 0)
+              window.scrollTo(0, 300)
             }
   
             handleValidation(){
@@ -76,109 +76,100 @@ const wid = {
     return (
         <div className='bg-lightgrey'>
 
-            <div className=' text-black w-100 mt-3 text-white p-5 mt-5 flex-col d-flex text-justify'
-            data-aos="fade-up" data-aos-duration="2000">
+<div className=' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' >
 
-                <div className="w-100 mt-5 pt-3 pr-5 text-black">
-                    <h1 className=" hfont">
-                        CLOUD
-                    </h1>
-                    <p className="rfont">
-                        <b><i>Cloud Your Way!</i></b>
-                    </p>
-                    <p className="lineHeight-24">
-                        Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.
-                    <br />{" "}
-                    </p>
-                    <p className="lineHeight-24">
-                        We’ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading
-                        expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed
-                        approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
-                    <br />{" "}
-                    </p>
-                    <p className="lineHeight-24">
-                        Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate
-                        your company’s digital transformation and empower your business to stay ahead of the game.
-                    <br />{" "}
-                    </p>
-                    <p className="lineHeight-24">
-                        SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or
-                        private, public or hybrid cloud.
-                    <br />{" "}
-                    </p>
-                    <p className="lineHeight-24">
-                        Get no-cost expert guidance.<br />{" "}
-                    </p>
-                    <p>
-                        We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
-                    <br />{" "}
-                    </p>
+<div className="mt-2 pt-3 text-black">
+    <h1 className=" hfont">CLOUD</h1>
+    <p className="rfont">
+    <b><i>Cloud Your Way!</i></b>
+    </p>
+    <p className="lineHeight-24">
+    Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.
+    <br />
+    </p>
+    <p className="lineHeight-24">
+    We’ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading 
+    expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed 
+    approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.  
+    <br />
+    </p>
+    <p className="lineHeight-24">
+    Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate 
+    your company’s digital transformation and empower your business to stay ahead of the game.
+    <br />
+    </p>
+ 
+    </div>
+
+<div className="w-100 pl-5 py-3 mt-5">
+    <img height="auto" width="100%"
+        className=""
+        src="img/CloudCommon.png"
+        alt="Cloud"
+    />
+</div>
+</div>
+<div className="w-100 px-5 text-black text-justify" >
+<p className="lineHeight-24">
+    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
+    private, public or hybrid cloud.
+    Get no-cost expert guidance.<br/>
+    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
+    </p>    
+</div>
+
+
+            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+               <div className="py-3 col-md-2 nav-item dropdown" >
+                    <Link to="/HostedInfrastructure" className='text-black bg-white noLine'>                                           
+                        {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
+                        id="navbarSupportedContent">  */}
+                        <a className="nav-link" href="#" id="cloudnav"  data-toggle="dropdown">
+                                <b >Cloud&nbsp;Hosted&nbsp;Services</b>
+                        </a>
+                        <div className="dropdown-menu w17em">
+                                    <NavLink className="dropdown-item"  to="/HostedInfrastructure">
+                                        {" "}
+                                        Hosted Infrastructure{" "}
+                                    </NavLink>  
+                                    <NavLink className="dropdown-item" to="/CloudManagedBackup">
+                                        {" "}
+                                       Cloud Managed Backup{" "}
+                                    </NavLink>
+                                    <NavLink className="dropdown-item"  to="/CloudDisasterRecovery">
+                                        {" "}
+                                        Cloud Disaster Recovery{" "}
+                                    </NavLink>
+                                                                      
+                                </div>                                                   
+                        {/* </div> */}
+                    </Link>                                                                  
                 </div>
-
-
-                <div className="w-100 pt-5 mt-5">
-                    <img height="auto" width="100%"
-                        className=""
-                        src="img/CloudCommon.png"
-                        alt="Cloud"
-                    />
-                </div>
-            </div>
-
-
-            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
-            data-aos="fade-up" data-aos-duration="2000">
+          
+                <div className="py-3 col-md-2" >
+                    <Link to="/privatecloud"  className='text-black bg-white noLine'>
+                        <b>Private Cloud</b>
+                    </Link>
+                </div> 
+                <div className="py-3 col-md-2" >
+                    <Link to="/hybridcloud"  className='text-black bg-white noLine'>
+                        <b>Hybrid Cloud</b>
+                    </Link>
+                </div> 
                 <div className="py-3 col-md-2" >
                     <Link to="/publiccloud" className='text-black bg-white noLine'>
                         <b>Public Cloud</b>
                     </Link>
-                </div>
-                <div className="py-3 col-md-2" >
-                    <Link to="/privatecloud" className='text-black bg-white noLine'>
-                        <b>Private Cloud</b>
-                    </Link>
-                </div>
-                <div className="py-3 col-md-2" >
-                    <Link to="/hybridcloud" className='text-black bg-white noLine'>
-                        <b>Hybrid Cloud</b>
-                    </Link>
-                </div>
+                </div> 
                 <div className="py-3 col-md-2" >
                     <Link to="/colocation" id="colocation" className='text-black bg-white noLine'>
                         <b>Colocation</b>
                     </Link>
                 </div>
-               
-                <div className="py-3 col-md-2 nav-item dropdown" >
-                    <Link to="/HostedInfrastructure" className='text-black bg-white noLine'>                                           
-                        {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
-                        id="navbarSupportedContent">  */}
-                        <a className="nav-link" href="#" id="cloudnav"  data-toggle="dropdown">
-                        <b>Cloud&nbsp;Hosted&nbsp;Services</b>
-                        </a>
-                        <div className="dropdown-menu w17em">
-                                    <NavLink className="dropdown-item" to="/CloudManagedBackup">
-                                        {" "}
-                                       Cloud Managed Backup{" "}
-                                    </NavLink>
-                                    <NavLink className="dropdown-item" to="/CloudDisasterRecovery">
-                                        {" "}
-                                        Cloud Disaster Recovery{" "}
-                                    </NavLink>
-                                    <NavLink className="dropdown-item" to="/HostedInfrastructure">
-                                        {" "}
-                                        Hosted Infrastructure{" "}
-                                    </NavLink>                                    
-                                </div>                                                   
-                        {/* </div> */}
-                    </Link>                                                                  
-                </div>
 
             </div>
 
-            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
-            data-aos="fade-up" data-aos-duration="2000">
-
+            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
 
                 <div className="w-100 ">
                     <img height="auto" width="100%"
@@ -357,6 +348,7 @@ Contact&nbsp;Us&nbsp;
             <option value="enterprise">
               &nbsp;Select&nbsp;Service
             </option>
+            <option value="enterprise">&nbsp;Cloud</option>
             <option value="enterprise">
               &nbsp;Enterprise&nbsp;Transformation
             </option>
