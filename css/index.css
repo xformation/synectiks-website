@@ -1261,3 +1261,7 @@ overflow: hidden;
 .modal-dialog{
   max-width: 60em !important;
 }
+.menulist{
+  display: none;
+  padding-inline-start: 0.75em;
+}

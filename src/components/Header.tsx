@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Background from "./Background/Background";
 import { Main } from "./Main/Main";
+import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
 
 const colorBlack = {
   color: '#000000',
@@ -23,7 +24,29 @@ function () {
 });
 </script> */}
 
-export const Header: React.StatelessComponent<{}> = () => {
+// export const Header: React.StatelessComponent<{}> = () => {
+  export class Header extends React.Component<any,any,any>{
+    constructor(props:any) {
+      super(props);  
+
+      this.state = {
+        modal: false,
+        fields: {},
+        errors: {}
+      };
+      
+      this.toggle = this.toggle.bind(this);
+    }
+    toggle() {
+        this.setState(prevState => ({
+          modal: !prevState.modal
+        }));
+      }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+
+ render() {
   return (  
     <div>    
       <div className="container">
@@ -79,7 +102,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                   
                     Transformation
                 </a>
-                  <div className="dropdown-menu w17em">
+                  <div className="dropdown-menu w17em bg-logoblue">
                     <NavLink className="dropdown-item" to="/devops">
                       {" "}
                       DevOps Transformation{" "}
@@ -125,16 +148,37 @@ export const Header: React.StatelessComponent<{}> = () => {
                     data-toggle="dropdown" >
                     Cloud
                   </a>
-                  <div className="dropdown-menu w17em">
+                  <div className="dropdown-menu w17em bg-logoblue">
 
 {/*  */}
-                  <NavLink className=" dropdown-item" to="/HostedInfrastructure">
+                  {/* <NavLink className=" dropdown-item" to="/HostedInfrastructure">
                      Cloud Hosted Services{" "} 
-                     </NavLink>
-                   
+                     </NavLink> */}
+
+                     <li className="dropdown-submenu">
+                     <NavLink data-toggle="dropdown"  id="submenu" className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
+                    <ul className="dropdown-submenu menulist">
+                      <NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink>
+                      <NavLink className="dropdown-item" to="/CloudManagedBackup">Cloud Managed Backup</NavLink>
+                      <NavLink className="dropdown-item" to="/CloudDisasterRecovery">Cloud Disaster Recovery</NavLink>
+                      </ul>
+                      </li>
                        {/* <NavLink className="dropdown-item" to="/HostedInfrastructure">
                           Hosted Infrastructure
                       </NavLink> */}
+
+{/* <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+            <DropdownToggle nav caret>
+              Dropdown
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem header>Header</DropdownItem>
+              <DropdownItem disabled>Action</DropdownItem>
+              <DropdownItem>Another Action</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>Another Action</DropdownItem>
+            </DropdownMenu>
+          </Dropdown> */}
 
 {/*  */}
                     <NavLink className="dropdown-item" to="/privatecloud">
@@ -173,7 +217,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                     
                     Services
                   </a>
-                  <div className="dropdown-menu w17em">
+                  <div className="dropdown-menu w17em bg-logoblue">
                   <NavLink className="dropdown-item" to="/applicationservices">
                       {" "}
                       Application Services{" "}
@@ -218,7 +262,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                     data-toggle="dropdown">
                     Resources
                   </a>
-                  <div className="dropdown-menu">
+                  <div className="dropdown-menu bg-logoblue">
                   <NavLink className="dropdown-item" to="/featured">
                       {" "}
                       Featured{" "}
@@ -242,7 +286,7 @@ export const Header: React.StatelessComponent<{}> = () => {
                     >
                  Company
                   </a>
-                  <div className="dropdown-menu">
+                  <div className="dropdown-menu bg-logoblue">
                     <NavLink className="dropdown-item" to="/aboutus">
                       {" "}
                       About Us{" "}
@@ -285,3 +329,6 @@ export const Header: React.StatelessComponent<{}> = () => {
     </div>
   );
 };
+  }
+
+  export default Header;
