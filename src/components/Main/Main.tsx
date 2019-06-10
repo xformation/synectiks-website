@@ -214,8 +214,8 @@ export const Main: React.StatelessComponent<{}> = () => {
             </a>
           </div>
           <div>
-          <div className="text-center w-100 mb-2  mt-card ">
-            <h4 className="mb-1 py-1 bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
+          <div className="text-center w-100 mb-2">
+            <h4 className="mb-1 py-1 hfont bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
           </div>
           </div>
 
@@ -229,14 +229,9 @@ export const Main: React.StatelessComponent<{}> = () => {
         {/* Background End */}
 
         {/* Card Start */}
-
-        <div className="row main-card card-margin" >
-          {/* <div className="text-center w-100 mb-2 txt mt-card ">
+        {/* <div className="text-center w-100 mb-2 txt mt-card ">
             <h4 className="mb-1 py-1 bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
           </div> */}
-          <div className="text-center w-100 py-5 mt-1 txt mt-card ">
-            <h3 className=""><b>Outcome-based Service Offerings</b></h3>
-          </div>
           {/*<div className="text-center px-5 txt ">
         <h4 >ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
          <ScrollAnimation animateIn='fadeIn'>
@@ -245,10 +240,14 @@ export const Main: React.StatelessComponent<{}> = () => {
           </h1> 
         </ScrollAnimation>          
         </div> */}
+         {/* justify-content-around align-items-center  */}
+        <div className="row main-card card-margin" >
+          
+          <div className="text-center w-100 py-5 mt-1 txt mt-card ">
+            <h3 className=""><b>Outcome-based Service Offerings</b></h3>
+          </div>
           <div className="col-md-12   card-deck ">
-
-            {/* justify-content-around align-items-center  */}
-            <div className="card btn card-shadow mx-3 pt-3">
+           <div className="card btn card-shadow mx-3 pt-3">
               <Link to="/foundation" className="noLine">
                 <img
                   className="card-img-top"

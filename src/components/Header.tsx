@@ -140,10 +140,30 @@ function () {
                     </NavLink>
                   </div>
                 </li> */}
+                 {/* <NavLink className=" dropdown-item" to="/HostedInfrastructure">
+                     Cloud Hosted Services{" "} 
+                     </NavLink> */}
+
+                 {/* <NavLink className="dropdown-item" to="/HostedInfrastructure">
+                          Hosted Infrastructure
+                  </NavLink> */}
+
+                {/* <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                    <DropdownToggle nav caret>
+                      Dropdown
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem header>Header</DropdownItem>
+                      <DropdownItem disabled>Action</DropdownItem>
+                      <DropdownItem>Another Action</DropdownItem>
+                      <DropdownItem divider />
+                      <DropdownItem>Another Action</DropdownItem>
+                    </DropdownMenu>
+                  </Dropdown> */}
                 <li className="nav-item dropdown  ">
                   <a
                     className="nav-link px-4" 
-                    href="/HostedInfrastructure"
+                    href="#/HostedInfrastructure"
                     id="navbardrop1"
                     data-toggle="dropdown" >
                     Cloud
@@ -151,35 +171,17 @@ function () {
                   <div className="dropdown-menu w17em bg-logoblue">
 
 {/*  */}
-                  {/* <NavLink className=" dropdown-item" to="/HostedInfrastructure">
-                     Cloud Hosted Services{" "} 
-                     </NavLink> */}
-
-                     <li className="dropdown-submenu">
-                     <NavLink data-toggle="dropdown"  id="submenu" className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
-                    <ul className="dropdown-submenu menulist">
+                      <li className="dropdown-submenu dropright">
+                     <NavLink data-toggle="dropdown"  id="submenu" className="dropdown-item dropdown-toggle dropright" to="#">Cloud Hosted Services</NavLink>
+                   <div >
+                    <ul className="dropdown-menu menulist dropright bg-logoblue">
                       <NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink>
                       <NavLink className="dropdown-item" to="/CloudManagedBackup">Cloud Managed Backup</NavLink>
                       <NavLink className="dropdown-item" to="/CloudDisasterRecovery">Cloud Disaster Recovery</NavLink>
                       </ul>
+                      </div>
                       </li>
-                       {/* <NavLink className="dropdown-item" to="/HostedInfrastructure">
-                          Hosted Infrastructure
-                      </NavLink> */}
-
-{/* <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-            <DropdownToggle nav caret>
-              Dropdown
-            </DropdownToggle>
-            <DropdownMenu>
-              <DropdownItem header>Header</DropdownItem>
-              <DropdownItem disabled>Action</DropdownItem>
-              <DropdownItem>Another Action</DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>Another Action</DropdownItem>
-            </DropdownMenu>
-          </Dropdown> */}
-
+                     
 {/*  */}
                     <NavLink className="dropdown-item" to="/privatecloud">
                       {" "}

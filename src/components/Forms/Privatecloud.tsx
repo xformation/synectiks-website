@@ -28,7 +28,7 @@ const wid = {
             }));
           }
         componentDidMount() {
-            window.scrollTo(0, 300)
+            window.scrollTo(0,510)
           }
 
           handleValidation(){
@@ -78,10 +78,12 @@ const wid = {
 <div className=' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' >
 
 <div className="mt-2 pt-3 text-black">
-    <h1 className=" hfont">CLOUD</h1>
+  <div className="d-flex">
+    <h1 className=" hfont">CLOUD&nbsp; &#8208;</h1>
     <p className="rfont">
-    <b><i>Cloud Your Way!</i></b>
+    <b><i>&nbsp;Cloud Your Way!</i></b>
     </p>
+    </div>
     <p className="lineHeight-24">
     Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.
     <br />
@@ -97,6 +99,12 @@ const wid = {
     your company’s digital transformation and empower your business to stay ahead of the game.
     <br />
     </p>
+    <p className="lineHeight-24">
+    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
+    private, public or hybrid cloud.
+    Get no-cost expert guidance.<br/>
+    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
+    </p> 
  
     </div>
 
@@ -108,22 +116,17 @@ const wid = {
     />
 </div>
 </div>
-<div className="w-100 px-5 text-black text-justify" >
-<p className="lineHeight-24">
-    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
-    private, public or hybrid cloud.
-    Get no-cost expert guidance.<br/>
-    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
-    </p>    
-</div>
+{/* <div className="w-100 px-5 text-black text-justify" >
+   
+</div> */}
 
 
             <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
              <div className="py-3 col-md-2 nav-item dropdown" >
-                    <Link to="/HostedInfrastructure"  className='text-black bg-white noLine'>                                           
+                    <Link to="/HostedInfrastructure"  className='text-black bg-white noLine dropright'>                                           
                         {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
                         id="navbarSupportedContent">  */}
-                        <a className="nav-link" href="#" id="cloudnav"  data-toggle="dropdown">
+                        <a className="nav-link dropright" href="#" id="cloudnav"  data-toggle="dropdown">
                                 <b>Cloud&nbsp;Hosted&nbsp;Services</b>
                         </a>
                         <div className="dropdown-menu w17em">
@@ -138,8 +141,7 @@ const wid = {
                                     <NavLink className="dropdown-item"  to="/CloudDisasterRecovery">
                                         {" "}
                                         Cloud Disaster Recovery{" "}
-                                    </NavLink>
-                                                                        
+                                    </NavLink>                                         
                                 </div>                                                   
                         {/* </div> */}
                     </Link>                                                                  

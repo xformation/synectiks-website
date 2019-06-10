@@ -36,6 +36,41 @@
     margin-top: 10em !important;
   }
 }
+@media(min-width: 2600px){
+  .card-margin {
+    margin-top: 47em !important;
+}
+}
+@media(min-width: 2441px) and (max-width: 2600px){
+  .card-margin {
+    margin-top: 44em !important;
+}
+}
+@media(min-width: 2221px) and (max-width: 2440px){
+  .card-margin {
+    margin-top: 41em !important;
+}
+}
+@media(min-width: 2017px) and (max-width: 2220px){
+  .card-margin {
+    margin-top: 37em !important;
+}
+}
+@media(min-width: 1785px) and (max-width: 2016px){
+  .card-margin {
+    margin-top: 33em !important;
+}
+}
+@media(min-width: 1570px)and (max-width: 1784px){
+  .card-margin {
+    margin-top: 29em !important;
+}
+}
+@media(max-width: 860px){
+  .card-margin {
+    margin-top: 19em !important;
+}
+}
 @media(min-width: 1405px){
   .mt-card{
     margin-top: 5em ;
@@ -70,7 +105,12 @@
 }
 @media(max-width: 850px){
   .card-margin {
-    margin-top: 5em !important;
+    margin-top: 15em !important;
+}
+}
+@media(max-width: 650px){
+  .card-margin {
+    margin-top: 10em !important;
 }
 }
 
@@ -185,9 +225,9 @@
   align-self: center;
   margin-bottom: 1em !important;
 }
-.card-margin{
+/* .card-margin{
   margin-top: 15em !important;
-}
+} */
 .txt{
   padding-top: 4.5em;
 }
@@ -347,7 +387,7 @@ background-color: #007cc2 !important;
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #fbba00  !important ;
+  /* background-color: #fbba00  !important ; */
 }
 /* .dropdown > .show {
 
@@ -1263,5 +1303,5 @@ overflow: hidden;
 }
 .menulist{
   display: none;
-  padding-inline-start: 0.75em;
+  /* padding-inline-start: 0.75em; */
 }

@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
           super(props);  
         }
         componentDidMount() {
-            window.scrollTo(0, 300)
+            window.scrollTo(0,510)
           }
     
         render() {
