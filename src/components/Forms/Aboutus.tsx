@@ -111,7 +111,7 @@ const lineHeight = {
             </p><br />
             </div>
 
-            <div className="d-flex justify-content-around col-lg-12 py-5 text-center" data-aos="fade-up" data-aos-duration="2000">
+            <div className="d-flex justify-content-around col-lg-12 py-5 text-center flex-col" data-aos="fade-up" data-aos-duration="2000">
                 <div className='col-md-2'>
                     <img
                         className="   py-3"

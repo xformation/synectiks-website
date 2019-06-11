@@ -14,7 +14,9 @@ const togglerBg = {
   color: '#ffffff',
   textDecoration: 'none'
 };
-
+const subhide = {
+  display: 'none'
+}
 
 {/* <script>
 ( ' .navbar-nav a' ).on( 'click', 
@@ -174,7 +176,7 @@ function () {
                       <li className="dropdown-submenu dropright">
                      <NavLink data-toggle="dropdown"  id="submenu" className="dropdown-item dropdown-toggle dropright" to="#">Cloud Hosted Services</NavLink>
                    <div >
-                    <ul className="dropdown-menu menulist dropright bg-logoblue">
+                    <ul className="dropdown-menu menulist bg-logoblue" style={subhide}>
                       <NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink>
                       <NavLink className="dropdown-item" to="/CloudManagedBackup">Cloud Managed Backup</NavLink>
                       <NavLink className="dropdown-item" to="/CloudDisasterRecovery">Cloud Disaster Recovery</NavLink>

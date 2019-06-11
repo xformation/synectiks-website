@@ -297,12 +297,12 @@ export const Main: React.StatelessComponent<{}> = () => {
             alt=""
             className="w-100"
           />
-                <div className="text-center pt-4 ">
-                  <div className="text-white  ">
+                <div className="text-center text-white pt-4 ">
+                  {/* <div className="text-white  "> */}
                     <p>
                       <Link to="/foundation" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
                     </p>
-                  </div>
+                  {/* </div> */}
                 </div>
         </div>
     

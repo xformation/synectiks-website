@@ -80,7 +80,25 @@
   .ml-15{
     margin-left: 15em !important;
   }
+
 }
+@media(max-width:1040px){
+  .carsCtrl{
+    position: absolute;
+    top: 34%;
+    font-size:1.5em !important;
+  }
+  .carsCtrlLt {
+    left: -4em  !important;
+  }
+}
+@media(max-width:820px){
+  .carsCtrlRt {
+    float: right !important;
+    right: 1.25em !important;
+  }
+}
+
 
 @media(max-width: 75em){
   #toggler{
@@ -412,7 +430,7 @@ background-color: #007cc2 !important;
   /* border-radius: 0.25rem; */
   background-color: #c9ddf1 !important;
   border-radius: 5px;
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
 }
 .width38em{
   width:38em !important;
@@ -1271,7 +1289,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 
 }
 .carsCtrlLt {
-  font-size:2.5em;
   left: -2em;
 }
 .padding-075{
