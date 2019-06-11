@@ -208,7 +208,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p>
               <b>SPEED</b>
             </p>
-            <p className="text-justify">
+            <p className="">
               Introduction of New products or transforming your existing legacy
               monolith applications to microservices faster while maintaining
               Operational Control and Customer Visibility.
@@ -227,7 +227,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p>
               <b>SCALE</b>
             </p>
-            <p className="text-justify">
+            <p className="">
               Grow cost-effectively to meet new organizational and business
               requirements across the enterprise using a highly scalable
               architecture that can distribute the workloads across clouds,
@@ -248,7 +248,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p>
               <b>SECURITY</b>
             </p>
-            <p className="text-justify ">
+            <p className="">
               Provision and Manage infrastructure, application services in
               complete software-defined way with maximum automation so that you
               never fall into security loopholes. Enables Continuous Audit,
@@ -324,7 +324,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p className="borderbtm-grey-1px">
               <b>Maximum Flexibility</b>
             </p>
-            <p className="text-justify">
+            <p className="">
               Synectiks Xformation platform coupled with its cross-cloud
               infrastructure delivers the maximum flexibility to run/move your
               high performant workloads across clouds and manage them through a
@@ -338,7 +338,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p className="borderbtm-grey-1px">
               <b>Faster Delivery</b>
             </p>
-            <p className="text-justify">
+            <p className="">
               Synectiks Xformation platform enabled infrastructure and
               application provisioning is complete software defined manner with
               regulatory compliant architectures. The existing assets and best
@@ -352,7 +352,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p className="borderbtm-grey-1px">
               <b>Better Quality</b>
             </p>
-            <p className="text-justify">
+            <p className="">
               Through Synectiks Xformation platform, you can continuously
               deliver containerized and serverless microservices verified
               through stringent quality gates that run across clouds and
@@ -366,7 +366,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             <p className="borderbtm-grey-1px">
               <b>Lower Costs</b>
             </p>
-            <p className="text-justify">
+            <p className="">
               Everything software-defined and maximum automation ensure lowest
               TCO. A successful Digital Modernization project delivers 10X
               agility, 30X reliability and 10X operational efficiency. At least

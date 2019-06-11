@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
           super(props);  
         }
         componentDidMount() {
-            window.scrollTo(0,510)
+            window.scrollTo(0,0)
           }
     
         render() {
@@ -21,10 +21,12 @@ import { NavLink } from "react-router-dom";
 <div className=' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' >
 
 <div className="mt-2 pt-3 text-black">
-    <h1 className=" hfont">CLOUD</h1>
+  <div className="d-flex">
+    <h1 className=" hfont">CLOUD&nbsp; &#8208;</h1>
     <p className="rfont">
-    <b><i>Cloud Your Way!</i></b>
+    <b><i>&nbsp;Cloud Your Way!</i></b>
     </p>
+    </div>
     <p className="lineHeight-24">
     Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.
     <br />
@@ -40,6 +42,12 @@ import { NavLink } from "react-router-dom";
     your company’s digital transformation and empower your business to stay ahead of the game.
     <br />
     </p>
+    <p className="lineHeight-24">
+    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
+    private, public or hybrid cloud.
+    Get no-cost expert guidance.<br/>
+    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
+    </p> 
  
     </div>
 
@@ -51,14 +59,7 @@ import { NavLink } from "react-router-dom";
     />
 </div>
 </div>
-<div className="w-100 px-5 text-black text-justify" >
-<p className="lineHeight-24">
-    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
-    private, public or hybrid cloud.
-    Get no-cost expert guidance.<br/>
-    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
-    </p>    
-</div>
+
             
             <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
            <div className="py-3 col-md-2 nav-item dropdown" >

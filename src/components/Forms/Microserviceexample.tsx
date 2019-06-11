@@ -5,7 +5,16 @@ import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export const Microserviceexample: React.StatelessComponent<{}> = () => {
+// export const Microserviceexample: React.StatelessComponent<{}> = () => {
+  export class Microserviceexample extends React.Component<{},{}> {
+    constructor(props:any) {
+      super(props);  
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+
+    render() {
   return (
     <div className='bg-lightgrey text-justify '>
 <div className="w-100 py-5 mt-5">
@@ -67,5 +76,5 @@ Say a Travel &amp; Tourism business have major functionalities like Booking/CRM/
 
   );
 };
-
+  }
 export default Microserviceexample;

@@ -30,7 +30,7 @@ const wid = {
             }));
           }
         componentDidMount() {
-            window.scrollTo(0,510)
+            window.scrollTo(0,0)
           }
 
           handleValidation(){
@@ -79,28 +79,36 @@ const wid = {
 
             <div className=' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' >
 
-                <div className="mt-2 pt-3 text-black">
-                    <h1 className=" hfont">CLOUD</h1>
-                    <p className="rfont">
-                    <b><i>Cloud Your Way!</i></b>
-                    </p>
-                    <p className="lineHeight-24">
-                    Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.
-                    <br />
-                    </p>
-                    <p className="lineHeight-24">
-                    We’ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading 
-                    expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed 
-                    approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.  
-                    <br />
-                    </p>
-                    <p className="lineHeight-24">
-                    Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate 
-                    your company’s digital transformation and empower your business to stay ahead of the game.
-                    <br />
-                    </p>
-                 
-                    </div>
+            <div className="mt-2 pt-3 text-black">
+  <div className="d-flex">
+    <h1 className=" hfont">CLOUD&nbsp; &#8208;</h1>
+    <p className="rfont">
+    <b><i>&nbsp;Cloud Your Way!</i></b>
+    </p>
+    </div>
+    <p className="lineHeight-24">
+    Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.
+    <br />
+    </p>
+    <p className="lineHeight-24">
+    We’ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading 
+    expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed 
+    approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.  
+    <br />
+    </p>
+    <p className="lineHeight-24">
+    Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate 
+    your company’s digital transformation and empower your business to stay ahead of the game.
+    <br />
+    </p>
+    <p className="lineHeight-24">
+    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
+    private, public or hybrid cloud.
+    Get no-cost expert guidance.<br/>
+    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
+    </p> 
+ 
+    </div>
 
                 <div className="w-100 pl-5 py-3 mt-5">
                     <img height="auto" width="100%"
@@ -109,14 +117,6 @@ const wid = {
                         alt="Cloud"
                     />
                 </div>
-            </div>
-            <div className="w-100 px-5 text-black text-justify" >
-            <p className="lineHeight-24">
-                    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
-                    private, public or hybrid cloud.
-                    Get no-cost expert guidance.<br/>
-                    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
-                    </p>    
             </div>
 
             <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">

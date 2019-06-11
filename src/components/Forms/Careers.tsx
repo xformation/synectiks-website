@@ -69,8 +69,8 @@ export class Careers extends React.Component<any, any, any> {
                 </div>
 
                 <div className="w-100 px-5 text-black text-justify" >
-                    <p className="lineHeight-24">
-                        <h4>Changing the game takes talent - Yours!</h4><br />{" "}
+                    <p className="lineHeight-24 pb-3">
+                        <h4>Changing the game takes talent - Yours!</h4>
                         Work where you’re encouraged to explore your passions, where your skills are nurtured and respected. Introduce
                         with leading-edge technologies on absolutely the coolest undertakings you'll be able to envision. What's more, get
                         the tools you have to continue learning and developing, so you remain consistently on top of things while making a difference in the world.
@@ -102,6 +102,7 @@ export class Careers extends React.Component<any, any, any> {
                         </div>
                     </p>
                     {/*  */}
+                    <div className="pb-3">
                     <p className="lineHeight-24 borderbtm-grey-1px">
                         <h4>Open positions in all locations</h4>
                     </p>
@@ -184,18 +185,19 @@ export class Careers extends React.Component<any, any, any> {
                             </Collapse>
                         </div>
                     </div>
+                    </div>
                     {/*  */}
-                    <p className="lineHeight-24">
-                        <h4>Life at SYNECTIKS!</h4><br />
-                        <i>Be Happy, Healthy, and Inspired!</i><br />{" "}
+                    <p className="lineHeight-24 pb-3">
+                        <h4>Life at SYNECTIKS!</h4>
+                        <i>Be Happy, Healthy, and Inspired!</i><br />
                         To start with, We provide a competitive salary and employer-paid health benefits. We offer
                         a flexible vacation plan, paid maternal and parental leave, tuition assistance, learning development
                         opportunities, sports events, team lunches, pot-lucks, team outings, and annual office celebrations – all for
                         you to connect, refresh and thrive.
                 <br />{" "}
                     </p>
-                    <p className="lineHeight-24">
-                        <h4>SYNECTIKS for All!</h4><br />{" "}
+                    <p className="lineHeight-24 ">
+                        <h4>SYNECTIKS for All!</h4>
                         SYNECTIKS is proud to be an equal opportunity workplace. We take great care to evaluate all employees
                         and job applicants equally, based on competence and qualifications. We will not discriminate by
                         age, race, gender, color, religion, national origin, sexual orientation, veteran status, marital status, disability status, or any other protected

@@ -28,7 +28,7 @@ const wid = {
             }));
           }
         componentDidMount() {
-            window.scrollTo(0,510)
+            window.scrollTo(0,0)
           }
 
           handleValidation(){
