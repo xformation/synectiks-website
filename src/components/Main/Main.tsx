@@ -246,8 +246,9 @@ export const Main: React.StatelessComponent<{}> = () => {
           <div className="text-center w-100 py-5 mt-1 txt mt-card ">
             <h3 className=""><b>Outcome-based Service Offerings</b></h3>
           </div>
+          
           <div className="col-md-12   card-deck ">
-           <div className="card btn card-shadow mx-3 pt-3">
+           <div className="card btn col-md-4 card-shadow mx-3 pt-3">
               <Link to="/foundation" className="noLine">
                 <img
                   className="card-img-top"
@@ -260,7 +261,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               </Link>
             </div>
 
-            <div className="card btn card-shadow mx-3 pt-3">
+            <div className="card btn col-md-4 card-shadow mx-3 pt-3">
               <Link to="/transformation" className="noLine">
                 <img
                   className="card-img-top"
@@ -273,7 +274,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               </Link>
             </div>
 
-            <div className="card btn card-shadow mx-3 pt-3">
+            <div className="card btn col-md-4 card-shadow mx-3 pt-3">
               <Link to="/operations" className="noLine">
                 <img
                   className="card-img-top"

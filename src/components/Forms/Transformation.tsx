@@ -56,10 +56,11 @@ import { Link } from "react-router-dom";
               />
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Transformation</h2>
+                <h1 className="pointer text-center">&#187;</h1>
               </div>
-              <div className="pointer text-center">
+              {/* <div className="pointer text-center">
               <h1>&#187;</h1>
-              </div>
+              </div> */}
               </Link>
             </div>
 
@@ -83,7 +84,7 @@ import { Link } from "react-router-dom";
         
             <div className="text-center p-5">
                 <div  className="my-5">
-            <img data-aos="fade-up" data-aos-duration="2000"
+            <img 
                    
                     src="img/Refactor.png" width="75%"
                     alt="Refactor"

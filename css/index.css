@@ -150,7 +150,7 @@
     float: left!important;
   }
   .card-margin {
-    margin-top: 22em !important;
+    margin-top: 18em !important;
 }
 }
 @media(max-width: 850px){
@@ -160,7 +160,7 @@
 }
 @media(max-width: 650px){
   .card-margin {
-    margin-top: 10em !important;
+    margin-top: 7.5em !important;
 }
 }
 
@@ -271,7 +271,8 @@
 }
 .card-deck{
   flex-direction: column !important;
-  padding-top: 8em;
+  /* padding-top: 8em; */
+  padding-top: 0em !important;
 }
 .card{
   width: 50%;
@@ -293,7 +294,8 @@
 }
 @media(max-width:985px) {
  .card-deck{
- padding-top: 4em !important;
+ /* padding-top: 4em !important; */
+ padding-top: 0em !important;
  }
  .flex-col{
   orientation: portrait !important;
@@ -351,6 +353,17 @@
 }
 
 }
+@media(max-width: 767px){
+  .card-deck{
+  width:20em  !important;
+  margin-left:2.5em  !important;
+  margin-right:2.5em  !important;
+    }
+  
+  }
+  .w17em{
+    width: 17em !important;
+  }
 @media(max-width:540px) {
   .card{
     width: 100%;
@@ -369,7 +382,7 @@ margin-right:2.5em  !important;
     height: 38em !important;
   } */
   .w17em{
-    width: 17em;
+    width: 17em !important;
   }
   #navbardrop{
     min-width: 272px;

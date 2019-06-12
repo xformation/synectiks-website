@@ -57,10 +57,11 @@ import { Link } from "react-router-dom";
                 />
                 <div className="card-body">
                   <h2 className="text-center text-uppercase">Operation</h2>
+                  <h1 className="pointer text-center">&#187;</h1>
                 </div>
-                <div className="pointer text-center">
+                {/* <div className="pointer text-center">
                   <h1>&#187;</h1>
-                </div>
+                </div> */}
               </Link>
             </div>
             {/*  */}
