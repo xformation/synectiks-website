@@ -215,7 +215,7 @@ export const Main: React.StatelessComponent<{}> = () => {
           </div>
           <div>
           <div className="text-center w-100 mb-2">
-            <h4 className="mb-1 py-1 hfont bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
+            <h4 className="mb-1 py-1 stripfont bg-logoblue text-white">ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM</h4>
           </div>
           </div>
 
