@@ -29,7 +29,7 @@ export class Casestudy extends React.Component<{}, {}> {
         </div>
 
         <div className="container">
-          <div className="text-center w-100 pt-3 txt mt-card ">
+          <div className="text-center w-100 pt-3 ">
             <h3 className=""><b>Success Stories</b></h3>
           </div>
 

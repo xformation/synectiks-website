@@ -175,6 +175,9 @@
   /* height: 34em !important; */
   padding-left: 3em !important;
 }
+.stripfont{
+  font-size: 2.5vw;
+}
 .hfont{
   font-size: 3.5vw;
 }
