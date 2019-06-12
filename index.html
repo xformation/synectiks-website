@@ -9,7 +9,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />  
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
@@ -67,45 +67,46 @@
     AOS.init();
   </script>
 
-<!-- pop -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>
-$(document).ready(function() {
-    setTimeout(function() {
+  <!-- pop -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      setTimeout(function () {
         $(".content").fadeOut(1500);
-    }, 30000);
-});
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $(".content").hide();
-  });
-});
+      }, 30000);
+    });
+    $(document).ready(function () {
+      $("#hide").click(function () {
+        $(".content").hide();
+      });
+    });
 
-$(document).ready(function(){
-  $("#submenu").click(function(){
-    $(".menulist").toggle();
-  });
-});
-// $("#cancel_edit").click(function(){
-//         window.open('','_parent',''); 
-//         window.close(); 
-//     });
+    $(document).ready(function () {
+      $("#submenu").click(function () {
+        $(".menulist").toggle();
+      });
+    });
 
-$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-  if (!$(this).next().hasClass('show')) {
-    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-  }
-  var $subMenu = $(this).next(".dropdown-menu");
-  $subMenu.toggleClass('show');
+    // $("#cancel_edit").click(function(){
+    //         window.open('','_parent','');
+    //         window.close();
+    //     });
+
+    $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+      if (!$(this).next().hasClass('show')) {
+        $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+      }
+      var $subMenu = $(this).next(".dropdown-menu");
+      $subMenu.toggleClass('show');
 
 
-  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-    $('.dropdown-submenu .show').removeClass("show");
-  });
-});
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+        $('.dropdown-submenu .show').removeClass("show");
+      });
+    });
 
-</script>
-<!-- pop -->
+  </script>
+  <!-- pop -->
 
   <!-- <section id='root'></section> -->
 
