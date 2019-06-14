@@ -114,42 +114,42 @@ const lineHeight = {
             <div className="d-flex justify-content-around col-lg-12 py-5 text-center flex-col" data-aos="fade-up" data-aos-duration="2000">
                 <div className='col-md-2'>
                     <img
-                        className="   py-3"
+                        className="py-3"
                         src="img/vmware.svg" width="75%"
                         alt="VMware"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
-                        className="   py-3"
-                        src="img/dell.svg" width="75%"
+                        className="w-50 py-3"
+                        src="img/dell.svg" 
                         alt="Dell"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
-                        className="   py-3"
+                        className="py-3"
                         src="img/equinix.svg" width="75%"
                         alt="Equinix"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
-                        className="   py-3 "
+                        className="py-3 "
                         src="img/microsoft.svg" width="75%"
                         alt="Microsoft"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
-                        className="   py-3"
+                        className="py-3"
                         src="img/nutanix.svg" width="75%"
                         alt="Nutanix"
                     />
                 </div>
                 <div className='col-md-2'>
                     <img
-                        className="   py-3"
+                        className="py-3"
                         src="img/simplivity.svg" width="75%"
                         alt="Simplivity"
                     />

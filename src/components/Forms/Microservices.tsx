@@ -86,6 +86,25 @@ export class Microservices extends React.Component<any,any,any> {
             alt="Microservices"
           />
         </div>
+        {/* Floating Img */}
+        <div className="conatiner-fluid px-5">
+<div className="row">
+<div className="btn-groups pFxd">
+<div className="showhim w-25">
+<img src="img/Microservicesmain.jpg" className="w-25" />
+<div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microserviceexample">Example of Microservices</Link></div>
+</div>
+<div className="showhim w-25 my-1">
+<img src="img/MSbenefits.png" className="w-25" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicebenefit">Benefits of Microservices</Link></div></div>
+<div className="showhim w-25 mb-1">
+<img src="img/MSchallenges.png" className="w-25" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicechallenge">
+Challenges of Microservices </Link></div></div>
+<div className="showhim w-25">
+<img src="img/Microservicesmain.jpg" className="w-25" /><div className="showme bg-primary px-3 py-2 text-white"> <Link className="text-white" to="/microservicehelp">How we can help you?</Link></div></div>
+</div>
+</div>
+</div>
+        {/* Floating Img   */}
 
         <div
           className="px-5 pt-3 lineHeight-24"

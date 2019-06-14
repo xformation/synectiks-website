@@ -1388,3 +1388,25 @@ overflow: hidden;
   display: none;
   /* padding-inline-start: 0.75em; */
 }
+.showme{
+  display: none;
+  position: absolute;
+  left: 5.5rem;
+  top: 5px;
+  width: 15rem;
+  }
+.showhim{
+  position: relative;
+  }
+  .showhim:hover .showme{
+  display : block;
+  }
+  .pFxd{
+  position: fixed;
+  top:15rem;
+  z-index: 99;
+  }
+  .px-8{
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }

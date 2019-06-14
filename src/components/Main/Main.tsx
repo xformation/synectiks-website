@@ -146,7 +146,8 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider4.jpg"
                   alt="Enterprise Managed Services"
                 />
-                <div className="text-center btnLearnmore pt-4 mt-2" style={s1}>
+                {/* mt-2 */}
+                <div className="text-center btnLearnmore pt-4  mt-xl-5 mt-xs-5 mt-2 " style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/enterprisemanagedservice" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
