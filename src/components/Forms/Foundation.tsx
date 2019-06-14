@@ -48,10 +48,10 @@ export class Foundation extends React.Component<{}, {}> {
   render() {
     return (
 
-      <div className="bg-lightgrey pt-5">
-        <div className="container-fluid mt-5 pt-5">
+      <div className="bg-lightgrey pt-5 px-5">
+        <div className="container-fluid mt-4 pt-5 px-5">
           <div className="d-flex justify-content-center flex-sm-row flex-column px-5">
-            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow ">
+            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow bg-white">
               <Link to="/foundation" className="noLine">
                 <img
                   className="card-img-top"
@@ -68,7 +68,7 @@ export class Foundation extends React.Component<{}, {}> {
 
             </div>
 
-            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow mx-0 my-3 mx-sm-5 mx-md-5 mx-lg-5 mx-xl-5 my-sm-0 my-md-0 my-lg-0 my-xl-0 ">
+            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow bg-white mx-0 my-3 mx-sm-5 mx-md-5 mx-lg-5 mx-xl-5 my-sm-0 my-md-0 my-lg-0 my-xl-0">
               <Link to="/transformation" className="noLine">
                 <img
                   className="card-img-top"
@@ -81,7 +81,7 @@ export class Foundation extends React.Component<{}, {}> {
               </Link>
             </div>
 
-            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow ">
+            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow bg-white">
               <Link to="/operations" className="noLine">
                 <img
                   className="card-img-top"

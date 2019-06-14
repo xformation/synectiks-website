@@ -70,6 +70,13 @@
   <!-- pop -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script>
+
+    $(document).ready(function () {
+      $("#side").hover(function () {
+        $("#panel").toggle("slow");
+      });
+    });
+
     $(document).ready(function () {
       setTimeout(function () {
         $(".content").fadeOut(1500);

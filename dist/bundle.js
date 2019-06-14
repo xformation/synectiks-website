@@ -2711,11 +2711,7 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/li
 
 
 // module
-<<<<<<< HEAD
 exports.push([module.i, "/* body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: sans-serif;\r\n} */\n", ""]);
-=======
-exports.push([module.i, "/* body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n} */\n", ""]);
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
 
 // exports
 
@@ -39710,11 +39706,7 @@ class Casestudy extends React.Component {
                     React.createElement("div", { className: "text-white" },
                         React.createElement("h3", null, "Resources")))),
             React.createElement("div", { className: "container" },
-<<<<<<< HEAD
-                React.createElement("div", { className: "text-center w-100 pt-3 txt mt-card " },
-=======
                 React.createElement("div", { className: "text-center w-100 pt-3 " },
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
                     React.createElement("h3", { className: "" },
                         React.createElement("b", null, "Success Stories"))),
                 React.createElement("div", { className: "d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col", "data-aos": "fade-up", "data-aos-duration": "2000" },
@@ -40443,7 +40435,7 @@ class Devops extends React.Component {
         this.setState({ fields });
     }
     render() {
-        return (React.createElement("div", { className: "bg-lightgrey" },
+        return (React.createElement("div", { className: "bg-lightgrey px-5" },
             React.createElement("div", { className: "w-100 py-5 mt-5" },
                 React.createElement("img", { height: "auto", width: "101%", className: "", src: "img/Devopsmain.jpg", alt: "Devopsmain Services" })),
             React.createElement("div", { className: "px-5  text-center" },
@@ -41033,70 +41025,39 @@ class Foundation extends React.Component {
         window.scrollTo(0, 0);
     }
     render() {
-<<<<<<< HEAD
-        return (React.createElement("div", { className: "bg-lightgrey pt-5" },
-            React.createElement("div", { className: "container-fluid mt-5 pt-5" },
+        return (React.createElement("div", { className: "bg-lightgrey pt-5 px-5" },
+            React.createElement("div", { className: "container-fluid mt-4 pt-5 px-5" },
                 React.createElement("div", { className: "d-flex justify-content-center flex-sm-row flex-column px-5" },
-                    React.createElement("div", { className: "col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow " },
+                    React.createElement("div", { className: "col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow bg-white" },
                         React.createElement(react_router_dom_1.Link, { to: "/foundation", className: "noLine" },
                             React.createElement("img", { className: "card-img-top", src: "img/Foundation.png", alt: "Foundation" }),
                             React.createElement("div", { className: "card-body" },
                                 React.createElement("h2", { className: "text-center text-uppercase" }, "Foundation")),
                             React.createElement("div", { className: "pointer text-center" },
                                 React.createElement("h1", null, "\u00BB")))),
-                    React.createElement("div", { className: "col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow mx-0 my-3 mx-sm-5 mx-md-5 mx-lg-5 mx-xl-5 my-sm-0 my-md-0 my-lg-0 my-xl-0 " },
+                    React.createElement("div", { className: "col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow bg-white mx-0 my-3 mx-sm-5 mx-md-5 mx-lg-5 mx-xl-5 my-sm-0 my-md-0 my-lg-0 my-xl-0" },
                         React.createElement(react_router_dom_1.Link, { to: "/transformation", className: "noLine" },
                             React.createElement("img", { className: "card-img-top", src: "img/Transformation.png", alt: "Transformation" }),
                             React.createElement("div", { className: "card-body" },
                                 React.createElement("h2", { className: "text-center text-uppercase" }, "Transformation")))),
-                    React.createElement("div", { className: "col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow " },
+                    React.createElement("div", { className: "col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow bg-white" },
                         React.createElement(react_router_dom_1.Link, { to: "/operations", className: "noLine" },
                             React.createElement("img", { className: "card-img-top", src: "img/Operation.png", alt: "Operation" }),
                             React.createElement("div", { className: "card-body" },
                                 React.createElement("h2", { className: "text-center text-uppercase" }, "Operation")))))),
             React.createElement("div", { className: "p-5 mt-5 text-justify", "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("h3", { className: "fh3 text-center" }, "Synectiks\u00A0Open\u00A0Xformation\u00A0Platform"),
-=======
-        return (React.createElement("div", { className: "bg-lightgrey" },
-            React.createElement("div", { className: "container pb-5" },
-                React.createElement("div", { className: "row main-card pb-5" },
-                    React.createElement("div", { className: "col-md-12   card-deck" },
-                        React.createElement("div", { className: "card btn card-shadow mx-3 pt-3" },
-                            React.createElement(react_router_dom_1.Link, { to: "/foundation", className: "noLine" },
-                                React.createElement("img", { className: "card-img-top", src: "img/Foundation.png", alt: "Foundation" }),
-                                React.createElement("div", { className: "card-body" },
-                                    React.createElement("h2", { className: "text-center text-uppercase" }, "Foundation")),
-                                React.createElement("div", { className: "pointer text-center" },
-                                    React.createElement("h1", null, "\u00BB")))),
-                        React.createElement("div", { className: "card btn card-shadow mx-3 pt-3" },
-                            React.createElement(react_router_dom_1.Link, { to: "/transformation", className: "noLine" },
-                                React.createElement("img", { className: "card-img-top", src: "img/Transformation.png", alt: "Transformation" }),
-                                React.createElement("div", { className: "card-body" },
-                                    React.createElement("h2", { className: "text-center text-uppercase" }, "Transformation")))),
-                        React.createElement("div", { className: "card btn card-shadow mx-3 pt-3" },
-                            React.createElement(react_router_dom_1.Link, { to: "/operations", className: "noLine" },
-                                React.createElement("img", { className: "card-img-top", src: "img/Operation.png", alt: "Operation" }),
-                                React.createElement("div", { className: "card-body" },
-                                    React.createElement("h2", { className: "text-center text-uppercase" }, "Operation"))))))),
-            React.createElement("div", { className: "p-5 mt-5 text-justify", "data-aos": "fade-up", "data-aos-duration": "2000" },
-                React.createElement("h3", { className: "text-center" }, "Synectiks\u00A0Open\u00A0Xformation\u00A0Platform"),
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
                 React.createElement("p", { className: "lineHeight-24 pt-5" }, "As every business today need to address volume/velocity challenges, it must evolve to stay ahead of demand. Cloud adoption requires a secure and consistent Foundation to allow enterprises migrate their workloads at speed. Smart tooling and automation hugely streamline delivery and management within organization. We don\u2019t want to waste our customers' resources on \u2018reinventing the wheel\u2019. By productizing our expertise and carefully researching the best tool, we aim to deliver to you a complete solution which offers cost-efficient secure cloud and on the top of it, extremely scalable, reliable, secure application done right. The goal of Xformation platform is to simplify the digital transformation, make customers life simpler, give them flexibility to go to any cloud, create container clusters, develop and deploy microservices/Bigdata/IOT applications seamlessly and manage operations with our automation bots."),
                 React.createElement("p", { className: "lineHeight-24" }, "SYNECTIKS Open Xformation platform is consolidation of tools/utilities within a simplified and extensible architecture. The Xformation platform can use all the existing assets and best practices to accelerate Digital Transformation journey and reduce time to do modernization in most defined and secure way."),
                 React.createElement("p", { className: "lineHeight-24" }, "SYNECTIKS Open Xformation platform and its Software-Defined Foundation services helps in building the Landing Zone with Network Security to protect applications and data, allowing customers to scale and accelerate their cloud adoption. The comprehensive compliance foundation service includes the creation of a landing zone which is a pre-configured secure environment that implements DISA's Secure Cloud Computing Architecture (SCCA) requirements."),
                 React.createElement("p", { className: "lineHeight-24" }, "With SYNECTIKS Xformation platform, companies can take advantage of an API-driven cloud architecture and get going faster.")),
             React.createElement("div", { className: "px-5 text-justify", "data-aos": "fade-up", "data-aos-duration": "2000" },
-<<<<<<< HEAD
                 React.createElement("h3", { className: "fh3 text-center pb-3" }, "How\u00A0does\u00A0it\u00A0actually\u00A0work?"),
-=======
-                React.createElement("h3", { className: "text-center pb-3" }, "How\u00A0does\u00A0it\u00A0actually\u00A0work?"),
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
                 React.createElement("div", { className: "text-center" },
                     React.createElement("img", { className: "text-center", src: "img/Foundation.svg", width: "60%", alt: "How Foundation Works?" })),
                 React.createElement("p", { className: "pt-3", "data-aos": "fade-up", "data-aos-duration": "2000" }, "The Foundation Platform creates at least 3 enclaves to take your products and services in cloud:"),
                 React.createElement("ol", { type: "1", className: "lineHeight-24", "data-aos": "fade-up", "data-aos-duration": "2000" },
                     React.createElement("li", null,
-<<<<<<< HEAD
                         React.createElement("h4", { className: "fh4" }, "\u00A0Virtual Data Center Management Services")),
                     React.createElement("ul", null,
                         React.createElement("li", null, "\u00A0Primarily all management backplane managing multiple products and services. Typical services include (Operation Automation, Monitoring, Log Analysis, Alerting, Authentication & Authorization (AD/LDAP), SSO, OCSP, DHCP, DNS, NTP, PATCH, ACAS, ALM (Application Lifecycle Management Services)")),
@@ -41112,29 +41073,11 @@ class Foundation extends React.Component {
                     React.createElement("h3", { className: "fh3 text-center" }, "Key\u00A0Features")),
                 React.createElement("div", { className: "px-5 py-3", "data-aos": "fade-up", "data-aos-duration": "2000" },
                     React.createElement("h3", { className: "fh3 text-center" }, "Synectiks Open Xformation Platform")),
-=======
-                        React.createElement("h4", null, "\u00A0Virtual Data Center Management Services")),
-                    React.createElement("ul", null,
-                        React.createElement("li", null, "\u00A0Primarily all management backplane managing multiple products and services. Typical services include (Operation Automation, Monitoring, Log Analysis, Alerting, Authentication & Authorization (AD/LDAP), SSO, OCSP, DHCP, DNS, NTP, PATCH, ACAS, ALM (Application Lifecycle Management Services)")),
-                    React.createElement("li", null,
-                        React.createElement("h4", null, "\u00A0Virtual Data Center Security Services")),
-                    React.createElement("ul", null,
-                        React.createElement("li", null, "\u00A0Software-defined Network Security, Firewall, IDS/IPS (Intrusion Detection & Protection System), HBSS (Host Based Security System) and Compliance Audit system (PCI-DSS/HIPPA/CISP...)")),
-                    React.createElement("li", null,
-                        React.createElement("h4", null, "\u00A0Application Enclaves")),
-                    React.createElement("ul", null,
-                        React.createElement("li", null, "\u00A0 Secure landing zones for mission critical workloads in cloud, provisioned and managed by VDMS/VDSS platforms. The VDMS platform provision a landing zone with quick start Account Setup, Network, Security, Identity & Access based on best practices and standards that can be leveraged across all applications migration."))),
-                React.createElement("div", { className: "px-5 py-3", "data-aos": "fade-up", "data-aos-duration": "2000" },
-                    React.createElement("h3", { className: "text-center" }, "Key\u00A0Features")),
-                React.createElement("div", { className: "px-5 py-3", "data-aos": "fade-up", "data-aos-duration": "2000" },
-                    React.createElement("h3", { className: "text-center" }, "Synectiks Open Xformation Platform")),
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
                 React.createElement("div", { className: "text-center", "data-aos": "fade-up", "data-aos-duration": "2000" },
                     React.createElement("img", { src: "img/OpenXformationPlatform.png", width: "75%", alt: "Synectiks Open Xformation Platform" }),
                     " "),
                 React.createElement("ol", { type: "1", className: "lineHeight-24 pt-3", "data-aos": "fade-up", "data-aos-duration": "2000" },
                     React.createElement("li", null,
-<<<<<<< HEAD
                         React.createElement("h4", { className: "fh4" }, "\u00A0Everything Software defined (IaC & Container Orchestration)")),
                     React.createElement("p", { className: "lineHeight-24" }, "Through our code, customers can go to any cloud (Private/Public), aggregate hardware resources in pure software-defined way and populate highly secured elastic platform to deliver application services. It will help customers to create and maintain Container delivery clusters (AWS ECS, Kubernetes, Messos DCOS, SWARM) across cloud (Private/Public) in a most efficient manner. It will create a landing platform in cloud which is highly secure and elastic and services can just be deployed across cloud in distributed manner."),
                     React.createElement("li", null,
@@ -41148,21 +41091,6 @@ class Foundation extends React.Component {
                     React.createElement("p", { className: "lineHeight-24" }, "It will help customers to manage day to day operations and diagnostics ability with automation bots. Most operation automation bots are written in server less programming."))),
             React.createElement("div", { className: "p-5 text-justify lineHeight-24", "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("h3", { className: "fh3 text-center pb-3" }, "System Architecture of Xformation Platform"),
-=======
-                        React.createElement("h4", null, "\u00A0Everything Software defined (IaC & Container Orchestration)")),
-                    React.createElement("p", { className: "lineHeight-24" }, "Through our code, customers can go to any cloud (Private/Public), aggregate hardware resources in pure software-defined way and populate highly secured elastic platform to deliver application services. It will help customers to create and maintain Container delivery clusters (AWS ECS, Kubernetes, Messos DCOS, SWARM) across cloud (Private/Public) in a most efficient manner. It will create a landing platform in cloud which is highly secure and elastic and services can just be deployed across cloud in distributed manner."),
-                    React.createElement("li", null,
-                        React.createElement("h4", null, "\u00A0Continuous Delivery")),
-                    React.createElement("p", { className: "lineHeight-24" }, "It will help to deliver containerized microservices through quality gates, that will ensure highest level of software quality, agility, and reliability."),
-                    React.createElement("li", null,
-                        React.createElement("h4", null, "\u00A0Rapid Application Delivery")),
-                    React.createElement("p", { className: "lineHeight-24" }, "It will help customers to rapidly develop/deploy/maintain microservices/Bigdata/IOT applications seamlessly. The base application templates along with delivery and operation automations will be provided so that customers can rapidly build highly scalable applications."),
-                    React.createElement("li", null,
-                        React.createElement("h4", null, "\u00A0Operation Automation")),
-                    React.createElement("p", { className: "lineHeight-24" }, "It will help customers to manage day to day operations and diagnostics ability with automation bots. Most operation automation bots are written in server less programming."))),
-            React.createElement("div", { className: "p-5 text-justify lineHeight-24", "data-aos": "fade-up", "data-aos-duration": "2000" },
-                React.createElement("h3", { className: "text-center pb-3" }, "System Architecture of Xformation Platform"),
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
                 React.createElement("div", { className: " text-center" },
                     React.createElement("img", { src: "img/Microservice_7.png", width: "75%", alt: "System Architecture of Xformation Platform" }),
                     " "),
@@ -41170,7 +41098,6 @@ class Foundation extends React.Component {
                 React.createElement("p", null, "This is overall system architecture. The architecture attempts to ensure scalability across every layer (Infrastructure/Application Services) to ensure horizontal scalability everywhere. This is the master architecture to write a highly scale-out application, it talks about application services, compute and network platform."),
                 React.createElement("ul", null,
                     React.createElement("li", null,
-<<<<<<< HEAD
                         React.createElement("h4", { className: "fh4" }, "Section 1")),
                     React.createElement("p", null, "The upper half deals with the hardware aggregation on the top of cloud layer. With the available container orchestrator, we aggregate CPU/Network/Storage and it looks like a One big consolidated resource. You can deploy application services seamlessly through the Continuous Delivery pipeline and they run being transparent to the underneath computing resources. At application level, the scalability is achieved at individual service level as well as elastic resource pool level."),
                     React.createElement("li", null,
@@ -41178,35 +41105,18 @@ class Foundation extends React.Component {
                     React.createElement("p", null, "The layer no section 2, primarily involves creating resources across Private/Public cloud. In case of Hybrid cloud, we prefer opting for our Equinix IBX/IOA implementation so that Private/Public clouds are hosted in same private address space. Equinix is doing that."),
                     React.createElement("li", null,
                         React.createElement("h4", { className: "fh4" }, "Section 3")),
-=======
-                        React.createElement("h4", null, "Section 1")),
-                    React.createElement("p", null, "The upper half deals with the hardware aggregation on the top of cloud layer. With the available container orchestrator, we aggregate CPU/Network/Storage and it looks like a One big consolidated resource. You can deploy application services seamlessly through the Continuous Delivery pipeline and they run being transparent to the underneath computing resources. At application level, the scalability is achieved at individual service level as well as elastic resource pool level."),
-                    React.createElement("li", null,
-                        React.createElement("h4", null, "Section 2")),
-                    React.createElement("p", null, "The layer no section 2, primarily involves creating resources across Private/Public cloud. In case of Hybrid cloud, we prefer opting for our Equinix IBX/IOA implementation so that Private/Public clouds are hosted in same private address space. Equinix is doing that."),
-                    React.createElement("li", null,
-                        React.createElement("h4", null, "Section 3")),
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
                     React.createElement("p", null,
                         "The bottom half deals with hardware and network scale-out. The architecture assumes hyper scaling (",
                         React.createElement("b", null, "Intel RSD Implementation"),
                         ") to seamlessly add CPU/Memory/Storage and create any private cloud on top of it."),
                     React.createElement("li", null,
-<<<<<<< HEAD
                         React.createElement("h4", { className: "fh4" }, "Section 4")),
-=======
-                        React.createElement("h4", null, "Section 4")),
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
                     React.createElement("p", null,
                         "At the network layer, it assumes that, private and public cloud are hosted in same colocation ensuring minimal hop between them as well as they stay in same private network space. We collaborate with Equinix colocation platform and use their IBX/IOA based communication to guarantee the scalability/performance and security at network layer.",
                         React.createElement("br", null),
                         "SYNECTIKS Xformation platform currently implements the Automation and Orchestration of the cloud, Container Orchestrator, DevOps and ALM Layer, primarily Layer 1 & 2."))),
             React.createElement("div", { className: "px-5 text-justify ", "data-aos": "fade-up", "data-aos-duration": "2000" },
-<<<<<<< HEAD
                 React.createElement("h3", { className: "fh3 text-center pb-3" }, "Application Block Architecture"),
-=======
-                React.createElement("h3", { className: "text-center pb-3" }, "Application Block Architecture"),
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
                 React.createElement("div", { className: "text-center bg-white border-grey-2px " },
                     React.createElement("img", { src: "img/ApplicationBlockArchitechture.jpg", width: "75%", alt: "Application Block Architecture" }),
                     " "),
@@ -41273,12 +41183,7 @@ class Foundation extends React.Component {
                         React.createElement("h4", { className: "font-weight-bold pt-3" },
                             "Synectiks\u00A0Enterprise Transformtaion",
                             " "),
-<<<<<<< HEAD
                         React.createElement("p", null, "Moving to AWS cloud with Data Center retirement for Motor Industry."))))));
-=======
-                        React.createElement("p", null, "Moving to AWS cloud with Data Center retirement for Motor Industry."),
-                        " ")))));
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
     }
     ;
 }
@@ -42179,7 +42084,30 @@ class Microservices extends React.Component {
         return (React.createElement("div", { className: "bg-lightgrey text-justify " },
             React.createElement("div", { className: "w-100 py-5 mt-5" },
                 React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/Microservicesmain.jpg", alt: "Microservices" })),
-            React.createElement("div", { className: "px-5 pt-3 lineHeight-24", "data-aos": "fade-up", "data-aos-duration": "2000" },
+            React.createElement("div", { className: "conatiner-fluid px-5" },
+                React.createElement("div", { className: "row" },
+                    React.createElement("div", { className: "btn-groups pFxd" },
+                        React.createElement("div", { className: "showhim w-25" },
+                            React.createElement("img", { src: "../../../img/challenge.jpg", className: "w-25" }),
+                            React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
+                                React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microserviceexample" }),
+                                "Example of Microservices")),
+                        React.createElement("div", { className: "showhim w-25 my-1" },
+                            React.createElement("img", { src: "../../../img/challenge.jpg", className: "w-25" }),
+                            " ",
+                            React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
+                                React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microservicebenefit" }, "Benefits of Microservices"))),
+                        React.createElement("div", { className: "showhim w-25 mb-1" },
+                            React.createElement("img", { src: "../../../img/challenge.jpg", className: "w-25" }),
+                            " ",
+                            React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
+                                React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microservicechallenge" }, "Challenges of Microservices "))),
+                        React.createElement("div", { className: "showhim w-25" },
+                            React.createElement("img", { src: "../../../img/help.jpg", className: "w-25" }),
+                            React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
+                                " ",
+                                React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microservicehelp" }, "How we can help you?")))))),
+            React.createElement("div", { className: "px-8 pt-3 lineHeight-24", "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("p", { className: "" },
                     "To accommodate the increasing complexity of functional requirements, IT applications have embraced a variety of architectural patterns. Organizations must meet ever-changing business demands \u2014 from mainframe applications and client-server to service oriented architecture (SOA) and microservices.",
                     React.createElement("br", null),
@@ -42193,12 +42121,12 @@ class Microservices extends React.Component {
             React.createElement("div", { className: "pt-3 text-center", "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("img", { src: "img/Microservice_1.png", width: "60%", alt: "Microservices Migration" }),
                 " "),
-            React.createElement("div", { className: "pt-3 px-5", "data-aos": "fade-up", "data-aos-duration": "2000" },
+            React.createElement("div", { className: "pt-3 px-8", "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("h2", { className: "py-3" }, "Monolith Vs Microservices"),
                 React.createElement("div", { className: "text-center" },
                     React.createElement("img", { src: "img/monovsmicro.png", width: "75%", alt: "Monolith Vs Microservices" }),
                     " ")),
-            React.createElement("div", { className: "d-flex  px-5 py-4 flex-col " },
+            React.createElement("div", { className: "d-flex  px-8 py-4 flex-col " },
                 React.createElement("p", null,
                     React.createElement("a", { className: "navlink navfont noLine text-logoblue", onClick: this.toggle },
                         React.createElement("small", null, "Contact\u00A0Us\u00A0")),
@@ -42254,7 +42182,7 @@ class Microservices extends React.Component {
                         React.createElement("div", { className: "text-center p-2", onClick: this.toggle },
                             React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
                         " "))),
-            React.createElement("div", { className: "d-flex justify-content-around align-items-center px-5 pb-3 flex-col text-center col-md-12" },
+            React.createElement("div", { className: "d-none justify-content-around align-items-center px-5 pb-3 flex-col text-center col-md-12" },
                 React.createElement("div", { className: "pb-3 col-sm-3" },
                     React.createElement(react_router_dom_1.Link, { to: "/microserviceexample" },
                         React.createElement("button", { className: 'btn text-white bg-logoblue  btnLearn  ' }, "Example of Microservices"))),
@@ -42295,7 +42223,7 @@ class Migrations extends React.Component {
         window.scrollTo(0, 0);
     }
     render() {
-        return (React.createElement("div", { className: 'bg-lightgrey' },
+        return (React.createElement("div", { className: 'bg-lightgrey ' },
             React.createElement("div", { className: "w-100 py-5 mt-5" },
                 React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudMigrationOptimization.jpg", alt: "Microservices" })),
             React.createElement("div", { className: "px-5 pt-3", "data-aos": "fade-up", "data-aos-duration": "2000" },
@@ -42638,7 +42566,7 @@ class Privacypolicy extends React.Component {
         window.scrollTo(0, 0);
     }
     render() {
-        return (React.createElement("div", { className: 'bg-lightgrey' },
+        return (React.createElement("div", { className: 'bg-lightgrey ' },
             React.createElement("div", { className: 'text-black w-100 mt-3 p-5 mt-5 text-justify' },
                 React.createElement("p", { className: "w-100 mt-5 pt-3" },
                     React.createElement("h2", null, "SYNECTIKS - Privacy Policy")),
@@ -43669,8 +43597,8 @@ class Transformation extends React.Component {
         window.scrollTo(0, 0);
     }
     render() {
-        return (React.createElement("div", { className: 'bg-lightgrey' },
-            React.createElement("div", { className: "container pb-5" },
+        return (React.createElement("div", { className: 'bg-lightgrey px-5' },
+            React.createElement("div", { className: "container-fluid pt-5 px-5" },
                 React.createElement("div", { className: "row main-card pb-5" },
                     React.createElement("div", { className: "col-md-12   card-deck" },
                         React.createElement("div", { className: "card btn card-shadow mx-3 pt-3" },
@@ -43780,7 +43708,7 @@ class Colocation extends React.Component {
         this.setState({ fields });
     }
     render() {
-        return (React.createElement("div", { className: 'bg-lightgrey' },
+        return (React.createElement("div", { className: 'bg-lightgrey px-5' },
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
@@ -44126,9 +44054,7 @@ exports.default = Header;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
-// import App from '../App';
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-// import "./background.css";
 const fontSize3 = {
     fontSize: '2vw'
 };
@@ -44148,39 +44074,39 @@ exports.Main = () => {
                 React.createElement("div", { className: "carousel-inner mr-auto", role: "listbox" },
                     React.createElement("div", { className: "carousel-item  active justify-content-around " },
                         React.createElement("div", { className: "img-np flex-col pb-0" },
-                            React.createElement("img", { width: "100%", height: "", className: "w-100 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider1.jpg", alt: "Synectiks Open Xformation" }),
+                            React.createElement("img", { width: "100%", height: "", className: "img-fluid text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider1.jpg", alt: "Synectiks Open Xformation" }),
                             React.createElement("div", { className: "text-center pt-4 btnLearnmore", style: s1 },
                                 React.createElement("div", { className: "text-white  animated fadeInRightBig slow dealy-4s" },
                                     React.createElement("p", null,
                                         React.createElement(react_router_dom_1.Link, { to: "/foundation", className: "btn text-white bg-logoblue text-uppercase btnLearn" }, "learn more")))))),
                     React.createElement("div", { className: "carousel-item  justify-content-around " },
                         React.createElement("div", { className: "img-np flex-col pb-0" },
-                            React.createElement("img", { width: "100%", height: "auto", className: "w-100 height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider2.jpg", alt: "Enterprise Transformation" }),
+                            React.createElement("img", { width: "100%", height: "auto", className: "img-fluid height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider2.jpg", alt: "Enterprise Transformation" }),
                             React.createElement("div", { className: "text-center btnLearnmore" },
                                 React.createElement("div", { className: "text-white  animated fadeInRightBig slow dealy-4s" },
                                     React.createElement("p", null,
                                         React.createElement(react_router_dom_1.Link, { to: "/audit", className: "btn text-white bg-logoblue text-uppercase btnLearn" }, "learn more")))))),
                     React.createElement("div", { className: "carousel-item  justify-content-around " },
                         React.createElement("div", { className: "img-np flex-col pb-0" },
-                            React.createElement("img", { width: "100%", className: "w-100 height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider3.jpg", alt: "AWS Security" }),
+                            React.createElement("img", { width: "100%", className: "img-fluid height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider3.jpg", alt: "AWS Security" }),
                             React.createElement("div", { className: "text-center btnLearnmore", style: s2 },
                                 React.createElement("div", { className: "text-white  animated fadeInRightBig slow dealy-4s" },
                                     React.createElement("p", null,
-                                        React.createElement(react_router_dom_1.Link, { to: "/audit", className: "btn text-white bg-logoblue text-uppercase btnLearn" }, "learn more")))))),
+                                        React.createElement(react_router_dom_1.Link, { to: "/audit", className: "btn  text-white bg-logoblue text-uppercase btnLearn" }, "learn more")))))),
                     React.createElement("div", { className: "carousel-item  justify-content-around " },
                         React.createElement("div", { className: "img-np flex-col pb-0" },
-                            React.createElement("img", { width: "100%", className: "w-100 height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider4.jpg", alt: "Enterprise Managed Services" }),
+                            React.createElement("img", { width: "100%", className: "img-fluid height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider4.jpg", alt: "Enterprise Managed Services" }),
                             React.createElement("div", { className: "text-center btnLearnmore pt-4 mt-2", style: s4 },
                                 React.createElement("div", { className: "text-white  animated fadeInRightBig slow dealy-4s" },
                                     React.createElement("p", null,
                                         React.createElement(react_router_dom_1.Link, { to: "/enterprisemanagedservice", className: "btn text-white bg-logoblue text-uppercase btnLearn" }, "learn more")))))),
                     React.createElement("div", { className: "carousel-item  justify-content-around " },
                         React.createElement("div", { className: "img-np flex-col pb-0" },
-                            React.createElement("img", { width: "100%", className: "w-100 height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider5.jpg", alt: "Cloud Managed Backup" }),
+                            React.createElement("img", { width: "100%", className: "img-fluid height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider5.jpg", alt: "Cloud Managed Backup" }),
                             React.createElement("div", { className: "text-center btnLearnmore " },
                                 React.createElement("div", { className: "text-white  animated fadeInRightBig slow dealy-4s" },
                                     React.createElement("p", null,
-                                        React.createElement(react_router_dom_1.Link, { to: "/CloudManagedBackup", className: "btn text-white bg-yellow text-uppercase btnLearn" }, "learn more")))))),
+                                        React.createElement(react_router_dom_1.Link, { to: "/CloudManagedBackup", className: "btn btn-small btn-block text-white bg-yellow text-uppercase btnLearn" }, "learn more")))))),
                     React.createElement("div", { className: "carousel-item  justify-content-around " },
                         React.createElement("div", { className: "img-np flex-col pb-0" },
                             React.createElement("img", { width: "100%", className: "w-100 height-38 text-right animated fadeInRightBig slow dealy-4s", src: "img/Slider6.jpg", alt: "Why Synectiks" })))),
@@ -44193,11 +44119,7 @@ exports.Main = () => {
                         React.createElement("span", { className: "sr-only" }, "Next"))),
                 React.createElement("div", null,
                     React.createElement("div", { className: "text-center w-100 mb-2" },
-<<<<<<< HEAD
-                        React.createElement("h4", { className: "mb-1 py-1 hfont bg-logoblue text-white" }, "ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM")))),
-=======
                         React.createElement("h4", { className: "mb-1 py-1 stripfont bg-logoblue text-white" }, "ACCELERATING MULTICLOUD SOA TRANSFORMATION THROUGH OPEN PLATFORM")))),
->>>>>>> aa198e1c58a662a939ca409c63633b2b0eae5971
             React.createElement("div", { className: "row main-card card-margin" },
                 React.createElement("div", { className: "text-center w-100 py-5 mt-1 txt mt-card " },
                     React.createElement("h3", { className: "" },
