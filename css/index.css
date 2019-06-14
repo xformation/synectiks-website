@@ -38,7 +38,7 @@
     font-weight: bold;
   }
   ul li {
-    font-size: 12px;
+    font-size: 18px;
     word-break:keep-all;
     line-height: 22px;
   }
@@ -127,7 +127,7 @@
 @media(max-width:1040px){
   .carsCtrl{
     position: absolute;
-    top: 34%;
+    top: 45% !important;
     font-size:1.5em !important;
   }
   .carsCtrlLt {
@@ -138,6 +138,21 @@
   .carsCtrlRt {
     float: right !important;
     right: 1.25em !important;
+  }
+}
+@media(max-width:970px){
+  .btn-demo {
+    right: -2.5rem !important;
+  }
+}
+@media(max-width:750px){
+  .btn-demo {
+    right: -2rem !important;
+  }
+}
+@media(max-width:550px){
+  .btn-demo {
+    right: -1.5rem !important;
   }
 }
 
@@ -160,7 +175,7 @@
     float: left!important;
   }
   .card-margin {
-    margin-top: 22em !important;
+    margin-top: 18em !important;
 }
 }
 @media(max-width: 850px){
@@ -170,7 +185,7 @@
 }
 @media(max-width: 650px){
   .card-margin {
-    margin-top: 10em !important;
+    margin-top: 7.5em !important;
 }
 }
 
@@ -184,6 +199,9 @@
 #particle-js{
   /* height: 34em !important; */
   padding-left: 3em !important;
+}
+.btn{
+  font-size: 1.5vw !important;
 }
 .stripfont{
   font-size: 2.5vw;
@@ -226,14 +244,14 @@
   width: 14em;
   padding: 0px;
   box-sizing: border-box;
-  height: 62vh;
+  height: 22em;
   margin: 0%;
 }
 .card-bd{
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  height: 11vh;
+  height: 5em;
 }
 .bg-yellow{
   background: #fbba00 !important;
@@ -281,10 +299,11 @@
 }
 .card-deck{
   flex-direction: column !important;
-  padding-top: 8em;
+  /* padding-top: 8em; */
+  padding-top: 0em !important;
 }
 .card{
-  width: 50%;
+  width: 30%;
   align-self: center;
   margin-bottom: 1em !important;
 }
@@ -303,7 +322,8 @@
 }
 @media(max-width:985px) {
  .card-deck{
- padding-top: 4em !important;
+ /* padding-top: 4em !important; */
+ padding-top: 0em !important;
  }
  .flex-col{
   orientation: portrait !important;
@@ -331,7 +351,7 @@
 }
 @media(max-width: 770px) {
   .card{
-    width: 56%;
+    width: 75%;
     align-self: center;
   }
   /* #particle-js{
@@ -361,6 +381,17 @@
 }
 
 }
+@media(max-width: 767px){
+  .card-deck{
+  width:20em  !important;
+  margin-left:2.5em  !important;
+  margin-right:2.5em  !important;
+    }
+  
+  }
+  .w17em{
+    width: 17em !important;
+  }
 @media(max-width:540px) {
   .card{
     width: 100%;
@@ -379,7 +410,7 @@ margin-right:2.5em  !important;
     height: 38em !important;
   } */
   .w17em{
-    width: 17em;
+    width: 17em !important;
   }
   #navbardrop{
     min-width: 272px;
@@ -401,7 +432,7 @@ margin-right:2.5em  !important;
     font-size : 3.5vw;
   }
   .btn{
-    font-size: 3.5vw !important;
+    font-size: 1.5vw !important;
   }
   /* #particle-js{
     height: 38m !important;
@@ -1253,7 +1284,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   width: 19em;
   padding: 0px;
   box-sizing: border-box;
-  height: 50vh;
+  height: 20em;
   margin: 0%;
 }
 .card-hybcld {
@@ -1261,7 +1292,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   width: 19em;
   padding: 0px;
   box-sizing: border-box;
-  height: 35vh;
+  height: 14em;
   margin: 0%;
 }
 
@@ -1274,7 +1305,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 .btn-demo{
   position: fixed;
   right: -3rem;
-  top: 36%;
+  top: 41%;
   transform: rotate(-90deg);
   background: #fbba00 !important;
   /* color: black; */
@@ -1312,7 +1343,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 .carsCtrl{
   position: absolute;
-  top: 34%;
+  top: 38%;
   font-size:2.5em;
   transform: translate(50%,50%);
   vertical-align: middle;

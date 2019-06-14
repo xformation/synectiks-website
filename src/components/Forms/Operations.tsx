@@ -57,10 +57,11 @@ import { Link } from "react-router-dom";
                 />
                 <div className="card-body">
                   <h2 className="text-center text-uppercase">Operation</h2>
+                  <h1 className="pointer text-center">&#187;</h1>
                 </div>
-                <div className="pointer text-center">
+                {/* <div className="pointer text-center">
                   <h1>&#187;</h1>
-                </div>
+                </div> */}
               </Link>
             </div>
             {/*  */}
@@ -69,10 +70,7 @@ import { Link } from "react-router-dom";
       </div>
 
       <div
-        className="text-center mt-5 px-4"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
+        className="text-center mt-5 px-4">
         <h3 className="pt-5">
           24x7 Operations for enterprise managed services
         </h3>

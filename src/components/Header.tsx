@@ -170,7 +170,7 @@ export class Header extends React.Component<any, any, any>{
 
                           {/*  */}
                           <li className="dropdown-submenu dropright">
-                            <NavLink data-toggle="dropdown" id="submenu" className="dropdown-item dropdown-toggle dropright" to="#">Cloud Hosted Services</NavLink>
+                            <NavLink data-toggle="dropdown" id="submenu" className="dropdown-item dropdown-toggle " to="#">Cloud Hosted Services</NavLink>
                             <div >
                               <ul className="dropdown-menu menulist bg-logoblue" style={subhide}>
                                 <NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink>

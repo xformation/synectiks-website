@@ -29,7 +29,7 @@ const wid = {
               }));
             }
           componentDidMount() {
-              window.scrollTo(0,0)
+              window.scrollTo(0,30)
             }
 
             handleValidation(){
@@ -119,13 +119,17 @@ const wid = {
 </div>
 
 
-            <div className=" bg-white d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
+            <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
                <div className="py-3 col-md-2 nav-item dropdown" >
+<<<<<<< HEAD
                     <Link to="/HostedInfrastructure" className='text-black bg-white noLine'>
+=======
+                    <Link to="/HostedInfrastructure" className='text-black bg-white noLine '>                                           
+>>>>>>> 6ba2d1eb4dc4385937c3dab4528f74363ca743b4
                         {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
                         id="navbarSupportedContent">  */}
-                        <a className="nav-link" href="#" id="cloudnav"  data-toggle="dropdown">
-                                <b >Cloud&nbsp;Hosted&nbsp;Services</b>
+                        <a className=" dropdown caret noLine" href="#" id="cloudnav"  data-toggle="dropdown">
+                                <b >Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
                         </a>
                         <div className="dropdown-menu w17em">
                                     <NavLink className="dropdown-item"  to="/HostedInfrastructure">

@@ -45,7 +45,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider2.jpg"
                   alt="Enterprise Transformation"
                 />
-                <div className="text-center btnLearnmore">
+                <div className="text-center pt-4 btnLearnmore" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/audit" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -62,7 +62,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider3.jpg"
                   alt="AWS Security"
                 />
-                <div className="text-center btnLearnmore" style={s2}>
+                <div className="text-center pt-4 btnLearnmore" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/audit" className="btn  text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -79,7 +79,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider4.jpg"
                   alt="Enterprise Managed Services"
                 />
-                <div className="text-center btnLearnmore pt-4 mt-2" style={s4}>
+                <div className="text-center btnLearnmore pt-4 mt-2" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/enterprisemanagedservice" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -96,7 +96,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider5.jpg"
                   alt="Cloud Managed Backup"
                 />
-                <div className="text-center btnLearnmore ">
+                <div className="text-center pt-4 btnLearnmore" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/CloudManagedBackup" className="btn btn-small btn-block text-white bg-yellow text-uppercase btnLearn">learn more</Link>
@@ -135,8 +135,13 @@ export const Main: React.StatelessComponent<{}> = () => {
           <div className="text-center w-100 py-5 mt-1 txt mt-card ">
             <h3 className=""><b>Outcome-based Service Offerings</b></h3>
           </div>
+          
           <div className="col-md-12   card-deck ">
+<<<<<<< HEAD
             <div className="card btn card-shadow mx-3 pt-3">
+=======
+           <div className="card btn col-md-4 card-shadow mx-3 pt-3">
+>>>>>>> 6ba2d1eb4dc4385937c3dab4528f74363ca743b4
               <Link to="/foundation" className="noLine">
                 <img
                   className="card-img-top"
@@ -149,7 +154,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               </Link>
             </div>
 
-            <div className="card btn card-shadow mx-3 pt-3">
+            <div className="card btn col-md-4 card-shadow mx-3 pt-3">
               <Link to="/transformation" className="noLine">
                 <img
                   className="card-img-top"
@@ -162,7 +167,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               </Link>
             </div>
 
-            <div className="card btn card-shadow mx-3 pt-3">
+            <div className="card btn col-md-4 card-shadow mx-3 pt-3">
               <Link to="/operations" className="noLine">
                 <img
                   className="card-img-top"

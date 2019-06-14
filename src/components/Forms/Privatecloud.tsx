@@ -10,6 +10,7 @@ const wid = {
   width: '91%',
 };
 // export const Privatecloud = () => {
+<<<<<<< HEAD
 export class Privatecloud extends React.Component<any, any, any>{
   constructor(props: any) {
     super(props);
@@ -72,6 +73,70 @@ export class Privatecloud extends React.Component<any, any, any>{
   }
 
   render() {
+=======
+    export class Privatecloud extends React.Component<any,any,any>{
+        constructor(props:any) {
+          super(props);  
+
+          this.state = {
+            modal: false,
+            fields: {},
+            errors: {}
+          };
+          
+          this.toggle = this.toggle.bind(this);
+        }
+        toggle() {
+            this.setState(prevState => ({
+              modal: !prevState.modal
+            }));
+          }
+        componentDidMount() {
+            window.scrollTo(0,30)
+          }
+
+          handleValidation(){
+            let fields = this.state.fields;
+            let errors = {};
+            let formIsValid = true;
+        
+            if(!fields["email"]){
+              formIsValid = false;
+              errors["email"] = "Cannot be empty";
+            }
+        
+            if(typeof fields["email"] !== "undefined"){
+              let lastAtPos = fields["email"].lastIndexOf('@');
+              let lastDotPos = fields["email"].lastIndexOf('.');
+        
+              if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') == -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
+                formIsValid = false;
+                errors["email"] = "Email is not valid";
+              }
+            }
+        
+            this.setState({errors: errors});
+            return formIsValid;
+          }
+        
+          contactSubmit(e){
+            e.preventDefault();
+            if(this.handleValidation()){
+              alert("Form submitted");
+            }else{
+              alert("Form has errors.")
+            }
+        
+          }
+        
+          handleChange(field, e){    		
+            let fields = this.state.fields;
+            fields[field] = e.target.value;        
+            this.setState({fields});
+          }
+
+        render() {
+>>>>>>> 6ba2d1eb4dc4385937c3dab4528f74363ca743b4
     return (
       <div className='bg-lightgrey'>
 
@@ -105,6 +170,7 @@ export class Privatecloud extends React.Component<any, any, any>{
     Get no-cost expert guidance.<br />
               We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
     </p>
+<<<<<<< HEAD
 
           </div>
 
@@ -146,6 +212,72 @@ export class Privatecloud extends React.Component<any, any, any>{
               {/* </div> */}
             </Link>
           </div>
+=======
+    <p className="lineHeight-24">
+    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
+    private, public or hybrid cloud.
+    Get no-cost expert guidance.<br/>
+    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
+    </p> 
+ 
+    </div>
+
+<div className="w-100 pl-5 py-3 mt-5">
+    <img height="auto" width="100%"
+        className=""
+        src="img/CloudCommon.png"
+        alt="Cloud"
+    />
+</div>
+</div>
+
+            <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
+             <div className="py-3 col-md-2 nav-item dropdown" >
+                    <Link to="/HostedInfrastructure"  className='text-black bg-white noLine'>                                           
+                        {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
+                        id="navbarSupportedContent">  */}
+                        <a className="noLine" href="#" id="cloudnav"  data-toggle="dropdown">
+                                <b>Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
+                        </a>
+                        <div className="dropdown-menu w17em">
+                                    <NavLink className="dropdown-item"  to="/HostedInfrastructure">
+                                        {" "}
+                                        Hosted Infrastructure{" "}
+                                    </NavLink>
+                                    <NavLink className="dropdown-item" to="/CloudManagedBackup">
+                                        {" "}
+                                       Cloud Managed Backup{" "}
+                                    </NavLink>
+                                    <NavLink className="dropdown-item"  to="/CloudDisasterRecovery">
+                                        {" "}
+                                        Cloud Disaster Recovery{" "}
+                                    </NavLink>                                         
+                                </div>                                                   
+                        {/* </div> */}
+                    </Link>                                                                  
+                </div>
+          
+                <div className="py-3 col-md-2" >
+                    <Link to="/privatecloud" id="private" className='text-black bg-white noLine'>
+                        <b>Private Cloud</b>
+                    </Link>
+                </div> 
+                <div className="py-3 col-md-2" >
+                    <Link to="/hybridcloud"  className='text-black bg-white noLine'>
+                        <b>Hybrid Cloud</b>
+                    </Link>
+                </div> 
+                <div className="py-3 col-md-2" >
+                    <Link to="/publiccloud" className='text-black bg-white noLine'>
+                        <b>Public Cloud</b>
+                    </Link>
+                </div> 
+                <div className="py-3 col-md-2" >
+                    <Link to="/colocation" className='text-black bg-white noLine'>
+                        <b>Colocation</b>
+                    </Link>
+                </div>
+>>>>>>> 6ba2d1eb4dc4385937c3dab4528f74363ca743b4
 
           <div className="py-3 col-md-2" >
             <Link to="/privatecloud" id="private" className='text-black bg-white noLine'>
