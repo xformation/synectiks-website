@@ -48,58 +48,61 @@ export class Foundation extends React.Component<{}, {}> {
   render() {
     return (
 
-      <div className="bg-lightgrey pt-5">
-        <div className="container-fluid mt-5 pt-5">
-          <div className="d-flex justify-content-center flex-sm-row flex-column px-5">
-            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow ">
-              <Link to="/foundation" className="noLine">
-                <img
-                  className="card-img-top"
-                  src="img/Foundation.png"
-                  alt="Foundation"
-                />
-                <div className="card-body">
-                  <h2 className="text-center text-uppercase">Foundation</h2>
-                </div>
-                <div className="pointer text-center">
-                  <h1>&#187;</h1>
-                </div>
-              </Link>
-
-            </div>
-
-            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow mx-0 my-3 mx-sm-5 mx-md-5 mx-lg-5 mx-xl-5 my-sm-0 my-md-0 my-lg-0 my-xl-0 ">
-              <Link to="/transformation" className="noLine">
-                <img
-                  className="card-img-top"
-                  src="img/Transformation.png"
-                  alt="Transformation"
-                />
-                <div className="card-body">
-                  <h2 className="text-center text-uppercase">Transformation</h2>
-                </div>
+      <div className="bg-lightgrey ">
+        <div className="container pb-5">
+        <div className="row main-card pb-5">
+          <div className="col-md-12   card-deck">
+{/* */}
+            <div className="card btn card-shadow mx-3 pt-3">
+            <Link to="/foundation" className="noLine">
+              <img
+                className="card-img-top"
+                src="img/Foundation.png"
+                alt="Foundation"
+              />
+              <div className="card-body">
+                <h2 className="text-center text-uppercase">Foundation</h2>
+                <h1 className="pointer text-center">&#187;</h1>
+              </div>
               </Link>
             </div>
 
-            <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4  card-shadow ">
-              <Link to="/operations" className="noLine">
-                <img
-                  className="card-img-top"
-                  src="img/Operation.png"
-                  alt="Operation"
-                />
-                <div className="card-body">
-                  <h2 className="text-center text-uppercase">Operation</h2>
-                </div>
+            <div className="card btn card-shadow mx-3 pt-3">
+            <Link to="/transformation" className="noLine">
+              <img
+                className="card-img-top"
+                src="img/Transformation.png"
+                alt="Transformation"
+              />
+              <div className="card-body">
+                <h2 className="text-center text-uppercase">Transformation</h2>
+                
+              </div>
+              {/* <div className="pointer text-center">
+              <h1>&#187;</h1>
+              </div> */}
               </Link>
             </div>
+
+            <div className="card btn card-shadow mx-3 pt-3">
+            <Link to="/operations" className="noLine">
+              <img
+                className="card-img-top"
+                src="img/Operation.png"
+                alt="Operation"
+              />
+              <div className="card-body">
+                <h2 className="text-center text-uppercase">Operation</h2>
+              </div>
+              </Link>
+            </div> 
             {/*  */}
-            {/* </div> */}
           </div>
         </div>
-        <div className="p-5 mt-5 text-justify" data-aos="fade-up" data-aos-duration="2000">
+        </div>
+        <div className="p-5 mt-5 text-justify">
           <h3 className="fh3 text-center">Synectiks&nbsp;Open&nbsp;Xformation&nbsp;Platform</h3>
-          <p className="lineHeight-24 pt-5">
+          <p className="lineHeight-24 pt-3">
             As every business today need to address volume/velocity challenges, it must evolve to stay ahead of
             demand. Cloud adoption requires a secure and consistent Foundation to allow enterprises migrate their
             workloads at speed. Smart tooling and automation hugely streamline delivery and management within organization. We

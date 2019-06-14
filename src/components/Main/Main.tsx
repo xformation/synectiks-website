@@ -112,7 +112,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider2.jpg"
                   alt="Enterprise Transformation"
                 />
-                <div className="text-center btnLearnmore">
+                <div className="text-center pt-4 btnLearnmore" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/audit" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -129,7 +129,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider3.jpg"
                   alt="AWS Security"
                 />
-                <div className="text-center btnLearnmore" style={s2}>
+                <div className="text-center pt-4 btnLearnmore" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/audit" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -146,7 +146,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider4.jpg"
                   alt="Enterprise Managed Services"
                 />
-                <div className="text-center btnLearnmore pt-4 mt-2" style={s4}>
+                <div className="text-center btnLearnmore pt-4 mt-2" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/enterprisemanagedservice" className="btn text-white bg-logoblue text-uppercase btnLearn">learn more</Link>
@@ -163,7 +163,7 @@ export const Main: React.StatelessComponent<{}> = () => {
                   src="img/Slider5.jpg"
                   alt="Cloud Managed Backup"
                 />
-                <div className="text-center btnLearnmore ">
+                <div className="text-center pt-4 btnLearnmore" style={s1}>
                   <div className="text-white  animated fadeInRightBig slow dealy-4s">
                     <p>
                       <Link to="/CloudManagedBackup" className="btn text-white bg-yellow text-uppercase btnLearn">learn more</Link>

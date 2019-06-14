@@ -39,7 +39,8 @@ export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6G
         <p className="mb-1 pt-2">
         SYNECTIKS uses proprietary and third-party cookies. By using our sites, you agree to our cookie policy.&nbsp;
         <NavLink className="navlink navfont noLine" to="/privacypolicy" ><small>View&nbsp;Policy&nbsp;</small></NavLink>
-        <button className='btn bg-logoblue text-white btnSend' type="submit" id="hide">Agree</button>
+        {/* <Link to="#" className="btn text-white bg-logoblue text-uppercase btnLearn" type="submit" id="hide">Agree</Link> */}
+        <button className='btn bg-logoblue text-white btnLearn' type="submit" id="hide">Agree</button>
         </p>
       </div>
       
