@@ -1405,8 +1405,8 @@ overflow: hidden;
 .showme{
   display: none;
   position: absolute;
-  left: 39px;
-  top: 3px;
+  left: 5.8rem;
+  top: 15px;
   width: 15rem;
   }
 .showhim{
@@ -1429,7 +1429,7 @@ overflow: hidden;
     border: 1px solid black;
   }
  .h-70{
-  height: 60px;
+  height: 70px;
   }
 
 
