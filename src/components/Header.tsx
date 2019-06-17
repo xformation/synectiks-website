@@ -92,7 +92,7 @@ export class Header extends React.Component<any, any, any>{
                   >
 
                     <ul className="navbar-nav navfont ml-auto text-capitalize pt-6">
-                      <li className="nav-item dropdown  " >
+                      <li className="nav-item dropdown" >
                         <a className="nav-link px-4"
                           href="#"
                           id="navbardrop"
@@ -170,7 +170,7 @@ export class Header extends React.Component<any, any, any>{
 
                           {/*  */}
                           <li className="dropdown-submenu dropright">
-                            <NavLink data-toggle="dropdown" id="submenu" className="dropdown-item dropdown-toggle " to="#">Cloud Hosted Services</NavLink>
+                            <NavLink data-toggle="dropdown" id="submenu" className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
                             <div >
                               <ul className="dropdown-menu menulist bg-logoblue" style={subhide}>
                                 <NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink>

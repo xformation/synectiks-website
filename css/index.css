@@ -1403,7 +1403,7 @@ overflow: hidden;
   }
   .pFxd{
   position: fixed;
-  top:12rem;
+  bottom:8rem;
   z-index: 99;
   }
   .w-90{
@@ -1416,6 +1416,11 @@ overflow: hidden;
  .h-70{
   height: 40px;
   }
-  /* .bdr{
 
-  } */
+a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+/* a#submenu {
+    pointer-events: none;
+} */
