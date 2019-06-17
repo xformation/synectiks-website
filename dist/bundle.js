@@ -42051,16 +42051,12 @@ class Microservices extends React.Component {
                             React.createElement("img", { src: "img/examples.png", className: "border w-100 h-70" }),
                             React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
                                 React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microserviceexample" }, "Example of Microservices"))),
-                        React.createElement("div", { className: "showhim w-32 my-1" },
-<<<<<<< HEAD
+                        React.createElement("div", { className: "showhim w-32 my-5" },
                             React.createElement("img", { src: "img/msbenefits.png", className: "w-100 h-70" }),
-=======
-                            React.createElement("img", { src: "img/benefits.png", className: "w-100 h-70" }),
->>>>>>> 00ae692c52d08a0b6bfd36b0f778a2e734744601
                             " ",
                             React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
                                 React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microservicebenefit" }, "Benefits of Microservices"))),
-                        React.createElement("div", { className: "showhim w-32 mb-1" },
+                        React.createElement("div", { className: "showhim w-32 mb-5" },
                             React.createElement("img", { src: "img/challenge.jpg", className: "w-100 h-70" }),
                             " ",
                             React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
@@ -43878,13 +43874,8 @@ class Header extends React.Component {
                                         React.createElement("img", { className: "navbar-icon", src: "img/synectiks-logo.png", alt: "logo" }))),
                                 React.createElement("div", { className: "collapse navbar-collapse pr-5 ml-15", id: "navbarSupportedContent" },
                                     React.createElement("ul", { className: "navbar-nav navfont ml-auto text-capitalize pt-6" },
-<<<<<<< HEAD
                                         React.createElement("li", { className: "nav-item dropdown" },
-                                            React.createElement("a", { className: "nav-link px-4", href: "#", id: "navbardrop", "data-toggle": "dropdown" }, "Transformation"),
-=======
-                                        React.createElement("li", { className: "nav-item dropdown  " },
                                             React.createElement("a", { className: "nav-link px-4", href: "#", id: "navbardrop", "data-toggle": "dropdown", "aria-expanded": "false" }, "Transformation"),
->>>>>>> 00ae692c52d08a0b6bfd36b0f778a2e734744601
                                             React.createElement("div", { className: "dropdown-menu w17em bg-logoblue" },
                                                 React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/devops" },
                                                     " ",

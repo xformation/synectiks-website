@@ -1417,22 +1417,19 @@ overflow: hidden;
   }
   .pFxd{
   position: fixed;
-
-  bottom:8rem;
-
-  top:12rem;
-
+  bottom:4rem;
+  /* top:12rem; */
   z-index: 99;
   }
   .w-90{
     width:90%;
   }
   .w-32{
-    width: 3%;
+    width: 7%;
     border: 1px solid black;
   }
  .h-70{
-  height: 40px;
+  height: 60px;
   }
 
 
