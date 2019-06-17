@@ -38,6 +38,7 @@
     word-break: keep-all;
   }
 }
+
 @media(min-width: 2531px) and (max-width: 2700px){
   .mt-card{
     margin-top: 35em !important;
@@ -1425,11 +1426,11 @@ overflow: hidden;
     width:90%;
   }
   .w-32{
-    width: 7%;
+    width: 5%;
     border: 1px solid black;
   }
  .h-70{
-  height: 70px;
+  height: 50px;
   }
 
 
@@ -1437,11 +1438,6 @@ a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardro
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
-/* a#submenu {
-    pointer-events: none;
-} */
-
-  /* .bdr{
-
-  } */
-
+#submenu:hover #cls{
+  display: block;
+}
