@@ -1000,6 +1000,9 @@ h6 {
 .w-30 {
   width: 30% !important;
 }
+.w-65{
+  width: 65% !important;
+}
 .px-6 {
   padding-left: 6rem !important;
   padding-right: 6rem !important;
@@ -1388,6 +1391,17 @@ overflow: hidden;
   display: none;
   /* padding-inline-start: 0.75em; */
 }
+
+
+.px-8{
+  padding-right: 5rem !important;
+  padding-left: 5rem !important;
+}
+.pht{
+  margin-bottom: 0.50rem !important;
+}
+
+
 .showme{
   display: none;
   position: absolute;
@@ -1403,7 +1417,11 @@ overflow: hidden;
   }
   .pFxd{
   position: fixed;
+
   bottom:8rem;
+
+  top:12rem;
+
   z-index: 99;
   }
   .w-90{
@@ -1417,6 +1435,7 @@ overflow: hidden;
   height: 40px;
   }
 
+
 a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
@@ -1424,3 +1443,8 @@ a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardro
 /* a#submenu {
     pointer-events: none;
 } */
+
+  /* .bdr{
+
+  } */
+

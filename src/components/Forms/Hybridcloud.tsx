@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
           super(props);  
         }
         componentDidMount() {
-            window.scrollTo(0,30)
+            window.scrollTo(0,0)
           }
     
         render() {
@@ -22,36 +22,28 @@ import { NavLink } from "react-router-dom";
 
 <div className="mt-2 pt-3 text-black">
   <div className="d-flex">
-    <h1 className=" hfont">CLOUD&nbsp; &#8208;</h1>
-    <p className="rfont">
-    <b><i>&nbsp;Cloud Your Way!</i></b>
-    </p>
+    <h1>CLOUD&nbsp; &#8208;</h1>
+    <h1>
+    <i>&nbsp;Cloud Your Way!</i>
+    </h1>
     </div>
-    <p className="lineHeight-24">
-    Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.
-    <br />
+    <p className="pht lineHeight-24">
+    SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your 
+    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals.
     </p>
-    <p className="lineHeight-24">
-    We’ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading 
-    expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed 
-    approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.  
-    <br />
+    <p className="pht lineHeight-24">
+    Whether you are yet to explore or have already started your cloud journey, we help you to accelerate 
+    your company’s digital transformation and empower your business to stay ahead of the game. 
     </p>
-    <p className="lineHeight-24">
-    Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate 
-    your company’s digital transformation and empower your business to stay ahead of the game.
-    <br />
+    <p className="pht lineHeight-24">
+    With our expertise on Cloud Solutions we will deliver it the way you need it – on-premise or private, public or hybrid cloud. Get no-cost expert guidance.
     </p>
-    <p className="lineHeight-24">
-    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
-    private, public or hybrid cloud.
-    Get no-cost expert guidance.<br/>
-    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
+    <p className="pht lineHeight-24">
+    We’ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.
     </p> 
- 
     </div>
 
-<div className="w-100 pl-5 py-3 mt-5">
+<div className=" pl-5 py-3 mt-5 w-65" >
     <img height="auto" width="100%"
         className=""
         src="img/CloudCommon.png"

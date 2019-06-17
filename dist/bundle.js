@@ -39834,7 +39834,7 @@ class CloudDisasterRecovery extends React.Component {
         }));
     }
     componentDidMount() {
-        window.scrollTo(0, 30);
+        window.scrollTo(0, 0);
     }
     handleValidation() {
         let fields = this.state.fields;
@@ -39874,24 +39874,14 @@ class CloudDisasterRecovery extends React.Component {
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
-                        React.createElement("h1", { className: " hfont" }, "CLOUD\u00A0 \u2010"),
-                        React.createElement("p", { className: "rfont" },
-                            React.createElement("b", null,
-                                React.createElement("i", null, "\u00A0Cloud Your Way!")))),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "We\u2019ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance.",
-                        React.createElement("br", null),
-                        "We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.")),
-                React.createElement("div", { className: "w-100 pl-5 py-3 mt-5" },
+                        React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
+                        React.createElement("h1", null,
+                            React.createElement("i", null, "\u00A0Cloud Your Way!"))),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "Whether you are yet to explore or have already started your cloud journey, we help you to accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
+                React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
@@ -40059,7 +40049,7 @@ class CloudManagedBackup extends React.Component {
         }));
     }
     componentDidMount() {
-        window.scrollTo(0, 30);
+        window.scrollTo(0, 0);
     }
     handleValidation() {
         let fields = this.state.fields;
@@ -40099,24 +40089,14 @@ class CloudManagedBackup extends React.Component {
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
-                        React.createElement("h1", { className: " hfont" }, "CLOUD\u00A0 \u2010"),
-                        React.createElement("p", { className: "rfont" },
-                            React.createElement("b", null,
-                                React.createElement("i", null, "\u00A0Cloud Your Way!")))),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "We\u2019ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance.",
-                        React.createElement("br", null),
-                        "We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.")),
-                React.createElement("div", { className: "w-100 pl-5 py-3 mt-5" },
+                        React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
+                        React.createElement("h1", null,
+                            React.createElement("i", null, "\u00A0Cloud Your Way!"))),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "Whether you are yet to explore or have already started your cloud journey, we help you to accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
+                React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
@@ -41227,7 +41207,7 @@ class HostedInfrastructure extends React.Component {
         }));
     }
     componentDidMount() {
-        window.scrollTo(0, 30);
+        window.scrollTo(0, 0);
     }
     handleValidation() {
         let fields = this.state.fields;
@@ -41267,24 +41247,14 @@ class HostedInfrastructure extends React.Component {
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
-                        React.createElement("h1", { className: " hfont" }, "CLOUD\u00A0 \u2010"),
-                        React.createElement("p", { className: "rfont" },
-                            React.createElement("b", null,
-                                React.createElement("i", null, "\u00A0Cloud Your Way!")))),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "We\u2019ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance.",
-                        React.createElement("br", null),
-                        "We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.")),
-                React.createElement("div", { className: "w-100 pl-5 py-3 mt-5" },
+                        React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
+                        React.createElement("h1", null,
+                            React.createElement("i", null, "\u00A0Cloud Your Way!"))),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "Whether you are yet to explore or have already started your cloud journey, we help you to accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
+                React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
@@ -41418,31 +41388,21 @@ class Hybridcloud extends React.Component {
         super(props);
     }
     componentDidMount() {
-        window.scrollTo(0, 30);
+        window.scrollTo(0, 0);
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
-                        React.createElement("h1", { className: " hfont" }, "CLOUD\u00A0 \u2010"),
-                        React.createElement("p", { className: "rfont" },
-                            React.createElement("b", null,
-                                React.createElement("i", null, "\u00A0Cloud Your Way!")))),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "We\u2019ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance.",
-                        React.createElement("br", null),
-                        "We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.")),
-                React.createElement("div", { className: "w-100 pl-5 py-3 mt-5" },
+                        React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
+                        React.createElement("h1", null,
+                            React.createElement("i", null, "\u00A0Cloud Your Way!"))),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "Whether you are yet to explore or have already started your cloud journey, we help you to accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
+                React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
@@ -42092,7 +42052,11 @@ class Microservices extends React.Component {
                             React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
                                 React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microserviceexample" }, "Example of Microservices"))),
                         React.createElement("div", { className: "showhim w-32 my-1" },
+<<<<<<< HEAD
                             React.createElement("img", { src: "img/msbenefits.png", className: "w-100 h-70" }),
+=======
+                            React.createElement("img", { src: "img/benefits.png", className: "w-100 h-70" }),
+>>>>>>> 00ae692c52d08a0b6bfd36b0f778a2e734744601
                             " ",
                             React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
                                 React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microservicebenefit" }, "Benefits of Microservices"))),
@@ -42792,7 +42756,7 @@ class Privatecloud extends React.Component {
         }));
     }
     componentDidMount() {
-        window.scrollTo(0, 30);
+        window.scrollTo(0, 0);
     }
     handleValidation() {
         let fields = this.state.fields;
@@ -42832,24 +42796,14 @@ class Privatecloud extends React.Component {
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
-                        React.createElement("h1", { className: " hfont" }, "CLOUD\u00A0 \u2010"),
-                        React.createElement("p", { className: "rfont" },
-                            React.createElement("b", null,
-                                React.createElement("i", null, "\u00A0Cloud Your Way!")))),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "We\u2019ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance.",
-                        React.createElement("br", null),
-                        "We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.")),
-                React.createElement("div", { className: "w-100 pl-5 py-3 mt-5" },
+                        React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
+                        React.createElement("h1", null,
+                            React.createElement("i", null, "\u00A0Cloud Your Way!"))),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "Whether you are yet to explore or have already started your cloud journey, we help you to accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
+                React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
@@ -43031,7 +42985,7 @@ class Publiccloud extends React.Component {
         }));
     }
     componentDidMount() {
-        window.scrollTo(0, 30);
+        window.scrollTo(0, 0);
     }
     handleValidation() {
         let fields = this.state.fields;
@@ -43071,24 +43025,14 @@ class Publiccloud extends React.Component {
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
-                        React.createElement("h1", { className: " hfont" }, "CLOUD\u00A0 \u2010"),
-                        React.createElement("p", { className: "rfont" },
-                            React.createElement("b", null,
-                                React.createElement("i", null, "\u00A0Cloud Your Way!")))),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "We\u2019ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance.",
-                        React.createElement("br", null),
-                        "We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.")),
-                React.createElement("div", { className: "w-100 pl-5 py-3 mt-5" },
+                        React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
+                        React.createElement("h1", null,
+                            React.createElement("i", null, "\u00A0Cloud Your Way!"))),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "Whether you are yet to explore or have already started your cloud journey, we help you to accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
+                React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
@@ -43129,7 +43073,7 @@ class Publiccloud extends React.Component {
                         "Our focus is on serving our customers, leverage the ability of the cloud within the ways in which are most impactful to their business. Whether or not you\u2019re wanting to maneuver existing workloads to the cloud, modernize workloads to run cloud-native, or optimize existing cloud workloads, we can facilitate.",
                         React.createElement("br", null),
                         " "))),
-            React.createElement("div", { "data-aos": "fade-up", "data-aos-duration": "2000" },
+            React.createElement("div", null,
                 React.createElement("h2", { className: 'text-center mt-3' }, "Cloud Services for AWS")),
             React.createElement("div", { className: ' text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify', "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("div", { className: "w-100  text-black" },
@@ -43669,7 +43613,7 @@ class Colocation extends React.Component {
         }));
     }
     componentDidMount() {
-        window.scrollTo(0, 30);
+        window.scrollTo(0, 0);
     }
     handleValidation() {
         let fields = this.state.fields;
@@ -43709,24 +43653,14 @@ class Colocation extends React.Component {
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
-                        React.createElement("h1", { className: " hfont" }, "CLOUD\u00A0 \u2010"),
-                        React.createElement("p", { className: "rfont" },
-                            React.createElement("b", null,
-                                React.createElement("i", null, "\u00A0Cloud Your Way!")))),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Drive innovation and accelerate your cloud initiatives with our full spectrum of digital, analytics and enterprise cloud services.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "We\u2019ll listen to You! Your business objectives and growth strategy. SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "Whether you are yet to explore or have already started your cloud journey, SYNECTIKS can accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game.",
-                        React.createElement("br", null)),
-                    React.createElement("p", { className: "lineHeight-24" },
-                        "SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance.",
-                        React.createElement("br", null),
-                        "We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.")),
-                React.createElement("div", { className: "w-100 pl-5 py-3 mt-5" },
+                        React.createElement("h1", { className: " " }, "CLOUD\u00A0 \u2010"),
+                        React.createElement("h1", { className: "" },
+                            React.createElement("i", null, "\u00A0Cloud Your Way!"))),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "Whether you are yet to explore or have already started your cloud journey, we help you to accelerate your company\u2019s digital transformation and empower your business to stay ahead of the game."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
+                    React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
+                React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
@@ -43762,9 +43696,7 @@ class Colocation extends React.Component {
                 React.createElement("div", { className: "w-100 " },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/Colocation.png", alt: "Colocation" })),
                 React.createElement("div", { className: "w-100 px-5 text-black" },
-                    React.createElement("h2", { className: 'mt-3' }, "Colocation Services"),
-                    React.createElement("br", null),
-                    " ",
+                    React.createElement("h2", { className: 'mt-1' }, "Colocation Services"),
                     React.createElement("p", { className: "lineHeight-24" },
                         "Quickly evaluate and select any secure, highly available, best-in-class data center, anywhere in the world (more than 200+ colocation facilities on five continents).",
                         React.createElement("br", null),
@@ -43946,8 +43878,13 @@ class Header extends React.Component {
                                         React.createElement("img", { className: "navbar-icon", src: "img/synectiks-logo.png", alt: "logo" }))),
                                 React.createElement("div", { className: "collapse navbar-collapse pr-5 ml-15", id: "navbarSupportedContent" },
                                     React.createElement("ul", { className: "navbar-nav navfont ml-auto text-capitalize pt-6" },
+<<<<<<< HEAD
                                         React.createElement("li", { className: "nav-item dropdown" },
                                             React.createElement("a", { className: "nav-link px-4", href: "#", id: "navbardrop", "data-toggle": "dropdown" }, "Transformation"),
+=======
+                                        React.createElement("li", { className: "nav-item dropdown  " },
+                                            React.createElement("a", { className: "nav-link px-4", href: "#", id: "navbardrop", "data-toggle": "dropdown", "aria-expanded": "false" }, "Transformation"),
+>>>>>>> 00ae692c52d08a0b6bfd36b0f778a2e734744601
                                             React.createElement("div", { className: "dropdown-menu w17em bg-logoblue" },
                                                 React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/devops" },
                                                     " ",

@@ -90,13 +90,12 @@ export class Header extends React.Component<any, any, any>{
                     className="collapse navbar-collapse pr-5 ml-15"
                     id="navbarSupportedContent"
                   >
-
                     <ul className="navbar-nav navfont ml-auto text-capitalize pt-6">
                       <li className="nav-item dropdown" >
                         <a className="nav-link px-4"
                           href="#"
                           id="navbardrop"
-                          data-toggle="dropdown" >
+                          data-toggle="dropdown" aria-expanded="false">
 
                           Transformation
                 </a>
