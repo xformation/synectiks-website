@@ -1432,3 +1432,19 @@ overflow: hidden;
 .dropdown-submenu:hover > .dropdown-menu{
     display: block !important;
   }
+=======
+
+
+a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+/* a#submenu {
+    pointer-events: none;
+} */
+
+  /* .bdr{
+
+  } */
+
+>>>>>>> 3436b632ca3a582880c921001da01b19d045a8e4

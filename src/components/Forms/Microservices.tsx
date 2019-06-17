@@ -94,9 +94,9 @@ export class Microservices extends React.Component<any, any, any> {
                 <img src="img/examples.png" className="border w-100 h-70" />
                 <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microserviceexample">Example of Microservices</Link></div>
               </div>
-              <div className="showhim w-32 my-1">
-                <img src="img/benefits.png" className="w-100 h-70" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicebenefit">Benefits of Microservices</Link></div></div>
-              <div className="showhim w-32 mb-1">
+              <div className="showhim w-32 my-4">
+                <img src="img/msbenefits.png" className="w-100 h-70" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicebenefit">Benefits of Microservices</Link></div></div>
+              <div className="showhim w-32 mb-4">
                 <img src="img/challenge.jpg" className="w-100 h-70" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicechallenge">
                   Challenges of Microservices </Link></div></div>
               <div className="showhim w-32">
@@ -104,7 +104,6 @@ export class Microservices extends React.Component<any, any, any> {
             </div>
           </div>
         </div>
-        {/* Floating Img   */}
 
         <div
           className="container px-5 pt-3 lineHeight-24"
@@ -175,7 +174,6 @@ export class Microservices extends React.Component<any, any, any> {
 
         {/*  */}
         <div className="">
-          {/* <Button color="primary" onClick={this.toggle}> Contact&nbsp;Us&nbsp; </Button>  */}
           <Modal isOpen={this.state.modal} toggle={this.toggle} >
             <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
             <ModalBody className="bg-lightgrey">
@@ -269,12 +267,6 @@ export class Microservices extends React.Component<any, any, any> {
           </Modal>
         </div>
 
-
-        {/* <Button color="secondary" onClick={this.toggle}>Cancel</Button> */}
-
-
-        {/* <Button color="secondary" onClick={this.toggleAlert.bind(this)} >Contact&nbsp;Us&nbsp;</Button> */}
-
         <div className="  justify-content-around align-items-center px-5 pb-3 flex-col text-center col-md-12 d-none">
           <div className="pb-3 col-sm-3" >
             <Link to="/microserviceexample">
@@ -297,77 +289,6 @@ export class Microservices extends React.Component<any, any, any> {
             </Link>
           </div>
         </div>
-
-        {/* Contact Starts */}
-        {/* <div className='py-3' data-aos="fade-up" data-aos-duration="2000">
-        <h2 className='text-center text-black'>Ask for Demo</h2>
-        <h5 className='text-center text-black'>Straight talk on your challenges.</h5>
-      </div>
-
-      <div className="px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
-
-        <div className="d-flex text-center col-md-12 p-2 flex-col">
-          <div className="col-sm-4 p-2" >
-            <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;First Name" width="90%" />
-          </div>
-          <div className="col-sm-4 p-2" >
-            <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Last Name" width="90%" />
-          </div>
-          <div className="col-sm-4 p-2" >
-            <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Email" width="90%" />
-          </div>
-        </div>
-
-        <div className="d-flex text-center col-md-12 p-2 flex-col">
-          <div className="col-sm-4 p-2" >
-            <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Company" width="90%" />
-          </div>
-          <div className="col-sm-4 p-2" >
-            <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;City" width="90%" />
-          </div>
-          <div className="col-sm-4 p-2" >
-            <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Mobile" width="90%" />
-          </div>
-        </div>
-
-        <div className="d-flex text-center col-md-12 p-2 flex-col">
-          <div className="col-sm-4 p-2" >
-            <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Phone" width="90%" />
-          </div>
-          <div className="col-sm-4 p-2 " >
-
-            <select className="inputBoxFlex">
-              <option value="enterprise">&nbsp;Contact&nbsp;Source</option>
-              <option value="enterprise">&nbsp;Advertisement</option>
-              <option value="foundation">&nbsp;Customer&nbsp;Event</option>
-              <option value="migration">&nbsp;Employee&nbsp;Referral</option>
-              <option value="operations">&nbsp;Google&nbsp;Adwords</option>
-              <option value="others">&nbsp;Other</option>
-              <option value="optimization">&nbsp;Partner</option>
-              <option value="optimization">&nbsp;Purchased&nbsp;List</option>
-              <option value="optimization">&nbsp;Trade&nbsp;Show</option>
-              <option value="optimization">&nbsp;Webinar</option>
-              <option value="optimization">&nbsp;Website</option>
-            </select>
-          </div>
-          <div className="col-sm-4 p-2" >
-
-            <select className="inputBoxFlex">
-              <option value="enterprise">&nbsp;Select&nbsp;Service</option>
-              <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
-              <option value="foundation">&nbsp;Foundation</option>
-              <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
-              <option value="operations">&nbsp;Operations</option>
-              <option value="optimization">&nbsp;Optimization</option>
-              <option value="others">&nbsp;Others</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div className='text-center p-5'>
-        <button className='btn menu-bg btnSend'>Submit</button>
-      </div> */}
-        {/* Contact Ends */}
       </div>
     );
   }
