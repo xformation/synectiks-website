@@ -184,6 +184,12 @@
     margin-top: 2.5em !important;
   }
 }
+@media(min-width: 1920px){
+  .img100{
+    width: 50% !important;
+    margin-left: 5em;
+  }
+}
 
 @media(max-width: 65em){
 #particle-js{
@@ -1355,7 +1361,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   /* padding-bottom: 1rem; */
   /* background-color: rgb(0, 0, 0); */
   /* opacity: 0.7; */
-
 }
 .carsCtrlLt {
   left: -2em;
@@ -1391,6 +1396,9 @@ overflow: hidden;
   display: none;
   /* padding-inline-start: 0.75em; */
 }
+.dropdown-submenu:hover> .menulist{
+  display: block !important;
+}
 
 
 .px-8{
@@ -1400,6 +1408,10 @@ overflow: hidden;
 .pht{
   margin-bottom: 0.50rem !important;
 }
+.img100{
+  width:100%;
+}
+
 
 
 .showme{
@@ -1417,8 +1429,8 @@ overflow: hidden;
   }
   .pFxd{
   position: fixed;
-  bottom:4rem;
-  /* top:12rem; */
+  /* bottom:4rem; */
+  top:44%;
   z-index: 99;
   }
   .w-90{
@@ -1434,13 +1446,18 @@ overflow: hidden;
   a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
     pointer-events: none;
     }
-.dropdown-submenu:hover > .dropdown-menu{
+/* .dropdown-submenu:hover > .dropdown-menu{
     display: block !important;
+  } */
+  .dropdown-submenu {
+    position: relative;
   }
 
+  /* .dropdown-submenu > NavLink::after{
+    content: " ";
+    display: block;
 
-a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
-    pointer-events: none;
-}
+  } */
+
 
 

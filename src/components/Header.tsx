@@ -15,8 +15,9 @@ const togglerBg = {
   textDecoration: 'none'
 };
 const subhide = {
-  display: 'none'
+ 
 }
+
 
 {/* <script>
 ( ' .navbar-nav a' ).on( 'click',
@@ -169,12 +170,12 @@ export class Header extends React.Component<any, any, any>{
 
                           {/*  */}
                           <li className="dropdown-submenu dropright">
-                            <NavLink data-toggle="dropdown" id="submenu" className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
-                            <div >
-                              <ul className="dropdown-menu menulist bg-logoblue" style={subhide}>
-                                <NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink>
-                                <NavLink className="dropdown-item" to="/CloudManagedBackup">Cloud Managed Backup</NavLink>
-                                <NavLink className="dropdown-item" to="/CloudDisasterRecovery">Cloud Disaster Recovery</NavLink>
+                            <NavLink   className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
+                            <div className="menulist">
+                              <ul className="dropdown-menu bg-logoblue" >
+                                <li><NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/CloudManagedBackup">Cloud Managed Backup</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/CloudDisasterRecovery">Cloud Disaster Recovery</NavLink></li>
                               </ul>
                             </div>
                           </li>

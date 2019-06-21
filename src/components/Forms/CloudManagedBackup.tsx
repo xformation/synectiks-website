@@ -76,7 +76,7 @@ const wid = {
     return (
         <div className='bg-lightgrey' >
 
-<div className=' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' >
+<div className=' text-black w-100 container-fluid mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' >
 
 <div className="mt-2 pt-3 text-black">
   <div className="d-flex">
@@ -102,8 +102,8 @@ const wid = {
     </div>
 
 <div className=" pl-5 py-3 mt-5 w-65" >
-    <img height="auto" width="100%"
-        className=""
+    <img height="auto" 
+        className="img100 img-fluid"
         src="img/CloudCommon.png"
         alt="Cloud"
     />

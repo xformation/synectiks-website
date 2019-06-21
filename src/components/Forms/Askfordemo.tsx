@@ -17,7 +17,7 @@ import { LinearProgress } from "material-ui";
         <div className="bg-lightgrey">
             <div>
                 <img
-                    className="  text-center py-5 mt-5"
+                    className="  text-center pt-5 mt-5"
                     src="img/NiceToMeet.png" width="100%"
                     alt="Card image Foundation"
                 />
@@ -29,12 +29,12 @@ import { LinearProgress } from "material-ui";
             </div>
     
        {/* Contact Starts */}
-       <div className='py-3' data-aos="fade-up" data-aos-duration="3000">
+       <div className=''>
        <h2 className='text-center text-black'>Ask for Demo</h2>
        <h5 className='text-center text-black'>Straight talk on your challenges.</h5>
    </div>
 
-   <div className="px-5 py-3" data-aos="fade-up" data-aos-duration="3000">
+   <div className="px-5 py-2">
 
        <div className="d-flex text-center col-md-12 p-2 flex-col">
            <div className="col-sm-4 p-2" >
@@ -96,7 +96,7 @@ import { LinearProgress } from "material-ui";
        </div>
    </div>
 
-   <div className='text-center p-5'>
+   <div className='text-center px-5 pt-1 pb-5'>
        <button className='btn bg-logoblue text-white btnSend'>Submit</button>
    </div>
    {/* Contact Ends */}
