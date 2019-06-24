@@ -141,21 +141,6 @@ import { NavLink } from "react-router-dom";
         <div className="w-40 p-5 text-center">
           <img src="img/Microservice_11.png" width="75%" alt="DevOps Transformation" />{" "}
         </div>
-        {/* <p>
-          Some FAQ’s on Microservices transformation.
-            </p>
-        <h6>
-          I have a very large application, built over 10+ Years, how much efforts will take to
-          become complete software-defined &amp; microservice based platform?
-            </h6>
-        <p>
-          It’s proportional to size &amp; complexity.
-          Though you can get immediate ROI by using Application and Automation block technologies and bottom up approach.
-              </p>
-              <p>
-              <NavLink className="navlink navfont noLine" to="/contactus">Contact us&nbsp;</NavLink>to learn more about 
-              SYNECTIKS Microservice Transformation Service.
-              </p> */}
               
   {/* Help End */}
       <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">

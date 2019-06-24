@@ -86,25 +86,44 @@ export class Microservices extends React.Component<any, any, any> {
             alt="Microservices"
           />
         </div>
-        {/* Floating Img */}
-        <div className="conatiner-fluid px-5">
+    
+<div className="col-lg-12 d-flex">
+        <div className="conatiner-fluid pl-4 col-md-1">
           <div className="row">
             <div className="w-100 btn-groups pFxd">
-              <div className="showhim w-32">
-                <img src="img/examples.png" className="border w-100 h-70" />
-                <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microserviceexample">Example of Microservices</Link></div>
+              <div className="showhim w-13">
+                <div className="showhim  py-2 text-white">
+                  <Link to="/microserviceexample">
+                    <button className='btn text-white bg-primary btnLearn'>Example of Microservices</button>
+                  </Link>
+                </div>
               </div>
-              <div className="showhim w-32 my-4">
-                <img src="img/benefits.png" className="w-100 h-70" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicebenefit">Benefits of Microservices</Link></div></div>
-              <div className="showhim w-32 mb-4">
-                <img src="img/challenge.jpg" className="w-100 h-70" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicechallenge">
-                  Challenges of Microservices </Link></div></div>
-              <div className="showhim w-32">
-                <img src="img/help.jpg" className="w-100 h-70" /><div className="showme bg-primary px-3 py-2 text-white"> <Link className="text-white" to="/microservicehelp">How we can help you?</Link></div></div>
+              <div className="showhim w-13">
+                <div className="showhim  py-2 text-white">
+                  <Link to="/microservicebenefit">
+                    <button className='btn text-white bg-primary btnLearn'>Benefits of Microservices</button>
+                  </Link>
+                </div>
+              </div>
+              <div className="showhim w-13">
+                <div className="showhim  py-2 text-white">
+                  <Link to="/microservicechallenge">
+                    <button className='btn text-white bg-primary btnLearn'>Challenges of Microservices</button>
+                  </Link>
+                </div>
+              </div>
+              <div className="showhim w-13">
+                <div className="showhim  py-2 text-white">
+                  <Link to="/microservicehelp">
+                    <button className='btn text-white bg-primary btnLearn'>How&nbsp;we&nbsp;can help you?</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
+      <div className="col-md-11 pl-5">
         <div
           className="container px-5 pt-3 lineHeight-24"
           data-aos="fade-up"
@@ -171,7 +190,7 @@ export class Microservices extends React.Component<any, any, any> {
             to learn more about SYNECTIKS MicroServices.
           </p>
         </div>
-
+        </div>
         {/*  */}
         <div className="">
           <Modal isOpen={this.state.modal} toggle={this.toggle} >
@@ -288,6 +307,8 @@ export class Microservices extends React.Component<any, any, any> {
               <button className='btn text-white bg-logoblue  btnLearn '>How we can help you?</button>
             </Link>
           </div>
+        </div>
+
         </div>
       </div>
     );

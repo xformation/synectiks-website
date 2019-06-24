@@ -237,8 +237,6 @@ const wid = {
                         </div>
                     </div>
 
-
-
                 </div>
             </div>
             {/*  */}
@@ -255,22 +253,7 @@ const wid = {
                 </p>
             </div>
 
-            {/*  */}
-        
-
-                {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col ">
-          <p>
-            <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
-              <small>Contact&nbsp;Us&nbsp;</small>
-            </a>
-            to learn more about SYNECTIKS DevOps Transformation Service.
-          </p>
-        </div> */}
-
                 <div className="">
-{/* <Button color="primary" onClick={this.toggle}>
-Contact&nbsp;Us&nbsp;
-</Button> */}
 <Modal isOpen={this.state.modal} toggle={this.toggle} >
   <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
   <ModalBody className="bg-lightgrey">

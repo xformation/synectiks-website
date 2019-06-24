@@ -75,11 +75,6 @@ import { NavLink } from "react-router-dom";
                     While Monolith has complexity in codebase, microservices poses the complexity of interaction between many services.
             </p><br />
 
-                {/* <div className="w-40 p-5 text-center">
-          <img src="img/Microservice_4.png" width="50%" alt="DevOps Transformation" />{" "}
-          <img src="img/Microservice_5.png" width="50%" alt="DevOps Transformation" />{" "}
-          <img src="img/Microservice_6.png" width="50%" alt="DevOps Transformation" />{" "}
-        </div> */}
             </div>
 
             <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">

@@ -47,22 +47,7 @@ export class Careers extends React.Component<any, any, any> {
                         src="img/Careers.jpg" width="100%"
                         alt="Careers"
                     />
-                    {/* <div className="text-center centered ">
-                    <div className="text-white">
-                        <h3>Careers</h3>
-                    </div>
-                </div> */}
                 </div>
-
-                {/* <div className="px-5 pt-3 text-center" data-aos="fade-up" data-aos-duration="2000">
-                <h4><i>
-                    “Talented, hardworking, and passionate personalities. We love what we do.<br />
-                    Together as a Team, We work for the success of Our Customer.”
-                </i></h4>
-                <p>Our motto<br />
-                    Work Hard, Be Kind, Stay Humble
-                </p>
-            </div> */}
 
                 <div className='text-center pb-3 lineHeight-24' >
                     <h2>Careers</h2>

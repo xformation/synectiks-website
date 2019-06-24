@@ -399,36 +399,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             </a>
           to learn more about SYNECTIKS DevOps Transformation Service.
         </p>
-
-        {/* <div>
-          <a
-            href="img\Synectiks-Enterprise-DevOps-Strategies.pdf"
-            download="img\Synectiks-Enterprise-DevOps-Strategies.pdf"
-          >Download
-          </a>         
-        </div> */}
-       
-
-        {/* <div>
-                    <Modal size="lg" aria-labelledby="contained-modal-title-vcenter" centered >
-                        <Modal.Header closeButton>
-                            <Modal.Title id="contained-modal-title-vcenter">
-                                Modal heading
-                            </Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <h4>Centered Modal</h4>
-                            <p>
-                                Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                                dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                                ac consectetur ac, vestibulum at eros.
-                            </p>
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button>Close</Button>
-                        </Modal.Footer>
-                    </Modal>
-                </div>  */}
       </div>
 
       <div className="container">
@@ -437,9 +407,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
    
 
 <div className="">
-{/* <Button color="primary" onClick={this.toggle}>
-Contact&nbsp;Us&nbsp;
-</Button> */}
+
 <Modal isOpen={this.state.modal} toggle={this.toggle} >
   <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
   <ModalBody className="bg-lightgrey">

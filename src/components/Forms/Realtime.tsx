@@ -15,10 +15,6 @@ import { LARGE } from "material-ui/utils/withWidth";
         render() {
     return (
         <div className="bg-lightgrey">        
-            
-            {/* <div className='bg-theme mt-3'>
-            <h1 className='text-center text-white pt-theme mt-2'>RELIANCE JIO CASE STUDY</h1>
-            </div> */}
 
 <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
                     <div className="w-40 py-5">
@@ -86,8 +82,6 @@ microservices, devops</p>
             We hosted the entire technology stack in Kubernetes platform so that it can scale elastically with minimal operations. Intelligent plugin scripts were embedded to work with Prometheus data collection engine and extract intuitive data from the large dataset. 
             Smart analytics were built on intelligent data stored in time series database and this resulted in important business monitoring views.
             </p>
-
-        
             <h2>OUTCOME</h2>
             <p className='lineHeight-24'>
             The telecom company was able to achieve a 100% open and highly scalable monitoring platform.

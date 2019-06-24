@@ -85,8 +85,6 @@ export class Casestudy extends React.Component<{}, {}> {
               </div>
             </Link>
           </div>
-
-
           <div className="d-flex justify-content-around pt-2 flex-fill mt-3 pb-3 align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
             <Link to="/networkdesign" className="noLine">
               <div className="p-3">

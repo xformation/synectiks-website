@@ -56,8 +56,7 @@ import { NavLink } from "react-router-dom";
             <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
            <div className="py-3 col-md-2 nav-item dropdown" >
                     <Link to="/HostedInfrastructure"  className='text-black bg-white noLine'>                                           
-                        {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
-                        id="navbarSupportedContent">  */}
+                       
                         <a className="noLine" href="#" id="cloudnav"  data-toggle="dropdown">
                                 <b  >Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
                         </a>
@@ -121,24 +120,22 @@ import { NavLink } from "react-router-dom";
 
                 <h2>Hybrid Cloud</h2>
                 <p><b><i>Bridge Your Clouds, Build Your Future!</i></b></p>
-
                     <p className="lineHeight-24">
-                    Enterprises are adopting a hybrid, multi-cloud approach to enable greater flexibility 
-                    and application modernization, which include the use of multiple cloud providers like 
-                    AWS, Azure or Google Cloud, or traditional on-premises environments.
-                    <br />{" "}
-                    </p>
-                    <p className="lineHeight-24">
-                    A hybrid, multi-cloud management framework will offer operational agility and power to identify, 
-                    analyze and respond quickly to changes in these mixed environments.
-                    <br />{" "}
+                    Synectiks hybrid cloud offers a company with a complete cloud solution.Our hybrid cloud merges the benefits of both the private cloud and the public cloud.
+                    It delivers the private cloud’s high-security features coupled with the fast connection and easy-to-access features of the public cloud.
+                    Enterprises are adopting a hybrid, multi-cloud approach to enable greater flexibility and application modernization, which include the use of 
+                    multiple cloud providers like AWS, Azure or Google Cloud, or traditional on-premises environments. 
                     </p>
                 </div>
 
             </div>
-
-
-            <div className="container-fluid px-5 py-5" data-aos="fade-up" data-aos-duration="2000">
+            <div className="px-5 py-2 text-justify">
+            <h5 className="lineHeight-24 text-center">
+            You can now be able to leverage some of the existing low-cost cloud solutions without compromising your security.
+            </h5>
+            </div>
+         
+            <div className="container-fluid px-5 pt-3 pb-5" data-aos="fade-up" data-aos-duration="2000">
                 <div className="row justify-content-around align-items-center">
 
                     <div className="card card-hybcld mx-2">
@@ -171,27 +168,6 @@ import { NavLink } from "react-router-dom";
 
                     </div>
                     </div>
-
-            {/* <div className="w-100 px-5 text-black text-justify">
-                <p className="lineHeight-24">
-                <h3>Simple</h3><br />{" "}
-                Standardize and automate orchestration workflows and blur the boundaries across hybrid cloud locations.
-                <br />{" "}
-                </p>
-                <p className="lineHeight-24">
-                <h3>Scalable</h3><br />{" "}
-                The pay-as-you-go scalability is ideal for heavy or unpredictable traffic - and can reduce IT costs.
-                <br />{" "}
-                </p>
-                <p className="lineHeight-24">
-                <h3>Secure</h3><br />{" "}
-                When you need enhanced security and ultimate control for business-critical apps and data, incorporate a private cloud.
-                <br />{" "}
-                </p>
-            </div> */}
-     
-           
-
         </div>
 
     );

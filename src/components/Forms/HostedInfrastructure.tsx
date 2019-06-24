@@ -109,22 +109,11 @@ const wid = {
     />
 </div>
 </div>
-{/* <div className="w-100 px-5 text-black text-justify" >
-<p className="lineHeight-24">
-    SYNECTIKS is the leader in Cloud Solutions and can deliver it the way you need it – on-premise or 
-    private, public or hybrid cloud.
-    Get no-cost expert guidance.<br/>
-    We're here to help! Schedule a 30-minute consultation to get your expedition to cloud started.
-    </p>    
-</div> */}
 
-            
  <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" 
  >
        <div className="py-3 col-md-2 nav-item dropdown" >
                     <Link to="/HostedInfrastructure" id="hosted" className='text-black bg-white noLine'>                                           
-                        {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
-                        id="navbarSupportedContent">  */}
                         <a className="noLine" href="#" id="cloudnav"  data-toggle="dropdown">
                                 <b id="hosted">Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
                         </a>
@@ -143,7 +132,7 @@ const wid = {
                                     </NavLink>
                                                                        
                                 </div>                                                   
-                        {/* </div> */}
+                        
                     </Link>                                                                  
                 </div>
           
@@ -167,15 +156,8 @@ const wid = {
                         <b>Colocation</b>
                     </Link>
                 </div>
-                
-          
 
             </div>
-        
-            {/* <div>
-                <h2 className='text-center mt-3'>Cloud Hosted Services</h2>
-            </div> */}
-        
             <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify" >
            
                     <div className="w-100">
@@ -216,7 +198,7 @@ const wid = {
             expenses for predictable workloads with SYNECTIKS Reserved VM Instances.
             </p>
             <p className="lineHeight-24">
-                {/* <NavLink className="navlink navfont noLine" to="/contactus"><small>Contact&nbsp;Us&nbsp;</small></NavLink> */}
+              
                 <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
               <small>Contact&nbsp;Us&nbsp;</small></a>
                 to learn more about SYNECTIKS Infrastructure as a Service.
@@ -225,22 +207,7 @@ const wid = {
 
             </div>
 
-             {/*  */}
-        
-
-             {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col ">
-          <p>
-            <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
-              <small>Contact&nbsp;Us&nbsp;</small>
-            </a>
-            to learn more about SYNECTIKS DevOps Transformation Service.
-          </p>
-        </div> */}
-
                 <div className="">
-{/* <Button color="primary" onClick={this.toggle}>
-Contact&nbsp;Us&nbsp;
-</Button> */}
 <Modal isOpen={this.state.modal} toggle={this.toggle} >
   <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
   <ModalBody className="bg-lightgrey">
@@ -338,9 +305,6 @@ Contact&nbsp;Us&nbsp;
             <div className="container">
         <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
       </div>
-
-             {/* <marquee behavior="alternate" scrollamount="10"> ABC ABC</marquee> */}
-          
         </div>
 
     );

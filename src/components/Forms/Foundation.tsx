@@ -76,11 +76,7 @@ export class Foundation extends React.Component<{}, {}> {
               />
               <div className="card-body">
                 <h2 className="text-center text-uppercase">Transformation</h2>
-                
               </div>
-              {/* <div className="pointer text-center">
-              <h1>&#187;</h1>
-              </div> */}
               </Link>
             </div>
 
