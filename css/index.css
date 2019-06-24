@@ -1446,13 +1446,7 @@ a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardro
 #submenu:hover #cls{
   display: block;
 }
-/* a#submenu {
-    pointer-events: none;
-} */
 
-  /* .bdr{
-
-  } */
 @media (min-width: 768px) {
   .pFxd{
 position: fixed;
