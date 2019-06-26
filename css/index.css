@@ -185,6 +185,12 @@
     margin-top: 2.5em !important;
   }
 }
+@media(min-width: 1920px){
+  .img100{
+    width: 50% !important;
+    margin-left: 5em;
+  }
+}
 
 @media(max-width: 65em){
 #particle-js{
@@ -1356,7 +1362,6 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   /* padding-bottom: 1rem; */
   /* background-color: rgb(0, 0, 0); */
   /* opacity: 0.7; */
-
 }
 .carsCtrlLt {
   left: -2em;
@@ -1392,6 +1397,11 @@ overflow: hidden;
   display: none;
   /* padding-inline-start: 0.75em; */
 }
+.dropdown-submenu:hover> .menulist{
+  display: block !important;
+}
+
+
 .px-8{
   padding-right: 5rem !important;
   padding-left: 5rem !important;
@@ -1399,11 +1409,17 @@ overflow: hidden;
 .pht{
   margin-bottom: 0.50rem !important;
 }
+.img100{
+  width:100%;
+}
+
+
+
 .showme{
   display: none;
   position: absolute;
-  left: 39px;
-  top: 3px;
+  left: 5.8rem;
+  top: 15px;
   width: 15rem;
   }
 .showhim{
@@ -1414,7 +1430,8 @@ overflow: hidden;
   }
   .pFxd{
   position: fixed;
-  top:12rem;
+  /* bottom:4rem; */
+  top:44%;
   z-index: 99;
   }
   .w-90{
@@ -1428,21 +1445,16 @@ overflow: hidden;
   height: 50px;
 
     width: 3%;
+
+    width: 7%;
     border: 1px solid black;
   }
  .h-70{
-  height: 40px;
+  height: 70px;
   }
   a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
     pointer-events: none;
     }
-.dropdown-submenu:hover > .dropdown-menu{
-    display: block !important;
-}
-a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
-  /*Without this, clicking will make it sticky*/
-    pointer-events: none;
-}
 #submenu:hover #cls{
   display: block;
 }
@@ -1472,3 +1484,10 @@ position: fixed;
   z-index: 99;
   }
  }
+
+  .dropdown-submenu {
+    position: relative;
+  }
+/* .imgBg{
+  background-image: url(../img/AboutUs.jpg);
+} */

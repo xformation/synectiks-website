@@ -95,7 +95,7 @@ export class Microservices extends React.Component<any, any, any> {
                 <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microserviceexample">Example of Microservices</Link></div>
               </div>
               <div className="showhim w-32 my-4">
-                <img src="img/msbenefits.png" className="w-100 h-70" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicebenefit">Benefits of Microservices</Link></div></div>
+                <img src="img/benefits.png" className="w-100 h-70" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicebenefit">Benefits of Microservices</Link></div></div>
               <div className="showhim w-32 mb-4">
                 <img src="img/challenge.jpg" className="w-100 h-70" /> <div className="showme bg-primary px-3 py-2 text-white"><Link className="text-white" to="/microservicechallenge">
                   Challenges of Microservices </Link></div></div>

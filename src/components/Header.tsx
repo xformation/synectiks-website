@@ -15,8 +15,9 @@ const togglerBg = {
   textDecoration: 'none'
 };
 const subhide = {
-  display: 'none'
+
 }
+
 
 {/* <script>
 ( ' .navbar-nav a' ).on( 'click',
@@ -118,45 +119,7 @@ export class Header extends React.Component<any, any, any>{
                           </NavLink>
                         </div>
                       </li>
-                      {/* <li className="nav-item dropdown">
-                  <a
-                    className="nav-link"
-                    href="#"
-                    id="navbardrop2"
-                    data-toggle="dropdown" >
-                    SaaS
-                   </a>
-                  <div className="dropdown-menu w17em">
-                    <NavLink className="dropdown-item" to="/universitymanagement">
-                      {" "}
-                      Education Management System{" "}
-                    </NavLink>
-                    <NavLink className="dropdown-item" to="/projectmanagement">
-                      {" "}
-                      Project Management System{" "}
-                    </NavLink>
-                  </div>
-                </li> */}
-                      {/* <NavLink className=" dropdown-item" to="/HostedInfrastructure">
-                     Cloud Hosted Services{" "}
-                     </NavLink> */}
 
-                      {/* <NavLink className="dropdown-item" to="/HostedInfrastructure">
-                          Hosted Infrastructure
-                  </NavLink> */}
-
-                      {/* <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                    <DropdownToggle nav caret>
-                      Dropdown
-                    </DropdownToggle>
-                    <DropdownMenu>
-                      <DropdownItem header>Header</DropdownItem>
-                      <DropdownItem disabled>Action</DropdownItem>
-                      <DropdownItem>Another Action</DropdownItem>
-                      <DropdownItem divider />
-                      <DropdownItem>Another Action</DropdownItem>
-                    </DropdownMenu>
-                  </Dropdown> */}
                       <li className="nav-item dropdown  ">
                         <a
                           className="nav-link px-4"
@@ -169,12 +132,12 @@ export class Header extends React.Component<any, any, any>{
 
                           {/*  */}
                           <li className="dropdown-submenu dropright">
-                            <NavLink data-toggle="dropdown" id="submenu" className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
-                            <div >
-                              <ul id="cls" className="dropdown-menu menulist bg-logoblue" style={subhide}>
-                                <NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink>
-                                <NavLink className="dropdown-item" to="/CloudManagedBackup">Cloud Managed Backup</NavLink>
-                                <NavLink className="dropdown-item" to="/CloudDisasterRecovery">Cloud Disaster Recovery</NavLink>
+                            <NavLink className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
+                            <div className="menulist">
+                              <ul className="dropdown-menu bg-logoblue" >
+                                <li><NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/CloudManagedBackup">Cloud Managed Backup</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/CloudDisasterRecovery">Cloud Disaster Recovery</NavLink></li>
                               </ul>
                             </div>
                           </li>
@@ -192,14 +155,7 @@ export class Header extends React.Component<any, any, any>{
                             {" "}
                             Public&nbsp;Cloud{" "}
                           </NavLink>
-                          {/* <NavLink className="dropdown-item" to="/synectikscloud">
-                      {" "}
-                      SYNECTIKS Cloud{" "}
-                    </NavLink> */}
-                          {/* <NavLink className="dropdown-item" to="/managedcontainer">
-                      {" "}
-                     Managed Container Platform{" "}
-                    </NavLink> */}
+
                           <NavLink className="dropdown-item" to="/colocation">
                             {" "}
                             Colocation{" "}
@@ -221,14 +177,7 @@ export class Header extends React.Component<any, any, any>{
                             {" "}
                             Application Services{" "}
                           </NavLink>
-                          {/* <NavLink className="dropdown-item" to="/automation">
-                      {" "}
-                      Automation &amp; Monitoring{" "}
-                    </NavLink> */}
-                          {/* <NavLink className="dropdown-item" to="/discovery">
-                      {" "}
-                      Discovery &amp; Assesment{" "}
-                    </NavLink> */}
+
                           <NavLink className="dropdown-item" to="/managedservices">
                             {" "}
                             Managed Services{" "}
@@ -237,23 +186,8 @@ export class Header extends React.Component<any, any, any>{
                             {" "}
                             Network Services{" "}
                           </NavLink>
-                          {/* <NavLink className="dropdown-item" to="/managedservices">
-                      {" "}
-                     Storage&nbsp;as a Service{" "}
-                    </NavLink> */}
-
-                          {/* <NavLink className="dropdown-item" to="/migrationservices">
-                      {" "}
-                      Migration Services{" "}
-                    </NavLink>
-                    */}
-
-
-
                         </div>
                       </li>
-
-
                       <li className="nav-item dropdown">
                         <a className="nav-link px-4"
                           href="#"
@@ -270,10 +204,7 @@ export class Header extends React.Component<any, any, any>{
                             {" "}
                             Success Stories{" "}
                           </NavLink>
-                          {/* <NavLink className="dropdown-item" to="/videos">
-                      {" "}
-                      Videos{" "}
-                    </NavLink> */}
+
                         </div>
                       </li>
 
@@ -294,37 +225,20 @@ export class Header extends React.Component<any, any, any>{
                             {" "}
                             Careers{" "}
                           </NavLink>
-                          {/* <NavLink className="dropdown-item" to="/partners">
-                      {" "}
-                      Partners{" "}
-                    </NavLink> */}
                         </div>
-
                       </li>
                     </ul>
                   </div>
-
-
                 </div>
-
-
-
               </div>
               <div>
                 <div className="btn btn-demo noLine">
                   <Link to="/askfordemo" className="noLine text-white">Ask For Demo</Link>
                 </div>
               </div>
-
-
             </nav>
-
-
           </div>
-
         </div>
-        {/* <Background /> */}
-        {/* <Main /> */}
       </div>
     );
   };

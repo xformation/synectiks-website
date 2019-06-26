@@ -65,7 +65,7 @@ export class Careers extends React.Component<any, any, any> {
             </div> */}
 
                 <div className='text-center pb-3 lineHeight-24' >
-                    <h2>Careers - Opportunity is infinite!</h2>
+                    <h2>Careers</h2>
                 </div>
 
                 <div className="w-100 px-5 text-black text-justify" >

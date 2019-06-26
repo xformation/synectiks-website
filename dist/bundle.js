@@ -39107,11 +39107,10 @@ class Aboutus extends React.Component {
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
             React.createElement("div", null,
-                React.createElement("img", { className: "  text-center py-5 mt-5", src: "img/AboutUs.png", width: "100%", alt: "AboutUs" }),
-                React.createElement("div", { className: "text-center centered " },
-                    React.createElement("div", { className: "text-white" },
-                        React.createElement("h3", null, "About\u00A0SYNECTIKS")))),
+                React.createElement("img", { className: "  text-center pt-5 mt-5", src: "img/AboutUs.jpg", width: "100%", alt: "AboutUs" })),
             React.createElement("div", { className: "px-5 pt-3 text-justify", "data-aos": "fade-up", "data-aos-duration": "2000" },
+                React.createElement("div", { className: "text-center" },
+                    React.createElement("h2", null, "About Synectiks")),
                 React.createElement("p", { style: lineHeight },
                     "\"",
                     React.createElement("span", { style: blue }, "syn"),
@@ -39124,14 +39123,17 @@ class Aboutus extends React.Component {
                     "] \u2013 the study of creative processes, esp. as applied to the solution of problems by a group of diverse individuals.\" ",
                     React.createElement("br", null),
                     "SYNECTIKS enables organizations to realize their business ambitions through an array of services from strategy to operations. We harness the power of computing, automation, cloud, analytics and evolving technologies to help our customers adapt to the digital transformation and make them agile. Solves challenges by providing unmatched services in consulting, technology and operations. A global technology firm who specializes in helping highly-regulated enterprises transform faster, modernizing their way of working, helping optimize your resources and lower your costs. Combined with Synectiks\u2019 full vary of advanced technology solutions, managed and skilled services, we provide the leading portfolios within the technology services.")),
+            React.createElement("div", { className: "container-fluid" },
+                React.createElement("div", { className: "row" },
+                    React.createElement("div", { className: "col-md-5" },
+                        React.createElement("img", { className: "  text-center px-3 img-fluid", src: "img/Consulting.jpg", alt: "Consulting" })),
+                    React.createElement("div", { className: "col-md-7" },
+                        React.createElement("p", { style: lineHeight, className: "pt-4" },
+                            React.createElement("strong", null, "Consulting"),
+                            " - transforms businesses through industry expertise and insights",
+                            React.createElement("br", null),
+                            "To modernize your business, you need a partner - who brings you new and innovative ideas - a partner with in-depth knowledge, meaningful insights and the broadest range of capabilities. A partner who works with you to help reach the next level of performance. Building the future means taking tough decisions, making bold moves that will lay a path to modernize your business; we\u2019re proud to help shape the way the companies\u2019 manage and transform their business. And we are dependent on harnessing innovation to tackle even the complicated problems.")))),
             React.createElement("div", { className: "d-flex text-justify justify-content-around p-3 px-5 flex-col", "data-aos": "fade-up", "data-aos-duration": "2000" },
-                React.createElement("div", null,
-                    React.createElement("img", { className: "  text-center px-3", src: "img/Consulting.png", alt: "Consulting" })),
-                React.createElement("p", { style: lineHeight, className: "pt-4" },
-                    React.createElement("strong", null, "Consulting"),
-                    " - transforms businesses through industry expertise and insights",
-                    React.createElement("br", null),
-                    "To modernize your business, you need a partner - who brings you new and innovative ideas - a partner with in-depth knowledge, meaningful insights and the broadest range of capabilities. A partner who works with you to help reach the next level of performance. Building the future means taking tough decisions, making bold moves that will lay a path to modernize your business; we\u2019re proud to help shape the way the companies\u2019 manage and transform their business. And we are dependent on harnessing innovation to tackle even the complicated problems."),
                 React.createElement("br", null)),
             React.createElement("div", { className: "d-flex flex-row-rev text-justify justify-content-around p-3 px-5 flex-col", "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("div", null,
@@ -39412,14 +39414,14 @@ class Askfordemo extends React.Component {
     render() {
         return (React.createElement("div", { className: "bg-lightgrey" },
             React.createElement("div", null,
-                React.createElement("img", { className: "  text-center py-5 mt-5", src: "img/NiceToMeet.png", width: "100%", alt: "Card image Foundation" }),
+                React.createElement("img", { className: "  text-center pt-5 mt-5", src: "img/NiceToMeet.png", width: "100%", alt: "Card image Foundation" }),
                 React.createElement("div", { className: "text-center centered " },
                     React.createElement("div", { className: "text-white" },
                         React.createElement("h3", null, "Nice\u00A0To\u00A0Meet\u00A0You!")))),
-            React.createElement("div", { className: 'py-3', "data-aos": "fade-up", "data-aos-duration": "3000" },
+            React.createElement("div", { className: '' },
                 React.createElement("h2", { className: 'text-center text-black' }, "Ask for Demo"),
                 React.createElement("h5", { className: 'text-center text-black' }, "Straight talk on your challenges.")),
-            React.createElement("div", { className: "px-5 py-3", "data-aos": "fade-up", "data-aos-duration": "3000" },
+            React.createElement("div", { className: "px-5 py-2" },
                 React.createElement("div", { className: "d-flex text-center col-md-12 p-2 flex-col" },
                     React.createElement("div", { className: "col-sm-4 p-2" },
                         React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0First Name", width: "90%" })),
@@ -39460,7 +39462,7 @@ class Askfordemo extends React.Component {
                             React.createElement("option", { value: "operations" }, "\u00A0Operations"),
                             React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
                             React.createElement("option", { value: "others" }, "\u00A0Others"))))),
-            React.createElement("div", { className: 'text-center p-5' },
+            React.createElement("div", { className: 'text-center px-5 pt-1 pb-5' },
                 React.createElement("button", { className: 'btn bg-logoblue text-white btnSend' }, "Submit"))));
     }
 }
@@ -39559,9 +39561,9 @@ class Careers extends React.Component {
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
             React.createElement("div", null,
-                React.createElement("img", { className: "  text-center py-5 mt-5", src: "img/Careers.jpg", width: "100%", alt: "Careers" })),
+                React.createElement("img", { className: "  text-center pt-5 pb-2 mt-5", src: "img/Careers.jpg", width: "100%", alt: "Careers" })),
             React.createElement("div", { className: 'text-center pb-3 lineHeight-24' },
-                React.createElement("h2", null, "Careers - Opportunity is infinite!")),
+                React.createElement("h2", null, "Careers")),
             React.createElement("div", { className: "w-100 px-5 text-black text-justify" },
                 React.createElement("p", { className: "lineHeight-24 pb-3" },
                     React.createElement("h4", null, "Changing the game takes talent - Yours!"),
@@ -39701,15 +39703,12 @@ class Casestudy extends React.Component {
     render() {
         return (React.createElement("div", { className: "bg-lightgrey" },
             React.createElement("div", null,
-                React.createElement("img", { className: "  text-center py-5 mt-5", src: "img/Careers.png", width: "100%", alt: "Resources" }),
-                React.createElement("div", { className: "text-center centered " },
-                    React.createElement("div", { className: "text-white" },
-                        React.createElement("h3", null, "Resources")))),
+                React.createElement("img", { className: "  text-center pt-5 mt-5", src: "img/resources.jpg", width: "100%", alt: "Resources" })),
             React.createElement("div", { className: "container" },
-                React.createElement("div", { className: "text-center w-100 pt-3 " },
+                React.createElement("div", { className: "text-center w-100 pt-4 " },
                     React.createElement("h3", { className: "" },
                         React.createElement("b", null, "Success Stories"))),
-                React.createElement("div", { className: "d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col", "data-aos": "fade-up", "data-aos-duration": "2000" },
+                React.createElement("div", { className: "d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col" },
                     React.createElement(react_router_dom_1.Link, { to: "/softwaredefined", className: "noLine" },
                         React.createElement("div", { className: "p-3" },
                             React.createElement("div", { className: "border-grey-2px cs_boxshadow" },
@@ -39871,7 +39870,7 @@ class CloudDisasterRecovery extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
-            React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
+            React.createElement("div", { className: ' text-black w-100 container-fluid mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
                         React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
@@ -39882,7 +39881,7 @@ class CloudDisasterRecovery extends React.Component {
                     React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
                     React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
                 React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
-                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
+                    React.createElement("img", { height: "auto", className: "img100 img-fluid", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
                     React.createElement(react_router_dom_1.Link, { to: "/HostedInfrastructure", className: 'text-black bg-white noLine' },
@@ -40086,7 +40085,7 @@ class CloudManagedBackup extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
-            React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
+            React.createElement("div", { className: ' text-black w-100 container-fluid mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
                         React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
@@ -40097,7 +40096,7 @@ class CloudManagedBackup extends React.Component {
                     React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
                     React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
                 React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
-                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
+                    React.createElement("img", { height: "auto", className: "img100 img-fluid", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
                     React.createElement(react_router_dom_1.Link, { to: "/HostedInfrastructure", className: 'text-black bg-white noLine' },
@@ -40775,11 +40774,10 @@ class Featured extends React.Component {
     render() {
         return (React.createElement("div", { className: "bg-lightgrey" },
             React.createElement("div", null,
-                React.createElement("img", { className: "  text-center py-5 mt-5", src: "img/Careers.png", width: "100%", alt: "Resources" }),
-                React.createElement("div", { className: "text-center centered " },
-                    React.createElement("div", { className: "text-white" },
-                        React.createElement("h3", null, "Resources")))),
+                React.createElement("img", { className: "  text-center py-5 mt-5", src: "img/resources.jpg", width: "100%", alt: "Resources" })),
             React.createElement("div", { className: "px-5", "data-aos": "fade-up", "data-aos-duration": "2000" },
+                React.createElement("div", { className: "text-center" },
+                    React.createElement("h3", null, "Resources")),
                 React.createElement("div", { className: "d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col" },
                     React.createElement("div", null,
                         React.createElement("div", { className: "p-5" },
@@ -41244,7 +41242,7 @@ class HostedInfrastructure extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
-            React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
+            React.createElement("div", { className: ' text-black w-100 container-fluid mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
                         React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
@@ -41255,7 +41253,7 @@ class HostedInfrastructure extends React.Component {
                     React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
                     React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
                 React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
-                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
+                    React.createElement("img", { height: "auto", className: "img100 img-fluid", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
                     React.createElement(react_router_dom_1.Link, { to: "/HostedInfrastructure", id: "hosted", className: 'text-black bg-white noLine' },
@@ -41392,7 +41390,7 @@ class Hybridcloud extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
-            React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
+            React.createElement("div", { className: ' text-black w-100 container-fluid mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
                         React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
@@ -41403,7 +41401,7 @@ class Hybridcloud extends React.Component {
                     React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
                     React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
                 React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
-                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
+                    React.createElement("img", { height: "auto", className: "img100 img-fluid", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
                     React.createElement(react_router_dom_1.Link, { to: "/HostedInfrastructure", className: 'text-black bg-white noLine' },
@@ -42052,7 +42050,7 @@ class Microservices extends React.Component {
                             React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
                                 React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microserviceexample" }, "Example of Microservices"))),
                         React.createElement("div", { className: "showhim w-32 my-4" },
-                            React.createElement("img", { src: "img/msbenefits.png", className: "w-100 h-70" }),
+                            React.createElement("img", { src: "img/benefits.png", className: "w-100 h-70" }),
                             " ",
                             React.createElement("div", { className: "showme bg-primary px-3 py-2 text-white" },
                                 React.createElement(react_router_dom_1.Link, { className: "text-white", to: "/microservicebenefit" }, "Benefits of Microservices"))),
@@ -42266,6 +42264,7 @@ class Networkdesign extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: "bg-lightgrey" },
+            React.createElement("div", null),
             React.createElement("div", { className: 'bg-theme mt-3' },
                 React.createElement("h1", { className: 'text-center text-white pt-theme mt-2' }, "Cloud Automation For Medfusion Inc")),
             React.createElement("div", { className: "p-5" }),
@@ -42789,7 +42788,7 @@ class Privatecloud extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
-            React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
+            React.createElement("div", { className: ' text-black w-100 container-fluid mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
                         React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
@@ -42800,7 +42799,7 @@ class Privatecloud extends React.Component {
                     React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
                     React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
                 React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
-                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
+                    React.createElement("img", { height: "auto", className: "img100 img-fluid", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
                     React.createElement(react_router_dom_1.Link, { to: "/HostedInfrastructure", className: 'text-black bg-white noLine' },
@@ -43018,7 +43017,7 @@ class Publiccloud extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
-            React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
+            React.createElement("div", { className: ' text-black w-100 container-fluid mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
                         React.createElement("h1", null, "CLOUD\u00A0 \u2010"),
@@ -43029,7 +43028,7 @@ class Publiccloud extends React.Component {
                     React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
                     React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
                 React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
-                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
+                    React.createElement("img", { height: "auto", className: "img100 img-fluid", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
                     React.createElement(react_router_dom_1.Link, { to: "/HostedInfrastructure", className: 'text-black bg-white noLine' },
@@ -43646,7 +43645,7 @@ class Colocation extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
-            React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
+            React.createElement("div", { className: ' text-black w-100 container-fluid mt-3 text-white px-5 pt-5 mt-5 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "mt-2 pt-3 text-black" },
                     React.createElement("div", { className: "d-flex" },
                         React.createElement("h1", { className: " " }, "CLOUD\u00A0 \u2010"),
@@ -43657,7 +43656,7 @@ class Colocation extends React.Component {
                     React.createElement("p", { className: "pht lineHeight-24" }, "With our expertise on Cloud Solutions we will deliver it the way you need it \u2013 on-premise or private, public or hybrid cloud. Get no-cost expert guidance."),
                     React.createElement("p", { className: "pht lineHeight-24" }, "We\u2019ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute consultation to get your expedition to cloud started.")),
                 React.createElement("div", { className: " pl-5 py-3 mt-5 w-65" },
-                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudCommon.png", alt: "Cloud" }))),
+                    React.createElement("img", { height: "auto", className: "img100 img-fluid", src: "img/CloudCommon.png", alt: "Cloud" }))),
             React.createElement("div", { className: " bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" },
                 React.createElement("div", { className: "py-3 col-md-2 nav-item dropdown" },
                     React.createElement(react_router_dom_1.Link, { to: "/HostedInfrastructure", className: 'text-black bg-white noLine ' },
@@ -43822,9 +43821,7 @@ const togglerBg = {
     color: '#ffffff',
     textDecoration: 'none'
 };
-const subhide = {
-    display: 'none'
-};
+const subhide = {};
 { /* <script>
 ( ' .navbar-nav a' ).on( 'click',
 function () {
@@ -43897,12 +43894,15 @@ class Header extends React.Component {
                                             React.createElement("a", { className: "nav-link px-4", href: "#/HostedInfrastructure", id: "navbardrop1", "data-toggle": "dropdown" }, "Cloud"),
                                             React.createElement("div", { className: "dropdown-menu w17em bg-logoblue" },
                                                 React.createElement("li", { className: "dropdown-submenu dropright" },
-                                                    React.createElement(react_router_dom_1.NavLink, { "data-toggle": "dropdown", id: "submenu", className: "dropdown-item dropdown-toggle", to: "#" }, "Cloud Hosted Services"),
-                                                    React.createElement("div", null,
-                                                        React.createElement("ul", { id: "cls", className: "dropdown-menu menulist bg-logoblue", style: subhide },
-                                                            React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/HostedInfrastructure" }, "Hosted Infrastructure"),
-                                                            React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/CloudManagedBackup" }, "Cloud Managed Backup"),
-                                                            React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/CloudDisasterRecovery" }, "Cloud Disaster Recovery")))),
+                                                    React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item dropdown-toggle", to: "#" }, "Cloud Hosted Services"),
+                                                    React.createElement("div", { className: "menulist" },
+                                                        React.createElement("ul", { className: "dropdown-menu bg-logoblue" },
+                                                            React.createElement("li", null,
+                                                                React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/HostedInfrastructure" }, "Hosted Infrastructure")),
+                                                            React.createElement("li", null,
+                                                                React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/CloudManagedBackup" }, "Cloud Managed Backup")),
+                                                            React.createElement("li", null,
+                                                                React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/CloudDisasterRecovery" }, "Cloud Disaster Recovery"))))),
                                                 React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/privatecloud" },
                                                     " ",
                                                     "Private\u00A0Cloud",
