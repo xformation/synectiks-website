@@ -17,23 +17,23 @@ export class Casestudy extends React.Component<{}, {}> {
       <div className="bg-lightgrey">
         <div >
           <img
-            className="  text-center py-5 mt-5"
-            src="img/Careers.png" width="100%"
+            className="  text-center pt-5 mt-5"
+            src="img/resources.jpg" width="100%"
             alt="Resources"
           />
-          <div className="text-center centered ">
+          {/* <div className="text-center centered ">
             <div className="text-white">
               <h3>Resources</h3>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="container">
-          <div className="text-center w-100 pt-3 ">
+          <div className="text-center w-100 pt-4 ">
             <h3 className=""><b>Success Stories</b></h3>
           </div>
 
-          <div className="d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
+          <div className="d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col">
             <Link to="/softwaredefined" className="noLine">
               <div className="p-3">
                 <div className="border-grey-2px cs_boxshadow">
