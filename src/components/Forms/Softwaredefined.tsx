@@ -19,10 +19,13 @@ import { LARGE } from "material-ui/utils/withWidth";
    
                         <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
                     <div className="w-40 py-5">
-                        <img src="img/LargeMotorComapny.jpg" width="100%" alt="Cloud Backup" />{" "}
+                        <img src="img/LargeMotorCompany.jpg" width="100%" alt="Software Defined Transformation" />{" "}
                     </div>
                 </div> 
-            <div className="px-5">
+                <div className="px-5 pb-2">
+                <h1 className='text-center'>Large Motor Company</h1>
+                </div>
+            <div className="px-5 pt-2">
             <p className='lineHeight-24 pt-2'>
             The leadership took a decision to become Harwdare/OS/Operation/vendor agnostic and achive scalability and reliability across the organisation.
              We helped them with all the technologies, training to make that happen. Our open platform helped them to become complete software defined, automate all operations. 

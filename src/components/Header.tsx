@@ -15,6 +15,18 @@ const togglerBg = {
   textDecoration: 'none'
 };
 
+const subhide = {
+
+}
+
+
+{/* <script>
+( ' .navbar-nav a' ).on( 'click',
+function () {
+	( ' .navbar-nav' ).find( 'li.active' ).removeClass( 'active' )
+	( this ).parent( 'li' ).addClass( 'active' )
+});
+</script> */}
 // export const Header: React.StatelessComponent<{}> = () => {
 export class Header extends React.Component<any, any, any>{
   constructor(props: any) {
@@ -115,7 +127,7 @@ export class Header extends React.Component<any, any, any>{
                   </a>
                         <div className="dropdown-menu w17em bg-logoblue">
                           <li className="dropdown-submenu dropright">
-                            <NavLink   className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
+                            <NavLink className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
                             <div className="menulist">
                               <ul className="dropdown-menu bg-logoblue" >
                                 <li><NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink></li>
@@ -217,8 +229,6 @@ export class Header extends React.Component<any, any, any>{
             </nav>
           </div>
         </div>
-        {/* <Background /> */}
-        {/* <Main /> */}
       </div>
     );
   };
