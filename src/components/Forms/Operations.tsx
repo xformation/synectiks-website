@@ -15,9 +15,6 @@ import { Link } from "react-router-dom";
     render() {
   return (
     <div className="bg-lightgrey">
-      {/* <div className='bg-theme mt-3'>
-                <h1 className='text-center text-white pt-theme mt-2'>OPERATIONS</h1>
-            </div> */}
       <div className="container pb-5">
         <div className="row main-card pb-5">
           <div className="col-md-12   card-deck">
@@ -59,9 +56,6 @@ import { Link } from "react-router-dom";
                   <h2 className="text-center text-uppercase">Operation</h2>
                   <h1 className="pointer text-center">&#187;</h1>
                 </div>
-                {/* <div className="pointer text-center">
-                  <h1>&#187;</h1>
-                </div> */}
               </Link>
             </div>
             {/*  */}

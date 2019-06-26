@@ -22,14 +22,8 @@ export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6G
 // export const Footer: React.StatelessComponent<{}> = () => {
   export class Footer extends React.Component<{},{}> {
     constructor(props:any) {
-      super(props);  
-      // this.toggle = this.toggle.bind(this);
+      super(props);    
     }
-    // toggle() {
-    //   this.setState(prevState => ({
-    //     content: !prevState.content
-    //   }));
-    // }
     render() { 
   
   return (
@@ -39,7 +33,6 @@ export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6G
         <p className="mb-1 pt-2">
         SYNECTIKS uses proprietary and third-party cookies. By using our sites, you agree to our cookie policy.&nbsp;
         <NavLink className="navlink navfont noLine" to="/privacypolicy" ><small>View&nbsp;Policy&nbsp;</small></NavLink>
-        {/* <Link to="#" className="btn text-white bg-logoblue text-uppercase btnLearn" type="submit" id="hide">Agree</Link> */}
         <button className='btn bg-logoblue text-white btnLearn' type="submit" id="hide">Agree</button>
         </p>
       </div>
@@ -61,14 +54,12 @@ export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6G
         </small>
       </div>
       <div className="col-md-5 pb2">
-        {/* <h5 className="text-white">Map</h5> */}
         <div className="w-100">       
         <iframe style={mapWidth}
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.0341342304914!2d-74.63367698460706!3d40.31939997937661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e0d086f7514f%3A0x8f04ec41f160a353!2s300+Alexander+Park+Dr+%23215%2C+Princeton%2C+NJ+08540%2C+USA!5e0!3m2!1sen!2sin!4v1526621065289"
         frameBorder='0'        
         ></iframe>
         <div id="map"></div>
-          {/* <img src="img/map.png" width="100%" alt="Map" /> */}
           {/* <MapContainer /> */}
         </div>
       </div>

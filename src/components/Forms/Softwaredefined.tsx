@@ -16,10 +16,7 @@ import { LARGE } from "material-ui/utils/withWidth";
         render() {      
     return (
         <div className="bg-lightgrey">        
-            
-            {/* <div className='bg-theme mt-3'>
-            <h1 className='text-center text-white pt-theme mt-2'>Large Motor Company</h1>
-            </div> */}
+   
                         <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
                     <div className="w-40 py-5">
                         <img src="img/LargeMotorComapny.jpg" width="100%" alt="Cloud Backup" />{" "}

@@ -86,11 +86,6 @@ import { NavLink } from "react-router-dom";
                     <h4>We offer a range of services to help companies get the most value from their existing applications:</h4>
                     <br />{" "}
                 </p>
-
-                {/* <p className="lineHeight-24">
-                    <NavLink className="navlink navfont noLine" to="/contactus"><small>Contact&nbsp;Us&nbsp;</small></NavLink>to learn more about SYNECTIKS Cloud Services for AWS.
-                <br />{" "}
-                </p> */}
             </div>
 
             <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12"
@@ -136,21 +131,6 @@ import { NavLink } from "react-router-dom";
                         </p>
                     </div>
                 </div>
-
-                {/* <div className="pb-3 col-sm-3" >
-                    <div className="w-100 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/Replatform.png"
-                            alt="First slide"
-                        />
-                        <p  className="pt-4"><b>Re-Platform</b></p>
-                        <p className="text-center">
-                        Enhances your applications’ functionality, which makes them easier to maintain and 
-                        part of a highly-scalable framework.
-                    </p>
-                    </div>
-                </div> */}
 
                 <div className="p-3 col-sm-3" >
                     <div className="w-100">
@@ -261,128 +241,6 @@ import { NavLink } from "react-router-dom";
             <div className=" p-5" >
                 <p className="seperator-grey"></p>
             </div>
-
-            {/* <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
-            <div className="">
-                    <div className="w-40 ">
-                        <img src="img/HR.png" width="100%" alt="DevOps Transformation" />{" "}
-                    </div>
-                </div>
-                </div>
-                
-            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'>
-                <div className="w-100  text-black">
-<p className="w-100  text-black"><b className='mt-3'>
-An All-in-One HR and Payroll solution built to meet the demands of today’s world!
-</b></p>
-                    <p className="lineHeight-24">
-                    SYNECTIKS WorkForce Suite is an integrated cloud-based platform designed to make You and 
-                    Your employee’s lives easier. SYNECTIKS WorkForce, helps streamline hiring, onboarding, and employee 
-                    records management through a single online dashboard, so you can take care of what matters.
-                    <br />{" "}
-                    </p>                    
-                    <p className="lineHeight-24"><b>
-                    Next Generation HR priced right for You.
-                    <br />{" "}
-                    </b></p>
-
-                </div>
-            </div>
-
-            <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-75 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/FindEmployee.png"
-                            alt="First slide"
-                        />
-                        <p><b>People</b></p>                       
-                    </div>
-                </div>
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-75 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/PerformanceAppraisal.png"
-                            alt="First slide"
-                        />
-                        <p><b>Appraisals</b></p>                        
-                    </div>
-                </div>
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-75 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/PayrollAdministration.png"
-                            alt="First slide"
-                        />
-                        <p><b>Payroll Management</b></p>
-                    </div>
-                </div>
-
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-75 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/JobRotation.png"
-                            alt="First slide"
-                        />
-                        <p><b>Employee Self-Service</b></p>                   
-                    </div>
-                </div>
-
-                </div>
-
-                <div className="d-flex justify-content-around align-items-center p-2 flex-col text-center col-lg-12">
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-75 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/TimeTracking.png"
-                            alt="First slide"
-                        />
-                        <p><b>Timesheets</b></p>                       
-                    </div>
-                </div>
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-75 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/LeaveApplication.png"
-                            alt="First slide"
-                        />
-                        <p><b>Leaves &amp; Shift Schedules</b></p>                        
-                    </div>
-                </div>
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-75 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/EmployeeTurnover.png"
-                            alt="First slide"
-                        />
-                        <p><b>Mobile Support</b></p>
-                    </div>
-                </div>
-
-                <div className="pb-3 col-sm-3" >
-                    <div className="w-75 p-5">
-                        <img height="auto" width="100%"
-                            className=""
-                            src="img/EmploymentPerformance.png"
-                            alt="First slide"
-                        />
-                        <p><b>Reports &amp; Analytics</b></p>                   
-                    </div>
-                </div>
-                
-                </div>
-
-                <div className=" p-5" >
-                <p className="seperator-grey"></p>
-            </div> */}
-
             <div className="px-1 " data-aos="fade-up" data-aos-duration="2000">
             <div className="">
                     <div className=" text-center">

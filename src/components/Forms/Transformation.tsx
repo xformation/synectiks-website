@@ -4,8 +4,6 @@ import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 
-
-
 // export const Transformation: React.StatelessComponent<{}> = () => {
     export class Transformation extends React.Component<{},{}> {
         constructor(props:any) {
@@ -18,17 +16,6 @@ import { Link } from "react-router-dom";
         render() {
     return (
         <div className='bg-lightgrey'>        
-            {/* <div>
-                <img
-                    className="  text-center"
-                    src="img/NiceToMeet.png" width="100%"
-                    alt="Card image Foundation"
-                />
-            </div> */}
-
-            {/* <div className='bg-theme mt-3'>
-                <h1 className='text-center text-white pt-theme mt-2'>TRANSFORMATION</h1>
-            </div> */}
 
 <div className="container pb-5">
         <div className="row main-card pb-5">

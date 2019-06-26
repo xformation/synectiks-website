@@ -501,7 +501,7 @@ background-color: #007cc2 !important;
   /* background-color: blueviolet; */
   /* background-color: #fbba00; */
   /* border-radius: 0.25rem; */
-  background-color: #c9ddf1 !important;
+  /* background-color: #c9ddf1 !important; */
   border-radius: 5px;
   /* color: #ffffff !important; */
 }
@@ -1420,7 +1420,7 @@ overflow: hidden;
   position: absolute;
   left: 5.8rem;
   top: 15px;
-  width: 15rem;
+  width: 100%;
   }
 .showhim{
   position: relative;
@@ -1437,6 +1437,9 @@ overflow: hidden;
   .w-90{
     width:90%;
   }
+  .w-13{
+    width: 13%;
+  }
   .w-32{
     width: 5%;
     border: 1px solid black;
@@ -1447,7 +1450,7 @@ overflow: hidden;
     width: 3%;
 
     width: 7%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
  .h-70{
   height: 70px;
@@ -1466,6 +1469,10 @@ position: fixed;
   z-index: 99;
   }
  }
+  .dropdown-submenu {
+    position: relative;
+  }
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {

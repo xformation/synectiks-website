@@ -14,6 +14,7 @@ const togglerBg = {
   color: '#ffffff',
   textDecoration: 'none'
 };
+
 const subhide = {
 
 }
@@ -26,7 +27,6 @@ function () {
 	( this ).parent( 'li' ).addClass( 'active' )
 });
 </script> */}
-
 // export const Header: React.StatelessComponent<{}> = () => {
 export class Header extends React.Component<any, any, any>{
   constructor(props: any) {
@@ -84,8 +84,6 @@ export class Header extends React.Component<any, any, any>{
                       <img className="navbar-icon" src="img/synectiks-logo.png" alt="logo" />
                     </a>
                   </div>
-                  {/* <div className="navbar-nav mr-auto"></div> */}
-
 
                   <div
                     className="collapse navbar-collapse pr-5 ml-15"
@@ -119,7 +117,6 @@ export class Header extends React.Component<any, any, any>{
                           </NavLink>
                         </div>
                       </li>
-
                       <li className="nav-item dropdown  ">
                         <a
                           className="nav-link px-4"
@@ -129,8 +126,6 @@ export class Header extends React.Component<any, any, any>{
                           Cloud
                   </a>
                         <div className="dropdown-menu w17em bg-logoblue">
-
-                          {/*  */}
                           <li className="dropdown-submenu dropright">
                             <NavLink className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
                             <div className="menulist">
@@ -141,8 +136,6 @@ export class Header extends React.Component<any, any, any>{
                               </ul>
                             </div>
                           </li>
-
-                          {/*  */}
                           <NavLink className="dropdown-item" to="/privatecloud">
                             {" "}
                             Private&nbsp;Cloud{" "}
@@ -155,7 +148,6 @@ export class Header extends React.Component<any, any, any>{
                             {" "}
                             Public&nbsp;Cloud{" "}
                           </NavLink>
-
                           <NavLink className="dropdown-item" to="/colocation">
                             {" "}
                             Colocation{" "}
@@ -177,7 +169,6 @@ export class Header extends React.Component<any, any, any>{
                             {" "}
                             Application Services{" "}
                           </NavLink>
-
                           <NavLink className="dropdown-item" to="/managedservices">
                             {" "}
                             Managed Services{" "}
@@ -194,7 +185,7 @@ export class Header extends React.Component<any, any, any>{
                           id="navbardrop4"
                           data-toggle="dropdown">
                           Resources
-                  </a>
+                        </a>
                         <div className="dropdown-menu bg-logoblue">
                           <NavLink className="dropdown-item" to="/featured">
                             {" "}
@@ -204,7 +195,6 @@ export class Header extends React.Component<any, any, any>{
                             {" "}
                             Success Stories{" "}
                           </NavLink>
-
                         </div>
                       </li>
 

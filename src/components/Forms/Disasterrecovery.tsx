@@ -15,10 +15,6 @@ import { LARGE } from "material-ui/utils/withWidth";
         render() { 
     return (
         <div  className="bg-lightgrey">        
-            
-            {/* <div className='bg-theme mt-3'>
-            <h1 className='text-center text-white pt-theme mt-2'>DISASTER RECOVERY</h1>
-            </div> */}
 
 <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
                     <div className=" py-5">
@@ -95,12 +91,7 @@ microservices, devops</p>
            They were able to restore the data instantly and the recovery time was less than 10 min which is almost zero.
            The lightweight script was easily adaptable and manageable.
             </p>
-
-
             </div>
-
-       
-       
         </div>
 
     );

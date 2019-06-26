@@ -73,12 +73,6 @@ import { NavLink } from "react-router-dom";
                     </div>
                 </div>
 
-             
-                {/* <div className="w-40 p-5 text-center">
-          <img src="img/Microservice_4.png" width="50%" alt="DevOps Transformation" />{" "}
-          <img src="img/Microservice_5.png" width="50%" alt="DevOps Transformation" />{" "}
-          <img src="img/Microservice_6.png" width="50%" alt="DevOps Transformation" />{" "}
-        </div> */}
                 <p className="lineHeight-24">
                     Thankfully, current cloud-based distributed technologies alleviate the burden of managing monolithic applications
                     by providing a platform to develop and deploy on a dime.
@@ -143,36 +137,31 @@ import { NavLink } from "react-router-dom";
                     Most of the microservices adoption will be successful if this cultural transformation is done right,
                     we opine that it contributes 90% towards your success. A typical culturally changed organization will look like as below:</p>
             </p>
-                {/* <h4>
-          A typical culturally changed organization will look like as below:
-            </h4> */}
+          
                 <div className="w-40 p-5 text-center">
                     <img src="img/Microservice_9.png" width="75%" alt="DevOps Transformation" />{" "}
                 </div>
-
-                {/* how can we help */}
-        
             </div>
 
             <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
                 <div className="pb-3 col-sm-3" >
                     <Link to="/microserviceexample">
-                        <button className='btn text-white bg-logoblue       btnLearn  '>Example of Microservices</button>
+                        <button className='btn text-white bg-logoblue btnLearn  '>Example of Microservices</button>
                     </Link>
                 </div>
                 <div className="pb-3 col-sm-3" >
                     <Link to="/microservicebenefit">
-                        <button className='btn text-white bg-logoblue       btnLearn   '>Benefits of Microservices</button>
+                        <button className='btn text-white bg-logoblue btnLearn   '>Benefits of Microservices</button>
                     </Link>
                 </div>
                 <div className="pb-3 col-sm-3" >
                     <Link to="/microservicechallenge">
-                        <button className='btn text-white bg-logoblue       btnLearn '>Challenges of Microservices</button>
+                        <button className='btn text-white bg-logoblue btnLearn '>Challenges of Microservices</button>
                     </Link>
                 </div>
                 <div className="pb-3 col-sm-3" >
                     <Link to="/microservicehelp">
-                        <button className='btn text-white bg-logoblue       btnLearn '>How we can help you?</button>
+                        <button className='btn text-white bg-logoblue btnLearn '>How we can help you?</button>
                     </Link>
                 </div>
             </div>

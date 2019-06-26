@@ -18,16 +18,18 @@ export class Featured extends React.Component<{}, {}> {
                 <div>
                     <img
                         className="  text-center py-5 mt-5"
-                        src="img/resources.jpg" width="100%"
+                        src="img/Careers.png" width="100%"
                         alt="Resources"
                     />
+                    <div className="text-center centered ">
+                        <div className="text-white">
+                            <h3>Resources</h3>
+                        </div>
+                    </div>
                 </div>
 
 
                 <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
-                    <div className="text-center">
-                        <h3>Resources</h3>
-                    </div>
                     <div className="d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col" >
                         <div>
                             <div className="p-5">

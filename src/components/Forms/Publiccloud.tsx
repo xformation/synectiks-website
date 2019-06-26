@@ -225,12 +225,6 @@ const wid = {
                 your organization management of, and more significant visibility into, your AWS surroundings.
                 <br />{" "}
                 </p>
-                {/* <p className="lineHeight-24">
-                <NavLink className="navlink navfont noLine" to="/contactus"><small>Contact&nbsp;Us&nbsp;</small>
-                </NavLink>to learn more about SYNECTIKS Cloud Services for AWS.
-                <br />{" "}
-                </p> */}
-
                 <p>
             <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
               <small>Contact&nbsp;Us&nbsp;</small>
@@ -238,15 +232,6 @@ const wid = {
             to learn more about SYNECTIKS Cloud Services for AWS.
           </p>
             </div>
-            {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col ">
-          <p>
-            <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
-              <small>Contact&nbsp;Us&nbsp;</small>
-            </a>
-            to learn more about SYNECTIKS DevOps Transformation Service.
-          </p>
-        </div> */}
-
             <div className=" p-5" >
                 <p className="seperator-grey"></p>
             </div>
@@ -295,24 +280,6 @@ const wid = {
                 </div>
             </div>
 
-            {/* <div className="w-100 px-5 text-black text-justify" > */}
-            
-              {/* <p className="lineHeight-24">
-                <NavLink className="navlink navfont noLine" to="/contactus"  onClick={this.toggle} ><small>Contact&nbsp;Us&nbsp;</small></NavLink>to learn more about SYNECTIKS Cloud Services for Microsoft Azure.
-                </p> */}
-                {/* <div className="d-flex flex-col ">
-                 <p>
-            <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
-              <small>Contact&nbsp;Us&nbsp;</small>
-            </a>
-            to learn more about SYNECTIKS Cloud Services for Microsoft Azure.
-          </p>
-        </div> */}
-        {/* </div> */}
-
-{/* <Button color="primary" onClick={this.toggle}>
-Contact&nbsp;Us&nbsp;
-</Button> */}
                 <div className="">
 <Modal isOpen={this.state.modal} toggle={this.toggle} >
   <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
