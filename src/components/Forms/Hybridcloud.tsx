@@ -142,7 +142,7 @@ import { NavLink } from "react-router-dom";
                         <div className="w-100 card-bd py-4 text-white bg-logoblue text-center"><span>Simple</span></div>
                         <div className="card-body">
                             <p className="lineHeight-24">
-                            Standardize and automate orchestration workflows and blur the boundaries across hybrid cloud locations.
+                            Standardize and automate orchestration workflows and becloud the boundaries across hybrid cloud locations.
                             <br />{" "}
                             </p>
                         </div>
