@@ -188,7 +188,7 @@ export class Foundation extends React.Component<{}, {}> {
             <li><h4 className="fh4">&nbsp;Continuous Delivery</h4></li>
             <p className="lineHeight-24">
               It will help to deliver containerized microservices through quality gates, that will ensure highest
-              level of software quality, agility, and reliability.
+              level of software quality, agility and reliability.
 </p>
             <li><h4 className="fh4">&nbsp;Rapid Application Delivery</h4></li>
             <p className="lineHeight-24">

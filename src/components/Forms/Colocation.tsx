@@ -87,8 +87,8 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your 
-    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals.
+    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
     Whether you are yet to explore or have already started your cloud journey, we help you to accelerate 
@@ -191,7 +191,7 @@ const wid = {
                     <p className="lineHeight-24">
                     SYNECTIKS Colocation Services host and care for your IT equipment in highly efficient and secure data
                     center facilities. As your organization grows, SYNECTIKS can assist in transforming your environment
-                    to a traditional, managed cloud or a hybrid environment, and we can manage and monitor that environment for you.
+                    to a traditional, managed cloud or a hybrid environment and we can manage and monitor that environment for you.
                     <br />{" "}
                     </p>
 

@@ -47,7 +47,7 @@ microservices, devops</p>
                 <div className="p-5">
                     <h2>Overview</h2>
                     <p className='lineHeight-24'>
-                        Medfusion is a leading patient-provider communications platform, and it is used to streamline workflows that enable healthcare facilities to function more efficiently.
+                        Medfusion is a leading patient-provider communications platform and it is used to streamline workflows that enable healthcare facilities to function more efficiently.
                         The Medfusion’s development and deployment team communicate via an email to the data center admin with an attached form that specifies resource details.
                         Then the admin takes an approval from the manager by email and manually go to vSphere administration console and create the resources as per the requirements. The process includes creating the virtual machine from existing template,
                         and then doing the custom configuration as requested by the user and finally allocating and fixing the IP’s in the resources to send an email to the customer on completing the necessary tasks.
@@ -68,9 +68,9 @@ microservices, devops</p>
                             <li>Medfusion was already using Jira service desk as their ticketing tool and Jenkins for their CI/CD.</li>
                             <li>We designed a complete business process in Jira in aggregation with some automation task in Jenkin.</li>
                             <li>When the dev team sends an email or raise a service desk request, the service desk tickets gets automatically created.</li>
-                            <li>Then the admin would approve the request, and on approval, the Jenkin job engine would trigger a provisioning job.</li>
+                            <li>Then the admin would approve the request and on approval, the Jenkin job engine would trigger a provisioning job.</li>
                             <li>Once the job is successful, job engine will notify Jira about the completion along with resource details.</li>
-                            <li>Then the ticket status is changed automatically, and the customer gets the acknowledgment through email about the completion.</li>
+                            <li>Then the ticket status is changed automatically and the customer gets the acknowledgment through email about the completion.</li>
                         </ul>
                     </p>
 
@@ -81,17 +81,17 @@ microservices, devops</p>
                         The heavy downpour of requests and tackling it manually to take the requests from service desk consumed their time and resources.
                         After all the assessment and planning we did come up with a solution that caters not only the creations of virtual machines but also to bootstrap their current security configurations.
                         We implemented a complete business process in Jira in conjunction with some automation task in Jenkins. It goes this way, when the Dev team sends an email or a service request,
-                        the service desk tickets gets automatically created, and the admin would approve the request.
-                        Next, the Jenkin job engine triggers a provisioning job, and the job engine will notify Jira about the completion of the task along with the resource information.
+                        the service desk tickets gets automatically created and the admin would approve the request.
+                        Next, the Jenkin job engine triggers a provisioning job and the job engine will notify Jira about the completion of the task along with the resource information.
                         Voila! the ticket status will be changed automatically,
             and their customer would get an email about the completion of the job process.</p>
 
                     <p className='lineHeight-24'>
-                        <b>How did Synectiks Consolidate, Validate, and Outline the issues of Large Motor Systems? </b><br />
+                        <b>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems? </b><br />
                         We believe in harvesting information as much as possible that will yield a better solution.
                         That is exactly what we did with Large Motor Company. Upon analyzing their queries on a broader spectrum, we did a quick 360° audit on their existing infrastructure and harvested some vital insights on key improvement areas and a plan for any migration path and risks involved in the following process.
                         We conducted multiple PoC’S with Large Motor Company to channel a solid understanding of the technologies and modernize their IT infrastructure. By translating the entire hardware infrastructure into a few lines of software code, we crafted a backbone infrastructure effortlessly.
-                        Also, we refactored monolith applications to multiple microservices and established a complete application lifecycle management and operation support system to maintain their business operations. Ultimately, by achieving the required data security, governance, and compliance requirements in the cloud.
+                        Also, we refactored monolith applications to multiple microservices and established a complete application lifecycle management and operation support system to maintain their business operations. Ultimately, by achieving the required data security, governance and compliance requirements in the cloud.
             </p>
                     <h2>OUTCOME</h2>
                     <p className='lineHeight-24'>

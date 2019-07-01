@@ -834,7 +834,7 @@ declare module D3 {
         * function.
         *
         * @param comparator a comparison function, which will be passed two data elements a and b
-        * to compare, and should return either a negative, positive, or zero value to indicate
+        * to compare and should return either a negative, positive, or zero value to indicate
         * their relative order.
         */
         sort<T>(comparator?: (a: T, b: T) => number): Selection;
@@ -2648,7 +2648,7 @@ declare module D3 {
             */
             invert(value: number): number;
             /**
-            * Set the scale's output range, and enable rounding.
+            * Set the scale's output range and enable rounding.
             *
             * @param value The output range.
             */

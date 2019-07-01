@@ -106,9 +106,9 @@ export class Aboutus extends React.Component<{}, {}> {
                             <strong>Operations</strong> - delivers outcomes through infrastructure, security and cloud services<br />
                             Synectiks Operations is a leader in providing next-generation technology to global enterprises. We combine
                             our core business knowledge with leading technologies such as digital transformation, automation, cognitive
-                            techniques, and analytics to offer compelling business intelligence that helps in improving visibility,
+                            techniques and analytics to offer compelling business intelligence that helps in improving visibility,
                     allowing business leaders to respond quickly to changing trends.<br />
-                            We help customers to transform their operations - harness talent, data, and intelligence - deliver
+                            We help customers to transform their operations - harness talent, data and intelligence - deliver
                             information when it's needed.
             </p><br />
                     </div>

@@ -84,8 +84,8 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your 
-    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals.
+    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
     Whether you are yet to explore or have already started your cloud journey, we help you to accelerate 
@@ -176,7 +176,7 @@ const wid = {
                     <p><b><i>Power of the cloud while protecting your enterprise!</i></b></p>
                     <p className="lineHeight-24">
                         SYNECTIKS Cloud Private is a reliable and scalable cloud platform that runs your infrastructure - built
-                        on open-source frameworks like Containers, Kubernetes, etc.., with standard services for deployment, monitoring, logging, and security.
+                        on open-source frameworks like Containers, Kubernetes, etc.., with standard services for deployment, monitoring, logging and security.
                     <br />{" "}
                     </p>
                 </div>
@@ -219,7 +219,7 @@ const wid = {
                         <div className="w-100 card-bd py-4 text-white bg-logoblue text-center">Modernize Your Existing Applications</div>
                         <div className="card-body">
                             <p className="lineHeight-24">
-                                Modernize and migrate your applications, build new cloud-based applications, and transform
+                                Modernize and migrate your applications, build new cloud-based applications and transform
                         your architecture and infrastructure while moving to a new technology operating model.
                     <br />{" "}
                             </p>

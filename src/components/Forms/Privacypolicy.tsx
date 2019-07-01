@@ -30,19 +30,19 @@ import { NavLink } from "react-router-dom";
             Revision Date: November 22, 2018
             </p>
             <p>
-            This Privacy Policy describes how Synectiks Inc., and its affiliates ("Synectiks," "we," "our" or "us") collect, use, and 
-            share information in connection with your use of our websites (including www.synectiks.com), services, and 
+            This Privacy Policy describes how Synectiks Inc. and its affiliates ("Synectiks," "we," "our" or "us") collect, use and 
+            share information in connection with your use of our websites (including www.synectiks.com), services and 
             applications (collectively, the "Services"). This Privacy Policy (the "Privacy Policy") does not apply to 
             information our customers may process when using our Services.
             </p>
             <p>
             We may collect and receive information about users of our Services ("users," "you," or "your") from 
             various sources, including: (i) information you provide through your user account on the Services (your "Account") if you 
-            register for the Services; (ii) your use of the Services; and (iii) from third-party websites, services, and partners.  
+            register for the Services; (ii) your use of the Services; and (iii) from third-party websites, services and partners.  
             </p>
             <p>
             We recommend that you read this Privacy Policy in full to ensure you are fully informed. If you have 
-            any questions about this Privacy Policy or Synectiks data collection, use, and disclosure practices, please 
+            any questions about this Privacy Policy or Synectiks data collection, use and disclosure practices, please 
             contact us at <Link to="/contactus">info@synectiks.com.</Link>
             </p>
             <p>
@@ -52,8 +52,8 @@ import { NavLink } from "react-router-dom";
                 <h5><li>Site Activity Data</li></h5>
                 <p>Each time a visitor comes to this website, our web server collects and logs certain information. These 
                     access logs are kept for a reasonable period of time. These logs include, but are not restricted to, your 
-                    machine’s TCP/IP address, your username (if applicable), date, time, and files accessed. These logs 
-                    are used solely for performance, usability, site administration, security reviews, and to help 
+                    machine’s TCP/IP address, your username (if applicable), date, time and files accessed. These logs 
+                    are used solely for performance, usability, site administration, security reviews and to help 
                     improve the experience of visitors to our site. They are not sold or shared in any way to third-party organizations.
                 </p>
                 <h5><li>Cookies &amp; Similar Technologies</li></h5>
@@ -119,23 +119,23 @@ import { NavLink } from "react-router-dom";
                 <ol type="i">
                 <p><li>
                 <b>Account Registration:&nbsp;</b> When you register for an Account, we may ask for your contact information, including items 
-                such as name, company name, address, email address, and telephone number. If you choose to refer a friend 
+                such as name, company name, address, email address and telephone number. If you choose to refer a friend 
                 to our Services, we may also collect your friend’s email address so that we may send them a referral or promotional code to sign up for our Services.  
                 </li></p>
                 <p><li>
                 <b>Payment Information:&nbsp;</b> 
                 When you add your financial account information to your Account, that information is directed to our 
                 third-party payment processor. We do not store your financial account information on our 
-                systems; however, we have access to, and may retain, subscriber information through our third-party payment processor. 
+                systems; however, we have access to and may retain, subscriber information through our third-party payment processor. 
                 </li></p>
                 <p><li>
                 <b>Communications:&nbsp;</b>    
                 If you contact us directly, we may receive additional information about you such 
-                as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other 
+                as your name, email address, phone number, the contents of the message and/or attachments you may send us and any other 
                 information you may choose to provide. We may also receive a confirmation when you open an email from us.
                 </li></p>
                 <p>
-                The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear 
+                The personal information that you are asked to provide and the reasons why you are asked to provide it, will be made clear 
                 to you at the point we ask you to provide your personal information.
                 </p>
                 </ol>
@@ -145,13 +145,13 @@ import { NavLink } from "react-router-dom";
                 </p>
                 <p>
                     <ul>
-                        <li>Provide, operate, and maintain our Services;</li>
-                        <li>Improve, personalize, and expand our Services;</li>
+                        <li>Provide, operate and maintain our Services;</li>
+                        <li>Improve, personalize and expand our Services;</li>
                         <li>Understand and analyze how you use our Services;</li>
-                        <li>Develop new products, services, features, and functionality;</li>
+                        <li>Develop new products, services, features and functionality;</li>
                         <li>Communicate with you, either directly or through one of our partners, including for 
                             customer service, to provide you with updates and other information relating to 
-                            the Service, and for marketing and promotional purposes;</li>
+                            the Service and for marketing and promotional purposes;</li>
                         <li>Process your transactions;</li>
                         <li>Send you text messages and push notifications;</li>
                         <li>Find and prevent fraud; and</li>
@@ -162,7 +162,7 @@ import { NavLink } from "react-router-dom";
                 <h3><li>How We Share Information</li></h3>
                 <p>We may share the information we collect in various ways, including the following:</p>
                 <p><b>Vendors and Service Providers.</b> We may share information with third-party vendors and service providers that provide 
-                    services on our behalf, such as helping to provide our Services, for promotional and/or marketing purposes, and to provide 
+                    services on our behalf, such as helping to provide our Services, for promotional and/or marketing purposes and to provide 
                     you with information relevant to you such as product announcements, software updates, special offers, or other information. 
                 </p>
                 <p><b>Aggregate Information.</b> Where legally permissible, we may use and share information about users with our partners in aggregated 
@@ -202,7 +202,7 @@ import { NavLink } from "react-router-dom";
                 </p>
                 <h3><li>Advertising</li></h3>
                 <p>
-                Advertising allows us to provide, support, and improve some of our products. Synectiks does not use what 
+                Advertising allows us to provide, support and improve some of our products. Synectiks does not use what 
                 you say in email, chat, video calls or voice mail, or your documents, photos or other personal files to 
                 target ads to you. We use other data, detailed below, for advertising in our products and on third-party 
                 properties. For example:
@@ -237,7 +237,7 @@ import { NavLink } from "react-router-dom";
                 <h3><li>Third-party Services</li></h3>
                 <p>You may access other third-party services through the Services, for example by clicking on links to 
                     those third-party services from within the Services. We are not responsible for the privacy policies and/or practices of these 
-                    third-party services, and we encourage you to carefully review their privacy policies.
+                    third-party services and we encourage you to carefully review their privacy policies.
                 </p>
                 <h3><li>Security</li></h3>
                 <p>Synectiks is committed to protecting your information. To do so, we employ a variety of 
@@ -279,7 +279,7 @@ import { NavLink } from "react-router-dom";
                     use of cookies. Please note that, if you choose not to accept cookies, some features and the personalization of our Services may no 
                     longer work for you. You will continue to receive advertising material but it will not be tailored to your interests.</p>
                 <h3><li>Children's Privacy</li></h3>
-                <p>Synectiks does not knowingly collect information from children under the age of 13, and children under 13 are prohibited 
+                <p>Synectiks does not knowingly collect information from children under the age of 13 and children under 13 are prohibited 
                     from using our Services. If you learn that a child has provided us with personal information in violation of this 
                     Privacy Policy, you can alert us at <Link to="/contactus">info@synectiks.com</Link>.</p>
                 <h3><li>International Data Transfers</li></h3>

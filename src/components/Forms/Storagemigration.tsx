@@ -37,10 +37,10 @@ import { LARGE } from "material-ui/utils/withWidth";
                     <h3 >Cloud Implement Services</h3>
                     <p>Production servers require storage consolidation to scale the growth of digital data.
                         Business requires efficient and robust storage solutions based on application needs.
-                        ERP, Big Data Analysis, and IOT require a latest all-flash solution.<br />
+                        ERP, Big Data Analysis and IOT require a latest all-flash solution.<br />
                         Synectiks provides a wide range of storage solutions and has years of expertise in this domain.
                         We enable enterprises, around the globe to connect to cloud-based IT capabilities,
-                        help optimize costs, enhance productivity, and bring innovation to IT operations.</p>
+                        help optimize costs, enhance productivity and bring innovation to IT operations.</p>
                 </div>
                 <div className='col-md-6 text-center'>
                     <img
@@ -86,7 +86,7 @@ import { LARGE } from "material-ui/utils/withWidth";
                 <div className='col-md-4'>
                     <h3 >L1-L2-L3-L4 support</h3>
                     <p>It is our support to enterprises at various levels brought us where we are today. 
-                        We support operations at multiple stages to achieve customer SLAs, and we succeeded. 
+                        We support operations at multiple stages to achieve customer SLAs and we succeeded. 
                         Desktops or applications to be accessed anytime, anywhere and in any device.
                         </p>
                 </div>
@@ -114,7 +114,7 @@ import { LARGE } from "material-ui/utils/withWidth";
                 <div className='col-md-6'>
                     <h3>Storage Automation</h3>
                     <p>Our core strength is to automate the end to end storage operations. 
-                        We use various DevOps tools to automate most of the storage jobs, and with this, 
+                        We use various DevOps tools to automate most of the storage jobs and with this, 
                         we receive customer requests at a faster rate.
                         </p>
                 </div>

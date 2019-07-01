@@ -54,7 +54,7 @@ microservices, devops</p>
             <h2>Overview</h2>
             <p className='lineHeight-24'>
             Reliance Jio Infocom Limited is a leading mobile network operator in India. 
-            We all know that their network is enormous and immense, and too often the operations team has to handle colossal workflows at all times of the day, the workloads become very intense and affect the performance of the data. 
+            We all know that their network is enormous and immense and too often the operations team has to handle colossal workflows at all times of the day, the workloads become very intense and affect the performance of the data. 
             Reliance Jio operations get piled up with tedious tasks every minute and extensively needs real-time business processes to monitor their workloads. From new service activations to monitoring tons of data, the telecom company had a tough time in doing RCA with its existing licensed monitoring applications. 
             While at it, when dealing with a mammoth telecom company and assuring them that we can handle and provide a solution which is 100% scalable was a tough part for us. Once we succeeded in gaining their trust, we moved on to analyze and plan a panacea that was expected by the telecom company.</p>
 

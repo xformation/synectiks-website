@@ -39,7 +39,7 @@ import { NavLink } from "react-router-dom";
                     <p className="lineHeight-24">
                     Network services from SYNECTIKS support your network’s growing need for agility, security and 
                     scalability in a multi-vendor, multi-technology environment. We provide straightforward guidance 
-                    and extensive knowledge on networking across industries, and we use a lifecycle approach that spans 
+                    and extensive knowledge on networking across industries and we use a lifecycle approach that spans 
                     strategy, assessment, planning, design, implementation and management. Our services range from network 
                     connectivity consulting and integration to managed network services and software-defined networking.
                     <br />{" "}
@@ -56,7 +56,7 @@ import { NavLink } from "react-router-dom";
                     </p>                    
                     <ul className="lineHeight-34">
                         <li>&nbsp;<b>Managed Network Services:</b> Improve agility while reducing cost and complexity across all your hybrid cloud, data center, local and hybrid or software-defined wide area networks.</li>
-                        <li>&nbsp;<b>Network Connectivity Consulting and Integration:</b>Unify your network and infrastructure, and lay the foundation for your network transformation to adopt cloud and new technologies.</li>
+                        <li>&nbsp;<b>Network Connectivity Consulting and Integration:</b>Unify your network and infrastructure and lay the foundation for your network transformation to adopt cloud and new technologies.</li>
                         <li>&nbsp;<b>Software Defined Networking:</b>Modernize your network so that it can sense traffic and automatically reconfigure the network for new workloads and business conditions in a security-rich manner.</li>                        
                     </ul>
                     </p>

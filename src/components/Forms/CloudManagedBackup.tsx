@@ -86,8 +86,8 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your 
-    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals.
+    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
     Whether you are yet to explore or have already started your cloud journey, we help you to accelerate 
@@ -195,7 +195,7 @@ const wid = {
                 </p>
                 <p className="lineHeight-24">
                 SYNECTIKS Backup as a Service provides cost-effective managed service for backup 
-                and recovery of all types of data. We offer this service where you need it, and we ensure compliance 
+                and recovery of all types of data. We offer this service where you need it and we ensure compliance 
                 with national data sovereignty rules through locally deployed assets and in-country support.
                 <br />{" "}
                 </p>
@@ -208,9 +208,9 @@ const wid = {
                 <br />{" "}
                     <ul>
                         <li>&nbsp;Protects files and folders from Servers and Clients</li>
-                        <li>&nbsp;Integrates with workloads including SharePoint, Exchange, Database, Servers, and VMs</li>
+                        <li>&nbsp;Integrates with workloads including SharePoint, Exchange, Database, Servers and VMs</li>
                         <li>&nbsp;Protects guest workloads running in VMware environments</li>
-                        <li>&nbsp;Granular restore capability such as mailbox recovery, DB level recovery, and Files</li>
+                        <li>&nbsp;Granular restore capability such as mailbox recovery, DB level recovery and Files</li>
                     </ul>
                 </p>          
             </div>

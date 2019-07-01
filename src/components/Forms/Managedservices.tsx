@@ -32,7 +32,7 @@ import { NavLink } from "react-router-dom";
                     <p className="w-100  text-black"><h2 className='mt-3'>We are SYNECTIKS Managed Services.</h2></p>
                     <p className="lineHeight-24">
                     Today’s data center and cloud environments are becoming more and more complex. SYNECTIKS provides 
-                    the automation, technical expertise, business acumen, and global reach so that you have the resources 
+                    the automation, technical expertise, business acumen and global reach so that you have the resources 
                     you want, when and how you need them. With our SYNECTIKS Managed Services, we help you reduce costs 
                     and gain efficiencies, flexibility and scalability.
                     <br />{" "}

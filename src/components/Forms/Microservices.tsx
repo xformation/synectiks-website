@@ -144,7 +144,7 @@ export class Microservices extends React.Component<any, any, any> {
               development, SOA, API-first design and continuous delivery (CD).
               This architecture and organizational approach to software
               development is designed to accelerate development cycles, foster
-              innovation and ownership, and improve the ability to maintain and
+              innovation and ownership and improve the ability to maintain and
               scale applications.
               <br />{" "}
             </i>
@@ -154,7 +154,7 @@ export class Microservices extends React.Component<any, any, any> {
             applications are legacy and what are known as “monolithic”. These
             range from mainframe apps where UI, business logic and data storage
             reside on machines, to client-server applications where layered
-            technologies that support UI, business functionality, and data are
+            technologies that support UI, business functionality and data are
             stored horizontally. Microservices architecture, on the other hand,
             divides the functionality into cohesive verticals by implementing a
             specific domain.

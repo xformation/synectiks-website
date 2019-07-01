@@ -86,8 +86,8 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your 
-    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals.
+    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
     Whether you are yet to explore or have already started your cloud journey, we help you to accelerate 
@@ -164,20 +164,20 @@ const wid = {
                         <img src="img/HostedInfra.png" width="100%" alt="Hosted Infrastructure" />{" "}
                     </div>
                 
-                <div className="w-100 px-5 text-black">
+                <div className="w-100  pl-5 pr-3 text-black">
             <h2 className='my-3'>Hosted Infrastructure</h2>
             <p className="lineHeight-24">
-            SYNECTIKS Infrastructure as a Service (IaaS) provides computing, networking, and 
-            storage services with a high degree of control, security, and simplicity.
+            SYNECTIKS Infrastructure as a Service (IaaS) provides computing, networking and 
+            storage services with a high degree of control, security and simplicity.
             </p>
             <p>
             Support your mission-critical applications and workloads with instant and scalable infrastructure. With 
             SYNECTIKS IaaS, you can focus on your business needs instead of spending the time and money it takes to 
-            plan, procure, secure, and manage the right infrastructure to meet your application demands.
+            plan, procure, secure and manage the right infrastructure to meet your application demands.
             </p>
             <h4 className='my-3'>Quickly Provision Infrastructure for all Your Workloads</h4>
             <p className="lineHeight-24">
-            Whether your mission-critical applications powered by Linux, Windows Server, SAP, or Oracle, SYNECTIKS offers 
+            Whether your mission-critical applications powered by Linux, Windows Server, SAP or Oracle, SYNECTIKS offers 
             support for these and other workloads, including your favorite Open Source technologies, choose from a wide 
             variety of virtual machine sizes and storage performance classes configured for specific types of workloads.
             </p>
@@ -193,7 +193,7 @@ const wid = {
             </p>
             <h4 className='my-3'>Reduce and Optimize Infrastructure</h4>
             <p className="lineHeight-24">
-            Deliver the availability, security, and performance your workloads require at a fraction of the cost 
+            Deliver the availability, security and performance your workloads require at a fraction of the cost 
             of running them on-premises. Pay for only the infrastructure you use for virtual machines, reduce 
             expenses for predictable workloads with SYNECTIKS Reserved VM Instances.
             </p>

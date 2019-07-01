@@ -31,11 +31,11 @@ import { LinearProgress } from "material-ui";
 
             <div className="p-5 mt-3">
                 <p className="lineHeight-24">
-                    Our managed services and solutions give you everything you need to ensure success before, during, and post-deployment.
+                    Our managed services and solutions give you everything you need to ensure success before, during and post-deployment.
                     It’s everything you’d want from a Premier Partner.<br />
                     Your competition never rests, your IT organization is always overwhelmed, leaving your margins and staff under constant pressure.
                     Our Cloud Management Services for your enterprise systems offers deep expertise and economies of scale;
-                     freeing more dollars, time, and mindshare to innovate with the business and truly deliver value.
+                     freeing more dollars, time and mindshare to innovate with the business and truly deliver value.
                     Let us keep the lights on for you so you can spend your time helping your company keep ahead of the competition!
                     With over 10 years of global Managed Services (MS) experience, Synectiks offers large company
                      performance with the agility, flexibility and personal touch of a small company.
@@ -53,7 +53,7 @@ import { LinearProgress } from "material-ui";
 
             <div>
                 <p className="p-5 mt-3 lineHeight-24">
-                    Our Innovations Lab has value levers and accelerators that help optimize business processes, reduce complexity, measure and realize business benefits, and co-innovate with customers.
+                    Our Innovations Lab has value levers and accelerators that help optimize business processes, reduce complexity, measure and realize business benefits and co-innovate with customers.
                     We begin our journey with a no cost 3-day assessment that will demonstrate key benefits that you will achieve with Synectiks as your partner.
                     </p>
             </div>
@@ -158,7 +158,7 @@ import { LinearProgress } from "material-ui";
                         <div className="card-body">
                             <small className="">
                             <ul className="p12-in-start">
-                                    <li>Our propreitary transition methodology follows a 3 phased approach for seamless transition of applications, infrastructure, and the organization
+                                    <li>Our propreitary transition methodology follows a 3 phased approach for seamless transition of applications, infrastructure and the organization
                                     </li>
                                     <li>The right mix of co-sourcing is established bringing the least disruption to the business and the fastest transition
                                     </li>

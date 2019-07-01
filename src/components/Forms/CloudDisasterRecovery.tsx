@@ -85,8 +85,8 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your 
-    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals.
+    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
     Whether you are yet to explore or have already started your cloud journey, we help you to accelerate 
@@ -183,13 +183,13 @@ const wid = {
             <br />{" "}
             <ul>
                 <li>&nbsp;<b>Customization:</b> We build the solution according to your business continuity needs. With 
-                RPO, RTO, Secondary Site Location, Failover, and Failback options, we choose the best solution.
+                RPO, RTO, Secondary Site Location, Failover and Failback options, we choose the best solution.
                 </li>
                 <li>&nbsp;<b>Security:</b> Maintain the safety of your data with our state-of-the-art encryption.
                 </li>
                 <li>&nbsp;<b>Tiering:</b> Leverage our solutions for optimizing cost – whether it is active-active, active-passive
                 </li> 
-                <li>&nbsp;<b>Technology:</b> We leverage VMware, and native device replication capabilities to deliver industry-leading capabilities.
+                <li>&nbsp;<b>Technology:</b> We leverage VMware and native device replication capabilities to deliver industry-leading capabilities.
                 </li>                                  
             </ul>
             </p>

@@ -174,10 +174,10 @@ export class Careers extends React.Component<any, any, any> {
                     {/*  */}
                     <p className="lineHeight-24 pb-3">
                         <h4>Life at SYNECTIKS!</h4>
-                        <i>Be Happy, Healthy, and Inspired!</i><br />
+                        <i>Be Happy, Healthy and Inspired!</i><br />
                         To start with, We provide a competitive salary and employer-paid health benefits. We offer
                         a flexible vacation plan, paid maternal and parental leave, tuition assistance, learning development
-                        opportunities, sports events, team lunches, pot-lucks, team outings, and annual office celebrations – all for
+                        opportunities, sports events, team lunches, pot-lucks, team outings and annual office celebrations – all for
                         you to connect, refresh and thrive.
                 <br />{" "}
                     </p>

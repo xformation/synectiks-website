@@ -213,7 +213,7 @@ export class Featured extends React.Component<{}, {}> {
                             <p>
                             Synectiks xformation platform can help with the rapid development and
                             delivery of microservices oriented applications across clouds and
-                            geographies, address operational complexity, and the need
+                            geographies, address operational complexity and the need
                             for monitoring/tracing/resilience.
                             </p>{" "}
                             <a href="">

@@ -61,8 +61,8 @@ microservices, devops</p>
             <h2>Challenges</h2>
             <p className='lineHeight-24'>                        
             <b>Scalability:</b> This was the primary and pertinent challenge of Large Motor Company as their applications were not horizontally scalable due to which their applications, faced many performance issues.<br/>
-            <b>Reliability:</b> They had difficulty in confronting hardware downtime, unplanned outages have directly impacted software downtime and baffled their IT operations, applications, and data.<br/>
-            <b>Vendor Dependency:</b> They were running licensed products for HA clustering, system monitoring, and security. Most of the products were licensed.<br/>
+            <b>Reliability:</b> They had difficulty in confronting hardware downtime, unplanned outages have directly impacted software downtime and baffled their IT operations, applications and data.<br/>
+            <b>Vendor Dependency:</b> They were running licensed products for HA clustering, system monitoring and security. Most of the products were licensed.<br/>
             <b>Traditional IT infrastructure:</b> With traditional Infrastructure, it is not only difficult to manage a data center but also hard to improve costs in maintaining the physical resources. The Large Motor company was not using more than 10% of their physical resources.
             </p>
             <h2>Solutions</h2>
@@ -70,8 +70,8 @@ microservices, devops</p>
             <ul>
            <li> We remodeled their legacy IT infrastructure into an entirely software-defined architecture.</li>
            <li>Entire operations effort have been shortened and condensed to maintain the four data centers.</li>
-           <li>We provided a centralized source, valid data, and advanced data governance technology.</li>
-           <li>We designed the entire application layer with statelessness, ensuring horizontal scalability, better security, and visibility to the exposed API.</li>
+           <li>We provided a centralized source, valid data and advanced data governance technology.</li>
+           <li>We designed the entire application layer with statelessness, ensuring horizontal scalability, better security and visibility to the exposed API.</li>
            <li>We proved our expertise once again by delivering fast and accurate releases to meet the growing business demand.</li>
            <li>We rebuilt and revamped the existing applications to meet today’s agility and scalability demands in the market.</li>
            <li>We reduced high CAPEX and OPEX and made them achieve more with less IT budget.</li>
@@ -85,24 +85,24 @@ microservices, devops</p>
             They have reached a point on the edge where they can no longer withstand the outage issues that rippled their business to two folds and finally resulted in high potential cost for their business. 
             Initially, Large Motor Company’s infrastructure was not tailored as per their requirements that resulted in maintaining huge operations effort to manage their data centers. 
             They were expecting quick and accurate releases to meet their growing business needs.
-             With almost high CAPEX and OPEX, their IT budget was already skyrocketing and was going beyond their expectations. Their primary focus areas were on scalability, agility, and reliability issues. 
+             With almost high CAPEX and OPEX, their IT budget was already skyrocketing and was going beyond their expectations. Their primary focus areas were on scalability, agility and reliability issues. 
              Once fixed, they can outperform in their core areas and compete in their line of business for better business prospects. 
             </p>
 
             <p className='lineHeight-24'>
-            <b>How did Synectiks Consolidate, Validate, and Outline the issues of Large Motor Systems? </b><br/>
+            <b>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems? </b><br/>
             We believe in harvesting information as much as possible that will yield a better solution. 
             That is exactly what we did with Large Motor Company. Upon analyzing their queries on a broader spectrum, we did a quick 360° audit on their existing infrastructure and harvested some vital insights on key improvement areas and a plan for any migration path and risks involved in the following process. 
             We conducted multiple PoC’S with Large Motor Company to channel a solid understanding of the technologies and modernize their IT infrastructure. By translating the entire hardware infrastructure into a few lines of software code, we crafted a backbone infrastructure effortlessly. 
-            Also, we refactored monolith applications to multiple microservices and established a complete application lifecycle management and operation support system to maintain their business operations. Ultimately, by achieving the required data security, governance, and compliance requirements in the cloud.
+            Also, we refactored monolith applications to multiple microservices and established a complete application lifecycle management and operation support system to maintain their business operations. Ultimately, by achieving the required data security, governance and compliance requirements in the cloud.
             </p>
             <h2>OUTCOME</h2>
             <p className='lineHeight-24'>
             The entire business system is now managed by few resources reducing CAPEX by 80% and OPEX by 70%.
 Large Motor Company’s legacy infrastructure is entirely a new transformed software-defined infrastructure.
-As we promised, they achieved scalability, reliability, security, agility, and operation SLA’s.
+As we promised, they achieved scalability, reliability, security, agility and operation SLA’s.
 The entire infrastructure is maintained with the code that we created and tailored as per their business requests.
-Large Motor Company achieved elasticity to create, modify, shrink, and remove infrastructure needs dynamically in no time.
+Large Motor Company achieved elasticity to create, modify, shrink and remove infrastructure needs dynamically in no time.
 For a successful delivery pipeline, our DevOps automation helps them to manage the lifecycle of multiple microservices through the automated platform.
 To achieve continuous delivery, we release quality codes every hour.
             </p>

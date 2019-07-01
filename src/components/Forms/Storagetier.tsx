@@ -79,7 +79,7 @@ microservices, devops</p>
                     IMD leveraged our strategic solutions to fast forward their current scenario into a better vision that became a reality by embracing our services.
                     IMD wanted an answer to stage large volume of satellite data staging in multi-tiered storage as per customers configurable SLA (if the capacity > 70% move to next tier).
                     Also, the respective application server should find the data automatically in case they get staged to a net tier.
-            Not to mention that need a specific solution which is lightweight, simple, and open. <br />
+            Not to mention that need a specific solution which is lightweight, simple and open. <br />
                     After digesting the requirements, what our technical connoisseurs did was something incredible.
                     We used Alfresco Content Management solution to store all the files.
                     The management solution puts the business flow in a fast track mode and integrates very intelligently.

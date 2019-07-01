@@ -115,7 +115,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
         </p>
         <p className="lineHeight-24 text-justify">
           <i>
-            “DevOps is the combination of cultural philosophies, practices, and
+            “DevOps is the combination of cultural philosophies, practices and
             tools that increases an organization’s ability to deliver
             applications and services at high velocity: evolving and improving
             products at a faster pace than organizations using traditional
@@ -180,7 +180,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
           market, business need to re-imagine the customer experience in lower
           economics. Synectiks xformation platform can help with the rapid
           development and delivery of microservices oriented applications across
-          clouds and geographies, address operational complexity, and the need
+          clouds and geographies, address operational complexity and the need
           for monitoring/tracing/resilience. Modernize your legacy application
           and infrastructure with ease and speed with our open platform.
         </p>

@@ -67,7 +67,7 @@ import { NavLink } from "react-router-dom";
                         costs and maintaining smooth operations.</p>                
                     <ul className="lineHeight-34">
                         <li>&nbsp;With business-driven IT and application development using Agile and DevOps.</li>
-                        <li>&nbsp;Through automation, continuous delivery, application modernization, and leveraging next-generation technologies.</li>
+                        <li>&nbsp;Through automation, continuous delivery, application modernization and leveraging next-generation technologies.</li>
                         <li>&nbsp;Enhanced cost optimization through cost-efficient ways to host applications and adapt platforms.</li>
                     </ul>
                     </p>
@@ -113,7 +113,7 @@ import { NavLink } from "react-router-dom";
                             alt="First slide"
                         />
                         <p  className="pt-2"><b>Remediation</b></p>
-                        <p className="text-center">Enhances your applications’ functionality, which 
+                        <p className="text-center">Enhances your applications functionality, which 
                         makes them easier to maintain and part of a highly-scalable framework.
                     </p>
                     </div>
@@ -127,7 +127,7 @@ import { NavLink } from "react-router-dom";
                             alt="First slide"
                         />
                         <p  className="pt-2"><b>Re-Platform</b></p>
-                        <p className="text-center">Enhances your applications’ functionality, which makes them easier to maintain and part of a highly-scalable framework.
+                        <p className="text-center">Enhances your applications functionality, which makes them easier to maintain and part of a highly-scalable framework.
                         </p>
                     </div>
                 </div>
@@ -167,8 +167,8 @@ import { NavLink } from "react-router-dom";
             <div className="px-5 pt-3"  data-aos="fade-up" data-aos-duration="2000">
             <p className="lineHeight-24">
             Enterprise Resource Planning (ERP) applications are essential to run your business, but they 
-            can be time consuming and expensive to create, customize, and maintain. We offer ERP Solutions for 
-            businesses of all sizes - small, midsize, and large. We also provide industry and company-specific 
+            can be time consuming and expensive to create, customize and maintain. We offer ERP Solutions for 
+            businesses of all sizes - small, midsize and large. We also provide industry and company-specific 
             functionality to meet unique business needs. 
             </p>
             </div>
@@ -231,7 +231,7 @@ import { NavLink } from "react-router-dom";
                         />
                         <p><b>Cost-Effective</b></p>
                         <p className="text-center">
-                        Our plans are affordable. We have no hidden fees, no catches, and no fine prints.
+                        Our plans are affordable. We have no hidden fees, no catches and no fine prints.
                     </p>
                     </div>
                 </div>
@@ -257,7 +257,7 @@ import { NavLink } from "react-router-dom";
                     </p> 
                     <p className="lineHeight-24">
                     With a certified team of Microsoft Partner Professionals, SYNECTIKS delivers on all Microsoft Cloud Solutions, including 
-                    Office 365, SharePoint, Skype for Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility + Security), and Azure.
+                    Office 365, SharePoint, Skype for Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility + Security) and Azure.
                     <br />
                     </p>                    
                     <p className="lineHeight-24">
@@ -303,7 +303,7 @@ import { NavLink } from "react-router-dom";
                     <div className="w-100 ">                       
                         <p><b>Get More Done</b></p>       
                         <p >
-                        Enjoy access to the latest versions, security updates, and feature releases.
+                        Enjoy access to the latest versions, security updates and feature releases.
                     </p>                
                     </div>
                 </div>

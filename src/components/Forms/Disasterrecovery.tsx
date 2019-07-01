@@ -59,7 +59,7 @@ microservices, devops</p>
             <h2>Challenges</h2>
             <p className='lineHeight-24'>                        
             The Indian defense had only 4 Mbps site to site leased line for data transfer.<br/>
-            They were using email, intranet, and few BPM applications on SAN-based storage.<br/>
+            They were using email, intranet and few BPM applications on SAN-based storage.<br/>
             They were not comfortable to use array-based replication neither the FCIP based switch communication.<br/>
             They were expecting a lightweight, script-based DR solution, that is managed with ease and extended as per requirements and with the SLA that is less than 10min.
             </p>

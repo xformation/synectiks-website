@@ -86,8 +86,8 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services, and solutions that allow you to address your 
-    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise,that aligns with your transformation goals.
+    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
     Whether you are yet to explore or have already started your cloud journey, we help you to accelerate 
@@ -191,14 +191,14 @@ const wid = {
                     <p className="lineHeight-24">
                     As a lot of enterprises move to AWS, organizations are challenged to provide corporate 
                     oversight, security and price controls across the cloud estate. Poor oversight usually 
-                    results in overprovisioning of cloud services, wasteful and unplanned disbursement, and 
+                    results in overprovisioning of cloud services, wasteful and unplanned disbursement and 
                     instances with open, unsecured ports.
                     <br />{" "}
                     </p>
                     <p className="lineHeight-24">
                     SYNECTIKS Cloud Services for AWS provides design, delivery and daily operational support 
                     of compute, storage and virtual network infrastructure among the AWS cloud. We tend to monitor 
-                    and manage system code and infrastructure configurations, and our financial and governance services 
+                    and manage system code and infrastructure configurations and our financial and governance services 
                     facilitate scale back uncontrolled consumption. You'll be able to rescale and down to frequently 
                     meet your dynamical business requirements, guaranteeing that your IT charges and services can frequently 
                     align to business demand.
@@ -222,7 +222,7 @@ const wid = {
                 </p>
                 <p className="lineHeight-24">
                 We mix the advanced watching tools within the industry with our Center of Excellence, giving 
-                your organization management of, and more significant visibility into, your AWS surroundings.
+                your organization management of and more significant visibility into, your AWS surroundings.
                 <br />{" "}
                 </p>
                 <p>
@@ -245,13 +245,13 @@ const wid = {
                 <div className="w-100  text-black">
                     <p className="lineHeight-24">
                     We provide solution stack for Azure to support your digital transformation. We tend to set 
-                    up your path to the cloud. We tend to rework and migrate your applications, and facilitate 
+                    up your path to the cloud. We tend to rework and migrate your applications and facilitate 
                     your manage and optimize your hybrid IT atmosphere.
                     <br />{" "}
                     </p>
                     <p className="lineHeight-24">
-                    Solutions embrace Managed Services for Azure for design, delivery, and 24x7 support and 
-                    daily operational support of compute, network, and storage, and Services for Azure Stack 
+                    Solutions embrace Managed Services for Azure for design, delivery and 24x7 support and 
+                    daily operational support of compute, network and storage and Services for Azure Stack 
                     to bring the agility of Azure to your knowledge center. Build, modernize, rework and migrate 
                     your applications with Application Services for Azure.
                     <br />{" "}
@@ -259,7 +259,7 @@ const wid = {
                     <p className="lineHeight-24">
                     SYNECTIKS end-to-end services for hybrid IT begins with planning and migration - knowing 
                     what to move and how to move it. Next, we transform your applications, optimize for the 
-                    cloud, and provide ongoing services to help manage the new environment - to make sure you’re 
+                    cloud and provide ongoing services to help manage the new environment - to make sure you’re 
                     secure and paying only for what you need. We plan, move and manage your workloads efficiently 
                     with our end-to-end services.
                     <br />{" "}
