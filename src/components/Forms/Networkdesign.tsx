@@ -1,9 +1,4 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
-
-// export const Networkdesign: React.StatelessComponent<{}> = () => {
 export class Networkdesign extends React.Component<{}, {}> {
     constructor(props: any) {
         super(props);
@@ -87,7 +82,7 @@ microservices, devops</p>
             and their customer would get an email about the completion of the job process.</p>
 
                     <p className='lineHeight-24'>
-                        <b>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems? </b><br />
+                        <b>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems ? </b><br />
                         We believe in harvesting information as much as possible that will yield a better solution.
                         That is exactly what we did with Large Motor Company. Upon analyzing their queries on a broader spectrum, we did a quick 360° audit on their existing infrastructure and harvested some vital insights on key improvement areas and a plan for any migration path and risks involved in the following process.
                         We conducted multiple PoC’S with Large Motor Company to channel a solid understanding of the technologies and modernize their IT infrastructure. By translating the entire hardware infrastructure into a few lines of software code, we crafted a backbone infrastructure effortlessly.

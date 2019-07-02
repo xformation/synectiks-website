@@ -1,17 +1,13 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 
-// export const Storagetier: React.StatelessComponent<{}> = () => {
     export class Storagetier extends React.Component<{},{}> {
         constructor(props:any) {
-          super(props);  
+          super(props);
         }
         componentDidMount() {
             window.scrollTo(0, 0)
           }
-    
+
         render() {
     return (
         <div  className="bg-lightgrey">
@@ -22,8 +18,7 @@ import { LARGE } from "material-ui/utils/withWidth";
             <div className="px-5 pt-5">
                 <p className='lineHeight-24'>
                     Background - Indian Meteorology Department is an agency of the Ministry of Earth Sciences of the Government of India.
-                    The agency harvests the meteorological observations, weather forecasting,
-                    and seismology reports and also responsible for communicating and forecasting weather services.
+                    The agency harvests the meteorological observations, weather forecasting and seismology reports and also responsible for communicating and forecasting weather services.
             </p><br />
             </div>
             <div className='bg-logoblue text-center text-white d-flex justify-content-around flex-col p-5 col-lg-12'>
@@ -49,8 +44,7 @@ microservices, devops</p>
                 <h2>Overview</h2>
                 <p className='lineHeight-24'>
                     Background- Indian Meteorology Department is an agency of the Ministry of Earth Sciences of the Government of India.
-                    The agency harvests the meteorological observations, weather forecasting,
-            and seismology reports and also responsible for communicating and forecasting weather services.</p>
+                    The agency harvests the meteorological observations, weather forecasting and seismology reports and also responsible for communicating and forecasting weather services.</p>
 
                 <h2>Challenges</h2>
                 <p className='lineHeight-24'>
@@ -89,8 +83,8 @@ Then we integrated the original data processing application with Alfresco API, t
                 <h2>OUTCOME</h2>
                 <p className='lineHeight-24'>
                     The resulted solution helped IMD to save cost on primary storage by 50%.
-        They also reduced 90% operations job of moving data in different storage tiers. .
-        We helped them stage huge data without changing any of their existing application..
+        They also reduced 90% operations job of moving data in different storage tiers.
+        We helped them stage huge data without changing any of their existing application.
         The entire infrastructure is maintained with the code that we created and tailored as per their business requests.
         The final product is a lightweight solution that is easy and open.
             </p>

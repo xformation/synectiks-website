@@ -1,7 +1,4 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 
 const colorRed = {
@@ -50,51 +47,51 @@ export class Foundation extends React.Component<{}, {}> {
 
       <div className="bg-lightgrey ">
         <div className="container pb-5">
-        <div className="row main-card pb-5">
-          <div className="col-md-12   card-deck">
-{/* */}
-            <div className="card btn card-shadow mx-3 pt-3">
-            <Link to="/foundation" className="noLine">
-              <img
-                className="card-img-top"
-                src="img/Foundation.png"
-                alt="Foundation"
-              />
-              <div className="card-body">
-                <h2 className="text-center text-uppercase">Foundation</h2>
-                <h1 className="pointer text-center">&#187;</h1>
+          <div className="row main-card pb-5">
+            <div className="col-md-12   card-deck">
+              {/* */}
+              <div className="card btn card-shadow mx-3 pt-3">
+                <Link to="/foundation" className="noLine">
+                  <img
+                    className="card-img-top"
+                    src="img/Foundation.png"
+                    alt="Foundation"
+                  />
+                  <div className="card-body">
+                    <h2 className="text-center text-uppercase">Foundation</h2>
+                    <h1 className="pointer text-center">&#187;</h1>
+                  </div>
+                </Link>
               </div>
-              </Link>
-            </div>
 
-            <div className="card btn card-shadow mx-3 pt-3">
-            <Link to="/transformation" className="noLine">
-              <img
-                className="card-img-top"
-                src="img/Transformation.png"
-                alt="Transformation"
-              />
-              <div className="card-body">
-                <h2 className="text-center text-uppercase">Transformation</h2>
+              <div className="card btn card-shadow mx-3 pt-3">
+                <Link to="/transformation" className="noLine">
+                  <img
+                    className="card-img-top"
+                    src="img/Transformation.png"
+                    alt="Transformation"
+                  />
+                  <div className="card-body">
+                    <h2 className="text-center text-uppercase">Transformation</h2>
+                  </div>
+                </Link>
               </div>
-              </Link>
-            </div>
 
-            <div className="card btn card-shadow mx-3 pt-3">
-            <Link to="/operations" className="noLine">
-              <img
-                className="card-img-top"
-                src="img/Operation.png"
-                alt="Operation"
-              />
-              <div className="card-body">
-                <h2 className="text-center text-uppercase">Operation</h2>
+              <div className="card btn card-shadow mx-3 pt-3">
+                <Link to="/operations" className="noLine">
+                  <img
+                    className="card-img-top"
+                    src="img/Operation.png"
+                    alt="Operation"
+                  />
+                  <div className="card-body">
+                    <h2 className="text-center text-uppercase">Operation</h2>
+                  </div>
+                </Link>
               </div>
-              </Link>
-            </div> 
-            {/*  */}
+              {/*  */}
+            </div>
           </div>
-        </div>
         </div>
         <div className="p-5 mt-5 text-justify">
           <h3 className="fh3 text-center">Synectiks&nbsp;Open&nbsp;Xformation&nbsp;Platform</h3>

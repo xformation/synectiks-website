@@ -1,6 +1,4 @@
 import * as React from "react";
-// // import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 
 const btn = {
     borderRadius: '6px',
@@ -47,47 +45,47 @@ export const Forms: React.StatelessComponent<{}> = () => {
 
             <div className="d-flex justify-content-around ">
 
-            <div >
-            <p>Name *</p>
-                <input style={inputBox} />
-            </div>
-            <div >
-                <p>E-Mail *</p>
-                <input style={inputBox} />
-            </div>
-           </div>
-
-            <div className="d-flex justify-content-around ">
-            <div >
-                <p>Phone *</p>
-                <input style={inputBox} />
-            </div>
-            <div >
-                <p>Subject *</p>
-                <input style={inputBox} />
-            </div>
+                <div >
+                    <p>Name *</p>
+                    <input style={inputBox} />
+                </div>
+                <div >
+                    <p>E-Mail *</p>
+                    <input style={inputBox} />
+                </div>
             </div>
 
             <div className="d-flex justify-content-around ">
-            <div >
+                <div >
+                    <p>Phone *</p>
+                    <input style={inputBox} />
+                </div>
+                <div >
+                    <p>Subject *</p>
+                    <input style={inputBox} />
+                </div>
+            </div>
+
+            <div className="d-flex justify-content-around ">
+                <div >
                     <p>Services *</p>
                     <select style={inputBox} >
-                    <option value="enterprise">Enterprise Transformation</option>
-                    <option value="foundation">Foundation</option>
-                    <option value="migration">Migration & Deployment</option>
-                    <option value="operations">Operations</option>
-                    <option value="optimization">Optimization</option>
-                    <option value="others">Others</option>
+                        <option value="enterprise">Enterprise Transformation</option>
+                        <option value="foundation">Foundation</option>
+                        <option value="migration">Migration & Deployment</option>
+                        <option value="operations">Operations</option>
+                        <option value="optimization">Optimization</option>
+                        <option value="others">Others</option>
                     </select>
                 </div>
                 <div >
-            <p>Comment *</p>
-                <input style={inputBox} />
-            </div>
+                    <p>Comment *</p>
+                    <input style={inputBox} />
+                </div>
             </div>
 
             <div className='text-center p-5'>
-            <button style={btn} className='btn menu-bg'>Send</button>
+                <button style={btn} className='btn menu-bg'>Send</button>
             </div>
 
             <div>

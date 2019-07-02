@@ -1,7 +1,6 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Background from "./Background/Background";
 import { Main } from "./Main/Main";
 import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
 
@@ -41,7 +40,7 @@ export class Header extends React.Component<any, any, any>{
     this.toggle = this.toggle.bind(this);
   }
   toggle() {
-    this.setState(prevState => ({
+    this.setState((prevState: any) => ({
       modal: !prevState.modal
     }));
   }

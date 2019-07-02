@@ -1,6 +1,4 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 
 const btn = {
     width: '110px',

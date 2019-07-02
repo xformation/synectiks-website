@@ -1,17 +1,13 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-
-// export const EnterpriseManagedservice: React.StatelessComponent<{}> = () => {
     export class EnterpriseManagedservice extends React.Component<{},{}> {
         constructor(props:any) {
-          super(props);  
+          super(props);
         }
         componentDidMount() {
             window.scrollTo(0, 0)
           }
-    
-        render() { 
+
+        render() {
     return (
         <div>
             <div>
@@ -23,7 +19,7 @@ import { LinearProgress } from "material-ui";
                 <div className="text-center centered p-3 mt-5">
                     <div className="text-white">
                         <h3>Managed&nbsp;Services</h3>
-                       
+
                         <h5>Cutting&nbsp;Edge&nbsp;Capabilities.&nbsp;Significant&nbsp;Cost&nbsp;Benefits.</h5>
                     </div>
                 </div>
@@ -141,7 +137,7 @@ import { LinearProgress } from "material-ui";
                     <div className="card card-hd mx-3">
                         <div className="w-100 card-bd py-4 text-white bg-teal text-center">Scalable COE</div>
                         <div className="card-body">
-                            <small className="">       
+                            <small className="">
                             <ul className="p12-in-start">
                                     <li>Establish an engagement model based on ITIL process and global delivery excellence practices
                                     </li>

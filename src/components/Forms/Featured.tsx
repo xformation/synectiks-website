@@ -1,9 +1,6 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 import { Link } from "react-router-dom";
 
-// export const Featured: React.StatelessComponent<{}> = () => {
 export class Featured extends React.Component<{}, {}> {
     constructor(props: any) {
         super(props);

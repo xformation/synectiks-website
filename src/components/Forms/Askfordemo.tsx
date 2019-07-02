@@ -1,18 +1,14 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 
-
-// export const Askfordemo: React.StatelessComponent<{}> = () => {
     export class Askfordemo extends React.Component<{},{}> {
         constructor(props:any) {
-          super(props);  
+          super(props);
         }
         componentDidMount() {
             window.scrollTo(0, 0)
           }
-    
-        render() { 
+
+        render() {
     return (
         <div className="bg-lightgrey">
             <div>
@@ -27,7 +23,7 @@ import { LinearProgress } from "material-ui";
                  </div>
                 </div>
             </div>
-    
+
        {/* Contact Starts */}
        <div className=''>
        <h2 className='text-center text-black'>Ask for Demo</h2>

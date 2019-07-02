@@ -1,5 +1,4 @@
 import * as React from "react";
-import { LinearProgress } from "material-ui";
 
 const blue = {
     color: "#007CC2"
@@ -54,116 +53,116 @@ export class Aboutus extends React.Component<{}, {}> {
                                 src="img/Consulting.jpg"
                                 alt="Consulting"
                             />
-                            </div>
-                                <div className="col-md-7">
-                                    <p style={lineHeight} className="pt-4">
-                                        <strong>Consulting</strong> - transforms businesses through industry expertise and insights<br />
-                                        To modernize your business, you need a partner - who brings you new and innovative ideas - a partner with in-depth knowledge,
-                                        meaningful insights and the broadest range of capabilities. A partner who works with you to
-                                        help reach the next level of performance. Building the future means taking tough decisions,
-                                        making bold moves that will lay a path to modernize your business; we’re proud to help shape
-                                        the way the companies’ manage and transform their business. And we are dependent on harnessing
-                                        innovation to tackle even the complicated problems.
+                        </div>
+                        <div className="col-md-7">
+                            <p style={lineHeight} className="pt-4">
+                                <strong>Consulting</strong> - transforms businesses through industry expertise and insights<br />
+                                To modernize your business, you need a partner - who brings you new and innovative ideas - a partner with in-depth knowledge,
+                                meaningful insights and the broadest range of capabilities. A partner who works with you to
+                                help reach the next level of performance. Building the future means taking tough decisions,
+                                making bold moves that will lay a path to modernize your business; we’re proud to help shape
+                                the way the companies manage and transform their business. And we are dependent on harnessing
+                                innovation to tackle even the complicated problems.
             </p>
-                                </div>
                         </div>
                     </div>
-                    <div className="d-flex text-justify justify-content-around p-3 px-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
+                </div>
+                <div className="d-flex text-justify justify-content-around p-3 px-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
 
-                        <br />
+                    <br />
+                </div>
+
+                <div className="d-flex flex-row-rev text-justify justify-content-around p-3 px-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
+                    <div>
+                        <img
+                            className="  text-center px-3"
+                            src="img/Technology.png"
+                            alt="Technology"
+                        />
                     </div>
-
-                    <div className="d-flex flex-row-rev text-justify justify-content-around p-3 px-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
-                        <div>
-                            <img
-                                className="  text-center px-3"
-                                src="img/Technology.png"
-                                alt="Technology"
-                            />
-                        </div>
-                        <p style={lineHeight}>
-                            <strong>Technology</strong> - powers businesses with cutting-edge solutions using established and emerging technologies<br />
-                            The businesses that compete successfully are those that have undertaken a transformation
-                            of the IT function to become genuinely agile and proactive. We help C-Level Executives and
-                            IT leaders achieve greater business agility by modernizing their IT infrastructure and applications
-                            at lower costs. Our technology services span automation, infrastructure, application development &amp; refactoring,
-                    and monolith to microservices transformation.<br />
-                            Our investment in proprietary tools, a comprehensive partner ecosystem, skills in emerging
-                            technologies like Software-Defined, Open-source, DevOps, Cloud Infrastructure, etc. ensures that we are a one-stop shop for all Application/Digital Transformation, Cloud and IT infrastructure needs.
+                    <p style={lineHeight}>
+                        <strong>Technology</strong> - powers businesses with cutting-edge solutions using established and emerging technologies<br />
+                        The businesses that compete successfully are those that have undertaken a transformation
+                        of the IT function to become genuinely agile and proactive. We help C-Level Executives and
+                        IT leaders achieve greater business agility by modernizing their IT infrastructure and applications
+                        at lower costs. Our technology services span automation, infrastructure, application development &amp; refactoring
+                            and monolith to microservices transformation.<br />
+                        Our investment in proprietary tools, a comprehensive partner ecosystem, skills in emerging
+                        technologies like Software-Defined, Open-source, DevOps, Cloud Infrastructure, etc. ensures that we are a one-stop shop for all Application/Digital Transformation, Cloud and IT infrastructure needs.
 
             </p><br />
-                    </div>
+                </div>
 
-                    <div className="d-flex text-justify justify-content-around p-3 px-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
-                        <div>
-                            <img
-                                className="  text-center px-3"
-                                src="img/Operations.png"
-                                alt="Operations"
-                            />
-                        </div>
-                        <p style={lineHeight} className="pt-4">
-                            <strong>Operations</strong> - delivers outcomes through infrastructure, security and cloud services<br />
-                            Synectiks Operations is a leader in providing next-generation technology to global enterprises. We combine
-                            our core business knowledge with leading technologies such as digital transformation, automation, cognitive
-                            techniques and analytics to offer compelling business intelligence that helps in improving visibility,
+                <div className="d-flex text-justify justify-content-around p-3 px-5 flex-col" data-aos="fade-up" data-aos-duration="2000">
+                    <div>
+                        <img
+                            className="  text-center px-3"
+                            src="img/Operations.png"
+                            alt="Operations"
+                        />
+                    </div>
+                    <p style={lineHeight} className="pt-4">
+                        <strong>Operations</strong> - delivers outcomes through infrastructure, security and cloud services<br />
+                        Synectiks Operations is a leader in providing next-generation technology to global enterprises. We combine
+                        our core business knowledge with leading technologies such as digital transformation, automation, cognitive
+                        techniques and analytics to offer compelling business intelligence that helps in improving visibility,
                     allowing business leaders to respond quickly to changing trends.<br />
-                            We help customers to transform their operations - harness talent, data and intelligence - deliver
-                            information when it's needed.
+                        We help customers to transform their operations - harness talent, data and intelligence - deliver
+                        information when it's needed.
             </p><br />
+                </div>
+
+                <div className="d-flex justify-content-around col-lg-12 py-5 text-center flex-col" data-aos="fade-up" data-aos-duration="2000">
+                    <div className='col-md-2'>
+                        <img
+                            className="py-3"
+                            src="img/vmware.svg" width="75%"
+                            alt="VMware"
+                        />
+                    </div>
+                    <div className='col-md-2'>
+                        <img
+                            className="w-50 py-3"
+                            src="img/dell.svg"
+                            alt="Dell"
+                        />
+                    </div>
+                    <div className='col-md-2'>
+                        <img
+                            className="py-3"
+                            src="img/equinix.svg" width="75%"
+                            alt="Equinix"
+                        />
+                    </div>
+                    <div className='col-md-2'>
+                        <img
+                            className="py-3 "
+                            src="img/microsoft.svg" width="75%"
+                            alt="Microsoft"
+                        />
+                    </div>
+                    <div className='col-md-2'>
+                        <img
+                            className="py-3"
+                            src="img/nutanix.svg" width="75%"
+                            alt="Nutanix"
+                        />
+                    </div>
+                    <div className='col-md-2'>
+                        <img
+                            className="py-3"
+                            src="img/simplivity.svg" width="75%"
+                            alt="Simplivity"
+                        />
                     </div>
 
-                    <div className="d-flex justify-content-around col-lg-12 py-5 text-center flex-col" data-aos="fade-up" data-aos-duration="2000">
-                        <div className='col-md-2'>
-                            <img
-                                className="py-3"
-                                src="img/vmware.svg" width="75%"
-                                alt="VMware"
-                            />
-                        </div>
-                        <div className='col-md-2'>
-                            <img
-                                className="w-50 py-3"
-                                src="img/dell.svg"
-                                alt="Dell"
-                            />
-                        </div>
-                        <div className='col-md-2'>
-                            <img
-                                className="py-3"
-                                src="img/equinix.svg" width="75%"
-                                alt="Equinix"
-                            />
-                        </div>
-                        <div className='col-md-2'>
-                            <img
-                                className="py-3 "
-                                src="img/microsoft.svg" width="75%"
-                                alt="Microsoft"
-                            />
-                        </div>
-                        <div className='col-md-2'>
-                            <img
-                                className="py-3"
-                                src="img/nutanix.svg" width="75%"
-                                alt="Nutanix"
-                            />
-                        </div>
-                        <div className='col-md-2'>
-                            <img
-                                className="py-3"
-                                src="img/simplivity.svg" width="75%"
-                                alt="Simplivity"
-                            />
-                        </div>
-
-
-                    </div>
 
                 </div>
 
-                );
-            }
-        }
+            </div>
 
-        export default Aboutus;
+        );
+    }
+}
+
+export default Aboutus;

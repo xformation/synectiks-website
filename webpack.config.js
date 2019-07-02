@@ -1,51 +1,48 @@
-var path = require('path');
-var webpack = require('webpack');
+const webpack = require('webpack');
+const path = require('path');
+
 module.exports = {
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
-        path: __dirname + "/dist",
-        publicPath: '/'
+        path: path.resolve(__dirname + "/dist"),
+        publicPath: "/dist/",
     },
 
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
+    // Dev server options
+    devServer: {
+        port: 3030,
+        historyApiFallback: true,
+        inline: true,
+    },
+
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: [".ts", ".tsx", ".js", ".json",".svg"]
+        extensions: [".ts", ".tsx", ".js", ".json"]
     },
-    devServer: {
-        historyApiFallback: true,
-      },    
+
     module: {
         rules: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+            {
+                test: /\.tsx?$/,
+                loader: "awesome-typescript-loader"
+            },
 
             // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
             {
-                test : /\.(css|scss)$/,
-                use : [
-                    'style-loader',
-                    'css-loader?importLoader=1&modules&localIdentName=[local]___[hash:base64:5]',
-                    'resolve-url-loader',
-                    {
-                        loader : 'sass-loader?sourceMap',
-                        options : {
-                            includePaths : [path.resolve(__dirname, 'src')],
-                        }
-                    }
-                ],
-                include : [path.resolve(__dirname, 'src')],
-            },
-            {
-                test: /\.svg$/,
-                loader: 'url-loader'
+                enforce: "pre",
+                test: /\.js$/,
+                loader: "source-map-loader"
             }
         ]
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
 
     // When importing a module whose path matches one of the following, just
     // assume a corresponding global variable exists and use that instead.
@@ -54,5 +51,5 @@ module.exports = {
     externals: {
         "react": "React",
         "react-dom": "ReactDOM"
-    }
+    },
 };

@@ -1,6 +1,4 @@
 import * as React from "react";
-// // import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 
 
 export const Audit: React.StatelessComponent<{}> = () => {
@@ -34,7 +32,7 @@ export const Audit: React.StatelessComponent<{}> = () => {
 
 
             <div className="d-flex col-lg-12 justify-content-around align-items-center flex-col m-3">
-                
+
                 <div className="col-md-6 bg-skyblue  h-300 p-5">
                     <h3 className="text-center text-uppercase text-white">
                         Optimize your Cloud Utilization and Billing
@@ -53,28 +51,28 @@ export const Audit: React.StatelessComponent<{}> = () => {
                         alt="Card image cap"
                     />
                 </div>
-                </div>
+            </div>
 
-                <div className="d-flex col-lg-12 justify-content-around align-items-center flex-col m-3">
+            <div className="d-flex col-lg-12 justify-content-around align-items-center flex-col m-3">
                 <div className="col-md-6 w-75">
-                <img
+                    <img
                         className="card-img-top w-75"
                         src="img/Tick-icon.png"
                         alt="Card image cap"
                     />
                 </div>
                 <div className="col-md-6 bg-skyblue h-300 p-5">
-                <h3 className="text-center text-uppercase text-white">
-                            Continuous Security and Governance
+                    <h3 className="text-center text-uppercase text-white">
+                        Continuous Security and Governance
                         </h3>
-                        <h6 className="text-white">
-                            Ensure security and compliance across multiple account / product / environment.
-                             Compliance Check for CIS, HIPPA, PCI-DSS.
-                             Ensure account wise security role and policies.
+                    <h6 className="text-white">
+                        Ensure security and compliance across multiple account / product / environment.
+                         Compliance Check for CIS, HIPPA, PCI-DSS.
+                         Ensure account wise security role and policies.
                         </h6>
                 </div>
             </div>
-  
+
         </div>
 
     );

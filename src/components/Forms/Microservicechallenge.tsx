@@ -1,19 +1,16 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 // export const Microservicechallenge: React.StatelessComponent<{}> = () => {
     export class Microservicechallenge extends React.Component<{},{}> {
         constructor(props:any) {
-          super(props);  
+          super(props);
         }
         componentDidMount() {
             window.scrollTo(0, 0)
           }
-    
+
         render() {
     return (
         <div className='bg-lightgrey text-justify '>
@@ -137,7 +134,7 @@ import { NavLink } from "react-router-dom";
                     Most of the microservices adoption will be successful if this cultural transformation is done right,
                     we opine that it contributes 90% towards your success. A typical culturally changed organization will look like as below:</p>
             </p>
-          
+
                 <div className="w-40 p-5 text-center">
                     <img src="img/Microservice_9.png" width="75%" alt="DevOps Transformation" />{" "}
                 </div>

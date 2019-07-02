@@ -1,6 +1,4 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 import { NavLink } from "react-router-dom";
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
 
@@ -99,13 +97,13 @@ export class Careers extends React.Component<any, any, any> {
                                         <CardBody>
                                             <p>
                                                 <b>Sr. Systems Administrator<br />
-                                                    Bachelor’s w/ 5 yrs exp.<br />
+                                                    Bachelor’s with 5 yrs exp.<br />
                                                     Major: CS, Bus Admin or equiv.<br />
                                                     Other suitable qualifications acceptable – </b><br />
                                                 In lieu of a four-year US degree, employer will accept one additional year of relevant experience
                                                 and completion of three years of academic studies towards a relevant Bachelor’s degree at an accredited
                                                 US college or university or its foreign equivalent (AACRAO EDGE evaluation).; Other suitable qualifications
-                                                acceptable) – Princeton, NJ. Job entails working with &amp; requires experience
+                                                acceptable – Princeton, NJ. Job entails working with &amp; requires experience
                                                 including: KVM, RHEL, VMware, Windows Server OS, Windows Scripting, Perl, Python, UNIX Shell Scripting,
                                                 Ruby, Puppet, Chef, Ansible, MongoDB, MySQL, OpenStack, vCenter, Docker, OpenShift, AWS and PowerCLI.
                                             Relocation and travel to unanticipated locations within USA possible.<br />
