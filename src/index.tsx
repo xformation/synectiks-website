@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route,  Link } from "react-router-dom";
+
 
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -45,6 +46,7 @@ import { Askfordemo } from "./components/Forms/Askfordemo";
 
 ReactDOM.render(
     < Router >
+    {/* <Switch> */}
         <Route component={Header} />
 
         <Route exact path="/" component={Main} />
@@ -87,6 +89,7 @@ ReactDOM.render(
         <Route path="/askfordemo" component={Askfordemo} />
 
         <Route component={Footer} />
+        {/* </Switch> */}
     </Router >,
     document.getElementById("app")
 );

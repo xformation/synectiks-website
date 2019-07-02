@@ -53,8 +53,8 @@ export class Networkservices extends React.Component<{}, {}> {
                             </p>
                             <ul className="lineHeight-34">
                                 <li>&nbsp;<b>Managed Network Services:</b> Improve agility while reducing cost and complexity across all your hybrid cloud, data center, local and hybrid or software-defined wide area networks.</li>
-                                <li>&nbsp;<b>Network Connectivity Consulting and Integration:</b>Unify your network and infrastructure and lay the foundation for your network transformation to adopt cloud and new technologies.</li>
-                                <li>&nbsp;<b>Software Defined Networking:</b>Modernize your network so that it can sense traffic and automatically reconfigure the network for new workloads and business conditions in a security-rich manner.</li>
+                                <li>&nbsp;<b>Network Connectivity Consulting and Integration:</b> Unify your network and infrastructure and lay the foundation for your network transformation to adopt cloud and new technologies.</li>
+                                <li>&nbsp;<b>Software Defined Networking:</b> Modernize your network so that it can sense traffic and automatically reconfigure the network for new workloads and business conditions in a security-rich manner.</li>
                             </ul>
                         </p>
 

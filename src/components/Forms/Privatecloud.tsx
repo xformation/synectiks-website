@@ -204,7 +204,7 @@ export class Privatecloud extends React.Component<any, any, any>{
               <div className="w-100 card-bd  py-4 text-white bg-logoblue text-center">Harness Powerful Cloud Services</div>
               <div className="card-body">
                 <p className="lineHeight-24">
-                  For your open-source application runtimes, choose the prescriptive development approach of Cloud
+                  For your open-source application run times, choose the prescriptive development approach of Cloud
           Foundry or the more customizable and portable method of Kubernetes Orchestration and Docker Containers.
                 <br />{" "}
                 </p>

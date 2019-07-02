@@ -79,7 +79,7 @@ export class Applicationservices extends React.Component<{}, {}> {
                 <div className="w-100 px-5 pt-3 text-black text-justify"
                     data-aos="fade-up" data-aos-duration="2000">
                     <p className="lineHeight-24">
-                        <h4>We offer a range of services to help companies get the most value from their existing applications:</h4>
+                        <h4>We offer a range of services to help companies get the most value from their existing applications :</h4>
                         <br />{" "}
                     </p>
                 </div>
@@ -266,7 +266,7 @@ export class Applicationservices extends React.Component<{}, {}> {
                     <br />
                         </p>
                         <p className="lineHeight-24 list-tick">
-                            <p><b>We can help accelerate your move to a digital workplace through our:</b>
+                            <p><b>We can help accelerate your move to a digital workplace through our :</b>
                             </p>
                             <ul className="lineHeight-34">
                                 <li>&nbsp;Experience in unlocking the full productivity potential of Office 365</li>

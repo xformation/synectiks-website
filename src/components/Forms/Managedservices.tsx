@@ -40,7 +40,7 @@ export class Managedservices extends React.Component<{}, {}> {
                     <br />{" "}
             </p>
             <p className="lineHeight-24">
-              We complement the existing storage infrastructure with a diverse portfolio of solutions to helps
+              We complement the existing storage infrastructure with a diverse portfolio of solutions to help
               you assess, plan and design a more consolidated, flexible and resilient storage environment. It will
               help you to implement, migrate and optimize your IT infrastructure which enables your business to
               quickly respond to market changes.

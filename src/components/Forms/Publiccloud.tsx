@@ -82,7 +82,7 @@ export class Publiccloud extends React.Component<any, any, any>{
               </h1>
             </div>
             <p className="pht lineHeight-24">
-              SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your
+              SYNECTIKS provides industry-leading expertise services and solutions that allow you to address your
               specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
             <p className="pht lineHeight-24">
@@ -187,7 +187,7 @@ export class Publiccloud extends React.Component<any, any, any>{
             <p className="lineHeight-24">
               As a lot of enterprises move to AWS, organizations are challenged to provide corporate
               oversight, security and price controls across the cloud estate. Poor oversight usually
-              results in overprovisioning of cloud services, wasteful and unplanned disbursement and
+              results in over provisioning of cloud services, wasteful and unplanned disbursement and
               instances with open, unsecured ports.
                     <br />{" "}
             </p>

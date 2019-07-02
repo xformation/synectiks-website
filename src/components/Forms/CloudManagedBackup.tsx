@@ -83,7 +83,7 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your
+    SYNECTIKS provides industry-leading expertise services and solutions that allow you to address your
     specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
@@ -230,7 +230,7 @@ const wid = {
                 </li>
                 <li>&nbsp;<b>Reliable:</b> Copies of the data are stored to a single data center location and optionally at an additional, remote datacenter.
                 </li>
-                <li>&nbsp;<b>Efficient:</b> De-duplication and compression technologies, ensure that multiple copies of the same data are removed from backup cycles, thus optimizing storage capacity.
+                <li>&nbsp;<b>Efficient:</b> De-duplication and compression technologies, ensure that multiple copies of the same data is removed from backup cycles, thus optimizing storage capacity.
                 </li>
                 <li>&nbsp;<b>Peace of Mind:</b> True backup not just storing data.</li>
             </ul>
