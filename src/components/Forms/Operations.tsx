@@ -1,9 +1,6 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 import { Link } from "react-router-dom";
 
-// export const Operations: React.StatelessComponent<{render()}> = () => {
   export class Operations extends React.Component<{},{}> {
     constructor(props:any) {
       super(props);  
@@ -18,7 +15,6 @@ import { Link } from "react-router-dom";
       <div className="container pb-5">
         <div className="row main-card pb-5">
           <div className="col-md-12   card-deck">
-            {/* */}
             <div className="card btn card-shadow mx-3 pt-3">
               <Link to="/foundation" className="noLine">
                 <img
@@ -90,7 +86,6 @@ import { Link } from "react-router-dom";
             <img className="card-hd-img text-center brdr-maroon" src="img/DiscoveryAssessmentOperation.png" 
             width="75%" alt="Discovery Assessment"/>
             </div>
-            {/* <img className="card-img-top bg-maroon"  alt="Card image cap"></img> */}
             <div className="card-body">
             
               <small className="text-center  ">
@@ -112,7 +107,7 @@ import { Link } from "react-router-dom";
                 Synectiks xformation platform perform continuous audits on
                 infrastructure, application, access management and ensure
                 security compliances (CISP, HIPPA,PCI-DSS, DISA, NIST) across
-                clouds, products and environment.
+                clouds, products and environments.
               </small>
             </div>
           </div>

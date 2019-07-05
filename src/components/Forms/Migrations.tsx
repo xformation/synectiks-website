@@ -1,12 +1,5 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
-
-// export const Migrations: React.StatelessComponent<{}> = () => {
     export class Migrations extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  
@@ -26,7 +19,7 @@ import { NavLink } from "react-router-dom";
                 <p className="lineHeight-24">
                     Synectiks accelerated migration allows customer to leverage the data processing benefits of cloud
                     sooner, providing cost-savings and solving scalability issues. Our approach is to use a combination
-                    of latest industry tools, processes, experience and best practices to provide the best solutions to
+                    of the latest industry tools, processes, experience and best practices providing the best solutions to
                     our customers. The teams perform a quick requirements analysis and GAP analysis to understand the
                     current setup and provide solutions to optimize your applications, storage, databases and overall
                     infrastructure. Synectiks optimization services provides customer the ability to optimize the existing
@@ -155,7 +148,7 @@ import { NavLink } from "react-router-dom";
                 unstructured, semi structured and structured data and derive real time visibility across 
                 their business processes by doing bigdata processing projects. Synectiks simplify the 
                 operations complexity by running the multistage transactional services, batch workloads and 
-                analytics inside a single platform. Synectiks deep expertise on hardware aggregation coupled 
+                analytics inside a single platform. Synectiks deep expertise on hardware aggregations coupled 
                 with its analytics services offerings, customers can seamlessly run every mission critical 
                 workloads inside a single cluster platform and can truly focus on outcomes.
                 </p>

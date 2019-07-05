@@ -1,5 +1,4 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
 import { LinearProgress } from "material-ui";
 import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
@@ -10,7 +9,6 @@ const wid = {
     width: '91%',
   };
 
-// export const HostedInfrastructure: React.StatelessComponent<{}> = () => {
     export class HostedInfrastructure extends React.Component<any,any,any>{
         constructor(props:any) {
             super(props);  
@@ -86,7 +84,7 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    SYNECTIKS provides industry-leading expertise services and solutions that allow you to address your 
     specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
@@ -300,8 +298,6 @@ const wid = {
   </ModalFooter>
 </Modal>
 </div>  
-            {/*  */}
-
             <div className="container">
         <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
       </div>

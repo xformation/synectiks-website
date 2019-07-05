@@ -1,9 +1,5 @@
 import * as React from "react";
-// // import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 
-
-// export const Contact: React.StatelessComponent<{}> = () => {
     export class Contact extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  

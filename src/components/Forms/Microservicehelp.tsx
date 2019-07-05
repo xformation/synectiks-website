@@ -1,11 +1,6 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
-// export const Microservicehelp: React.StatelessComponent<{}> = () => {
   export class Microservicehelp extends React.Component<{},{}> {
     constructor(props:any) {
       super(props);  
@@ -24,8 +19,7 @@ import { NavLink } from "react-router-dom";
                     alt="Devopsmain Services"
                 />
             </div>
-      
-  {/* Help */}
+
   <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
         <h4>
           How can SYNECTIKS help you?
@@ -142,7 +136,6 @@ import { NavLink } from "react-router-dom";
           <img src="img/Microservice_11.png" width="75%" alt="DevOps Transformation" />{" "}
         </div>
               
-  {/* Help End */}
       <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
             <div className="pb-3 col-sm-3" >
             <Link to="/microserviceexample">
@@ -165,10 +158,6 @@ import { NavLink } from "react-router-dom";
                         </Link>
                     </div>
                     </div>
-
-      {/* Contact Starts */}
-     
-      {/* Contact Ends */}
 
       </div>
     </div>

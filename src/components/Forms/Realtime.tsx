@@ -1,7 +1,4 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 
 // export const Realtime: React.StatelessComponent<{}> = () => {
     export class Realtime extends React.Component<{},{}> {
@@ -60,7 +57,7 @@ microservices, devops</p>
 
             <h2>Challenges</h2>
             <p className='lineHeight-24'>                        
-            <b>Licenced Monitoring Software:</b>Reliance Jio was mostly using licensed products for more than 30 applications to maintain a large amount of data. 
+            <b>Licenced Monitoring Software:</b> Reliance Jio was mostly using licensed products for more than 30 applications to maintain a large amount of data. 
             Most of these applications were service based and big data related. 
             They needed a customized open source tool to manage and run tons of data via millions of network elements.<br/>
             <b>Customized Tool:</b> The telecom company required a personalized tool to monitor and provide an outright solution that helps in taking more viable decisions.<br/>
@@ -91,11 +88,7 @@ The telecom company now can rapidly develop any business monitoring capability a
 A highly cost-effective scalable monitoring platform.
             </p>
 
-
             </div>
-
-       
-       
         </div>
 
     );

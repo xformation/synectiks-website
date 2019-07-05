@@ -1,9 +1,4 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
-
-// export const Softwaredefined: React.StatelessComponent<{}> = () => {
 
     export class Softwaredefined extends React.Component<{},{}> {
         constructor(props:any) {
@@ -107,11 +102,8 @@ For a successful delivery pipeline, our DevOps automation helps them to manage t
 To achieve continuous delivery, we release quality codes every hour.
             </p>
 
-
             </div>
 
-       
-       
         </div>
 
     );

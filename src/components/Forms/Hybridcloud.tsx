@@ -1,11 +1,7 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-// export const Hybridcloud: React.StatelessComponent<{}> = () => {
     export class Hybridcloud extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  
@@ -28,7 +24,7 @@ import { NavLink } from "react-router-dom";
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    SYNECTIKS provides industry-leading expertise services and solutions that allow you to address your 
     specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
@@ -51,8 +47,7 @@ import { NavLink } from "react-router-dom";
     />
 </div>
 </div>
-
-            
+  
             <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
            <div className="py-3 col-md-2 nav-item dropdown" >
                     <Link to="/HostedInfrastructure"  className='text-black bg-white noLine'>                                           
@@ -72,10 +67,8 @@ import { NavLink } from "react-router-dom";
                                     <NavLink className="dropdown-item"  to="/CloudDisasterRecovery">
                                         {" "}
                                         Cloud Disaster Recovery{" "}
-                                    </NavLink>
-                                                                      
+                                    </NavLink>                              
                                 </div>                                                   
-                        {/* </div> */}
                     </Link>                                                                  
                 </div>
           

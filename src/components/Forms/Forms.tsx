@@ -1,6 +1,4 @@
 import * as React from "react";
-// // import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 
 const btn = {
     borderRadius: '6px',
@@ -8,7 +6,6 @@ const btn = {
     height: '36px',
     background: 'linear-gradient(to bottom, #9a56ff, #d78afc)',
 };
-
 const italic = {
     fontStyle: 'italic',
 };
@@ -17,17 +14,8 @@ const inputBox = {
     backgroundColor: '#f2f2f2',
     width: '150%',
 };
-const textArea = {
-    border: 'none',
-    backgroundColor: '#f2f2f2',
-    width: '150%',
-    height: '110px',
-};
 const borderRadius_6 = {
     borderRadius: '6px',
-};
-const inline = {
-    display: 'inline-flex',
 };
 
 export const Forms: React.StatelessComponent<{}> = () => {
@@ -74,7 +62,7 @@ export const Forms: React.StatelessComponent<{}> = () => {
                     <select style={inputBox} >
                     <option value="enterprise">Enterprise Transformation</option>
                     <option value="foundation">Foundation</option>
-                    <option value="migration">Migration & Deployment</option>
+                    <option value="migration">Migration &amp; Deployment</option>
                     <option value="operations">Operations</option>
                     <option value="optimization">Optimization</option>
                     <option value="others">Others</option>
@@ -142,8 +130,6 @@ export const Forms: React.StatelessComponent<{}> = () => {
                     alt="Card image Foundation"
                 />
             </div>
-
-
         </div>
 
     );

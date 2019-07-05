@@ -1,9 +1,5 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 
-// export const Disasterrecovery: React.StatelessComponent<{}> = () => {
     export class Disasterrecovery extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  
@@ -18,7 +14,7 @@ import { LARGE } from "material-ui/utils/withWidth";
 
 <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
                     <div className=" py-5">
-                        <img src="img/DisasterRecovery_Subpage.jpg" width="100%" alt="Cloud Backup" />{" "}
+                        <img src="img/DisasterRecovery_Subpage2.jpg" width="100%" alt="Cloud Backup" />{" "}
                     </div>
                 </div> 
             <div className="px-5 pt-2">
@@ -42,8 +38,7 @@ import { LARGE } from "material-ui/utils/withWidth";
             </div>
             <div className='col-md-4'>
             <h3 >Technologies</h3>
-            <p>AWS, Infrastructure as a code, 
-microservices, devops</p>
+            <p>AWS, Infrastructure as a code, microservices, devops</p>
             </div>
 
             </div>

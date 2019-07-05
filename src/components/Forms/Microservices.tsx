@@ -1,12 +1,7 @@
 import * as React from "react";
-// // import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-// export const Microservices: React.StatelessComponent<{}> = () => {
 const wid = {
   width: '91%',
 };
@@ -87,8 +82,31 @@ export class Microservices extends React.Component<any, any, any> {
           />
         </div>
     
+        <div className="d-flex justify-content-around align-items-center px-5 flex-col text-center col-md-12">
+            <div className="pb-3 col-sm-3" >
+            <Link to="/microserviceexample">
+                        <button className='btn text-white bg-logoblue     btnLearn'>Example of Microservices</button>
+                        </Link>
+                    </div>
+                    <div className="pb-3 col-sm-3" >
+                    <Link to="/microservicebenefit">
+                        <button className='btn text-white bg-logoblue     btnLearn'>Benefits of Microservices</button>
+                        </Link>
+                    </div>
+                    <div className="pb-3 col-sm-3" >
+                    <Link to="/microservicechallenge">
+                        <button className='btn text-white bg-logoblue     btnLearn'>Challenges of Microservices</button>
+                        </Link>
+                    </div>
+                    <div className="pb-3 col-sm-3" >
+                    <Link to="/microservicehelp">
+                        <button className='btn text-white bg-logoblue     btnLearn '>How we can help you?</button>
+                        </Link>
+                    </div>
+                    </div>
+
 <div className="col-lg-12 d-flex">
-        <div className="conatiner-fluid pl-4 col-md-1">
+        {/* <div className="conatiner-fluid pl-4 col-md-1">
           <div className="row">
             <div className="w-100 btn-groups pFxd">
               <div className="showhim w-13">
@@ -121,11 +139,11 @@ export class Microservices extends React.Component<any, any, any> {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-      <div className="col-md-11 pl-5">
+      <div className="col-md-12 px-5">
         <div
-          className="container px-5 pt-3 lineHeight-24"
+          className="container pt-3 lineHeight-24"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
@@ -191,7 +209,6 @@ export class Microservices extends React.Component<any, any, any> {
           </p>
         </div>
         </div>
-        {/*  */}
         <div className="">
           <Modal isOpen={this.state.modal} toggle={this.toggle} >
             <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>

@@ -1,11 +1,5 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
-// export const Applicationservices: React.StatelessComponent<{}> = () => {
     export class Applicationservices extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  
@@ -18,7 +12,7 @@ import { NavLink } from "react-router-dom";
     return (
         <div className='bg-lightgrey'>
 
-            <div className="w-100 py-5 mt-5" >
+            <div className="w-100 pt-5 pb-3 mt-5" >
                 <img height="auto" width="100%"
                     className=""
                     src="img/ApplicationServices.jpg"
@@ -46,7 +40,7 @@ import { NavLink } from "react-router-dom";
                 </div>
             </div>
 
-            <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
+            <div className=' text-black w-100 text-white px-5 py-2 flex-col d-flex text-justify'
             data-aos="fade-up" data-aos-duration="2000">
             
                 <div className="w-100 pr-5 text-black">
@@ -62,13 +56,13 @@ import { NavLink } from "react-router-dom";
                     and decreasing risk. The outcome transforms legacy applications to achieve high performance.
                     <br />{" "}
                     </p>
-                    <p className="lineHeight-24 list-tick">
+                    <p className="lineHeight-24 ">
                     <p>We help you tomorrow-proof your existing IT systems while cutting 
                         costs and maintaining smooth operations.</p>                
                     <ul className="lineHeight-34">
-                        <li>&nbsp;With business-driven IT and application development using Agile and DevOps.</li>
-                        <li>&nbsp;Through automation, continuous delivery, application modernization and leveraging next-generation technologies.</li>
-                        <li>&nbsp;Enhanced cost optimization through cost-efficient ways to host applications and adapt platforms.</li>
+                        <li>With business-driven IT and application development using Agile and DevOps.</li>
+                        <li>Through automation, continuous delivery, application modernization and leveraging next-generation technologies.</li>
+                        <li>Enhanced cost optimization through cost-efficient ways to host applications and adapt platforms.</li>
                     </ul>
                     </p>
                 </div>
@@ -83,7 +77,7 @@ import { NavLink } from "react-router-dom";
             <div className="w-100 px-5 pt-3 text-black text-justify"
             data-aos="fade-up" data-aos-duration="2000">
                 <p className="lineHeight-24">
-                    <h4>We offer a range of services to help companies get the most value from their existing applications:</h4>
+                    <h4>We offer a range of services to help companies get the most value from their existing applications :</h4>
                     <br />{" "}
                 </p>
             </div>
@@ -127,7 +121,7 @@ import { NavLink } from "react-router-dom";
                             alt="First slide"
                         />
                         <p  className="pt-2"><b>Re-Platform</b></p>
-                        <p className="text-center">Enhances your applications functionality, which makes them easier to maintain and part of a highly-scalable framework.
+                        <p className="text-center">Use cloud-native services to optimize enterprise applications without rewriting application code.
                         </p>
                     </div>
                 </div>
@@ -269,14 +263,14 @@ import { NavLink } from "react-router-dom";
                     secure evergreen workplace platform. We provide a holistic set of transformational and managed services to modernize your workplace.
                     <br />
                     </p>
-                    <p className="lineHeight-24 list-tick">
-                    <p><b>We can help accelerate your move to a digital workplace through our:</b>                        
+                    <p className="lineHeight-24">
+                    <p><b>We can help accelerate your move to a digital workplace through our :</b>                        
                     </p>                  
                     <ul className="lineHeight-34">
-                        <li>&nbsp;Experience in unlocking the full productivity potential of Office 365</li>
-                        <li>&nbsp;Giving you cost-effective and collaborative tools, including Microsoft Teams, Skype for Business and SharePoint Online.</li>
-                        <li>&nbsp;Insights from self-service and data discovery with Microsoft Power BI for Office 365.</li>
-                        <li>&nbsp;Ability to extend standard Office 365 service offerings with managed services</li>
+                        <li>Experience in unlocking the full productivity potential of Office 365</li>
+                        <li>Giving you cost-effective and collaborative tools, including Microsoft Teams, Skype for Business and SharePoint Online.</li>
+                        <li>Insights from self-service and data discovery with Microsoft Power BI for Office 365.</li>
+                        <li>Ability to extend standard Office 365 service offerings with managed services</li>
                     </ul>
                     </p>
                   
@@ -329,15 +323,15 @@ import { NavLink } from "react-router-dom";
                 <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
                 data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
-                <p className="lineHeight-24 list-tick">
+                <p className="lineHeight-24 ">
                     <p><b>Built by Microsoft, Made Easy by SYNECTIKS</b>                        
                     </p>                  
                     <ul className="lineHeight-34">
-                        <li>&nbsp;<b>Reliable Support:</b> 24x7x365 support via phone or ticket. 15-minute response time 
+                        <li><b>Reliable Support:</b> 24x7x365 support via phone or ticket. 15-minute response time 
                             on Sev-1 tickets. SLA based proactive support with Microsoft support escalations.</li>
-                        <li>&nbsp;<b>Migration Assistance:</b> Let our dedicated team of specialists help you plan and perform your email data migration.</li>
-                        <li>&nbsp;<b>Dedicated to Your Success:</b> It’s our mission to enable your continued success by advising you and your team on the right technologies &amp; tools to deliver the desired results.</li>
-                        <li>&nbsp;<b>Licensing Management:</b> We can provide all required Office 365 licensing for your organization on one consolidated invoice</li>
+                        <li><b>Migration Assistance:</b> Let our dedicated team of specialists help you plan and perform your email data migration.</li>
+                        <li><b>Dedicated to Your Success:</b> It’s our mission to enable your continued success by advising you and your team on the right technologies &amp; tools to deliver the desired results.</li>
+                        <li><b>Licensing Management:</b> We can provide all required Office 365 licensing for your organization on one consolidated invoice</li>
                     </ul>
                     </p>
                 </div>

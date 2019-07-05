@@ -1,9 +1,5 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 
-// export const Networkdesign: React.StatelessComponent<{}> = () => {
 export class Networkdesign extends React.Component<{}, {}> {
     constructor(props: any) {
         super(props);
@@ -15,16 +11,15 @@ export class Networkdesign extends React.Component<{}, {}> {
     render() {
         return (
             <div className="bg-lightgrey">
-                <div>
-                    {/* <img src="img/NetworkDesign.jpg" alt="NetworkDesign" /> */}
+               <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
+                    <div className="w-40 pt-5 pb-4">
+                        <img src="img/NetworkDesign_CS.jpg" width="100%" alt="Cloud Backup" />{" "}
+                    </div>
+                </div> 
+                <div className="px-5 pb-4">
+                <h1 className='text-center'>Cloud Automation For Medfusion Inc</h1>
                 </div>
 
-                <div className='bg-theme mt-3'>
-                    <h1 className='text-center text-white pt-theme mt-2'>Cloud Automation For Medfusion Inc</h1>
-                </div>
-                <div className="p-5">
-
-                </div>
                 <div className='bg-logoblue text-center text-white d-flex justify-content-around flex-col p-5 col-lg-12'>
 
                     <div className='col-md-4'>
@@ -87,7 +82,7 @@ microservices, devops</p>
             and their customer would get an email about the completion of the job process.</p>
 
                     <p className='lineHeight-24'>
-                        <b>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems? </b><br />
+                        <b>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems ? </b><br />
                         We believe in harvesting information as much as possible that will yield a better solution.
                         That is exactly what we did with Large Motor Company. Upon analyzing their queries on a broader spectrum, we did a quick 360° audit on their existing infrastructure and harvested some vital insights on key improvement areas and a plan for any migration path and risks involved in the following process.
                         We conducted multiple PoC’S with Large Motor Company to channel a solid understanding of the technologies and modernize their IT infrastructure. By translating the entire hardware infrastructure into a few lines of software code, we crafted a backbone infrastructure effortlessly.

@@ -1,11 +1,5 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
-// export const Managedservices: React.StatelessComponent<{}> = () => {
   export class Managedservices extends React.Component<{},{}> {
     constructor(props:any) {
       super(props);  
@@ -18,7 +12,7 @@ import { NavLink } from "react-router-dom";
     return (
         <div  className='bg-lightgrey'>
 
-        <div className="w-100 py-5 mt-5" >
+        <div className="w-100 pt-5 pb-3 mt-5" >
                 <img height="auto" width="100%"
                     className=""
                     src="img/ManagedServices.jpg"
@@ -45,7 +39,7 @@ import { NavLink } from "react-router-dom";
                     <br />{" "}
                     </p>
                     <p className="lineHeight-24">
-                    We complement the existing storage infrastructure with a diverse portfolio of solutions to helps 
+                    We complement the existing storage infrastructure with a diverse portfolio of solutions to help 
                     you assess, plan and design a more consolidated, flexible and resilient storage environment. It will 
                     help you to implement, migrate and optimize your IT infrastructure which enables your business to 
                     quickly respond to market changes.
@@ -145,22 +139,21 @@ import { NavLink } from "react-router-dom";
           </div>
         </div>
       </div>
-{/* border-grey-2px */}
           <div className=' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify'
           data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-100  text-black">
-                <p className="lineHeight-24 list-tick">
+                <p className="lineHeight-24 ">
                     <p><b>Benefit of leveraging SYNECTIKS Managed Services:</b>                        
                     </p>                 
                     <ul className="lineHeight-34">
-                        <li>&nbsp;Exclusive focus and expertise in storage domain</li>
-                        <li>&nbsp;Reduced risk with end-to-end specialists and faster time to market</li>
-                        <li>&nbsp;Improved cost efficiencies</li>
-                        <li>&nbsp;Business continuity, backup and data protection</li>
-                        <li>&nbsp;Data archive to meet relevant compliance and regulatory requirements</li>
-                        <li>&nbsp;Data migration services to create flexibility, minimize migratory costs, unplanned downtime and outages</li>
-                        <li>&nbsp;Digital capacity to counter scaling business needs through storage modernization</li>
-                        <li>&nbsp;24/7×365 support for both global onsite and offshore service delivery model to reduce operation cost</li>
+                        <li>Exclusive focus and expertise in storage domain</li>
+                        <li>Reduced risk with end-to-end specialists and faster time to market</li>
+                        <li>Improved cost efficiencies</li>
+                        <li>Business continuity, backup and data protection</li>
+                        <li>Data archive to meet relevant compliance and regulatory requirements</li>
+                        <li>Data migration services to create flexibility, minimize migratory costs, unplanned downtime and outages</li>
+                        <li>Digital capacity to counter scaling business needs through storage modernization</li>
+                        <li>24/7×365 support for both global onsite and offshore service delivery model to reduce operation cost</li>
                     </ul>
                     </p>
 

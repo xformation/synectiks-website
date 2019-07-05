@@ -1,42 +1,6 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 
-const colorRed = {
-  color: '#ff0000',
-  textDecoration: 'none'
-};
-const btn = {
-  borderRadius: '6px',
-  width: '110px',
-  height: '36px',
-  background: 'linear-gradient(to bottom, #9a56ff, #d78afc)',
-};
-
-const italic = {
-  fontStyle: 'italic',
-};
-const inputBox = {
-  border: 'none',
-  backgroundColor: '#f2f2f2',
-  width: '150%',
-};
-const textArea = {
-  border: 'none',
-  backgroundColor: '#f2f2f2',
-  width: '150%',
-  height: '110px',
-};
-const borderRadius_6 = {
-  borderRadius: '6px',
-};
-const inline = {
-  display: 'inline-flex',
-};
-
-// export const Foundation: React.StatelessComponent<{}> = () => {
 export class Foundation extends React.Component<{}, {}> {
   constructor(props: any) {
     super(props);
@@ -52,7 +16,6 @@ export class Foundation extends React.Component<{}, {}> {
         <div className="container pb-5">
         <div className="row main-card pb-5">
           <div className="col-md-12   card-deck">
-{/* */}
             <div className="card btn card-shadow mx-3 pt-3">
             <Link to="/foundation" className="noLine">
               <img
@@ -102,7 +65,7 @@ export class Foundation extends React.Component<{}, {}> {
             As every business today need to address volume/velocity challenges, it must evolve to stay ahead of
             demand. Cloud adoption requires a secure and consistent Foundation to allow enterprises migrate their
             workloads at speed. Smart tooling and automation hugely streamline delivery and management within organization. We
-            don’t want to waste our customers' resources on ‘reinventing the wheel’. By productizing our expertise and
+            don’t want to waste our customers resources on ‘reinventing the wheel’. By productizing our expertise and
             carefully researching the best tool, we aim to deliver to you a complete solution which offers cost-efficient secure cloud
             and on the top of it, extremely scalable, reliable, secure application done right. The goal of Xformation
             platform is to simplify the digital transformation, make customers life simpler, give them flexibility to go to
@@ -112,11 +75,11 @@ export class Foundation extends React.Component<{}, {}> {
           <p className="lineHeight-24">
 
             SYNECTIKS Open Xformation platform is consolidation of tools/utilities within a simplified and extensible
-            architecture. The Xformation platform can use all the existing assets and best practices to accelerate
+            architecture. The Xformation platform can use all the existing assets and best practices accelerating
             Digital Transformation journey and reduce time to do modernization in most defined and secure way.
 </p>
           <p className="lineHeight-24">
-            SYNECTIKS Open Xformation platform and its Software-Defined Foundation services helps in building the Landing
+            SYNECTIKS Open Xformation platform and its Software-Defined Foundation services help in building the Landing
             Zone with Network Security to protect applications and data, allowing customers to scale and accelerate their
             cloud adoption. The comprehensive compliance foundation service includes the creation of a landing zone which
             is a pre-configured secure environment that implements DISA's Secure Cloud Computing Architecture (SCCA) requirements.
@@ -183,11 +146,11 @@ export class Foundation extends React.Component<{}, {}> {
               software-defined way and populate highly secured elastic platform to deliver application services. It will
               help customers to create and maintain Container delivery clusters (AWS ECS, Kubernetes, Messos DCOS, SWARM) across
               cloud (Private/Public) in a most efficient manner. It will create a landing platform in cloud which is highly
-              secure and elastic and services can just be deployed across cloud in distributed manner.
+              secure and elastic and services can just be deployed across cloud in a controlled manner.
 </p>
             <li><h4 className="fh4">&nbsp;Continuous Delivery</h4></li>
             <p className="lineHeight-24">
-              It will help to deliver containerized microservices through quality gates, that will ensure highest
+              It will help to deliver containerized microservices through quality gates, that will ensure the highest
               level of software quality, agility and reliability.
 </p>
             <li><h4 className="fh4">&nbsp;Rapid Application Delivery</h4></li>
@@ -218,8 +181,8 @@ export class Foundation extends React.Component<{}, {}> {
           <ul>
             <li><h4 className="fh4">Section 1</h4></li>
             <p>The upper half deals with the hardware aggregation on the top of cloud layer. With the available
-              container orchestrator, we aggregate CPU/Network/Storage and it looks like a One big consolidated
-              resource. You can deploy application services seamlessly through the Continuous Delivery pipeline and
+              container orchestrator, we aggregate CPU/Network/Storage and it looks like One big consolidated
+              resource. You can deploy application services seamlessly through the Continuous Delivery pipeline, and
               they run being transparent to the underneath computing resources. At application level, the scalability
               is achieved at individual service level as well as elastic resource pool level.
   </p>
@@ -313,12 +276,11 @@ lifecycle. <br />Here follows the list of basic services along with their functi
 </p>
 
         </div>
-        {/* justify-content-around align-items-center */}
         <div className="container" data-aos="fade-up" data-aos-duration="2000">
           <div className="d-flex justify-content-around align-items-center mt-5 pb-5 flex-col">
 
             <div className="">
-              <a href="https://www.youtube.com/channel/UChsy8OZwS-JpNQUpC24ff2g/featured" target="_blank" aria-hidden="true">
+              <a href="https://www.youtube.com/channel/UChsy8OZwS-JpNQUpC24ff2g/videos" target="_blank" aria-hidden="true">
                 <img src="img/Video.png" width="80%" alt="Synectiks Enterprise Transformtaion" />{" "}
               </a>
             </div>

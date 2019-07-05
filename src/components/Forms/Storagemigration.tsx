@@ -1,9 +1,5 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 
-// export const Storagemigration: React.StatelessComponent<{}> = () => {
     export class Storagemigration extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  
@@ -27,7 +23,7 @@ import { LARGE } from "material-ui/utils/withWidth";
                 </div>
             <div className="px-5 py-3">
                 <h4 className='lineHeight-24 text-center'>
-                    San connectivity via Synectiks Storage Network Solutions
+                    SAN connectivity via Synectiks Storage Network Solutions
             </h4><br />
             </div>
 
@@ -78,7 +74,7 @@ import { LARGE } from "material-ui/utils/withWidth";
             </div>
 
             <div className='text-center p-5'>
-                <h3>Synectiks cloud solutions</h3>
+                <h3>Synectiks Cloud Solutions</h3>
               </div>  
 
               <div className='bg-logoblue text-center text-white d-flex justify-content-around flex-col p-5 col-lg-12'>
@@ -120,7 +116,7 @@ import { LARGE } from "material-ui/utils/withWidth";
                 </div>
 
                 <div className='col-md-6'>
-                    <h3>Block and file migration</h3>
+                    <h3>Block and File migration</h3>
                     <p className='px-2'>We are experts in migrating block data across multiple storage boxes. 
                     We offer solutions and services to accelerate the migration of storage hardware and data.
                     </p>

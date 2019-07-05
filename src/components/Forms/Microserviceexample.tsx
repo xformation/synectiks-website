@@ -1,11 +1,6 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
-// export const Microserviceexample: React.StatelessComponent<{}> = () => {
   export class Microserviceexample extends React.Component<{},{}> {
     constructor(props:any) {
       super(props);  
@@ -70,11 +65,9 @@ Say a Travel &amp; Tourism business have major functionalities like Booking/CRM/
                         </Link>
                     </div>
                     </div>
-
     </div>
 
-
-  );
-};
-  }
+   );
+  };
+}
 export default Microserviceexample;

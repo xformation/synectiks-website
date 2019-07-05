@@ -1,16 +1,6 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
-// import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-// require("react-bootstrap/ModalHeader");
-// import Modal from "react-bootstrap/Modal";
-// import { Button } from "react-bootstrap";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-// export const Devops: React.StatelessComponent<{}> = () => {
   const wid = {
     width: '91%',
   };
@@ -81,10 +71,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
     render() { 
     return (        
     <div className="bg-lightgrey">
-      {/* <div className='bg-theme mt-3'>
-                <h1 className='text-center text-white pt-theme mt-2'>DevOps Transformation</h1>
-            </div> */}
-
       <div className="w-100 py-5 mt-5">
         <img
           height="auto"
@@ -95,9 +81,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
         />
       </div>
 
-      {/* <div>
-                <h2 className='text-center py-3'>DevOps Transformation</h2>
-            </div> */}
       <div className="px-5  text-center">
         <h4>
           <i>Transformation for Todays Digital Business!</i>
@@ -106,7 +89,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
       <div className="px-5 pt-3">
         <p className="lineHeight-24 text-justify">
           Enterprises looking for modernization of their legacy stack and
-          operate in more fast and competitive way, can use SYNECTIKS - Open
+          operate to faster and competitive way, can use SYNECTIKS - Open
           Platform to bring the cultural transformation and agility needed for
           today’s business. Whether it is a new business application or
           transformation of legacy applications, our open platform coupled with
@@ -116,7 +99,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
         <p className="lineHeight-24 text-justify">
           <i>
             “DevOps is the combination of cultural philosophies, practices and
-            tools that increases an organization’s ability to deliver
+            tools that increase an organization’s ability to deliver
             applications and services at high velocity: evolving and improving
             products at a faster pace than organizations using traditional
             software development and infrastructure management processes. This
@@ -131,9 +114,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
           SYNECTIKS build the most powerful open product that helps customers to
           provision resources across clouds in complete Software-Defined way and
           deliver modern Container and FAAS driven workloads on it. The platform
-          takes care of Continuous Delivery, Test Automation, Continuous
+          take care of Continuous Delivery, Test Automation, Continuous
           Security, Continuous Compliance and does Continuous Automation to make
-          sure the workload runs seamlessly with highest security, performance,
+          sure the workload runs seamlessly with the highest security, performance,
           scalability and availability.
         </p>
         <div className="d-flex justify-content-around align-items-center flex-col">
@@ -354,7 +337,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             </p>
             <p className="">
               Through Synectiks Xformation platform, you can continuously
-              deliver containerized and serverless microservices verified
+              delivering containerized and serverless microservices verified
               through stringent quality gates that run across clouds and
               geographies ensuring 100% availability and maximum performance.
             </p>

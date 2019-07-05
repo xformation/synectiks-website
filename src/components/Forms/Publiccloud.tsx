@@ -1,16 +1,12 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Input,Label,Form,FormGroup } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const wid = {
     width: '91%',
   };
 
-// export const Publiccloud: React.StatelessComponent<{}> = () => {
     export class Publiccloud extends React.Component<any,any,any>{
         constructor(props:any) {
           super(props); 
@@ -86,7 +82,7 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    SYNECTIKS provides industry-leading expertise services and solutions that allow you to address your 
     specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
@@ -113,8 +109,6 @@ const wid = {
             <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
            <div className="py-3 col-md-2 nav-item dropdown" >
                     <Link to="/HostedInfrastructure"  className='text-black bg-white noLine'>                                           
-                        {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
-                        id="navbarSupportedContent">  */}
                         <a className="noLine" href="#" id="cloudnav"  data-toggle="dropdown">
                                 <b>Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
                         </a>
@@ -130,10 +124,8 @@ const wid = {
                                     <NavLink className="dropdown-item"  to="/CloudDisasterRecovery">
                                         {" "}
                                         Cloud Disaster Recovery{" "}
-                                    </NavLink>
-                                                                      
+                                    </NavLink>                                 
                                 </div>                                                   
-                        {/* </div> */}
                     </Link>                                                                  
                 </div>
           
@@ -156,9 +148,7 @@ const wid = {
                     <Link to="/colocation" className='text-black bg-white noLine'>
                         <b>Colocation</b>
                     </Link>
-                </div>
-
-                
+                </div> 
             </div>
               
                 <div className="text-black w-100 mt-3 px-5 py-3 flex-col d-flex text-justify" >
@@ -174,7 +164,7 @@ const wid = {
                 <p className="lineHeight-24">
                 Our focus is on serving our customers, leverage the ability of the cloud within the ways 
                 in which are most impactful to their business. Whether or not you’re wanting to maneuver 
-                existing workloads to the cloud, modernize workloads to run cloud-native, or optimize existing 
+                existing workloads to the cloud, modernize workloads to run cloud-native or optimize existing 
                 cloud workloads, we can facilitate.
                 <br />{" "}
                 </p>
@@ -191,7 +181,7 @@ const wid = {
                     <p className="lineHeight-24">
                     As a lot of enterprises move to AWS, organizations are challenged to provide corporate 
                     oversight, security and price controls across the cloud estate. Poor oversight usually 
-                    results in overprovisioning of cloud services, wasteful and unplanned disbursement and 
+                    results in over provisioning of cloud services, wasteful and unplanned disbursement and 
                     instances with open, unsecured ports.
                     <br />{" "}
                     </p>
@@ -376,23 +366,6 @@ const wid = {
                 <div className="container">
         <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
       </div>
-
-                {/* <p className="lineHeight-24">
-                    <b>Advisory Services:</b>&nbsp; Assess your needs, design your hybrid IT roadmap and develop a
-                    digital transformation strategy
-            <br />{" "}
-                </p>
-                <p className="lineHeight-24">
-                    <b>Cloud and Workload Migration Services:</b>&nbsp; Migrate to your hybrid platforms of choice with our industry-leading tools and practices.
-            <br />{" "}
-                </p>
-                <p className="lineHeight-24">
-                    <b>Cloud and Application Transformation Services:</b>&nbsp; Follow our factory approach to quickly transform applications. Get full support for monitoring and managing cloud environments,
-                      system software, infrastructure configurations and costs.
-            <br />{" "}
-                </p>
-                 */}
-           
 
         </div>
 

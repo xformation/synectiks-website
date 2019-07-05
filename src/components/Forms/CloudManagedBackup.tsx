@@ -1,16 +1,12 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Input,Label,Form,FormGroup } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const wid = {
     width: '91%',
   };
 
-// export const CloudManagedBackup: React.StatelessComponent<{}> = () => {
     export class CloudManagedBackup extends React.Component<any,any,any>{
         constructor(props:any) {
             super(props);  
@@ -86,7 +82,7 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    SYNECTIKS provides industry-leading expertise services and solutions that allow you to address your 
     specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
@@ -129,9 +125,7 @@ const wid = {
                                         {" "}
                                         Cloud Disaster Recovery{" "}
                                     </NavLink>
-                                    
                                 </div>                                                   
-                        {/* </div> */}
                     </Link>                                                                  
                 </div>
        
@@ -155,29 +149,9 @@ const wid = {
                         <b>Colocation</b>
                     </Link>
                 </div>       
-
-             
-                
-            </div>
-   
-            <div className="d-flex justify-content-around align-items-center flex-col text-center">
-                    <div className=" pb-5">
-                        <img src="img/CloudManagedBackup_Subpage.jpg" width="100%" alt="Cloud Backup" />{" "}
-                    </div>
-                </div>  
-
-            <div className="w-100 px-5 text-black text-justify" >
-                <h4 className='my-3'>Efficiently Protect, Manage and Recover Your</h4>
-            <p className="lineHeight-34 list-tick">                
-                <ul>
-                    <li>&nbsp;Protect, manage and access the information you need.</li>
-                    <li>&nbsp;A single interface manages data at a fraction of the time, effort and cost required by separate point products.</li>
-                    <li>&nbsp;Simplify data management in complex networked storage environments with a consistent way to locate and manage data and applications.</li>                   
-                </ul>
-            </p>
             </div>
 
-            <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify" data-aos="fade-up" data-aos-duration="2000">
+            <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify" >
             <div className="w-100">
                     <img height="auto" width="100%"
                         className=""
@@ -185,9 +159,23 @@ const wid = {
                         alt="Cloud Backup"
                     />
                 </div>
-                <div className="w-100 px-5 pt-3 text-black">
+               
+<div className="w-100 px-5 pt-3 text-black text-justify" >
+                <h4 className=''>Efficiently Protect, Manage and Recover Your</h4>
+            <p className="lineHeight-34">                
+                <ul>
+                    <li>Protect, manage and access the information you need.</li>
+                    <li>A single interface manages data at a fraction of the time, effort and cost required by separate point products.</li>
+                    <li>Simplify data management in complex networked storage environments with a consistent way to locate and manage data and applications.</li>                   
+                </ul>
+            </p>
+            </div>
+            </div>
+
+            <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
+                <div className="w-100 pt-3 text-black">
                 <p className="lineHeight-24">
-                Backups-and significantly-restores, should be promptly available inside your budget. Assumed 
+                Backups and significantly-restores, should be promptly available inside your budget. Assumed 
                 the advances in cloud and hybrid IT environments, it’s time to switch your capital budget, backup 
                 operations, quality management, tools and facilities with a secure, versatile pay-per-use choice 
                 from a trustworthy partner.
@@ -200,17 +188,18 @@ const wid = {
                 <br />{" "}
                 </p>
                 </div>
-            </div>
+                </div>
+            
             <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
-            <p className="lineHeight-34 py-3 list-tick">
+            <p className="lineHeight-34 py-3">
                 SYNECTIKS protects all of your structured and unstructured data while enabling self-service restoration 
                 capability to your application teams. We provide support for:
                 <br />{" "}
                     <ul>
-                        <li>&nbsp;Protects files and folders from Servers and Clients</li>
-                        <li>&nbsp;Integrates with workloads including SharePoint, Exchange, Database, Servers and VMs</li>
-                        <li>&nbsp;Protects guest workloads running in VMware environments</li>
-                        <li>&nbsp;Granular restore capability such as mailbox recovery, DB level recovery and Files</li>
+                        <li>Protects files and folders from Servers and Clients</li>
+                        <li>Integrates with workloads including SharePoint, Exchange, Database, Servers and VMs</li>
+                        <li>Protects guest workloads running in VMware environments</li>
+                        <li>Granular restore capability such as mailbox recovery, DB level recovery and Files</li>
                     </ul>
                 </p>          
             </div>
@@ -218,28 +207,27 @@ const wid = {
             <div className="w-100 px-5 text-black text-justify" data-aos="fade-up" data-aos-duration="2000">
             <p ><h3>Why choose SYNECTIKS?</h3></p>
            
-            <p className="lineHeight-34 list-tick">
+            <p className="lineHeight-34 ">
             SYNECTIKS can deliver end-to-end backup services and support:
             <br />{" "}
             <ul>
-                <li>&nbsp;<b>Cost Optimization:</b> Unlike competitors whose models increase backup costs over time, 
+                <li><b>Cost Optimization:</b> Unlike competitors whose models increase backup costs over time, 
                 SYNECTIKS helps clients optimize and even reduce backup costs.
                 </li>
-                <li>&nbsp;<b>Flexibility:</b>Scale up and down based on demand.
+                <li><b>Flexibility:</b>Scale up and down based on demand.
                 </li>
-                <li>&nbsp;<b>Security:</b> SYNECTIKS provides end-to-end security expertise to protect your data. Data 
+                <li><b>Security:</b> SYNECTIKS provides end-to-end security expertise to protect your data. Data 
                 is encrypted in your data center and stored encrypted in SYNECTIKS Cloud - the encryption key is stored 
                 and managed locally. 256 AES Encrypted, IP Access restricted.
                 </li> 
-                <li>&nbsp;<b>Reliable:</b> Copies of the data are stored to a single data center location and optionally at an additional, remote datacenter.
+                <li><b>Reliable:</b> Copies of the data are stored to a single data center location and optionally at an additional, remote datacenter.
                 </li>
-                <li>&nbsp;<b>Efficient:</b> De-duplication and compression technologies, ensure that multiple copies of the same data are removed from backup cycles, thus optimizing storage capacity.
+                <li><b>Efficient:</b> De-duplication and compression technologies, ensure that multiple copies of the same data is removed from backup cycles, thus optimizing storage capacity.
                 </li>
-                <li>&nbsp;<b>Peace of Mind:</b> True backup not just storing data.</li>                                     
+                <li><b>Peace of Mind:</b> True backup not just storing data.</li>                                     
             </ul>
             </p>
             <p className="lineHeight-24">
-                {/* <NavLink className="navlink navfont noLine" to="/contactus"><small>Contact&nbsp;Us&nbsp;</small></NavLink> */}
                 <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}> <small>Contact&nbsp;Us&nbsp;</small>
                 </a>
                 to learn more about SYNECTIKS Backup as a Service.
@@ -339,7 +327,7 @@ const wid = {
   </ModalFooter>
 </Modal>
 </div>  
-            {/*  */}
+      
             <div className="container">
         <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
       </div>

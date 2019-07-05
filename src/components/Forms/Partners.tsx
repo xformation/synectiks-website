@@ -1,13 +1,4 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-
-const btn = {
-    width: '110px',
-    height: '35px',
-    color: '#ffffff',
-    background: 'linear-gradient(to bottom, #9a56ff, #d78afc)',
-};
 
 export const Partners: React.StatelessComponent<{}> = () => {
     return (

@@ -1,9 +1,5 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 
-
-// export const Askfordemo: React.StatelessComponent<{}> = () => {
     export class Askfordemo extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  
@@ -100,7 +96,6 @@ import { LinearProgress } from "material-ui";
        <button className='btn bg-logoblue text-white btnSend'>Submit</button>
    </div>
    {/* Contact Ends */}
-
 
         </div>
 

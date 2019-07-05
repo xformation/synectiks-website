@@ -1,9 +1,6 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Background from "./Background/Background";
-import { Main } from "./Main/Main";
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
 
 const colorBlack = {
   color: '#000000',
@@ -15,19 +12,6 @@ const togglerBg = {
   textDecoration: 'none'
 };
 
-const subhide = {
-
-}
-
-
-{/* <script>
-( ' .navbar-nav a' ).on( 'click',
-function () {
-	( ' .navbar-nav' ).find( 'li.active' ).removeClass( 'active' )
-	( this ).parent( 'li' ).addClass( 'active' )
-});
-</script> */}
-// export const Header: React.StatelessComponent<{}> = () => {
 export class Header extends React.Component<any, any, any>{
   constructor(props: any) {
     super(props);

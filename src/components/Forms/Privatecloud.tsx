@@ -1,15 +1,12 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Input,Label,Form,FormGroup } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const wid = {
     width: '91%',
   };
-// export const Privatecloud = () => {
+
     export class Privatecloud extends React.Component<any,any,any>{
         constructor(props:any) {
           super(props);  
@@ -84,7 +81,7 @@ const wid = {
     </h1>
     </div>
     <p className="pht lineHeight-24">
-    SYNECTIKS provides industry-leading expertise, services and solutions that allow you to address your 
+    SYNECTIKS provides industry-leading expertise services and solutions that allow you to address your 
     specific needs and execute on the best-agreed approach to build and manage a cloud-enabled enterprise, that aligns with your transformation goals.
     </p>
     <p className="pht lineHeight-24">
@@ -111,8 +108,6 @@ const wid = {
             <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12">
              <div className="py-3 col-md-2 nav-item dropdown" >
                     <Link to="/HostedInfrastructure"  className='text-black bg-white noLine'>                                           
-                        {/* <div className="collapse navbar-collapse nav-item dropdown pr-3 py-3 col-md-2"
-                        id="navbarSupportedContent">  */}
                         <a className="noLine" href="#" id="cloudnav"  data-toggle="dropdown">
                                 <b>Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
                         </a>
@@ -130,7 +125,6 @@ const wid = {
                                         Cloud Disaster Recovery{" "}
                                     </NavLink>                                         
                                 </div>                                                   
-                        {/* </div> */}
                     </Link>                                                                  
                 </div>
           
@@ -176,14 +170,12 @@ const wid = {
                     <p><b><i>Power of the cloud while protecting your enterprise!</i></b></p>
                     <p className="lineHeight-24">
                         SYNECTIKS Cloud Private is a reliable and scalable cloud platform that runs your infrastructure - built
-                        on open-source frameworks like Containers, Kubernetes, etc.., with standard services for deployment, monitoring, logging and security.
+                        on open-source frameworks like Containers, Kubernetes, etc. with standard services for deployment, monitoring, logging and security.
                     <br />{" "}
                     </p>
                 </div>
-
             </div>
-    
-            {/*  */}
+
 
 <p className="px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
     <b>
@@ -208,7 +200,7 @@ const wid = {
                         <div className="w-100 card-bd  py-4 text-white bg-logoblue text-center">Harness Powerful Cloud Services</div>
                         <div className="card-body">
                             <p className="lineHeight-24">
-                                For your open-source application runtimes, choose the prescriptive development approach of Cloud
+                                For your open-source application run times, choose the prescriptive development approach of Cloud
                         Foundry or the more customizable and portable method of Kubernetes Orchestration and Docker Containers.
                 <br />{" "}
                             </p>
@@ -239,16 +231,13 @@ const wid = {
 
                 </div>
             </div>
-            {/*  */}
-      
+            
             <div className="w-100 px-5 pt-5 text-black text-justify">
                 <p className="lineHeight-24">
                     Begin your journey with SYNECTIKS Cloud Private.
                     <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
               <small> Contact&nbsp;Us&nbsp;</small>
-            </a>
-                {/* <NavLink className="navlink navfont noLine" to="/contactus"><small>&nbsp;Contact&nbsp;Us&nbsp;</small></NavLink> */}
-                to learn more.
+            </a>to learn more.
                 <br />{" "}
                 </p>
             </div>
@@ -346,7 +335,7 @@ const wid = {
   </ModalFooter>
 </Modal>
 </div>  
-            {/*  */}
+           
             <div className="container">
         <div className="d-flex justify-content-around align-items-center mt-5 flex-col" />
       </div>

@@ -1,9 +1,6 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 import { Link } from "react-router-dom";
 
-// export const Casestudy: React.StatelessComponent<{}> = () => {
 export class Casestudy extends React.Component<{}, {}> {
   constructor(props: any) {
     super(props);
@@ -21,11 +18,6 @@ export class Casestudy extends React.Component<{}, {}> {
             src="img/resources.jpg" width="100%"
             alt="Resources"
           />
-          {/* <div className="text-center centered ">
-            <div className="text-white">
-              <h3>Resources</h3>
-            </div>
-          </div> */}
         </div>
 
         <div className="container">
@@ -41,7 +33,7 @@ export class Casestudy extends React.Component<{}, {}> {
                     <img src="img/CS_SoftwareDefinedTransformation.jpg" width="100%" alt="Enterprise-DevOps" />{" "}
                   </div>
                   <div className="text-group p-3 align-self-center">
-                    <h4 className="font-weight-bold pt-2 text-black">Software Defined Transformtaion{" "}</h4>
+                    <h4 className="font-weight-bold pt-2 text-black">Software Defined Transformation{" "}</h4>
                     <p className="text-black">
                       Moving to AWS cloud with Data Center retirement for Motor Industry.
                   </p>{" "}
@@ -141,7 +133,6 @@ export class Casestudy extends React.Component<{}, {}> {
               </div>
             </Link>
           </div>
-
 
         </div>
 

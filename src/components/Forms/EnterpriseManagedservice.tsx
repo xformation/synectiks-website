@@ -1,8 +1,5 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
 
-// export const EnterpriseManagedservice: React.StatelessComponent<{}> = () => {
     export class EnterpriseManagedservice extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  
@@ -29,7 +26,7 @@ import { LinearProgress } from "material-ui";
                 </div>
             </div>
 
-            <div className="p-5 mt-3">
+            <div className="px-5 pt-3 pb-5 mt-3">
                 <p className="lineHeight-24">
                     Our managed services and solutions give you everything you need to ensure success before, during and post-deployment.
                     It’s everything you’d want from a Premier Partner.<br />
@@ -82,7 +79,6 @@ import { LinearProgress } from "material-ui";
                     </ul>
 
                 </div>
-                    {/* img-np */}
                 <div className="col-md-4">
                     <img
                         className="   mx-auto "
@@ -121,7 +117,6 @@ import { LinearProgress } from "material-ui";
 
                     <div className="card card-hd mx-3">
                         <div className="w-100 card-bd py-4 text-white bg-maroon text-center">Assessment and Initial Engagement</div>
-                        {/* <img className="card-img-top bg-maroon"  alt="Card image cap"></img> */}
                         <div className="card-body">
                             <small className="">
                                 <ul className="p12-in-start">
@@ -199,10 +194,8 @@ import { LinearProgress } from "material-ui";
                         </div>
                     </div>
 
-
                 </div>
             </div>
-
 
         </div>
 

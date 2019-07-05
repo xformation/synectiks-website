@@ -1,11 +1,6 @@
 import * as React from "react";
-// import { Right } from "react-bootstrap/lib/Media";
-import { LinearProgress } from "material-ui";
-import { LARGE } from "material-ui/utils/withWidth";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
-// export const Microservicechallenge: React.StatelessComponent<{}> = () => {
     export class Microservicechallenge extends React.Component<{},{}> {
         constructor(props:any) {
           super(props);  
@@ -21,13 +16,12 @@ import { NavLink } from "react-router-dom";
             <div className="w-100 py-5 mt-5">
                 <img height="auto" width="100%"
                     className=""
-                    src="img/MSchallenges.png"
+                    src="img/MSchallenges.jpg"
                     alt="Devopsmain Services"
                 />
             </div>
 
-            <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
-
+            <div className="px-5" >
 
                 <h4>
                     Key Challenges of Microservices:
@@ -38,8 +32,8 @@ import { NavLink } from "react-router-dom";
                     <div className="p-3 m-1 col-md-4 border-grey-2px text-center" >
                         <div className="w-100 ">
                             <p className="borderbtm-grey-1px"><b>Cultural Challenges</b></p>
-                            <p className="list-tick text-left lineHeight-34">
-                                <ul><li>&nbsp;You built, you run it</li></ul>
+                            <p className=" text-left lineHeight-34">
+                                <ul><li>You built, you run it</li></ul>
                             </p>
                         </div>
                     </div>
@@ -47,12 +41,12 @@ import { NavLink } from "react-router-dom";
                     <div className="p-3 m-1 col-md-4 border-grey-2px text-center" >
                         <div className="w-100 ">
                             <p className="borderbtm-grey-1px"><b>Architectural Challenges</b></p>
-                            <p className="list-tick text-left lineHeight-34">
+                            <p className="text-left lineHeight-34">
                                 <ul>
-                                    <li>&nbsp;Dealing with asynchronicity</li>
-                                    <li>&nbsp;Cascading Failures</li>
-                                    <li>&nbsp;Discovery and Authentication of Services</li>
-                                    <li>&nbsp;Integration Tests</li>
+                                    <li>Dealing with asynchronicity</li>
+                                    <li>Cascading Failures</li>
+                                    <li>Discovery and Authentication of Services</li>
+                                    <li>Integration Tests</li>
                                 </ul>
                             </p>
                         </div>
@@ -61,12 +55,12 @@ import { NavLink } from "react-router-dom";
                     <div className="p-3 m-1 col-md-4 border-grey-2px text-center" >
                         <div className="w-100 ">
                             <p className="borderbtm-grey-1px"><b>Operational Challenges</b></p>
-                            <p className="list-tick text-left lineHeight-34">
+                            <p className=" text-left lineHeight-34">
                                 <ul>
-                                    <li>&nbsp;Duplication of processes and tools</li>
-                                    <li>&nbsp;Complexity moves from components to interactions</li>
-                                    <li>&nbsp;Debugging across components</li>
-                                    <li>&nbsp;Deployment</li>
+                                    <li>Duplication of processes and tools</li>
+                                    <li>Complexity moves from components to interactions</li>
+                                    <li>Debugging across components</li>
+                                    <li>Deployment</li>
                                 </ul>
                             </p>
                         </div>

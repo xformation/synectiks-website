@@ -1,5 +1,4 @@
 import * as React from "react";
-import { LinearProgress } from "material-ui";
 
 const blue = {
     color: "#007CC2"
@@ -10,7 +9,6 @@ const red = {
 const lineHeight = {
     lineHeight: "35px"
 }
-// export const Aboutus: React.StatelessComponent<{}> = () => {
 export class Aboutus extends React.Component<{}, {}> {
     constructor(props: any) {
         super(props);
@@ -62,7 +60,7 @@ export class Aboutus extends React.Component<{}, {}> {
                                         meaningful insights and the broadest range of capabilities. A partner who works with you to
                                         help reach the next level of performance. Building the future means taking tough decisions,
                                         making bold moves that will lay a path to modernize your business; we’re proud to help shape
-                                        the way the companies’ manage and transform their business. And we are dependent on harnessing
+                                        the way the companies manage and transform their business. And we are dependent on harnessing
                                         innovation to tackle even the complicated problems.
             </p>
                                 </div>
@@ -86,8 +84,8 @@ export class Aboutus extends React.Component<{}, {}> {
                             The businesses that compete successfully are those that have undertaken a transformation
                             of the IT function to become genuinely agile and proactive. We help C-Level Executives and
                             IT leaders achieve greater business agility by modernizing their IT infrastructure and applications
-                            at lower costs. Our technology services span automation, infrastructure, application development &amp; refactoring,
-                    and monolith to microservices transformation.<br />
+                            at lower costs. Our technology services span automation, infrastructure, application development &amp; refactoring
+                            and monolith to microservices transformation.<br />
                             Our investment in proprietary tools, a comprehensive partner ecosystem, skills in emerging
                             technologies like Software-Defined, Open-source, DevOps, Cloud Infrastructure, etc. ensures that we are a one-stop shop for all Application/Digital Transformation, Cloud and IT infrastructure needs.
 
