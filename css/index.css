@@ -1498,3 +1498,12 @@ position: fixed;
 /* .imgBg{
   background-image: url(../img/AboutUs.jpg);
 } */
+.fsize08{
+  font-size: 0.8em !important;
+}
+.fsize07{
+  font-size: 0.7em !important;
+}
+.cursPoint{
+cursor: pointer !important;
+}

@@ -237,7 +237,7 @@ const wid = {
 
             <div className="w-100 px-5 text-black text-justify">
                 <p className="lineHeight-24">
-                    <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}><small>Contact&nbsp;Us&nbsp;</small>
+                    <a className="navlink navfont noLine text-logoblue cursPoint"  onClick={this.toggle}><small>Contact&nbsp;Us&nbsp;</small>
             </a>
                     to learn more about SYNECTIKS Colocation Services.
                 <br />{" "}

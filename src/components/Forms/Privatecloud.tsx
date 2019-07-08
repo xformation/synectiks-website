@@ -235,7 +235,7 @@ const wid = {
             <div className="w-100 px-5 pt-5 text-black text-justify">
                 <p className="lineHeight-24">
                     Begin your journey with SYNECTIKS Cloud Private.
-                    <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
+                    <a className="navlink navfont noLine text-logoblue cursPoint"  onClick={this.toggle}>
               <small> Contact&nbsp;Us&nbsp;</small>
             </a>to learn more.
                 <br />{" "}

@@ -190,7 +190,7 @@ const wid = {
 
             <div className="px-5">
             <p className="lineHeight-24">
-               <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
+               <a className="navlink navfont noLine text-logoblue cursPoint"  onClick={this.toggle}>
              <small>Contact&nbsp;Us&nbsp;</small></a>
                to learn more about SYNECTIKS Disaster Recover as a Service.
            <br />{" "}

@@ -228,7 +228,7 @@ const wid = {
             </ul>
             </p>
             <p className="lineHeight-24">
-                <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}> <small>Contact&nbsp;Us&nbsp;</small>
+                <a className="navlink navfont noLine text-logoblue cursPoint"  onClick={this.toggle}> <small>Contact&nbsp;Us&nbsp;</small>
                 </a>
                 to learn more about SYNECTIKS Backup as a Service.
             <br />{" "}

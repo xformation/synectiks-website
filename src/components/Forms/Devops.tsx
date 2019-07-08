@@ -377,7 +377,7 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
         </div>
         <p>Want to Asses in Detail?</p>
         <p>
-        <a className="navlink navfont noLine text-logoblue"  onClick={this.toggle}>
+        <a className="navlink navfont noLine text-logoblue cursPoint"  onClick={this.toggle}>
               <small>Contact&nbsp;Us&nbsp;</small>
             </a>
           to learn more about SYNECTIKS DevOps Transformation Service.

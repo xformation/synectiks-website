@@ -81,7 +81,7 @@ export class Careers extends React.Component<any, any, any> {
                         </p>
                         <div>
                             <div>
-                                <Button color="primary" className="w-75 text-left" onClick={this.toggle} style={{ marginBottom: '1rem' }} >Sr. Systems Administrator </Button>
+                                <Button color="primary" className="w-25 text-left" onClick={this.toggle} style={{ marginBottom: '1rem' }} >Sr.&nbsp;Systems&nbsp;Administrator </Button>
                                 <Collapse isOpen={this.state.collapse} className="pb-3">
                                     <Card>
                                         <CardBody>
@@ -107,7 +107,7 @@ export class Careers extends React.Component<any, any, any> {
                         </div>
                         <div>
                             <div>
-                                <Button color="primary" className="w-75 text-left" onClick={this.toggle2} style={{ marginBottom: '1rem' }} >Lead Software Architect</Button>
+                                <Button color="primary" className="w-25 text-left" onClick={this.toggle2} style={{ marginBottom: '1rem' }} >Lead&nbsp;Software&nbsp;Architect</Button>
                                 <Collapse isOpen={this.state.collapse2} className="pb-3">
                                     <Card>
                                         <CardBody>
@@ -134,7 +134,7 @@ export class Careers extends React.Component<any, any, any> {
                         </div>
                         <div>
                             <div>
-                                <Button color="primary" className="w-75 text-left" onClick={this.toggle3} style={{ marginBottom: '1rem' }}>Infrastructure Engineer</Button>
+                                <Button color="primary" className="w-25 text-left" onClick={this.toggle3} style={{ marginBottom: '1rem' }}>Infrastructure&nbsp;Engineer</Button>
                                 <Collapse isOpen={this.state.collapse3} className="pb-3">
                                     <Card>
                                         <CardBody>

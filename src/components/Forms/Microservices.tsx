@@ -202,7 +202,7 @@ export class Microservices extends React.Component<any, any, any> {
         </div>
         <div className="container d-flex  px-5 py-4 flex-col ">
           <p>
-            <a className="navlink navfont noLine text-logoblue" onClick={this.toggle}>
+            <a className="navlink navfont noLine text-logoblue cursPoint" onClick={this.toggle}>
               <small>Contact&nbsp;Us&nbsp;</small>
             </a>
             to learn more about SYNECTIKS MicroServices.
