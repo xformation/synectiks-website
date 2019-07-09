@@ -13,7 +13,7 @@ import * as React from "react";
         <div className="bg-lightgrey">        
    
                         <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
-                    <div className="w-40 py-5">
+                    <div className="w-40 pt-5 pb-3">
                         <img src="img/LargeMotorCompany.jpg" width="100%" alt="Software Defined Transformation" />{" "}
                     </div>
                 </div> 

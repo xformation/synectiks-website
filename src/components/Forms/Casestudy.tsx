@@ -12,16 +12,16 @@ export class Casestudy extends React.Component<{}, {}> {
   render() {
     return (
       <div className="bg-lightgrey">
-        <div >
+        {/* <div >
           <img
             className="  text-center pt-5 mt-5"
             src="img/resources.jpg" width="100%"
             alt="Resources"
           />
-        </div>
+        </div> */}
 
-        <div className="container">
-          <div className="text-center w-100 pt-4 ">
+        <div className="container pt-3 mt-5">
+          <div className="text-center w-100 pt-5 mt-5">
             <h3 className=""><b>Success Stories</b></h3>
           </div>
 

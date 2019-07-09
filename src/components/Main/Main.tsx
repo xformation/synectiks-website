@@ -12,7 +12,7 @@ export const Main: React.StatelessComponent<{}> = () => {
    
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
  
-          <div className="carousel-inner mr-auto" role="listbox">
+          <div className="carousel-inner mr-auto anim" role="listbox">
             <div className="carousel-item  active justify-content-around ">
               <div className="img-np flex-col pb-0">
                 <img width="100%" height=""
