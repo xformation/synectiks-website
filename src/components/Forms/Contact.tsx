@@ -1,16 +1,68 @@
 import * as React from "react";
 
-    export class Contact extends React.Component<{},{}> {
+    export class Contact extends React.Component<any,any,any> {
         constructor(props:any) {
           super(props);  
+          this.state = {
+            modal: false,
+            fields: {},
+            errors: {}
+          };
         }
         componentDidMount() {
             window.scrollTo(0, 0)
           }
-    
+
+          handleValidation(){
+            let fields = this.state.fields;
+            let errors = {};
+            let formIsValid = true;
+
+            if(!fields.fname){
+                formIsValid = false;
+                // errors.fname = "Cannot be empty";
+                errors["fname"] = "Cannot be empty";
+              }
+        
+            if(!fields["email"]){
+              formIsValid = false;
+              errors["email"] = "Cannot be empty";
+            }
+        
+            if(typeof fields["email"] !== "undefined"){
+              let lastAtPos = fields["email"].lastIndexOf('@');
+              let lastDotPos = fields["email"].lastIndexOf('.');
+        
+              if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') == -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
+                formIsValid = false;
+                errors["email"] = "Email is not valid";
+              }
+            }
+        
+            this.setState({errors: errors});
+            return formIsValid;
+          }
+        
+          contactSubmit(e){
+            e.preventDefault();
+            // if(this.handleValidation()){
+            //   alert("Form submitted");
+            // }else{
+            //   alert("Form has errors.")
+            // }
+          }
+        
+          handleChange(field, e){    		
+            let fields = this.state.fields;
+            fields[field] = e.target.value;        
+            this.setState({fields});
+          }
+
+
         render() { 
     return (
         <div className="bg-lightgrey">
+
             <div>
                 <img
                     className="  text-center pt-5 pb-3 mt-5"
@@ -27,21 +79,34 @@ import * as React from "react";
             <div>
                 <h2 className='text-center '>CONTACT FORM</h2>
             </div>
-
+   <form name="contactform" className="contactform" onSubmit= {this.contactSubmit.bind(this)}>
              {/* Contact Starts */}
-            <div className="px-5  ">
+            <div className="px-5" >
 
                 <div className="d-flex text-center col-md-12 p-2 flex-col">
                     <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;First Name" width="90%" />
+                    {/* <p className="error err">{this.state.errors.fname}</p> */}
+                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;First Name" width="90%" 
+                         onChange={this.handleChange.bind(this, "fname")} value={this.state.fields.fname}/>
                     </div>
                     <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Last Name" width="90%" />
+                    {/* <p className="error err">{this.state.errors.lname}</p> */}
+                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Last Name" width="90%"
+                         onChange={this.handleChange.bind(this, "lname")} value={this.state.fields.lname}/>
                     </div>
                     <div className="col-sm-4 p-2" >
-                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Email" width="90%" />
+                    {/* <p className="error err">{this.state.errors.email}</p> */}
+                        <input className="inputBoxFlex" placeholder="&nbsp;&nbsp;Email" width="90%" 
+                         onChange={this.handleChange.bind(this, "email")} value={this.state.fields.email}/>
                     </div>
                 </div>
+                {/* <div className="text-center col-sm-12  p-2 d-flex flex-col">
+        <div className="p-2 col-sm-12">
+        <p className="error err">{this.state.errors["email"]}</p>
+        <input className="inputBoxFlex"  placeholder="&nbsp;&nbsp;Business Email Address" width="91%"
+        onChange={this.handleChange.bind(this, "email")} value={this.state.fields["email"]}/>
+        </div>
+        </div> */}
 
                 <div className="d-flex text-center col-md-12 p-2 flex-col">
                     <div className="col-sm-4 p-2" >
@@ -92,8 +157,9 @@ import * as React from "react";
             </div>
 
             <div className='text-center px-5 pt-3 pb-5'>
-                <button className='btn bg-logoblue text-white btnSend'>Submit</button>
+                <button className='btn bg-logoblue text-white btnSend'id="submit" value="Submit">Submit</button>
             </div>
+            </form>
             {/* Contact Ends */}
             <div  className="map mx-auto">
                 <iframe width="100%" height="350px"

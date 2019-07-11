@@ -1511,3 +1511,6 @@ cursor: pointer !important;
   animation-delay: 1s !important;
   animation-duration: 1s !important;
 }
+.err{
+  color: #f0244a;
+}

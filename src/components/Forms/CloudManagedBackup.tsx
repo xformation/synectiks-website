@@ -161,7 +161,7 @@ const wid = {
                 </div>
                
 <div className="w-100 px-5 pt-3 text-black text-justify" >
-                <h4 className=''>Efficiently Protect, Manage and Recover Your</h4>
+                <h4 className=''>Efficiently Protect, Manage and Recover Your Data</h4>
             <p className="lineHeight-34">                
                 <ul>
                     <li>Protect, manage and access the information you need.</li>

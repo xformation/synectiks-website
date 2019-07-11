@@ -59,7 +59,6 @@ const wid = {
               }else{
                 alert("Form has errors.")
               }
-          
             }
           
             handleChange(field, e){    		
@@ -197,7 +196,7 @@ const wid = {
            </p>
             </div>
 
-                <div className="">
+<div className="">
 <Modal isOpen={this.state.modal} toggle={this.toggle} >
   <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
   <ModalBody className="bg-lightgrey">
@@ -215,6 +214,7 @@ const wid = {
         <div className="p-2 col-sm-12">
         <input className="inputBoxFlex"   style={wid} placeholder="&nbsp;&nbsp;Business Email Address" width="91%"
         onChange={this.handleChange.bind(this, "email")} value={this.state.fields["email"]}/>
+         <span className="error">{this.state.errors["email"]}</span>
         </div>
         </div>
         <div className="text-center col-md-12  p-2 d-flex flex-col">
@@ -284,7 +284,7 @@ const wid = {
 
   </ModalBody>
   <ModalFooter className="bg-lightgrey">
-    <div className="text-center p-2" onClick={this.toggle}>
+    <div className="text-center p-2" >
       <button className="btn bg-logoblue text-white btnSend" id="submit" value="Submit">Submit</button>
     </div>{" "}
   </ModalFooter>

@@ -59,7 +59,6 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
       }else{
         alert("Form has errors.")
       }
-  
     }
   
     handleChange(field, e){    		
