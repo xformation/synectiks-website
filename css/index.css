@@ -230,12 +230,13 @@
 .noLine{
   text-decoration: none !important;
 }
-.noLine:hover{
+/* .noLine:hover{
   color: #007cc2 !important;
-}
-#hosted,#private,#hybrid,#public,#colocation, .noLine.active , .noLine:active{
-  color: #007cc2 !important;
-}
+} */
+/* #hosted,#private,#hybrid,#public,#colocation, .noLine.active , .noLine:active{
+  color: #373b41 !important;
+} */
+
 .card-hd{
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4);
   width: 14em;
@@ -1271,14 +1272,14 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   padding-inline-start: 12px;
 }
 #cloudnav{
-  color: #000000 !important;
+  color: #ffffff !important;
 }
-#cloudnav:hover{
+/* #cloudnav:hover{
   color: #007cc2 !important;
 }
 #cloudnav:active{
   color: #007cc2 !important;
-}
+} */
 .card-pvtcld {
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4);
   width: 19em;
@@ -1513,4 +1514,51 @@ cursor: pointer !important;
 }
 .err{
   color: #f0244a;
+}
+.sticky{
+  position: sticky !important;
+  top: 20%;
+  z-index: 99;
+}
+
+
+/*  */
+
+.sidenav {
+  height: 25%;
+  width: 14em;
+  position: fixed;
+  z-index: 1;
+  top: 52%;
+  left: 0;
+  background-color: #007cc2 !important;
+  color: #ffffff !important;
+  overflow-x: hidden;
+  padding-top: 10px;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sidenav a:hover {
+  text-decoration: none;
+  background-color: #fbba00 !important;
+}
+
+.main {
+  margin-left: 15em; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*  */
+.brdr025{
+  border-radius: 0.25rem;
 }

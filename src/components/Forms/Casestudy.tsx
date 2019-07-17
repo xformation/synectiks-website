@@ -21,8 +21,9 @@ export class Casestudy extends React.Component<{}, {}> {
         </div> */}
 
         <div className="container pt-3 mt-5">
-          <div className="text-center w-100 pt-5 mt-5">
-            <h3 className=""><b>Success Stories</b></h3>
+          <div className="text-center w-100 pt-5 pb-3 mt-5">
+            {/* <h3 className=""><b>Success Stories</b></h3> */}
+            <h1 className='text-center bg-logoblue text-white'>Success Stories</h1>
           </div>
 
           <div className="d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col">

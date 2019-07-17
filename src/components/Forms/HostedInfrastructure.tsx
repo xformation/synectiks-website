@@ -110,10 +110,10 @@ const wid = {
 
  <div className=" bg-white d-flex justify-content-around align-items-center px-2 flex-col text-center col-lg-12" 
  >
-       <div className="py-3 col-md-2 nav-item dropdown" >
-                    <Link to="/HostedInfrastructure" id="hosted" className='text-black bg-white noLine'>                                           
+       <div className="py-3 col-md-2 nav-item dropdown bg-logoblue brdr025" >
+                    <Link to="/HostedInfrastructure" id="hosted" className='text-white noLine'>                                           
                         <a className="noLine" href="#" id="cloudnav"  data-toggle="dropdown">
-                                <b id="hosted">Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
+                                <span id="hosted" className='text-white'>Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</span>
                         </a>
                         <div className="dropdown-menu w17em">
                                      <NavLink className="dropdown-item"  to="/HostedInfrastructure">
@@ -135,22 +135,22 @@ const wid = {
                 </div>
           
                 <div className="py-3 col-md-2" >
-                    <Link to="/privatecloud"  className='text-black bg-white noLine'>
+                    <Link to="/privatecloud"  className='text-logoblue bg-white noLine'>
                         <b>Private Cloud</b>
                     </Link>
                 </div> 
                 <div className="py-3 col-md-2" >
-                    <Link to="/hybridcloud"  className='text-black bg-white noLine'>
+                    <Link to="/hybridcloud"  className='text-logoblue bg-white noLine'>
                         <b>Hybrid Cloud</b>
                     </Link>
                 </div> 
                 <div className="py-3 col-md-2" >
-                    <Link to="/publiccloud" className='text-black bg-white noLine'>
+                    <Link to="/publiccloud" className='text-logoblue bg-white noLine'>
                         <b>Public Cloud</b>
                     </Link>
                 </div> 
                 <div className="py-3 col-md-2" >
-                    <Link to="/colocation" className='text-black bg-white noLine'>
+                    <Link to="/colocation" className='text-logoblue bg-white noLine'>
                         <b>Colocation</b>
                     </Link>
                 </div>

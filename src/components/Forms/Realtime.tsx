@@ -1,4 +1,9 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
+
+const brdr = {
+    borderRadius: "0 0.25rem 0.25rem 0"
+}
 
 // export const Realtime: React.StatelessComponent<{}> = () => {
     export class Realtime extends React.Component<{},{}> {
@@ -14,10 +19,15 @@ import * as React from "react";
         <div className="bg-lightgrey">        
 
 <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
-                    <div className="w-40 py-5">
+                    <div className="w-40 pt-5 pb-3">
                         <img src="img/RelianceJioCasestudy.jpg" width="100%" alt="Cloud Backup" />{" "}
                     </div>
                 </div> 
+                <div>
+            <Link to="/casestudy">
+            <button className='btn text-white bg-logoblue btnLearn' style={brdr}><span className="fa fa-angle-double-left"></span>&nbsp;Back to Success Stories</button>
+            </Link>
+            </div>
                 <div className="px-5 pb-2">
                 <h1 className='text-center'>Reliance Jio Casestudy</h1>
                 </div>

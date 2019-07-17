@@ -52,8 +52,8 @@ import { NavLink } from "react-router-dom";
            <div className="py-3 col-md-2 nav-item dropdown" >
                     <Link to="/HostedInfrastructure"  className='text-black bg-white noLine'>                                           
                        
-                        <a className="noLine" href="#" id="cloudnav"  data-toggle="dropdown">
-                                <b  >Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
+                        <a className="noLine" href="#" id=""  data-toggle="dropdown">
+                                <b className="text-logoblue">Cloud&nbsp;Hosted&nbsp;Services&nbsp;&#9660;</b>
                         </a>
                         <div className="dropdown-menu w17em">
                                      <NavLink className="dropdown-item"  to="/HostedInfrastructure">
@@ -73,22 +73,22 @@ import { NavLink } from "react-router-dom";
                 </div>
           
                 <div className="py-3 col-md-2" >
-                    <Link to="/privatecloud"  className='text-black bg-white noLine'>
+                    <Link to="/privatecloud"  className='text-logoblue bg-white noLine'>
                         <b>Private Cloud</b>
                     </Link>
                 </div> 
-                <div className="py-3 col-md-2" >
-                    <Link to="/hybridcloud" id="hybrid" className='text-black bg-white noLine'>
-                        <b>Hybrid Cloud</b>
+                <div className="py-3 col-md-2 bg-logoblue brdr025" >
+                    <Link to="/hybridcloud" id="hybrid" className='text-white noLine'>
+                        Hybrid Cloud
                     </Link>
                 </div> 
                 <div className="py-3 col-md-2" >
-                    <Link to="/publiccloud" className='text-black bg-white noLine'>
+                    <Link to="/publiccloud" className='text-logoblue bg-white noLine'>
                         <b>Public Cloud</b>
                     </Link>
                 </div> 
                 <div className="py-3 col-md-2" >
-                    <Link to="/colocation" className='text-black bg-white noLine'>
+                    <Link to="/colocation" className='text-logoblue bg-white noLine'>
                         <b>Colocation</b>
                     </Link>
                 </div>

@@ -1,4 +1,10 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
+
+const brdr = {
+    borderRadius: "0 0.25rem 0.25rem 0"
+}
+
 
     export class Disasterrecovery extends React.Component<{},{}> {
         constructor(props:any) {
@@ -13,10 +19,15 @@ import * as React from "react";
         <div  className="bg-lightgrey">        
 
 <div className="d-flex mt-5 justify-content-around align-items-center flex-col text-center">
-                    <div className=" py-5">
+                    <div className="pt-5 pb-3">
                         <img src="img/DisasterRecovery_Subpage2.jpg" width="100%" alt="Cloud Backup" />{" "}
                     </div>
                 </div> 
+                <div className="pb-3">
+            <Link to="/casestudy">
+            <button className='btn text-white bg-logoblue btnLearn' style={brdr}><span className="fa fa-angle-double-left"></span>&nbsp;Back to Success Stories</button>
+            </Link>
+            </div>
             <div className="px-5 pt-2">
             <p className='lineHeight-24'>
             Background - As we all know, a potential business disorder will directly impact CAPEX and OPEX of the business. 

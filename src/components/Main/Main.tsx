@@ -17,7 +17,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               <div className="img-np flex-col pb-0">
                 <img width="100%" height=""
                   className="w-100 text-right animated fadeInRightBig slow dealy-2s"
-                  src="img/Slider1.jpg"
+                  src="img/Slider_1.png"
                   alt="Synectiks Open Xformation"
                 />
                 <div className="text-center pt-4 btnLearnmore" style={s1}>

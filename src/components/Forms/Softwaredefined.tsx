@@ -1,4 +1,9 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
+
+const brdr = {
+    borderRadius: "0 0.25rem 0.25rem 0"
+}
 
     export class Softwaredefined extends React.Component<{},{}> {
         constructor(props:any) {
@@ -17,6 +22,11 @@ import * as React from "react";
                         <img src="img/LargeMotorCompany.jpg" width="100%" alt="Software Defined Transformation" />{" "}
                     </div>
                 </div> 
+                <div>
+            <Link to="/casestudy">
+                        <button className='btn text-white bg-logoblue btnLearn' style={brdr}><span className="fa fa-angle-double-left"></span>&nbsp;Back to Success Stories</button>
+                        </Link>
+                    </div>
                 <div className="px-5 pb-2">
                 <h1 className='text-center'>Large Motor Company</h1>
                 </div>
