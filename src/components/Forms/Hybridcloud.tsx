@@ -178,7 +178,7 @@ export class Hybridcloud extends React.Component<any, any, any> {
                 </div>
                 <div className="w-100 p-5 text-black text-justify">
                     <p className="lineHeight-24">
-                        Begin your journey with SYNECTIKS Hybrid Private.
+                        Begin your journey with SYNECTIKS Hybrid Cloud.
                     <a className="navlink navfont noLine text-logoblue cursPoint" onClick={this.toggle}>
                             <small> Contact&nbsp;Us&nbsp;</small>
                         </a>to learn more.
