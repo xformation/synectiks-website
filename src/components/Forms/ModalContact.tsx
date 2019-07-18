@@ -86,7 +86,8 @@ export class ModalContact extends React.Component<any, any, any> {
   };
 
   componentWillMount() {
-    this.validateForm();
+    let newState = { ...this.state }
+    this.validateForm(newState);
   };
 
   render() {

@@ -86,7 +86,8 @@ export class Contact extends React.Component<any, any, any> {
     };
 
     componentWillMount() {
-        this.validateForm();
+        let newState = { ...this.state }
+        this.validateForm(newState);
     };
 
     render() {
@@ -106,101 +107,96 @@ export class Contact extends React.Component<any, any, any> {
                     </div>
                 </div>
                 <div className=''>
-                    <h2 className='text-center text-black'>Ask for Demo</h2>
-                    <h5 className='text-center text-black'>Straight talk on your challenges.</h5>
+                    <h2 className='text-center text-black'>Contact Us</h2>
+                    {/* <h5 className='text-center text-black'>Straight talk on your challenges.</h5> */}
                 </div>
 
                 <form>
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                {/* <label>First Name</label> */}
+                                <label>First Name</label>
                                 <input
                                     className={firstName.isTouched && !firstName.isValid ? 'has-error' : ''}
                                     name="firstName"
                                     value={firstName.value}
                                     onChange={this.handleFieldChange}
                                     onBlur={this.handleSetTouched}
-                                    placeholder="First Name"
                                 />
                                 {firstName.isTouched && firstName.errors.length > 0 && firstName.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                {/* <label>Last Name</label> */}
+                                <label>Last Name</label>
                                 <input
                                     className={lastName.isTouched && !lastName.isValid ? 'has-error' : ''}
                                     name="lastName"
                                     value={this.state.lastName.value}
                                     onChange={this.handleFieldChange}
                                     onBlur={this.handleSetTouched}
-                                    placeholder="Last Name"
                                 />
                                 {lastName.isTouched && lastName.errors.length > 0 && lastName.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                {/* <label>Email</label> */}
+                                <label>Email</label>
                                 <input
                                     className={email.isTouched && !email.isValid ? 'has-error' : ''}
                                     name="email"
                                     value={this.state.email.value}
                                     onChange={this.handleFieldChange}
                                     onBlur={this.handleSetTouched}
-                                    placeholder="Email"
                                 />
                                 {email.isTouched && email.errors.length > 0 && email.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                {/* <label>Company</label> */}
+                                <label>Company</label>
                                 <input
                                     className={company.isTouched && !company.isValid ? 'has-error' : ''}
                                     name="company"
                                     value={this.state.company.value}
                                     onChange={this.handleFieldChange}
                                     onBlur={this.handleSetTouched}
-                                    placeholder="Company"
-
                                 />
                                 {company.isTouched && company.errors.length > 0 && company.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                {/* <label>City</label> */}
+                                <label>City</label>
                                 <input
                                     className={city.isTouched && !city.isValid ? 'has-error' : ''}
                                     name="city"
                                     value={this.state.city.value}
                                     onChange={this.handleFieldChange}
                                     onBlur={this.handleSetTouched}
-                                    placeholder="City"
                                 />
                                 {city.isTouched && city.errors.length > 0 && city.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                {/* <label>Mobile</label> */}
+                                <label>Mobile</label>
                                 <input
                                     className={mobile.isTouched && !mobile.isValid ? 'has-error' : ''}
                                     name="mobile"
                                     value={this.state.mobile.value}
                                     onChange={this.handleFieldChange}
-                                    placeholder="1234-456-789"
+                                    placeholder=""
                                     onBlur={this.handleSetTouched}
                                 />
                                 {mobile.isTouched && mobile.errors.length > 0 && mobile.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                {/* <label>Phone</label> */}
+                                <label>Phone</label>
                                 <input
                                     className={phone.isTouched && !phone.isValid ? 'has-error' : ''}
                                     name="phone"
                                     value={this.state.phone.value}
                                     onChange={this.handleFieldChange}
-                                    placeholder="1234-456-789"
+                                    placeholder=""
                                     onBlur={this.handleSetTouched}
                                 />
                                 {phone.isTouched && phone.errors.length > 0 && phone.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
+                                <label>Contact&nbsp;Source</label>
                                 <select className="ContactinputBoxFlex">
-                                    <option value="enterprise">&nbsp;Contact&nbsp;Source</option>
+                                    {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option> */}
                                     <option value="enterprise">&nbsp;Advertisement</option>
                                     <option value="foundation">&nbsp;Customer&nbsp;Event</option>
                                     <option value="migration">&nbsp;Employee&nbsp;Referral</option>
@@ -214,8 +210,9 @@ export class Contact extends React.Component<any, any, any> {
                                 </select>
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
+                                <label>Select&nbsp;Service</label>
                                 <select className="ContactinputBoxFlex">
-                                    <option value="enterprise">&nbsp;Select&nbsp;Service</option>
+                                    {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
                                     <option value="enterprise">&nbsp;Cloud</option>
                                     <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
                                     <option value="foundation">&nbsp;Foundation</option>

@@ -1527,9 +1527,10 @@ cursor: pointer !important;
 /*  */
 
 .sidenav {
+  float: left;
   height: 25%;
   width: 14em;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   top: 52%;
   left: 0;
@@ -1537,6 +1538,7 @@ cursor: pointer !important;
   color: #ffffff !important;
   overflow-x: hidden;
   padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
@@ -1570,14 +1572,22 @@ form {
   /* background: #F3F5F7/; */
   width: 100%;
   margin: 0px auto;
+<<<<<<< HEAD
   padding: 2rem 3rem 0rem 3rem;
+=======
+  padding: 1rem 3rem 0rem 3rem;
+>>>>>>> b1942ab1b635c8b54c9739fda4693c8cbeb29d29
   border-radius: 5px;
 }
 
 .field-group {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   margin-bottom: 35px;
+=======
+  margin-bottom: 1em;
+>>>>>>> b1942ab1b635c8b54c9739fda4693c8cbeb29d29
 }
 
 label {
@@ -1613,8 +1623,8 @@ input.has-error, select.has-error, textarea.has-error {
   background-color: #ffffff;
   width: 100%;
   height: 2.8rem;
+  /* margin-top: 2rem; */
 }
-
 .ModalContactinputBoxFlex{
   border: 2px solid #e1e1e1;
   background-color: #ffffff;

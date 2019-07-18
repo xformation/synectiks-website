@@ -29,7 +29,7 @@ export class Aboutus extends React.Component<{}, {}> {
                     />
                 </div>
 
-                <div className="px-5 pt-3 text-justify" data-aos="fade-up" data-aos-duration="2000">
+                <div className="px-5 pt-3 text-justify">
                     <div className="text-center"><h2>About Synectiks</h2></div>
                     <p style={lineHeight}>
                         &quot;<span style={blue}>syn</span>-<span style={blue}>ec</span>-tics – [si-nek-<span style={blue}>t</span><span style={red}>i</span><span style={blue}>ks</span>] –

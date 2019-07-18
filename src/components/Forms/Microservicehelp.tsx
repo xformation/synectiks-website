@@ -140,31 +140,12 @@ import { Link } from "react-router-dom";
         <div className="w-40 p-5 text-center">
           <img src="img/Microservice_11.png" width="75%" alt="DevOps Transformation" />{" "}
         </div>
-              
-      <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
-            <div className="pb-3 col-sm-3" >
-            <Link to="/microserviceexample">
-                        <button className='btn text-white bg-logoblue     btnLearn'>Example of Microservices</button>
-                        </Link>
-                    </div>
-                    <div className="pb-3 col-sm-3" >
-                    <Link to="/microservicebenefit">
-                        <button className='btn text-white bg-logoblue     btnLearn'>Benefits of Microservices</button>
-                        </Link>
-                    </div>
-                    <div className="pb-3 col-sm-3" >
-                    <Link to="/microservicechallenge">
-                        <button className='btn text-white bg-logoblue     btnLearn'>Challenges of Microservices</button>
-                        </Link>
-                    </div>
-                    <div className="pb-3 col-sm-3" >
-                    <Link to="/microservicehelp">
-                        <button className='btn text-white bg-logoblue     btnLearn '>How we can help you?</button>
-                        </Link>
-                    </div>
-                    </div>
-
       </div>
+      <div className="pb-3 px-5" >
+            <Link to="/microservices">
+                        <button className='btn text-white bg-logoblue btnLearn'><span className="fa fa-angle-double-left"></span>&nbsp;Back to Microservices</button>
+                        </Link>
+                    </div>
     </div>
 
 

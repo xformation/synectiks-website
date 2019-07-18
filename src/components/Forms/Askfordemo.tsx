@@ -83,7 +83,8 @@ export class Askfordemo extends React.Component<{}, {}> {
     };
 
     componentWillMount() {
-        this.validateForm();
+        let newState = { ...this.state }
+        this.validateForm(newState);
     };
 
 
@@ -111,7 +112,7 @@ export class Askfordemo extends React.Component<{}, {}> {
                     <h5 className='text-center text-black'>Straight talk on your challenges.</h5>
                 </div>
 
-                <div className="px-5 py-2">
+                <div className="py-2">
                     <form>
                         <div className="container-fluid">
                             <div className="row">
@@ -179,7 +180,7 @@ export class Askfordemo extends React.Component<{}, {}> {
                                         name="mobile"
                                         value={this.state.mobile.value}
                                         onChange={this.handleFieldChange}
-                                        placeholder="1234-456-789"
+                                        placeholder=""
                                         onBlur={this.handleSetTouched}
                                     />
                                     {mobile.isTouched && mobile.errors.length > 0 && mobile.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
@@ -191,14 +192,15 @@ export class Askfordemo extends React.Component<{}, {}> {
                                         name="phone"
                                         value={this.state.phone.value}
                                         onChange={this.handleFieldChange}
-                                        placeholder="1234-456-789"
+                                        placeholder=""
                                         onBlur={this.handleSetTouched}
                                     />
                                     {phone.isTouched && phone.errors.length > 0 && phone.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                                 </div>
                                 <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                    <select className="ContactinputBoxFlex">
-                                        <option value="enterprise">&nbsp;Contact&nbsp;Source</option>
+                                    <label>Contact&nbsp;Source</label>
+                                    <select className="ContactinputBoxFlex" placeholder="Contact Source" >
+                                        {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option> */}
                                         <option value="enterprise">&nbsp;Advertisement</option>
                                         <option value="foundation">&nbsp;Customer&nbsp;Event</option>
                                         <option value="migration">&nbsp;Employee&nbsp;Referral</option>
@@ -212,8 +214,9 @@ export class Askfordemo extends React.Component<{}, {}> {
                                     </select>
                                 </div>
                                 <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
+                                    <label>Select&nbsp;Service</label>
                                     <select className="ContactinputBoxFlex">
-                                        <option value="enterprise">&nbsp;Select&nbsp;Service</option>
+                                        {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
                                         <option value="enterprise">&nbsp;Cloud</option>
                                         <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
                                         <option value="foundation">&nbsp;Foundation</option>
