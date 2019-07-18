@@ -1525,9 +1525,10 @@ cursor: pointer !important;
 /*  */
 
 .sidenav {
+  float: left;
   height: 25%;
   width: 14em;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   top: 52%;
   left: 0;
@@ -1535,6 +1536,7 @@ cursor: pointer !important;
   color: #ffffff !important;
   overflow-x: hidden;
   padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
@@ -1561,4 +1563,55 @@ cursor: pointer !important;
 /*  */
 .brdr025{
   border-radius: 0.25rem;
+}
+
+
+form {
+  /* background: #F3F5F7/; */
+  width: 100%;
+  margin: 0px auto;
+  padding: 1rem 3rem 0rem 3rem;
+  border-radius: 5px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #425163;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  border: 2px solid #E1E1E1;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #777;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #007CC2;
+}
+input.has-error, select.has-error, textarea.has-error {
+  border-color: #F26969;
+}
+
+.error-message {
+  color: #F26969;
+  font-weight: bold;
+  font-size: 0.9em;
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+}
+.ContactinputBoxFlex{
+  border: 2px solid #e1e1e1;
+  background-color: #ffffff;
+  width: 24em;
+  height: 2.8rem;
+  /* margin-top: 2rem; */
 }

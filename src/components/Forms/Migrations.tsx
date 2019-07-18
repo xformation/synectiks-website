@@ -15,7 +15,7 @@ import * as React from "react";
           <img height="auto" width="100%" className="" src="img/CloudMigrationOptimization.jpg" alt="Microservices"/>
         </div>
 
-            <div className="px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
+            <div className="px-5 " data-aos="fade-up" data-aos-duration="2000">
                 <p className="lineHeight-24">
                     Synectiks accelerated migration allows customer to leverage the data processing benefits of cloud
                     sooner, providing cost-savings and solving scalability issues. Our approach is to use a combination

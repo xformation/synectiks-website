@@ -74,7 +74,13 @@ import { Link } from "react-router-dom";
 
             </div>
 
-            <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
+            <div className="pb-3 px-5" >
+            <Link to="/microservices">
+                        <button className='btn text-white bg-logoblue btnLearn'><span className="fa fa-angle-double-left"></span>&nbsp;Back to Microservices</button>
+                        </Link>
+                    </div>
+
+            {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
                 <div className="pb-3 col-sm-3" >
                     <Link to="/microserviceexample">
                         <button className='btn text-white bg-logoblue btnLearn  '>Example of Microservices</button>
@@ -95,7 +101,7 @@ import { Link } from "react-router-dom";
                         <button className='btn text-white bg-logoblue btnLearn '>How we can help you?</button>
                     </Link>
                 </div>
-            </div>
+            </div> */}
 
         </div>
 

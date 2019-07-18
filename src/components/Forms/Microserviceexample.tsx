@@ -27,7 +27,7 @@ import { Link } from "react-router-dom";
                         </Link>
                     </div>
       <h2>
-          Example:
+          Example
         </h2>
         <p className="lineHeight-24" >
 Say a Travel &amp; Tourism business have major functionalities like Booking/CRM/Finance/Service Desk/Analytics/Recommendation/Ratings/Reviews, some AI/ML... and most of them 
@@ -47,8 +47,13 @@ Say a Travel &amp; Tourism business have major functionalities like Booking/CRM/
         
 
       </div>
+      <div className="py-3 px-5" >
+            <Link to="/microservices">
+                        <button className='btn text-white bg-logoblue btnLearn'><span className="fa fa-angle-double-left"></span>&nbsp;Back to Microservices</button>
+                        </Link>
+                    </div>
 
-      <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
+      {/* <div className="d-flex justify-content-around align-items-center p-5 flex-col text-center col-md-12">
             <div className="pb-3 col-sm-3" >
             <Link to="/microserviceexample">
                         <button className='btn text-white bg-logoblue     btnLearn'>Example of Microservices</button>
@@ -69,7 +74,7 @@ Say a Travel &amp; Tourism business have major functionalities like Booking/CRM/
                         <button className='btn text-white bg-logoblue     btnLearn '>How we can help you?</button>
                         </Link>
                     </div>
-                    </div>
+                    </div> */}
     </div>
 
    );
