@@ -543,6 +543,8 @@ body {
   /* font-family: "Montserrat" !important; */
   font-family: "Roboto" !important;
   font-style: normal;
+  /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+  /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
 }
 h1,
 h2,
@@ -1561,4 +1563,62 @@ cursor: pointer !important;
 /*  */
 .brdr025{
   border-radius: 0.25rem;
+}
+
+
+form {
+  /* background: #F3F5F7/; */
+  width: 100%;
+  margin: 0px auto;
+  padding: 2rem 3rem 0rem 3rem;
+  border-radius: 5px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #425163;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  border: 2px solid #E1E1E1;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #777;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #007CC2;
+}
+input.has-error, select.has-error, textarea.has-error {
+  border-color: #F26969;
+}
+
+.error-message {
+  color: #F26969;
+  font-weight: bold;
+  font-size: 0.9em;
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+}
+.ContactinputBoxFlex{
+  border: 2px solid #e1e1e1;
+  background-color: #ffffff;
+  width: 100%;
+  height: 2.8rem;
+}
+
+.ModalContactinputBoxFlex{
+  border: 2px solid #e1e1e1;
+  background-color: #ffffff;
+  width: 100%;
+  height: 2.8rem;
+  /* margin-top: 2rem; */
 }
