@@ -1,10 +1,25 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import ModalContact from './ModalContact';
 
-export class Hybridcloud extends React.Component<{}, {}> {
+export class Hybridcloud extends React.Component<any, any, any> {
     constructor(props: any) {
         super(props);
+
+        this.state = {
+            modal: false,
+            fields: {},
+            errors: {}
+        };
+
+        this.toggle = this.toggle.bind(this);
+    }
+    toggle() {
+        this.setState(prevState => ({
+            modal: !prevState.modal
+        }));
     }
     componentDidMount() {
         window.scrollTo(0, 0)
@@ -128,7 +143,7 @@ export class Hybridcloud extends React.Component<{}, {}> {
             </h5>
                 </div>
 
-                <div className="container-fluid px-5 pt-3 pb-5" data-aos="fade-up" data-aos-duration="2000">
+                <div className="container-fluid px-5 pt-3" data-aos="fade-up" data-aos-duration="2000">
                     <div className="row justify-content-around align-items-center">
 
                         <div className="card card-hybcld mx-2">
@@ -161,6 +176,25 @@ export class Hybridcloud extends React.Component<{}, {}> {
 
                     </div>
                 </div>
+                <div className="w-100 p-5 text-black text-justify">
+                    <p className="lineHeight-24">
+                        Begin your journey with SYNECTIKS Hybrid Private.
+                    <a className="navlink navfont noLine text-logoblue cursPoint" onClick={this.toggle}>
+                            <small> Contact&nbsp;Us&nbsp;</small>
+                        </a>to learn more.
+                <br />{" "}
+                    </p>
+                </div>
+
+                <div className="">
+                    <Modal isOpen={this.state.modal} toggle={this.toggle} >
+                        <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
+                        <ModalBody className="bg-lightgrey">
+                            <ModalContact />
+                        </ModalBody>
+                    </Modal>
+                </div>
+
             </div>
 
         );

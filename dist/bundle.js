@@ -41302,9 +41302,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const react_router_dom_2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 class Hybridcloud extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            modal: false,
+            fields: {},
+            errors: {}
+        };
+        this.toggle = this.toggle.bind(this);
+    }
+    toggle() {
+        this.setState(prevState => ({
+            modal: !prevState.modal
+        }));
     }
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -41364,7 +41377,7 @@ class Hybridcloud extends React.Component {
                     React.createElement("p", { className: "lineHeight-24" }, "Synectiks hybrid cloud offers a company with a complete cloud solution.Our hybrid cloud merges the benefits of both the private cloud and the public cloud. It delivers the private cloud\u2019s high-security features coupled with the fast connection and easy-to-access features of the public cloud. Enterprises are adopting a hybrid, multi-cloud approach to enable greater flexibility and application modernization, which include the use of multiple cloud providers like AWS, Azure or Google Cloud, or traditional on-premises environments."))),
             React.createElement("div", { className: "px-5 py-2 text-justify" },
                 React.createElement("h5", { className: "lineHeight-24 text-center" }, "You can now be able to leverage some of the existing low-cost cloud solutions without compromising your security.")),
-            React.createElement("div", { className: "container-fluid px-5 pt-3 pb-5", "data-aos": "fade-up", "data-aos-duration": "2000" },
+            React.createElement("div", { className: "container-fluid px-5 pt-3", "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("div", { className: "row justify-content-around align-items-center" },
                     React.createElement("div", { className: "card card-hybcld mx-2" },
                         React.createElement("div", { className: "w-100 card-bd py-4 text-white bg-logoblue text-center" },
@@ -41389,7 +41402,20 @@ class Hybridcloud extends React.Component {
                             React.createElement("p", { className: "lineHeight-24" },
                                 "When you need enhanced security and ultimate control for business-critical apps and data, incorporate a private cloud.",
                                 React.createElement("br", null),
-                                " ")))))));
+                                " "))))),
+            React.createElement("div", { className: "w-100 p-5 text-black text-justify" },
+                React.createElement("p", { className: "lineHeight-24" },
+                    "Begin your journey with SYNECTIKS Hybrid Private.",
+                    React.createElement("a", { className: "navlink navfont noLine text-logoblue cursPoint", onClick: this.toggle },
+                        React.createElement("small", null, " Contact\u00A0Us\u00A0")),
+                    "to learn more.",
+                    React.createElement("br", null),
+                    " ")),
+            React.createElement("div", { className: "" },
+                React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
+                    React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
+                    React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
+                        React.createElement(ModalContact_1.default, null))))));
     }
     ;
 }
@@ -42983,39 +43009,6 @@ class Privatecloud extends React.Component {
     }
     componentDidMount() {
         window.scrollTo(0, 0);
-    }
-    handleValidation() {
-        let fields = this.state.fields;
-        let errors = {};
-        let formIsValid = true;
-        if (!fields["email"]) {
-            formIsValid = false;
-            errors["email"] = "Cannot be empty";
-        }
-        if (typeof fields["email"] !== "undefined") {
-            let lastAtPos = fields["email"].lastIndexOf('@');
-            let lastDotPos = fields["email"].lastIndexOf('.');
-            if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') == -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
-                formIsValid = false;
-                errors["email"] = "Email is not valid";
-            }
-        }
-        this.setState({ errors: errors });
-        return formIsValid;
-    }
-    contactSubmit(e) {
-        e.preventDefault();
-        if (this.handleValidation()) {
-            alert("Form submitted");
-        }
-        else {
-            alert("Form has errors.");
-        }
-    }
-    handleChange(field, e) {
-        let fields = this.state.fields;
-        fields[field] = e.target.value;
-        this.setState({ fields });
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
