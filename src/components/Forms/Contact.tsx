@@ -194,7 +194,7 @@ export class Contact extends React.Component<any, any, any> {
                                 {phone.isTouched && phone.errors.length > 0 && phone.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                            <label>Contact&nbsp;Source</label>
+                                <label>Contact&nbsp;Source</label>
                                 <select className="ContactinputBoxFlex">
                                     {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option> */}
                                     <option value="enterprise">&nbsp;Advertisement</option>
@@ -210,7 +210,7 @@ export class Contact extends React.Component<any, any, any> {
                                 </select>
                             </div>
                             <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                            <label>Select&nbsp;Service</label>
+                                <label>Select&nbsp;Service</label>
                                 <select className="ContactinputBoxFlex">
                                     {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
                                     <option value="enterprise">&nbsp;Cloud</option>

@@ -39479,7 +39479,7 @@ class Askfordemo extends React.Component {
                 React.createElement("div", { className: "text-center centered " },
                     React.createElement("div", { className: "text-white" },
                         React.createElement("h3", null, "Nice\u00A0To\u00A0Meet\u00A0You!")))),
-            React.createElement("div", { className: 'pt-5' },
+            React.createElement("div", { className: '' },
                 React.createElement("h2", { className: 'text-center text-black' }, "Ask for Demo"),
                 React.createElement("h5", { className: 'text-center text-black' }, "Straight talk on your challenges.")),
             React.createElement("div", { className: "py-2" },
@@ -39879,6 +39879,7 @@ const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const react_router_dom_2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 const wid = {
     width: '91%',
 };
@@ -40016,54 +40017,7 @@ class CloudDisasterRecovery extends React.Component {
                 React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
                     React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
                     React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "px-5 py-3" },
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { type: "text", placeholder: "\u00A0\u00A0First Name", className: "inputBoxFlex", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Last Name", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-sm-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-12" },
-                                    React.createElement("input", { className: "inputBoxFlex", style: wid, placeholder: "\u00A0\u00A0Business Email Address", width: "91%", onChange: this.handleChange.bind(this, "email"), value: this.state.fields["email"] }),
-                                    React.createElement("span", { className: "error" }, this.state.errors["email"]))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Company", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Job Title", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Country/Region", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Telephone", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Contact\u00A0Source"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Select\u00A0Service"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Others")))))),
-                    React.createElement(reactstrap_1.ModalFooter, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "text-center p-2" },
-                            React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
-                        " "))),
+                        React.createElement(ModalContact_1.default, null)))),
             React.createElement("div", { className: "container" },
                 React.createElement("div", { className: "d-flex justify-content-around align-items-center mt-5 flex-col" }))));
     }
@@ -40089,6 +40043,7 @@ const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const react_router_dom_2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 const wid = {
     width: '91%',
 };
@@ -40254,53 +40209,7 @@ class CloudManagedBackup extends React.Component {
                 React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
                     React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
                     React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "px-5 py-3" },
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { type: "text", placeholder: "\u00A0\u00A0First Name", className: "inputBoxFlex", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Last Name", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-sm-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-12" },
-                                    React.createElement("input", { className: "inputBoxFlex", style: wid, placeholder: "\u00A0\u00A0Business Email Address", width: "91%", onChange: this.handleChange.bind(this, "email"), value: this.state.fields["email"] }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Company", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Job Title", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Country/Region", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Telephone", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Contact\u00A0Source"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Select\u00A0Service"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Others")))))),
-                    React.createElement(reactstrap_1.ModalFooter, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "text-center p-2", onClick: this.toggle },
-                            React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
-                        " "))),
+                        React.createElement(ModalContact_1.default, null)))),
             React.createElement("div", { className: "container" },
                 React.createElement("div", { className: "d-flex justify-content-around align-items-center mt-5 flex-col" }))));
     }
@@ -40412,7 +40321,7 @@ class Contact extends React.Component {
                 React.createElement("div", { className: "text-center centered " },
                     React.createElement("div", { className: "text-white" },
                         React.createElement("h3", null, "Nice\u00A0To\u00A0Meet\u00A0You!")))),
-            React.createElement("div", { className: 'pt-5' },
+            React.createElement("div", { className: '' },
                 React.createElement("h2", { className: 'text-center text-black' }, "Contact Us")),
             React.createElement("form", null,
                 React.createElement("div", { className: "container-fluid" },
@@ -40495,6 +40404,7 @@ exports.default = Contact;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
 const wid = {
     width: '91%',
@@ -40652,53 +40562,7 @@ class Devops extends React.Component {
                 React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
                     React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
                     React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "px-5 py-3" },
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { type: "text", placeholder: "\u00A0\u00A0First Name", className: "inputBoxFlex", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Last Name", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-sm-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-12" },
-                                    React.createElement("input", { className: "inputBoxFlex", style: wid, placeholder: "\u00A0\u00A0Business Email Address", width: "91%", onChange: this.handleChange.bind(this, "email"), value: this.state.fields["email"] }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Company", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Job Title", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Country/Region", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Telephone", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Contact\u00A0Source"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Select\u00A0Service"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Others")))))),
-                    React.createElement(reactstrap_1.ModalFooter, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "text-center p-2", onClick: this.toggle },
-                            React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
-                        " ")))));
+                        React.createElement(ModalContact_1.default, null))))));
     }
 }
 exports.Devops = Devops;
@@ -41289,6 +41153,7 @@ const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const react_router_dom_2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 const wid = {
     width: '91%',
 };
@@ -41412,53 +41277,7 @@ class HostedInfrastructure extends React.Component {
                 React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
                     React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
                     React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "px-5 py-3" },
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { type: "text", placeholder: "\u00A0\u00A0First Name", className: "inputBoxFlex", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Last Name", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-sm-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-12" },
-                                    React.createElement("input", { className: "inputBoxFlex", style: wid, placeholder: "\u00A0\u00A0Business Email Address", width: "91%", onChange: this.handleChange.bind(this, "email"), value: this.state.fields["email"] }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Company", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Job Title", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Country/Region", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Telephone", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Contact\u00A0Source"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Select\u00A0Service"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Others")))))),
-                    React.createElement(reactstrap_1.ModalFooter, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "text-center p-2", onClick: this.toggle },
-                            React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
-                        " "))),
+                        React.createElement(ModalContact_1.default, null)))),
             React.createElement("div", { className: "container" },
                 React.createElement("div", { className: "d-flex justify-content-around align-items-center mt-5 flex-col" }))));
     }
@@ -41483,9 +41302,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const react_router_dom_2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 class Hybridcloud extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            modal: false,
+            fields: {},
+            errors: {}
+        };
+        this.toggle = this.toggle.bind(this);
+    }
+    toggle() {
+        this.setState(prevState => ({
+            modal: !prevState.modal
+        }));
     }
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -41536,7 +41368,7 @@ class Hybridcloud extends React.Component {
             React.createElement("div", { className: 'text-center mt-3 lineHeight-24' }),
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "w-100 " },
-                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/HybridCloud.jpg", alt: "Hybrid Cloud" })),
+                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "https://synectiks.com/img/HybridCloud.jpg", alt: "Hybrid Cloud" })),
                 React.createElement("div", { className: "w-100 px-5 text-black" },
                     React.createElement("h2", null, "Hybrid Cloud"),
                     React.createElement("p", null,
@@ -41545,7 +41377,7 @@ class Hybridcloud extends React.Component {
                     React.createElement("p", { className: "lineHeight-24" }, "Synectiks hybrid cloud offers a company with a complete cloud solution.Our hybrid cloud merges the benefits of both the private cloud and the public cloud. It delivers the private cloud\u2019s high-security features coupled with the fast connection and easy-to-access features of the public cloud. Enterprises are adopting a hybrid, multi-cloud approach to enable greater flexibility and application modernization, which include the use of multiple cloud providers like AWS, Azure or Google Cloud, or traditional on-premises environments."))),
             React.createElement("div", { className: "px-5 py-2 text-justify" },
                 React.createElement("h5", { className: "lineHeight-24 text-center" }, "You can now be able to leverage some of the existing low-cost cloud solutions without compromising your security.")),
-            React.createElement("div", { className: "container-fluid px-5 pt-3 pb-5", "data-aos": "fade-up", "data-aos-duration": "2000" },
+            React.createElement("div", { className: "container-fluid px-5 pt-3", "data-aos": "fade-up", "data-aos-duration": "2000" },
                 React.createElement("div", { className: "row justify-content-around align-items-center" },
                     React.createElement("div", { className: "card card-hybcld mx-2" },
                         React.createElement("div", { className: "w-100 card-bd py-4 text-white bg-logoblue text-center" },
@@ -41570,7 +41402,20 @@ class Hybridcloud extends React.Component {
                             React.createElement("p", { className: "lineHeight-24" },
                                 "When you need enhanced security and ultimate control for business-critical apps and data, incorporate a private cloud.",
                                 React.createElement("br", null),
-                                " ")))))));
+                                " "))))),
+            React.createElement("div", { className: "w-100 p-5 text-black text-justify" },
+                React.createElement("p", { className: "lineHeight-24" },
+                    "Begin your journey with SYNECTIKS Hybrid Cloud.",
+                    React.createElement("a", { className: "navlink navfont noLine text-logoblue cursPoint", onClick: this.toggle },
+                        React.createElement("small", null, " Contact\u00A0Us\u00A0")),
+                    "to learn more.",
+                    React.createElement("br", null),
+                    " ")),
+            React.createElement("div", { className: "" },
+                React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
+                    React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
+                    React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
+                        React.createElement(ModalContact_1.default, null))))));
     }
     ;
 }
@@ -42062,6 +41907,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 const wid = {
     width: '91%',
 };
@@ -42147,60 +41993,14 @@ class Microservices extends React.Component {
                             " ")),
                     React.createElement("div", { className: "container d-flex  px-5 py-4 flex-col " },
                         React.createElement("p", null,
-                            React.createElement("a", { className: "navlink navfont noLine text-logoblue", onClick: this.toggle },
+                            React.createElement("a", { className: "navlink navfont noLine text-logoblue cursPoint", onClick: this.toggle },
                                 React.createElement("small", null, "Contact\u00A0Us\u00A0")),
                             "to learn more about SYNECTIKS MicroServices.")),
                     React.createElement("div", { className: "" },
                         React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
                             React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
                             React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
-                                React.createElement("div", { className: "px-5 py-3" },
-                                    React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                        React.createElement("div", { className: "p-2 col-sm-6" },
-                                            React.createElement("input", { type: "text", placeholder: "\u00A0\u00A0First Name", className: "inputBoxFlex", width: "90%" })),
-                                        React.createElement("div", { className: "p-2 col-sm-6" },
-                                            React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Last Name", width: "90%" }))),
-                                    React.createElement("div", { className: "text-center col-sm-12  p-2 d-flex flex-col" },
-                                        React.createElement("div", { className: "p-2 col-sm-12" },
-                                            React.createElement("input", { className: "inputBoxFlex", style: wid, placeholder: "\u00A0\u00A0Business Email Address", width: "91%", onChange: this.handleChange.bind(this, "email"), value: this.state.fields["email"] }))),
-                                    React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                        React.createElement("div", { className: "p-2 col-sm-6" },
-                                            React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Company", width: "90%" })),
-                                        React.createElement("div", { className: "p-2 col-sm-6" },
-                                            React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Job Title", width: "90%" }))),
-                                    React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                        React.createElement("div", { className: "p-2 col-sm-6" },
-                                            React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Country/Region", width: "90%" })),
-                                        React.createElement("div", { className: "p-2 col-sm-6" },
-                                            React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Telephone", width: "90%" }))),
-                                    React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                        React.createElement("div", { className: "p-2 col-sm-6" },
-                                            React.createElement("select", { className: "inputBoxFlex" },
-                                                React.createElement("option", { value: "enterprise" }, "\u00A0Contact\u00A0Source"),
-                                                React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                                React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                                React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                                React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                                React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                                React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                                React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                                React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                                React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                                React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
-                                        React.createElement("div", { className: "p-2 col-sm-6" },
-                                            React.createElement("select", { className: "inputBoxFlex" },
-                                                React.createElement("option", { value: "enterprise" }, "\u00A0Select\u00A0Service"),
-                                                React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                                React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                                React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                                React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                                React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                                React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                                React.createElement("option", { value: "others" }, "\u00A0Others")))))),
-                            React.createElement(reactstrap_1.ModalFooter, { className: "bg-lightgrey" },
-                                React.createElement("div", { className: "text-center p-2", onClick: this.toggle },
-                                    React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
-                                " "))))))
+                                React.createElement(ModalContact_1.default, null)))))))
         //     <div className="w-100 py-5 mt-5">
         //       <img
         //         height="auto"
@@ -42535,6 +42335,169 @@ class Migrations extends React.Component {
 }
 exports.Migrations = Migrations;
 exports.default = Migrations;
+
+
+/***/ }),
+
+/***/ "./src/components/Forms/ModalContact.tsx":
+/*!***********************************************!*\
+  !*** ./src/components/Forms/ModalContact.tsx ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __webpack_require__(/*! react */ "react");
+const validationRules = {
+    required: (val) => val !== null && val !== undefined && val !== '',
+    phone: (phone) => {
+        const re = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+        return re.test(String(phone));
+    },
+    mobile: (mobile) => {
+        const re = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+        return re.test(String(mobile));
+    },
+    email: (email) => {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+};
+class ModalContact extends React.Component {
+    constructor(props) {
+        super(props);
+        this.formValidationRules = {
+            'firstName': [{ rule: validationRules.required, message: 'First name is required' }],
+            'lastName': [{ rule: validationRules.required, message: 'Last name is required' }],
+            'company': [{ rule: validationRules.required, message: 'Company is required' }],
+            'country': [{ rule: validationRules.required, message: 'country is required' }],
+            'jobtitle': [{ rule: validationRules.required, message: 'Job Title is required' }],
+            'phone': [{ rule: validationRules.phone, message: 'Phone number is invalid' }],
+            'email': [{ rule: validationRules.required, message: 'Email is required' }, { rule: validationRules.email, message: 'Email is invalid' }],
+            'select': [{ rule: validationRules.phone, message: 'Select an option' }],
+        };
+        this.fields = ['firstName', 'lastName', 'phone', 'country', 'email', 'company', 'jobtitle'];
+        this.state = {
+            signupForm: { isValid: false },
+            firstName: { value: '', isTouched: false, isValid: false, errors: [] },
+            lastName: { value: '', isTouched: false, isValid: false, errors: [] },
+            company: { value: '', isTouched: false, isValid: false, errors: [] },
+            jobtitle: { value: '', isTouched: false, isValid: false, errors: [] },
+            phone: { value: '', isTouched: false, isValid: false, errors: [] },
+            country: { value: '', isTouched: false, isValid: false, errors: [] },
+            email: { value: '', isTouched: false, isValid: false, errors: [] },
+            select: { value: '', isTouched: false, isValid: false, errors: [] },
+        };
+        this.handleFieldChange = e => {
+            let newState = Object.assign({}, this.state);
+            newState[e.target.name].value = e.target.value;
+            this.validateForm(newState);
+        };
+        this.handleSetTouched = e => {
+            let field = Object.assign({}, this.state[e.target.name], { isTouched: true });
+            this.setState({ [e.target.name]: Object.assign({}, field) });
+        };
+        this.getClassName = fieldName => {
+            const field = this.state[fieldName];
+            return field.isTouched && !field.isValid ? 'has-error' : '';
+        };
+        // validateForm() {
+        //     this.setState({ formValid: this.state.emailValid && this.state.passwordValid });
+        // }
+        this.validateForm = (newState) => {
+            newState = newState || Object.assign({}, this.state);
+            this.fields.map(fieldName => {
+                let newField = newState[fieldName];
+                newField.errors = [];
+                newField.isValid = true;
+                this.formValidationRules[fieldName].map(vRule => {
+                    if (!vRule.rule(this.state[fieldName].value)) {
+                        newField.errors.push(vRule.message);
+                        newField.isValid = false;
+                    }
+                    newState[fieldName] = newField;
+                });
+            });
+            this.setState(newState);
+        };
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    componentWillMount() {
+        let newState = Object.assign({}, this.state);
+        this.validateForm(newState);
+    }
+    ;
+    render() {
+        const { firstName, lastName, company, country, phone, jobtitle, email } = this.state;
+        return (React.createElement("div", { className: "bg-lightgrey" },
+            React.createElement("form", null,
+                React.createElement("div", { className: "container-fluid" },
+                    React.createElement("div", { className: "row" },
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "First Name"),
+                            React.createElement("input", { className: firstName.isTouched && !firstName.isValid ? 'has-error' : '', name: "firstName", value: firstName.value, onChange: this.handleFieldChange, onBlur: this.handleSetTouched, placeholder: "First Name" }),
+                            firstName.isTouched && firstName.errors.length > 0 && firstName.errors.map((err, i) => (React.createElement("span", { key: i, className: "error-message" }, err)))),
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "Last Name"),
+                            React.createElement("input", { className: lastName.isTouched && !lastName.isValid ? 'has-error' : '', name: "lastName", value: this.state.lastName.value, onChange: this.handleFieldChange, onBlur: this.handleSetTouched, placeholder: "Last Name" }),
+                            lastName.isTouched && lastName.errors.length > 0 && lastName.errors.map((err, i) => (React.createElement("span", { key: i, className: "error-message" }, err)))),
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "Email"),
+                            React.createElement("input", { className: email.isTouched && !email.isValid ? 'has-error' : '', name: "email", value: this.state.email.value, onChange: this.handleFieldChange, onBlur: this.handleSetTouched, placeholder: "Business Email Address" }),
+                            email.isTouched && email.errors.length > 0 && email.errors.map((err, i) => (React.createElement("span", { key: i, className: "error-message" }, err)))),
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "Company"),
+                            React.createElement("input", { className: company.isTouched && !company.isValid ? 'has-error' : '', name: "company", value: this.state.company.value, onChange: this.handleFieldChange, onBlur: this.handleSetTouched, placeholder: "Company" }),
+                            company.isTouched && company.errors.length > 0 && company.errors.map((err, i) => (React.createElement("span", { key: i, className: "error-message" }, err)))),
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "Job Title"),
+                            React.createElement("input", { className: jobtitle.isTouched && !jobtitle.isValid ? 'has-error' : '', name: "jobtitle", value: this.state.jobtitle.value, onChange: this.handleFieldChange, onBlur: this.handleSetTouched, placeholder: "Job Title" }),
+                            jobtitle.isTouched && jobtitle.errors.length > 0 && jobtitle.errors.map((err, i) => (React.createElement("span", { key: i, className: "error-message" }, err)))),
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "Country/Region"),
+                            React.createElement("input", { className: country.isTouched && !country.isValid ? 'has-error' : '', name: "country", value: this.state.country.value, onChange: this.handleFieldChange, placeholder: "Country", onBlur: this.handleSetTouched }),
+                            country.isTouched && country.errors.length > 0 && country.errors.map((err, i) => (React.createElement("span", { key: i, className: "error-message" }, err)))),
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "Phone"),
+                            React.createElement("input", { className: phone.isTouched && !phone.isValid ? 'has-error' : '', name: "phone", value: this.state.phone.value, onChange: this.handleFieldChange, placeholder: "1234-456-789", onBlur: this.handleSetTouched }),
+                            phone.isTouched && phone.errors.length > 0 && phone.errors.map((err, i) => (React.createElement("span", { key: i, className: "error-message" }, err)))),
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "Contact Source"),
+                            React.createElement("select", { className: "ModalContactinputBoxFlex" },
+                                React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
+                                React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
+                                React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
+                                React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
+                                React.createElement("option", { value: "others" }, "\u00A0Other"),
+                                React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
+                                React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
+                                React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
+                                React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
+                                React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
+                        React.createElement("div", { className: "col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group" },
+                            React.createElement("label", null, "Select Service"),
+                            React.createElement("select", { className: "ModalContactinputBoxFlex" },
+                                React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
+                                React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
+                                React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
+                                React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
+                                React.createElement("option", { value: "operations" }, "\u00A0Operations"),
+                                React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
+                                React.createElement("option", { value: "others" }, "\u00A0Others")))),
+                    React.createElement("div", { className: 'text-center px-5 pt-3 pb-5' },
+                        React.createElement("button", { className: 'btn bg-logoblue text-white btnSend', id: "submit", 
+                            // value="Submit" disabled={!this.state.formValid}>Submit</button>
+                            value: "Submit" }, "Submit"))))));
+    }
+    ;
+}
+exports.ModalContact = ModalContact;
+;
+exports.default = ModalContact;
 
 
 /***/ }),
@@ -43025,6 +42988,7 @@ const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const react_router_dom_2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 const wid = {
     width: '91%',
 };
@@ -43045,39 +43009,6 @@ class Privatecloud extends React.Component {
     }
     componentDidMount() {
         window.scrollTo(0, 0);
-    }
-    handleValidation() {
-        let fields = this.state.fields;
-        let errors = {};
-        let formIsValid = true;
-        if (!fields["email"]) {
-            formIsValid = false;
-            errors["email"] = "Cannot be empty";
-        }
-        if (typeof fields["email"] !== "undefined") {
-            let lastAtPos = fields["email"].lastIndexOf('@');
-            let lastDotPos = fields["email"].lastIndexOf('.');
-            if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') == -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
-                formIsValid = false;
-                errors["email"] = "Email is not valid";
-            }
-        }
-        this.setState({ errors: errors });
-        return formIsValid;
-    }
-    contactSubmit(e) {
-        e.preventDefault();
-        if (this.handleValidation()) {
-            alert("Form submitted");
-        }
-        else {
-            alert("Form has errors.");
-        }
-    }
-    handleChange(field, e) {
-        let fields = this.state.fields;
-        fields[field] = e.target.value;
-        this.setState({ fields });
     }
     render() {
         return (React.createElement("div", { className: 'bg-lightgrey' },
@@ -43180,53 +43111,7 @@ class Privatecloud extends React.Component {
                 React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
                     React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
                     React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "px-5 py-3" },
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { type: "text", placeholder: "\u00A0\u00A0First Name", className: "inputBoxFlex", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Last Name", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-sm-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-12" },
-                                    React.createElement("input", { className: "inputBoxFlex", style: wid, placeholder: "\u00A0\u00A0Business Email Address", width: "91%", onChange: this.handleChange.bind(this, "email"), value: this.state.fields["email"] }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Company", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Job Title", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Country/Region", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Telephone", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Contact\u00A0Source"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Select\u00A0Service"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Others")))))),
-                    React.createElement(reactstrap_1.ModalFooter, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "text-center p-2", onClick: this.toggle },
-                            React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
-                        " "))),
+                        React.createElement(ModalContact_1.default, null)))),
             React.createElement("div", { className: "container" },
                 React.createElement("div", { className: "d-flex justify-content-around align-items-center mt-5 flex-col" }))));
     }
@@ -43252,6 +43137,7 @@ const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const react_router_dom_2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 const wid = {
     width: '91%',
 };
@@ -43413,53 +43299,7 @@ class Publiccloud extends React.Component {
                 React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
                     React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
                     React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "px-5 py-3" },
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { type: "text", placeholder: "\u00A0\u00A0First Name", className: "inputBoxFlex", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Last Name", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-sm-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-12" },
-                                    React.createElement("input", { className: "inputBoxFlex", style: wid, placeholder: "\u00A0\u00A0Business Email Address", width: "91%", onChange: this.handleChange.bind(this, "email"), value: this.state.fields["email"] }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Company", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Job Title", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Country/Region", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Telephone", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Contact\u00A0Source"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Select\u00A0Service"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Others")))))),
-                    React.createElement(reactstrap_1.ModalFooter, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "text-center p-2", onClick: this.toggle },
-                            React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
-                        " "))),
+                        React.createElement(ModalContact_1.default, null)))),
             React.createElement("div", { className: "container" },
                 React.createElement("div", { className: "d-flex justify-content-around align-items-center mt-5 flex-col" }))));
     }
@@ -43916,6 +43756,7 @@ const React = __webpack_require__(/*! react */ "react");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const react_router_dom_2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 const reactstrap_1 = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
+const ModalContact_1 = __webpack_require__(/*! ./ModalContact */ "./src/components/Forms/ModalContact.tsx");
 const wid = {
     width: '91%',
 };
@@ -44067,53 +43908,7 @@ class Colocation extends React.Component {
                 React.createElement(reactstrap_1.Modal, { isOpen: this.state.modal, toggle: this.toggle },
                     React.createElement(reactstrap_1.ModalHeader, { className: "bg-lightgrey", toggle: this.toggle }, "Contact Us"),
                     React.createElement(reactstrap_1.ModalBody, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "px-5 py-3" },
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { type: "text", placeholder: "\u00A0\u00A0First Name", className: "inputBoxFlex", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Last Name", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-sm-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-12" },
-                                    React.createElement("input", { className: "inputBoxFlex", style: wid, placeholder: "\u00A0\u00A0Business Email Address", width: "91%", onChange: this.handleChange.bind(this, "email"), value: this.state.fields["email"] }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Company", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Job Title", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Country/Region", width: "90%" })),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("input", { className: "inputBoxFlex", placeholder: "\u00A0\u00A0Telephone", width: "90%" }))),
-                            React.createElement("div", { className: "text-center col-md-12  p-2 d-flex flex-col" },
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Contact\u00A0Source"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Website"))),
-                                React.createElement("div", { className: "p-2 col-sm-6" },
-                                    React.createElement("select", { className: "inputBoxFlex" },
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Select\u00A0Service"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                        React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                        React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                        React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                        React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                        React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                        React.createElement("option", { value: "others" }, "\u00A0Others")))))),
-                    React.createElement(reactstrap_1.ModalFooter, { className: "bg-lightgrey" },
-                        React.createElement("div", { className: "text-center p-2", onClick: this.toggle },
-                            React.createElement("button", { className: "btn bg-logoblue text-white btnSend", id: "submit", value: "Submit" }, "Submit")),
-                        " "))),
+                        React.createElement(ModalContact_1.default, null)))),
             React.createElement("div", { className: "container" },
                 React.createElement("div", { className: "d-flex justify-content-around align-items-center mt-5 flex-col" }))));
     }
