@@ -396,11 +396,11 @@ export class Devops extends React.Component<any, any, any> {
             <ModalBody className="bg-lightgrey">
               <ModalContact />
             </ModalBody>
-            <ModalFooter className="bg-lightgrey">
+            {/* <ModalFooter className="bg-lightgrey">
               <div className="text-center p-2" onClick={this.toggle}>
                 <button className="btn bg-logoblue text-white btnSend" id="submit" value="Submit">Submit</button>
               </div>{" "}
-            </ModalFooter>
+            </ModalFooter> */}
           </Modal>
         </div>
       </div>
