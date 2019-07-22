@@ -543,8 +543,8 @@ body {
   /* font-family: "Montserrat" !important; */
   font-family: "Roboto" !important;
   font-style: normal;
-  /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
-  /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 }
 h1,
 h2,
@@ -1010,8 +1010,8 @@ h6 {
 .w-30 {
   width: 30% !important;
 }
-.w-65{
-  width: 65% !important;
+.w-60{
+  width: 60% !important;
 }
 .px-6 {
   padding-left: 6rem !important;

@@ -96,7 +96,7 @@ export class CloudDisasterRecovery extends React.Component<any, any, any>{
     </p>
           </div>
 
-          <div className=" pl-5 py-3 mt-5 w-65" >
+          <div className=" pl-5 py-3 mt-3 w-60" >
             <img height="auto"
               className="img100 img-fluid"
               src="img/CloudCommon.png"
