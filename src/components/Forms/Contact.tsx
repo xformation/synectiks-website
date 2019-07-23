@@ -1,5 +1,6 @@
 import * as React from "react";
-
+import { Formik } from "formik";
+import * as Yup from "yup";
 const validationRules = {
     required: (val) => val !== null && val !== undefined && val !== '',
     phone: (phone) => {
@@ -93,154 +94,227 @@ export class Contact extends React.Component<any, any, any> {
     render() {
         const { firstName, lastName, company, city, phone, mobile, email } = this.state;
         return (
-            <div className="bg-lightgrey">
-                <div>
-                    <img
-                        className="  text-center pt-5 mt-5"
-                        src="img/NiceToMeet.png" width="100%"
-                        alt="Card image Foundation"
-                    />
-                    <div className="text-center centered ">
-                        <div className="text-white">
-                            <h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3>
-                        </div>
-                    </div>
-                </div>
-                <div className=''>
-                    <h2 className='text-center text-black'>Contact Us</h2>
-                    {/* <h5 className='text-center text-black'>Straight talk on your challenges.</h5> */}
-                </div>
+            <Formik
+                initialValues={{
+                    firstname: '', lastname: '', email: '', company: '',
+                    city: '', mobile: '', phone: '', source: '', service: ''
+                }}
+                onSubmit={(values, { setSubmitting }) => {
+                    setTimeout(() => {
+                        console.log("Logging in", values);
+                        setSubmitting(false);
+                    }, 500);
+                }}
 
-                <form>
-                    <div className="container-fluid">
-                        <div className="row">
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>First Name</label>
-                                <input
-                                    className={firstName.isTouched && !firstName.isValid ? 'has-error' : ''}
-                                    name="firstName"
-                                    value={firstName.value}
-                                    onChange={this.handleFieldChange}
-                                    onBlur={this.handleSetTouched}
-                                />
-                                {firstName.isTouched && firstName.errors.length > 0 && firstName.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
-                            </div>
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>Last Name</label>
-                                <input
-                                    className={lastName.isTouched && !lastName.isValid ? 'has-error' : ''}
-                                    name="lastName"
-                                    value={this.state.lastName.value}
-                                    onChange={this.handleFieldChange}
-                                    onBlur={this.handleSetTouched}
-                                />
-                                {lastName.isTouched && lastName.errors.length > 0 && lastName.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
-                            </div>
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>Email</label>
-                                <input
-                                    className={email.isTouched && !email.isValid ? 'has-error' : ''}
-                                    name="email"
-                                    value={this.state.email.value}
-                                    onChange={this.handleFieldChange}
-                                    onBlur={this.handleSetTouched}
-                                />
-                                {email.isTouched && email.errors.length > 0 && email.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
-                            </div>
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>Company</label>
-                                <input
-                                    className={company.isTouched && !company.isValid ? 'has-error' : ''}
-                                    name="company"
-                                    value={this.state.company.value}
-                                    onChange={this.handleFieldChange}
-                                    onBlur={this.handleSetTouched}
-                                />
-                                {company.isTouched && company.errors.length > 0 && company.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
-                            </div>
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>City</label>
-                                <input
-                                    className={city.isTouched && !city.isValid ? 'has-error' : ''}
-                                    name="city"
-                                    value={this.state.city.value}
-                                    onChange={this.handleFieldChange}
-                                    onBlur={this.handleSetTouched}
-                                />
-                                {city.isTouched && city.errors.length > 0 && city.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
-                            </div>
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>Mobile</label>
-                                <input
-                                    className={mobile.isTouched && !mobile.isValid ? 'has-error' : ''}
-                                    name="mobile"
-                                    value={this.state.mobile.value}
-                                    onChange={this.handleFieldChange}
-                                    placeholder=""
-                                    onBlur={this.handleSetTouched}
-                                />
-                                {mobile.isTouched && mobile.errors.length > 0 && mobile.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
-                            </div>
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>Phone</label>
-                                <input
-                                    className={phone.isTouched && !phone.isValid ? 'has-error' : ''}
-                                    name="phone"
-                                    value={this.state.phone.value}
-                                    onChange={this.handleFieldChange}
-                                    placeholder=""
-                                    onBlur={this.handleSetTouched}
-                                />
-                                {phone.isTouched && phone.errors.length > 0 && phone.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
-                            </div>
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>Contact&nbsp;Source</label>
-                                <select className="ContactinputBoxFlex">
-                                    {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option> */}
-                                    <option value="enterprise">&nbsp;Advertisement</option>
-                                    <option value="foundation">&nbsp;Customer&nbsp;Event</option>
-                                    <option value="migration">&nbsp;Employee&nbsp;Referral</option>
-                                    <option value="operations">&nbsp;Google&nbsp;Adwords</option>
-                                    <option value="others">&nbsp;Other</option>
-                                    <option value="optimization">&nbsp;Partner</option>
-                                    <option value="optimization">&nbsp;Purchased&nbsp;List</option>
-                                    <option value="optimization">&nbsp;Trade&nbsp;Show</option>
-                                    <option value="optimization">&nbsp;Webinar</option>
-                                    <option value="optimization">&nbsp;Website</option>
-                                </select>
-                            </div>
-                            <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                                <label>Select&nbsp;Service</label>
-                                <select className="ContactinputBoxFlex">
-                                    {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
-                                    <option value="enterprise">&nbsp;Cloud</option>
-                                    <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
-                                    <option value="foundation">&nbsp;Foundation</option>
-                                    <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
-                                    <option value="operations">&nbsp;Operations</option>
-                                    <option value="optimization">&nbsp;Optimization</option>
-                                    <option value="others">&nbsp;Others</option>
-                                </select>
-                            </div>
-                        </div>
+                //********Using Yum for validation********/
 
-                        <div className='text-center px-5 pt-3 pb-5'>
-                            <button className='btn bg-logoblue text-white btnSend' id="submit"
-                                // value="Submit" disabled={!this.state.formValid}>Submit</button>
-                                value="Submit">Submit</button>
-                        </div>
+                validationSchema={Yup.object().shape({
+                    email: Yup.string()
+                        .email()
+                        .required("Email Id is Required")
+                        .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
+                    phone: Yup.string()
+                        .required("No Phone Number  provided.")
+                        .min(10, "Phone number should be 10 chars minimum.")
+                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Phone Number"),
+                    firstname: Yup.string()
+                        .required("No First Name provided.")
+                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
+                    lastname: Yup.string()
+                        .required("No Last Name provided.")
+                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
+                    company: Yup.string()
+                        .required("No Company Name provided.")
+                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
+                    city: Yup.string()
+                        .required("No City Name provided.")
+                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your City"),
+                    mobile: Yup.string()
+                        .required("No Mobile Number  provided.")
+                        .min(10, "Mobile number should be 10 chars minimum.")
+                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Mobile Number"),
+                    source: Yup.string()
+                        .required("No Option selected.")
+                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
+                    service: Yup.string()
+                        .required("No Option selected.")
+                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
 
-                    </div>
-                </form>
-                {/* Contact Ends */}
-                <div className="map mx-auto">
-                    <iframe width="100%" height="350px"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.0341342304914!2d-74.63367698460706!3d40.31939997937661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e0d086f7514f%3A0x8f04ec41f160a353!2s300+Alexander+Park+Dr+%23215%2C+Princeton%2C+NJ+08540%2C+USA!5e0!3m2!1sen!2sin!4v1526621065289"
-                        frameBorder='0'
-                    ></iframe>
-                </div>
-            </div>
-        );
+                })}
+            >
+                {props => {
+                    const {
+                        values,
+                        touched,
+                        errors,
+                        isSubmitting,
+                        handleChange,
+                        handleBlur,
+                        handleSubmit
+                    } = props;
+                    return (<section>
+                        <div><img className="text-center pt-5 mt-5" src="img/NiceToMeet.png" width="100%" alt="Card image Foundation" /><div className="text-center centered "><div className="text-white"><h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3></div></div></div>
+                        <form onSubmit={handleSubmit}>
+                            <div className="container-fluid">
+                                <div className="row">
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label>First&nbsp;Name</label>
+                                        <input
+                                            name="firstname"
+                                            type="text"
+                                            placeholder="Enter Your First Name"
+                                            value={values.firstname}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.firstname && touched.firstname && "error"}
+                                        />
+                                        {errors.firstname && touched.firstname && (
+                                            <div className="input-feedback">{errors.firstname}</div>
+                                        )}
+                                    </div>
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label>Last&nbsp;Name</label>
+                                        <input
+                                            name="lastname"
+                                            type="text"
+                                            placeholder="Enter Your Last Name"
+                                            value={values.lastname}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.lastname && touched.lastname && "error"}
+                                        />
+                                        {errors.lastname && touched.lastname && (
+                                            <div className="input-feedback">{errors.lastname}</div>
+                                        )}
+                                    </div>
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label htmlFor="email">Email</label>
+                                        <input
+                                            name="email"
+                                            type="text"
+                                            placeholder="Enter your Business Email Address"
+                                            value={values.email}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.email && touched.email && "error"}
+                                        />
+                                        {errors.email && touched.email && (
+                                            <div className="input-feedback">{errors.email}</div>
+                                        )}
+                                    </div>
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label>Company</label>
+                                        <input
+                                            name="company"
+                                            type="text"
+                                            placeholder="Enter Your Company Name"
+                                            value={values.company}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.company && touched.company && "error"}
+                                        />
+                                        {errors.company && touched.company && (
+                                            <div className="input-feedback">{errors.company}</div>
+                                        )}
+                                    </div>
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label>City</label>
+                                        <input
+                                            name="city"
+                                            type="text"
+                                            placeholder="Enter Your Country/Region"
+                                            value={values.city}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.city && touched.city && "error"}
+                                        />
+                                        {errors.city && touched.city && (
+                                            <div className="input-feedback">{errors.city}</div>
+                                        )}
+                                    </div>
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label>Mobile</label>
+                                        <input
+                                            name="mobile"
+                                            type="tel"
+                                            placeholder="Enter Your Mobile Number"
+                                            value={values.mobile}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.mobile && touched.mobile && "error"}
+                                        />
+                                        {errors.mobile && touched.mobile && (
+                                            <div className="input-feedback">{errors.mobile}</div>
+                                        )}
+                                    </div>
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label htmlFor="email">Telephone</label>
+                                        <input
+                                            name="phone"
+                                            type="tel"
+                                            placeholder="Enter your Phone Number"
+                                            value={values.phone}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.phone && touched.phone && "error"}
+                                        />
+                                        {errors.phone && touched.phone && (
+                                            <div className="input-feedback">{errors.phone}</div>
+                                        )}
+                                    </div>
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label>Contact&nbsp;Source</label>
+                                        <select name="source" id="" value={values.source}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.source && touched.source && "error"}>
+                                            <option value="enterprise">&nbsp;Advertisement</option>
+                                            <option value="foundation">&nbsp;Customer&nbsp;Event</option>
+                                            <option value="migration">&nbsp;Employee&nbsp;Referral</option>
+                                            <option value="operations">&nbsp;Google&nbsp;Adwords</option>
+                                            <option value="others">&nbsp;Other</option>
+                                            <option value="optimization">&nbsp;Partner</option>
+                                            <option value="optimization">&nbsp;Purchased&nbsp;List</option>
+                                            <option value="optimization">&nbsp;Trade&nbsp;Show</option>
+                                            <option value="optimization">&nbsp;Webinar</option>
+                                            <option value="optimization">&nbsp;Website</option>
+                                        </select>
+                                        {errors.source && touched.source && (
+                                            <div className="input-feedback">{errors.source}</div>
+                                        )}
+                                    </div>
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
+                                        <label>Select&nbsp;Service</label>
+                                        <select name="service" value={values.service}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.service && touched.service && "error"}>>
+              {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
+                                            <option value="enterprise">&nbsp;Cloud</option>
+                                            <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
+                                            <option value="foundation">&nbsp;Foundation</option>
+                                            <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
+                                            <option value="operations">&nbsp;Operations</option>
+                                            <option value="optimization">&nbsp;Optimization</option>
+                                            <option value="others">&nbsp;Others</option>
+                                        </select>
+                                        {errors.service && touched.service && (
+                                            <div className="input-feedback">{errors.service}</div>
+                                        )}
+                                    </div>
+                                  <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting}>
+                                    Submit
+          </button>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </section>
+                    );
+                }}
+            </Formik>
+        )
     };
 };
 

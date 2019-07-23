@@ -1448,14 +1448,6 @@ overflow: hidden;
     border: 1px solid black;
   }
  .h-70{
-  height: 50px;
-
-    width: 3%;
-
-    width: 7%;
-    /* border: 1px solid black; */
-  }
- .h-70{
   height: 70px;
   }
   a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
@@ -1623,4 +1615,29 @@ input.has-error, select.has-error, textarea.has-error {
   width: 100%;
   height: 2.8rem;
   /* margin-top: 2rem; */
+}
+.modalContact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.rows{
+  width:100%;
+  display: flex;
+
+}
+.rows > div{
+      display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0.5rem 2rem;
+}
+.mcf{
+  flex-grow: 1;
+}
+.fright{
+  float: right;
+}
+.input-feedback{
+  color:#be0a0a;
 }

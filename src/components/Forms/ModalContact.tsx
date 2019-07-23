@@ -1,191 +1,232 @@
 import * as React from "react";
+import { Formik } from "formik";
+import * as Yup from "yup";
 
-const validationRules = {
-  required: (val) => val !== null && val !== undefined && val !== '',
-  phone: (phone) => {
-    const re = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-    return re.test(String(phone));
-  },
-  mobile: (mobile) => {
-    const re = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-    return re.test(String(mobile));
-  },
-  email: (email) => {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
+function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
+  // we are going to store errors for all fields
+  // in a signle array
+  const errors = [];
+
+  if (firstname.length === 0) {
+    errors.push("First Name can't be empty");
   }
+  if (lastname.length === 0) {
+    errors.push("Last Name can't be empty");
+  }
+  if (jobtitle.length === 0) {
+    errors.push("Job Title can't be empty");
+  }
+  if (country.length === 0) {
+    errors.push("Country can't be empty");
+  }
+  if (phone.length === 0) {
+    errors.push("Phone number can't be empty");
+  }
+
+  if (email.length < 5) {
+    errors.push("Email should be at least 5 charcters long");
+  }
+  if (email.split("").filter(x => x === "@").length !== 1) {
+    errors.push("Email should contain a @");
+  }
+  if (email.indexOf(".") === -1) {
+    errors.push("Email should contain at least one dot");
+  }
+
+  if (company.length < 6) {
+    errors.push("company name should be mentioned");
+  }
+  if (source.length < 6) {
+    errors.push("Select following option");
+  }
+  if (service.length < 6) {
+    errors.push("Select following option");
+  }
+
+  return errors;
 }
 
+const ModalContact = () => (
+  <Formik
+    initialValues={{
+      firstname: '', lastname: '', email: '', company: '',
+      jobtitle: '', country: '', phone: '', source: '', service: ''
+    }}
+    onSubmit={(values, { setSubmitting }) => {
+      setTimeout(() => {
+        console.log("Logging in", values);
+        setSubmitting(false);
+      }, 500);
+    }}
 
-export class ModalContact extends React.Component<any, any, any> {
-  constructor(props: any) {
-    super(props);
+    //********Using Yum for validation********/
 
-  }
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
-  formValidationRules = {
-    'firstName': [{ rule: validationRules.required, message: 'First name is required' }],
-    'lastName': [{ rule: validationRules.required, message: 'Last name is required' }],
-    'company': [{ rule: validationRules.required, message: 'Company is required' }],
-    'country': [{ rule: validationRules.required, message: 'country is required' }],
-    'jobtitle': [{ rule: validationRules.required, message: 'Job Title is required' }],
-    'phone': [{ rule: validationRules.phone, message: 'Phone number is invalid' }],
-    'email': [{ rule: validationRules.required, message: 'Email is required' }, { rule: validationRules.email, message: 'Email is invalid' }],
-    'select': [{ rule: validationRules.phone, message: 'Select an option' }],
-  }
+    validationSchema={Yup.object().shape({
+      email: Yup.string()
+        .email()
+        .required("Required")
+        .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
+      phone: Yup.string()
+        .required("No Phone Number  provided.")
+        .min(10, "Phone number should be 10 chars minimum.")
+        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Phone Number"),
+      firstname: Yup.string()
+        .required("No First Name provided.")
+        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
+      lastname: Yup.string()
+        .required("No Last Name provided.")
+        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
+      company: Yup.string()
+        .required("No Company Name provided.")
+        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
+      jobtitle: Yup.string()
+        .required("No Job title Name provided.")
+        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Job title"),
+      country: Yup.string()
+        .required("No country Name provided.")
+        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Country"),
+      source: Yup.string()
+        .required("No Option selected.")
+        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
+      service: Yup.string()
+        .required("No Option selected.")
+        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
 
-  fields = ['firstName', 'lastName', 'phone', 'country', 'email', 'company', 'jobtitle'];
-
-  state = {
-    signupForm: { isValid: false },
-    firstName: { value: '', isTouched: false, isValid: false, errors: [] },
-    lastName: { value: '', isTouched: false, isValid: false, errors: [] },
-    company: { value: '', isTouched: false, isValid: false, errors: [] },
-    jobtitle: { value: '', isTouched: false, isValid: false, errors: [] },
-    phone: { value: '', isTouched: false, isValid: false, errors: [] },
-    country: { value: '', isTouched: false, isValid: false, errors: [] },
-    email: { value: '', isTouched: false, isValid: false, errors: [] },
-    select: { value: '', isTouched: false, isValid: false, errors: [] },
-  }
-
-  handleFieldChange = e => {
-    let newState = { ...this.state };
-    newState[e.target.name].value = e.target.value;
-    this.validateForm(newState);
-  }
-
-  handleSetTouched = e => {
-    let field = { ...this.state[e.target.name], isTouched: true };
-    this.setState({ [e.target.name]: { ...field } });
-  }
-
-  getClassName = fieldName => {
-    const field = this.state[fieldName];
-    return field.isTouched && !field.isValid ? 'has-error' : '';
-  }
-  // validateForm() {
-  //     this.setState({ formValid: this.state.emailValid && this.state.passwordValid });
-  // }
-  validateForm = (newState) => {
-    newState = newState || { ...this.state };
-    this.fields.map(fieldName => {
-      let newField = newState[fieldName];
-      newField.errors = [];
-      newField.isValid = true;
-      this.formValidationRules[fieldName].map(vRule => {
-        if (!vRule.rule(this.state[fieldName].value)) {
-          newField.errors.push(vRule.message);
-          newField.isValid = false;
-        }
-        newState[fieldName] = newField;
-      })
-    })
-    this.setState(newState);
-  };
-
-  componentWillMount() {
-    let newState = { ...this.state }
-    this.validateForm(newState);
-  };
-
-  render() {
-    const { firstName, lastName, company, country, phone, jobtitle, email } = this.state;
-    return (
-      <div className="bg-lightgrey">
-        <form>
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                <label>First Name</label>
+    })}
+  >
+    {props => {
+      const {
+        values,
+        touched,
+        errors,
+        isSubmitting,
+        handleChange,
+        handleBlur,
+        handleSubmit
+      } = props;
+      return (
+        <form onSubmit={handleSubmit}>
+          <div className="modalContact">
+            <div className="rows">
+              <div>
+                <label>First&nbsp;Name</label>
                 <input
-                  className={firstName.isTouched && !firstName.isValid ? 'has-error' : ''}
-                  name="firstName"
-                  value={firstName.value}
-                  onChange={this.handleFieldChange}
-                  onBlur={this.handleSetTouched}
-                  placeholder="First Name"
+                  name="firstname"
+                  type="text"
+                  placeholder="Enter Your First Name"
+                  value={values.firstname}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.firstname && touched.firstname && "error"}
                 />
-                {firstName.isTouched && firstName.errors.length > 0 && firstName.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
+                {errors.firstname && touched.firstname && (
+                  <div className="input-feedback">{errors.firstname}</div>
+                )}
               </div>
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                <label>Last Name</label>
+              <div>
+                <label>Last&nbsp;Name</label>
                 <input
-                  className={lastName.isTouched && !lastName.isValid ? 'has-error' : ''}
-                  name="lastName"
-                  value={this.state.lastName.value}
-                  onChange={this.handleFieldChange}
-                  onBlur={this.handleSetTouched}
-                  placeholder="Last Name"
+                  name="lastname"
+                  type="text"
+                  placeholder="Enter Your Last Name"
+                  value={values.lastname}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.lastname && touched.lastname && "error"}
                 />
-                {lastName.isTouched && lastName.errors.length > 0 && lastName.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
+                {errors.lastname && touched.lastname && (
+                  <div className="input-feedback">{errors.lastname}</div>
+                )}
               </div>
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                <label>Email</label>
+            </div>
+            <div className="rows">
+              <div className="mcf">
+                <label htmlFor="email">Email</label>
                 <input
-                  className={email.isTouched && !email.isValid ? 'has-error' : ''}
                   name="email"
-                  value={this.state.email.value}
-                  onChange={this.handleFieldChange}
-                  onBlur={this.handleSetTouched}
-                  placeholder="Business Email Address"
+                  type="text"
+                  placeholder="Enter your Business Email Address"
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.email && touched.email && "error"}
                 />
-                {email.isTouched && email.errors.length > 0 && email.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
+                {errors.email && touched.email && (
+                  <div className="input-feedback">{errors.email}</div>
+                )}
               </div>
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                <label>Company</label>
+            </div>
+            <div className="rows">
+              <div>
+                <label>Select&nbsp;Company</label>
                 <input
-                  className={company.isTouched && !company.isValid ? 'has-error' : ''}
                   name="company"
-                  value={this.state.company.value}
-                  onChange={this.handleFieldChange}
-                  onBlur={this.handleSetTouched}
-                  placeholder="Company"
+                  type="text"
+                  placeholder="Enter Your Company Name"
+                  value={values.company}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.company && touched.company && "error"}
                 />
-                {company.isTouched && company.errors.length > 0 && company.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
+                {errors.company && touched.company && (
+                  <div className="input-feedback">{errors.company}</div>
+                )}
               </div>
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                <label>Job Title</label>
+              <div>
+                <label>Job Title/Region</label>
                 <input
-                  className={jobtitle.isTouched && !jobtitle.isValid ? 'has-error' : ''}
                   name="jobtitle"
-                  value={this.state.jobtitle.value}
-                  onChange={this.handleFieldChange}
-                  onBlur={this.handleSetTouched}
-                  placeholder="Job Title"
+                  type="text"
+                  placeholder="Enter Your Country/Region"
+                  value={values.jobtitle}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.jobtitle && touched.jobtitle && "error"}
                 />
-                {jobtitle.isTouched && jobtitle.errors.length > 0 && jobtitle.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
+                {errors.jobtitle && touched.jobtitle && (
+                  <div className="input-feedback">{errors.jobtitle}</div>
+                )}
               </div>
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
+            </div>
+            <div className="rows">
+              <div>
+                <label htmlFor="email">Telephone</label>
+                <input
+                  name="phone"
+                  type="tel"
+                  placeholder="Enter your Phone Number"
+                  value={values.phone}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.phone && touched.phone && "error"}
+                />
+                {errors.phone && touched.phone && (
+                  <div className="input-feedback">{errors.phone}</div>
+                )}
+              </div>
+              <div>
                 <label>Country/Region</label>
                 <input
-                  className={country.isTouched && !country.isValid ? 'has-error' : ''}
                   name="country"
-                  value={this.state.country.value}
-                  onChange={this.handleFieldChange}
-                  placeholder="Country"
-                  onBlur={this.handleSetTouched}
-
+                  type="text"
+                  placeholder="Enter Your Country/Region"
+                  value={values.country}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.country && touched.country && "error"}
                 />
-                {country.isTouched && country.errors.length > 0 && country.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
+                {errors.country && touched.country && (
+                  <div className="input-feedback">{errors.country}</div>
+                )}
               </div>
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                <label>Phone</label>
-                <input
-                  className={phone.isTouched && !phone.isValid ? 'has-error' : ''}
-                  name="phone"
-                  value={this.state.phone.value}
-                  onChange={this.handleFieldChange}
-                  placeholder="1234-456-789"
-                  onBlur={this.handleSetTouched}
-                />
-                {phone.isTouched && phone.errors.length > 0 && phone.errors.map((err, i) => (<span key={i} className="error-message">{err}</span>))}
-              </div>
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                <label>Contact Source</label>
-                <select className="ModalContactinputBoxFlex">
-                  {/* <option value="enterprise">&nbsp;Contact&nbsp;Source</option> */}
+            </div>
+            <div className="rows">
+              <div>
+                <label>Select&nbsp;Source</label>
+                <select name="source" id="" value={values.source}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.source && touched.source && "error"}>
                   <option value="enterprise">&nbsp;Advertisement</option>
                   <option value="foundation">&nbsp;Customer&nbsp;Event</option>
                   <option value="migration">&nbsp;Employee&nbsp;Referral</option>
@@ -197,11 +238,17 @@ export class ModalContact extends React.Component<any, any, any> {
                   <option value="optimization">&nbsp;Webinar</option>
                   <option value="optimization">&nbsp;Website</option>
                 </select>
+                {errors.source && touched.source && (
+                  <div className="input-feedback">{errors.source}</div>
+                )}
               </div>
-              <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group">
-                <label>Select Service</label>
-                <select className="ModalContactinputBoxFlex">
-                  {/* <option value="enterprise">&nbsp;Select&nbsp;Service</option> */}
+              <div>
+                <label>Select&nbsp;Service</label>
+                <select name="service" value={values.service}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={errors.service && touched.service && "error"}>>
+              {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
                   <option value="enterprise">&nbsp;Cloud</option>
                   <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
                   <option value="foundation">&nbsp;Foundation</option>
@@ -210,21 +257,20 @@ export class ModalContact extends React.Component<any, any, any> {
                   <option value="optimization">&nbsp;Optimization</option>
                   <option value="others">&nbsp;Others</option>
                 </select>
+                {errors.service && touched.service && (
+                  <div className="input-feedback">{errors.service}</div>
+                )}
               </div>
             </div>
-
-            <div className='text-center px-5 pt-3 pb-5'>
-              <button className='btn bg-logoblue text-white btnSend' id="submit"
-                // value="Submit" disabled={!this.state.formValid}>Submit</button>
-                value="Submit">Submit</button>
-            </div>
-
           </div>
+          <button type="submit" className="btn btn-primary fright" disabled={isSubmitting}>
+            Submit
+          </button>
         </form>
-        {/* Contact Ends */}
-      </div>
-    );
-  };
-};
+      );
+    }}
+  </Formik>
+);
+
 
 export default ModalContact;
