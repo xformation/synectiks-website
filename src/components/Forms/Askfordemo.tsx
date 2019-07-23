@@ -260,11 +260,12 @@ export class Askfordemo extends React.Component<{}, {}> {
                                             <div className="input-feedback">{errors.service}</div>
                                         )}
                                     </div>
+                                    <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting}>
+                                        Submit
+          </button>
                                 </div>
                             </div>
-                            <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting}>
-                                Submit
-          </button>
+
                         </form>
                     </section>
                     );

@@ -52434,8 +52434,8 @@ class Askfordemo extends React.Component {
                                     React.createElement("option", { value: "operations" }, "\u00A0Operations"),
                                     React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
                                     React.createElement("option", { value: "others" }, "\u00A0Others")),
-                                errors.service && touched.service && (React.createElement("div", { className: "input-feedback" }, errors.service))))),
-                    React.createElement("button", { type: "submit", className: "btn bg-logoblue text-white btnSend my-3 mx-auto", disabled: isSubmitting }, "Submit"))));
+                                errors.service && touched.service && (React.createElement("div", { className: "input-feedback" }, errors.service))),
+                            React.createElement("button", { type: "submit", className: "btn bg-logoblue text-white btnSend my-3 mx-auto", disabled: isSubmitting }, "Submit"))))));
         }));
     }
 }
@@ -53318,8 +53318,8 @@ class Contact extends React.Component {
                                     React.createElement("option", { value: "operations" }, "\u00A0Operations"),
                                     React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
                                     React.createElement("option", { value: "others" }, "\u00A0Others")),
-                                errors.service && touched.service && (React.createElement("div", { className: "input-feedback" }, errors.service))))),
-                    React.createElement("button", { type: "submit", className: "btn bg-logoblue text-white btnSend my-3 mx-auto", disabled: isSubmitting }, "Submit"))));
+                                errors.service && touched.service && (React.createElement("div", { className: "input-feedback" }, errors.service))),
+                            React.createElement("button", { type: "submit", className: "btn bg-logoblue text-white btnSend my-3 mx-auto", disabled: isSubmitting }, "Submit"))))));
         }));
     }
     ;
