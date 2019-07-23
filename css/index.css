@@ -1572,22 +1572,14 @@ form {
   /* background: #F3F5F7/; */
   width: 100%;
   margin: 0px auto;
-<<<<<<< HEAD
-  padding: 2rem 3rem 0rem 3rem;
-=======
   padding: 1rem 3rem 0rem 3rem;
->>>>>>> b1942ab1b635c8b54c9739fda4693c8cbeb29d29
   border-radius: 5px;
 }
 
 .field-group {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  margin-bottom: 35px;
-=======
   margin-bottom: 1em;
->>>>>>> b1942ab1b635c8b54c9739fda4693c8cbeb29d29
 }
 
 label {
@@ -1631,4 +1623,29 @@ input.has-error, select.has-error, textarea.has-error {
   width: 100%;
   height: 2.8rem;
   /* margin-top: 2rem; */
+}
+.modalContact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.rows{
+  width:100%;
+  display: flex;
+
+}
+.rows > div{
+      display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0.5rem 2rem;
+}
+.mcf{
+  flex-grow: 1;
+}
+.fright{
+  float: right;
+}
+.input-feedback{
+  color:#be0a0a;
 }
