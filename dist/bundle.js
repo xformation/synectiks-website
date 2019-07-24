@@ -52281,6 +52281,14 @@ exports.default = Applicationservices;
 
 "use strict";
 
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const formik_1 = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
@@ -52325,19 +52333,19 @@ function validate(firstname, lastname, email, company, jobtitle, country, phone,
     return errors;
 }
 class Askfordemo extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (React.createElement(formik_1.Formik, { initialValues: {
                 firstname: '', lastname: '', email: '', company: '',
                 city: '', mobile: '', phone: '', source: '', service: ''
-            }, onSubmit: (values, { setSubmitting }) => {
+            }, onSubmit: (values, { setSubmitting, resetForm, setStatus }) => __awaiter(this, void 0, void 0, function* () {
                 setTimeout(() => {
                     console.log("Logging in", values);
+                    // alert("Thank you");
+                    resetForm();
+                    setStatus({ success: "Thank You ! We will get in touch with you soon." });
                     setSubmitting(false);
                 }, 500);
-            }, 
+            }), 
             //********Using Yum for validation********/
             validationSchema: Yup.object().shape({
                 email: Yup.string()
@@ -52371,14 +52379,14 @@ class Askfordemo extends React.Component {
                     .required("No Option selected.")
                     .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
             }) }, props => {
-            const { values, touched, errors, isSubmitting, handleChange, handleBlur, handleSubmit } = props;
+            const { values, touched, errors, isSubmitting, handleChange, handleBlur, handleSubmit, status } = props;
             return (React.createElement("section", null,
                 React.createElement("div", null,
                     React.createElement("img", { className: "text-center pt-5 mt-5", src: "img/NiceToMeet.png", width: "100%", alt: "Card image Foundation" }),
                     React.createElement("div", { className: "text-center centered " },
                         React.createElement("div", { className: "text-white" },
                             React.createElement("h3", null, "Nice\u00A0To\u00A0Meet\u00A0You!")))),
-                React.createElement("form", { onSubmit: handleSubmit },
+                React.createElement("form", { id: "Contactform", onSubmit: handleSubmit },
                     React.createElement("div", { className: "container-fluid" },
                         React.createElement("div", { className: "row" },
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
@@ -52426,7 +52434,6 @@ class Askfordemo extends React.Component {
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "Select\u00A0Service"),
                                 React.createElement("select", { name: "service", value: values.service, onChange: handleChange, onBlur: handleBlur, className: errors.service && touched.service && "error" },
-                                    ">",
                                     React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
                                     React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
                                     React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
@@ -52435,7 +52442,8 @@ class Askfordemo extends React.Component {
                                     React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
                                     React.createElement("option", { value: "others" }, "\u00A0Others")),
                                 errors.service && touched.service && (React.createElement("div", { className: "input-feedback" }, errors.service))),
-                            React.createElement("button", { type: "submit", className: "btn bg-logoblue text-white btnSend my-3 mx-auto", disabled: isSubmitting }, "Submit"))))));
+                            React.createElement("button", { type: "submit", className: "btn bg-logoblue text-white btnSend my-3 mx-auto", disabled: isSubmitting }, "Submit"),
+                            status ? status.success : "")))));
         }));
     }
 }
@@ -53130,89 +53138,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const formik_1 = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 const Yup = __webpack_require__(/*! yup */ "./node_modules/yup/lib/index.js");
-const validationRules = {
-    required: (val) => val !== null && val !== undefined && val !== '',
-    phone: (phone) => {
-        const re = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-        return re.test(String(phone));
-    },
-    mobile: (mobile) => {
-        const re = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-        return re.test(String(mobile));
-    },
-    email: (email) => {
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
-};
 class Contact extends React.Component {
     constructor(props) {
         super(props);
-        this.formValidationRules = {
-            'firstName': [{ rule: validationRules.required, message: 'First name is required' }],
-            'lastName': [{ rule: validationRules.required, message: 'Last name is required' }],
-            'company': [{ rule: validationRules.required, message: 'Company is required' }],
-            'city': [{ rule: validationRules.required, message: 'City is required' }],
-            'phone': [{ rule: validationRules.phone, message: 'Phone number is invalid' }],
-            'mobile': [{ rule: validationRules.mobile, message: 'mobile number is invalid' }],
-            'email': [{ rule: validationRules.required, message: 'Email is required' }, { rule: validationRules.email, message: 'Email is invalid' }],
-            'select': [{ rule: validationRules.phone, message: 'Select an option' }],
-        };
-        this.fields = ['firstName', 'lastName', 'phone', 'mobile', 'email', 'company', 'city'];
-        this.state = {
-            signupForm: { isValid: false },
-            firstName: { value: '', isTouched: false, isValid: false, errors: [] },
-            lastName: { value: '', isTouched: false, isValid: false, errors: [] },
-            company: { value: '', isTouched: false, isValid: false, errors: [] },
-            city: { value: '', isTouched: false, isValid: false, errors: [] },
-            phone: { value: '', isTouched: false, isValid: false, errors: [] },
-            mobile: { value: '', isTouched: false, isValid: false, errors: [] },
-            email: { value: '', isTouched: false, isValid: false, errors: [] },
-            select: { value: '', isTouched: false, isValid: false, errors: [] },
-        };
-        this.handleFieldChange = e => {
-            let newState = Object.assign({}, this.state);
-            newState[e.target.name].value = e.target.value;
-            this.validateForm(newState);
-        };
-        this.handleSetTouched = e => {
-            let field = Object.assign({}, this.state[e.target.name], { isTouched: true });
-            this.setState({ [e.target.name]: Object.assign({}, field) });
-        };
-        this.getClassName = fieldName => {
-            const field = this.state[fieldName];
-            return field.isTouched && !field.isValid ? 'has-error' : '';
-        };
-        // validateForm() {
-        //     this.setState({ formValid: this.state.emailValid && this.state.passwordValid });
-        // }
-        this.validateForm = (newState) => {
-            newState = newState || Object.assign({}, this.state);
-            this.fields.map(fieldName => {
-                let newField = newState[fieldName];
-                newField.errors = [];
-                newField.isValid = true;
-                this.formValidationRules[fieldName].map(vRule => {
-                    if (!vRule.rule(this.state[fieldName].value)) {
-                        newField.errors.push(vRule.message);
-                        newField.isValid = false;
-                    }
-                    newState[fieldName] = newField;
-                });
-            });
-            this.setState(newState);
-        };
     }
     componentDidMount() {
         window.scrollTo(0, 0);
     }
-    componentWillMount() {
-        let newState = Object.assign({}, this.state);
-        this.validateForm(newState);
-    }
-    ;
     render() {
-        const { firstName, lastName, company, city, phone, mobile, email } = this.state;
+        const { firstName, lastName, company, city, phone, mobile, email, source, service } = this.state;
         return (React.createElement(formik_1.Formik, { initialValues: {
                 firstname: '', lastname: '', email: '', company: '',
                 city: '', mobile: '', phone: '', source: '', service: ''

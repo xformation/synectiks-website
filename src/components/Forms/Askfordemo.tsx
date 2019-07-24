@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Formik } from "formik";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
@@ -46,9 +46,6 @@ function validate(firstname, lastname, email, company, jobtitle, country, phone,
     return errors;
 }
 export class Askfordemo extends React.Component<{}, {}> {
-    constructor(props: any) {
-        super(props);
-    }
 
     render() {
         return (
@@ -57,9 +54,12 @@ export class Askfordemo extends React.Component<{}, {}> {
                     firstname: '', lastname: '', email: '', company: '',
                     city: '', mobile: '', phone: '', source: '', service: ''
                 }}
-                onSubmit={(values, { setSubmitting }) => {
+                onSubmit={async (values, { setSubmitting, resetForm, setStatus }) => {
                     setTimeout(() => {
                         console.log("Logging in", values);
+                        // alert("Thank you");
+                        resetForm();
+                        setStatus({ success: "Thank You ! We will get in touch with you soon." });
                         setSubmitting(false);
                     }, 500);
                 }}
@@ -108,11 +108,12 @@ export class Askfordemo extends React.Component<{}, {}> {
                         isSubmitting,
                         handleChange,
                         handleBlur,
-                        handleSubmit
+                        handleSubmit,
+                        status
                     } = props;
                     return (<section>
                         <div><img className="text-center pt-5 mt-5" src="img/NiceToMeet.png" width="100%" alt="Card image Foundation" /><div className="text-center centered "><div className="text-white"><h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3></div></div></div>
-                        <form onSubmit={handleSubmit}>
+                        <form id="Contactform" onSubmit={handleSubmit}>
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
@@ -246,8 +247,7 @@ export class Askfordemo extends React.Component<{}, {}> {
                                         <select name="service" value={values.service}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
-                                            className={errors.service && touched.service && "error"}>>
-              {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
+                                            className={errors.service && touched.service && "error"}>
                                             <option value="enterprise">&nbsp;Cloud</option>
                                             <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
                                             <option value="foundation">&nbsp;Foundation</option>
@@ -260,9 +260,10 @@ export class Askfordemo extends React.Component<{}, {}> {
                                             <div className="input-feedback">{errors.service}</div>
                                         )}
                                     </div>
-                                    <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting}>
+
+                                    <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
                                         Submit
-          </button>
+                                    </button>{status ? status.success : ""}
                                 </div>
                             </div>
 

@@ -1,22 +1,6 @@
 import * as React from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
-const validationRules = {
-    required: (val) => val !== null && val !== undefined && val !== '',
-    phone: (phone) => {
-        const re = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-        return re.test(String(phone));
-    },
-    mobile: (mobile) => {
-        const re = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-        return re.test(String(mobile));
-    },
-    email: (email) => {
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
-}
-
 
 export class Contact extends React.Component<any, any, any> {
     constructor(props: any) {
@@ -26,73 +10,9 @@ export class Contact extends React.Component<any, any, any> {
     componentDidMount() {
         window.scrollTo(0, 0)
     }
-    formValidationRules = {
-        'firstName': [{ rule: validationRules.required, message: 'First name is required' }],
-        'lastName': [{ rule: validationRules.required, message: 'Last name is required' }],
-        'company': [{ rule: validationRules.required, message: 'Company is required' }],
-        'city': [{ rule: validationRules.required, message: 'City is required' }],
-        'phone': [{ rule: validationRules.phone, message: 'Phone number is invalid' }],
-        'mobile': [{ rule: validationRules.mobile, message: 'mobile number is invalid' }],
-        'email': [{ rule: validationRules.required, message: 'Email is required' }, { rule: validationRules.email, message: 'Email is invalid' }],
-        'select': [{ rule: validationRules.phone, message: 'Select an option' }],
-    }
-
-    fields = ['firstName', 'lastName', 'phone', 'mobile', 'email', 'company', 'city'];
-
-    state = {
-        signupForm: { isValid: false },
-        firstName: { value: '', isTouched: false, isValid: false, errors: [] },
-        lastName: { value: '', isTouched: false, isValid: false, errors: [] },
-        company: { value: '', isTouched: false, isValid: false, errors: [] },
-        city: { value: '', isTouched: false, isValid: false, errors: [] },
-        phone: { value: '', isTouched: false, isValid: false, errors: [] },
-        mobile: { value: '', isTouched: false, isValid: false, errors: [] },
-        email: { value: '', isTouched: false, isValid: false, errors: [] },
-        select: { value: '', isTouched: false, isValid: false, errors: [] },
-    }
-
-    handleFieldChange = e => {
-        let newState = { ...this.state };
-        newState[e.target.name].value = e.target.value;
-        this.validateForm(newState);
-    }
-
-    handleSetTouched = e => {
-        let field = { ...this.state[e.target.name], isTouched: true };
-        this.setState({ [e.target.name]: { ...field } });
-    }
-
-    getClassName = fieldName => {
-        const field = this.state[fieldName];
-        return field.isTouched && !field.isValid ? 'has-error' : '';
-    }
-    // validateForm() {
-    //     this.setState({ formValid: this.state.emailValid && this.state.passwordValid });
-    // }
-    validateForm = (newState) => {
-        newState = newState || { ...this.state };
-        this.fields.map(fieldName => {
-            let newField = newState[fieldName];
-            newField.errors = [];
-            newField.isValid = true;
-            this.formValidationRules[fieldName].map(vRule => {
-                if (!vRule.rule(this.state[fieldName].value)) {
-                    newField.errors.push(vRule.message);
-                    newField.isValid = false;
-                }
-                newState[fieldName] = newField;
-            })
-        })
-        this.setState(newState);
-    };
-
-    componentWillMount() {
-        let newState = { ...this.state }
-        this.validateForm(newState);
-    };
 
     render() {
-        const { firstName, lastName, company, city, phone, mobile, email } = this.state;
+        const { firstName, lastName, company, city, phone, mobile, email, source, service } = this.state;
         return (
             <Formik
                 initialValues={{
@@ -302,8 +222,8 @@ export class Contact extends React.Component<any, any, any> {
                                             <div className="input-feedback">{errors.service}</div>
                                         )}
                                     </div>
-                                  <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting}>
-                                    Submit
+                                    <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting}>
+                                        Submit
           </button>
                                 </div>
 
