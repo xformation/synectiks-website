@@ -1,27 +1,65 @@
 import * as React from "react";
-import { Formik } from "formik";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-export class Contact extends React.Component<any, any, any> {
-    constructor(props: any) {
-        super(props);
+function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
+    // we are going to store errors for all fields
+    // in a signle array
+    const errors = [];
 
+    if (firstname.length === 0) {
+        errors.push("First Name can't be empty");
     }
-    componentDidMount() {
-        window.scrollTo(0, 0)
+    if (lastname.length === 0) {
+        errors.push("Last Name can't be empty");
     }
+    if (jobtitle.length === 0) {
+        errors.push("Job Title can't be empty");
+    }
+    if (country.length === 0) {
+        errors.push("Country can't be empty");
+    }
+    if (phone.length === 0) {
+        errors.push("Phone number can't be empty");
+    }
+
+    if (email.length < 5) {
+        errors.push("Email should be at least 5 charcters long");
+    }
+    if (email.split("").filter(x => x === "@").length !== 1) {
+        errors.push("Email should contain a @");
+    }
+    if (email.indexOf(".") === -1) {
+        errors.push("Email should contain at least one dot");
+    }
+
+    if (company.length < 6) {
+        errors.push("company name should be mentioned");
+    }
+    if (source.length < 6) {
+        errors.push("Select following option");
+    }
+    if (service.length < 6) {
+        errors.push("Select following option");
+    }
+
+    return errors;
+}
+export class Contact extends React.Component<{}, {}> {
 
     render() {
-        const { firstName, lastName, company, city, phone, mobile, email, source, service } = this.state;
         return (
             <Formik
                 initialValues={{
                     firstname: '', lastname: '', email: '', company: '',
                     city: '', mobile: '', phone: '', source: '', service: ''
                 }}
-                onSubmit={(values, { setSubmitting }) => {
+                onSubmit={async (values, { setSubmitting, resetForm, setStatus }) => {
                     setTimeout(() => {
                         console.log("Logging in", values);
+                        // alert("Thank you");
+                        resetForm();
+                        setStatus({ success: "Thank You ! We will get in touch with you soon." });
                         setSubmitting(false);
                     }, 500);
                 }}
@@ -70,11 +108,13 @@ export class Contact extends React.Component<any, any, any> {
                         isSubmitting,
                         handleChange,
                         handleBlur,
-                        handleSubmit
+                        handleSubmit,
+                        status
                     } = props;
                     return (<section>
                         <div><img className="text-center pt-5 mt-5" src="img/NiceToMeet.png" width="100%" alt="Card image Foundation" /><div className="text-center centered "><div className="text-white"><h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3></div></div></div>
-                        <form onSubmit={handleSubmit}>
+                        <div ><h2 className="text-center text-black">Contact Us</h2></div>
+                        <form id="contactform" className="py-3" onSubmit={handleSubmit}>
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
@@ -188,16 +228,17 @@ export class Contact extends React.Component<any, any, any> {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.source && touched.source && "error"}>
-                                            <option value="enterprise">&nbsp;Advertisement</option>
-                                            <option value="foundation">&nbsp;Customer&nbsp;Event</option>
-                                            <option value="migration">&nbsp;Employee&nbsp;Referral</option>
-                                            <option value="operations">&nbsp;Google&nbsp;Adwords</option>
-                                            <option value="others">&nbsp;Other</option>
-                                            <option value="optimization">&nbsp;Partner</option>
-                                            <option value="optimization">&nbsp;Purchased&nbsp;List</option>
-                                            <option value="optimization">&nbsp;Trade&nbsp;Show</option>
-                                            <option value="optimization">&nbsp;Webinar</option>
-                                            <option value="optimization">&nbsp;Website</option>
+                                            <option value="" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option>    
+                                            <option value="Advertisement">&nbsp;Advertisement</option>
+                                            <option value="CustomerEvent">&nbsp;Customer&nbsp;Event</option>
+                                            <option value="EmployeeReferral">&nbsp;Employee&nbsp;Referral</option>
+                                            <option value="GoogleAdwords">&nbsp;Google&nbsp;Adwords</option>
+                                            <option value="Other">&nbsp;Other</option>
+                                            <option value="Partner">&nbsp;Partner</option>
+                                            <option value="PurchasedList">&nbsp;Purchased&nbsp;List</option>
+                                            <option value="TradeShow">&nbsp;Trade&nbsp;Show</option>
+                                            <option value="Webinar">&nbsp;Webinar</option>
+                                            <option value="Website">&nbsp;Website</option>
                                         </select>
                                         {errors.source && touched.source && (
                                             <div className="input-feedback">{errors.source}</div>
@@ -208,34 +249,35 @@ export class Contact extends React.Component<any, any, any> {
                                         <select name="service" value={values.service}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
-                                            className={errors.service && touched.service && "error"}>>
-              {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
-                                            <option value="enterprise">&nbsp;Cloud</option>
-                                            <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
-                                            <option value="foundation">&nbsp;Foundation</option>
-                                            <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
-                                            <option value="operations">&nbsp;Operations</option>
-                                            <option value="optimization">&nbsp;Optimization</option>
-                                            <option value="others">&nbsp;Others</option>
+                                            className={errors.service && touched.service && "error"}>
+                                             <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>    
+                                            <option value="Cloud">&nbsp;Cloud</option>
+                                            <option value="EnterpriseTransformation">&nbsp;Enterprise&nbsp;Transformation</option>
+                                            <option value="Foundation">&nbsp;Foundation</option>
+                                            <option value="MigrationDeployment">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
+                                            <option value="Operations">&nbsp;Operations</option>
+                                            <option value="Optimization">&nbsp;Optimization</option>
+                                            <option value="Others">&nbsp;Others</option>
                                         </select>
                                         {errors.service && touched.service && (
                                             <div className="input-feedback">{errors.service}</div>
                                         )}
                                     </div>
-                                    <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting}>
+
+                                    <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
                                         Submit
-          </button>
+                                    </button>
+                                   
                                 </div>
-
                             </div>
-
+                            <div className="text-center text-logoblue"><h3>{status ? status.success : ""}</h3></div>
                         </form>
                     </section>
                     );
                 }}
             </Formik>
         )
-    };
-};
+    }
+}
 
 export default Contact;

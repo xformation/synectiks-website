@@ -206,7 +206,7 @@ export class Privatecloud extends React.Component<any, any, any>{
         <div className="">
           <Modal isOpen={this.state.modal} toggle={this.toggle} >
             <ModalHeader className="bg-lightgrey" toggle={this.toggle}>Contact Us</ModalHeader>
-            <ModalBody className="bg-lightgrey">
+            <ModalBody className="bg-lightgrey brdr-btm-030">
               <ModalContact />
             </ModalBody>
           </Modal>

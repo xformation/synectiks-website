@@ -113,7 +113,8 @@ export class Askfordemo extends React.Component<{}, {}> {
                     } = props;
                     return (<section>
                         <div><img className="text-center pt-5 mt-5" src="img/NiceToMeet.png" width="100%" alt="Card image Foundation" /><div className="text-center centered "><div className="text-white"><h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3></div></div></div>
-                        <form id="Contactform" onSubmit={handleSubmit}>
+                        <div ><h2 className="text-center text-black">Ask for Demo</h2><h5 className="text-center text-black">Straight talk on your challenges.</h5></div>
+                        <form id="askdemoform" className="py-3" onSubmit={handleSubmit}>
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
@@ -227,16 +228,17 @@ export class Askfordemo extends React.Component<{}, {}> {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.source && touched.source && "error"}>
-                                            <option value="enterprise">&nbsp;Advertisement</option>
-                                            <option value="foundation">&nbsp;Customer&nbsp;Event</option>
-                                            <option value="migration">&nbsp;Employee&nbsp;Referral</option>
-                                            <option value="operations">&nbsp;Google&nbsp;Adwords</option>
-                                            <option value="others">&nbsp;Other</option>
-                                            <option value="optimization">&nbsp;Partner</option>
-                                            <option value="optimization">&nbsp;Purchased&nbsp;List</option>
-                                            <option value="optimization">&nbsp;Trade&nbsp;Show</option>
-                                            <option value="optimization">&nbsp;Webinar</option>
-                                            <option value="optimization">&nbsp;Website</option>
+                                            <option value="" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option>    
+                                            <option value="Advertisement">&nbsp;Advertisement</option>
+                                            <option value="CustomerEvent">&nbsp;Customer&nbsp;Event</option>
+                                            <option value="EmployeeReferral">&nbsp;Employee&nbsp;Referral</option>
+                                            <option value="GoogleAdwords">&nbsp;Google&nbsp;Adwords</option>
+                                            <option value="Other">&nbsp;Other</option>
+                                            <option value="Partner">&nbsp;Partner</option>
+                                            <option value="PurchasedList">&nbsp;Purchased&nbsp;List</option>
+                                            <option value="TradeShow">&nbsp;Trade&nbsp;Show</option>
+                                            <option value="Webinar">&nbsp;Webinar</option>
+                                            <option value="Website">&nbsp;Website</option>
                                         </select>
                                         {errors.source && touched.source && (
                                             <div className="input-feedback">{errors.source}</div>
@@ -248,13 +250,14 @@ export class Askfordemo extends React.Component<{}, {}> {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.service && touched.service && "error"}>
-                                            <option value="enterprise">&nbsp;Cloud</option>
-                                            <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
-                                            <option value="foundation">&nbsp;Foundation</option>
-                                            <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
-                                            <option value="operations">&nbsp;Operations</option>
-                                            <option value="optimization">&nbsp;Optimization</option>
-                                            <option value="others">&nbsp;Others</option>
+                                            <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>    
+                                            <option value="Cloud">&nbsp;Cloud</option>
+                                            <option value="EnterpriseTransformation">&nbsp;Enterprise&nbsp;Transformation</option>
+                                            <option value="Foundation">&nbsp;Foundation</option>
+                                            <option value="MigrationDeployment">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
+                                            <option value="Operations">&nbsp;Operations</option>
+                                            <option value="Optimization">&nbsp;Optimization</option>
+                                            <option value="Others">&nbsp;Others</option>
                                         </select>
                                         {errors.service && touched.service && (
                                             <div className="input-feedback">{errors.service}</div>
@@ -264,10 +267,9 @@ export class Askfordemo extends React.Component<{}, {}> {
                                     <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
                                         Submit
                                     </button>
-                                    {status ? status.success : ""}
                                 </div>
                             </div>
-
+                            <div className="text-center text-logoblue"><h3>{status ? status.success : ""}</h3></div>
                         </form>
                     </section>
                     );

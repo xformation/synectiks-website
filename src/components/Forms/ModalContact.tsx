@@ -52,9 +52,11 @@ const ModalContact = () => (
       firstname: '', lastname: '', email: '', company: '',
       jobtitle: '', country: '', phone: '', source: '', service: ''
     }}
-    onSubmit={(values, { setSubmitting }) => {
+    onSubmit={(values, { setSubmitting, resetForm, setStatus  }) => {
       setTimeout(() => {
         console.log("Logging in", values);
+        resetForm();
+        setStatus({ success: "Thank You ! We will get in touch with you soon." });
         setSubmitting(false);
       }, 500);
     }}
@@ -102,10 +104,11 @@ const ModalContact = () => (
         isSubmitting,
         handleChange,
         handleBlur,
-        handleSubmit
+        handleSubmit,
+        status
       } = props;
       return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} id="servicecontactform">
           <div className="modalContact">
             <div className="rows">
               <div>
@@ -227,16 +230,17 @@ const ModalContact = () => (
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={errors.source && touched.source && "error"}>
-                  <option value="enterprise">&nbsp;Advertisement</option>
-                  <option value="foundation">&nbsp;Customer&nbsp;Event</option>
-                  <option value="migration">&nbsp;Employee&nbsp;Referral</option>
-                  <option value="operations">&nbsp;Google&nbsp;Adwords</option>
-                  <option value="others">&nbsp;Other</option>
-                  <option value="optimization">&nbsp;Partner</option>
-                  <option value="optimization">&nbsp;Purchased&nbsp;List</option>
-                  <option value="optimization">&nbsp;Trade&nbsp;Show</option>
-                  <option value="optimization">&nbsp;Webinar</option>
-                  <option value="optimization">&nbsp;Website</option>
+                <option value="" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option>    
+                <option value="Advertisement">&nbsp;Advertisement</option>
+                <option value="CustomerEvent">&nbsp;Customer&nbsp;Event</option>
+                <option value="EmployeeReferral">&nbsp;Employee&nbsp;Referral</option>
+                <option value="GoogleAdwords">&nbsp;Google&nbsp;Adwords</option>
+                <option value="Other">&nbsp;Other</option>
+                <option value="Partner">&nbsp;Partner</option>
+                <option value="PurchasedList">&nbsp;Purchased&nbsp;List</option>
+                <option value="TradeShow">&nbsp;Trade&nbsp;Show</option>
+                <option value="Webinar">&nbsp;Webinar</option>
+                <option value="Website">&nbsp;Website</option>
                 </select>
                 {errors.source && touched.source && (
                   <div className="input-feedback">{errors.source}</div>
@@ -249,13 +253,14 @@ const ModalContact = () => (
                   onBlur={handleBlur}
                   className={errors.service && touched.service && "error"}>>
               {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
-                  <option value="enterprise">&nbsp;Cloud</option>
-                  <option value="enterprise">&nbsp;Enterprise&nbsp;Transformation</option>
-                  <option value="foundation">&nbsp;Foundation</option>
-                  <option value="migration">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
-                  <option value="operations">&nbsp;Operations</option>
-                  <option value="optimization">&nbsp;Optimization</option>
-                  <option value="others">&nbsp;Others</option>
+              <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>    
+              <option value="Cloud">&nbsp;Cloud</option>
+              <option value="EnterpriseTransformation">&nbsp;Enterprise&nbsp;Transformation</option>
+              <option value="Foundation">&nbsp;Foundation</option>
+              <option value="MigrationDeployment">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
+              <option value="Operations">&nbsp;Operations</option>
+              <option value="Optimization">&nbsp;Optimization</option>
+              <option value="Others">&nbsp;Others</option>
                 </select>
                 {errors.service && touched.service && (
                   <div className="input-feedback">{errors.service}</div>
@@ -263,9 +268,10 @@ const ModalContact = () => (
               </div>
             </div>
           </div>
-          <button type="submit" className="btn btn-primary fright" disabled={isSubmitting}>
+          <button type="submit" className="btn btn-primary fright mt-3" disabled={isSubmitting}>
             Submit
           </button>
+          <div className="text-center text-logoblue pt-3"><h3>{status ? status.success : ""}</h3></div>
         </form>
       );
     }}
