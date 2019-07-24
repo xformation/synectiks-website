@@ -119,7 +119,7 @@ export class Contact extends React.Component<{}, {}> {
                                 <div className="row">
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label>First&nbsp;Name</label>
-                                        <input
+                                        <input id="firstname"
                                             name="firstname"
                                             type="text"
                                             placeholder="Enter Your First Name"
@@ -134,7 +134,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label>Last&nbsp;Name</label>
-                                        <input
+                                        <input id="lastname"
                                             name="lastname"
                                             type="text"
                                             placeholder="Enter Your Last Name"
@@ -149,7 +149,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label htmlFor="email">Email</label>
-                                        <input
+                                        <input id="email"
                                             name="email"
                                             type="text"
                                             placeholder="Enter your Business Email Address"
@@ -164,7 +164,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label>Company</label>
-                                        <input
+                                        <input id="company"
                                             name="company"
                                             type="text"
                                             placeholder="Enter Your Company Name"
@@ -179,7 +179,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label>City</label>
-                                        <input
+                                        <input id="city"
                                             name="city"
                                             type="text"
                                             placeholder="Enter Your Country/Region"
@@ -194,7 +194,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label>Mobile</label>
-                                        <input
+                                        <input id="mobile"
                                             name="mobile"
                                             type="tel"
                                             placeholder="Enter Your Mobile Number"
@@ -209,7 +209,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label htmlFor="email">Telephone</label>
-                                        <input
+                                        <input id="phone"
                                             name="phone"
                                             type="tel"
                                             placeholder="Enter your Phone Number"
@@ -224,7 +224,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label>Contact&nbsp;Source</label>
-                                        <select name="source" id="" value={values.source}
+                                        <select name="source" id="source" value={values.source}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.source && touched.source && "error"}>
@@ -246,7 +246,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
                                         <label>Select&nbsp;Service</label>
-                                        <select name="service" value={values.service}
+                                        <select name="service" id="service" value={values.service}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.service && touched.service && "error"}>
@@ -264,7 +264,7 @@ export class Contact extends React.Component<{}, {}> {
                                         )}
                                     </div>
 
-                                    <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
+                                    <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
                                         Submit
                                     </button>
                                    
