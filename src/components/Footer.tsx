@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDOM from 'react-dom'
 import {GoogleMap, withGoogleMap, withScriptjs} from 'react-google-maps'
 import { NavLink } from "react-router-dom";
+import {Helmet} from 'react-helmet';
 
 const rootId = 'root'
 const root = document.getElementById(rootId)
@@ -76,6 +77,18 @@ export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6G
         </div>
       </div>
     </div>
+    {/* <Helmet>
+    <script type="text/javascript">
+    var vv_base_id = 'CwVpWHycXJ';
+    var vv_ext_id = '5d3702cb';
+    var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+    (function () {
+    var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true;
+    va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js';
+    var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv);
+    })();
+</script>
+    </Helmet> */}
 
     </div>
   );

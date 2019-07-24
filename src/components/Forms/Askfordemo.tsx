@@ -263,7 +263,8 @@ export class Askfordemo extends React.Component<{}, {}> {
 
                                     <button type="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
                                         Submit
-                                    </button>{status ? status.success : ""}
+                                    </button>
+                                    {status ? status.success : ""}
                                 </div>
                             </div>
 

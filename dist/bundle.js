@@ -3073,7 +3073,7 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "/* body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: sans-serif;\r\n} */\n", ""]);
+exports.push([module.i, "/* body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n} */\n", ""]);
 
 // exports
 
