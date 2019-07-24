@@ -108,7 +108,8 @@ const ModalContact = () => (
         status
       } = props;
       return (
-        <form onSubmit={handleSubmit} id="servicecontactform">
+        <form id="servicecontactform" className="py-3" onSubmit={handleSubmit} action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">    
+        <input type="hidden" name="oid" value="00D1I000000kz7k"/>
           <div className="modalContact">
             <div className="rows">
               <div>
