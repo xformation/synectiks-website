@@ -1450,9 +1450,11 @@ overflow: hidden;
  .h-70{
   height: 70px;
   }
-  a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
+
+  /* a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
     pointer-events: none;
-    }
+    } */
+
 #submenu:hover #cls{
   display: block;
 }
