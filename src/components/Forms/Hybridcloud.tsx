@@ -119,7 +119,7 @@ export class Hybridcloud extends React.Component<any, any, any> {
                     <div className="w-100 ">
                         <img height="auto" width="100%"
                             className=""
-                            src="https://synectiks.com/img/HybridCloud.jpg"
+                            src="img/HybridCloud.jpg"
                             alt="Hybrid Cloud"
                         />
                     </div>

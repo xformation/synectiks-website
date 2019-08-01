@@ -68,7 +68,29 @@ export class Header extends React.Component<any, any, any>{
                       <img className="navbar-icon" src="img/synectiks-logo.png" alt="logo" />
                     </a>
                   </div>
-
+{/*  */}
+{/* <div className="slim-sidebar">
+    <ul className="nav nav-sidebar">
+        <li className="sidebar-nav-item with-sub">
+            <a href="" className="sidebar-nav-link"> Dashboard</a>
+            <ul className="nav sidebar-nav-sub">
+               
+                <li className="nav-sub-item"><a href="" className="nav-sub-link">Page 03</a></li>
+                <li className="nav-sub-item"><a href="" className="nav-sub-link">Page 04</a></li>
+                <li className="nav-sub-item"><a href="" className="nav-sub-link">Page 05</a></li>
+            </ul>
+        </li>
+        <li className="sidebar-nav-item with-sub">
+            <a href="" className="sidebar-nav-link"> Menu</a>
+            <ul className="nav sidebar-nav-sub">
+                <li className="nav-sub-item"><a href="" className="nav-sub-link">Menu 01</a></li>
+                <li className="nav-sub-item"><a href="" className="nav-sub-link">Menu 02</a></li>
+                
+            </ul>
+        </li>
+        </ul>
+        </div> */}
+{/*  */}
                   <div
                     className="collapse navbar-collapse pr-5 ml-15"
                     id="navbarSupportedContent"
@@ -78,12 +100,11 @@ export class Header extends React.Component<any, any, any>{
                         <a className="nav-link px-4"
                           href="#"
                           id="navbardrop"
-                          data-toggle="dropdown" aria-expanded="false">
-
+                          data-toggle="dropdown" aria-expanded="true">
                           Transformation
                 </a>
-                        <div className="dropdown-menu w17em bg-logoblue">
-                          <NavLink className="dropdown-item" to="/devops">
+                        <div className="dropdown-menu w17em bg-logoblue" id="navbaritem"> 
+                          <NavLink className="dropdown-item" to="/devops" >
                             {" "}
                             DevOps Transformation{" "}
                           </NavLink>
@@ -120,7 +141,7 @@ export class Header extends React.Component<any, any, any>{
                               </ul>
                             </div>
                           </li>
-                          <NavLink className="dropdown-item" to="/privatecloud">
+                          <NavLink className="dropdown-item" to="/privatecloud" >
                             {" "}
                             Private&nbsp;Cloud{" "}
                           </NavLink>

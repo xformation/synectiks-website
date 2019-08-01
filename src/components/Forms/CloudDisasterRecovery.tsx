@@ -150,7 +150,7 @@ export class CloudDisasterRecovery extends React.Component<any, any, any>{
 
         </div>
 
-        <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify" data-aos="fade-up" data-aos-duration="2000">
+        <div className="text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify">
           <div className="w-50 px-3 mt-3">
             <img height="auto" width="100%"
               className=""
@@ -168,7 +168,7 @@ export class CloudDisasterRecovery extends React.Component<any, any, any>{
               </ul>
             </p>
 
-            <p className='my-3'><h3>Why choose SYNECTIKS?</h3></p>
+            <p className='my-3'><h3>Why&nbsp;choose&nbsp;SYNECTIKS?</h3></p>
 
             <p className="lineHeight-34">
               We design and build DR solutions according to your unique business needs, offering:

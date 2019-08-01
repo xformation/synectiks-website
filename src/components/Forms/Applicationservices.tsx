@@ -331,7 +331,7 @@ import * as React from "react";
                             on Sev-1 tickets. SLA based proactive support with Microsoft support escalations.</li>
                         <li><b>Migration Assistance:</b> Let our dedicated team of specialists help you plan and perform your email data migration.</li>
                         <li><b>Dedicated to Your Success:</b> It’s our mission to enable your continued success by advising you and your team on the right technologies &amp; tools to deliver the desired results.</li>
-                        <li><b>Licensing Management:</b> We can provide all required Office 365 licensing for your organization on one consolidated invoice</li>
+                        <li><b>Licensing Management:</b> We can provide all required Office 365 licensing for your organization on one consolidated invoice.</li>
                     </ul>
                     </p>
                 </div>

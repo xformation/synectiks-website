@@ -3073,7 +3073,11 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/li
 
 
 // module
+<<<<<<< HEAD
+exports.push([module.i, "/* body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n} */\n", ""]);
+=======
 exports.push([module.i, "/* body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: sans-serif;\r\n} */\n", ""]);
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
 
 // exports
 
@@ -52262,7 +52266,11 @@ class Applicationservices extends React.Component {
                                 " It\u2019s our mission to enable your continued success by advising you and your team on the right technologies & tools to deliver the desired results."),
                             React.createElement("li", null,
                                 React.createElement("b", null, "Licensing Management:"),
+<<<<<<< HEAD
+                                " We can provide all required Office 365 licensing for your organization on one consolidated invoice.")))))));
+=======
                                 " We can provide all required Office 365 licensing for your organization on one consolidated invoice")))))));
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
     }
     ;
 }
@@ -52293,7 +52301,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const formik_1 = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 const Yup = __webpack_require__(/*! yup */ "./node_modules/yup/lib/index.js");
+<<<<<<< HEAD
+function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
+=======
 function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service) {
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
     // we are going to store errors for all fields
     // in a signle array
     const errors = [];
@@ -52309,8 +52321,13 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
     if (country.length === 0) {
         errors.push("Country can't be empty");
     }
+<<<<<<< HEAD
+    if (phone.length === 0) {
+        errors.push("Phone number can't be empty");
+=======
     if (contact.length === 0) {
         errors.push("Contact number can't be empty");
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
     }
     if (email.length < 5) {
         errors.push("Email should be at least 5 charcters long");
@@ -52336,7 +52353,11 @@ class Askfordemo extends React.Component {
     render() {
         return (React.createElement(formik_1.Formik, { initialValues: {
                 firstname: '', lastname: '', email: '', company: '',
+<<<<<<< HEAD
+                city: '', mobile: '', phone: '', source: '', service: ''
+=======
                 city: '', contact: '', source: '', service: ''
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
             }, onSubmit: (values, { setSubmitting, resetForm, setStatus }) => __awaiter(this, void 0, void 0, function* () {
                 setTimeout(() => {
                     console.log("Logging in", values);
@@ -52351,6 +52372,29 @@ class Askfordemo extends React.Component {
                 email: Yup.string()
                     .email()
                     .required("Email Id is Required")
+<<<<<<< HEAD
+                    .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
+                phone: Yup.string()
+                    .required("No Phone Number  provided.")
+                    .min(10, "Phone number should be 10 chars minimum.")
+                    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Phone Number"),
+                firstname: Yup.string()
+                    .required("No First Name provided.")
+                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
+                lastname: Yup.string()
+                    .required("No Last Name provided.")
+                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
+                company: Yup.string()
+                    .required("No Company Name provided.")
+                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
+                city: Yup.string()
+                    .required("No City Name provided.")
+                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your City"),
+                mobile: Yup.string()
+                    .required("No Mobile Number  provided.")
+                    .min(10, "Mobile number should be 10 chars minimum.")
+                    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Mobile Number"),
+=======
                     .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
                 contact: Yup.string()
                     .required("No Contact Number  provided.")
@@ -52365,6 +52409,7 @@ class Askfordemo extends React.Component {
                 city: Yup.string()
                     .required("No City Name provided.")
                     .matches(/^[a-zA-Z0-9_-]+[a-zA-Z0-9_-]*$/, "Enter your City"),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 source: Yup.string()
                     .required("No Option selected.")
                     .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
@@ -52375,6 +52420,13 @@ class Askfordemo extends React.Component {
             const { values, touched, errors, isSubmitting, handleChange, handleBlur, handleSubmit, status } = props;
             return (React.createElement("section", null,
                 React.createElement("div", null,
+<<<<<<< HEAD
+                    React.createElement("img", { className: "text-center pt-5 mt-5", src: "img/NiceToMeet.png", width: "100%", alt: "Ask For Demo" })),
+                React.createElement("div", null,
+                    React.createElement("h2", { className: "text-center text-black" }, "Ask for Demo"),
+                    React.createElement("h5", { className: "text-center text-black" }, "Straight talk on your challenges.")),
+                React.createElement("form", { id: "askdemoform", className: "py-3", onSubmit: handleSubmit, action: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", method: "POST" },
+=======
                     React.createElement("img", { className: "text-center pt-5 mt-5", src: "img/NiceToMeet.png", width: "100%", alt: "Card image Foundation" }),
                     React.createElement("div", { className: "text-center centered " },
                         React.createElement("div", { className: "text-white" },
@@ -52382,6 +52434,7 @@ class Askfordemo extends React.Component {
                 React.createElement("div", null,
                     React.createElement("h2", { className: "text-center text-black" }, "Contact Us")),
                 React.createElement("form", { id: "contactform", className: "py-3", onSubmit: handleSubmit, action: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", method: "POST" },
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                     React.createElement("input", { type: "hidden", name: "oid", value: "00D1I000000kz7k" }),
                     React.createElement("div", { className: "container-fluid" },
                         React.createElement("div", { className: "row" },
@@ -52406,9 +52459,19 @@ class Askfordemo extends React.Component {
                                 React.createElement("input", { id: "city", name: "city", type: "text", placeholder: "Enter Your Country/Region", value: values.city, onChange: handleChange, onBlur: handleBlur, className: errors.city && touched.city && "error" }),
                                 errors.city && touched.city && (React.createElement("div", { className: "input-feedback" }, errors.city))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
+<<<<<<< HEAD
+                                React.createElement("label", null, "Mobile"),
+                                React.createElement("input", { id: "mobile", name: "mobile", type: "tel", placeholder: "Enter Your Mobile Number", value: values.mobile, onChange: handleChange, onBlur: handleBlur, className: errors.mobile && touched.mobile && "error" }),
+                                errors.mobile && touched.mobile && (React.createElement("div", { className: "input-feedback" }, errors.mobile))),
+                            React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
+                                React.createElement("label", { htmlFor: "email" }, "Telephone"),
+                                React.createElement("input", { id: "phone", name: "phone", type: "tel", placeholder: "Enter your Phone Number", value: values.phone, onChange: handleChange, onBlur: handleBlur, className: errors.phone && touched.phone && "error" }),
+                                errors.phone && touched.phone && (React.createElement("div", { className: "input-feedback" }, errors.phone))),
+=======
                                 React.createElement("label", null, "Contact Number"),
                                 React.createElement("input", { id: "mobile", name: "contact", type: "tel", placeholder: "Enter Your Contact Number", maxLength: 10, value: values.contact, onChange: handleChange, onBlur: handleBlur, className: errors.contact && touched.contact && "error" }),
                                 errors.contact && touched.contact && (React.createElement("div", { className: "input-feedback" }, errors.contact))),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "Contact\u00A0Source"),
                                 React.createElement("select", { name: "source", id: "source", value: values.source, onChange: handleChange, onBlur: handleBlur, className: errors.source && touched.source && "error" },
@@ -52877,7 +52940,11 @@ class CloudDisasterRecovery extends React.Component {
                 React.createElement("div", { className: "py-3 col-md-2" },
                     React.createElement(react_router_dom_1.Link, { to: "/colocation", className: 'text-logoblue bg-white noLine' },
                         React.createElement("b", null, "Colocation")))),
+<<<<<<< HEAD
+            React.createElement("div", { className: "text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify" },
+=======
             React.createElement("div", { className: "text-black w-100 mt-3 px-5 py-2 flex-col d-flex text-justify", "data-aos": "fade-up", "data-aos-duration": "2000" },
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 React.createElement("div", { className: "w-50 px-3 mt-3" },
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/DisasterRecovery_Subpage.jpg", alt: "Cloud Disaster Recovery" })),
                 React.createElement("div", { className: "w-100 px-3 pt-2 text-black" },
@@ -52887,7 +52954,11 @@ class CloudDisasterRecovery extends React.Component {
                             React.createElement("li", null, "Data integrity for large, enterprise-class applications."),
                             React.createElement("li", null, "Back to business as per our requirements."))),
                     React.createElement("p", { className: 'my-3' },
+<<<<<<< HEAD
+                        React.createElement("h3", null, "Why\u00A0choose\u00A0SYNECTIKS?")),
+=======
                         React.createElement("h3", null, "Why choose SYNECTIKS?")),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                     React.createElement("p", { className: "lineHeight-34" },
                         "We design and build DR solutions according to your unique business needs, offering:",
                         React.createElement("br", null),
@@ -53141,7 +53212,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const formik_1 = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 const Yup = __webpack_require__(/*! yup */ "./node_modules/yup/lib/index.js");
+<<<<<<< HEAD
+function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
+=======
 function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service) {
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
     // we are going to store errors for all fields
     // in a signle array
     const errors = [];
@@ -53157,11 +53232,19 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
     if (country.length === 0) {
         errors.push("Country can't be empty");
     }
+<<<<<<< HEAD
+    if (phone.length === 0) {
+        errors.push("Phone number can't be empty");
+    }
+    if (email.length < 5) {
+        errors.push("Email should be at least 5 charcters long");
+=======
     if (contact.length === 0) {
         errors.push("Contact number can't be empty");
     }
     if (email.length < 3) {
         errors.push("Email should be at least 3 charcters long");
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
     }
     if (email.split("").filter(x => x === "@").length !== 1) {
         errors.push("Email should contain a @");
@@ -53184,7 +53267,11 @@ class Contact extends React.Component {
     render() {
         return (React.createElement(formik_1.Formik, { initialValues: {
                 firstname: '', lastname: '', email: '', company: '',
+<<<<<<< HEAD
+                city: '', mobile: '', phone: '', source: '', service: ''
+=======
                 city: '', contact: '', source: '', service: ''
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
             }, onSubmit: (values, { setSubmitting, resetForm, setStatus }) => __awaiter(this, void 0, void 0, function* () {
                 setTimeout(() => {
                     console.log("Logging in", values);
@@ -53199,6 +53286,29 @@ class Contact extends React.Component {
                 email: Yup.string()
                     .email()
                     .required("Email Id is Required")
+<<<<<<< HEAD
+                    .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
+                phone: Yup.string()
+                    .required("No Phone Number  provided.")
+                    .min(10, "Phone number should be 10 chars minimum.")
+                    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Phone Number"),
+                firstname: Yup.string()
+                    .required("No First Name provided.")
+                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
+                lastname: Yup.string()
+                    .required("No Last Name provided.")
+                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
+                company: Yup.string()
+                    .required("No Company Name provided.")
+                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
+                city: Yup.string()
+                    .required("No City Name provided.")
+                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your City"),
+                mobile: Yup.string()
+                    .required("No Mobile Number  provided.")
+                    .min(10, "Mobile number should be 10 chars minimum.")
+                    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Mobile Number"),
+=======
                     .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
                 contact: Yup.string()
                     .required("No Contact Number  provided.")
@@ -53213,6 +53323,7 @@ class Contact extends React.Component {
                 city: Yup.string()
                     .required("No City Name provided.")
                     .matches(/^[a-zA-Z0-9_-]+[a-zA-Z0-9_-]*$/, "Enter your City"),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 source: Yup.string()
                     .required("No Option selected.")
                     .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
@@ -53223,10 +53334,14 @@ class Contact extends React.Component {
             const { values, touched, errors, isSubmitting, handleChange, handleBlur, handleSubmit, status } = props;
             return (React.createElement("section", null,
                 React.createElement("div", null,
+<<<<<<< HEAD
+                    React.createElement("img", { className: "text-center pt-5 mt-5", src: "img/NiceToMeet.png", width: "100%", alt: "Card image Foundation" })),
+=======
                     React.createElement("img", { className: "text-center pt-5 mt-5", src: "img/NiceToMeet.png", width: "100%", alt: "Card image Foundation" }),
                     React.createElement("div", { className: "text-center centered " },
                         React.createElement("div", { className: "text-white" },
                             React.createElement("h3", null, "Nice\u00A0To\u00A0Meet\u00A0You!")))),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 React.createElement("div", null,
                     React.createElement("h2", { className: "text-center text-black" }, "Contact Us")),
                 React.createElement("form", { id: "contactform", className: "py-3", onSubmit: handleSubmit, action: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", method: "POST" },
@@ -53254,9 +53369,19 @@ class Contact extends React.Component {
                                 React.createElement("input", { id: "city", name: "city", type: "text", placeholder: "Enter Your Country/Region", value: values.city, onChange: handleChange, onBlur: handleBlur, className: errors.city && touched.city && "error" }),
                                 errors.city && touched.city && (React.createElement("div", { className: "input-feedback" }, errors.city))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
+<<<<<<< HEAD
+                                React.createElement("label", null, "Mobile"),
+                                React.createElement("input", { id: "mobile", name: "mobile", type: "tel", placeholder: "Enter Your Mobile Number", value: values.mobile, onChange: handleChange, onBlur: handleBlur, className: errors.mobile && touched.mobile && "error" }),
+                                errors.mobile && touched.mobile && (React.createElement("div", { className: "input-feedback" }, errors.mobile))),
+                            React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
+                                React.createElement("label", { htmlFor: "email" }, "Telephone"),
+                                React.createElement("input", { id: "phone", name: "phone", type: "tel", placeholder: "Enter your Phone Number", value: values.phone, onChange: handleChange, onBlur: handleBlur, className: errors.phone && touched.phone && "error" }),
+                                errors.phone && touched.phone && (React.createElement("div", { className: "input-feedback" }, errors.phone))),
+=======
                                 React.createElement("label", null, "Contact Number"),
                                 React.createElement("input", { id: "contact", name: "contact", type: "tel", placeholder: "Enter Your Contact Number", maxLength: 10, value: values.contact, onChange: handleChange, onBlur: handleBlur, className: errors.contact && touched.contact && "error" }),
                                 errors.contact && touched.contact && (React.createElement("div", { className: "input-feedback" }, errors.contact))),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "Contact\u00A0Source"),
                                 React.createElement("select", { name: "source", id: "source", value: values.source, onChange: handleChange, onBlur: handleBlur, className: errors.source && touched.source && "error" },
@@ -54271,7 +54396,11 @@ class Hybridcloud extends React.Component {
             React.createElement("div", { className: 'text-center mt-3 lineHeight-24' }),
             React.createElement("div", { className: ' text-black w-100 mt-3 text-white px-5 py-2 flex-col d-flex text-justify' },
                 React.createElement("div", { className: "w-100 " },
+<<<<<<< HEAD
+                    React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/HybridCloud.jpg", alt: "Hybrid Cloud" })),
+=======
                     React.createElement("img", { height: "auto", width: "100%", className: "", src: "https://synectiks.com/img/HybridCloud.jpg", alt: "Hybrid Cloud" })),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 React.createElement("div", { className: "w-100 px-5 text-black" },
                     React.createElement("h2", null, "Hybrid Cloud"),
                     React.createElement("p", null,
@@ -54658,7 +54787,11 @@ class Microserviceexample extends React.Component {
         return (React.createElement("div", { className: 'bg-lightgrey text-justify ' },
             React.createElement("div", { className: "w-100 py-5 mt-5" },
                 React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/Microservicesmain.jpg", alt: "Devopsmain Services" })),
+<<<<<<< HEAD
+            React.createElement("div", { className: "px-5" },
+=======
             React.createElement("div", { className: "px-5", "data-aos": "fade-up", "data-aos-duration": "2000" },
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 React.createElement("div", { className: "pb-3" },
                     React.createElement(react_router_dom_1.Link, { to: "/microservices" },
                         React.createElement("button", { className: 'btn text-white bg-logoblue btnLearn' },
@@ -54707,7 +54840,11 @@ class Microservicehelp extends React.Component {
         return (React.createElement("div", { className: 'bg-lightgrey text-justify ' },
             React.createElement("div", { className: "w-100 py-5 mt-5" },
                 React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/Microservicesmain.jpg", alt: "Devopsmain Services" })),
+<<<<<<< HEAD
+            React.createElement("div", { className: "px-5" },
+=======
             React.createElement("div", { className: "px-5", "data-aos": "fade-up", "data-aos-duration": "2000" },
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 React.createElement("div", { className: "pb-3" },
                     React.createElement(react_router_dom_1.Link, { to: "/microservices" },
                         React.createElement("button", { className: 'btn text-white bg-logoblue btnLearn' },
@@ -55182,7 +55319,11 @@ class Migrations extends React.Component {
         return (React.createElement("div", { className: 'bg-lightgrey' },
             React.createElement("div", { className: "w-100 py-5 mt-5" },
                 React.createElement("img", { height: "auto", width: "100%", className: "", src: "img/CloudMigrationOptimization.jpg", alt: "Microservices" })),
+<<<<<<< HEAD
+            React.createElement("div", { className: "px-5" },
+=======
             React.createElement("div", { className: "px-5 ", "data-aos": "fade-up", "data-aos-duration": "2000" },
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 React.createElement("p", { className: "lineHeight-24" }, "Synectiks accelerated migration allows customer to leverage the data processing benefits of cloud sooner, providing cost-savings and solving scalability issues. Our approach is to use a combination of the latest industry tools, processes, experience and best practices providing the best solutions to our customers. The teams perform a quick requirements analysis and GAP analysis to understand the current setup and provide solutions to optimize your applications, storage, databases and overall infrastructure. Synectiks optimization services provides customer the ability to optimize the existing application and infrastructure as follows:"),
                 React.createElement("p", { className: "lineHeight-24" },
                     React.createElement("i", null,
@@ -55255,10 +55396,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const formik_1 = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 const Yup = __webpack_require__(/*! yup */ "./node_modules/yup/lib/index.js");
+<<<<<<< HEAD
+function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
+=======
 const mcontact = {
     width: '100%'
 };
 function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service) {
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
     // we are going to store errors for all fields
     // in a signle array
     const errors = [];
@@ -55274,8 +55419,13 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
     if (country.length === 0) {
         errors.push("Country can't be empty");
     }
+<<<<<<< HEAD
+    if (phone.length === 0) {
+        errors.push("Phone number can't be empty");
+=======
     if (contact.length === 0) {
         errors.push("Contact number can't be empty");
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
     }
     if (email.length < 5) {
         errors.push("Email should be at least 5 charcters long");
@@ -55299,7 +55449,11 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
 }
 const ModalContact = () => (React.createElement(formik_1.Formik, { initialValues: {
         firstname: '', lastname: '', email: '', company: '',
+<<<<<<< HEAD
+        jobtitle: '', country: '', phone: '', source: '', service: ''
+=======
         jobtitle: '', country: '', contact: '', source: '', service: ''
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
     }, onSubmit: (values, { setSubmitting, resetForm, setStatus }) => {
         setTimeout(() => {
             console.log("Logging in", values);
@@ -55314,10 +55468,17 @@ const ModalContact = () => (React.createElement(formik_1.Formik, { initialValues
             .email()
             .required("Required")
             .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
+<<<<<<< HEAD
+        phone: Yup.string()
+            .required("No Phone Number  provided.")
+            .min(10, "Phone number should be 10 chars minimum.")
+            .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Phone Number"),
+=======
         contact: Yup.string()
             .required("No Contact Number  provided.")
             .min(10, "Contact number should be 10 chars minimum.")
             .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Contact Number"),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
         firstname: Yup.string()
             .required("No First Name provided.")
             .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
@@ -55369,9 +55530,15 @@ const ModalContact = () => (React.createElement(formik_1.Formik, { initialValues
                     errors.jobtitle && touched.jobtitle && (React.createElement("div", { className: "input-feedback" }, errors.jobtitle)))),
             React.createElement("div", { className: "rows" },
                 React.createElement("div", null,
+<<<<<<< HEAD
+                    React.createElement("label", { htmlFor: "email" }, "Telephone"),
+                    React.createElement("input", { name: "phone", type: "tel", placeholder: "Enter your Phone Number", value: values.phone, onChange: handleChange, onBlur: handleBlur, className: errors.phone && touched.phone && "error" }),
+                    errors.phone && touched.phone && (React.createElement("div", { className: "input-feedback" }, errors.phone))),
+=======
                     React.createElement("label", { htmlFor: "email" }, "Contact Number"),
                     React.createElement("input", { name: "contact", type: "tel", placeholder: "Enter your Contact Number", value: values.contact, onChange: handleChange, onBlur: handleBlur, className: errors.contact && touched.contact && "error" }),
                     errors.contact && touched.contact && (React.createElement("div", { className: "input-feedback" }, errors.contact))),
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                 React.createElement("div", null,
                     React.createElement("label", null, "Country/Region"),
                     React.createElement("input", { name: "country", type: "text", placeholder: "Enter Your Country/Region", value: values.country, onChange: handleChange, onBlur: handleBlur, className: errors.country && touched.country && "error" }),
@@ -56895,8 +57062,13 @@ class Header extends React.Component {
                                 React.createElement("div", { className: "collapse navbar-collapse pr-5 ml-15", id: "navbarSupportedContent" },
                                     React.createElement("ul", { className: "navbar-nav navfont ml-auto text-capitalize pt-6" },
                                         React.createElement("li", { className: "nav-item dropdown" },
+<<<<<<< HEAD
+                                            React.createElement("a", { className: "nav-link px-4", href: "#", id: "navbardrop", "data-toggle": "dropdown", "aria-expanded": "true" }, "Transformation"),
+                                            React.createElement("div", { className: "dropdown-menu w17em bg-logoblue", id: "navbaritem" },
+=======
                                             React.createElement("a", { className: "nav-link px-4", href: "#", id: "navbardrop", "data-toggle": "dropdown", "aria-expanded": "false" }, "Transformation"),
                                             React.createElement("div", { className: "dropdown-menu w17em bg-logoblue" },
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
                                                 React.createElement(react_router_dom_1.NavLink, { className: "dropdown-item", to: "/devops" },
                                                     " ",
                                                     "DevOps Transformation",

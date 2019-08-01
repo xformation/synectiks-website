@@ -104,7 +104,11 @@ export class Contact extends React.Component<{}, {}> {
                         status
                     } = props;
                     return (<section>
-                        <div><img className="text-center pt-5 mt-5" src="img/NiceToMeet.png" width="100%" alt="Card image Foundation" /><div className="text-center centered "><div className="text-white"><h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3></div></div></div>
+                        <div><img className="text-center pt-5 mt-5" src="img/NiceToMeet.png" width="100%" alt="Card image Foundation" />
+                        {/* <div className="text-center centered ">
+                        <div className="text-white"><h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3></div>
+                        </div> */}
+                        </div>
                         <div ><h2 className="text-center text-black">Contact Us</h2></div>
                         <form id="contactform" className="py-3" onSubmit={handleSubmit} action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                         <input type="hidden" name="oid" value="00D1I000000kz7k"/>
