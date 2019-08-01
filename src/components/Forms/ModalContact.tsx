@@ -2,55 +2,59 @@ import * as React from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
 
-function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
-  // we are going to store errors for all fields
-  // in a signle array
-  const errors = [];
+const mcontact = {
+ width: '100%'
+};
 
-  if (firstname.length === 0) {
-    errors.push("First Name can't be empty");
-  }
-  if (lastname.length === 0) {
-    errors.push("Last Name can't be empty");
-  }
-  if (jobtitle.length === 0) {
-    errors.push("Job Title can't be empty");
-  }
-  if (country.length === 0) {
-    errors.push("Country can't be empty");
-  }
-  if (phone.length === 0) {
-    errors.push("Phone number can't be empty");
-  }
+function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service) {
+ // we are going to store errors for all fields
+ // in a signle array
+ const errors = [];
 
-  if (email.length < 5) {
-    errors.push("Email should be at least 5 charcters long");
-  }
-  if (email.split("").filter(x => x === "@").length !== 1) {
-    errors.push("Email should contain a @");
-  }
-  if (email.indexOf(".") === -1) {
-    errors.push("Email should contain at least one dot");
-  }
+ if (firstname.length === 0) {
+  errors.push("First Name can't be empty");
+ }
+ if (lastname.length === 0) {
+  errors.push("Last Name can't be empty");
+ }
+ if (jobtitle.length === 0) {
+  errors.push("Job Title can't be empty");
+ }
+ if (country.length === 0) {
+  errors.push("Country can't be empty");
+ }
+ if (contact.length === 0) {
+  errors.push("Contact number can't be empty");
+ }
 
-  if (company.length < 6) {
-    errors.push("company name should be mentioned");
-  }
-  if (source.length < 6) {
-    errors.push("Select following option");
-  }
-  if (service.length < 6) {
-    errors.push("Select following option");
-  }
+ if (email.length < 5) {
+  errors.push("Email should be at least 5 charcters long");
+ }
+ if (email.split("").filter(x => x === "@").length !== 1) {
+  errors.push("Email should contain a @");
+ }
+ if (email.indexOf(".") === -1) {
+  errors.push("Email should contain at least one dot");
+ }
 
-  return errors;
+ if (company.length < 6) {
+  errors.push("company name should be mentioned");
+ }
+ if (source.length < 6) {
+  errors.push("Select following option");
+ }
+ if (service.length < 6) {
+  errors.push("Select following option");
+ }
+
+ return errors;
 }
 
 const ModalContact = () => (
   <Formik
     initialValues={{
       firstname: '', lastname: '', email: '', company: '',
-      jobtitle: '', country: '', phone: '', source: '', service: ''
+      jobtitle: '', country: '', contact: '', source: '', service: ''
     }}
     onSubmit={(values, { setSubmitting, resetForm, setStatus  }) => {
       setTimeout(() => {
@@ -61,38 +65,38 @@ const ModalContact = () => (
       }, 500);
     }}
 
-    //********Using Yum for validation********/
+  //********Using Yum for validation********/
 
-    validationSchema={Yup.object().shape({
-      email: Yup.string()
-        .email()
-        .required("Required")
-        .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
-      phone: Yup.string()
-        .required("No Phone Number  provided.")
-        .min(10, "Phone number should be 10 chars minimum.")
-        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Phone Number"),
-      firstname: Yup.string()
-        .required("No First Name provided.")
-        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
-      lastname: Yup.string()
-        .required("No Last Name provided.")
-        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
-      company: Yup.string()
-        .required("No Company Name provided.")
-        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
-      jobtitle: Yup.string()
-        .required("No Job title Name provided.")
-        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Job title"),
-      country: Yup.string()
-        .required("No country Name provided.")
-        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Country"),
-      source: Yup.string()
-        .required("No Option selected.")
-        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
-      service: Yup.string()
-        .required("No Option selected.")
-        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
+  validationSchema={Yup.object().shape({
+   email: Yup.string()
+    .email()
+    .required("Required")
+    .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
+   contact: Yup.string()
+    .required("No Contact Number  provided.")
+    .min(10, "Contact number should be 10 chars minimum.")
+    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Contact Number"),
+   firstname: Yup.string()
+    .required("No First Name provided.")
+    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
+   lastname: Yup.string()
+    .required("No Last Name provided.")
+    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
+   company: Yup.string()
+    .required("No Company Name provided.")
+    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
+   jobtitle: Yup.string()
+    .required("No Job title Name provided.")
+    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Job title"),
+   country: Yup.string()
+    .required("No country Name provided.")
+    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Country"),
+   source: Yup.string()
+    .required("No Option selected.")
+    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
+   service: Yup.string()
+    .required("No Option selected.")
+    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
 
     })}
   >
@@ -108,7 +112,7 @@ const ModalContact = () => (
         status
       } = props;
       return (
-        <form id="servicecontactform" className="py-3" onSubmit={handleSubmit} action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">    
+        <form id="servicecontactform" className="py-3" onSubmit={handleSubmit} action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
         <input type="hidden" name="oid" value="00D1I000000kz7k"/>
           <div className="modalContact">
             <div className="rows">
@@ -194,18 +198,18 @@ const ModalContact = () => (
             </div>
             <div className="rows">
               <div>
-                <label htmlFor="email">Telephone</label>
+                <label htmlFor="email">Contact Number</label>
                 <input
-                  name="phone"
+                  name="contact"
                   type="tel"
-                  placeholder="Enter your Phone Number"
-                  value={values.phone}
+                  placeholder="Enter your Contact Number"
+                  value={values.contact}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={errors.phone && touched.phone && "error"}
+                  className={errors.contact && touched.contact && "error"}
                 />
-                {errors.phone && touched.phone && (
-                  <div className="input-feedback">{errors.phone}</div>
+                {errors.contact && touched.contact && (
+                  <div className="input-feedback">{errors.contact}</div>
                 )}
               </div>
               <div>
@@ -231,7 +235,7 @@ const ModalContact = () => (
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={errors.source && touched.source && "error"}>
-                <option value="" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option>    
+                <option value="" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option>
                 <option value="Advertisement">&nbsp;Advertisement</option>
                 <option value="CustomerEvent">&nbsp;Customer&nbsp;Event</option>
                 <option value="EmployeeReferral">&nbsp;Employee&nbsp;Referral</option>
@@ -254,7 +258,7 @@ const ModalContact = () => (
                   onBlur={handleBlur}
                   className={errors.service && touched.service && "error"}>>
               {/* <option value="enterprise" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option> */}
-              <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>    
+              <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>
               <option value="Cloud">&nbsp;Cloud</option>
               <option value="EnterpriseTransformation">&nbsp;Enterprise&nbsp;Transformation</option>
               <option value="Foundation">&nbsp;Foundation</option>

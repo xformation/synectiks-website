@@ -1480,9 +1480,17 @@ overflow: hidden;
  .h-70{
   height: 70px;
   }
+<<<<<<< HEAD
   /* a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
     pointer-events: none;
     } */
+=======
+
+  /* a#navbardrop,a#navbardrop1,a#navbardrop2,a#navbardrop3,a#navbardrop4,a#navbardrop5{
+    pointer-events: none;
+    } */
+
+>>>>>>> 2808a16216d3fb8c5643abdb5d79afa53a6ad852
 #submenu:hover #cls{
   display: block;
 }

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
+function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service) {
     // we are going to store errors for all fields
     // in a signle array
     const errors = [];
@@ -19,12 +19,12 @@ function validate(firstname, lastname, email, company, jobtitle, country, phone,
     if (country.length === 0) {
         errors.push("Country can't be empty");
     }
-    if (phone.length === 0) {
-        errors.push("Phone number can't be empty");
+    if (contact.length === 0) {
+        errors.push("Contact number can't be empty");
     }
 
-    if (email.length < 5) {
-        errors.push("Email should be at least 5 charcters long");
+    if (email.length < 3) {
+        errors.push("Email should be at least 3 charcters long");
     }
     if (email.split("").filter(x => x === "@").length !== 1) {
         errors.push("Email should contain a @");
@@ -52,7 +52,7 @@ export class Contact extends React.Component<{}, {}> {
             <Formik
                 initialValues={{
                     firstname: '', lastname: '', email: '', company: '',
-                    city: '', mobile: '', phone: '', source: '', service: ''
+                    city: '', contact: '',  source: '', service: ''
                 }}
                 onSubmit={async (values, { setSubmitting, resetForm, setStatus }) => {
                     setTimeout(() => {
@@ -65,32 +65,24 @@ export class Contact extends React.Component<{}, {}> {
                 }}
 
                 //********Using Yum for validation********/
-
                 validationSchema={Yup.object().shape({
                     email: Yup.string()
                         .email()
                         .required("Email Id is Required")
-                        .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
-                    phone: Yup.string()
-                        .required("No Phone Number  provided.")
-                        .min(10, "Phone number should be 10 chars minimum.")
-                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Phone Number"),
+                        .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
+                    contact: Yup.string()
+                        .required("No Contact Number  provided.")
+                        .min(10, "Contact number should be 10 numerics minimum.")
+                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Contact Number"),
                     firstname: Yup.string()
-                        .required("No First Name provided.")
-                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
+                        .required("No First Name provided."),
                     lastname: Yup.string()
-                        .required("No Last Name provided.")
-                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
+                        .required("No Last Name provided."),
                     company: Yup.string()
-                        .required("No Company Name provided.")
-                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
+                        .required("No Company Name provided."),
                     city: Yup.string()
                         .required("No City Name provided.")
-                        .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your City"),
-                    mobile: Yup.string()
-                        .required("No Mobile Number  provided.")
-                        .min(10, "Mobile number should be 10 chars minimum.")
-                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Mobile Number"),
+                        .matches(/^[a-zA-Z0-9_-]+[a-zA-Z0-9_-]*$/, "Enter your City"),
                     source: Yup.string()
                         .required("No Option selected.")
                         .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
@@ -118,7 +110,7 @@ export class Contact extends React.Component<{}, {}> {
                         </div> */}
                         </div>
                         <div ><h2 className="text-center text-black">Contact Us</h2></div>
-                        <form id="contactform" className="py-3" onSubmit={handleSubmit} action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">    
+                        <form id="contactform" className="py-3" onSubmit={handleSubmit} action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                         <input type="hidden" name="oid" value="00D1I000000kz7k"/>
                             <div className="container-fluid">
                                 <div className="row">
@@ -198,33 +190,19 @@ export class Contact extends React.Component<{}, {}> {
                                         )}
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
-                                        <label>Mobile</label>
-                                        <input id="mobile"
-                                            name="mobile"
+                                        <label>Contact Number</label>
+                                        <input id="contact"
+                                            name="contact"
                                             type="tel"
-                                            placeholder="Enter Your Mobile Number"
-                                            value={values.mobile}
+                                            placeholder="Enter Your Contact Number"
+                                            maxLength={10}
+                                            value={values.contact}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
-                                            className={errors.mobile && touched.mobile && "error"}
+                                            className={errors.contact && touched.contact && "error"}
                                         />
-                                        {errors.mobile && touched.mobile && (
-                                            <div className="input-feedback">{errors.mobile}</div>
-                                        )}
-                                    </div>
-                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
-                                        <label htmlFor="email">Telephone</label>
-                                        <input id="phone"
-                                            name="phone"
-                                            type="tel"
-                                            placeholder="Enter your Phone Number"
-                                            value={values.phone}
-                                            onChange={handleChange}
-                                            onBlur={handleBlur}
-                                            className={errors.phone && touched.phone && "error"}
-                                        />
-                                        {errors.phone && touched.phone && (
-                                            <div className="input-feedback">{errors.phone}</div>
+                                            {errors.contact && touched.contact && (
+                                                <div className="input-feedback">{errors.contact}</div>
                                         )}
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
@@ -233,7 +211,7 @@ export class Contact extends React.Component<{}, {}> {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.source && touched.source && "error"}>
-                                            <option value="" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option>    
+                                            <option value="" className="bg-logoblue text-white">&nbsp;Contact&nbsp;Source</option>
                                             <option value="Advertisement">&nbsp;Advertisement</option>
                                             <option value="CustomerEvent">&nbsp;Customer&nbsp;Event</option>
                                             <option value="EmployeeReferral">&nbsp;Employee&nbsp;Referral</option>
@@ -255,7 +233,7 @@ export class Contact extends React.Component<{}, {}> {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.service && touched.service && "error"}>
-                                             <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>    
+                                             <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>
                                             <option value="Cloud">&nbsp;Cloud</option>
                                             <option value="EnterpriseTransformation">&nbsp;Enterprise&nbsp;Transformation</option>
                                             <option value="Foundation">&nbsp;Foundation</option>
@@ -272,7 +250,7 @@ export class Contact extends React.Component<{}, {}> {
                                     <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
                                         Submit
                                     </button>
-                                   
+
                                 </div>
                             </div>
                             <div className="text-center text-logoblue"><h3>{status ? status.success : ""}</h3></div>
