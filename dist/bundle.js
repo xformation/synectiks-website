@@ -53136,54 +53136,90 @@ exports.default = CloudManagedBackup;
 
 "use strict";
 
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
 const formik_1 = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 const Yup = __webpack_require__(/*! yup */ "./node_modules/yup/lib/index.js");
+function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
+    // we are going to store errors for all fields
+    // in a signle array
+    const errors = [];
+    if (firstname.length === 0) {
+        errors.push("First Name can't be empty");
+    }
+    if (lastname.length === 0) {
+        errors.push("Last Name can't be empty");
+    }
+    if (jobtitle.length === 0) {
+        errors.push("Job Title can't be empty");
+    }
+    if (country.length === 0) {
+        errors.push("Country can't be empty");
+    }
+    if (phone.length === 0) {
+        errors.push("Phone number can't be empty");
+    }
+    if (email.length < 5) {
+        errors.push("Email should be at least 5 charcters long");
+    }
+    if (email.split("").filter(x => x === "@").length !== 1) {
+        errors.push("Email should contain a @");
+    }
+    if (email.indexOf(".") === -1) {
+        errors.push("Email should contain at least one dot");
+    }
+    if (company.length < 6) {
+        errors.push("company name should be mentioned");
+    }
+    if (source.length < 6) {
+        errors.push("Select following option");
+    }
+    if (service.length < 6) {
+        errors.push("Select following option");
+    }
+    return errors;
+}
 class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
     render() {
-        const { firstName, lastName, company, city, phone, mobile, email, source, service } = this.state;
         return (React.createElement(formik_1.Formik, { initialValues: {
                 firstname: '', lastname: '', email: '', company: '',
-                city: '', mobile: '', phone: '', source: '', service: ''
-            }, onSubmit: (values, { setSubmitting }) => {
+                city: '', contact: '', source: '', service: ''
+            }, onSubmit: (values, { setSubmitting, resetForm, setStatus }) => __awaiter(this, void 0, void 0, function* () {
                 setTimeout(() => {
                     console.log("Logging in", values);
+                    // alert("Thank you");
+                    resetForm();
+                    setStatus({ success: "Thank You ! We will get in touch with you soon." });
                     setSubmitting(false);
                 }, 500);
-            }, 
+            }), 
             //********Using Yum for validation********/
             validationSchema: Yup.object().shape({
                 email: Yup.string()
                     .email()
                     .required("Email Id is Required")
-                    .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
-                phone: Yup.string()
-                    .required("No Phone Number  provided.")
-                    .min(10, "Phone number should be 10 chars minimum.")
-                    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Phone Number"),
+                    .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
+                contact: Yup.string()
+                    .required("No Contact Number  provided.")
+                    .min(10, "Contact number should be 10 numerics minimum.")
+                    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Contact Number"),
                 firstname: Yup.string()
-                    .required("No First Name provided.")
-                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
+                    .required("No First Name provided."),
                 lastname: Yup.string()
-                    .required("No Last Name provided.")
-                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
+                    .required("No Last Name provided."),
                 company: Yup.string()
-                    .required("No Company Name provided.")
-                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
+                    .required("No Company Name provided."),
                 city: Yup.string()
                     .required("No City Name provided.")
-                    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your City"),
-                mobile: Yup.string()
-                    .required("No Mobile Number  provided.")
-                    .min(10, "Mobile number should be 10 chars minimum.")
-                    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Mobile Number"),
+                    .matches(/^[a-zA-Z0-9_-]+[a-zA-Z0-9_-]*$/, "Enter your City"),
                 source: Yup.string()
                     .required("No Option selected.")
                     .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
@@ -53191,77 +53227,77 @@ class Contact extends React.Component {
                     .required("No Option selected.")
                     .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
             }) }, props => {
-            const { values, touched, errors, isSubmitting, handleChange, handleBlur, handleSubmit } = props;
+            const { values, touched, errors, isSubmitting, handleChange, handleBlur, handleSubmit, status } = props;
             return (React.createElement("section", null,
                 React.createElement("div", null,
                     React.createElement("img", { className: "text-center pt-5 mt-5", src: "img/NiceToMeet.png", width: "100%", alt: "Card image Foundation" }),
                     React.createElement("div", { className: "text-center centered " },
                         React.createElement("div", { className: "text-white" },
                             React.createElement("h3", null, "Nice\u00A0To\u00A0Meet\u00A0You!")))),
-                React.createElement("form", { onSubmit: handleSubmit },
+                React.createElement("div", null,
+                    React.createElement("h2", { className: "text-center text-black" }, "Contact Us")),
+                React.createElement("form", { id: "contactform", className: "py-3", onSubmit: handleSubmit, action: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", method: "POST" },
+                    React.createElement("input", { type: "hidden", name: "oid", value: "00D1I000000kz7k" }),
                     React.createElement("div", { className: "container-fluid" },
                         React.createElement("div", { className: "row" },
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "First\u00A0Name"),
-                                React.createElement("input", { name: "firstname", type: "text", placeholder: "Enter Your First Name", value: values.firstname, onChange: handleChange, onBlur: handleBlur, className: errors.firstname && touched.firstname && "error" }),
+                                React.createElement("input", { id: "firstname", name: "firstname", type: "text", placeholder: "Enter Your First Name", value: values.firstname, onChange: handleChange, onBlur: handleBlur, className: errors.firstname && touched.firstname && "error" }),
                                 errors.firstname && touched.firstname && (React.createElement("div", { className: "input-feedback" }, errors.firstname))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "Last\u00A0Name"),
-                                React.createElement("input", { name: "lastname", type: "text", placeholder: "Enter Your Last Name", value: values.lastname, onChange: handleChange, onBlur: handleBlur, className: errors.lastname && touched.lastname && "error" }),
+                                React.createElement("input", { id: "lastname", name: "lastname", type: "text", placeholder: "Enter Your Last Name", value: values.lastname, onChange: handleChange, onBlur: handleBlur, className: errors.lastname && touched.lastname && "error" }),
                                 errors.lastname && touched.lastname && (React.createElement("div", { className: "input-feedback" }, errors.lastname))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", { htmlFor: "email" }, "Email"),
-                                React.createElement("input", { name: "email", type: "text", placeholder: "Enter your Business Email Address", value: values.email, onChange: handleChange, onBlur: handleBlur, className: errors.email && touched.email && "error" }),
+                                React.createElement("input", { id: "email", name: "email", type: "text", placeholder: "Enter your Business Email Address", value: values.email, onChange: handleChange, onBlur: handleBlur, className: errors.email && touched.email && "error" }),
                                 errors.email && touched.email && (React.createElement("div", { className: "input-feedback" }, errors.email))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "Company"),
-                                React.createElement("input", { name: "company", type: "text", placeholder: "Enter Your Company Name", value: values.company, onChange: handleChange, onBlur: handleBlur, className: errors.company && touched.company && "error" }),
+                                React.createElement("input", { id: "company", name: "company", type: "text", placeholder: "Enter Your Company Name", value: values.company, onChange: handleChange, onBlur: handleBlur, className: errors.company && touched.company && "error" }),
                                 errors.company && touched.company && (React.createElement("div", { className: "input-feedback" }, errors.company))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "City"),
-                                React.createElement("input", { name: "city", type: "text", placeholder: "Enter Your Country/Region", value: values.city, onChange: handleChange, onBlur: handleBlur, className: errors.city && touched.city && "error" }),
+                                React.createElement("input", { id: "city", name: "city", type: "text", placeholder: "Enter Your Country/Region", value: values.city, onChange: handleChange, onBlur: handleBlur, className: errors.city && touched.city && "error" }),
                                 errors.city && touched.city && (React.createElement("div", { className: "input-feedback" }, errors.city))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
-                                React.createElement("label", null, "Mobile"),
-                                React.createElement("input", { name: "mobile", type: "tel", placeholder: "Enter Your Mobile Number", value: values.mobile, onChange: handleChange, onBlur: handleBlur, className: errors.mobile && touched.mobile && "error" }),
-                                errors.mobile && touched.mobile && (React.createElement("div", { className: "input-feedback" }, errors.mobile))),
-                            React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
-                                React.createElement("label", { htmlFor: "email" }, "Telephone"),
-                                React.createElement("input", { name: "phone", type: "tel", placeholder: "Enter your Phone Number", value: values.phone, onChange: handleChange, onBlur: handleBlur, className: errors.phone && touched.phone && "error" }),
-                                errors.phone && touched.phone && (React.createElement("div", { className: "input-feedback" }, errors.phone))),
+                                React.createElement("label", null, "Contact Number"),
+                                React.createElement("input", { id: "contact", name: "contact", type: "tel", placeholder: "Enter Your Contact Number", value: values.contact, onChange: handleChange, onBlur: handleBlur, className: errors.contact && touched.contact && "error" }),
+                                errors.contact && touched.contact && (React.createElement("div", { className: "input-feedback" }, errors.contact))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "Contact\u00A0Source"),
-                                React.createElement("select", { name: "source", id: "", value: values.source, onChange: handleChange, onBlur: handleBlur, className: errors.source && touched.source && "error" },
-                                    React.createElement("option", { value: "enterprise" }, "\u00A0Advertisement"),
-                                    React.createElement("option", { value: "foundation" }, "\u00A0Customer\u00A0Event"),
-                                    React.createElement("option", { value: "migration" }, "\u00A0Employee\u00A0Referral"),
-                                    React.createElement("option", { value: "operations" }, "\u00A0Google\u00A0Adwords"),
-                                    React.createElement("option", { value: "others" }, "\u00A0Other"),
-                                    React.createElement("option", { value: "optimization" }, "\u00A0Partner"),
-                                    React.createElement("option", { value: "optimization" }, "\u00A0Purchased\u00A0List"),
-                                    React.createElement("option", { value: "optimization" }, "\u00A0Trade\u00A0Show"),
-                                    React.createElement("option", { value: "optimization" }, "\u00A0Webinar"),
-                                    React.createElement("option", { value: "optimization" }, "\u00A0Website")),
+                                React.createElement("select", { name: "source", id: "source", value: values.source, onChange: handleChange, onBlur: handleBlur, className: errors.source && touched.source && "error" },
+                                    React.createElement("option", { value: "", className: "bg-logoblue text-white" }, "\u00A0Contact\u00A0Source"),
+                                    React.createElement("option", { value: "Advertisement" }, "\u00A0Advertisement"),
+                                    React.createElement("option", { value: "CustomerEvent" }, "\u00A0Customer\u00A0Event"),
+                                    React.createElement("option", { value: "EmployeeReferral" }, "\u00A0Employee\u00A0Referral"),
+                                    React.createElement("option", { value: "GoogleAdwords" }, "\u00A0Google\u00A0Adwords"),
+                                    React.createElement("option", { value: "Other" }, "\u00A0Other"),
+                                    React.createElement("option", { value: "Partner" }, "\u00A0Partner"),
+                                    React.createElement("option", { value: "PurchasedList" }, "\u00A0Purchased\u00A0List"),
+                                    React.createElement("option", { value: "TradeShow" }, "\u00A0Trade\u00A0Show"),
+                                    React.createElement("option", { value: "Webinar" }, "\u00A0Webinar"),
+                                    React.createElement("option", { value: "Website" }, "\u00A0Website")),
                                 errors.source && touched.source && (React.createElement("div", { className: "input-feedback" }, errors.source))),
                             React.createElement("div", { className: 'col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group' },
                                 React.createElement("label", null, "Select\u00A0Service"),
-                                React.createElement("select", { name: "service", value: values.service, onChange: handleChange, onBlur: handleBlur, className: errors.service && touched.service && "error" },
-                                    ">",
-                                    React.createElement("option", { value: "enterprise" }, "\u00A0Cloud"),
-                                    React.createElement("option", { value: "enterprise" }, "\u00A0Enterprise\u00A0Transformation"),
-                                    React.createElement("option", { value: "foundation" }, "\u00A0Foundation"),
-                                    React.createElement("option", { value: "migration" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
-                                    React.createElement("option", { value: "operations" }, "\u00A0Operations"),
-                                    React.createElement("option", { value: "optimization" }, "\u00A0Optimization"),
-                                    React.createElement("option", { value: "others" }, "\u00A0Others")),
+                                React.createElement("select", { name: "service", id: "service", value: values.service, onChange: handleChange, onBlur: handleBlur, className: errors.service && touched.service && "error" },
+                                    React.createElement("option", { value: "", className: "bg-logoblue text-white" }, "\u00A0Select\u00A0Service"),
+                                    React.createElement("option", { value: "Cloud" }, "\u00A0Cloud"),
+                                    React.createElement("option", { value: "EnterpriseTransformation" }, "\u00A0Enterprise\u00A0Transformation"),
+                                    React.createElement("option", { value: "Foundation" }, "\u00A0Foundation"),
+                                    React.createElement("option", { value: "MigrationDeployment" }, "\u00A0Migration\u00A0&\u00A0Deployment"),
+                                    React.createElement("option", { value: "Operations" }, "\u00A0Operations"),
+                                    React.createElement("option", { value: "Optimization" }, "\u00A0Optimization"),
+                                    React.createElement("option", { value: "Others" }, "\u00A0Others")),
                                 errors.service && touched.service && (React.createElement("div", { className: "input-feedback" }, errors.service))),
-                            React.createElement("button", { type: "submit", className: "btn bg-logoblue text-white btnSend my-3 mx-auto", disabled: isSubmitting }, "Submit"))))));
+                            React.createElement("button", { type: "submit", id: "submit", className: "btn bg-logoblue text-white btnSend my-3 mx-auto", disabled: isSubmitting }, "Submitlive"))),
+                    React.createElement("div", { className: "text-center text-logoblue" },
+                        React.createElement("h3", null, status ? status.success : "")))));
         }));
     }
-    ;
 }
 exports.Contact = Contact;
-;
 exports.default = Contact;
 
 
