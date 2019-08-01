@@ -2,7 +2,7 @@ import * as React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-function validate(firstname, lastname, email, company, jobtitle, country, phone, source, service) {
+function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service) {
     // we are going to store errors for all fields
     // in a signle array
     const errors = [];
@@ -19,12 +19,12 @@ function validate(firstname, lastname, email, company, jobtitle, country, phone,
     if (country.length === 0) {
         errors.push("Country can't be empty");
     }
-    if (phone.length === 0) {
-        errors.push("Phone number can't be empty");
+    if (contact.length === 0) {
+        errors.push("Contact number can't be empty");
     }
 
-    if (email.length < 5) {
-        errors.push("Email should be at least 5 charcters long");
+    if (email.length < 3) {
+        errors.push("Email should be at least 3 charcters long");
     }
     if (email.split("").filter(x => x === "@").length !== 1) {
         errors.push("Email should contain a @");
@@ -65,7 +65,6 @@ export class Contact extends React.Component<{}, {}> {
                 }}
 
                 //********Using Yum for validation********/
-
                 validationSchema={Yup.object().shape({
                     email: Yup.string()
                         .email()
@@ -192,13 +191,14 @@ export class Contact extends React.Component<{}, {}> {
                                             name="contact"
                                             type="tel"
                                             placeholder="Enter Your Contact Number"
+                                            maxLength={10}
                                             value={values.contact}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.contact && touched.contact && "error"}
                                         />
-                                        {errors.contact && touched.contact && (
-                                            <div className="input-feedback">{errors.contact}</div>
+                                            {errors.contact && touched.contact && (
+                                                <div className="input-feedback">{errors.contact}</div>
                                         )}
                                     </div>
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'>
@@ -244,7 +244,7 @@ export class Contact extends React.Component<{}, {}> {
                                     </div>
 
                                     <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
-                                        Submitlive
+                                        Submit
                                     </button>
 
                                 </div>

@@ -1560,6 +1560,10 @@ cursor: pointer !important;
 .brdr025{
   border-radius: 0.25rem;
 }
+.brdr-btm-030{
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
 
 
 form {
