@@ -24,7 +24,7 @@ export class Featured extends React.Component<{}, {}> {
                     </div>
                 </div>
 
-                <div className="px-5" data-aos="fade-up" data-aos-duration="2000">
+                <div className="px-5">
                     <div className="d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col" >
                         <div>
                             <div className="p-5">

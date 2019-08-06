@@ -73,7 +73,7 @@ export class Askfordemo extends React.Component<{}, {}> {
                     contact: Yup.string()
                         .required("No Contact Number  provided.")
                         .min(10, "Contact number should be 10 numerics minimum.")
-                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Contact Number"),
+                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Contact number should be 10 numerics"),
                     firstname: Yup.string()
                         .required("No First Name provided."),
                     lastname: Yup.string()
@@ -104,8 +104,13 @@ export class Askfordemo extends React.Component<{}, {}> {
                         status
                     } = props;
                     return (<section>
-                        <div><img className="text-center pt-5 mt-5" src="img/NiceToMeet.png" width="100%" alt="Card image Foundation" /><div className="text-center centered "><div className="text-white"><h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3></div></div></div>
-                        <div ><h2 className="text-center text-black">Contact Us</h2></div>
+                        <div><img className="text-center pt-5 mt-5" src="img/NiceToMeet.png" width="100%" alt="Card image Foundation" />
+                        {/* <div className="text-center centered "><div className="text-white"><h3>Nice&nbsp;To&nbsp;Meet&nbsp;You!</h3></div></div> */}
+                        </div>
+                        <div>
+                        <h2 className="text-center text-black">Ask For Demo</h2>
+                        <h5 className="text-center text-black">Straight talk on your challenges.</h5>
+                        </div>
                         <form id="contactform" className="py-3" onSubmit={handleSubmit} action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                             <input type="hidden" name="oid" value="00D1I000000kz7k" />
                             <div className="container-fluid">
@@ -145,7 +150,7 @@ export class Askfordemo extends React.Component<{}, {}> {
                                         <input id="email"
                                             name="email"
                                             type="text"
-                                            placeholder="Enter your Business Email Address"
+                                            placeholder="Enter Your Business Email Address"
                                             value={values.email}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
@@ -243,9 +248,11 @@ export class Askfordemo extends React.Component<{}, {}> {
                                         )}
                                     </div>
 
-                                    <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group pt-3'>
+                                    <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend mt-3 mx-auto" disabled={isSubmitting} >
                                         Submit
                                     </button>
+                                    </div>
 
                                 </div>
                             </div>

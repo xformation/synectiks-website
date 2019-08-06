@@ -73,7 +73,7 @@ export class Contact extends React.Component<{}, {}> {
                     contact: Yup.string()
                         .required("No Contact Number  provided.")
                         .min(10, "Contact number should be 10 numerics minimum.")
-                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Contact Number"),
+                        .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Contact number should be 10 numerics"),
                     firstname: Yup.string()
                         .required("No First Name provided."),
                     lastname: Yup.string()
@@ -247,9 +247,11 @@ export class Contact extends React.Component<{}, {}> {
                                         )}
                                     </div>
 
-                                    <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend my-3 mx-auto" disabled={isSubmitting} >
+                                    <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group pt-3'>
+                                    <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend mt-3 mx-auto" disabled={isSubmitting} >
                                         Submit
                                     </button>
+                                    </div>
 
                                 </div>
                             </div>

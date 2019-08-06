@@ -20,8 +20,7 @@ import * as React from "react";
                 />
             </div>
 
-            <div className=' text-black w-100  text-white px-5 flex-col d-flex text-justify'
-            data-aos="fade-up" data-aos-duration="2000">
+            <div className=' text-black w-100  text-white px-5 flex-col d-flex text-justify'>
                 <div className="w-100  text-black">
                     <p className="w-100  text-black"><h2 className='mt-3'>Network Services</h2></p>
                     <p className="lineHeight-24">

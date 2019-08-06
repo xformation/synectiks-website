@@ -32,10 +32,12 @@ export class Header extends React.Component<any, any, any>{
   componentDidMount() {
     window.scrollTo(0, 0)
   }
+  
 
   render() {
     return (
       <div>
+
         <div className="container">
           <div className="row">
             <nav
@@ -68,29 +70,7 @@ export class Header extends React.Component<any, any, any>{
                       <img className="navbar-icon" src="img/synectiks-logo.png" alt="logo" />
                     </a>
                   </div>
-{/*  */}
-{/* <div className="slim-sidebar">
-    <ul className="nav nav-sidebar">
-        <li className="sidebar-nav-item with-sub">
-            <a href="" className="sidebar-nav-link"> Dashboard</a>
-            <ul className="nav sidebar-nav-sub">
-               
-                <li className="nav-sub-item"><a href="" className="nav-sub-link">Page 03</a></li>
-                <li className="nav-sub-item"><a href="" className="nav-sub-link">Page 04</a></li>
-                <li className="nav-sub-item"><a href="" className="nav-sub-link">Page 05</a></li>
-            </ul>
-        </li>
-        <li className="sidebar-nav-item with-sub">
-            <a href="" className="sidebar-nav-link"> Menu</a>
-            <ul className="nav sidebar-nav-sub">
-                <li className="nav-sub-item"><a href="" className="nav-sub-link">Menu 01</a></li>
-                <li className="nav-sub-item"><a href="" className="nav-sub-link">Menu 02</a></li>
-                
-            </ul>
-        </li>
-        </ul>
-        </div> */}
-{/*  */}
+
                   <div
                     className="collapse navbar-collapse pr-5 ml-15"
                     id="navbarSupportedContent"
@@ -132,7 +112,7 @@ export class Header extends React.Component<any, any, any>{
                   </a>
                         <div className="dropdown-menu w17em bg-logoblue">
                           <li className="dropdown-submenu dropright">
-                            <NavLink className="dropdown-item dropdown-toggle" to="#">Cloud Hosted Services</NavLink>
+                            <NavLink className="dropdown-item dropdown-toggle" to="/HostedInfrastructure">Cloud Hosted Services</NavLink>
                             <div className="menulist">
                               <ul className="dropdown-menu bg-logoblue" >
                                 <li><NavLink className="dropdown-item" to="/HostedInfrastructure">Hosted Infrastructure</NavLink></li>

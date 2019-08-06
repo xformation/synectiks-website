@@ -38,7 +38,7 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
  }
 
  if (company.length < 6) {
-  errors.push("company name should be mentioned");
+  errors.push("Company name should be mentioned");
  }
  if (source.length < 6) {
   errors.push("Select following option");
@@ -70,27 +70,27 @@ const ModalContact = () => (
   validationSchema={Yup.object().shape({
    email: Yup.string()
     .email()
-    .required("Required")
-    .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Enter valid Email address"),
+    .required("Email Id is Required")
+    .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
    contact: Yup.string()
     .required("No Contact Number  provided.")
-    .min(10, "Contact number should be 10 chars minimum.")
-    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Enter your Contact Number"),
+    .min(10, "Contact number should be 10 numerics minimum.")
+    .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Contact number should be 10 numerics"),
    firstname: Yup.string()
-    .required("No First Name provided.")
-    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
+    .required("No First Name provided."),
+    // .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your First Name"),
    lastname: Yup.string()
-    .required("No Last Name provided.")
-    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
+    .required("No Last Name provided."),
+    // .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Last Name"),
    company: Yup.string()
-    .required("No Company Name provided.")
-    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
+    .required("No Company Name provided."),
+    // .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Company Name"),
    jobtitle: Yup.string()
-    .required("No Job title Name provided.")
-    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Job title"),
+    .required("No Job Title Name provided."),
+    // .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Job title"),
    country: Yup.string()
-    .required("No country Name provided.")
-    .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Country"),
+    .required("No Country Name provided."),
+    // .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Enter your Country"),
    source: Yup.string()
     .required("No Option selected.")
     .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
@@ -153,7 +153,7 @@ const ModalContact = () => (
                 <input
                   name="email"
                   type="text"
-                  placeholder="Enter your Business Email Address"
+                  placeholder="Enter Your Business Email Address"
                   value={values.email}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -181,11 +181,11 @@ const ModalContact = () => (
                 )}
               </div>
               <div>
-                <label>Job Title/Region</label>
+                <label>Job Title</label>
                 <input
                   name="jobtitle"
                   type="text"
-                  placeholder="Enter Your Country/Region"
+                  placeholder="Enter Your Job Title"
                   value={values.jobtitle}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -198,11 +198,11 @@ const ModalContact = () => (
             </div>
             <div className="rows">
               <div>
-                <label htmlFor="email">Contact Number</label>
+                <label >Contact Number</label>
                 <input
                   name="contact"
                   type="tel"
-                  placeholder="Enter your Contact Number"
+                  placeholder="Enter Your Contact Number"
                   value={values.contact}
                   onChange={handleChange}
                   onBlur={handleBlur}

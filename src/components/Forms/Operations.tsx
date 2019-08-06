@@ -65,7 +65,7 @@ import { Link } from "react-router-dom";
           24x7 Operations for enterprise managed services
         </h3>
       </div>
-      <div className="pb-5 text-center" data-aos="fade-up" data-aos-duration="2000">
+      <div className="pb-5 text-center">
         <div >
           <img
             src="img/OperationsGraph.png"
