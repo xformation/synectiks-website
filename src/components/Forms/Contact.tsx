@@ -81,8 +81,8 @@ export class Contact extends React.Component<{}, {}> {
                     company: Yup.string()
                         .required("No Company Name provided."),
                     city: Yup.string()
-                        .required("No City Name provided.")
-                        .matches(/^[a-zA-Z0-9_-]+[a-zA-Z0-9_-]*$/, "Enter your City"),
+                        .required("No City Name provided."),
+                        // .matches(/^[a-zA-Z0-9_-]+[a-zA-Z0-9_-]*$/, "Enter your City"),
                     source: Yup.string()
                         .required("No Option selected.")
                         .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),

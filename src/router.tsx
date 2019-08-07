@@ -42,6 +42,7 @@ import { Managedservices } from "./components/Forms/Managedservices";
 import { Networkservices } from "./components/Forms/Networkservices";
 import { Privacypolicy } from "./components/Forms/Privacypolicy";
 import { Askfordemo } from "./components/Forms/Askfordemo";
+import { ByUseCase } from "./components/Forms/ByUseCase";
 
 export const AppRouter: React.StatelessComponent<{}> = () => {
   return (
@@ -89,7 +90,8 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
           <Route path="/managedservices" component={Managedservices} />
           <Route path="/networkservices" component={Networkservices} />
           <Route path="/privacypolicy" component={Privacypolicy} /> 
-          <Route path="/askfordemo" component={Askfordemo} />                                        
+          <Route path="/askfordemo" component={Askfordemo} />  
+          <Route path="/byusecase" component={ByUseCase} />                                      
         </Switch>
 
         <Route component={Footer} />

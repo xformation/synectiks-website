@@ -202,6 +202,31 @@ export class Header extends React.Component<any, any, any>{
                           </NavLink>
                         </div>
                       </li>
+{/* 
+                      <li className="nav-item dropdown  ">
+                        <a className="nav-link px-4"
+                          href="#"
+                          id="navbardrop5"
+                          data-toggle="dropdown"
+                        >
+                          Solutions
+                  </a>
+                        <div className="dropdown-menu bg-logoblue">
+                          <NavLink className="dropdown-item" to="/byusecase">
+                            {" "}
+                            By Use Case{" "}
+                          </NavLink>
+                          <NavLink className="dropdown-item" to="/careers">
+                            {" "}
+                            By Industry{" "}
+                          </NavLink>
+                          <NavLink className="dropdown-item" to="/careers">
+                            {" "}
+                            By Organization Type{" "}
+                          </NavLink>
+                        </div>
+                      </li>
+ */}
                     </ul>
                   </div>
                 </div>
