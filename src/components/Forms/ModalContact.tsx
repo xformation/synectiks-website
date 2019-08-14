@@ -71,7 +71,8 @@ const ModalContact = () => (
    email: Yup.string()
     .email()
     .required("Email Id is Required")
-    .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
+    // .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
+    .matches(/^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/,"Enter valid Business Email address"),
    contact: Yup.string()
     .required("No Contact Number  provided.")
     .min(10, "Contact number should be 10 numerics minimum.")
@@ -273,7 +274,7 @@ const ModalContact = () => (
               </div>
             </div>
           </div>
-          <button type="submit" className="btn btn-primary fright mt-3" disabled={isSubmitting}>
+          <button type="submit" className="btn  bg-green text-white fright mt-3" disabled={isSubmitting}>
             Submit
           </button>
           <div className="text-center text-logoblue pt-3"><h3>{status ? status.success : ""}</h3></div>

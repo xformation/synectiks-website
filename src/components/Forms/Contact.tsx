@@ -64,13 +64,15 @@ export class Contact extends React.Component<{}, {}> {
                     }, 500);
                 }}
 
+
                 //********Using Yum for validation********/
                 validationSchema={Yup.object().shape({
                     email: Yup.string()
                         .email()
                         .required("Email Id is Required")
-                        .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
-                    contact: Yup.string()
+                        // .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(?!gmail.com)(?!yahoo.com)|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
+                        .matches(/^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/,"Enter valid Business Email address"),
+                        contact: Yup.string()
                         .required("No Contact Number  provided.")
                         .min(10, "Contact number should be 10 numerics minimum.")
                         .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Contact number should be 10 numerics"),
@@ -240,15 +242,16 @@ export class Contact extends React.Component<{}, {}> {
                                             <option value="MigrationDeployment">&nbsp;Migration&nbsp;&amp;&nbsp;Deployment</option>
                                             <option value="Operations">&nbsp;Operations</option>
                                             <option value="Optimization">&nbsp;Optimization</option>
-                                            <option value="Others">&nbsp;Others</option>
+                                            <option value="Others" id="others" >&nbsp;Others</option>
                                         </select>
+                                        <textarea form="input" id="servicetxtarea" placeholder="Enter required service here..." name="reason_other"></textarea>
                                         {errors.service && touched.service && (
                                             <div className="input-feedback">{errors.service}</div>
                                         )}
                                     </div>
 
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group pt-3'>
-                                    <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend mt-3 mx-auto" disabled={isSubmitting} >
+                                    <button type="submit" id="submit" className="btn bg-green text-white btnSend mt-3 mx-auto" disabled={isSubmitting} >
                                         Submit
                                     </button>
                                     </div>

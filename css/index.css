@@ -278,7 +278,7 @@
   background-color: #f47b21;
 }
 .bg-green {
-  background-color: #4db748;
+  background-color: #4db748 !important;
 }
 .bg-pink {
   background-color: #9c355c;
@@ -1679,3 +1679,9 @@ input.has-error, select.has-error, textarea.has-error {
 .input-feedback{
   color:#be0a0a;
 }
+/* #servicetxtarea{
+display: none;
+}
+#others:focus, #others:active > #servicetxtarea{
+display: block;
+} */

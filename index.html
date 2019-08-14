@@ -86,14 +86,38 @@
       });
     });
 
-  $(document).ready(function() {
-        $(function() {
-            $(".dropdown-item").on("click", function(e) {
-              $('.nav-item .nav-link').removeClass("active");
-                $(this).parents('.nav-item').find('.nav-link').addClass("active");
-            });
+    $(document).ready(function () {
+      $(function () {
+        $(".dropdown-item").on("click", function (e) {
+          $('.nav-item .nav-link').removeClass("active");
+          $(this).parents('.nav-item').find('.nav-link').addClass("active");
         });
+      });
     });
+
+
+//     $(document).ready(function() {
+//    $('#servicetxtarea').hide();
+// });
+//     $("#servicetxtarea").hide();
+    
+    $(document).ready(function(){
+      $("#servicetxtarea").hide();
+    $("#service").change(function () {
+      var val = $(this).val();
+      $("#servicetxtarea").hide();
+      if (val == "Others") {
+        $("#servicetxtarea").show();
+      }
+       else {
+        $("#servicetxtarea").hide();
+      }
+    });
+  });
+  $(document).ready(function(){
+      $("#servicetxtarea").hide();
+  });
+    
 
   </script>
   <!-- pop -->
@@ -104,11 +128,11 @@
   var vv_ext_id = '5d3702cb';
   var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
   (function () {
-  var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true;
-  va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js';
-  var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv);
+    var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true;
+    va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js';
+    var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv);
   })();
-  </script>
+</script>
 
 
 </html>

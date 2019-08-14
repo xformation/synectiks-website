@@ -69,8 +69,9 @@ export class Askfordemo extends React.Component<{}, {}> {
                     email: Yup.string()
                         .email()
                         .required("Email Id is Required")
-                        .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
-                    contact: Yup.string()
+                        // .matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/, "Enter valid Email address"),
+                        .matches(/^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/,"Enter valid Business Email address"),
+                        contact: Yup.string()
                         .required("No Contact Number  provided.")
                         .min(10, "Contact number should be 10 numerics minimum.")
                         .matches(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, "Contact number should be 10 numerics"),
@@ -249,7 +250,7 @@ export class Askfordemo extends React.Component<{}, {}> {
                                     </div>
 
                                     <div className='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group pt-3'>
-                                    <button type="submit" id="submit" className="btn bg-logoblue text-white btnSend mt-3 mx-auto" disabled={isSubmitting} >
+                                    <button type="submit" id="submit" className="btn bg-green text-white btnSend mt-3 mx-auto" disabled={isSubmitting} >
                                         Submit
                                     </button>
                                     </div>
