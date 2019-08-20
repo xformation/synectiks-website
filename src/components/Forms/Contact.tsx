@@ -2,7 +2,7 @@ import * as React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service) {
+function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service, otherservice) {
     // we are going to store errors for all fields
     // in a signle array
     const errors = [];
@@ -34,7 +34,7 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
     }
 
     if (company.length < 6) {
-        errors.push("company name should be mentioned");
+        errors.push("Company name should be mentioned");
     }
     if (source.length < 6) {
         errors.push("Select following option");
@@ -42,9 +42,28 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
     if (service.length < 6) {
         errors.push("Select following option");
     }
+    if (otherservice.length < 6) {
+        errors.push("Please mention service");
+    }
 
     return errors;
 }
+
+//   function handleChange(nameSelect)
+// {
+//     if(nameSelect){
+//       let others = this.document.getElementById("others").value;
+//         if(this.others == nameSelect.value){
+//             document.getElementById("otherservice").style.display = "block";
+//         }
+//         else{
+//             document.getElementById("otherservice").style.display = "none";
+//         }
+//     }
+//     else{
+//         document.getElementById("otherservice").style.display = "none";
+//     }
+// }
 export class Contact extends React.Component<{}, {}> {
 
     render() {
@@ -52,7 +71,7 @@ export class Contact extends React.Component<{}, {}> {
             <Formik
                 initialValues={{
                     firstname: '', lastname: '', email: '', company: '',
-                    city: '', contact: '',  source: '', service: ''
+                    city: '', contact: '',  source: '', service: '', otherservice: ''
                 }}
                 onSubmit={async (values, { setSubmitting, resetForm, setStatus }) => {
                     setTimeout(() => {
@@ -63,7 +82,6 @@ export class Contact extends React.Component<{}, {}> {
                         setSubmitting(false);
                     }, 500);
                 }}
-
 
                 //********Using Yum for validation********/
                 validationSchema={Yup.object().shape({
@@ -91,6 +109,8 @@ export class Contact extends React.Component<{}, {}> {
                     service: Yup.string()
                         .required("No Option selected.")
                         .matches(/^[a-zA-Z0-9]+[a-zA-Z0-9]*$/, "Select your option"),
+                    // otherservice:Yup.string()
+                    //     .required("No Service Name provided."),
 
                 })}
             >
@@ -112,7 +132,9 @@ export class Contact extends React.Component<{}, {}> {
                         </div> */}
                         </div>
                         <div ><h2 className="text-center text-black">Contact Us</h2></div>
-                        <form id="contactform" className="py-3" onSubmit={handleSubmit} action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                        {/* https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8 */}
+                        {/* <form action="https://formspree.io/email@domain.tld" method="POST" /> */}
+                        <form id="contactform" className="py-3" onSubmit={handleSubmit} action="https://formspree.io/samanth.krotha@synectiks.com" method="POST">
                         <input type="hidden" name="oid" value="00D1I000000kz7k"/>
                             <div className="container-fluid">
                                 <div className="row">
@@ -244,7 +266,15 @@ export class Contact extends React.Component<{}, {}> {
                                             <option value="Optimization">&nbsp;Optimization</option>
                                             <option value="Others" id="others" >&nbsp;Others</option>
                                         </select>
-                                        <textarea form="input" id="servicetxtarea" placeholder="Enter required service here..." name="reason_other"></textarea>
+                                        {/* <div  style={{display:'none'}} onChange={handleChange}> */}
+                                        <textarea form="input" id="otherservice"  style={{display:'none'}}  placeholder="Enter required service here..." 
+                                        name="otherservice" onChange={handleChange} onBlur={handleBlur}  value={values.otherservice}
+                                        className={errors.otherservice && touched.otherservice && "error"}>
+                                        </textarea>
+                                        {errors.otherservice && touched.otherservice && (
+                                        <div className="input-feedback">{errors.otherservice}</div>
+                                        )}
+                                        {/* </div> */}
                                         {errors.service && touched.service && (
                                             <div className="input-feedback">{errors.service}</div>
                                         )}

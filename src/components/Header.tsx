@@ -33,10 +33,11 @@ export class Header extends React.Component<any, any, any>{
     window.scrollTo(0, 0)
   }
 
-  refreshPage() {
-    // location.reload();
-    
-  }
+  // refreshPage() {
+  //   location.reload();
+  //   window.location.reload()   
+  // }
+  
   // onClick = {this.refreshPage}
   
 
@@ -67,7 +68,7 @@ export class Header extends React.Component<any, any, any>{
                 </div>
 
                 <div className="pb-2 alignRight pr-2">
-                  <NavLink className="navlink navfont noLine" style={colorBlack}  to="/contactus" onClick = {this.refreshPage}><small>Contact&nbsp;Us&nbsp;&emsp;|</small></NavLink>&emsp;&nbsp;
+                  <NavLink className="navlink navfont noLine button" style={colorBlack}  to="/contactus" ><small>Contact&nbsp;Us&nbsp;&emsp;|</small></NavLink>&emsp;&nbsp;
                <a className="fa fa-linkedin-square" href="https://www.linkedin.com/company/synectiks/" target="_blank" aria-hidden="true"></a>&nbsp;
             </div>
                 <div className="d-flex navList" >
