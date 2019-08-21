@@ -2,7 +2,7 @@ import * as React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service, otherservice) {
+function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service, otherservice, othersource) {
     // we are going to store errors for all fields
     // in a signle array
     const errors = [];
@@ -45,6 +45,9 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
     if (otherservice.length < 6) {
         errors.push("Please mention service");
     }
+    if (othersource.length < 6) {
+        errors.push("Please mention source");
+    }
 
     return errors;
 }
@@ -71,7 +74,7 @@ export class Contact extends React.Component<{}, {}> {
             <Formik
                 initialValues={{
                     firstname: '', lastname: '', email: '', company: '',
-                    city: '', contact: '',  source: '', service: '', otherservice: ''
+                    city: '', contact: '',  source: '', service: '', otherservice: '', othersource:''
                 }}
                 onSubmit={async (values, { setSubmitting, resetForm, setStatus }) => {
                     setTimeout(() => {
@@ -240,13 +243,17 @@ export class Contact extends React.Component<{}, {}> {
                                             <option value="CustomerEvent">&nbsp;Customer&nbsp;Event</option>
                                             <option value="EmployeeReferral">&nbsp;Employee&nbsp;Referral</option>
                                             <option value="GoogleAdwords">&nbsp;Google&nbsp;Adwords</option>
-                                            <option value="Other">&nbsp;Other</option>
                                             <option value="Partner">&nbsp;Partner</option>
                                             <option value="PurchasedList">&nbsp;Purchased&nbsp;List</option>
                                             <option value="TradeShow">&nbsp;Trade&nbsp;Show</option>
                                             <option value="Webinar">&nbsp;Webinar</option>
                                             <option value="Website">&nbsp;Website</option>
+                                            <option value="Othersource" id="othersrc">&nbsp;Other</option>
                                         </select>
+                                        <textarea form="input" id="othersource" style={{display:'none'}}   placeholder="Enter your source here..." 
+                                        name="othersource" onChange={handleChange} onBlur={handleBlur}  value={values.othersource}
+                                        className={errors.othersource && touched.othersource && "error"}>
+                                        </textarea>
                                         {errors.source && touched.source && (
                                             <div className="input-feedback">{errors.source}</div>
                                         )}
@@ -257,7 +264,7 @@ export class Contact extends React.Component<{}, {}> {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             className={errors.service && touched.service && "error"}>
-                                             <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>
+                                            <option value="" className="bg-logoblue text-white">&nbsp;Select&nbsp;Service</option>
                                             <option value="Cloud">&nbsp;Cloud</option>
                                             <option value="EnterpriseTransformation">&nbsp;Enterprise&nbsp;Transformation</option>
                                             <option value="Foundation">&nbsp;Foundation</option>
@@ -267,7 +274,7 @@ export class Contact extends React.Component<{}, {}> {
                                             <option value="Others" id="others" >&nbsp;Others</option>
                                         </select>
                                         {/* <div  style={{display:'none'}} onChange={handleChange}> */}
-                                        <textarea form="input" id="otherservice"  style={{display:'none'}}  placeholder="Enter required service here..." 
+                                        <textarea form="input" id="otherservice" style={{display:'none'}}   placeholder="Enter required service here..." 
                                         name="otherservice" onChange={handleChange} onBlur={handleBlur}  value={values.otherservice}
                                         className={errors.otherservice && touched.otherservice && "error"}>
                                         </textarea>
@@ -299,3 +306,12 @@ export class Contact extends React.Component<{}, {}> {
 }
 
 export default Contact;
+
+var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true;
+va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js';
+var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv);
+})(); 

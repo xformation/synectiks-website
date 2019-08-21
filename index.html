@@ -96,22 +96,54 @@
 
 //     $(document).ready(function() {
 //    $('#otherservice').hide();
+//    $("#otherservice").style.display = "none";
 // });
 //     $("#otherservice").hide();
     
     $(document).ready(function(){
       $("#otherservice").hide();
+    });
+      // $("#otherservice").style.display = "none";
     $("#service").change(function () {
       var val = $(this).val();
       $("#otherservice").hide();
       if (val == "Others") {
         $("#otherservice").show();
+        // $("#otherservice").style.display = "block";
       }
        else {
         $("#otherservice").hide();
       }
     });
-  });
+
+    $(document).ready(function(){
+      $("#othersource").hide();
+    });
+    $("#source").change(function () {
+      var val = $(this).val();
+      $("#othersource").hide();
+      if (val == "Othersource") {
+        $("#othersource").show();
+      }
+       else {
+        $("#othersource").hide();
+      }
+    });
+
+
+  // $(document).ready(function(){
+  //     $("#otherservice").style.display = "none";
+  //   $("#service").change(function () {
+  //     var val = $(this).val();
+  //     $("#otherservice").style.display = "none";
+  //     if (val == "Others") {
+  //       $("#otherservice").style.display = "block";
+  //     }
+  //      else {
+  //       $("#otherservice").style.display = "none";
+  //     }
+  //   });
+  // });
 
   // $(document).ready(function(){
   //       $("button").click(function(){
@@ -148,7 +180,7 @@
   va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js';
   var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv);
   })(); 
-  </script> 
+</script> 
 
 
 </html>

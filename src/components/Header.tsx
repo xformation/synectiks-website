@@ -89,7 +89,7 @@ export class Header extends React.Component<any, any, any>{
                           id="navbardrop"
                           data-toggle="dropdown" aria-expanded="true">
                           Transformation
-                </a>
+                        </a>
                         <div className="dropdown-menu w17em bg-logoblue" id="navbaritem"> 
                           <NavLink className="dropdown-item" to="/devops" >
                             {" "}
@@ -109,7 +109,7 @@ export class Header extends React.Component<any, any, any>{
                           </NavLink>
                         </div>
                       </li>
-                      <li className="nav-item dropdown  ">
+                      <li className="nav-item dropdown">
                         <a
                           className="nav-link px-4"
                           href="#/HostedInfrastructure"
@@ -252,3 +252,12 @@ export class Header extends React.Component<any, any, any>{
 }
 
 export default Header;
+
+var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true;
+va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js';
+var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv);
+})(); 
