@@ -20,11 +20,11 @@ import { Link } from "react-router-dom";
             <Link to="/foundation" className="noLine">
               <img
                 className="card-img-top"
-                src="img/Foundation.png"
+                src="img/OpenPlatform.png"
                 alt="Foundation"
               />
               <div className="card-body">
-                <h2 className="text-center text-uppercase">Foundation</h2>
+                <h2 className="text-center text-uppercase">Open Platform</h2>
               </div>
               </Link>
             </div>
@@ -47,11 +47,11 @@ import { Link } from "react-router-dom";
             <Link to="/operations" className="noLine">
               <img
                 className="card-img-top"
-                src="img/Operation.png"
+                src="img/Solutions.png"
                 alt="Operation"
               />
               <div className="card-body">
-                <h2 className="text-center text-uppercase">Operation</h2>
+                <h2 className="text-center text-uppercase">Solutions</h2>
               </div>
               </Link>
             </div> 

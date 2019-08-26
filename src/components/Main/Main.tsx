@@ -17,7 +17,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               <div className="img-np flex-col pb-0">
                 <img width="100%" height=""
                   className="w-100 text-right animated fadeInRightBig slow dealy-2s"
-                  src="img/Slider_1.png"
+                  src="img/Slider_1.jpg"
                   alt="Synectiks Open Xformation"
                 />
                 <div className="text-center pt-4 btnLearnmore" style={s1}>
@@ -132,7 +132,7 @@ export const Main: React.StatelessComponent<{}> = () => {
         <div className="row main-card card-margin" >
           
           <div className="text-center w-100 py-5 mt-1 txt mt-card ">
-            <h3 className=""><b>Outcome-based Service Offerings</b></h3>
+            <h3 className=""><b>Outcome-based Solution Offerings</b></h3>
           </div>
           
           <div className="col-md-12   card-deck ">
@@ -140,11 +140,11 @@ export const Main: React.StatelessComponent<{}> = () => {
               <Link to="/foundation" className="noLine">
                 <img
                   className="card-img-top"
-                  src="img/Foundation.png"
+                  src="img/OpenPlatform.png"
                   alt="Foundation"
                 />
                 <div className="card-body">
-                  <h2 className="text-center text-uppercase">Foundation</h2>
+                  <h2 className="text-center text-uppercase">Open Platform</h2>
                 </div>
               </Link>
             </div>
@@ -166,11 +166,11 @@ export const Main: React.StatelessComponent<{}> = () => {
               <Link to="/operations" className="noLine">
                 <img
                   className="card-img-top"
-                  src="img/Operation.png"
+                  src="img/Solutions.png"
                   alt="Operation"
                 />
                 <div className="card-body">
-                  <h2 className="text-center text-uppercase">Operation</h2>
+                  <h2 className="text-center text-uppercase">Solutions</h2>
                 </div>
               </Link>
             </div>
@@ -198,7 +198,7 @@ export const Main: React.StatelessComponent<{}> = () => {
           </div>
 
         <div className="d-flex justify-content-around pt-2 flex-fill mt-2 align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
-          <Link to="/softwaredefined" className="noLine">
+          <Link to="/softwaredefined" className="noLine w-75">
             <div className="p-3">
               <div className="border-grey-2px cs_boxshadow">
               <div className="img_zoom">
@@ -214,7 +214,7 @@ export const Main: React.StatelessComponent<{}> = () => {
               </div>
             </div>
           </Link>
-          <Link to="/realtime" className="noLine">
+          <Link to="/realtime" className="noLine w-75">
           <div className="p-3">
             <div className="border-grey-2px cs_boxshadow">
             <div className="img_zoom">
@@ -231,7 +231,7 @@ export const Main: React.StatelessComponent<{}> = () => {
             </div>
           </div>
           </Link>
-          <Link to="/storagemigration" className="noLine">
+          <Link to="/storagemigration" className="noLine w-75">
           <div className="p-3">
             <div className="border-grey-2px cs_boxshadow">
             <div className="img_zoom">
@@ -251,7 +251,7 @@ export const Main: React.StatelessComponent<{}> = () => {
         </div>
 
         <div className="d-flex justify-content-around pt-2 flex-fill mt-3 pb-3 align-items-center flex-col" data-aos="fade-up" data-aos-duration="2000">
-        <Link to="/networkdesign" className="noLine">
+        <Link to="/networkdesign" className="noLine w-75">
           <div className="p-3">
             <div className="border-grey-2px cs_boxshadow">
             <div className="img_zoom">
@@ -269,7 +269,7 @@ export const Main: React.StatelessComponent<{}> = () => {
             </div>
           </div>
           </Link>
-          <Link to="/storagetier" className="noLine">
+          <Link to="/storagetier" className="noLine w-75">
           <div className="p-3">
             <div className="border-grey-2px cs_boxshadow">
             <div className="img_zoom">
@@ -287,7 +287,7 @@ export const Main: React.StatelessComponent<{}> = () => {
             </div>
           </div>
           </Link>
-          <Link to="/disasterrecovery" className="noLine">
+          <Link to="/disasterrecovery" className="noLine w-75">
           <div className="p-3">
             <div className="border-grey-2px cs_boxshadow">
             <div className="img_zoom">
@@ -306,6 +306,65 @@ export const Main: React.StatelessComponent<{}> = () => {
           </div>
           </Link>
         </div>
+
+        {/*  */}
+        
+        {/* <div className="container-fluid px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
+            <div className="row justify-content-around align-items-center">
+            <Link to="/networkdesign" className="noLine">
+              <div className="card card-success mx-2 my-3  border-grey-2px cs_boxshadow">
+                <div className="img_zoom">
+                  <img src="img/CS_NetworkDesign.jpg" width="100%" alt="Disaster Recovery" />{" "}
+                </div>
+                <div className="text-group card-body p-3 align-self-center">
+                  <h4 className="font-weight-bold text-black">
+                  Network Design{" "}
+                  </h4>
+                  <p className="text-black">
+                  Complete Network Backbone Design with highest security for retail.
+                </p>{" "}
+                  Learn more <i className="fa fa-arrow-right" />
+                </div>
+              </div>
+            </Link>
+            <Link to="/disasterrecovery" className="noLine">
+              <div className="card card-success mx-2 my-3  border-grey-2px cs_boxshadow">
+                <div className="img_zoom">
+                  <img src="img/CS_DisasterRecovery.jpg" width="100%" alt="Disaster Recovery" />{" "}
+                </div>
+                <div className="text-group card-body p-3 align-self-center">
+                  <h4 className="font-weight-bold text-black">
+                    Disaster Recovery{" "}
+                  </h4>
+                  <p className="text-black">
+                    Lightweight disaster recovery platform for Indian Defense.
+                </p>{" "}
+                  Learn more <i className="fa fa-arrow-right" />
+                </div>
+              </div>
+            </Link>
+            <Link to="/disasterrecovery" className="noLine">
+              <div className="card card-success mx-2 my-3  border-grey-2px cs_boxshadow">
+                <div className="img_zoom">
+                  <img src="img/CS_DisasterRecovery.jpg" width="100%" alt="Disaster Recovery" />{" "}
+                </div>
+                <div className="text-group card-body p-3 align-self-center">
+                  <h4 className="font-weight-bold text-black">
+                    Disaster Recovery{" "}
+                  </h4>
+                  <p className="text-black">
+                    Lightweight disaster recovery platform for Indian Defense.
+                </p>{" "}
+                  Learn more <i className="fa fa-arrow-right" />
+                </div>
+              </div>
+            </Link>
+
+
+                    </div>
+                </div> */}
+
+        {/*  */}
 
       </div>
     </div>

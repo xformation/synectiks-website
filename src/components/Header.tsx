@@ -70,6 +70,8 @@ export class Header extends React.Component<any, any, any>{
                 <div className="pb-2 alignRight pr-2">
                   <NavLink className="navlink navfont noLine button" style={colorBlack}  to="/contactus" ><small>Contact&nbsp;Us&nbsp;&emsp;|</small></NavLink>&emsp;&nbsp;
                <a className="fa fa-linkedin-square" href="https://www.linkedin.com/company/synectiks/" target="_blank" aria-hidden="true"></a>&nbsp;
+               <a className="fa fa-twitter-square" href="https://twitter.com/synectiks"  target="_blank" aria-hidden="true"></a>&nbsp;
+               <a className="fa fa-facebook-square" href="https://www.facebook.com/synectikscloud/" target="_blank" aria-hidden="true"></a>&nbsp;
             </div>
                 <div className="d-flex navList" >
                   <div>
