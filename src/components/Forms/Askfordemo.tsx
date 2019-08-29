@@ -2,7 +2,7 @@ import * as React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service) {
+function validate(firstname, lastname, email, company, jobtitle, country, contact, source, service,otherservice, othersource) {
     // we are going to store errors for all fields
     // in a signle array
     const errors = [];
@@ -42,6 +42,12 @@ function validate(firstname, lastname, email, company, jobtitle, country, contac
     if (service.length < 6) {
         errors.push("Select following option");
     }
+    if (otherservice.length < 6) {
+        errors.push("Please mention service");
+    }
+    if (othersource.length < 6) {
+        errors.push("Please mention source");
+    }
 
     return errors;
 }
@@ -52,7 +58,7 @@ export class Askfordemo extends React.Component<{}, {}> {
             <Formik
                 initialValues={{
                     firstname: '', lastname: '', email: '', company: '',
-                    city: '', contact: '', source: '', service: ''
+                    city: '', contact: '', source: '', service: '',otherservice: '', othersource:''
                 }}
                 onSubmit={async (values, { setSubmitting, resetForm, setStatus }) => {
                     setTimeout(() => {
@@ -218,13 +224,17 @@ export class Askfordemo extends React.Component<{}, {}> {
                                             <option value="CustomerEvent">&nbsp;Customer&nbsp;Event</option>
                                             <option value="EmployeeReferral">&nbsp;Employee&nbsp;Referral</option>
                                             <option value="GoogleAdwords">&nbsp;Google&nbsp;Adwords</option>
-                                            <option value="Other">&nbsp;Other</option>
                                             <option value="Partner">&nbsp;Partner</option>
                                             <option value="PurchasedList">&nbsp;Purchased&nbsp;List</option>
                                             <option value="TradeShow">&nbsp;Trade&nbsp;Show</option>
                                             <option value="Webinar">&nbsp;Webinar</option>
                                             <option value="Website">&nbsp;Website</option>
+                                            <option value="Othersource" id="othersrc">&nbsp;Other</option>
                                         </select>
+                                        <textarea form="input" id="othersource" style={{display:'none'}}   placeholder="Enter your source here..." 
+                                        name="othersource" onChange={handleChange} onBlur={handleBlur}  value={values.othersource}
+                                        className={errors.othersource && touched.othersource && "error"}>
+                                        </textarea>
                                         {errors.source && touched.source && (
                                             <div className="input-feedback">{errors.source}</div>
                                         )}
@@ -244,6 +254,13 @@ export class Askfordemo extends React.Component<{}, {}> {
                                             <option value="Optimization">&nbsp;Optimization</option>
                                             <option value="Others">&nbsp;Others</option>
                                         </select>
+                                        <textarea form="input" id="otherservice" style={{display:'none'}}   placeholder="Enter required service here..." 
+                                        name="otherservice" onChange={handleChange} onBlur={handleBlur}  value={values.otherservice}
+                                        className={errors.otherservice && touched.otherservice && "error"}>
+                                        </textarea>
+                                        {errors.otherservice && touched.otherservice && (
+                                        <div className="input-feedback">{errors.otherservice}</div>
+                                        )}
                                         {errors.service && touched.service && (
                                             <div className="input-feedback">{errors.service}</div>
                                         )}

@@ -36,7 +36,12 @@
   challenges by providing unmatched services in consulting, technology and operations. A global technology firm 
   who specializes in helping highly-regulated enterprises transform faster, modernizing their way of working, 
   helping optimize your resources and lower your costs. Combined with Synectiks’ full vary of advanced technology 
-  solutions, managed and skilled services, we provide the leading portfolios within the technology services.">
+  solutions, managed and skilled services, we provide the leading portfolios within the technology services.
+  Synectiks Open Xformation Platform.
+  Enterprises looking for modernization of their legacy stack and operate to faster and competitive way, can use 
+  SYNECTIKS - Open Platform to bring the cultural transformation and agility needed for today’s business. Whether 
+  it is a new business application or transformation of legacy applications, our open platform coupled with our 
+  experience and expertise accelerates the project execution @50% time & cost.">
   <!-- Favicon End -->
   <!-- <h1>Delivering affordable and powerful  open products based custom integrated solutions. We deliver solutions 
     on Software Defined Infrastructure, Container Ecosystem & Microservices ,Business Analytics 
@@ -77,6 +82,14 @@
     //     $(".content").fadeOut();
     //   }, );
     // });
+
+    $(document).ready(function () {
+      $(".navbar-nav").click(function () {
+        $("#navbarSupportedContent").close();
+      });
+    });
+    
+    // Cookie Strip
     $(document).ready(function () {
       $("#hide").click(function () {
         $(".content").hide();
@@ -90,7 +103,7 @@
       var $subMenu = $(this).next(".dropdown-menu");
       $subMenu.toggleClass('show');
 
-
+// NavLink HighLight
       $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
         $('.dropdown-submenu .show').removeClass("show");
       });

@@ -61,7 +61,7 @@ export class Foundation extends React.Component<{}, {}> {
         </div>
        
         <div className="p-5 mt-5 text-justify">
-          <h3 className="fh3 text-center">Synectiks&nbsp;Open&nbsp;Xformation&nbsp;Platform</h3>
+          <h3 className="fh3 text-center">Synectiks&nbsp;Open&nbsp;Xformation Platform</h3>
           <p className="lineHeight-24 pt-3">
             As every business today need to address volume/velocity challenges, it must evolve to stay ahead of
             demand. Cloud adoption requires a secure and consistent Foundation to allow enterprises migrate their

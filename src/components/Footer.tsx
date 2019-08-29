@@ -24,7 +24,7 @@ export const googleMapURL = 'https://maps.google.com/maps/api/js?key=AIzaSyDzf6G
   return (
     <div>      
       <div className="text-center text-white fixed-bottom bg-logoblue content" >
-      <button className='btn bg-logoblue text-white  fa fa-times float-right' type="submit" id="hide"></button>
+      <button className=' bg-logoblue text-white  fa fa-times float-right' type="submit" id="hide"></button>
         <p className="mb-1 pt-2 px-3 fsize08">
         We use cookies for advertising, social media and analytics purposes. Read about how we use cookies in our updated 
         <NavLink className=" navfont  text-white" to="/privacypolicy" ><small className="fsize07">&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;</small></NavLink>

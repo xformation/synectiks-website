@@ -63,7 +63,7 @@ export class Header extends React.Component<any, any, any>{
                     aria-label="Toggle navigation"
                   >
                     <span className="navbar-toggler-icon" />
-                    <span className=" my-1 mx-2 close ">X</span>
+                    <span className="close fa fa-times"></span>
                   </button>
                 </div>
 
@@ -84,7 +84,8 @@ export class Header extends React.Component<any, any, any>{
                     className="collapse navbar-collapse pr-5 ml-15"
                     id="navbarSupportedContent"
                   >
-                    <ul className="navbar-nav navfont ml-auto text-capitalize pt-6">
+                    {/*  data-toggle="collapse" data-target="#navbarSupportedContent" */}
+                    <ul className="navbar-nav navfont ml-auto text-capitalize pt-6" >
                       <li className="nav-item dropdown" >
                         <a className="nav-link px-4"
                           href="#"
@@ -92,8 +93,8 @@ export class Header extends React.Component<any, any, any>{
                           data-toggle="dropdown" aria-expanded="true">
                           Transformation
                         </a>
-                        <div className="dropdown-menu w17em bg-logoblue" id="navbaritem"> 
-                          <NavLink className="dropdown-item" to="/devops" >
+                        <div className="dropdown-menu w17em bg-logoblue" id="navbaritem" > 
+                          <NavLink className="dropdown-item" to="/devops">
                             {" "}
                             DevOps Transformation{" "}
                           </NavLink>

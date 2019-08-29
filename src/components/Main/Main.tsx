@@ -129,7 +129,7 @@ export const Main: React.StatelessComponent<{}> = () => {
 
         </div>
 
-        <div className="row main-card card-margin" >
+        <div className=" main-card card-margin" >
           
           <div className="text-center w-100 py-5 mt-1 txt mt-card ">
             <h3 className=""><b>Outcome-based Solution Offerings</b></h3>
@@ -307,6 +307,51 @@ export const Main: React.StatelessComponent<{}> = () => {
           </Link>
         </div>
 
+
+        {/* Seg1 */}
+        {/* <div className="container-fluid px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
+            <div className="d-flex flex-fill flex-col justify-content-around align-items-center">
+            <Link to="/foundation" className="noLine p-2">
+              <div className="card card-success mx-2 my-3 cs_boxshadow">
+                <div className="text-center p-3">
+                  <img src="img/OpenPlatform.png" width="100%" alt="Open Platform" />{" "}
+                </div>
+                <div className="text-group card-body p-3 align-self-center">
+                  <h4 className="font-weight-bold text-black text-uppercase">
+                  Open Platform{" "}
+                  </h4>
+                </div>
+              </div>
+            </Link>
+            <Link to="/transformation" className="noLine p-2">
+              <div className="card card-success mx-2 my-3 cs_boxshadow">
+                <div className="text-center p-3">
+                  <img src="img/Transformation.png" width="100%" alt="Transformation" />{" "}
+                </div>
+                <div className="text-group card-body p-3 align-self-center">
+                  <h4 className="font-weight-bold text-black text-uppercase">
+                  Transformation{" "}
+                  </h4>
+                </div>
+              </div>
+            </Link>
+            <Link to="/operations" className="noLine p-2">
+              <div className="card card-success mx-2 my-3 cs_boxshadow">
+                <div className="text-center p-3">
+                  <img src="img/Solutions.png" width="100%" alt="Solutions" />{" "}
+                </div>
+                <div className="text-group card-body p-3 align-self-center">
+                  <h4 className="font-weight-bold text-black text-uppercase">
+                  Solutions{" "}
+                  </h4>
+                </div>
+              </div>
+            </Link>
+                    </div>
+                </div> */}
+
+        {/* Seg1 End */}
+
         {/*  */}
         
         {/* <div className="container-fluid px-5 py-3" data-aos="fade-up" data-aos-duration="2000">
@@ -314,7 +359,7 @@ export const Main: React.StatelessComponent<{}> = () => {
             <Link to="/networkdesign" className="noLine">
               <div className="card card-success mx-2 my-3  border-grey-2px cs_boxshadow">
                 <div className="img_zoom">
-                  <img src="img/CS_NetworkDesign.jpg" width="100%" alt="Disaster Recovery" />{" "}
+                  <img src="img/CS_NetworkDesign.jpg" width="100%" alt="NetworkDesign" />{" "}
                 </div>
                 <div className="text-group card-body p-3 align-self-center">
                   <h4 className="font-weight-bold text-black">
@@ -327,17 +372,17 @@ export const Main: React.StatelessComponent<{}> = () => {
                 </div>
               </div>
             </Link>
-            <Link to="/disasterrecovery" className="noLine">
+            <Link to="/storagetier" className="noLine">
               <div className="card card-success mx-2 my-3  border-grey-2px cs_boxshadow">
                 <div className="img_zoom">
-                  <img src="img/CS_DisasterRecovery.jpg" width="100%" alt="Disaster Recovery" />{" "}
+                  <img src="img/CS_StorageTier.jpg" width="100%" alt="StorageTier" />{" "}
                 </div>
                 <div className="text-group card-body p-3 align-self-center">
                   <h4 className="font-weight-bold text-black">
-                    Disaster Recovery{" "}
+                  Storage Tier{" "}
                   </h4>
                   <p className="text-black">
-                    Lightweight disaster recovery platform for Indian Defense.
+                  Moving Bigdata Workloads to aggregated platform for a large telco.
                 </p>{" "}
                   Learn more <i className="fa fa-arrow-right" />
                 </div>
@@ -359,8 +404,6 @@ export const Main: React.StatelessComponent<{}> = () => {
                 </div>
               </div>
             </Link>
-
-
                     </div>
                 </div> */}
 

@@ -459,6 +459,9 @@ margin-right:2.5em  !important;
  }
 /* Toggle Button */
 
+.navbar-toggler{
+  font-size: 0.75em !important;
+}
 .navbar-toggler>.close {
   display:inline;
   color: #ffffff !important;
@@ -1686,6 +1689,10 @@ input.has-error, select.has-error, textarea.has-error {
 }
 .input-feedback{
   color:#be0a0a;
+}
+#hide{
+  border: 1em;
+  margin-top: 0.25em;
 }
 /* #servicetxtarea{
 display: none;
