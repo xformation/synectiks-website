@@ -292,7 +292,7 @@ const FlavorForm = () => {
             </div>
             <div
               className="col-sm-4 col-md-6 col-lg-6 col-xl-6 field-group"
-              style={{ alignSelf: 'baseline', marginTop: '2rem' }}
+              style={{ alignSelf: 'center', marginTop: '3rem' }}
             >
               <button
                 type="submit"
