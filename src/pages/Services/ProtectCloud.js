@@ -283,7 +283,7 @@ const ProtectCloud = () => {
                     </p>
                   </div>
                   <div>
-                    <h5 className="ft">Features Comparison In Detail</h5>
+                    {/* <h5 className="ft text-center"><strong>Features Comparison In Detail</strong></h5> */}
                     <div className='svg-animation'>
                     <SvgAnimation/>
                     </div>
@@ -702,7 +702,10 @@ const ProtectCloud = () => {
 
                   <div>
                     <p>
-                      Contact us for a Quick Demo and check out all Protect
+                      Contact us for a <span style={{color: "#007BFF", cursor: 'pointer'}} onClick = {(e) => {
+                        let names = document.getElementById('name');
+                          names.focus()
+                      }}>Quick Demo</span> and check out all Protect
                       Cloud rich security features and how to manage all
                       end-devices in an environment using SaaS based readily
                       available web-console.

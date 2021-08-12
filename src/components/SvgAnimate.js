@@ -619,6 +619,14 @@ function SvgComponent(props) {
       >
         <g id="prefix__Layer_2" data-name="Layer 2">
           <g id="prefix__Layer_1-2" data-name="Layer 1">
+          <text
+              transform="translate(372 106.2)"
+              fill="#231f20"
+              fontSize={40}
+              fontWeight={600}
+              textAlign="center" >
+              <tspan className="prefix__cls-10">{"Features Comparison In Detail"}</tspan>
+            </text>
             <g mask="url(#prefix__mask-4)">
               <path
                 d="M1012.76 337.24A423.5 423.5 0 011125 625c0 234.72-190.28 425-425 425a423.5 423.5 0 01-287.76-112.24A423.88 423.88 0 00725 1075c234.72 0 425-190.28 425-425a423.88 423.88 0 00-137.24-312.76z"
