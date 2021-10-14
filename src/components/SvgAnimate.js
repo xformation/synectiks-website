@@ -884,14 +884,14 @@ function SvgComponent(props) {
                 d="M551 626a150 150 0 01255.56-106.56 150 150 0 10-212.12 212.12A149.51 149.51 0 01551 626z"
               />
               <text
-                transform="translate(606.92 677.62)"
+                transform="translate(593.92 677.62)"
                 fontSize={25}
-                fontFamily="Roboto-Bold,Roboto"
+                fontFamily="montserrat"
                 fontWeight={700}
                 fill="#474647"
               >
-                {"PR"}
-                <tspan className="prefix__cls-50" x={32.08} y={0}>
+                {"PROTECT CLOUD"}
+                {/* <tspan className="prefix__cls-50" x={32.08} y={0}>
                   {"O"}
                 </tspan>
                 <tspan x={48.3} y={0} letterSpacing={0}>
@@ -911,14 +911,16 @@ function SvgComponent(props) {
                 </tspan>
                 <tspan x={143.91} y={0} letterSpacing={0}>
                   {"OUD"}
-                </tspan>
+                </tspan> */}
               </text>
               <text
                 className="prefix__cls-49"
-                transform="translate(607.63 694.13)"
+                transform="translate(572.63 694.13)"
+                 fontFamily="montserrat !important"
+                 letterSpacing={'2px'}
               >
-                {"GAME-C"}
-                <tspan className="prefix__cls-69" x={49.85} y={0}>
+                {"GAME-CHANGING PROTECTION"}
+                {/* <tspan className="prefix__cls-69" x={60} y={0}>
                   {"H"}
                 </tspan>
                 <tspan x={59.15} y={0}>
@@ -935,7 +937,7 @@ function SvgComponent(props) {
                 </tspan>
                 <tspan x={159.78} y={0}>
                   {"TION"}
-                </tspan>
+                </tspan> */}
               </text>
               <path
                 d="M645.47 629.89a3.68 3.68 0 01-4.1-3.51v-74.51a3.77 3.77 0 014.1-3.6l106.31 3.85a3.35 3.35 0 013.12 3.37v64.75a3.44 3.44 0 01-3.12 3.44z"

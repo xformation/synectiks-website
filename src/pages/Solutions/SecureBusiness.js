@@ -5,8 +5,8 @@ import styled from 'styled-components';
 // import syn from '../../images/secure-cyber.svg';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import SEO from '../../components/seo.js';
-// import syn from '../../images/secure-hosted.svg';
-import syn from '../../images/secure-no-vdi.png';
+import syn from '../../images/secure-hosted.svg';
+// import syn from '../../images/secure-no-vdi.png';
 const SecureBusiness = () => {
   return (
     <Layout>
@@ -58,14 +58,14 @@ const SecureBusiness = () => {
                   degree of control, security, and simplicity.
                 </p>
               </div>
-              {/* <div className='excerpt'>
+              <div className='excerpt'>
 								<a href='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop</a>
 								<p>
 									Synectiks is an efficient Desktop as a Service provider that scales your workspace
 									to the cloud, driving the highest performance in speed, uptime and scalability at an
 									affordable price.
 								</p>
-							</div> */}
+							</div>
             </div>
             <div className="col-md-6 py-4 px-0 ">
               <img src={syn} alt="" className="w-65" />

@@ -1161,7 +1161,7 @@ const ProctectCloudWrapper = styled.div`
       display: block;
     }
     .svg-animation{
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
   }
     .table-img {
