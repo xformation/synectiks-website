@@ -59,7 +59,7 @@ const BreadCrumbsWrapper = styled.div`
 		align-items: end;
 		flex-direction: row;
 	}
-}
+
 	@media screen and (min-width: 576px) {
 		a {
 			width: auto;
@@ -91,7 +91,7 @@ const BreadCrumbsWrapper = styled.div`
 		}
 		display: flex;
 		justify-content: flex-start;
-		align-items: end;
+		align-items: flex-start;
 		flex-direction: row;
 	}
 `;
