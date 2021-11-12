@@ -85,7 +85,8 @@ export class Footer extends React.Component {
                 <img
                   alt="U.S. Chamber of Commerce Member 2021"
                   title="U.S. Chamber of Commerce Member 2021"
-                  src="https://www.uschamber.com/sticker/image?i=n1&m=10038883"
+                  src={UsChamber}
+                  // src="https://www.uschamber.com/sticker/image?i=n1&m=10038883"
                 />
               </a>
               <h4 className="text-light text-capitalize mb-2 mt-3">

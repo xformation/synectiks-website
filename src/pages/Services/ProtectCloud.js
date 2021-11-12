@@ -152,12 +152,12 @@ const ProtectCloud = () => {
               <div className="bg-lightgrey mb-0 pb-3">
                 <div className="">
                 <p>
-                      <strong>Protect Cloud</strong> is a SaaS based readily
+                      Protect Cloud is a SaaS based readily
                       available Innovative and powerful web-based ALL-IN-ONE
                       solution, with one-agent on any given Server/End-point
                       device to serve all Backup & Disaster Recovery needs along
                       with basic necessary features like Anti-Virus,
-                      Anti-Malware, vulnerability Assessment, Windows- Patch
+                      Anti-Malware, Vulnerability Assessment, Patch
                       management, Remote Diagnostic assistance and
                       URL-filtering. All devices in your infrastructure are
                       easily managed from a single web console and well
@@ -167,12 +167,11 @@ const ProtectCloud = () => {
                     <p>
                       Maintain all the basic security and protection features
                       with a single solution, and avoid the hassle of purchasing
-                      multiple software from vendors and installing multiple
-                      agents on the same machine. <br />
-                      Pick and choose the required license type for each
+                      software from multiple vendors and installing multiple
+                      agents on the same machine. Pick and choose the required license type for each
                       server/end-point device from the following, mix and match
                       the licenses as needed for each device in your
-                      environment:
+                      environment.
                     </p>
                   <div>
                     {/* <h5 className="ft text-center"><strong>Features Comparison In Detail</strong></h5> */}
