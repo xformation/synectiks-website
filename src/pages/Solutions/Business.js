@@ -167,7 +167,7 @@ const Business = () => {
                     <div>
                       <h5>Affordable Cloud Backup Storage Pricing</h5>
                       <p className="mt-2 pcenter">
-                        Cloud Backup Storage as low as $0.015 per GB with no
+                        Cloud Backup Storage as low as $0.025 per GB with no
                         Ingress & Egress charges (only charged for the storage
                         consumed after deep compression).
                       </p>
