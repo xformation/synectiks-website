@@ -105,7 +105,7 @@ const Business = () => {
                     <div className="w-100  pl-3 pr-3 text-black">
                     <h1 className='text-uppercase fntclr'>Cloud</h1>
                     <h2 className='fntclr'>Backup as a Service</h2>
-                      <h5 className="my-1 my-md-3 ft">
+                      <h5 className="my-1 my-md-3 ft pt-0 pt-md-3">
                         Secure, Reliable & Very Affordable Cloud Backup
                         Solution.
                       </h5>
@@ -291,7 +291,6 @@ const BusinessWrapper = styled.div`
   .ft {
     font-weight: 500 !important;
     font-size: 17px;
-    padding-top: 10px !important;
   }
   .w75 {
     width: 100%;
