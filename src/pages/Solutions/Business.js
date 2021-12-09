@@ -5,6 +5,7 @@ import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { FaBars } from 'react-icons/fa';
 import '../../components/layout.css';
 import styled from 'styled-components';
+import hero from '../../images/ManagedBackup/cloud-backup-service.svg';
 import self from '../../images/ManagedBackup/Self Service Portal.png';
 import cloudImaged from '../../images/synectiks-secure/baas.jpg';
 import security from '../../images/ManagedBackup/Security.png';
@@ -85,14 +86,25 @@ const Business = () => {
               subtitle="Business Continuity & Cyber Security"
               pageTitle="Cloud Backup as a Service"
             />
-            <h1>Cloud Backup as a Service </h1>
+
           </div>
           <Row className="d-flex justify-content-start">
             <div className="px-2 px-md-0 mb-3 col-md-12">
               <div className="bg-lightgrey mb-0 pb-3">
                 <div className="">
-                  <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex">
+                <div className="container my-0 my-md-4">
+                  <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
+                  <div className='w-100 ml-md-auto' data-aos='fade-up'>
+											<img
+												class='w75 ml-md-5'
+												src={hero}
+												width='100%'
+												alt='Hosted Infrastructure'
+											/>
+										</div>
                     <div className="w-100  pl-3 pr-3 text-black">
+                    <h1 className='text-uppercase fntclr'>Cloud</h1>
+                    <h2 className='fntclr'>Backup as a Service</h2>
                       <h5 className="my-1 my-md-3 ft">
                         Secure, Reliable & Very Affordable Cloud Backup
                         Solution.
@@ -111,14 +123,8 @@ const Business = () => {
                         Databases and more.
                       </p>
                     </div>
-                    {/* <div className='w-100 ml-md-auto' data-aos='fade-up'>
-											<img
-												class='w75 ml-md-5 bx'
-												src={cloudImaged}
-												width='100%'
-												alt='Hosted Infrastructure'
-											/>
-										</div> */}
+
+                  </div>
                   </div>
                   {/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
                   <div className="d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3">
@@ -140,6 +146,7 @@ const Business = () => {
                       </p>
                     </div>
                   </div>
+
 
                   <div className="d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5">
                     <img
@@ -272,12 +279,19 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default Business;
 
 const BusinessWrapper = styled.div`
+
+
+/* .fntclr{
+  color: #007CC2;
+} */
   .bx {
     border: 5px solid white;
     box-shadow: 0px 0px 9px 0px black;
   }
   .ft {
-    font-weight: 400 !important;
+    font-weight: 500 !important;
+    font-size: 17px;
+    padding-top: 10px !important;
   }
   .w75 {
     width: 100%;
@@ -432,7 +446,7 @@ const BusinessWrapper = styled.div`
 
   @media (min-width: 576px) {
     .w75 {
-      width: 95%;
+      width: 65%;
     }
     .pcenter {
       text-align: left;
@@ -590,6 +604,25 @@ const BusinessWrapper = styled.div`
     }
   }
   @media (min-width: 768px) {
+    h1{
+  font-family: montserrat, sans-serif;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 3rem !important;
+    line-height: 62px !important;
+    letter-spacing: normal !important;
+    color: #007cc2 !important;
+}
+
+h2{
+  font-family: montserrat, sans-serif;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 2.6rem !important;
+    line-height: 12px !important;
+    letter-spacing: normal !important;
+    color: #007cc2 !important;
+}
     a#bgL.active:after {
       top: 100%;
       left: 50%;
