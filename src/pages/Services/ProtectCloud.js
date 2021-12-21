@@ -74,7 +74,7 @@ import {
   Navbar
 } from 'reactstrap';
 import SEO from '../../components/seo.js';
-import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import BusinessCrumbs from '../../components/Home/BusinessCrumbs.js';
 import { useForm } from 'react-hook-form';
 import SvgAnimation from '../../components/SvgAnimate.js'
 
@@ -140,7 +140,7 @@ const ProtectCloud = () => {
         <SEO title="Protect  Cloud" />
         <div className="bg-lightgrey container-fluid p-0">
           <div className="text-justify">
-            <BreadCrumbs
+            <BusinessCrumbs
               title="Home"
               subtitle="Business Continuity & Cyber Security"
               pageTitle="Protect Cloud"

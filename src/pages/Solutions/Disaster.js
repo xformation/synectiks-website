@@ -49,7 +49,7 @@ import {
 } from 'reactstrap';
 import classnames from 'classnames';
 import SEO from '../../components/seo.js';
-import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import BusinessCrumbs from '../../components/Home/BusinessCrumbs.js';
 
 const DisasterRecovery = () => {
   const [activeTab, setActiveTab] = useState('1');
@@ -83,7 +83,7 @@ const DisasterRecovery = () => {
       <DisasterRecoveryWrapper>
         <div className="bg-lightgrey container-fluid p-0">
           <div>
-            <BreadCrumbs
+            <BusinessCrumbs
               title="Home"
               subtitle="Business Continuity & Cyber Security"
               pageTitle="Cloud Disaster Recovery as a Service"

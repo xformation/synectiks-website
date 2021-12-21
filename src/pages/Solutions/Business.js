@@ -48,7 +48,7 @@ import {
 } from 'reactstrap';
 import classnames from 'classnames';
 import SEO from '../../components/seo.js';
-import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import BusinessCrumbs from '../../components/Home/BusinessCrumbs.js';
 const Business = () => {
   const [activeTab, setActiveTab] = useState('1');
   const toggle = tab => {
@@ -81,7 +81,7 @@ const Business = () => {
       <BusinessWrapper>
         <div className="bg-lightgrey container-fluid p-0">
           <div>
-            <BreadCrumbs
+            <BusinessCrumbs
               title="Home"
               subtitle="Business Continuity & Cyber Security"
               pageTitle="Cloud Backup as a Service"
