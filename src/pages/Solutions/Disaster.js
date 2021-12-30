@@ -34,7 +34,8 @@ import support from '../../images/synectiks-secure/support.svg';
 import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
-import vdi from '../../images/disaster-recovery.jpg';
+// import vdi from '../../images/disaster-recovery.jpg';
+import vdi from '../../images/ManagedBackup/disaster.png';
 import {
   TabContent,
   TabPane,
@@ -88,13 +89,46 @@ const DisasterRecovery = () => {
               subtitle="Business Continuity & Cyber Security"
               pageTitle="Cloud Disaster Recovery as a Service"
             />
-            <h1>Cloud Disaster Recovery as a Service</h1>
+            {/* <h1>Cloud Disaster Recovery as a Service</h1> */}
           </div>
           <Row className="d-flex justify-content-start">
             <div className="px-2 px-md-0 mb-3 col-md-12">
               <div className="bg-lightgrey mb-0 pb-3">
                 <div className="">
-                  <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex">
+                <div className="container my-0 my-md-4">
+                  <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
+                  <div className='w-100 ml-md-auto' data-aos='fade-up'>
+											<img
+												class='w75 ml-md-5'
+												src={vdi}
+												width='100%'
+												alt='Hosted Infrastructure'
+											/>
+										</div>
+                    <div className="w-100  pl-3 pr-3 text-black">
+                    <h1 className='text-uppercase fntclr'>Cloud</h1>
+                    <h2 className='fntclr'>Disaster Recovery as a Service</h2>
+                      {/* <h5 className="my-1 my-md-3 ft pt-0 pt-md-3">
+                        Secure, Reliable & Very Affordable Cloud Backup
+                        Solution.
+                      </h5> */}
+                      <p className="lineHeight-24 ptext mt-md-4 mt-1">
+                      Protection for on-premises and cloud workloads with a
+                        turn-key Disaster Recovery solution. Disaster recovery
+                        with the flip of a switch. Protect your workloads when
+                        disaster strikes, by instantly spinning up systems in
+                        our Disaster Recovery Cloud. Adding this service ensures
+                        the data is immediately available – and with Synectiks,
+                        it’s as easy as flipping a switch. With an easy-to-use
+                        user interface, you can effortlessly automate runbooks,
+                        testing, and failover to the Disaster Recovery Cloud
+                        during a DR event.
+                      </p>
+                    </div>
+
+                  </div>
+                  </div>
+                  {/* <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex">
                     <div className="w-100  pl-3 pr-3 text-black">
                       <p className="lineHeight-24 ptext mt-1 mt-md-2">
                         Protection for on-premises and cloud workloads with a
@@ -109,15 +143,8 @@ const DisasterRecovery = () => {
                         during a DR event.
                       </p>
                     </div>
-                    {/* <div className='w-100 ml-md-auto' data-aos='fade-up'>
-											<img
-												class='w75 ml-md-5 bx'
-												src={vdi}
-												width='100%'
-												alt='Hosted Infrastructure'
-											/>
-										</div> */}
-                  </div>
+
+                  </div> */}
                   {/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
                   <div className="d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3">
                     <img class="w-12 mr-0 mr-md-5" src={agent} alt="Security" />
@@ -606,6 +633,25 @@ const DisasterRecoveryWrapper = styled.div`
     }
   }
   @media (min-width: 768px) {
+    h1{
+  font-family: montserrat, sans-serif;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 3rem !important;
+    line-height: 62px !important;
+    letter-spacing: normal !important;
+    color: #007cc2 !important;
+}
+
+h2{
+  font-family: montserrat, sans-serif;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 2.6rem !important;
+    line-height: 40px !important;
+    letter-spacing: normal !important;
+    color: #007cc2 !important;
+}
     a#bgL.active:after {
       top: 100%;
       left: 50%;
