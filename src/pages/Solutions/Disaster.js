@@ -638,7 +638,7 @@ const DisasterRecoveryWrapper = styled.div`
     font-weight: 700 !important;
     font-style: normal !important;
     font-size: 3rem !important;
-    line-height: 62px !important;
+    line-height: 38px !important;
     letter-spacing: normal !important;
     color: #007cc2 !important;
 }
