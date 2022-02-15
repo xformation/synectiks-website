@@ -419,9 +419,13 @@ const DisasterRecoveryWrapper = styled.div`
   }
   h1 {
     font-size: 1.4rem;
+    color: #007cc2 !important;
+    margin-top: 10px;
+    text-align: left;
   }
   h2 {
     font-size: 1.3rem;
+    color: #007cc2 !important;
   }
   h3 {
     font-size: 1.2rem;
@@ -624,6 +628,7 @@ const DisasterRecoveryWrapper = styled.div`
     }
     h2 {
       font-size: 2rem;
+      color: #007cc2 !important;
     }
     h3 {
       font-size: 1.75rem;

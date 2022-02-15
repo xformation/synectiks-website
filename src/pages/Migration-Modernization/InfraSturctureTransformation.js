@@ -69,7 +69,7 @@ const Infrastructure = () => {
         />
         <link
           rel="canonical"
-          href="https://synectiks.com/infrastructure/index.html"
+          href="https://synectiks.com/infrastructure-transformation/index.html"
         />
       </Helmet>
       <HybridWrapper>

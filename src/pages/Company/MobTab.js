@@ -101,7 +101,7 @@ class MobTabs extends React.Component {
                               <div className="py-1">
                                 <div className="border-bottom my-n1 my-md-n0 text-center">
                                   <a
-                                    href="/infrastructure/index.html"
+                                    href="/infrastructure-transformation/index.html"
                                     className="text-center heading-h3"
                                   >
                                     Infrastructure Transformation

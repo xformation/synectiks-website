@@ -98,7 +98,7 @@ const DesktopNavMenu = () => {
           <ul className="sub-menu">
             <ul>
               <li>
-                <Link to="/infrastructure/index.html">
+                <Link to="/infrastructure-transformation/index.html">
                   Infrastructure Transformation
                 </Link>
               </li>

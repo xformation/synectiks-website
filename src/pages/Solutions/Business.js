@@ -393,9 +393,12 @@ const BusinessWrapper = styled.div`
   }
   h1 {
     font-size: 1.4rem;
+    color: #007cc2 !important;
+    margin-top:10px ;
   }
   h2 {
     font-size: 1.3rem;
+    color: #007cc2 !important;
   }
   h3 {
     font-size: 1.2rem;
@@ -594,6 +597,7 @@ const BusinessWrapper = styled.div`
     }
     h2 {
       font-size: 2rem;
+      color: #007cc2 !important;
     }
     h3 {
       font-size: 1.75rem;

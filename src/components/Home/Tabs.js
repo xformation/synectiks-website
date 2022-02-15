@@ -143,7 +143,7 @@ const Tabs = () => {
                 <div className="py-1 py-md-3 h-100">
                   <div className="border-right text-center">
                     <a
-                      href="/infrastructure/index.html"
+                      href="/infrastructure-transformation/index.html"
                       className="text-center heading-h3 h6"
                     >
                       Infrastructure <br />
@@ -254,7 +254,7 @@ const Tabs = () => {
                 <div className="py-1 py-md-3 h-100">
                   <div className="border-right text-center">
                     <a
-                      href="/business-cyber-sub-landing/index.html"
+                      href="/synectiks-hosted-infrastructure-business-continuity/index.html"
                       className="text-center heading-h3 h6"
                     >
                       Business Continuity & Cyber Security Services

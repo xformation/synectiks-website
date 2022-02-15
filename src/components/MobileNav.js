@@ -259,7 +259,7 @@ const MobileHeader = () => {
                   title="Migration & Modernization"
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item href="/infrastructure/index.html">
+                  <NavDropdown.Item href="/infrastructure-transformation/index.html">
                     Infrastructure Transformation
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/application-transformation/index.html">
