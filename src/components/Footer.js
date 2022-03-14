@@ -97,10 +97,10 @@ export class Footer extends React.Component {
                   <u>Privacy Policy</u>
                 </a>
               </h4>
-              <h4 className="text-light  text-capitalize mt-2 mt-md-2">
+              {/* <h4 className="text-light  text-capitalize mt-2 mt-md-2">
                 Social
-              </h4>
-              <div className="d-flex flex-column">
+              </h4> */}
+              <div className="d-flex">
                 {Social.map((item, index) => {
                   return (
                     <a
@@ -108,12 +108,12 @@ export class Footer extends React.Component {
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-light text-capitalize d-flex align-content-center mb-2"
+                      className="text-light text-capitalize d-flex align-content-center mb-2 mr-sm-0 mr-md-3"
                     >
                       <span className="text-warning">{item.icon}</span>
-                      <span className="ml-3 text-capitalize m5t">
+                      {/* <span className="ml-3 text-capitalize m5t">
                         {item.text}
-                      </span>
+                      </span> */}
                     </a>
                   );
                 })}
