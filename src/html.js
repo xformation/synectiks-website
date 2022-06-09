@@ -11,6 +11,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=0.86,
 				minimum-scale=0.9"
         />
+        <meta name="sitelock-site-verification" content="1605" />
         <meta
           name="ahrefs-site-verification"
           content="8c6cee071ee9cd1825e173a97a51407ea7094e6a42d87c2e4929e464c037b969"
