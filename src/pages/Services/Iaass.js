@@ -19,6 +19,7 @@ import MSGL from '../../images/ManagedBackup/MultiSecureGeoLocations.png';
 import ST from '../../images/ManagedBackup/StorageTypesavailable.png';
 import AP from '../../images/ManagedBackup/AffordablePricing.png';
 import ADT from '../../images/Hybrid/ApplicationDevelopmentandTesting.png';
+import SCHI from '../../images/Secure-Custom-Hosted-Infrastructure.png'
 
 import {
   TabContent,
@@ -72,14 +73,30 @@ const Iaas = () => {
               subtitle="Synectiks Hosted Infrastructure & Business Continuity"
               pageTitle="Secure & Custom Hosted Infrastructure"
             />
-            <h1>Secure & Custom Hosted Infrastructure</h1>
+            {/* <h1>Secure & Custom Hosted Infrastructure</h1> */}
           </div>
           <Row className="d-flex justify-content-start">
             <div className="px-2 px-md-0 mb-3 col-md-12">
               <div className="bg-lightgrey mb-0 pb-3">
                 <div className="">
-                  <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex">
-                    <div className="w-100  pl-3 pr-3 text-black">
+                  <div className="container-fluid my-0 my-md-4">
+                  <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
+                    <div className='w-100 ml-md-auto' data-aos='fade-up'>
+											<img
+												class='w-75 ml-md-5 bshadow'
+												src={SCHI}
+												width='100%'
+												alt='Hosted Infrastructure'
+											/>
+										</div>
+                     <div className="w-100  pl-3 pr-3 text-black">
+                    <h1 className='text-uppercase fntclr'>Secure</h1>
+                    <h2 className='fntclr'>Custom Hosted Infrastructure</h2>
+                      <h5 className="my-1 my-md-3 ft pt-0 pt-md-3">
+                        Secure, Reliable & Very Affordable Cloud Backup
+                        Solution.
+                      </h5>
+
                       <p className="lineHeight-24 ptext mt-md-2 mt-1">
                         Synectiks Secure Cloud Hosted Services support a wide
                         variety of workloads & Disaster Recovery with a high
@@ -93,14 +110,8 @@ const Iaas = () => {
                         that meets your business demands.
                       </p>
                     </div>
-                    {/* <div className='w-100 ml-md-auto' data-aos='fade-up'>
-											<img
-												class='w75 ml-md-5 bshadow'
-												src={HostedInfra}
-												width='100%'
-												alt='Hosted Infrastructure'
-											/>
-										</div> */}
+
+                  </div>
                   </div>
                   {/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
                   <div className="d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3">
@@ -705,6 +716,30 @@ const IaasWrapper = styled.div`
     }
   }
   @media (min-width: 1024px) {
+    h1{
+  font-family: montserrat,sans-serif;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 3rem !important;
+    line-height: 62px !important;
+    -webkit-letter-spacing: normal !important;
+    -moz-letter-spacing: normal !important;
+    -ms-letter-spacing: normal !important;
+    letter-spacing: normal !important;
+    color: #007cc2 !important;
+}
+h2 {
+    font-family: montserrat,sans-serif;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 2.6rem !important;
+    line-height: 12px !important;
+    -webkit-letter-spacing: normal !important;
+    -moz-letter-spacing: normal !important;
+    -ms-letter-spacing: normal !important;
+    letter-spacing: normal !important;
+    color: #007cc2 !important;
+}
     .himage {
       width: 50%;
       height: auto;

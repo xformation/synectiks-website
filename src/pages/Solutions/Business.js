@@ -92,11 +92,11 @@ const Business = () => {
             <div className="px-2 px-md-0 mb-3 col-md-12">
               <div className="bg-lightgrey mb-0 pb-3">
                 <div className="">
-                <div className="container my-0 my-md-4">
+                <div className="container-fluid my-0 my-md-4">
                   <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
                   <div className='w-100 ml-md-auto' data-aos='fade-up'>
 											<img
-												class='w75 ml-md-5'
+												class='w75 ml-md-5 bshadow'
 												src={hero}
 												width='100%'
 												alt='Hosted Infrastructure'
@@ -280,7 +280,10 @@ export default Business;
 
 const BusinessWrapper = styled.div`
 
-
+.bshadow {
+    border: 5px solid white;
+    box-shadow: 0px 0px 9px 0px black;
+  }
 /* .fntclr{
   color: #007CC2;
 } */
