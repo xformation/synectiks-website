@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import SEO from '../../components/seo.js';
 import syn from '../../images/BC and CS_Updated.svg';
+import syns from '../../images/BCCS.png';
 const SecureBusiness = () => {
   return (
     <Layout>
@@ -81,7 +82,7 @@ const SecureBusiness = () => {
               </div>
             </div>
             <div className="col-md-6 py-4 px-0">
-              <img src={syn} alt="" className="w-60" />
+              <img src={syns} alt="" className="w-60" />
             </div>
           </div>
         </div>

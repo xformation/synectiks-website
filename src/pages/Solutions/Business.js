@@ -86,45 +86,51 @@ const Business = () => {
               subtitle="Business Continuity & Cyber Security"
               pageTitle="Cloud Backup as a Service"
             />
-
           </div>
           <Row className="d-flex justify-content-start">
             <div className="px-2 px-md-0 mb-3 col-md-12">
               <div className="bg-lightgrey mb-0 pb-3">
                 <div className="">
-                <div className="container-fluid my-0 my-md-4">
-                  <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
-                  <div className='w-100 ml-md-auto' data-aos='fade-up'>
-											<img
-												class='w75 ml-md-5 bshadow'
-												src={hero}
-												width='100%'
-												alt='Hosted Infrastructure'
-											/>
-										</div>
-                    <div className="w-100  pl-3 pr-3 text-black">
-                    <h1 className='text-uppercase fntclr'>Cloud</h1>
-                    <h2 className='fntclr'>Backup as a Service</h2>
-                      <h5 className="my-1 my-md-3 ft pt-0 pt-md-3">
-                        Secure, Reliable & Very Affordable Cloud Backup
-                        Solution.
-                      </h5>
-                      <p className="lineHeight-24 ptext mt-md-4 mt-1">
-                        At Synectiks, Data Protection is the topmost priority
-                        and is monitored with utmost vigilance. Synectiks Cloud
-                        Backup with front line innovation reinforcement
-                        arrangements offer a simple, secure and moderate cloud
-                        offsite backup needs. You can have your backup offsite
-                        with sureness at Synectiks Cloud establishment at
-                        Preferred Geo Locations. Synectiks backup solutions
-                        provide exceptional, customizable backup and storage
-                        management for any system setup: physical servers,
-                        virtual machines, PCs, business-critical applications,
-                        Databases and more.
-                      </p>
+                  <div className="container-fluid my-0 my-md-4">
+                    <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
+                      <div className="row">
+                        <div className="col-md-2"></div>
+                        <div className="col-md-4">
+                          <div className="w-100 ml-md-auto" data-aos="fade-up">
+                            <img
+                              class="w-75 ml-md-5"
+                              src={hero}
+                              width="100%"
+                              alt="Hosted Infrastructure"
+                            />
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="w-100  pl-3 pr-3 text-black">
+                            <h1 className="text-uppercase fntclr">Cloud</h1>
+                            <h2 className="fntclr">Backup as a Service</h2>
+                            <h5 className="my-1 my-md-3 ft pt-0 pt-md-3">
+                              Secure, Reliable & Very Affordable Cloud Backup
+                              Solution.
+                            </h5>
+                            <p className="lineHeight-24 ptext mt-md-4 mt-1">
+                              At Synectiks, Data Protection is the topmost
+                              priority and is monitored with utmost vigilance.
+                              Synectiks Cloud Backup with front line innovation
+                              reinforcement arrangements offer a simple, secure
+                              and moderate cloud offsite backup needs. You can
+                              have your backup offsite with sureness at
+                              Synectiks Cloud establishment at Preferred Geo
+                              Locations. Synectiks backup solutions provide
+                              exceptional, customizable backup and storage
+                              management for any system setup: physical servers,
+                              virtual machines, PCs, business-critical
+                              applications, Databases and more.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
-                  </div>
                   </div>
                   {/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
                   <div className="d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3">
@@ -146,7 +152,6 @@ const Business = () => {
                       </p>
                     </div>
                   </div>
-
 
                   <div className="d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5">
                     <img
@@ -279,12 +284,11 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default Business;
 
 const BusinessWrapper = styled.div`
-
-.bshadow {
+  .bshadow {
     border: 5px solid white;
     box-shadow: 0px 0px 9px 0px black;
   }
-/* .fntclr{
+  /* .fntclr{
   color: #007CC2;
 } */
   .bx {
@@ -397,7 +401,7 @@ const BusinessWrapper = styled.div`
   h1 {
     font-size: 1.4rem;
     color: #007cc2 !important;
-    margin-top:10px ;
+    margin-top: 10px;
   }
   h2 {
     font-size: 1.3rem;
@@ -610,25 +614,25 @@ const BusinessWrapper = styled.div`
     }
   }
   @media (min-width: 768px) {
-    h1{
-  font-family: montserrat, sans-serif;
-    font-weight: 700 !important;
-    font-style: normal !important;
-    font-size: 3rem !important;
-    line-height: 62px !important;
-    letter-spacing: normal !important;
-    color: #007cc2 !important;
-}
+    h1 {
+      font-family: montserrat, sans-serif;
+      font-weight: 700 !important;
+      font-style: normal !important;
+      font-size: 3rem !important;
+      line-height: 62px !important;
+      letter-spacing: normal !important;
+      color: #007cc2 !important;
+    }
 
-h2{
-  font-family: montserrat, sans-serif;
-    font-weight: 600 !important;
-    font-style: normal !important;
-    font-size: 2.6rem !important;
-    line-height: 12px !important;
-    letter-spacing: normal !important;
-    color: #007cc2 !important;
-}
+    h2 {
+      font-family: montserrat, sans-serif;
+      font-weight: 600 !important;
+      font-style: normal !important;
+      font-size: 2.6rem !important;
+      line-height: 12px !important;
+      letter-spacing: normal !important;
+      color: #007cc2 !important;
+    }
     a#bgL.active:after {
       top: 100%;
       left: 50%;

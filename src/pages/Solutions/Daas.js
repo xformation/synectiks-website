@@ -35,6 +35,7 @@ import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
 import vdi from '../../images/virtual-desktop.jpg';
+import vdisvg from '../../images/vdi.svg';
 import CHVD from '../../images/MicrosoftTeams-image.png';
 import {
   TabContent,
@@ -96,37 +97,37 @@ const Daas = () => {
               <div className="bg-lightgrey mb-0 pb-3">
                 <div className="">
                   <div className="container-fluid my-0 my-md-4">
-                  <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
-                     <div className='w-100 ml-auto ml-md-5' data-aos='fade-up'>
-											<img
-												class='w-75 ml-md-5 bx'
-												src={CHVD}
-												width='100%'
-												alt='Hosted Infrastructure'
-											/>
-										</div>
-                   <div className="w-100  pl-3 pr-3 text-black">
-                    <h1 className='text-uppercase fntclr'>Cloud</h1>
-                    <h2 className='fntclr'>Hosted Virtual Desktop</h2>
-                      <h5 className="my-1 my-md-3 ft pt-0 pt-md-3">
-                        Secure, Reliable & Very Affordable Cloud Backup
-                        Solution.
-                      </h5>
-                      <p className="lineHeight-24 ptext mt-md-2 mt-1">
-                        Synectiks Cloud-Hosted Virtual Desktop Service is a
-                        modern platform for secure delivery of virtual desktops
-                        and apps. Our best-in-class virtualization technologies
-                        enable scalability, uptime at an affordable price.
-                        Powered by VMware Blast Extreme protocol, delivers an
-                        immersive, feature-rich user experience for end users
-                        across devices, locations, media and network
-                        connections. Enabled by enterprise-grade management
-                        capabilities and a deep technology ecosystem, it extends
-                        the digital workspace to all apps and secure
-                        productivity use cases.
-                      </p>
+                    <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
+                      <div className="w-100 ml-auto ml-md-5" data-aos="fade-up">
+                        <img
+                          class="w-75 ml-md-5 bx"
+                          src={vdisvg}
+                          width="100%"
+                          alt="Hosted Infrastructure"
+                        />
+                      </div>
+                      <div className="w-100  pl-3 pr-3 text-black">
+                        <h1 className="text-uppercase fntclr">Cloud</h1>
+                        <h2 className="fntclr">Hosted Virtual Desktop</h2>
+                        <h5 className="my-1 my-md-3 ft pt-0 pt-md-3">
+                          Secure, Reliable & Very Affordable Cloud Backup
+                          Solution.
+                        </h5>
+                        <p className="lineHeight-24 ptext mt-md-2 mt-1">
+                          Synectiks Cloud-Hosted Virtual Desktop Service is a
+                          modern platform for secure delivery of virtual
+                          desktops and apps. Our best-in-class virtualization
+                          technologies enable scalability, uptime at an
+                          affordable price. Powered by VMware Blast Extreme
+                          protocol, delivers an immersive, feature-rich user
+                          experience for end users across devices, locations,
+                          media and network connections. Enabled by
+                          enterprise-grade management capabilities and a deep
+                          technology ecosystem, it extends the digital workspace
+                          to all apps and secure productivity use cases.
+                        </p>
+                      </div>
                     </div>
-                  </div>
                   </div>
                   {/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
                   <div className="d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3">
@@ -226,8 +227,8 @@ export default Daas;
 
 const DaasWrapper = styled.div`
   .bx {
-    border: 5px solid white;
-    box-shadow: 0px 0px 9px 0px black;
+    box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 20%);
+    border-radius: 2px;
   }
   .w75 {
     width: 100%;
@@ -257,10 +258,10 @@ const DaasWrapper = styled.div`
   .ptext {
     text-align: left !important;
   }
-   h1 {
+  h1 {
     font-size: 1.4rem;
     color: #007cc2 !important;
-    margin-top:10px ;
+    margin-top: 10px;
   }
   h2 {
     font-size: 1.3rem;
@@ -625,30 +626,30 @@ const DaasWrapper = styled.div`
     }
   }
   @media (min-width: 1024px) {
-h1{
-  font-family: montserrat,sans-serif;
-    font-weight: 700 !important;
-    font-style: normal !important;
-    font-size: 3rem !important;
-    line-height: 62px !important;
-    -webkit-letter-spacing: normal !important;
-    -moz-letter-spacing: normal !important;
-    -ms-letter-spacing: normal !important;
-    letter-spacing: normal !important;
-    color: #007cc2 !important;
-}
-h2 {
-    font-family: montserrat,sans-serif;
-    font-weight: 600 !important;
-    font-style: normal !important;
-    font-size: 2.6rem !important;
-    line-height: 12px !important;
-    -webkit-letter-spacing: normal !important;
-    -moz-letter-spacing: normal !important;
-    -ms-letter-spacing: normal !important;
-    letter-spacing: normal !important;
-    color: #007cc2 !important;
-}
+    h1 {
+      font-family: montserrat, sans-serif;
+      font-weight: 700 !important;
+      font-style: normal !important;
+      font-size: 3rem !important;
+      line-height: 62px !important;
+      -webkit-letter-spacing: normal !important;
+      -moz-letter-spacing: normal !important;
+      -ms-letter-spacing: normal !important;
+      letter-spacing: normal !important;
+      color: #007cc2 !important;
+    }
+    h2 {
+      font-family: montserrat, sans-serif;
+      font-weight: 600 !important;
+      font-style: normal !important;
+      font-size: 2.6rem !important;
+      line-height: 12px !important;
+      -webkit-letter-spacing: normal !important;
+      -moz-letter-spacing: normal !important;
+      -ms-letter-spacing: normal !important;
+      letter-spacing: normal !important;
+      color: #007cc2 !important;
+    }
     .himage {
       width: 50%;
       height: auto;

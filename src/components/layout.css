@@ -90,6 +90,7 @@ font-style: normal; */
   --synectiksWhite: #ffffff;
   --synectiksLightBlue: #a5d8e9;
   --synectiksLightRed: #ff3366;
+  --synectiksLinkedin: #0077B5;
 }
 body {
   margin: 0;
@@ -504,6 +505,15 @@ a#tab4:not(.active) .arrow-down {
 .social:hover {
   color: var(--synectiksOrange);
   font-size: 20px;
+  background: transparent !important;
+}
+.linked {
+  color: var(--synectiksLinkedin);
+  font-size: 48px;
+}
+.linked:hover {
+  color: var(--synectiksOrange);
+  font-size: 48px;
   background: transparent !important;
 }
 .topF {

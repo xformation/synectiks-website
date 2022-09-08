@@ -827,7 +827,8 @@ const DevopsTransformation = ({ location }) => {
                             <img
                               src={Expertise}
                               alt="Expertise"
-                              className="tw m-0 h-75"
+                              className="tw m-0"
+                              // className="tw m-0 h-75"
                             />
                             <h5 className="mb-4">Expertise</h5>
                           </div>

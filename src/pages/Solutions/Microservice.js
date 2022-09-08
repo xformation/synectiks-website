@@ -156,33 +156,36 @@ const Microservice = () => {
                   <TabPane tabId="1">
                     <div>
                       <div className="w-100 d-flex flex-column flex-md-row align-items-start py-2 py-md-3">
-                        <div className="pr-0 pr-md-5">
-                          <p className="ptext">
-                            To accommodate the increasing complexity of
-                            functional requirements, IT applications have
-                            embraced a variety of architectural patterns.
-                            Organizations must meet ever-changing business
-                            demands — from mainframe applications and
-                            client-server to service oriented architecture (SOA)
-                            and microservices.
-                          </p>
-                          <p className="ptext">
-                            Microservices architecture is a combination of
-                            successful and proven concepts of software
-                            engineering such as agile software development, SOA,
-                            API-first design and continuous delivery (CD). This
-                            architecture and organizational approach to software
-                            development is designed to accelerate development
-                            cycles, foster innovation and ownership and improve
-                            the ability to maintain and scale applications.
-                          </p>
+                        <div className="row">
+                          <div className="pr-0 pr-md-5">
+                            <p className="ptext">
+                              To accommodate the increasing complexity of
+                              functional requirements, IT applications have
+                              embraced a variety of architectural patterns.
+                              Organizations must meet ever-changing business
+                              demands — from mainframe applications and
+                              client-server to service oriented architecture
+                              (SOA) and microservices.
+                            </p>
+                            <p className="ptext">
+                              Microservices architecture is a combination of
+                              successful and proven concepts of software
+                              engineering such as agile software development,
+                              SOA, API-first design and continuous delivery
+                              (CD). This architecture and organizational
+                              approach to software development is designed to
+                              accelerate development cycles, foster innovation
+                              and ownership and improve the ability to maintain
+                              and scale applications.
+                            </p>
+                          </div>
+                          <img
+                            className="microImage imgshadow"
+                            height="auto"
+                            src={ms1}
+                            alt="Microservices"
+                          />
                         </div>
-                        <img
-                          className="microImage imgshadow"
-                          height="auto"
-                          src={ms1}
-                          alt="Microservices"
-                        />
                       </div>
                       <div className="my-1 my-md-4">
                         <p className="py-2 py-md-3">
@@ -401,45 +404,47 @@ const Microservice = () => {
                         </p>
                       </div>
                       <div className="d-flex flex-column align-items-start flex-md-row justify-md-between  px-2 px-md-0 mt-2 mt-md-5">
-                        <div className="pr-0 pr-md-5 w-100">
-                          <h5 className="my-0 mb-md-2	mt-md-n3 ft">
-                            Operation Automation.
-                          </h5>
-                          <p className="ptext">
-                            An ideal microservices hosting platform is based on
-                            geographically spanned cluster and hardware
-                            agnostic. While this platform alleviates the burden
-                            of managing many servers, operating systems etc., it
-                            brings a new set of operational challenges like
-                            debugging, logs tracing, many processes and tools
-                            running in a single application. The operation
-                            management paradigm is shifted from managing
-                            Compute/Network/Storage and operating system to
-                            managing geographically distributed clusters and
-                            services management, their interaction. Thankfully,
-                            current cloud-based service discovery and cluster
-                            wide operation management technologies offer avenues
-                            to aggregate those operational challenges.
-                          </p>
-                          <p className="ptext">
-                            Essentially in a microservices ecosystem, you will
-                            aggregate, extent & automate. You will aggregate
-                            your hardware across DC’s and geographies, develop
-                            microservices, bigdata, IOT applications based on
-                            libraries and reusable services and continue to do
-                            cluster and services automation toward running
-                            everything in auto pilot mode.
-                          </p>
-                        </div>
-                        <div className="w-100">
-                          <img
-                            src={ms4}
-                            alt="Operation Automation"
-                            className="my-2 my-md-0 w-100 imgshadow"
-                          />
+                        <div className="row">
+                          <div className="pr-0 pr-md-5">
+                            <h5 className="my-0 mb-md-2	mt-md-n3 ft">
+                              Operation Automation.
+                            </h5>
+                            <p className="ptext">
+                              An ideal microservices hosting platform is based
+                              on geographically spanned cluster and hardware
+                              agnostic. While this platform alleviates the
+                              burden of managing many servers, operating systems
+                              etc., it brings a new set of operational
+                              challenges like debugging, logs tracing, many
+                              processes and tools running in a single
+                              application. The operation management paradigm is
+                              shifted from managing Compute/Network/Storage and
+                              operating system to managing geographically
+                              distributed clusters and services management,
+                              their interaction. Thankfully, current cloud-based
+                              service discovery and cluster wide operation
+                              management technologies offer avenues to aggregate
+                              those operational challenges.
+                            </p>
+                            <p className="ptext">
+                              Essentially in a microservices ecosystem, you will
+                              aggregate, extent & automate. You will aggregate
+                              your hardware across DC’s and geographies, develop
+                              microservices, bigdata, IOT applications based on
+                              libraries and reusable services and continue to do
+                              cluster and services automation toward running
+                              everything in auto pilot mode.
+                            </p>
+                          </div>
+                          <div className="w-75 mx-auto">
+                            <img
+                              src={ms4}
+                              alt="Operation Automation"
+                              className="my-2 my-md-0 w-100 imgshadow"
+                            />
+                          </div>
                         </div>
                       </div>
-
                       <div className="my-0 my-md-4">
                         <div className="my-2 my-md-4">
                           <div className="d-flex">
@@ -828,6 +833,9 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default Microservice;
 
 const MicroserviceWrapper = styled.div`{
+  .w75{
+    width: 60% !important;
+  }
 	.vert-text{
 		width: 10px;
     padding: 0px 18px 0px 10px;
@@ -1047,7 +1055,8 @@ ul.tabList.nav.flex-column {
 		margin:0 auto;
 }
 	.microImage{
-		width: 33%;
+		/* width: 33%; */
+		width: 50%;
 		margin:0 auto;
 	}
 	.topNav{

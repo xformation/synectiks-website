@@ -642,7 +642,7 @@ const Hybridcloud = () => {
                   <TabPane tabId="2">
                     <div className="">
                       <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-12">
                           {/* <h2 className=''>GETTING STARTED TO HYBRID CLOUD</h2> */}
                           <p className="ptext">
                             The first step is for CIOs to connect with the
@@ -668,12 +668,16 @@ const Hybridcloud = () => {
                             processes, and integrating data and security.{' '}
                           </p>
                         </div>
-                        <div className="col-md-6">
-                          <img
-                            src={HybridCloud}
-                            alt="Key Strategic Drivers"
-                            className="w-75 my-2 my-md-0"
-                          />
+                        <div className="row">
+                          <div className="col-md-4"></div>
+                          <div className="col-md-8 my-5 d-flex justify-content-center">
+                            <img
+                              src={HybridCloud}
+                              alt="Key Strategic Drivers"
+                              className="w-75 my-2 my-md-0 bdrshd"
+                            />
+                          </div>
+                          {/* <div className="col-md-3"></div> */}
                         </div>
                       </div>
                       <div>
@@ -1153,6 +1157,12 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default Hybridcloud;
 
 const HybridWrapper = styled.div`
+
+.bdrshd{
+  border: 8px solid white;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.7);
+  margin: 10px 0px;
+}
 
 .ptext{
 	text-align: left;
