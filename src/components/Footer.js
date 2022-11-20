@@ -144,6 +144,26 @@ adge/hipaa-light.png"
               </h4> */}
             </div>
           </div>
+          <div className="w-35vw mx-0 ml-md-3 pl-1 pl-md- my-4 my-md-0">
+            <div className="ml-0 ml-md-5">
+              <h4
+                className="text-light text-capitalize mb-2 mt-3"
+                style={{ textAlign: 'center' }}
+              >
+                SOC 2
+              </h4>
+              <a href=" https://drata.com/product " target="_blank">
+                <img
+                  src="https://cdn.drata.com/badge/soc2-dark.png"
+                  // height="140"
+                />
+              </a>
+
+              {/* <h4 className="text-light  text-capitalize mt-2 mt-md-2">
+                Social
+              </h4> */}
+            </div>
+          </div>
         </div>
       </FooterWrapper>
     );
