@@ -35,7 +35,7 @@ import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
 import vdi from '../../images/virtual-desktop.jpg';
-import vdisvg from '../../images/vdi.svg';
+import vdisvg from '../../images/VDI_Updated.jpg';
 import CHVD from '../../images/MicrosoftTeams-image.png';
 import {
   TabContent,

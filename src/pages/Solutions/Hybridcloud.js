@@ -641,9 +641,9 @@ const Hybridcloud = () => {
                   </TabPane>
                   <TabPane tabId="2">
                     <div className="">
-                      <div className="row">
-                        <div className="col-md-12">
-                          {/* <h2 className=''>GETTING STARTED TO HYBRID CLOUD</h2> */}
+                      <div className="row  d-flex justify-content-center  align-items-center">
+                        <div className="col-md-6">
+                          <h2 className="">GETTING STARTED TO HYBRID CLOUD</h2>
                           <p className="ptext">
                             The first step is for CIOs to connect with the
                             business to establish clear lines of communication
@@ -665,19 +665,15 @@ const Hybridcloud = () => {
                             migrating applications, integrating and
                             orchestrating environments, automating and
                             monitoring business services, enabling digital
-                            processes, and integrating data and security.{' '}
+                            processes, and integrating data and security.
                           </p>
                         </div>
-                        <div className="row">
-                          <div className="col-md-4"></div>
-                          <div className="col-md-8 my-5 d-flex justify-content-center">
-                            <img
-                              src={HybridCloud}
-                              alt="Key Strategic Drivers"
-                              className="w-75 my-2 my-md-0 bdrshd"
-                            />
-                          </div>
-                          {/* <div className="col-md-3"></div> */}
+                        <div className="col-md-5 mt-5 ml-5">
+                          <img
+                            src={HybridCloud}
+                            alt="Key Strategic Drivers"
+                            className="w-75 my-2 my-md-0  "
+                          />
                         </div>
                       </div>
                       <div>
@@ -1496,6 +1492,19 @@ h4{
 }
 }
 @media(min-width:768px){
+   h2 {
+      font-family: montserrat, sans-serif;
+      font-weight: 600 !important;
+      font-style: normal !important;
+      font-size: 2.6rem !important;
+      line-height: 48px !important;
+      -webkit-letter-spacing: normal !important;
+      -moz-letter-spacing: normal !important;
+      -ms-letter-spacing: normal !important;
+      letter-spacing: normal !important;
+      color: #007cc2 !important;
+      margin-bottom: 0.8em;
+    }
 	a#bgLLL.active:after{
     top: 100%;
 	left: 50%;

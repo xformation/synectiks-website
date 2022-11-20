@@ -20,7 +20,7 @@ import {
 import classnames from 'classnames';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import '../../components/fonts.css';
-import ms1 from '../../images/Microservices/Microservice_1.png';
+import ms1 from '../../images/syn.jpg';
 import ms2 from '../../images/Microservices/Monolith to Microservices.jpg';
 import ms4 from '../../images/Microservices/Microservice_7.png';
 import ms6 from '../../images/Microservices/Microservice_9.png';
@@ -68,7 +68,7 @@ const Microservice = () => {
               subtitle="Solutions"
               pageTitle="Micro services"
             />
-            <h1>Microservices</h1>
+            {/* <h1>Microservices</h1> */}
           </div>
           <div className="">
             <Row className="position-relative">
@@ -155,9 +155,13 @@ const Microservice = () => {
                 <TabContent activeTab={activeTab}>
                   <TabPane tabId="1">
                     <div>
-                      <div className="w-100 d-flex flex-column flex-md-row align-items-start py-2 py-md-3">
-                        <div className="row">
-                          <div className="pr-0 pr-md-5">
+                      <div className="w-100 d-flex flex-column flex-md-row  py-2 py-md-3">
+                        <div className="row d-flex align-items-center">
+                          <div className="col-md-12 pr-0 pr-md-5">
+                            <h1 className="text-uppercase fntclr">
+                              Microservices
+                            </h1>
+                            <h2 className="fntclr">Microservices Migration</h2>
                             <p className="ptext">
                               To accommodate the increasing complexity of
                               functional requirements, IT applications have
@@ -179,12 +183,15 @@ const Microservice = () => {
                               and scale applications.
                             </p>
                           </div>
-                          <img
-                            className="microImage imgshadow"
-                            height="auto"
-                            src={ms1}
-                            alt="Microservices"
-                          />
+                          <div className="col-md-12">
+                            <img
+                              className=""
+                              // className="microImage imgshadow"
+                              height="auto"
+                              src={ms1}
+                              alt="Microservices"
+                            />
+                          </div>
                         </div>
                       </div>
                       <div className="my-1 my-md-4">
@@ -904,6 +911,9 @@ padding: 5rem 1rem;
 h1,h2,h3,h4,h5,h5,p,ul{
   text-align: left;
 }
+h2{
+  margin-bottom: 0.8em;
+}
 .hybJumbo{
   display:flex;
   flex-direction: column;
@@ -1205,6 +1215,30 @@ h4{
 }
 }
 @media(min-width:768px){
+  h1 {
+      font-family: montserrat, sans-serif;
+      font-weight: 700 !important;
+      font-style: normal !important;
+      font-size: 3rem !important;
+      line-height: 62px !important;
+      -webkit-letter-spacing: normal !important;
+      -moz-letter-spacing: normal !important;
+      -ms-letter-spacing: normal !important;
+      letter-spacing: normal !important;
+      color: #007cc2 !important;
+    }
+    h2 {
+      font-family: montserrat, sans-serif;
+      font-weight: 600 !important;
+      font-style: normal !important;
+      font-size: 2.6rem !important;
+      line-height: 12px !important;
+      -webkit-letter-spacing: normal !important;
+      -moz-letter-spacing: normal !important;
+      -ms-letter-spacing: normal !important;
+      letter-spacing: normal !important;
+      color: #007cc2 !important;
+    }
 	a#bgLLL.active:after{
     top: 100%;
 	left: 50%;
