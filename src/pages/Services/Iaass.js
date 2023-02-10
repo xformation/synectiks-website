@@ -81,7 +81,10 @@ const Iaas = () => {
                 <div className="">
                   <div className="container-fluid my-0 my-md-4">
                     <div className="text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex align-items-center">
-                      <div className="w-100 ml-md-auto" data-aos="fade-up">
+                      <div
+                        className="w-100 ml-md-auto d-flex justify-content-center"
+                        data-aos="fade-up"
+                      >
                         <img
                           class="w-50 ml-md-5"
                           src={SCHI}

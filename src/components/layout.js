@@ -404,7 +404,7 @@ const Layout = ({ children }) => {
         start();
       }
 
-      // 	// uncomment this to make pause on mouseover
+      // uncomment this to make pause on mouseover
       $elem.on('mouseover', function() {
         isPause = true;
       });

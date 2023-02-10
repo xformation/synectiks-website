@@ -41,7 +41,7 @@ export class Footer extends React.Component {
           </button>
         </div>
 
-        <div className="d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 pb-3 px-md-5 pt-md-5">
+        <div className="d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 pb-3 pb-md-0 px-md-5 pt-md-5">
           <div className="w-35vw mx-0 mx-md-4 px-2 px-md-0">
             {/* <h3 className='text-light text-capitalize'>Synectiks</h3> */}
             <a href="/">
@@ -86,6 +86,7 @@ export class Footer extends React.Component {
                   alt="U.S. Chamber of Commerce Member 2021"
                   title="U.S. Chamber of Commerce Member 2021"
                   src={UsChamber}
+                  width="100%"
                   // src="https://www.uschamber.com/sticker/image?i=n1&m=10038883"
                 />
               </a>
@@ -123,18 +124,17 @@ export class Footer extends React.Component {
               </h4>
             </div>
           </div>
-          <div className="w-35vw mx-0 ml-md-3 pl-1 pl-md- my-4 my-md-0">
-            <div className="ml-0 ml-md-5">
-              <h4
-                className="text-light text-capitalize mb-2 mt-3"
-                style={{ textAlign: 'center' }}
+          <div className="w-32vw pl-md-2 ml-0 ml-md-3">
+            <div className="ml-0 ml-md-1 p-5 pt-md-0 pr-md-0">
+              <a
+                class="drata"
+                href="https://drata.com/product/iso-27001"
+                target="_blank"
               >
-                HIPPA
-              </h4>
-              <a hhref="https://drata.com/iso27001" target="_blank">
                 <img
                   src="https://cdn.drata.com/b
 adge/hipaa-light.png"
+                  width="100%"
                   // height="120"
                 />
               </a>
@@ -144,17 +144,16 @@ adge/hipaa-light.png"
               </h4> */}
             </div>
           </div>
-          <div className="w-35vw mx-0 ml-md-3 pl-1 pl-md- my-4 my-md-0">
-            <div className="ml-0 ml-md-5">
-              <h4
-                className="text-light text-capitalize mb-2 mt-3"
-                style={{ textAlign: 'center' }}
+          <div className="w-32vw mx-0 ml-md-4 pl-1 pl-md-2 my-4 my-md-0">
+            <div className="ml-0 ml-md-1 p-5 pt-md-0 pl-md-0">
+              <a
+                class="drata"
+                href=" https://drata.com/product "
+                target="_blank"
               >
-                SOC 2
-              </h4>
-              <a href=" https://drata.com/product " target="_blank">
                 <img
                   src="https://cdn.drata.com/badge/soc2-dark.png"
+                  width="100%"
                   // height="140"
                 />
               </a>
@@ -245,6 +244,9 @@ const FooterWrapper = styled.div`
       position: relative;
       top: 0%;
     }
+    /* .drata {
+      width: 100%;
+    } */
     .fsize08 {
       font-size: 14px !important;
       position: relative;
@@ -278,6 +280,9 @@ const FooterWrapper = styled.div`
     .w-30vw {
       width: 35vw;
     }
+    .w-32vw {
+      width: 30vw;
+    }
     background: var(--textColor);
     a {
       font-weight: 300;
@@ -297,6 +302,12 @@ const FooterWrapper = styled.div`
       line-height: 2.3;
       list-style: none;
       font-size: 14px !important;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .w-32vw {
+      width: 28%;
     }
   }
 `;

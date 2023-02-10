@@ -133,7 +133,7 @@ const DesktopNavMenu = () => {
           </ul>
         </li>
 
-        <li>
+        <li className="">
           <span>Resources</span>
           <ul className="sub-menu">
             <ul>

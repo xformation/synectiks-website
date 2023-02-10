@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
 import Swal from 'sweetalert2';
@@ -56,11 +56,12 @@ import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
 import ProCloud from '../../images/Protect_Cloud_Updated.jpg';
-import largeImg from "../../images/large-img.png";
-import smallImg from '../../images/small-img.png'
+import largeImg from '../../images/large-img.png';
+import smallImg from '../../images/small-img.png';
 import vdi from '../../images/protect-cloud.jpg';
 import timg from '../../images/table-img.png';
-import protectSvg from '../../images/protect-cloud/protect-cloud.svg'
+// import protectSvg from '../../images/protect-cloud/protect-cloud.svg';
+import protectSvg from '../../images/protect-cloud/pc.png';
 import {
   TabContent,
   TabPane,
@@ -76,7 +77,7 @@ import {
 import SEO from '../../components/seo.js';
 import BusinessCrumbs from '../../components/Home/BusinessCrumbs.js';
 import { useForm } from 'react-hook-form';
-import SvgAnimation from '../../components/SvgAnimate.js'
+import SvgAnimation from '../../components/SvgAnimate.js';
 
 const postData = () => {
   return new Promise(resolve => {
@@ -114,7 +115,17 @@ const ProtectCloud = () => {
     formState: { errors, isSubmitting }
   } = useForm();
 
+  const [hideAlert, SetHideAlert] = useState(true);
   const [isSuccessfullySubmitted, setIsSuccessfullySubmitted] = useState(false);
+  const msgAlrt = useRef(null);
+  useEffect(() => {
+    setTimeout(hideAlert => {
+      SetHideAlert(hideAlert);
+      // SetHideAlert(true);
+      const hdMsg = document.getElementById('msgAlert');
+      msgAlrt.current.style.display = 'none';
+    }, 15000);
+  });
   const submitForm = async data => {
     console.log('Submission starting', data);
     const result = await postData(data);
@@ -145,41 +156,159 @@ const ProtectCloud = () => {
               subtitle="Business Continuity & Cyber Security"
               pageTitle="Protect Cloud"
             />
-            <h1>Protect Cloud</h1>
+            {/* <h1>Protect Cloud</h1> */}
           </div>
           <Row className="d-flex justify-content-start px-0 px-md-3">
             <div className="px-2 px-md-0 mb-3 col-md-12">
               <div className="bg-lightgrey mb-0 pb-3">
                 <div className="">
-                <p>
-                      Protect Cloud is a SaaS based readily
-                      available Innovative and powerful web-based ALL-IN-ONE
-                      solution, with one-agent on any given Server/End-point
-                      device to serve all <a href='/cloud-backup-service/index.html'>Backup</a> & <a href='/cloud-disaster-recovery-service/index.html'>Disaster Recovery </a>needs along
-                      with basic necessary features like Anti-Virus,
-                      Anti-Malware, Vulnerability Assessment, Patch
-                      management, Remote Diagnostic assistance and
-                      URL-filtering. All devices in your infrastructure are
-                      easily managed from a single web console and well
-                      protected to meet all Business continuity, Security, and
-                      compliance requirements.
-                    </p>
-                    <p>
-                      Maintain all the basic security and protection features
-                      with a single solution, and avoid the hassle of purchasing
-                      software from multiple vendors and installing multiple
-                      agents on the same machine. Pick and choose the required license type for each
-                      server/end-point device from the following, mix and match
-                      the licenses as needed for each device in your
-                      environment.
-                    </p>
-                  <div>
+                  <div className="d-flex flex-column flex-md-row">
+                    <div className="Pc-left">
+                      <h1>Protect Cloud</h1>
+                      <p>
+                        Protect Cloud is a SaaS based readily available
+                        Innovative and powerful web-based ALL-IN-ONE solution,
+                        with one-agent on any given Server/End-point device to
+                        serve all{' '}
+                        <a href="/cloud-backup-service/index.html">Backup</a> &{' '}
+                        <a href="/cloud-disaster-recovery-service/index.html">
+                          Disaster Recovery{' '}
+                        </a>
+                        needs along with basic necessary features like
+                        Anti-Virus, Anti-Malware, Vulnerability Assessment,
+                        Patch management, Remote Diagnostic assistance and
+                        URL-filtering. All devices in your infrastructure are
+                        easily managed from a single web console and well
+                        protected to meet all Business continuity, Security, and
+                        compliance requirements.
+                      </p>
+                      <p>
+                        Maintain all the basic security and protection features
+                        with a single solution, and avoid the hassle of
+                        purchasing software from multiple vendors and installing
+                        multiple agents on the same machine. Pick and choose the
+                        required license type for each server/end-point device
+                        from the following, mix and match the licenses as needed
+                        for each device in your environment.
+                      </p>
+                    </div>
+                    <div className="Pc-right">
+                      <p
+                        id="req-font"
+                        className="font-weight-bold text-center mt-3 mb-0"
+                      >
+                        Request for a
+                        <span className="text-black bold">
+                          &nbsp;Quick Demo
+                        </span>
+                      </p>
+
+                      <div>
+                        <div className="text-black py-2 py-md-1">
+                          <form
+                            form="Protectform"
+                            id="Protectform"
+                            name="Protectform"
+                            className="was-validated"
+                            action="#"
+                            onSubmit={handleSubmit(submitForm)}
+                          >
+                            <div className="row d-flex flex-column">
+                              <div className="text-left  col field-group">
+                                <label htmlFor="name">Your Name *</label>
+                                <input
+                                  id="name"
+                                  maxlength="80"
+                                  size="20"
+                                  type="text"
+                                  {...register('first_name', {
+                                    required: true,
+                                    minLength: 2,
+                                    MaxLength: 80
+                                  })}
+                                  disabled={
+                                    isSubmitting || isSuccessfullySubmitted
+                                  }
+                                />
+                                <div className="error">
+                                  {errors.first_name && (
+                                    <div className="d-flex align-items-baseline">
+                                      <AiOutlineWarning className="mr-2" />
+                                      <p>Enter Your Name</p>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                              <div className="text-left  col field-group">
+                                <label for="email">Email *</label>
+                                <input
+                                  id="email"
+                                  size="20"
+                                  type="text"
+                                  {...register('email', {
+                                    required: true,
+                                    pattern: {
+                                      // value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+                                      value: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/
+                                    }
+                                  })}
+                                  size="20"
+                                  type="text"
+                                  disabled={
+                                    isSubmitting || isSuccessfullySubmitted
+                                  }
+                                />
+                                <div className="errorml">
+                                  {errors.email && (
+                                    <div className="d-flex align-items-baseline">
+                                      <AiOutlineWarning className="mr-2" />
+                                      <p>Enter Your Email Id</p>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                              <div className="text-center  col field-group">
+                                <input
+                                  type="submit"
+                                  name="submit"
+                                  value="Submit"
+                                  className="btn btn-primary w-50 pos-3 mx-auto"
+                                  // className="btn btn-primary w-100 pos-3"
+                                  id="submit-btn"
+                                />
+                              </div>
+                            </div>
+                            {isSuccessfullySubmitted && (
+                              <div
+                                ref={msgAlrt}
+                                id="msgAlert"
+                                className="w-25 alert alert-success"
+                                role="alert"
+                              >
+                                <div className="text-center">
+                                  <h1 className="alert-heading text-capitalize text-center">
+                                    We have recieved your request for demo
+                                  </h1>
+                                  <hr />
+                                  <h3 className="text-capitalize text-center">
+                                    we will get back <br /> to you soon !
+                                  </h3>
+                                </div>
+                              </div>
+                            )}
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-n0 mt-md-n5">
                     {/* <h5 className="ft text-center"><strong>Features Comparison In Detail</strong></h5> */}
-                    <div className='svg-animation'>
-                    <SvgAnimation/>
+                    <div className="mt-2 mt-md-0 mt-md-n5 svg-animation">
+                      <SvgAnimation />
                     </div>
                     <div className="table-img my-3 my-md-0 text-center">
-                            {/* <img src={protectSvg} alt='Protect Cloud'/> */}
+                      {/* <img src={protectSvg} alt="Protect Cloud" /> */}
                       {/* <div className='magni-img'>
                         <GlassMagnifier
                           imageSrc="https://res.cloudinary.com/papu/image/upload/b_rgb:e8e8e8/v1626951869/synectiks-website/Protect_Cloud_1_bp66ra_wu3pgq.jpg"
@@ -208,7 +337,18 @@ const ProtectCloud = () => {
                       /> */}
                       {/* <img src={circleProduct} alt="" className="rnd-pic" /> */}
                     </div>
-                    {/* <Table border="1" className="protect-table">
+                    <p className="lineHeight-24 ptext mt-md-0 mt-1">
+                      Eliminate security breaches, downtime and data loss.
+                      Protect Cloud is the only solution that natively
+                      integrates cloud security, data protection and management
+                      to protect endpoints, systems and data. Integration and
+                      automation provide unmatched protection, making it simple
+                      to manage all the devices in your environment.
+                    </p>
+                  </div>
+                  <div className="pr-img"></div>
+                  {/* <img src={protectSvg} alt="Protect Cloud" /> */}
+                  {/* <Table border="1" className="protect-table">
                       <thead rowspan="2">
                         <th />
                         <th className="tdfont bxl bxr">Features</th>
@@ -589,117 +729,116 @@ const ProtectCloud = () => {
                         </tr>
                       </tbody>
                     </Table> */}
-                  </div>
+                </div>
 
-                  <div>
-                  <div className="text-center mt-3 mb-0">
-                    Request for a
-                    <span className="text-black bold">&nbsp;Quick Demo</span>
-                  </div>
+                <div>
+                  {/* <div className="text-center mt-3 mb-0">
+                      Request for a
+                      <span className="text-black bold">&nbsp;Quick Demo</span>
+                    </div> */}
 
                   <div className="text-black py-2 py-md-4">
-                    <form
-                      form="Protectform"
-                      id="Protectform"
-                      name="Protectform"
-                      className="was-validated"
-                      action="#"
-                      onSubmit={handleSubmit(submitForm)}
-                    >
-                      <div className="row">
-                        <div className="text-left  col field-group">
-                          <label htmlFor="name">Your Name *</label>
-                          <input
-                            id="name"
-                            maxlength="80"
-                            size="20"
-                            type="text"
-                            {...register('first_name', {
-                              required: true,
-                              minLength: 2,
-                              MaxLength: 80
-                            })}
-                            disabled={isSubmitting || isSuccessfullySubmitted}
-                          />
-                          <div className="error">
-                            {errors.first_name && (
-                              <div className="d-flex align-items-baseline">
-                                <AiOutlineWarning className="mr-2" />
-                                <p>Enter Your Name</p>
-                              </div>
-                            )}
+                    {/* <form
+                        form="Protectform"
+                        id="Protectform"
+                        name="Protectform"
+                        className="was-validated"
+                        action="#"
+                        onSubmit={handleSubmit(submitForm)}
+                      >
+                        <div className="row">
+                          <div className="text-left  col field-group">
+                            <label htmlFor="name">Your Name *</label>
+                            <input
+                              id="name"
+                              maxlength="80"
+                              size="20"
+                              type="text"
+                              {...register('first_name', {
+                                required: true,
+                                minLength: 2,
+                                MaxLength: 80
+                              })}
+                              disabled={isSubmitting || isSuccessfullySubmitted}
+                            />
+                            <div className="error">
+                              {errors.first_name && (
+                                <div className="d-flex align-items-baseline">
+                                  <AiOutlineWarning className="mr-2" />
+                                  <p>Enter Your Name</p>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                          <div className="text-left  col field-group">
+                            <label for="email">Email *</label>
+                            <input
+                              id="email"
+                              size="20"
+                              type="text"
+                              {...register('email', {
+                                required: true,
+                                pattern: {
+                                  // value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+                                  value: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/
+                                }
+                              })}
+                              size="20"
+                              type="text"
+                              disabled={isSubmitting || isSuccessfullySubmitted}
+                            />
+                            <div className="errorml">
+                              {errors.email && (
+                                <div className="d-flex align-items-baseline">
+                                  <AiOutlineWarning className="mr-2" />
+                                  <p>Enter Your Email Id</p>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                          <div className="text-left  col field-group">
+                            <input
+                              type="submit"
+                              name="submit"
+                              value="Submit"
+                              className="btn btn-primary w-100 pos-3"
+                              id="submit-btn"
+                            />
                           </div>
                         </div>
-                        <div className="text-left  col field-group">
-                          <label for="email">Email *</label>
-                          <input
-                            id="email"
-                            size="20"
-                            type="text"
-                            {...register('email', {
-                              required: true,
-                              pattern: {
-                                // value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
-                                value: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/
-                              }
-                            })}
-                            size="20"
-                            type="text"
-                            disabled={isSubmitting || isSuccessfullySubmitted}
-                          />
-                          <div className="errorml">
-                            {errors.email && (
-                              <div className="d-flex align-items-baseline">
-                                <AiOutlineWarning className="mr-2" />
-                                <p>Enter Your Email Id</p>
-                              </div>
-                            )}
+                        {isSuccessfullySubmitted && (
+                          <div className="alert alert-success" role="alert">
+                            <div className="text-center">
+                              <h1 className="alert-heading text-capitalize text-center">
+                                We have recieved your request for demo
+                              </h1>
+                              <hr />
+                              <h3 className="text-capitalize text-center">
+                                we will get back to you soon !
+                              </h3>
+                            </div>
                           </div>
-                        </div>
-                        <div className="text-left  col field-group">
-                          <input
-                            type="submit"
-                            name="submit"
-                            value="Submit"
-                            className="btn btn-primary w-100 pos-3"
-                            id="submit-btn"
-                          />
-                        </div>
-                      </div>
-                      {isSuccessfullySubmitted && (
-                        <div className="alert alert-success" role="alert">
-                          <div className="text-center">
-                            <h1 className="alert-heading text-capitalize text-center">
-                              We have recieved your request for demo
-                            </h1>
-                            <hr />
-                            <h3 className="text-capitalize text-center">
-                              we will get back to you soon !
-                            </h3>
-                          </div>
-                        </div>
-                      )}
-                    </form>
+                        )}
+                      </form> */}
 
-
-                    <p className="lineHeight-24 ptext mt-md-4 mt-1">
-                      Eliminate security breaches, downtime and data loss.
-                      Protect Cloud is the only solution that natively
-                      integrates cloud security, data protection and management
-                      to protect endpoints, systems and data. Integration and
-                      automation provide unmatched protection, making it simple
-                      to manage all the devices in your environment.
-                    </p>
-
-
-                  </div>
-                  <div className="pr-img">
+                    {/* <p className="lineHeight-24 ptext mt-md-4 mt-1">
+                        Eliminate security breaches, downtime and data loss.
+                        Protect Cloud is the only solution that natively
+                        integrates cloud security, data protection and
+                        management to protect endpoints, systems and data.
+                        Integration and automation provide unmatched protection,
+                        making it simple to manage all the devices in your
+                        environment.
+                      </p>
+                    </div>
+                    <div className="pr-img"> */}
                     {/* <img
 											className='w85 my-4 mx-auto'
 											src={ProCloud}
 											alt='Antivirus,Anti-Malware,Exploit Prevention,Ransomware Protection,Security Vulnerability Assessment,Patch Management,URL-filtering,Data protection Map,Remote desktop & Remote assistance,Backup,Disaster Recovery'
 										/> */}
-                  </div>
+                    {/* <div className="pr-img"> */}
+                    {/* </div> */}
                     {/* <p>
                       Contact us for a <span style={{color: "#007BFF", cursor: 'pointer'}} onClick = {(e) => {
                         let names = document.getElementById('name');
@@ -755,12 +894,21 @@ lastScriptElement.parentNode.insertBefore(vvscript, lastScriptElement.nextSiblin
 export default ProtectCloud;
 
 const ProctectCloudWrapper = styled.div`
+  #msgAlert {
+    position: absolute;
+    top: 20%;
+    right: -3%;
+  }
+  #req-font {
+    font-size: 1rem !important;
+  }
   .protect-table {
     display: none;
   }
-  .svg-animation{
+  .svg-animation {
     width: 100%;
     margin: 0 auto;
+    margin-top: 0px !important;
   }
   .table-img {
     display: block;
@@ -941,7 +1089,7 @@ const ProctectCloudWrapper = styled.div`
   .w-12 {
     width: 25%;
   }
-  .magni-img{
+  .magni-img {
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -950,10 +1098,10 @@ const ProctectCloudWrapper = styled.div`
     .protect-table {
       display: none;
     }
-    .svg-animation{
-    width: 100%;
-    margin: 0 auto;
-  }
+    .svg-animation {
+      width: 100%;
+      margin: 0 auto;
+    }
     .table-img {
       display: block;
       img {
@@ -1151,7 +1299,7 @@ const ProctectCloudWrapper = styled.div`
     h4 {
       font-size: 1.5rem;
     }
-    .magni-img{
+    .magni-img {
       width: 100%;
     }
   }
@@ -1159,10 +1307,11 @@ const ProctectCloudWrapper = styled.div`
     .protect-table {
       display: block;
     }
-    .svg-animation{
-    width: 80%;
-    margin: 0 auto;
-  }
+    .svg-animation {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: -7% !important;
+    }
     .table-img {
       display: block;
       img {

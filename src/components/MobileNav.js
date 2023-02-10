@@ -234,10 +234,11 @@ const MobileHeader = () => {
                           Secure & Custom Hosted Infrastructure
                         </NavDropdown.Item>
                         <NavDropdown.Item
-													className='main-sub-menu p-2'
-													href='/digital-workspace/index.html'>
-													Cloud-Hosted Virtual Desktop
-												</NavDropdown.Item>
+                          className="main-sub-menu p-2"
+                          href="/digital-workspace/index.html"
+                        >
+                          Cloud-Hosted Virtual Desktop
+                        </NavDropdown.Item>
                         <NavDropdown.Item
                           className="p-2"
                           href="/aws-managed-services/index.html"
@@ -282,8 +283,8 @@ const MobileHeader = () => {
                     Hybrid Cloud
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown
-                  className="ml-01"
+                {/* <NavDropdown
+                  className="ml-01 d-none"
                   title="Resources"
                   id="basic-nav-dropdown"
                 >
@@ -296,7 +297,7 @@ const MobileHeader = () => {
                   <NavDropdown.Item href="/casestudy/index.html">
                     Case Studies
                   </NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 <NavDropdown
                   className="ml-01"
                   title="Company"

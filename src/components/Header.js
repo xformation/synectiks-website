@@ -113,10 +113,11 @@ const Header = () => {
                           Secure & Custom Hosted Infrastructure
                         </NavDropdown.Item>
                         <NavDropdown.Item
-													className='main-sub-menu p-2'
-													href='/digital-workspace/index.html'>
-													Cloud-Hosted Virtual Desktop
-												</NavDropdown.Item>
+                          className="main-sub-menu p-2"
+                          href="/digital-workspace/index.html"
+                        >
+                          Cloud-Hosted Virtual Desktop
+                        </NavDropdown.Item>
                       </Col>
                       <Col className="p-0 bcdl pl-md-2">
                         <NavDropdown.Item
@@ -146,13 +147,22 @@ const Header = () => {
                   title="Migration & Modernization"
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item className='py-2' href="/infrastructure-transformation/index.html">
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/infrastructure-transformation/index.html"
+                  >
                     Infrastructure Transformation
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='py-2' href="/application-transformation/index.html">
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/application-transformation/index.html"
+                  >
                     Application Transformation
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='py-2' href="/devops-transformation/index.html">
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/devops-transformation/index.html"
+                  >
                     DevOps Transformation
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -162,44 +172,80 @@ const Header = () => {
                   title="Solutions"
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item className='py-2'  href="/microservices/index.html">
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/microservices/index.html"
+                  >
                     Microservices
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='py-2'  href="/hybrid-cloud/index.html">
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/hybrid-cloud/index.html"
+                  >
                     Hybrid Cloud
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown
+                {/* <NavDropdown
                   className="ml-01"
                   title="Resources"
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item className='py-2' href="/featured/index.html">
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/featured/index.html"
+                  >
                     Featured
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='py-2' href="/blog/index.html">
+                  <NavDropdown.Item className="py-2" href="/blog/index.html">
                     Blog
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='py-2'  href="/casestudy/index.html">
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/casestudy/index.html"
+                  >
                     Case Studies
                   </NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 <NavDropdown
                   className="ml-01"
                   title="Company"
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item className='py-2'  href="/about-us/index.html">
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/about-us/index.html"
+                  >
                     About Us
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='py-2'  href="/careers/index.html">
+                  <NavDropdown.Item className="py-2" href="/careers/index.html">
                     Careers
                   </NavDropdown.Item>
                   {/* <NavDropdown.Item href="/contact/index.html">
                     Contact Us
                   </NavDropdown.Item> */}
-                  <NavDropdown.Item className='py-2'  href="/Contact-us.html">
+                  <NavDropdown.Item className="py-2" href="/Contact-us.html">
                     Contact Us
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  className="ml-01 invisible"
+                  title="Resources"
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/featured/index.html"
+                  >
+                    Featured
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className="py-2" href="/blog/index.html">
+                    Blog
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className="py-2"
+                    href="/casestudy/index.html"
+                  >
+                    Case Studies
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
