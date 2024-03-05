@@ -61,7 +61,7 @@
 // 	align-items: center;
 // `;
 
-// const MenuIcon = styled.button`
+// const MenuIcon = styled.a`
 // 	cursor: pointer;
 // 	background: transparent;
 // 	border: none;
@@ -137,8 +137,8 @@ import {
   Nav,
   NavDropdown,
   Container,
-  DropdownButton,
-  ButtonGroup,
+  Dropdowna,
+  aGroup,
   Grid,
   Row,
   Col
@@ -164,15 +164,13 @@ import './mobilenav.css'
     const toggleResponsive = () => {
       setIsResponsive((prevState) => !prevState);
     };
+    const closeMobileMenu = () => {
+      setIsResponsive(false);
+    };
   return (
 <>
-      <div className="flex">
-        <div className="logo">
-          <a href="/">
-            <img src={logo}
-              className='logo-syn' alt="synectiks" />
-          </a>
-        </div>
+      <div className="">
+
         {/* <div className="hamburger-menu" onClick={toggleMobileMenu}>
           <div className="bar"></div>
           <div className="bar"></div>
@@ -259,23 +257,94 @@ import './mobilenav.css'
         </div> */}
 
         <div className={`topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
-          <a href="#home" class="active">Home</a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <div class="dropdown">
-            <button class="dropbtn">Dropdown
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+          <div className="logo">
+            <a href="/">
+              <img src={logo}
+                className='logo-syn' alt="synectiks" />
+            </a>
+            <div className='flex-menu-btn'>
+              {isResponsive ? (
+                <div className="close-button flex-menu-btn" onClick={closeMobileMenu}>
+                  <AiOutlineClose />
+                </div>
+              ) : (
+                <a href="javascript:void(0);" style={{ fontSize: '15px' }} className="icon flex-menu-btn-open" onClick={toggleResponsive}>
+                  &#9776;
+                </a>
+              )}
             </div>
           </div>
-          <a href="#about">About</a>
-          <a href="javascript:void(0);" style={{ fontSize: '15px' }} className="icon" onClick={toggleResponsive}>
-            &#9776;
-          </a>
+          <a href="/what-we-do/index.html" className="nav-item fnt-nav w-mx nav-link">WHAT WE DO</a>
+          <div class="dropdown-mobile">
+            <a class="dropbtn-mobile">CLOUD SERVICES
+              <i class="fa fa-caret-down mlft"></i>
+            </a>
+            <div class="dropdown-content-mobile">
+
+              <a href="/aws-managed-services/index.html">
+                AWS Managed Servicese</a>
+              <a href="/protect-cloud/index.html">
+                Microsoft 365 Services</a>
+
+
+              <a href="/secure-custom-hosted-infrastructure/index.html">
+                            Secure & Custom Hosted Infrastructure</a>
+
+              <a href="/digital-workspace/index.html">
+                Cloud-Hosted Virtual Desktop</a>
+
+              <a href="/protect-cloud/index.html">
+                Protect Cloud</a>
+
+              <a href="/cloud-backup-service/index.html">
+                Backup as a Service</a>
+
+              <a href="/microsoft-365-services/index.html">
+                Disaster Recovery as a Service</a>
+            </div>
+          </div>
+          <div class="dropdown-mobile">
+            <a class="dropbtn-mobile">MIGRATION & MODERNIZATION
+              <i class="fa fa-caret-down mlft"></i>
+            </a>
+            <div class="dropdown-content-mobile">
+              <a href="/infrastructure-transformation/index.html">
+                Infrastructure Transformation</a>
+              <a href="/application-transformation/index.html">
+                Application Transformation</a>
+              <a href="/devops-transformation/index.html">
+                DevOps Transformation</a>
+            </div>
+          </div>
+          <div class="dropdown-mobile">
+            <a class="dropbtn-mobile">SOLUTIONS
+              <i class="fa fa-caret-down mlft"></i>
+            </a>
+            <div class="dropdown-content-mobile">
+              <a href="/microservices/index.html">
+                Microservices</a>
+              <a href="/hybrid-cloud/index.html">
+                Hybrid Cloud</a>
+
+            </div>
+          </div>
+          <div class="dropdown-mobile">
+            <a class="dropbtn-mobile">COMPANY
+              <i class="fa fa-caret-down mlft"></i>
+            </a>
+            <div class="dropdown-content-mobile">
+              <a href="/about-us/index.html">
+                About Us</a>
+              <a href="/careers/index.html">
+                Careers</a>
+              <a href="/Contact-us.html">
+                Contact Us</a>
+
+            </div>
+          </div>
+
+
+
         </div>
       </div>
 </>
