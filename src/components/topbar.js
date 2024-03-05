@@ -50,6 +50,7 @@ const Topbar = () => {
 export default Topbar;
 
 const TopBarWrapper = styled.div`
+background-color: #007cc2;
   .infoMail {
     display: none;
   }

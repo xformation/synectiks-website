@@ -1,6 +1,8 @@
 .topnav {
   overflow: hidden;
   /* background-color: #333; */
+  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+  margin-bottom: 1rem;
 }
 
 .topnav a {
@@ -61,17 +63,11 @@
   margin-left:20px;
 }
 
-.flex-menu-btn{
+/* .flex-menu-btn{
   display:flex;
-  position: absolute;
-    top: 5px;
-    right: 16px;
 }
 .flex-menu-btn-open{
-  position: absolute;
-    top: -16px;
-    right: 5px;
-}
+} */
 .topnav a:hover, .dropdown-mobile:hover .dropbtn-mobile {
   background-color: #0056b3;
   color: white !important;

@@ -158,17 +158,17 @@ import './mobilenav.css'
 //   zIndex: "9999 !important",
 // }
 
-  const MobileHeader = () => {
-    const [isResponsive, setIsResponsive] = useState(false);
+const MobileHeader = () => {
+  const [isResponsive, setIsResponsive] = useState(false);
 
-    const toggleResponsive = () => {
-      setIsResponsive((prevState) => !prevState);
-    };
-    const closeMobileMenu = () => {
-      setIsResponsive(false);
-    };
+  const toggleResponsive = () => {
+    setIsResponsive((prevState) => !prevState);
+  };
+  const closeMobileMenu = () => {
+    setIsResponsive(false);
+  };
   return (
-<>
+    <>
       <div className="">
 
         {/* <div className="hamburger-menu" onClick={toggleMobileMenu}>
@@ -255,7 +255,7 @@ import './mobilenav.css'
           </div>
         </div>
         </div> */}
-
+        <Topbar />
         <div className={`topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
           <div className="logo">
             <a href="/">
@@ -264,9 +264,9 @@ import './mobilenav.css'
             </a>
             <div className='flex-menu-btn'>
               {isResponsive ? (
-                <div className="close-button flex-menu-btn" onClick={closeMobileMenu}>
+                <a href="javascript:void(0);"  className="icon flex-menu-btn-open" onClick={closeMobileMenu}>
                   <AiOutlineClose />
-                </div>
+                </a>
               ) : (
                 <a href="javascript:void(0);" style={{ fontSize: '15px' }} className="icon flex-menu-btn-open" onClick={toggleResponsive}>
                   &#9776;
@@ -288,7 +288,7 @@ import './mobilenav.css'
 
 
               <a href="/secure-custom-hosted-infrastructure/index.html">
-                            Secure & Custom Hosted Infrastructure</a>
+                Secure & Custom Hosted Infrastructure</a>
 
               <a href="/digital-workspace/index.html">
                 Cloud-Hosted Virtual Desktop</a>
@@ -347,7 +347,7 @@ import './mobilenav.css'
 
         </div>
       </div>
-</>
+    </>
 
   );
 };
