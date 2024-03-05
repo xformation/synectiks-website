@@ -168,7 +168,7 @@ const MobileHeader = () => {
     setIsResponsive(false);
   };
   return (
-    <>
+    <MobileNav>
       <div className="">
 
         {/* <div className="hamburger-menu" onClick={toggleMobileMenu}>
@@ -264,7 +264,7 @@ const MobileHeader = () => {
             </a>
             <div className='flex-menu-btn'>
               {isResponsive ? (
-                <a href="javascript:void(0);"  className="icon flex-menu-btn-open" onClick={closeMobileMenu}>
+                <a href="javascript:void(0);" className="icon flex-menu-btn-open" onClick={closeMobileMenu}>
                   <AiOutlineClose />
                 </a>
               ) : (
@@ -342,12 +342,9 @@ const MobileHeader = () => {
 
             </div>
           </div>
-
-
-
         </div>
       </div>
-    </>
+    </MobileNav>
 
   );
 };
@@ -362,7 +359,11 @@ MobileHeader.defaultProps = {
 export default MobileHeader;
 
 const MobileNav = styled.div`
-  display: block !important;
+    display: block !important;
+    position: sticky;
+    top: 0rem;
+    background: white;
+    z-index: 999;
   .main-tab {
     margin-left: -12px !important;
   }
