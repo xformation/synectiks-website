@@ -283,10 +283,8 @@ const MobileHeader = () => {
 
               <a href="/aws-managed-services/index.html">
                 AWS Managed Servicese</a>
-              <a href="/protect-cloud/index.html">
+              <a href="/microsoft-365-services/index.html">
                 Microsoft 365 Services</a>
-
-
               <a href="/secure-custom-hosted-infrastructure/index.html">
                 Secure & Custom Hosted Infrastructure</a>
 
@@ -299,7 +297,7 @@ const MobileHeader = () => {
               <a href="/cloud-backup-service/index.html">
                 Backup as a Service</a>
 
-              <a href="/microsoft-365-services/index.html">
+              <a href="/cloud-disaster-recovery-service/index.html">
                 Disaster Recovery as a Service</a>
             </div>
           </div>

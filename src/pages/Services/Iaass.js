@@ -735,7 +735,6 @@ const IaasWrapper = styled.div`
       font-weight: 600 !important;
       font-style: normal !important;
       font-size: 2.6rem !important;
-      line-height: 12px !important;
       -webkit-letter-spacing: normal !important;
       -moz-letter-spacing: normal !important;
       -ms-letter-spacing: normal !important;

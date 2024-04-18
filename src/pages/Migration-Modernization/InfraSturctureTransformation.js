@@ -96,7 +96,7 @@ const Infrastructure = () => {
                     className="mr-2 svgcolor mb-n2"
                   />
                   <Collapse isOpen={!collapsed} navbar>
-                    <Nav className="bgWhite d-flex my-2 my-md-4 w-85">
+                    <Nav className="bgWhite d-flex w-100">
                       <NavItem className="one">
                         <NavLink
                           id="bgL"
@@ -891,8 +891,9 @@ ul{
   z-index: 9999;
   width: 100%;
   height: 60px;
-  padding: 0 0 20px 0;
+  padding: 0 0 40px 0;
   left: 0px;
+  box-shadow: none;
 }
 
 .navbar-light .navbar-toggler {
@@ -1131,6 +1132,7 @@ ul.tabList.nav.flex-column {
 	z-index: 99999;
 	background: white;
 	width: auto;
+  margin-top: 0;
 }
   .hybJumbo{
     display:block;

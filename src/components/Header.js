@@ -48,7 +48,7 @@ const Header = () => {
                           </a>
                           <a className="main-sub-menu p-2 dropdown-item" href="/aws-managed-services/index.html">
                             AWS Managed Servicese</a>
-                          <a className="main-sub-menu p-2 dropdown-item" href="/protect-cloud/index.html">
+                          <a className="main-sub-menu p-2 dropdown-item" href="/microsoft-365-services/index.html">
                             Microsoft 365 Services
                           </a>
                         </div>
@@ -65,7 +65,7 @@ const Header = () => {
                           </a>
                           <a className="main-sub-menu p-2 dropdown-item" href="/cloud-backup-service/index.html">
                             Backup as a Service</a>
-                          <a className="main-sub-menu p-2 dropdown-item" href="/microsoft-365-services/index.html">
+                          <a className="main-sub-menu p-2 dropdown-item" href="/cloud-disaster-recovery-service/index.html">
                             Disaster Recovery as a Service</a>
                         </div>
                       </div>

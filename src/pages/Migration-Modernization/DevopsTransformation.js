@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 // import { Modal, ModalHeader, ModalBody } from "reactstrap"
 // import ModalContact from "../../components/ModalContact"
-import { FaBars } from 'react-icons/fa';
-import Layout from '../../components/layout';
+import { FaBars } from "react-icons/fa";
+import Layout from "../../components/layout";
 // import CloudCommon from '../../images/CloudCommon.png';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 // import HybridCloud from '../../images/HybridCloud.jpg';
 import {
   TabContent,
@@ -17,47 +17,47 @@ import {
   Col,
   Collapse,
   NavbarToggler,
-  Navbar
-} from 'reactstrap';
-import classnames from 'classnames';
-import IconSection from '../../components/Home/IconSection.js';
-import one from '../../images/Devops/Technology Shift.jpg';
-import two from '../../images/Devops/Technology Transformation.svg';
-import speed from '../../images/Devops/speed.svg';
-import scale from '../../images/Devops/scale.svg';
-import security from '../../images/Devops/Security.png';
-import four from '../../images/Devops/Discovery & Assessment.png';
-import five from '../../images/Devops/Transformation Services.png';
-import six from '../../images/Devops/6.png';
-import Expertise from '../../images/Devops/Expertise.png';
-import Experience from '../../images/Devops/Experience.png';
-import Contribution from '../../images/Devops/Contribution.png';
-import Engagement from '../../images/Devops/Engagement Model.png';
-import pcpartner from '../../images/Devops/Public Cloud Partnership.png';
-import ltretention from '../../images/Devops/Long Term Retention.png';
-import E2E from '../../images/Devops/E2E Solution.png';
-import Extreme from '../../images/Devops/Extreme Automation.png';
-import maxFac from '../../images/Devops/Maximum Flexibility.png';
-import fastDeliv from '../../images/Devops/Faster Delivery.png';
-import betterQual from '../../images/Devops/Better Quality.png';
-import lowCost from '../../images/Devops/Lower Cost.png';
+  Navbar,
+} from "reactstrap";
+import classnames from "classnames";
+import IconSection from "../../components/Home/IconSection.js";
+import one from "../../images/Devops/Technology Shift.jpg";
+import two from "../../images/Devops/Technology Transformation.svg";
+import speed from "../../images/Devops/speed.svg";
+import scale from "../../images/Devops/scale.svg";
+import security from "../../images/Devops/Security.png";
+import four from "../../images/Devops/Discovery & Assessment.png";
+import five from "../../images/Devops/Transformation Services.png";
+import six from "../../images/Devops/6.png";
+import Expertise from "../../images/Devops/Expertise.png";
+import Experience from "../../images/Devops/Experience.png";
+import Contribution from "../../images/Devops/Contribution.png";
+import Engagement from "../../images/Devops/Engagement Model.png";
+import pcpartner from "../../images/Devops/Public Cloud Partnership.png";
+import ltretention from "../../images/Devops/Long Term Retention.png";
+import E2E from "../../images/Devops/E2E Solution.png";
+import Extreme from "../../images/Devops/Extreme Automation.png";
+import maxFac from "../../images/Devops/Maximum Flexibility.png";
+import fastDeliv from "../../images/Devops/Faster Delivery.png";
+import betterQual from "../../images/Devops/Better Quality.png";
+import lowCost from "../../images/Devops/Lower Cost.png";
 
-import styled from 'styled-components';
-import SEO from '../../components/seo.js';
-import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import styled from "styled-components";
+import SEO from "../../components/seo.js";
+import BreadCrumbs from "../../components/Home/Breadcrumbs.js";
 
 const DevopsTransformation = ({ location }) => {
-  const [activeTab, setActiveTab] = useState('1');
+  const [activeTab, setActiveTab] = useState("1");
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
-  const toggle = tab => {
+  const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);
   };
 
   const [isOpen, setNav] = useState(true);
   const toggleTab = () => {
-    setNav(isOpen => !isOpen);
+    setNav((isOpen) => !isOpen);
   };
   const onTop = () => {
     window.scroll(0, 0);
@@ -102,13 +102,13 @@ const DevopsTransformation = ({ location }) => {
                   />
                   {/* </NavbarToggler> */}
                   <Collapse isOpen={!collapsed} navbar>
-                    <Nav className="d-flex my-4  w-85">
+                    <Nav className="bgWhite d-flex w-100">
                       <NavItem className="one">
                         <NavLink
                           id="bgL"
-                          className={classnames({ active: activeTab === '1' })}
+                          className={classnames({ active: activeTab === "1" })}
                           onClick={() => {
-                            toggle('1');
+                            toggle("1");
                             toggleTab();
                             onTop();
                           }}
@@ -120,9 +120,9 @@ const DevopsTransformation = ({ location }) => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLL"
-                          className={classnames({ active: activeTab === '2' })}
+                          className={classnames({ active: activeTab === "2" })}
                           onClick={() => {
-                            toggle('2');
+                            toggle("2");
                             toggleTab();
                             onTop();
                           }}
@@ -133,9 +133,9 @@ const DevopsTransformation = ({ location }) => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLLL"
-                          className={classnames({ active: activeTab === '3' })}
+                          className={classnames({ active: activeTab === "3" })}
                           onClick={() => {
-                            toggle('3');
+                            toggle("3");
                             toggleTab();
                             onTop();
                           }}
@@ -146,9 +146,9 @@ const DevopsTransformation = ({ location }) => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLLL"
-                          className={classnames({ active: activeTab === '4' })}
+                          className={classnames({ active: activeTab === "4" })}
                           onClick={() => {
-                            toggle('4');
+                            toggle("4");
                             toggleTab();
                             onTop();
                           }}
@@ -159,9 +159,9 @@ const DevopsTransformation = ({ location }) => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLLL"
-                          className={classnames({ active: activeTab === '5' })}
+                          className={classnames({ active: activeTab === "5" })}
                           onClick={() => {
-                            toggle('5');
+                            toggle("5");
                             toggleTab();
                             onTop();
                           }}
@@ -542,10 +542,10 @@ const DevopsTransformation = ({ location }) => {
                           <h6 className="text-center">4 Phased - 5 days</h6>
                         </div>
 
-                        <div className="row py-3">
-                          <div className="container-fluid">
-                            <div className="d-flex flex-column flex-md-row justify-content-around">
-                              <div className="col-md-3 p-0 mx-3 my-3 my-md-0 border boxshd">
+                        <div className="container-fluid">
+                          <div className="row py-3">
+                            <div className="col-md-3 my-3 my-md-0">
+                              <div className="border boxshd h-100">
                                 <div className="count bgOrange py-2 py-md-2">
                                   <div className="counters brclr">1</div>
                                   <h6 className="text-center mt-2">
@@ -565,7 +565,9 @@ const DevopsTransformation = ({ location }) => {
                                   </li>
                                 </ul>
                               </div>
-                              <div className="col-md-3 p-0 mx-3 my-3 my-md-0 border boxshd">
+                            </div>
+                            <div className="col-md-3 my-3 my-md-0">
+                              <div className="border boxshd h-100">
                                 <div className="count bgRed text-light py-2 py-md-2">
                                   <div className="counters">2</div>
                                   <h6 className="text-center mt-2">
@@ -586,7 +588,9 @@ const DevopsTransformation = ({ location }) => {
                                   </li>
                                 </ul>
                               </div>
-                              <div className="col-md-3 p-0 mx-3 my-3 my-md-0 border boxshd">
+                            </div>
+                            <div className="col-md-3 my-3 my-md-0">
+                              <div className="border boxshd h-100">
                                 <div className="count hx3 text-light py-2 py-md-2">
                                   <div className="counters">3</div>
                                   <h6 className="text-center mt-2">
@@ -602,7 +606,9 @@ const DevopsTransformation = ({ location }) => {
                                   </li>
                                 </ul>
                               </div>
-                              <div className="col-md-3 p-0 mx-3 my-3 my-md-0 border boxshd">
+                            </div>
+                            <div className="col-md-3 my-3 my-md-0">
+                              <div className="border boxshd h-100">
                                 <div className="count bgBlue text-light py-2 py-md-2">
                                   <div className="counters">4</div>
                                   <h6 className="text-center mt-2">
@@ -800,7 +806,7 @@ const DevopsTransformation = ({ location }) => {
                               transformation and integration to cloud-native
                               apps development, containerization, platform
                               services and microservices to enable your
-                              enterprise to thrive in Hybrid IT environments.{' '}
+                              enterprise to thrive in Hybrid IT environments.{" "}
                             </p>
                           </div>
                         </div>
@@ -1260,8 +1266,9 @@ padding:6rem 1rem;
   z-index: 9999;
   width: 100%;
   height: 60px;
-  padding: 0 0 20px 0;
+  padding: 0 0 40px 0;
   left: 0px;
+  box-shadow: none;
 	}
 	@media (min-width: 576px) {
 	.svgcolor{
@@ -1341,6 +1348,7 @@ padding:6rem 1rem;
 			}
 			.one {
 				width: auto;
+        margin-top: 0;
 			}
 			.w15 {
 				width: 10%;
@@ -1493,9 +1501,7 @@ padding:6rem 1rem;
 .mobile-hide{
 	display: flex !important;
 }
-		.navbar{
-			padding: 0 !important;
-		}
+		
 		a#bgL.active:after {
 			top: 100%;
 			left: 50%;

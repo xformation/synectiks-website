@@ -88,7 +88,7 @@ const Microservice = () => {
                     className="mr-2 svgcolor mb-n4"
                   />
                   <Collapse isOpen={!collapsed} navbar="navbar">
-                    <Nav className="bgWhite d-flex my-2 my-md-4 w-85">
+                    <Nav className="bgWhite d-flex w-100">
                       <NavItem className="one">
                         <NavLink
                           id="bgL"
@@ -889,8 +889,10 @@ padding: 5rem 1rem;
   z-index: 9999;
   width: 100%;
   height: 60px;
-  padding: 0 0 20px 0;
+  padding: 0 0 40px 0;
   left: 0px;
+  margin-top: 40px;
+  box-shadow: none;
 }
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
@@ -1078,6 +1080,7 @@ ul.tabList.nav.flex-column {
 	z-index: 99999;
 	background: white;
 	width: auto;
+  margin-top: 0px;
 }
   .hybJumbo{
     display:block;
@@ -1232,7 +1235,6 @@ h4{
       font-weight: 600 !important;
       font-style: normal !important;
       font-size: 2.6rem !important;
-      line-height: 12px !important;
       -webkit-letter-spacing: normal !important;
       -moz-letter-spacing: normal !important;
       -ms-letter-spacing: normal !important;
