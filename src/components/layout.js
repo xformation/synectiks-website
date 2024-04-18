@@ -405,10 +405,10 @@ const Layout = ({ children }) => {
       }
 
       // uncomment this to make pause on mouseover
-      $elem.on('mouseover', function() {
+      $elem && $elem.on('mouseover', function() {
         isPause = true;
       });
-      $elem.on('mouseout', function() {
+      $elem && $elem.on('mouseout', function() {
         isPause = false;
       });
     });
