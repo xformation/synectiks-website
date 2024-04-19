@@ -5,11 +5,11 @@ import { IoIosArrowForward } from 'react-icons/io';
 const BreadCrumbs = ({ title, subtitle, pageTitle }) => {
 	return (
 		<BreadCrumbsWrapper>
-			<a href='/'>{title}</a>
-			<IoIosArrowForward className='mx-3 rotateIcon' />
-			<h6 className='mx-2'>{subtitle}</h6>
-			<IoIosArrowForward className='mx-3 rotateIcon' />
-			<h6 className='active'>{pageTitle}</h6>
+			<a href='/' className='mr-1'>{title}</a>
+			<IoIosArrowForward className='my-1 mx-0 rotateIcon' />
+			<p className='mx-2 mb-0'>{subtitle}</p>
+			<IoIosArrowForward className='my-1 mx-0 rotateIcon' />
+			<p className='mx-2 mb-0 active'>{pageTitle}</p>
 		</BreadCrumbsWrapper>
 	);
 };
@@ -17,12 +17,12 @@ export default BreadCrumbs;
 
 const BreadCrumbsWrapper = styled.div`
 	a {
-		width: 18%;
+		width: auto;
 	}
 	a,
 	h6,
 	.rotateIcon {
-		font-size: 8px;
+		font-size: 12px;
 		text-align: left;
 	}
 	.rotateIcon {
@@ -30,7 +30,7 @@ const BreadCrumbsWrapper = styled.div`
 	}
 	display: flex;
 	justify-content: flex-start;
-	align-items: baseline;
+	align-items: center;
 	flex-direction: row;
 	a {
 		margin-top: -0.3rem;
@@ -56,7 +56,7 @@ const BreadCrumbsWrapper = styled.div`
 		}
 		display: flex;
 		justify-content: flex-start;
-		align-items: end;
+		align-items: center;
 		flex-direction: row;
 	}
 
@@ -74,7 +74,7 @@ const BreadCrumbsWrapper = styled.div`
 		}
 		display: flex;
 		justify-content: flex-start;
-		align-items: end;
+		align-items: center;
 		flex-direction: row;
 	}
 	@media screen and (min-width: 768px) {
@@ -91,7 +91,7 @@ const BreadCrumbsWrapper = styled.div`
 		}
 		display: flex;
 		justify-content: flex-start;
-		align-items: flex-start;
+		align-items: center;
 		flex-direction: row;
 	}
 `;

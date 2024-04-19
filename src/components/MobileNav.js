@@ -129,9 +129,9 @@
 // 	}
 // `;
 
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React, { useState } from "react";
 import {
   Navbar,
   Nav,
@@ -141,19 +141,19 @@ import {
   aGroup,
   Grid,
   Row,
-  Col
-} from 'react-bootstrap';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { BsArrowRight } from 'react-icons/bs';
-import { GoTriangleLeft } from 'react-icons/go';
-import { FaCaretDown } from 'react-icons/fa';
-import Topbar from './topbar';
-import logo from '../images/logo.png';
-import styled from 'styled-components';
-import DesktopNavMenu from './DesktopNav';
-import MobileNavMenu from './MobileNav';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './mobilenav.css'
+  Col,
+} from "react-bootstrap";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { BsArrowRight } from "react-icons/bs";
+import { GoTriangleLeft } from "react-icons/go";
+import { FaCaretDown } from "react-icons/fa";
+import Topbar from "./topbar";
+import logo from "../images/logo.png";
+import styled from "styled-components";
+import DesktopNavMenu from "./DesktopNav";
+import MobileNavMenu from "./MobileNav";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./mobilenav.css";
 // const z = {
 //   zIndex: "9999 !important",
 // }
@@ -170,7 +170,6 @@ const MobileHeader = () => {
   return (
     <MobileNav>
       <div className="">
-
         {/* <div className="hamburger-menu" onClick={toggleMobileMenu}>
           <div className="bar"></div>
           <div className="bar"></div>
@@ -256,112 +255,129 @@ const MobileHeader = () => {
         </div>
         </div> */}
         <Topbar />
-        <div className={`topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
+        <div
+          className={`topnav ${isResponsive ? "responsive" : ""}`}
+          id="myTopnav"
+        >
           <div className="logo">
             <a href="/">
-              <img src={logo}
-                className='logo-syn' alt="synectiks" />
+              <img src={logo} className="logo-syn" alt="synectiks" />
             </a>
-            <div className='flex-menu-btn'>
+            <div className="flex-menu-btn">
               {isResponsive ? (
-                <a href="javascript:void(0);" className="icon flex-menu-btn-open" onClick={closeMobileMenu}>
+                <a
+                  href="javascript:void(0);"
+                  className="icon flex-menu-btn-open"
+                  onClick={closeMobileMenu}
+                >
                   <AiOutlineClose />
                 </a>
               ) : (
-                <a href="javascript:void(0);" style={{ fontSize: '15px' }} className="icon flex-menu-btn-open" onClick={toggleResponsive}>
+                <a
+                  href="javascript:void(0);"
+                  style={{ fontSize: "15px" }}
+                  className="icon flex-menu-btn-open"
+                  onClick={toggleResponsive}
+                >
                   &#9776;
                 </a>
               )}
             </div>
           </div>
-          <a href="/what-we-do/index.html" className="nav-item fnt-nav w-mx nav-link">WHAT WE DO</a>
+          <a
+            href="/what-we-do/index.html"
+            className="nav-item fnt-nav w-mx nav-link"
+          >
+            WHAT WE DO
+          </a>
           <div class="dropdown-mobile">
-            <a class="dropbtn-mobile">CLOUD SERVICES
+            <a class="dropbtn-mobile">
+              CLOUD SERVICES
               <i class="fa fa-caret-down mlft"></i>
             </a>
             <div class="dropdown-content-mobile">
-
               <a href="/aws-managed-services/index.html">
-                AWS Managed Servicese</a>
+                AWS Managed Servicese
+              </a>
               <a href="/microsoft-365-services/index.html">
-                Microsoft 365 Services</a>
+                Microsoft 365 Services
+              </a>
               <a href="/secure-custom-hosted-infrastructure/index.html">
-                Secure & Custom Hosted Infrastructure</a>
+                Secure & Custom Hosted Infrastructure
+              </a>
 
               <a href="/digital-workspace/index.html">
-                Cloud-Hosted Virtual Desktop</a>
+                Cloud-Hosted Virtual Desktop
+              </a>
 
-              <a href="/protect-cloud/index.html">
-                Protect Cloud</a>
+              <a href="/protect-cloud/index.html">Protect Cloud</a>
 
-              <a href="/cloud-backup-service/index.html">
-                Backup as a Service</a>
+              <a href="/cloud-backup-service/index.html">Backup as a Service</a>
 
               <a href="/cloud-disaster-recovery-service/index.html">
-                Disaster Recovery as a Service</a>
+                Disaster Recovery as a Service
+              </a>
             </div>
           </div>
           <div class="dropdown-mobile">
-            <a class="dropbtn-mobile">MIGRATION & MODERNIZATION
+            <a class="dropbtn-mobile">
+              MIGRATION & MODERNIZATION
               <i class="fa fa-caret-down mlft"></i>
             </a>
             <div class="dropdown-content-mobile">
               <a href="/infrastructure-transformation/index.html">
-                Infrastructure Transformation</a>
+                Infrastructure Transformation
+              </a>
               <a href="/application-transformation/index.html">
-                Application Transformation</a>
+                Application Transformation
+              </a>
               <a href="/devops-transformation/index.html">
-                DevOps Transformation</a>
+                DevOps Transformation
+              </a>
             </div>
           </div>
           <div class="dropdown-mobile">
-            <a class="dropbtn-mobile">SOLUTIONS
+            <a class="dropbtn-mobile">
+              SOLUTIONS
               <i class="fa fa-caret-down mlft"></i>
             </a>
             <div class="dropdown-content-mobile">
-              <a href="/microservices/index.html">
-                Microservices</a>
-              <a href="/hybrid-cloud/index.html">
-                Hybrid Cloud</a>
-
+              <a href="/microservices/index.html">Microservices</a>
+              <a href="/hybrid-cloud/index.html">Hybrid Cloud</a>
             </div>
           </div>
           <div class="dropdown-mobile">
-            <a class="dropbtn-mobile">COMPANY
+            <a class="dropbtn-mobile">
+              COMPANY
               <i class="fa fa-caret-down mlft"></i>
             </a>
             <div class="dropdown-content-mobile">
-              <a href="/about-us/index.html">
-                About Us</a>
-              <a href="/careers/index.html">
-                Careers</a>
-              <a href="/Contact-us.html">
-                Contact Us</a>
-
+              <a href="/about-us/index.html">About Us</a>
+              <a href="/careers/index.html">Careers</a>
+              <a href="/Contact-us.html">Contact Us</a>
             </div>
           </div>
         </div>
       </div>
     </MobileNav>
-
   );
 };
 
 MobileHeader.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 };
 
 MobileHeader.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 };
 export default MobileHeader;
 
 const MobileNav = styled.div`
-    display: block !important;
-    position: sticky;
-    top: 0rem;
-    background: white;
-    z-index: 999;
+  display: block !important;
+  position: sticky;
+  top: 0rem;
+  background: white;
+  z-index: 999;
   .main-tab {
     margin-left: -12px !important;
   }
@@ -424,12 +440,12 @@ const MobileNav = styled.div`
   .ml-01 {
     margin-left: -10px !important;
   }
-  .flex{
-    display:flex;
+  .flex {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     display: none !important;
     .ml-01 {
       margin-left: 0px !important;

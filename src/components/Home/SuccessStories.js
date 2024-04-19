@@ -212,6 +212,7 @@ const SuccessStoriesWrapper = styled.div`
 			align-items: baseline;
 			position:relative;
 			left:11%;
+			margin-top: 40px;
 
 	.progress {
 			display: block;
@@ -316,6 +317,7 @@ const SuccessStoriesWrapper = styled.div`
 			align-items: baseline;
 			position:relative;
 			left:11%;
+			
 
 		.progress {
 			display: block;

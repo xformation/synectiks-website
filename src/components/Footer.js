@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import Social from './social-icons';
-import UsChamber from '../images/uschamber.png';
-import logo from '../images/Synectiks Logo/synectiks-text-logo.png';
-import { MdArrowForward, MdArrowBack, MdClose } from 'react-icons/md';
-import './layout.css';
+import React from "react";
+import styled from "styled-components";
+import Social from "./social-icons";
+import UsChamber from "../images/uschamber.png";
+import logo from "../images/Synectiks Logo/synectiks-text-logo.png";
+import { MdArrowForward, MdArrowBack, MdClose } from "react-icons/md";
+import "./layout.css";
 export class Footer extends React.Component {
   render() {
     return (
@@ -41,126 +41,97 @@ export class Footer extends React.Component {
           </button>
         </div>
 
-        <div className="d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 pb-3 pb-md-0 px-md-5 pt-md-5">
-          <div className="w-35vw mx-0 mx-md-4 px-2 px-md-0">
-            {/* <h3 className='text-light text-capitalize'>Synectiks</h3> */}
-            <a href="/">
-              <img src={logo} alt="" className="w-65 mt-0 mt-md-2" />
-            </a>
-            {/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}
-            <p className="text-light mt-0 mt-md-3 text-left lht">
-              {/* We are a team of highly qualified and experienced professionals from various fields who are
-							determined and dedicated to delivering world class professional services to our patrons. */}
-              As an Open Product based Cloud Solution provider, we help
-              enterprises take advantage of public & private cloud and its
-              infinite resources to migrate and modernize their business so that
-              they outperform their peers by becoming truly disruptive.
-            </p>
-          </div>
-          <div className="w-30vw mx-0 mx-md-5  px-2 px-md-0">
-            <h3 className="text-light text-capitalize">USA</h3>
-            <p className="text-light mt-0 mt-md-2">300 Alexander Park Drive,</p>
-            <p className="text-light">Suite 215,</p>
-            <p className="text-light">Princeton, NJ 08540 </p>
-            <p className="text-light ">Sales: +1 (609) 608 0388 X 1 </p>
-            {/* <p className="text-light ">Sales: +1 (609) 608-0429 X 102 </p> */}
-            {/* <br /> */}
-            <p className="text-light ">Office: +1 (609) 608 0388</p>
-            {/* <p className="text-light ">Office: +1 (609) 608-0429</p> */}
-            {/* <h3 className='text-light text-capitalize py-3'>privacy &copy; 2020</h3> */}
-          </div>
-          <div className="w-30vw mx-0 ml-md-3  px-2 px-md-0">
-            <h3 className="text-light text-capitalize">INDIA</h3>
-            <p className="text-light mt-0 mt-md-2 footaddleft">Synectiks,</p>
-            <p className="text-light footaddleft">Level 6,</p>
-            <p className="text-light footaddleft">
-              NHeights, Phase 2, Hi-Tech City,
-            </p>
-            <p className="text-light footaddleft">Hyderabad, 500081</p>
-            <p className="text-light webText">Office: +91 (40) 4857 4411</p>
-          </div>
-          <div className="w-35vw mx-0 ml-md-3 pl-1 pl-md- my-4 my-md-0">
-            <div className="ml-0 ml-md-5">
-              <a href="http://www.uschamber.com" className="topRight">
-                <img
-                  alt="U.S. Chamber of Commerce Member 2021"
-                  title="U.S. Chamber of Commerce Member 2021"
-                  src={UsChamber}
-                  width="100%"
-                  // src="https://www.uschamber.com/sticker/image?i=n1&m=10038883"
-                />
-              </a>
-              <h4 className="text-light text-capitalize mb-2 mt-3">
-                <a
-                  href="https://synectiks.com/privacy-policy/index.html"
-                  className="text-light text-underline h4"
-                >
-                  <u>Privacy Policy</u>
-                </a>
-              </h4>
-              {/* <h4 className="text-light  text-capitalize mt-2 mt-md-2">
-                Social
-              </h4> */}
-              <div className="d-flex">
-                {Social.map((item, index) => {
-                  return (
-                    <a
-                      key={index}
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-light text-capitalize d-flex align-content-center mb-2 mr-sm-0 mr-md-3"
-                    >
-                      <span className="text-warning">{item.icon}</span>
-                      {/* <span className="ml-3 text-capitalize m5t">
-                        {item.text}
-                      </span> */}
-                    </a>
-                  );
-                })}
+        <div className="d-flex w-100 bgFooter px-md-5 py-4">
+          <div className="container-fluid">
+            <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
+              <div className="col">
+                <div className="d-block w-100">
+                  <a href="/">
+                    <img src={logo} alt="" className="w-65 mt-3" />
+                  </a>
+                  <p className="text-light mt-3 text-left lht">
+                    As an Open Product based Cloud Solution provider, we help
+                    enterprises take advantage of public & private cloud and its
+                    infinite resources to migrate and modernize their business
+                    so that they outperform their peers by becoming truly
+                    disruptive.
+                  </p>
+                </div>
               </div>
-              <h4 className="text-light text-capitalize py-2">
-                privacy &copy; 2020
-              </h4>
+              <div className="col">
+                <div className="d-block w-100 mt-md-0 mt-4">
+                  <h3 className="text-light text-capitalize">USA</h3>
+                  <p className="text-light mt-0 mt-md-2">
+                    300 Alexander Park Drive,
+                  </p>
+                  <p className="text-light">Suite 215,</p>
+                  <p className="text-light">Princeton, NJ 08540 </p>
+                  <p className="text-light">Sales: +1 (609) 608 0388 X 1 </p>
+                  <p className="text-light">Office: +1 (609) 608 0388</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className="d-block w-100 mt-md-0 mt-4">
+                  <h3 className="text-light text-capitalize">INDIA</h3>
+                  <p className="text-light mt-0 mt-md-2 footaddleft">
+                    Synectiks,
+                  </p>
+                  <p className="text-light footaddleft">Level 6,</p>
+                  <p className="text-light footaddleft">
+                    NHeights, Phase 2, Hi-Tech City,
+                  </p>
+                  <p className="text-light footaddleft">Hyderabad, 500081</p>
+                  <p className="text-light webText">
+                    Office: +91 (40) 4857 4411
+                  </p>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="d-flex flex-wrap w-100 mt-md-0 mt-4">
+                  <a href="http://www.uschamber.com" className="w-100">
+                    <img
+                      alt="U.S. Chamber of Commerce Member 2021"
+                      title="U.S. Chamber of Commerce Member 2021"
+                      src={UsChamber}
+                    />
+                  </a>
+                  <a
+                    class="drata mt-3 w-40"
+                    href="https://drata.com/product/iso-27001"
+                    target="_blank"
+                  >
+                    <img src="https://cdn.drata.com/badge/hipaa-light.png" />
+                  </a>
+                  <a
+                    class="drata mt-3 w-40"
+                    href=" https://drata.com/product"
+                    target="_blank"
+                  >
+                    <img src="https://cdn.drata.com/badge/soc2-dark.png" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="w-32vw pl-md-2 ml-0 ml-md-3">
-            <div className="ml-0 ml-md-1 p-5 pt-md-0 pr-md-0">
-              <a
-                class="drata"
-                href="https://drata.com/product/iso-27001"
-                target="_blank"
-              >
-                <img
-                  src="https://cdn.drata.com/b
-adge/hipaa-light.png"
-                  width="100%"
-                  // height="120"
-                />
-              </a>
-
-              {/* <h4 className="text-light  text-capitalize mt-2 mt-md-2">
-                Social
-              </h4> */}
-            </div>
-          </div>
-          <div className="w-32vw mx-0 ml-md-4 pl-1 pl-md-2 my-4 my-md-0">
-            <div className="ml-0 ml-md-1 p-5 pt-md-0 pl-md-0">
-              <a
-                class="drata"
-                href=" https://drata.com/product "
-                target="_blank"
-              >
-                <img
-                  src="https://cdn.drata.com/badge/soc2-dark.png"
-                  width="100%"
-                  // height="140"
-                />
-              </a>
-
-              {/* <h4 className="text-light  text-capitalize mt-2 mt-md-2">
-                Social
-              </h4> */}
+        </div>
+        <div className="d-flex w-100 bottombgFooter px-md-5 py-2">
+          <div className="container-fluid">
+            <div className="row ">
+              <div className="col-md-6 col-12">
+                <p style={{ color: '#fff'}} className="mt-1">Privacy &copy; 2020</p>
+              </div>
+              <div className="col-md-6 col-12">
+                <div className="text-light text-capitalize text-md-right d-block w-100">
+                  <a
+                    href="https://synectiks.com/privacy-policy/index.html"
+                    className="text-light"
+                    style={{ fontSize: '12px', fontWeight: 'normal' }}
+                  >
+                    Privacy Policy
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -173,6 +144,12 @@ export default Footer;
 
 const FooterWrapper = styled.div`
    {
+    .bottombgFooter {
+      background-color: var(--gray-dark);
+    }
+    .drata {
+      width: 80px;
+    }
     .footaddleft {
       text-align: left;
     }

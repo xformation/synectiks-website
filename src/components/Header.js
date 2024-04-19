@@ -31,7 +31,7 @@ const Header = () => {
             <div className="flex">
               <a href="/what-we-do/index.html" className="nav-item fnt-nav w-mx nav-link">WHAT WE DO</a>
               <div class="dropdown">
-                <a class="dropbtn">CLOUD SERVICES</a>
+                <a class="dropbtn" href="javascript:void(0)">CLOUD SERVICES</a>
                 <div className="flex-menu">
                   <div className="p-0 bcdl pl-md-2">
                     <div class="dropdown-content bg-white">
@@ -74,7 +74,7 @@ const Header = () => {
                 </div>
               </div>
               <div class="dropdown">
-                <a class="dropbtn">MIGRATION & MODERNIZATION</a>
+                <a class="dropbtn" href="javascript:void(0)">MIGRATION & MODERNIZATION</a>
                 <div class="dropdown-content bg-white">
                   <a className='py-2 dropdown-item' href="/infrastructure-transformation/index.html">
                     Infrastructure Transformation</a>
@@ -85,7 +85,7 @@ const Header = () => {
                 </div>
               </div>
               <div class="dropdown">
-                <a class="dropbtn">SOLUTIONS</a>
+                <a class="dropbtn" href="javascript:void(0)">SOLUTIONS</a>
                 <div class="dropdown-content bg-white">
                   <a className='py-2 dropdown-item' href="/microservices/index.html">
                     Microservices</a>
@@ -94,7 +94,7 @@ const Header = () => {
                 </div>
               </div>
               <div class="dropdown">
-                <a class="dropbtn">COMPANY</a>
+                <a class="dropbtn" href="javascript:void(0)">COMPANY</a>
                 <div class="dropdown-content bg-white">
                   <a className="py-2 dropdown-item" href="/about-us/index.html">
                     About Us</a>
@@ -188,7 +188,7 @@ const HeaderNav = styled.div`
   .ml-01 {
     margin-left: -10px !important;
   }
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
   height:0px;
     display: block !important;
     .ml-01 {

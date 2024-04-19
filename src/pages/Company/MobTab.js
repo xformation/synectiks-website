@@ -65,8 +65,8 @@ class MobTabs extends React.Component {
         {/* <SEO title='What We Do' /> */}
         <div className="bg-lightgrey disMob">
           <div className="container-fluid p-0">
-            <div className="w-100  text-black ptext">
-              <div className="my-md-5">
+            <div className="w-100 text-black ptext">
+              <div className="mx-2 my-md-5">
                 <div>
                   <div>
                     {/* toggle 6 */}

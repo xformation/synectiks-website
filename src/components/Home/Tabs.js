@@ -395,9 +395,9 @@ const TabsWrapper = styled.div`
 .ct4{
     padding: 2rem;
     border-radius: 50%;
-    width: 10rem;
+    width: 8rem;
     margin: 0 auto;
-				height: 10rem;
+				height: 8rem;
 				img{
 					display:block
 				}

@@ -85,7 +85,7 @@ const Microservice = () => {
 									</NavbarToggler> */}
                   <AiOutlineMenu
                     onClick={toggleNavbar}
-                    className="mr-2 svgcolor mb-n4"
+                    className="svgcolor"
                   />
                   <Collapse isOpen={!collapsed} navbar="navbar">
                     <Nav className="bgWhite d-flex w-100">
@@ -185,9 +185,7 @@ const Microservice = () => {
                           </div>
                           <div className="col-md-12">
                             <img
-                              className=""
-                              // className="microImage imgshadow"
-                              height="auto"
+                              className="imgshadow microser mx-auto"
                               src={ms1}
                               alt="Microservices"
                             />
@@ -868,7 +866,7 @@ const MicroserviceWrapper = styled.div`{
 	.svgcolor{
 	font-size: 2rem;
     color: rgba(0,0,0,0.5);
-		margin: 10px 5px;
+		margin: 0px 10px;
 		display: block;
 }
 padding: 5rem 1rem;
@@ -884,16 +882,18 @@ padding: 5rem 1rem;
 .topNav{
 	position: fixed;
 	z-index: 9999;
-	top: 97px;
+	top: 88px;
   background: white;
   z-index: 9999;
   width: 100%;
   height: 60px;
-  padding: 0 0 40px 0;
+  padding: 0 0 0px 0;
   left: 0px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   box-shadow: none;
 }
+
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
 		border-color: rgba(0, 0, 0, 0);
@@ -1028,12 +1028,19 @@ ul.tabList.nav.flex-column {
 	padding: 0.5rem 1rem;
 }
 }
-
+.navbar-collapse {
+  position: absolute;
+  top: 40px;
+}
 @media (min-width: 576px){
+  .navbar-collapse {
+    position: relative;
+    top: 0px;
+  }
 	.svgcolor{
-	font-size: 2rem;
+	  font-size: 2rem;
     color: rgba(0,0,0,0.5);
-		margin: 10px 5px;
+		margin: 0px 10px;
 		display:none;
 }
 	.ptext{

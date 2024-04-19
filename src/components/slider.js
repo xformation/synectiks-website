@@ -477,6 +477,7 @@ width: 100%;
 			align-items: baseline;
 			position:relative;
 			left:11%;
+			margin-top: 40px;
 
 	.progress {
 			display: block;
@@ -696,8 +697,8 @@ p{
 	flex-direction: row;
 	justify-content: space-between;
 	.circle{
-			width:16rem;
-			height:16rem;
+			width:14rem;
+			height:14rem;
 			border-radius: 50%;
 			img{
 				border-radius: 60%;
@@ -724,14 +725,14 @@ p{
 			height: 46vh;
 		}
 .ct1,.ct2,.ct3{
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 50%;
-    width: 10rem;
+    width: 8rem;
     margin: 0 auto;
-				height: 10rem;
-				img{
-					display:block
-				}
+		height: 8rem;
+			img{
+				display:block
+			}
 }
 
 
@@ -1073,7 +1074,8 @@ p{
 		}
 
 		.Homecard-shadow {
-			width:16rem;
+			width:100%;
+			padding: 0px 5px;
 			border-radius: 25px;
 			-webkit-border-radius: 25px  ;
 			-moz-border-radius: 25px ;
@@ -1339,8 +1341,8 @@ color:var(--synectiksBlue);
 	flex-direction: row;
 	justify-content: space-around;
 	.circle{
-			width:22rem;
-			height:22rem;
+			width:12rem;
+			height:12rem;
 			border-radius: 50%;
 			img{
 				border-radius: 60%;
@@ -1348,13 +1350,11 @@ color:var(--synectiksBlue);
 			}
 		}
 	.circlebig{
-			width:26em;
-			height:24rem;
+			width:12rem;
+			height:12rem;
 			border-radius: 50%;
-			margin-top: 15px;
 			img{
 				border-radius: 60%;
-				/* box-shadow: 0px 0px 0px 2px var(	--synectiksWhite); */
 			}
 		}
 	}

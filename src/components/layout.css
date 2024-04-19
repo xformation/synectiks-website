@@ -107,6 +107,10 @@ body {
   text-rendering: optimizeLegibility;
   text-align: left !important;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .hx1 {
   background: rgb(44, 117, 162);
@@ -550,6 +554,11 @@ main {
   /* margin-top: -1rem; */
   margin-top: 4.5rem;
   background-color: #f7f8fb !important;
+}
+@media (max-width: 992px) {
+  main {
+    margin-top: 0;
+  }
 }
 a.dropdown-toggle.nav-link {
   pointer-events: none;
@@ -2105,11 +2114,7 @@ a.dropdown-toggle.nav-link {
     font-style: normal !important;
     /* color: #007cc2 !important; */
   }
-  img {
-    /* border: 5px solid #fff; */
-    display: block;
-    width: 100%;
-  }
+
 
   .arrowsbtn {
     position: relative;
