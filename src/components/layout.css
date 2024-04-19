@@ -2114,7 +2114,10 @@ a.dropdown-toggle.nav-link {
     font-style: normal !important;
     /* color: #007cc2 !important; */
   }
-
+  img {
+    /* border: 5px solid #fff; */
+    display: block;
+  }
 
   .arrowsbtn {
     position: relative;

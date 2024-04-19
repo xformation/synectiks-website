@@ -1261,7 +1261,7 @@ padding:6rem 1rem;
 	.topNav {
 		position: fixed;
 	z-index: 9999;
-	top: 97px;
+	top: 88px;
   background: white;
   z-index: 9999;
   width: 100%;
@@ -1270,7 +1270,15 @@ padding:6rem 1rem;
   left: 0px;
   box-shadow: none;
 	}
+  .navbar-collapse {
+    position: absolute;
+    top: 40px;
+  }
 	@media (min-width: 576px) {
+    .navbar-collapse {
+      position: relative;
+      top: 0px;
+    }
 	.svgcolor{
 	font-size: 2rem;
     color: rgba(0,0,0,0.5);

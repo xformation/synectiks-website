@@ -882,7 +882,7 @@ padding: 5rem 1rem;
 .topNav{
 	position: fixed;
 	z-index: 9999;
-	top: 88px;
+	top: 68px;
   background: white;
   z-index: 9999;
   width: 100%;

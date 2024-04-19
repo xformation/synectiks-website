@@ -725,7 +725,7 @@ const ApplicationTransformationWrapper = styled.div`
 	.topNav {
 		position: fixed;
 	z-index: 9999;
-	top: 97px;
+	top: 88px;
   background: white;
   z-index: 9999;
   width: 100%;
@@ -931,9 +931,16 @@ ul.tabList.nav.flex-column {
   .w15 {
 	width: 25%;
 }
-
+.navbar-collapse {
+  position: absolute;
+  top: 40px;
+}
 
 @media (min-width: 576px){
+  .navbar-collapse {
+    position: relative;
+    top: 0px;
+  }
 .svgcolor{
 	font-size: 2rem;
     color: rgba(0,0,0,0.5);

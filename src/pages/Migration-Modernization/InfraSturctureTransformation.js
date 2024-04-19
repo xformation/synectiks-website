@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
-import { FaBars } from 'react-icons/fa';
-import Layout from '../../components/layout';
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import { FaBars } from "react-icons/fa";
+import Layout from "../../components/layout";
 // import CloudCommon from '../../images/CloudCommon.png';
-import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
-import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
+import HybridCloud from "../../images/Hybrid/Hybrid Cloud.jpg";
+import hybridIma from "../../images/Hybrid/HybridCloud.jpg";
 import {
   TabContent,
   TabPane,
@@ -15,46 +15,46 @@ import {
   Col,
   Collapse,
   NavbarToggler,
-  Navbar
-} from 'reactstrap';
-import classnames from 'classnames';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import styled from 'styled-components';
-import mcit from '../../images/modernization/Modernize and Consolidate IT Infrastructure.jpg';
-import ms4 from '../../images/Microservices/Microservice_7.png';
-import swd from '../../images/modernization/swd.png';
-import circle from '../../images/modernization/Application Transformation.svg';
-import ds from '../../images/Hybrid/Discovery&Assessment.png';
-import ts from '../../images/Hybrid/Transformation Services.png';
-import EX from '../../images/Hybrid/Experience.png';
-import EM from '../../images/Hybrid/Engagement Model.png';
-import CS from '../../images/Hybrid/Compliance&Security.png';
-import SEO from '../../components/seo.js';
-import advisory from '../../images/modernization/Advisory.png';
-import artifact from '../../images/modernization/Artifacts.png';
-import da from '../../images/modernization/Discovery & Assessment.png';
-import economics from '../../images/modernization/Economics.png';
-import innovation from '../../images/modernization/Innovation.png';
-import operatAuto from '../../images/modernization/Operation Automation.png';
-import operate from '../../images/modernization/Operation.png';
-import pay from '../../images/modernization/Pay As You Use.png';
-import sd from '../../images/modernization/Software Defined.png';
-import spa from '../../images/modernization/Strategic Planning & Architecture.png';
+  Navbar,
+} from "reactstrap";
+import classnames from "classnames";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import styled from "styled-components";
+import mcit from "../../images/modernization/Modernize and Consolidate IT Infrastructure.jpg";
+import ms4 from "../../images/Microservices/Microservice_7.png";
+import swd from "../../images/modernization/swd.png";
+import circle from "../../images/modernization/Application Transformation.svg";
+import ds from "../../images/Hybrid/Discovery&Assessment.png";
+import ts from "../../images/Hybrid/Transformation Services.png";
+import EX from "../../images/Hybrid/Experience.png";
+import EM from "../../images/Hybrid/Engagement Model.png";
+import CS from "../../images/Hybrid/Compliance&Security.png";
+import SEO from "../../components/seo.js";
+import advisory from "../../images/modernization/Advisory.png";
+import artifact from "../../images/modernization/Artifacts.png";
+import da from "../../images/modernization/Discovery & Assessment.png";
+import economics from "../../images/modernization/Economics.png";
+import innovation from "../../images/modernization/Innovation.png";
+import operatAuto from "../../images/modernization/Operation Automation.png";
+import operate from "../../images/modernization/Operation.png";
+import pay from "../../images/modernization/Pay As You Use.png";
+import sd from "../../images/modernization/Software Defined.png";
+import spa from "../../images/modernization/Strategic Planning & Architecture.png";
 
-import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import BreadCrumbs from "../../components/Home/Breadcrumbs.js";
 
 const Infrastructure = () => {
-  const [activeTab, setActiveTab] = useState('1');
+  const [activeTab, setActiveTab] = useState("1");
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
-  const toggle = tab => {
+  const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);
   };
 
   const [isOpen, setNav] = useState(true);
   const toggleTab = () => {
-    setNav(isOpen => !isOpen);
+    setNav((isOpen) => !isOpen);
   };
   const onTop = () => {
     window.scroll(0, 0);
@@ -91,18 +91,15 @@ const Infrastructure = () => {
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
 									</NavbarToggler> */}
-                  <AiOutlineMenu
-                    onClick={toggleNavbar}
-                    className="mr-2 svgcolor mb-n2"
-                  />
+                  <AiOutlineMenu onClick={toggleNavbar} className="svgcolor" />
                   <Collapse isOpen={!collapsed} navbar>
                     <Nav className="bgWhite d-flex w-100">
                       <NavItem className="one">
                         <NavLink
                           id="bgL"
-                          className={classnames({ active: activeTab === '1' })}
+                          className={classnames({ active: activeTab === "1" })}
                           onClick={() => {
-                            toggle('1');
+                            toggle("1");
                             toggleTab();
                             onTop();
                           }}
@@ -114,9 +111,9 @@ const Infrastructure = () => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLL"
-                          className={classnames({ active: activeTab === '2' })}
+                          className={classnames({ active: activeTab === "2" })}
                           onClick={() => {
-                            toggle('2');
+                            toggle("2");
                             toggleTab();
                             onTop();
                           }}
@@ -127,9 +124,9 @@ const Infrastructure = () => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLLL"
-                          className={classnames({ active: activeTab === '3' })}
+                          className={classnames({ active: activeTab === "3" })}
                           onClick={() => {
-                            toggle('3');
+                            toggle("3");
                             toggleTab();
                             onTop();
                           }}
@@ -140,9 +137,9 @@ const Infrastructure = () => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLLL"
-                          className={classnames({ active: activeTab === '4' })}
+                          className={classnames({ active: activeTab === "4" })}
                           onClick={() => {
-                            toggle('4');
+                            toggle("4");
                             toggleTab();
                             onTop();
                           }}
@@ -196,7 +193,7 @@ const Infrastructure = () => {
                               <td>Less than 10% Utilization</td>
                               <td>
                                 Every component directly supporting business
-                                objective{' '}
+                                objective{" "}
                               </td>
                             </tr>
                             <tr>
@@ -537,7 +534,7 @@ const Infrastructure = () => {
                           efficiently, quickly and cost-effectively.
                         </p>
                         <h5 className="ft">
-                          {' '}
+                          {" "}
                           Synectiks Xformation platform can help you
                         </h5>
                         <ul className="ptext">
@@ -886,7 +883,7 @@ ul{
 .topNav{
 	position: fixed;
 	z-index: 9999;
-	top: 97px;
+	top: 88px;
   background: white;
   z-index: 9999;
   width: 100%;
@@ -1041,8 +1038,15 @@ ul.tabList.nav.flex-column {
   justify-content: flex-start;
 			}
 }
-
+.navbar-collapse {
+  position: absolute;
+  top: 40px;
+}
 @media (min-width: 576px){
+  .navbar-collapse {
+    position: relative;
+    top: 0px;
+  }
 	a#bgL.active:hover{
 		color: white;
 	}

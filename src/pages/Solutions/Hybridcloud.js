@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 // import { Modal, ModalHeader, ModalBody } from "reactstrap"
 // import ModalContact from "../../components/ModalContact"
-import { FaBars } from 'react-icons/fa';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import Layout from '../../components/layout';
-import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
-import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
+import { FaBars } from "react-icons/fa";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Layout from "../../components/layout";
+import HybridCloud from "../../images/Hybrid/Hybrid Cloud.jpg";
+import hybridIma from "../../images/Hybrid/HybridCloud.jpg";
 import {
   TabContent,
   TabPane,
@@ -17,65 +17,65 @@ import {
   Col,
   Collapse,
   NavbarToggler,
-  Navbar
-} from 'reactstrap';
-import classnames from 'classnames';
-import AI from '../../images/Hybrid/AccelerateInnovation.png';
-import RC from '../../images/Hybrid/Right Cloud.png';
-import BCC from '../../images/Hybrid/BalanceCost&Control.png';
-import EVL from '../../images/Hybrid/Eliminate Vendor Lock In.png';
-import WM from '../../images/Hybrid/Workload Migration.png';
-import IC from '../../images/Hybrid/Integrating Clouds.png';
-import WC from '../../images/Hybrid/Workload Fragmentation.png';
-import SPRT from '../../images/Hybrid/Support & Assistance.png';
-import DRB from '../../images/Hybrid/Discovery&Assessment.png';
-import DSCR from '../../images/Hybrid/DisasterRecoveryBackup.png';
-import scr from '../../images/Hybrid/AWSBackup.png';
+  Navbar,
+} from "reactstrap";
+import classnames from "classnames";
+import AI from "../../images/Hybrid/AccelerateInnovation.png";
+import RC from "../../images/Hybrid/Right Cloud.png";
+import BCC from "../../images/Hybrid/BalanceCost&Control.png";
+import EVL from "../../images/Hybrid/Eliminate Vendor Lock In.png";
+import WM from "../../images/Hybrid/Workload Migration.png";
+import IC from "../../images/Hybrid/Integrating Clouds.png";
+import WC from "../../images/Hybrid/Workload Fragmentation.png";
+import SPRT from "../../images/Hybrid/Support & Assistance.png";
+import DRB from "../../images/Hybrid/Discovery&Assessment.png";
+import DSCR from "../../images/Hybrid/DisasterRecoveryBackup.png";
+import scr from "../../images/Hybrid/AWSBackup.png";
 // import scrs from "../../images/Screenshot_4.png"
-import WS from '../../images/Hybrid/Web Servers.png';
-import ETL from '../../images/Hybrid/DataExtract.png';
-import HRP from '../../images/Hybrid/HR Payroll.png';
-import SLDR from '../../images/Hybrid/Supporting Local Data Regulations.png';
-import GGEC from '../../images/Hybrid/Go Global and edge computing.png';
+import WS from "../../images/Hybrid/Web Servers.png";
+import ETL from "../../images/Hybrid/DataExtract.png";
+import HRP from "../../images/Hybrid/HR Payroll.png";
+import SLDR from "../../images/Hybrid/Supporting Local Data Regulations.png";
+import GGEC from "../../images/Hybrid/Go Global and edge computing.png";
 // import SCR5 from '../../images/Screenshot_5.png';
-import SCR5 from '../../images/Hybrid/web-servers-hybrid-cloud.jpeg';
-import ADT from '../../images/Hybrid/ApplicationDevelopmentandTesting.png';
+import SCR5 from "../../images/Hybrid/web-servers-hybrid-cloud.jpeg";
+import ADT from "../../images/Hybrid/ApplicationDevelopmentandTesting.png";
 // import HC from '../../images/Hybridcloud.png';
-import ECC from '../../images/Hybrid/Embrace Cultural Changes.png';
-import RCM from '../../images/Hybrid/Revamp change management.png';
-import ICO from '../../images/Hybrid/Integrate cloud operations.png';
-import AS from '../../images/Hybrid/Automatesupport.png';
-import ST from '../../images/Hybrid/Shadow IT.png';
-import TS from '../../images/Hybrid/Transformation Services.png';
-import EM from '../../images/Hybrid/Engagement Model.png';
-import LTR from '../../images/Hybrid/Long Term Retention.png';
-import WO from '../../images/Hybrid/Optimization Service.png';
-import DE from '../../images/Hybrid/DemoEnvironment.png';
-import EA from '../../images/Hybrid/Extreme Automation.png';
-import PCP from '../../images/Hybrid/Public Cloud Partnership.png';
-import SCP from '../../images/Hybrid/Single Control plane.png';
-import CS from '../../images/Hybrid/Compliance&Security.png';
-import TM from '../../images/Hybrid/Time & Money.png';
-import EE from '../../images/Hybrid/E2E Solution.png';
-import EX from '../../images/Hybrid/Experience.png';
-import EXP from '../../images/Hybrid/Expertise.png';
+import ECC from "../../images/Hybrid/Embrace Cultural Changes.png";
+import RCM from "../../images/Hybrid/Revamp change management.png";
+import ICO from "../../images/Hybrid/Integrate cloud operations.png";
+import AS from "../../images/Hybrid/Automatesupport.png";
+import ST from "../../images/Hybrid/Shadow IT.png";
+import TS from "../../images/Hybrid/Transformation Services.png";
+import EM from "../../images/Hybrid/Engagement Model.png";
+import LTR from "../../images/Hybrid/Long Term Retention.png";
+import WO from "../../images/Hybrid/Optimization Service.png";
+import DE from "../../images/Hybrid/DemoEnvironment.png";
+import EA from "../../images/Hybrid/Extreme Automation.png";
+import PCP from "../../images/Hybrid/Public Cloud Partnership.png";
+import SCP from "../../images/Hybrid/Single Control plane.png";
+import CS from "../../images/Hybrid/Compliance&Security.png";
+import TM from "../../images/Hybrid/Time & Money.png";
+import EE from "../../images/Hybrid/E2E Solution.png";
+import EX from "../../images/Hybrid/Experience.png";
+import EXP from "../../images/Hybrid/Expertise.png";
 // import GSHC from '../../images/GettingStartedwithHybridCloud.png';
-import styled from 'styled-components';
-import SEO from '../../components/seo.js';
-import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import styled from "styled-components";
+import SEO from "../../components/seo.js";
+import BreadCrumbs from "../../components/Home/Breadcrumbs.js";
 
 const Hybridcloud = () => {
-  const [activeTab, setActiveTab] = useState('1');
+  const [activeTab, setActiveTab] = useState("1");
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
-  const toggle = tab => {
+  const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);
   };
 
   const [isOpen, setNav] = useState(true);
   const toggleTab = () => {
-    setNav(isOpen => !isOpen);
+    setNav((isOpen) => !isOpen);
   };
 
   const onTop = () => {
@@ -108,23 +108,21 @@ const Hybridcloud = () => {
           <div className="">
             <Row className="position-relative">
               <div className="col-sm-12 col-md-12">
-                <Navbar color="light" light expand="xl" className="topNav">
-                  <NavbarToggler onClick={toggleNavbar} className="mr-2">
-                    {/* <FaBars className='navbar-toggler-icon' /> */}
-                    <AiOutlineMenu
-                      onClick={toggleNavbar}
-                      className="mr-2 svgcolor mobile-show mb-n4 navbar-toggler-icon"
-                    />
-                    <span className="my-1 mx-2 close">X</span>
-                  </NavbarToggler>
+                <Navbar
+                  color="light"
+                  light="light"
+                  expand="xl"
+                  className="topNav"
+                >
+                  <AiOutlineMenu onClick={toggleNavbar} className="svgcolor" />
                   <Collapse isOpen={!collapsed} navbar>
                     <Nav className="bgWhite d-flex w-100">
                       <NavItem className="one">
                         <NavLink
                           id="bgL"
-                          className={classnames({ active: activeTab === '1' })}
+                          className={classnames({ active: activeTab === "1" })}
                           onClick={() => {
-                            toggle('1');
+                            toggle("1");
                             toggleTab();
                             onTop();
                           }}
@@ -136,9 +134,9 @@ const Hybridcloud = () => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLL"
-                          className={classnames({ active: activeTab === '2' })}
+                          className={classnames({ active: activeTab === "2" })}
                           onClick={() => {
-                            toggle('2');
+                            toggle("2");
                             toggleTab();
                             onTop();
                           }}
@@ -149,9 +147,9 @@ const Hybridcloud = () => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLLL"
-                          className={classnames({ active: activeTab === '3' })}
+                          className={classnames({ active: activeTab === "3" })}
                           onClick={() => {
-                            toggle('3');
+                            toggle("3");
                             toggleTab();
                             onTop();
                           }}
@@ -162,9 +160,9 @@ const Hybridcloud = () => {
                       <NavItem className="one">
                         <NavLink
                           id="bgLLL"
-                          className={classnames({ active: activeTab === '4' })}
+                          className={classnames({ active: activeTab === "4" })}
                           onClick={() => {
-                            toggle('4');
+                            toggle("4");
                             toggleTab();
                             onTop();
                           }}
@@ -612,7 +610,7 @@ const Hybridcloud = () => {
                           use of medical data. Utilizing a hybrid cloud is a
                           step in the right direction because you can use public
                           cloud providers in specific regions to support the
-                          regulations for processing and storage.{' '}
+                          regulations for processing and storage.{" "}
                         </p>
                       </div>
                       <div>
@@ -1163,6 +1161,12 @@ const HybridWrapper = styled.div`
 .ptext{
 	text-align: left;
 }
+.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 0px 10px;
+		display: block;
+}
 .w-85{
   /* width: 87vw; */
 	position: relative;
@@ -1176,12 +1180,14 @@ padding:5rem 1rem;
 .topNav{
 	position: fixed;
 	z-index: 9999;
-	top: 97px;
+	top: 88px;
   background: white;
   z-index: 9999;
   width: 100%;
   height: 60px;
-  padding: 0 0 40px 0;
+  padding: 0 0 0px 0;
+  margin-top: 0px;
+  margin-bottom: 20px;
   left: 0px;
   box-shadow: none;
 }
@@ -1344,9 +1350,16 @@ p{
   .w15,.w10 {
 	width: 25%;
 }
-
+.navbar-collapse {
+  position: absolute;
+  top: 40px;
+}
 
 @media (min-width: 576px){
+  .navbar-collapse {
+    position: relative;
+    top: 0px;
+  }
 	.ptext{
 		text-align: left;
 	}
@@ -1355,6 +1368,12 @@ p{
 	position: relative;
 	top: 0px;
 	z-index: 999;
+}
+.svgcolor{
+  font-size: 2rem;
+  color: rgba(0,0,0,0.5);
+  margin: 0px 10px;
+  display:none;
 }
 	.one {
 	z-index: 99999;
@@ -1493,6 +1512,7 @@ h4{
    font-size: 1.5rem;
 }
 }
+
 @media(min-width:768px){
    h2 {
       font-family: montserrat, sans-serif;
