@@ -173,13 +173,13 @@ export class Careers extends React.Component {
                         onClick={this.toggle7}
                         style={{ marginBottom: '1rem' }}
                       >
-                        Software&nbsp;Developer
+                        Software&nbsp;Developer&nbsp;II
                       </Button>
                       <Collapse isOpen={this.state.collapse7} className="pb-3">
                         <Card>
                           <CardBody>
                             <p className="ptext">
-                              <b>Software Developer<br />Master’s w/ 3 yrs exp or Bach w/ 5 yrs
+                              <b>Software Developer II<br />Master’s w/ 3 yrs exp or Bach w/ 5 yrs
                                 exp.<br />Major: Applied Comp Sci, CS, Electronic Engg, Comp Engg or
                                 equiv.</b><br />
                               Princeton, NJ. Job entails working with &amp; requires NJ. Job entails working with
