@@ -190,7 +190,7 @@ export class Careers extends React.Component {
                               CI/CD Pipelines. Various worksites: Relocation & travel to a project-based
                               unanticipated location within USA possible.
                               <br /><b>Send
-                                resumes to </b>info@synectiks.com.<br /><b>Synectiks, Inc., Attn: HR, 300 Alexander
+                                resumes to Synectiks, Inc., Attn: HR, 300 Alexander
                                   Park Dr. Ste 215, Princeton, NJ 08540.</b>
                             </p>
                           </CardBody>
