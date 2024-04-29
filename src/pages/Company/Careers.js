@@ -161,7 +161,7 @@ export class Careers extends React.Component {
                   </div>
                   <div className="career-collapse">
                     <Button className="career-btn" onClick={this.toggle7}>
-                      Software Engineer II
+                      Software Developers II
                       {this.state.collapse7 === true ? (
                         <IoIosArrowUp className="ms-auto" />
                       ) : (
@@ -173,7 +173,7 @@ export class Careers extends React.Component {
                         <CardBody>
                           <p className="ptext">
                             <b>
-                              Software Engineers II
+                              Software Developers II
                               <br />
                               Master’s w/ 3 yrs exp or Bach w/ 5 yrs exp.
                               <br />
@@ -191,10 +191,7 @@ export class Careers extends React.Component {
                             worksites: Relocation & travel to a project-based
                             unanticipated location within USA possible.
                             <br />
-                            <b>Send resumes to </b>info@synectiks.com.
-                            <br />
-                            <b>
-                              Synectiks, Inc., Attn: HR, 300 Alexander Park Dr.
+                            <b>Send resumes to Synectiks, Inc., Attn: HR, 300 Alexander Park Dr.
                               Ste 215, Princeton, NJ 08540.
                             </b>
                           </p>
