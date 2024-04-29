@@ -1,97 +1,94 @@
-import React from 'react';
-import styled from 'styled-components';
-import { IoIosArrowForward } from 'react-icons/io';
+import React from "react";
+import styled from "styled-components";
+import { IoIosArrowForward } from "react-icons/io";
 
 const BreadCrumbs = ({ title, subtitle, pageTitle }) => {
-	return (
-		<BreadCrumbsWrapper>
-			<a href='/' className='mr-1'>{title}</a>
-			<IoIosArrowForward className='my-1 mx-0 rotateIcon' />
-			<p className='mx-2 mb-0'>{subtitle}</p>
-			<IoIosArrowForward className='my-1 mx-0 rotateIcon' />
-			<p className='mx-2 mb-0 active'>{pageTitle}</p>
-		</BreadCrumbsWrapper>
-	);
+  return (
+    <BreadCrumbsWrapper>
+      <a href="/">{title}</a>
+      <IoIosArrowForward className="mx-2 rotateIcon" />
+      <p>{subtitle}</p>
+      <IoIosArrowForward className="mx-2 rotateIcon" />
+      <p className="active">{pageTitle}</p>
+    </BreadCrumbsWrapper>
+  );
 };
 export default BreadCrumbs;
 
 const BreadCrumbsWrapper = styled.div`
-	a {
-		width: auto;
-	}
-	a,
-	h6,
-	.rotateIcon {
-		font-size: 12px;
-		text-align: left;
-	}
-	.rotateIcon {
-		transform: rotate(0deg);
-	}
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: row;
-	a {
-		margin-top: -0.3rem;
-	}
-	h6.active {
-		color: var(--synectiksOrange);
-	}
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-		a {
-			width: 10%;
-		}
-		.rotateIcon,
-		a,
-		h6 {
-			font-size: 12px;
-		}
-		.rotateIcon {
-			transform: rotate(0deg);
-		}
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		flex-direction: row;
-	}
+  a {
+    width: auto;
+    color: #1b1b1b;
+  }
+  a,
+  p,
+  .rotateIcon {
+    font-size: 12px;
+    text-align: left;
+  }
+  .rotateIcon {
+    transform: rotate(0deg);
+  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  a {
+    margin-top: 0;
+  }
+  p.active {
+    color: var(--synectiksOrange);
+  }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    a {
+      width: 10%;
+    }
+    .rotateIcon,
+    a,
+    p {
+      font-size: 12px;
+    }
+    .rotateIcon {
+      transform: rotate(0deg);
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
 
-	@media screen and (min-width: 576px) {
-		a {
-			width: auto;
-		}
-		.rotateIcon,
-		a,
-		h6 {
-			font-size: 10px;
-		}
-		.rotateIcon {
-			transform: rotate(0deg);
-		}
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		flex-direction: row;
-	}
-	@media screen and (min-width: 768px) {
-		a {
-			width: auto;
-		}
-		.rotateIcon,
-		a,
-		h6 {
-			font-size: 16px;
-		}
-		.rotateIcon {
-			transform: rotate(0deg);
-		}
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		flex-direction: row;
-	}
+  @media screen and (min-width: 576px) {
+    a {
+      width: auto;
+    }
+    .rotateIcon,
+    a,
+    p {
+      font-size: 12px;
+    }
+    .rotateIcon {
+      transform: rotate(0deg);
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 768px) {
+    a {
+      width: auto;
+    }
+    .rotateIcon,
+    a,
+    p {
+      font-size: 12px;
+    }
+    .rotateIcon {
+      transform: rotate(0deg);
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
 `;

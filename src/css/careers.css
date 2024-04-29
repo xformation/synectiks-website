@@ -1,0 +1,46 @@
+.career-collapse {
+  display: block;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-bottom: none;
+}
+.career-collapse:last-child {
+  border-bottom: 1px solid #ced4da;
+}
+.career-collapse .career-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  color: #292929;
+  border-radius: 0;
+  border: none;
+}
+.career-collapse .collapse {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  background-color: #ffffff;
+}
+.career-collapse .collapsing {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  background-color: #ffffff;
+}
+.career-collapse .card {
+  border-radius: 0;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.career-collapse .card .card-body {
+  padding-bottom: 1rem;
+}
+.career-collapse .card .card-body .ptext {
+  line-height: 26px;
+}
+.career-collapse .card .card-body b {
+  font-weight: 600;
+}

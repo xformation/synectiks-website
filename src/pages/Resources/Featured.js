@@ -5,7 +5,6 @@ import FS from '../../images/featured/FeDevOps-Strategies.png';
 import FT from '../../images/featured/FeEnterprise-Transformation.png';
 import FMP from '../../images/featured/FeMicroservice-Platform.png';
 import FP from '../../images/featured/FeOpen-Platform.png';
-import '../../components/layout.css';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import styled from 'styled-components';
 import SEO from '../../components/seo.js';

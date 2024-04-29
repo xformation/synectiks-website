@@ -1,31 +1,217 @@
-.dropdown-menu {
-  margin-top: 0;
-}
-.dropdown-menu .dropdown-toggle::after {
-  vertical-align: middle;
-  border-left: 4px solid;
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid transparent;
-}
-.dropdown-menu .dropdown .dropdown-menu {
-  left: 100%;
-  top: 0%;
-  margin: 0 20px;
-  border-width: 0;
+.FixedHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 5px #d3d3d3;
 }
 
-.dropdown-menu > li a:hover,
-.dropdown-menu > li.show {
-  background: #007bff;
-  color: white;
+.TopBarWrapper {
+  background-color: #007cc2;
 }
-.dropdown-menu > li.show > a {
-  color: white;
+.TopBarWrapper a,
+.TopBarWrapper h6 {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0;
+  border-left: 1px solid #ffffff;
+}
+.BottomBarWrapper {
+  background-color: #ffffff;
+}
+.BottomBarWrapper .container-fluid {
+  position: relative;
+}
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-menu li {
+  display: inline-flex;
+
+  position: relative;
+}
+.main-menu li a {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main-menu li a .mlft {
+  display: none;
+}
+.main-menu li.full-menu {
+  position: static;
+}
+.main-menu li.company-menu a {
+  padding-right: 0;
 }
 
-@media (min-width: 768px) {
-  .dropdown-menu .dropdown .dropdown-menu {
+.main-menu li .dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 56px;
+  min-width: 17vw;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.main-menu li:hover .dropdown {
+  display: block;
+}
+.main-menu li.company-menu .dropdown {
+  left: auto;
+  right: 0;
+}
+.main-menu li .dropdown a {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.main-menu li.full-menu .sub-menu {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.main-menu li.full-menu .sub-menu.two {
+  border-right: 1px solid rgba(0, 0, 0, 0.09);
+  border-left: 1px solid rgba(0, 0, 0, 0.09);
+  margin-right: 18px;
+  margin-left: 18px;
+  padding: 0 10px;
+}
+.main-menu li.full-menu .sub-menu a {
+  font-size: 14px;
+  display: block;
+  position: relative;
+  letter-spacing: 1px;
+}
+.main-menu li.full-menu .sub-menu a.lt-colr {
+  color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.09);
+}
+.main-menu li.full-menu .sub-menu a.lt-colr:hover {
+  background: rgb(251, 186, 0);
+}
+.main-menu li.full-menu .sub-menu .gtr {
+  position: absolute;
+  top: 3px;
+  right: -12px;
+  font-size: 36px;
+  color: #fff;
+}
+.menu-btn {
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  .main-menu li a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .BottomBarWrapper {
+    position: relative;
+  }
+  .menu-btn {
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-btn .icon {
+    color: #1b1b1b;
+    font-size: 18px;
+  }
+  .topnav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .topnav.responsive {
+    display: block;
+  }
+  .main-menu li {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .main-menu li a {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+  }
+  .main-menu li.company-menu a {
+    padding-right: 15px;
+  }
+  .main-menu li a .mlft {
+    display: inline-flex;
+    margin-left: auto;
+  }
+  .main-menu li .dropdown {
+    position: relative;
+    top: 0;
+    min-width: inherit;
+    box-shadow: none;
+  }
+  .main-menu li.full-menu .sub-menu {
+    width: 100%;
     margin: 0;
-    border-width: 1px;
+  }
+  .main-menu li.full-menu .sub-menu.two {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .main-menu li.full-menu .sub-menu a.lt-colr {
+    background-color: transparent;
+  }
+  .main-menu li.full-menu .sub-menu .gtr {
+    display: none;
+  }
+  .main-menu li .dropdown a {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .main-menu li .dropdown {
+    display: none !important;
+  }
+  .main-menu li .dropdown.responsive {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .TopBarWrapper a,
+  .TopBarWrapper h6 {
+    font-size: 10px;
   }
 }

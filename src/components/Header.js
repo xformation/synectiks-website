@@ -1,227 +1,306 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import React from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { BsArrowRight } from 'react-icons/bs';
-import { GoTriangleLeft } from 'react-icons/go';
-import Topbar from './topbar';
-import logo from '../images/logo.png';
-import styled from 'styled-components';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './drop.css';
-
-// const z = {
-//   zIndex: "9999 !important",
-// }
+import React, { useState } from "react";
+import { GoTriangleLeft } from "react-icons/go";
+import { AiOutlineClose } from "react-icons/ai";
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import logo from "../images/logo.png";
+import "../css/header.css";
 
 const Header = () => {
+  const [isResponsive, setIsResponsive] = useState(false);
+  const [isCloudSubMenu, setIsCloudSubMenu] = useState(false);
+  const [isMigrationSubMenu, setIsMigrationSubMenu] = useState(false);
+  const [isSolutionsSubMenu, setIsSolutionsSubMenu] = useState(false);
+  const [isCompanySubMenu, setIsCompanySubMenu] = useState(false);
 
+  const toggleResponsive = () => {
+    setIsResponsive((prevState) => !prevState);
+  };
+  const closeMobileMenu = () => {
+    setIsResponsive(false);
+  };
+  const toggleCloudSubMenu = () => {
+    setIsCloudSubMenu((prevState) => !prevState);
+  };
+  const toggleMigrationSubMenu = () => {
+    setIsMigrationSubMenu((prevState) => !prevState);
+  };
+  const toggleSolutionsSubMenu = () => {
+    setIsSolutionsSubMenu((prevState) => !prevState);
+  };
+  const toggleCompanySubMenu = () => {
+    setIsCompanySubMenu((prevState) => !prevState);
+  };
   return (
-    <>
-      <HeaderNav>
-        <nav className='FixedHeader'>
-          <Topbar />
-          <div className="flex">
+    <nav className="FixedHeader">
+      <div className="d-flex w-100 py-2 px-md-5 TopBarWrapper">
+        <div className="container-fluid text-right">
+          <div className="d-flex w-100 align-items-center justify-content-end">
+            <a href="/Contact-us.html" className="border-0">
+              CONTACT US
+            </a>
+            <h6>QUESTIONS? 609 608 0388 X 1</h6>
+            <a
+              href="mailto:info@synectiks.com"
+              className="d-none d-md-inline-flex"
+            >
+              <FaEnvelope className="social me-1" />
+              info@synectiks.com
+            </a>
+            <a
+              className="pe-0"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/synectiks/"
+            >
+              <FaLinkedin className="social" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="d-flex w-100 px-md-5 BottomBarWrapper">
+        <div className="container-fluid">
+          <div className="d-flex w-100 align-items-center justify-content-between">
             <div className="logo">
               <a href="/">
-                <img src={logo}
-                  className='logo-syn' alt="synectiks" />
+                <img src={logo} className="logo-syn" alt="synectiks" />
               </a>
             </div>
-            <div className="flex">
-              <a href="/what-we-do/index.html" className="nav-item fnt-nav w-mx nav-link">WHAT WE DO</a>
-              <div class="dropdown">
-                <a class="dropbtn" href="javascript:void(0)">CLOUD SERVICES</a>
-                <div className="flex-menu">
-                  <div className="p-0 bcdl pl-md-2">
-                    <div class="dropdown-content bg-white">
-                      <div className="grid-sub-menu">
-                        <div className="one">
-                          <a className="main-sub-menu p-2 lt-colr" href="/synectiks-hosted-infrastructure-business-continuity/index.html">
-                            Hosted
-                            Infrastructure
-                            & Business Continuity<GoTriangleLeft style={{
-                              marginRight: '-1.2rem',
-                              color: '#fff',
-                              fontSize: '36px'
-                            }} />
-                          </a>
-                          <a className="main-sub-menu p-2 dropdown-item" href="/aws-managed-services/index.html">
-                            AWS Managed Servicese</a>
-                          <a className="main-sub-menu p-2 dropdown-item" href="/microsoft-365-services/index.html">
-                            Microsoft 365 Services
-                          </a>
-                        </div>
-                        <div className="two">
-                        <a className="main-sub-menu p-2 lt-colr" href="/business-continuity-cyber-security/index.html">
-                          Business Continuity & Cyber Security<GoTriangleLeft className='gtr' /></a>
-                          <a className="main-sub-menu p-2 dropdown-item" href="/secure-custom-hosted-infrastructure/index.html">
-                            Secure & Custom Hosted Infrastructure</a>
-                          <a className="main-sub-menu p-2 dropdown-item" href="/digital-workspace/index.html">
-                            Cloud-Hosted Virtual Desktop</a></div>
-                        <div className="three">
-                          <a className="main-sub-menu p-2 dropdown-item" href="/protect-cloud/index.html">
-                            Protect Cloud
-                          </a>
-                          <a className="main-sub-menu p-2 dropdown-item" href="/cloud-backup-service/index.html">
-                            Backup as a Service</a>
-                          <a className="main-sub-menu p-2 dropdown-item" href="/cloud-disaster-recovery-service/index.html">
-                            Disaster Recovery as a Service</a>
-                        </div>
-                      </div>
+            <div className="menu-btn">
+              {isResponsive ? (
+                <a
+                  href="javascript:void(0);"
+                  className="icon flex-menu-btn-open"
+                  onClick={closeMobileMenu}
+                >
+                  <AiOutlineClose />
+                </a>
+              ) : (
+                <a
+                  href="javascript:void(0);"
+                  className="icon flex-menu-btn-open"
+                  onClick={toggleResponsive}
+                >
+                  &#9776;
+                </a>
+              )}
+            </div>
+            <div
+              className={`topnav ${isResponsive ? "responsive" : ""}`}
+              id="myTopnav"
+            >
+              <ul className="flex align-items-center justify-content-end main-menu">
+                <li>
+                  <a
+                    className="nav-item fnt-nav w-mx nav-link"
+                    href="/what-we-do/index.html"
+                  >
+                    WHAT WE DO
+                  </a>
+                </li>
+                <li className="full-menu">
+                  <a
+                    className="nav-item fnt-nav w-mx nav-link"
+                    href="javascript:void(0)"
+                  >
+                    CLOUD SERVICES
+                    <i
+                      className={`${
+                        isCloudSubMenu
+                          ? "fa fa-caret-up mlft"
+                          : "fa fa-caret-down mlft"
+                      }`}
+                      onClick={toggleCloudSubMenu}
+                    ></i>
+                  </a>
+                  <div
+                    className={`${
+                      isCloudSubMenu
+                        ? "dropdown full responsive"
+                        : "dropdown full"
+                    }`}
+                  >
+                    <div className="sub-menu">
+                      <a
+                        className="main-sub-menu p-2 lt-colr"
+                        href="/synectiks-hosted-infrastructure-business-continuity/index.html"
+                      >
+                        Hosted Infrastructure & Business Continuity
+                        <GoTriangleLeft className="gtr" />
+                      </a>
+                      <a
+                        className="main-sub-menu p-2 dropdown-item"
+                        href="/aws-managed-services/index.html"
+                      >
+                        AWS Managed Servicese
+                      </a>
+                      <a
+                        className="main-sub-menu p-2 dropdown-item"
+                        href="/microsoft-365-services/index.html"
+                      >
+                        Microsoft 365 Services
+                      </a>
+                    </div>
+                    <div className="sub-menu two">
+                      <a
+                        className="main-sub-menu p-2 lt-colr"
+                        href="/business-continuity-cyber-security/index.html"
+                      >
+                        Business Continuity &amp; Cyber Security{" "}
+                        <GoTriangleLeft className="gtr" />
+                      </a>
+                      <a
+                        className="main-sub-menu p-2 dropdown-item"
+                        href="/secure-custom-hosted-infrastructure/index.html"
+                      >
+                        Secure &amp; Custom Hosted Infrastructure
+                      </a>
+                      <a
+                        className="main-sub-menu p-2 dropdown-item"
+                        href="/digital-workspace/index.html"
+                      >
+                        Cloud-Hosted Virtual Desktop
+                      </a>
+                    </div>
+                    <div className="sub-menu">
+                      <a
+                        className="main-sub-menu p-2 dropdown-item"
+                        href="/protect-cloud/index.html"
+                      >
+                        Protect Cloud
+                      </a>
+                      <a
+                        className="main-sub-menu p-2 dropdown-item"
+                        href="/cloud-backup-service/index.html"
+                      >
+                        Backup as a Service
+                      </a>
+                      <a
+                        className="main-sub-menu p-2 dropdown-item"
+                        href="/cloud-disaster-recovery-service/index.html"
+                      >
+                        Disaster Recovery as a Service
+                      </a>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <a class="dropbtn" href="javascript:void(0)">MIGRATION & MODERNIZATION</a>
-                <div class="dropdown-content bg-white">
-                  <a className='py-2 dropdown-item' href="/infrastructure-transformation/index.html">
-                    Infrastructure Transformation</a>
-                  <a className='py-2 dropdown-item' href="/application-transformation/index.html">
-                    Application Transformation</a>
-                  <a className='py-2 dropdown-item' href="/devops-transformation/index.html">
-                    DevOps Transformation</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <a class="dropbtn" href="javascript:void(0)">SOLUTIONS</a>
-                <div class="dropdown-content bg-white">
-                  <a className='py-2 dropdown-item' href="/microservices/index.html">
-                    Microservices</a>
-                  <a className='py-2 dropdown-item' href="/hybrid-cloud/index.html">
-                    Hybrid Cloud</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <a class="dropbtn" href="javascript:void(0)">COMPANY</a>
-                <div class="dropdown-content bg-white">
-                  <a className="py-2 dropdown-item" href="/about-us/index.html">
-                    About Us</a>
-                  <a className="py-2 dropdown-item" href="/careers/index.html">
-                    Careers</a>
-                  <a className="py-2 dropdown-item" href="/Contact-us.html">
-                    Contact Us</a>
-                </div>
-              </div>
+                </li>
+                <li>
+                  <a
+                    className="nav-item fnt-nav w-mx nav-link"
+                    href="javascript:void(0)"
+                  >
+                    MIGRATION & MODERNIZATION
+                    <i
+                      className={`${
+                        isMigrationSubMenu
+                          ? "fa fa-caret-up mlft"
+                          : "fa fa-caret-down mlft"
+                      }`}
+                      onClick={toggleMigrationSubMenu}
+                    ></i>
+                  </a>
+                  <div
+                    className={`${
+                      isMigrationSubMenu ? "dropdown responsive" : "dropdown"
+                    }`}
+                  >
+                    <a
+                      className="py-2 dropdown-item"
+                      href="/infrastructure-transformation/index.html"
+                    >
+                      Infrastructure Transformation
+                    </a>
+                    <a
+                      className="py-2 dropdown-item"
+                      href="/application-transformation/index.html"
+                    >
+                      Application Transformation
+                    </a>
+                    <a
+                      className="py-2 dropdown-item"
+                      href="/devops-transformation/index.html"
+                    >
+                      DevOps Transformation
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    className="nav-item fnt-nav w-mx nav-link"
+                    href="javascript:void(0)"
+                  >
+                    SOLUTIONS
+                    <i
+                      className={`${
+                        isSolutionsSubMenu
+                          ? "fa fa-caret-up mlft"
+                          : "fa fa-caret-down mlft"
+                      }`}
+                      onClick={toggleSolutionsSubMenu}
+                    ></i>
+                  </a>
+                  <div
+                    className={`${
+                      isSolutionsSubMenu ? "dropdown responsive" : "dropdown"
+                    }`}
+                  >
+                    <a
+                      className="py-2 dropdown-item"
+                      href="/microservices/index.html"
+                    >
+                      Microservices
+                    </a>
+                    <a
+                      className="py-2 dropdown-item"
+                      href="/hybrid-cloud/index.html"
+                    >
+                      Hybrid Cloud
+                    </a>
+                  </div>
+                </li>
+                <li className="company-menu">
+                  <a
+                    className="nav-item fnt-nav w-mx nav-link"
+                    href="javascript:void(0)"
+                  >
+                    COMPANY
+                    <i
+                      className={`${
+                        isCompanySubMenu
+                          ? "fa fa-caret-up mlft"
+                          : "fa fa-caret-down mlft"
+                      }`}
+                      onClick={toggleCompanySubMenu}
+                    ></i>
+                  </a>
+                  <div
+                    className={`${
+                      isCompanySubMenu ? "dropdown responsive" : "dropdown"
+                    }`}
+                  >
+                    <a
+                      className="py-2 dropdown-item"
+                      href="/about-us/index.html"
+                    >
+                      About Us
+                    </a>
+                    <a
+                      className="py-2 dropdown-item"
+                      href="/careers/index.html"
+                    >
+                      Careers
+                    </a>
+                    <a className="py-2 dropdown-item" href="/Contact-us.html">
+                      Contact Us
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>
-      </HeaderNav>
-    </>
+        </div>
+      </div>
+    </nav>
   );
 };
 
-Header.propTypes = {
-  siteTitle: PropTypes.string
-};
-
-Header.defaultProps = {
-  siteTitle: ``
-};
 export default Header;
-
-const HeaderNav = styled.div`
-  display: none !important;
-  .main-tab {
-    margin-left: -12px !important;
-  }
-  .icon-fnt {
-    /* font-size: 2rem;
-    color: white;
-    margin-right: -2.2rem; */
-    font-size: 1.2rem;
-    color: white;
-    margin-right: -30px;
-  }
-  .fnt-nav {
-    font-size: 14px;
-    margin-top: 2px;
-    margin-left: 8px;
-  }
-  .bcdr {
-    border-right: 1px solid rgba(0, 0, 0, 0.09) !important;
-  }
-  .bcdl {
-    border-left: 1px solid rgba(0, 0, 0, 0.09) !important;
-  }
-  .lt-colr {
-    background: rgba(0, 0, 0, 0.09) !important;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  .lt-colr:hover {
-    background: #fbba00 !important;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  /* a.main-sub-menu.dropdown-item {
-		padding-left: 0rem;
-		font-size: 0.8rem;
-	} */
-  a.sublist.dropdown-item {
-    padding-left: 5rem;
-    font-size: 0.7rem;
-  }
-  .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0);
-  }
-  .navbar-toggler > .close {
-    display: inline;
-  }
-  .navbar-toggler > .navbar-toggler-icon {
-    display: none;
-  }
-  .navbar-toggler:not(.collapsed) > .close {
-    display: none;
-  }
-  .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
-    display: inline;
-    background-image: none;
-  }
-  .card-header {
-    padding: 0.75rem 9.25rem !important;
-  }
-  .bg-top {
-    background: var(--synectiksBlue) !important;
-  }
-
-  .ml-01 {
-    margin-left: -10px !important;
-  }
-  @media (min-width: 992px) {
-  height:0px;
-    display: block !important;
-    .ml-01 {
-      margin-left: 0px !important;
-    }
-    .main-tab {
-      margin-left: 0 !important;
-    }
-    .main-tab.dropdown.nav-item > .dropdown-menu {
-      width: max-content;
-      position: absolute;
-      left: -15rem;
-    }
-    .nav-item > a.active,
-    .nav-item > a:active {
-      background-color: #c9ddf1 !important;
-      border-radius: 0.25rem;
-      height: 2.75rem;
-    }
-    .bg-top {
-      background: var(--synectiksBlue) !important;
-      height: auto;
-    }
-    .px-5 {
-      padding-left: 3.75rem !important;
-      padding-right: 3.75rem !important;
-    }
-    .dropdown-item {
-      background-color: var(--synectiksWhite);
-      color: var(--textColor);
-    }
-    .dropdown-menu {
-      background: var(--synectiksWhite);
-    }
-  }
-`;

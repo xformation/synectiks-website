@@ -24,7 +24,6 @@ import {
   AiOutlineLine,
   AiOutlineWarning
 } from 'react-icons/ai';
-import '../../components/layout.css';
 import styled from 'styled-components';
 import self from '../../images/ManagedBackup/Self Service Portal.png';
 import cloudImaged from '../../images/synectiks-secure/baas.jpg';

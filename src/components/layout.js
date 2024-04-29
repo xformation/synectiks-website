@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react';
-import Header from './Header';
-import MobileHeader from './MobileNav';
-// import $ from 'jquery';
-// import * as jquery from 'jquery';
-import Footer from './Footer';
-import './layout.css';
+import React, { useEffect } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import "../css/layout.css";
+
 const Layout = ({ children }) => {
   useEffect(() => {
     // typeof window !== 'undefined' && window;
@@ -12,20 +10,20 @@ const Layout = ({ children }) => {
     // var on = window.on;
     $(function($) {
       let url = window.location.href;
-      $('.dropdown-item').each(function() {
+      $(".dropdown-item").each(function() {
         if (this.href === url) {
           $(this)
-            .parents('.nav-item')
-            .find('.nav-link')
-            .addClass('active');
+            .parents(".nav-item")
+            .find(".nav-link")
+            .addClass("active");
         }
       });
     });
     $(function($) {
       let url = window.location.href;
-      $('ul li a').each(function() {
+      $("ul li a").each(function() {
         if (this.href === url) {
-          $(this).addClass('active');
+          $(this).addClass("active");
           // $(this).parents('.nav-item').find('a.fnt-nav.nav-link').addClass('active');
         }
       });
@@ -38,43 +36,43 @@ const Layout = ({ children }) => {
       // mb: false,
       ml: false,
       // src: false,
-      inds: false
+      inds: false,
     };
 
     function f() {
-      let f = document.getElementById('first_name');
-      let fn = document.getElementsByClassName('error');
+      let f = document.getElementById("first_name");
+      let fn = document.getElementsByClassName("error");
       if (f.value.length === 0) {
-        fn[0].innerHTML = 'Please Enter Your Name';
-        validationArr['f'] = false;
+        fn[0].innerHTML = "Please Enter Your Name";
+        validationArr["f"] = false;
         // enableDisableButton();
       } else if (f.value.length < 3) {
-        fn[0].innerHTML = 'Please Enter Your Correct Name';
-        validationArr['f'] = false;
+        fn[0].innerHTML = "Please Enter Your Correct Name";
+        validationArr["f"] = false;
         // enableDisableButton();
       } else {
-        fn[0].innerHTML = '';
-        validationArr['f'] = true;
+        fn[0].innerHTML = "";
+        validationArr["f"] = true;
         // enableDisableButton();
       }
     }
 
     function ml(vEmail) {
-      let ml = document.getElementById('email');
-      let fn = document.getElementsByClassName('errorml');
+      let ml = document.getElementById("email");
+      let fn = document.getElementsByClassName("errorml");
       let valEmail = /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,3})?$/;
       if (!vEmail.match(valEmail)) {
-        fn[0].innerHTML = 'Please Enter Email Id';
-        validationArr['ml'] = false;
+        fn[0].innerHTML = "Please Enter Email Id";
+        validationArr["ml"] = false;
         // enableDisableButton();
       } else {
         if (ml.value.length === 0) {
-          fn[0].innerHTML = 'Please Enter Email Id';
-          validationArr['ml'] = false;
+          fn[0].innerHTML = "Please Enter Email Id";
+          validationArr["ml"] = false;
           // enableDisableButton();
         } else {
-          fn[0].innerHTML = '';
-          validationArr['ml'] = true;
+          fn[0].innerHTML = "";
+          validationArr["ml"] = true;
           // enableDisableButton();
         }
       }
@@ -83,20 +81,20 @@ const Layout = ({ children }) => {
     var isDataValid = false;
     function enableDisableButton() {
       var isValid = true;
-      var $submitBtn = $('#submit-btn');
+      var $submitBtn = $("#submit-btn");
       for (var i in validationArr) {
         isValid = isValid && validationArr[i];
       }
       isDataValid = isValid;
       if (isValid) {
-        $submitBtn.removeAttr('disabled');
+        $submitBtn.removeAttr("disabled");
       } else {
-        $submitBtn.attr('disabled', true);
+        $submitBtn.attr("disabled", true);
       }
     }
 
     function addEventListner() {
-      $('#Pform').on('submit', function(e) {
+      $("#Pform").on("submit", function(e) {
         if (!isDataValid) {
           e.preventDefault();
         }
@@ -107,13 +105,13 @@ const Layout = ({ children }) => {
 
     // Form
     // changes url on tab click
-    $('.nav').click(function(e) {
+    $(".nav").click(function(e) {
       e.preventDefault();
       let rel = $(this)
-        .parents('.nav-item')
-        .find('.active')
-        .attr('rel', 'tabOne');
-      if (e.target.classList.contains('active')) {
+        .parents(".nav-item")
+        .find(".active")
+        .attr("rel", "tabOne");
+      if (e.target.classList.contains("active")) {
         e.target.href = e.target.rel;
         console.log(e.target.href);
       }
@@ -123,16 +121,16 @@ const Layout = ({ children }) => {
       // $('#hide').click(function() {
       // 	$('.prvtpolicy').hide();
       // });
-      const showMsg = localStorage.getItem('showMsg');
-      if (showMsg !== 'false') {
-        $('.prvtpolicy').show();
+      const showMsg = localStorage.getItem("showMsg");
+      if (showMsg !== "false") {
+        $(".prvtpolicy").show();
       } else {
-        $('.prvtpolicy').hide();
+        $(".prvtpolicy").hide();
       }
-      $('#hide').on('click', function() {
-        $('.prvtpolicy').hide();
+      $("#hide").on("click", function() {
+        $(".prvtpolicy").hide();
         // $('.prvtpolicy').fadeOut('slow');
-        localStorage.setItem('showMsg', 'false');
+        localStorage.setItem("showMsg", "false");
       });
       // $(window).unload(function(){
       // 	localStorage.clear(showMsg);
@@ -140,42 +138,42 @@ const Layout = ({ children }) => {
     });
 
     $(document).ready(function() {
-      $('#otherservice').hide();
+      $("#otherservice").hide();
     });
 
     // $("#otherservice").style.display = "none";
-    $('#service').change(function() {
+    $("#service").change(function() {
       var val = $(this).val();
-      $('#otherservice').hide();
-      if (val == 'Others') {
-        $('#otherservice').show();
+      $("#otherservice").hide();
+      if (val == "Others") {
+        $("#otherservice").show();
         // $("#otherservice").style.display = "block";
       } else {
-        $('#otherservice').hide();
+        $("#otherservice").hide();
       }
     });
 
     $(document).ready(function() {
-      $('#othersource').hide();
+      $("#othersource").hide();
     });
 
-    $('#source').change(function() {
+    $("#source").change(function() {
       var val = $(this).val();
-      $('#othersource').hide();
-      if (val == 'Othersource') {
-        $('#othersource').show();
+      $("#othersource").hide();
+      if (val == "Othersource") {
+        $("#othersource").show();
       } else {
-        $('#othersource').hide();
+        $("#othersource").hide();
       }
     });
     // /Case Study Starts
     // jQuery(function($) {
     $(document).ready(function() {
-      var $slider = $('.slider');
-      var $progressBar = $('.progress');
-      var $progressBarLabel = $('.slider__label');
+      var $slider = $(".slider");
+      var $progressBar = $(".progress");
+      var $progressBarLabel = $(".slider__label");
 
-      $slider.on('beforeChange', function(
+      $slider.on("beforeChange", function(
         event,
         slick,
         currentSlide,
@@ -184,64 +182,36 @@ const Layout = ({ children }) => {
         var calc = (nextSlide / (slick.slideCount - 1)) * 100;
 
         $progressBar
-          .css('background-size', calc + '% 100%')
-          .attr('aria-valuenow', calc);
+          .css("background-size", calc + "% 100%")
+          .attr("aria-valuenow", calc);
 
-        $progressBarLabel.text(calc + '% completed');
+        $progressBarLabel.text(calc + "% completed");
       });
 
       $slider.slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         speed: 400,
-        nextArrow: $('.prevbtn'),
-        prevArrow: $('.nextbtn'),
+        nextArrow: $(".prevbtn"),
+        prevArrow: $(".nextbtn"),
         responsive: [
           {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              centerMode: true
-            }
-          },
-          {
-            breakpoint: 800,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true
-            }
-          },
-          {
             breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              centerMode: false,
-              infinite: true,
-              mobileFirst: true
-            }
-          },
-          {
-            breakpoint: 480,
             settings: {
               centerMode: false,
               slidesToShow: 1,
               mobileFirst: true,
               slidesToScroll: 1,
               infinite: true,
-              autoplay: false,
-              autoplaySpeed: 2000
-            }
-          }
-        ]
+            },
+          },
+        ],
       });
     });
 
     // Logo Slider
     $(document).ready(function() {
-      $('.customer-logos').slick({
+      $(".customer-logos").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
@@ -253,16 +223,16 @@ const Layout = ({ children }) => {
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 3
-            }
+              slidesToShow: 3,
+            },
           },
           {
             breakpoint: 520,
             settings: {
-              slidesToShow: 2
-            }
-          }
-        ]
+              slidesToShow: 2,
+            },
+          },
+        ],
       });
     });
 
@@ -302,16 +272,16 @@ const Layout = ({ children }) => {
         } else {
           // owl.destroy();
           // $('#owl-demo').owlCarousel('destroy');
-          if ($('#owl-demo').data('owlCarousel')) {
-            $('#owl-demo')
-              .data('owlCarousel')
+          if ($("#owl-demo").data("owlCarousel")) {
+            $("#owl-demo")
+              .data("owlCarousel")
               .destroy();
           }
         }
       }
       var owl;
       function createCarousel() {
-        $('#owl-demo').owlCarousel({
+        $("#owl-demo").owlCarousel({
           // $elem.owlCarousel({
           slideSpeed: 400,
           paginationSpeed: 400,
@@ -322,28 +292,28 @@ const Layout = ({ children }) => {
           afterAction: function() {
             if (owl) {
               var item = owl.currentItem;
-              $('h3').removeClass('animated fadeInRight');
-              $('.owl-item')
-                .not('.cloned')
+              $("h3").removeClass("animated fadeInRight");
+              $(".owl-item")
+                .not(".cloned")
                 .eq(item)
-                .find('h3')
-                .addClass('animated delay-1s slow fadeInRight');
-              $('p').removeClass('animated fadeInRight');
-              $('.owl-item')
-                .not('.cloned')
+                .find("h3")
+                .addClass("animated delay-1s slow fadeInRight");
+              $("p").removeClass("animated fadeInRight");
+              $(".owl-item")
+                .not(".cloned")
                 .eq(item)
-                .find('p')
-                .addClass('animated delay-2s slow fadeInRight');
-              $('a').removeClass('animated fadeInRight');
-              $('.owl-item')
-                .not('.cloned')
+                .find("p")
+                .addClass("animated delay-2s slow fadeInRight");
+              $("a").removeClass("animated fadeInRight");
+              $(".owl-item")
+                .not(".cloned")
                 .eq(item)
-                .find('a')
-                .addClass('animated delay-3s slow fadeInRight');
+                .find("a")
+                .addClass("animated delay-3s slow fadeInRight");
             }
-          }
+          },
         });
-        owl = $('#owl-demo').data('owlCarousel');
+        owl = $("#owl-demo").data("owlCarousel");
       }
 
       createCarousel();
@@ -359,11 +329,11 @@ const Layout = ({ children }) => {
 
       function buildProgressBar() {
         // if ($('#progressBar').length === 0) {
-        $progressBar = $('<div>', {
-          id: 'progressBar'
+        $progressBar = $("<div>", {
+          id: "progressBar",
         });
-        $bar = $('<div>', {
-          id: 'bar'
+        $bar = $("<div>", {
+          id: "bar",
         });
 
         $progressBar.append($bar).appendTo($elem);
@@ -381,12 +351,12 @@ const Layout = ({ children }) => {
         if (isPause === false) {
           percentTime += 1 / time;
           $bar.css({
-            width: percentTime + '%'
+            width: percentTime + "%",
           });
           //if percentTime is equal or greater than 100
           if (percentTime >= 100) {
             //slide to next item
-            $elem.trigger('owl.next');
+            $elem.trigger("owl.next");
           }
         }
       }
@@ -405,22 +375,23 @@ const Layout = ({ children }) => {
       }
 
       // uncomment this to make pause on mouseover
-      $elem && $elem.on('mouseover', function() {
-        isPause = true;
-      });
-      $elem && $elem.on('mouseout', function() {
-        isPause = false;
-      });
+      $elem &&
+        $elem.on("mouseover", function() {
+          isPause = true;
+        });
+      $elem &&
+        $elem.on("mouseout", function() {
+          isPause = false;
+        });
     });
     // OWL V1.3
-    $('.navbar-collapse a').click(function() {
-      $('.navbar-collapse').collapse('hide');
+    $(".navbar-collapse a").click(function() {
+      $(".navbar-collapse").collapse("hide");
     });
   });
   return (
     <div>
       <Header />
-      <MobileHeader />
       <main>{children}</main>
       <Footer />
     </div>

@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import Layout from '../../components/layout';
-import { useForm } from 'react-hook-form';
-import * as yup from 'yup';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { AiOutlineWarning } from 'react-icons/ai';
-import { useHistory } from 'react-router-dom';
-import Helmet from 'react-helmet';
+import React, { useState, useEffect } from "react";
+import Layout from "../../components/layout";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { AiOutlineWarning } from "react-icons/ai";
+import { useHistory } from "react-router-dom";
+import Helmet from "react-helmet";
 
 // const schema = yup.object().shape({
 //   name: yup
@@ -26,7 +26,7 @@ import Helmet from 'react-helmet';
 // });
 
 const postData = () => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve({ success: true });
     }, 100);
@@ -38,23 +38,23 @@ const FlavorForm = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting }
+    formState: { errors, isSubmitting },
   } = useForm();
   //   {
   //   resolver: yupResolver(schema)
   // }
   const [isSuccessfullySubmitted, setIsSuccessfullySubmitted] = useState(false);
-  const [state, setState] = useState('');
-  const handleChange = event => {
+  const [state, setState] = useState("");
+  const handleChange = (event) => {
     setState({ value: event.target.value });
   };
   console.log(errors);
   const history = useHistory();
 
-  const submitForm = async data => {
-    console.log('Submission starting', data);
+  const submitForm = async (data) => {
+    console.log("Submission starting", data);
     const result = await postData(data);
-    console.log('Submitting complete', result.success);
+    console.log("Submitting complete", result.success);
     setIsSuccessfullySubmitted(result.success);
     reset();
     // history.push('/Thankyou.html');npm run deploy
@@ -65,7 +65,7 @@ const FlavorForm = () => {
       <div className="py-5">
         <h1 className="ch1 text-center">Get In Touch</h1>
         <div className="cFlex text-center">
-          <span>
+          <span className="mx-2">
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -81,7 +81,7 @@ const FlavorForm = () => {
             </svg>
             info@synectiks.com
           </span>
-          <span>
+          <span className="mx-2">
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -94,11 +94,10 @@ const FlavorForm = () => {
             >
               <path d="M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z"></path>
             </svg>
-            609 608 0388 X 1
-            {/* 609 608 0429 X 102 */}
+            609 608 0388 X 1{/* 609 608 0429 X 102 */}
           </span>
         </div>
-        <h6 className="text-dark text-center">
+        <h6 className="text-dark text-center mt-2">
           Get in Touch to See How We Can Help Achieve Your IT Goals
         </h6>
         <form
@@ -121,7 +120,7 @@ const FlavorForm = () => {
             value="https://synectiks.com/Thankyou.html"
           />
           <div className="row">
-            <div className="text-left  col-sm-4  col-md-6 col-lg-6 col-xl-6 field-group">
+            <div className="text-left col-sm-12 col-md-6 col-lg-6 col-xl-6 field-group">
               <label htmlFor="name">Your Name *</label>
               <input
                 // id="name"
@@ -129,10 +128,10 @@ const FlavorForm = () => {
                 // name="name"
                 size="20"
                 type="text"
-                {...register('first_name', {
+                {...register("first_name", {
                   required: true,
                   minLength: 2,
-                  MaxLength: 80
+                  MaxLength: 80,
                 })}
                 disabled={isSubmitting || isSuccessfullySubmitted}
               />
@@ -146,15 +145,15 @@ const FlavorForm = () => {
               </div>
             </div>
 
-            <div className="text-left  col-sm-4  col-md-6 col-lg-6 col-xl-6 field-group">
+            <div className="text-left col-sm-12 col-md-6 col-lg-6 col-xl-6 field-group">
               <label htmlFor="email">Email *</label>
               <input
                 id="email"
-                {...register('email', {
+                {...register("email", {
                   required: true,
                   pattern: {
-                    value: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/
-                  }
+                    value: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/,
+                  },
                 })}
                 size="20"
                 type="text"
@@ -172,12 +171,12 @@ const FlavorForm = () => {
           </div>
 
           <div className="row">
-            <div className="text-left  col-sm-4  col-md-6 col-lg-6 col-xl-6 field-group">
+            <div className="text-left col-sm-12 col-md-6 col-lg-6 col-xl-6 field-group">
               <label htmlFor="company">Company Name *</label>
               <input
                 id="company"
                 maxLength="80"
-                {...register('company', { required: true })}
+                {...register("company", { required: true })}
                 size="20"
                 type="text"
                 disabled={isSubmitting || isSuccessfullySubmitted}
@@ -192,13 +191,13 @@ const FlavorForm = () => {
               </div>
             </div>
 
-            <div className="text-left  col-sm-4  col-md-6 col-lg-6 col-xl-6 field-group">
+            <div className="text-left col-sm-12 col-md-6 col-lg-6 col-xl-6 field-group">
               <label htmlFor="mobile">Phone</label>
               <input
                 id="mobile"
                 minLength="10"
                 maxLength="10"
-                {...register('mobile', { required: false, minLength: 10 })}
+                {...register("mobile", { required: false, minLength: 10 })}
                 size="20"
                 type="tel"
                 disabled={isSubmitting || isSuccessfullySubmitted}
@@ -214,12 +213,11 @@ const FlavorForm = () => {
             </div>
           </div>
           <div className="row">
-            <div className="text-left  col-sm-4  col-md-6 col-lg-6 col-xl-6 field-group">
+            <div className="text-left col-sm-12 col-md-6 col-lg-6 col-xl-6 field-group">
               <label htmlFor="service">Select Service *</label>
-              <br/>
               <select
                 id="service"
-                {...register('service', { required: true })}
+                {...register("service", { required: true })}
                 // value={this.state.value}
                 onBlur={handleChange}
                 // onChange={this.handleChange}
@@ -265,13 +263,13 @@ const FlavorForm = () => {
               </div>
               <div
                 className={
-                  state.value !== 'Others'
-                    ? 'd-none'
-                    : 'd-block text-left  col-sm-4  col-md-6 col-lg-6 col-xl-6 field-group'
+                  state.value !== "Others"
+                    ? "d-none"
+                    : "d-block text-left  col-sm-4  col-md-6 col-lg-6 col-xl-6 field-group"
                 }
               >
                 <textarea
-                  {...register('description')}
+                  {...register("description")}
                   rows="3"
                   cols="40"
                   placeholder="Write Others's description If selected"
@@ -291,8 +289,8 @@ const FlavorForm = () => {
               </div>
             </div>
             <div
-              className="col-sm-4 col-md-6 col-lg-6 col-xl-6 field-group"
-              style={{ alignSelf: 'center', marginTop: '3rem' }}
+              className="col-sm-12 col-md-6 col-lg-6 col-xl-6 field-group"
+              style={{ alignSelf: "center", marginTop: "1.5rem" }}
             >
               <button
                 type="submit"
@@ -347,7 +345,7 @@ var scriptElements = document.getElementsByTagName('script');
 var lastScriptElement = scriptElements[scriptElements.length - 1];
 lastScriptElement.parentNode.insertBefore(vvscript, lastScriptElement.nextSibling);
 })(vvfc_ScriptURL);
-       `
+       `,
           }}
         />
       </div>
