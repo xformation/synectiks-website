@@ -23,7 +23,7 @@ const AreaOfExpertise = ({ location }) => {
       <div className="d-block w-100 py-3 px-md-5">
         <div className="container-fluid">
           <BreadCrumbs title="Home" subtitle="What We Do" />
-          <h1>What We Do</h1>
+          <h1 className="mt-4">What We Do</h1>
           <div className="my-4">
             <p>
               Cloud - an opportunity to envision possibilities, Power to

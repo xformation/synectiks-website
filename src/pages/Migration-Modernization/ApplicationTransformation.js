@@ -40,8 +40,12 @@ const ApplicationTransformation = () => {
   };
 
   const [isOpen, setNav] = useState(true);
-  const toggleTab = () => {
+  const toggleTabDesktop = () => {
     setNav((isOpen) => !isOpen);
+  };
+  const toggleTabMobile = () => {
+    setNav((isOpen) => !isOpen);
+    setCollapsed((collapsed) => !collapsed);
   };
   const onTop = () => {
     window.scroll(0, 0);
@@ -67,7 +71,7 @@ const ApplicationTransformation = () => {
               subtitle="Migration & Modernization"
               pageTitle="Application Transformation"
             />
-            <h1>Application Transformation</h1>
+            <h1 className="mt-4">Application Transformation</h1>
             <div className="solutions-tabs position-relative">
               <Navbar color="light" light expand="lg" className="topNav">
                 <AiOutlineMenu
@@ -84,7 +88,7 @@ const ApplicationTransformation = () => {
                         })}
                         onClick={() => {
                           toggle("1");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -100,7 +104,7 @@ const ApplicationTransformation = () => {
                         })}
                         onClick={() => {
                           toggle("2");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -115,7 +119,7 @@ const ApplicationTransformation = () => {
                         })}
                         onClick={() => {
                           toggle("3");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -130,7 +134,7 @@ const ApplicationTransformation = () => {
                         })}
                         onClick={() => {
                           toggle("4");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -139,6 +143,69 @@ const ApplicationTransformation = () => {
                     </NavItem>
                   </Nav>
                 </Collapse>
+                <Nav className="bgWhite d-flex w-100">
+                  <NavItem className="one">
+                    <NavLink
+                      id="bgL"
+                      className={classnames({
+                        active: activeTab === "1",
+                      })}
+                      onClick={() => {
+                        toggle("1");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      BRIEF
+                    </NavLink>
+                  </NavItem>
+
+                  <NavItem className="one">
+                    <NavLink
+                      id="bgLL"
+                      className={classnames({
+                        active: activeTab === "2",
+                      })}
+                      onClick={() => {
+                        toggle("2");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      GETTING STARTED
+                    </NavLink>
+                  </NavItem>
+                  <NavItem className="one">
+                    <NavLink
+                      id="bgLLL"
+                      className={classnames({
+                        active: activeTab === "3",
+                      })}
+                      onClick={() => {
+                        toggle("3");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      HOW SYNECTIKS CAN HELP YOU?
+                    </NavLink>
+                  </NavItem>
+                  <NavItem className="one">
+                    <NavLink
+                      id="bgLLL"
+                      className={classnames({
+                        active: activeTab === "4",
+                      })}
+                      onClick={() => {
+                        toggle("4");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      SYNECTIKS DIFFERENTIATOR
+                    </NavLink>
+                  </NavItem>
+                </Nav>
               </Navbar>
               <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">

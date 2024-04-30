@@ -41,7 +41,7 @@ const AboutUs = () => {
               subtitle="What We Do"
               pageTitle="About Us"
             />
-            <h1>Mission Statement!</h1>
+            <h1 className="mt-4">Mission Statement!</h1>
             <p className="ptext mb-4">
               Since <span className="fweit">2006</span> as an Open Product based
               Cloud Solution provider, we help enterprises take advantage of

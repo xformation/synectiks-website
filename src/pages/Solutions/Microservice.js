@@ -36,6 +36,14 @@ const Microservice = () => {
   const [isOpen, setNav] = useState(true);
   const toggleTab = () => {
     setNav((isOpen) => !isOpen);
+    setCollapsed((collapsed) => !collapsed);
+  };
+  const toggleTabDesktop = () => {
+    setNav((isOpen) => !isOpen);
+  };
+  const toggleTabMobile = () => {
+    setNav((isOpen) => !isOpen);
+    setCollapsed((collapsed) => !collapsed);
   };
   const onTop = () => {
     window.scroll(0, 0);
@@ -82,7 +90,7 @@ const Microservice = () => {
                         })}
                         onClick={() => {
                           toggle("1");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -97,7 +105,7 @@ const Microservice = () => {
                         })}
                         onClick={() => {
                           toggle("2");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -112,7 +120,7 @@ const Microservice = () => {
                         })}
                         onClick={() => {
                           toggle("3");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -127,7 +135,7 @@ const Microservice = () => {
                         })}
                         onClick={() => {
                           toggle("4");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -136,6 +144,68 @@ const Microservice = () => {
                     </NavItem>
                   </Nav>
                 </Collapse>
+                <Nav className="bgWhite d-flex w-100">
+                  <NavItem>
+                    <NavLink
+                      id="bgL"
+                      className={classnames({
+                        active: activeTab === "1",
+                      })}
+                      onClick={() => {
+                        toggle("1");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      BRIEF
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      id="bgLL"
+                      className={classnames({
+                        active: activeTab === "2",
+                      })}
+                      onClick={() => {
+                        toggle("2");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      BENEFITS
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      id="bgLLL"
+                      className={classnames({
+                        active: activeTab === "3",
+                      })}
+                      onClick={() => {
+                        toggle("3");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      CHALLENGES
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      id="bgLLL"
+                      className={classnames({
+                        active: activeTab === "4",
+                      })}
+                      onClick={() => {
+                        toggle("4");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      HOW SYNECTIKS CAN HELP YOU?
+                    </NavLink>
+                  </NavItem>
+                </Nav>
               </Navbar>
               <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
@@ -350,7 +420,9 @@ const Microservice = () => {
                       Three key Technology Drivers to Address Microservices
                       Challenges.
                     </h5>
-                    <h5 className="my-0 mb-3 mb-md-2	ft">Hardware Aggregation.</h5>
+                    <h5 className="my-0 mb-3 mb-md-2	ft">
+                      Hardware Aggregation.
+                    </h5>
                     <p className="ptext">
                       As you refactor one large monolith application into
                       multiple independent services with their own services and

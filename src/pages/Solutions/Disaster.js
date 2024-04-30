@@ -52,9 +52,8 @@ const DisasterRecovery = () => {
               pageTitle="Cloud Disaster Recovery as a Service"
             />
 
-            <div className="row d-flex text-black align-items-center">
+            <div className="row d-flex text-black align-items-center my-5">
               <div className="col-lg-6 col-12">
-                {" "}
                 <div className="w-100 ml-md-auto" data-aos="fade-up">
                   <img
                     class="w-75 m-auto d-block"

@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { Helmet } from 'react-helmet';
-import { Collapse, Button, CardBody, Card, Col, Row } from 'reactstrap';
-import Layout from '../../components/layout';
-import career from '../../images/Synectiks Logo/Careers.jpg';
-import SEO from '../../components/seo.js';
-import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
-import styled from 'styled-components';
-import PoweredBySynectiks from '../../images/HomePage/PoweredBySynectiks.png';
-import HomeTabs from '../../components/Home/HomeTabs.js';
+import * as React from "react";
+import { Helmet } from "react-helmet";
+import { Collapse, Button, CardBody, Card, Col, Row } from "reactstrap";
+import Layout from "../../components/layout";
+import career from "../../images/Synectiks Logo/Careers.jpg";
+import SEO from "../../components/seo.js";
+import BreadCrumbs from "../../components/Home/Breadcrumbs.js";
+import styled from "styled-components";
+import PoweredBySynectiks from "../../images/HomePage/PoweredBySynectiks.png";
+import HomeTabs from "../../components/Home/HomeTabs.js";
 
 class MobTabs extends React.Component {
   state;
@@ -27,22 +27,22 @@ class MobTabs extends React.Component {
     this.state = { collapse6: false };
   }
   toggle() {
-    this.setState(state => ({ collapse: !state.collapse }));
+    this.setState((state) => ({ collapse: !state.collapse }));
   }
   toggle2() {
-    this.setState(state => ({ collapse2: !state.collapse2 }));
+    this.setState((state) => ({ collapse2: !state.collapse2 }));
   }
   toggle3() {
-    this.setState(state => ({ collapse3: !state.collapse3 }));
+    this.setState((state) => ({ collapse3: !state.collapse3 }));
   }
   toggle4() {
-    this.setState(state => ({ collapse4: !state.collapse4 }));
+    this.setState((state) => ({ collapse4: !state.collapse4 }));
   }
   toggle5() {
-    this.setState(state => ({ collapse5: !state.collapse5 }));
+    this.setState((state) => ({ collapse5: !state.collapse5 }));
   }
   toggle6() {
-    this.setState(state => ({ collapse6: !state.collapse6 }));
+    this.setState((state) => ({ collapse6: !state.collapse6 }));
   }
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -74,7 +74,7 @@ class MobTabs extends React.Component {
                       id="headingOne"
                       className="career-btn text-left text-uppercase"
                       onClick={this.toggle6}
-                      style={{ marginBottom: '1rem' }}
+                      style={{ marginBottom: "1rem" }}
                     >
                       Transformation
                     </Button>
@@ -84,7 +84,7 @@ class MobTabs extends React.Component {
                           <div className="row">
                             <div className="col-sm-12">
                               <h5 className="text-left ft">
-                                Transformation Services{' '}
+                                Transformation Services{" "}
                               </h5>
                               <p className="py-1 py-md-3">
                                 Synectiks Transformation services elevate your
@@ -170,7 +170,7 @@ class MobTabs extends React.Component {
                       id="headingTwo"
                       className="career-btn text-left text-uppercase"
                       onClick={this.toggle5}
-                      style={{ marginBottom: '1rem' }}
+                      style={{ marginBottom: "1rem" }}
                     >
                       Open&nbsp;Platfrom
                     </Button>
@@ -187,18 +187,16 @@ class MobTabs extends React.Component {
                           </div>
                           <div className="px-4">
                             <h2>What is Xformation?</h2>
-                            <p>
+                            <p className="mb-3">
                               It's a platform that provides peace of mind,
                               governance, efficiency and control of multi-cloud
                               environments. Xformation helps you to migrate and
                               modernize your legacy business, take advantage of
                               cloud and microservice architecture and thereby
                               accelerate your transformation journey @50% time &
-                              cost.  <br />{' '}
-                              <span className="h5 b">
-                                Its primary goals are:
-                              </span>
+                              cost.
                             </p>
+                            <h5 className="b">Its primary goals are:</h5>
                             <ul className="showul">
                               <li>Accelerated Cloud Adoption</li>
                               <li>Multi-cloud container orchestration</li>
@@ -207,7 +205,7 @@ class MobTabs extends React.Component {
                                 Continuous Delivery / Compliance / Automation.
                               </li>
                               <li>
-                                {' '}
+                                {" "}
                                 Automated Performance Monitoring and Cost
                                 Control
                               </li>
@@ -226,7 +224,7 @@ class MobTabs extends React.Component {
                       id="headingThree"
                       className="career-btn text-left text-uppercase"
                       onClick={this.toggle4}
-                      style={{ marginBottom: '1rem' }}
+                      style={{ marginBottom: "1rem" }}
                     >
                       Solutions
                     </Button>
@@ -247,7 +245,7 @@ class MobTabs extends React.Component {
                       color="primary"
                       className="career-btn text-left text-uppercase"
                       onClick={this.toggle3}
-                      style={{ marginBottom: '1rem' }}
+                      style={{ marginBottom: "1rem" }}
                     >
                       Cloud Services
                     </Button>

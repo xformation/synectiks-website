@@ -90,7 +90,7 @@ const Daas = () => {
               subtitle="Synectiks Hosted Infrastructure & Business Continuity"
               pageTitle="Cloud-Hosted Virtual Desktop"
             />
-            <div className="row d-flex align-items-lg-center text-black ">
+            <div className="row d-flex align-items-lg-center text-black my-5">
               <div className="col-lg-6 col-12">
                 <div
                   className="d-flex justify-content-center"
@@ -125,7 +125,6 @@ const Daas = () => {
                 </div>
               </div>
             </div>
-            <div className="text-black w-100 py-5 flex-column flex-lg-row  d-flex align-items-lg-center"></div>
             <div className="row align-items-center mb-5">
               <div className="col-md-2 col-12 d-flex justify-content-center">
                 <img src={EndComputing} alt="Security" className="w-md-75" />

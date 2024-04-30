@@ -31,7 +31,7 @@ export class OfficeMigraton extends React.Component {
               subtitle="Cloud Services"
               pageTitle="Microsoft 365 Services"
             />
-            <h1>Microsoft 365 Services</h1>
+            <h1 className="mt-4">Microsoft 365 Services</h1>
             <div className="d-block w-100 pt-3 text-center">
               <img src={Office365} alt="Office365" className="imgBx" />
             </div>

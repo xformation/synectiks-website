@@ -63,8 +63,12 @@ const Hybridcloud = () => {
   };
 
   const [isOpen, setNav] = useState(true);
-  const toggleTab = () => {
+  const toggleTabDesktop = () => {
     setNav((isOpen) => !isOpen);
+  };
+  const toggleTabMobile = () => {
+    setNav((isOpen) => !isOpen);
+    setCollapsed((collapsed) => !collapsed);
   };
 
   const onTop = () => {
@@ -92,7 +96,7 @@ const Hybridcloud = () => {
               subtitle="Solutions"
               pageTitle="Hybrid Cloud"
             />
-            <h1>Hybrid Cloud</h1>
+            <h1 className="mt-4">Hybrid Cloud</h1>
             <div className="solutions-tabs position-relative">
               <Navbar
                 color="light"
@@ -114,7 +118,7 @@ const Hybridcloud = () => {
                         })}
                         onClick={() => {
                           toggle("1");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -129,7 +133,7 @@ const Hybridcloud = () => {
                         })}
                         onClick={() => {
                           toggle("2");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -144,7 +148,7 @@ const Hybridcloud = () => {
                         })}
                         onClick={() => {
                           toggle("3");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -159,7 +163,7 @@ const Hybridcloud = () => {
                         })}
                         onClick={() => {
                           toggle("4");
-                          toggleTab();
+                          toggleTabMobile();
                           onTop();
                         }}
                       >
@@ -168,6 +172,68 @@ const Hybridcloud = () => {
                     </NavItem>
                   </Nav>
                 </Collapse>
+                <Nav className="bgWhite d-flex w-100">
+                  <NavItem>
+                    <NavLink
+                      id="bgL"
+                      className={classnames({
+                        active: activeTab === "1",
+                      })}
+                      onClick={() => {
+                        toggle("1");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      UNDERSTANDING
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      id="bgLL"
+                      className={classnames({
+                        active: activeTab === "2",
+                      })}
+                      onClick={() => {
+                        toggle("2");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      GETTING STARTED
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      id="bgLLL"
+                      className={classnames({
+                        active: activeTab === "3",
+                      })}
+                      onClick={() => {
+                        toggle("3");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      HOW SYNECTIKS CAN HELP YOU?
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      id="bgLLL"
+                      className={classnames({
+                        active: activeTab === "4",
+                      })}
+                      onClick={() => {
+                        toggle("4");
+                        toggleTabDesktop();
+                        onTop();
+                      }}
+                    >
+                      SYNECTIKS DIFFERENTIATOR
+                    </NavLink>
+                  </NavItem>
+                </Nav>
               </Navbar>
               <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">

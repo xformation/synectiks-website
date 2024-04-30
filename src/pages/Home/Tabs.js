@@ -193,14 +193,14 @@ const Tabs = () => {
                 />
               </div>
               <h5 className="ft">What is Xformation?</h5>
-              <p>
+              <p className="mb-3">
                 It's a platform that provides peace of mind, governance,
                 efficiency and control of multi-cloud environments. Xformation
                 helps you to migrate and modernize your legacy business, take
                 advantage of cloud and microservice architecture and thereby
-                accelerate your transformation journey @50% time & cost.  <br />
-                <span className="h5 ft">Its primary goals are:</span>
+                accelerate your transformation journey @50% time & cost.
               </p>
+              <h5 className="ft">Its primary goals are:</h5>
               <ul className="showul">
                 <li>Accelerated Cloud Adoption</li>
                 <li>Multi-cloud container orchestration</li>

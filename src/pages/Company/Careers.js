@@ -73,7 +73,7 @@ export class Careers extends React.Component {
                 subtitle="Company"
                 pageTitle="Careers"
               />
-              <h1>Careers</h1>
+              <h1 className="mt-4">Careers</h1>
               <div className="w-100 text-black ptext">
                 <h5 className="ft">Changing the game takes talent - Yours!</h5>
                 <p className="lineHeight-24 pb-4 ptext">

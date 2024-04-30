@@ -17,7 +17,7 @@ const SecureBusiness = () => {
               pageTitle="Business Continuity & Cyber Security"
             />
             <SEO title="Business Continuity & Cyber Security" />
-            <h1>Business Continuity & Cyber Security</h1>
+            <h1 className="mt-4">Business Continuity & Cyber Security</h1>
             <p className="mb-5">
               Build Business Resilience with modern Synectiks-Business
               Continuity solutions. Synectiks -Protect Cloud changes the game by

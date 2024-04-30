@@ -16,7 +16,7 @@ const SecureBusiness = () => {
               pageTitle="Synectiks Hosted Infrastructure & Business Continuity"
             />
             <SEO title="Synectiks Hosted Infrastructure & Business Continuity" />
-            <h1>Synectiks Hosted Infrastructure & Business Continuity</h1>
+            <h1 className="mt-4">Synectiks Hosted Infrastructure & Business Continuity</h1>
           </div>
           <div className="d-block w-100">
             <div className="pt-2">

@@ -84,7 +84,7 @@ const ProtectCloud = () => {
               subtitle="Business Continuity & Cyber Security"
               pageTitle="Protect Cloud"
             />
-            <div className="d-flex flex-column flex-md-row">
+            <div className="d-flex flex-column flex-md-row mt-4">
               <div className="Pc-left">
                 <h1>Protect Cloud</h1>
                 <p>
