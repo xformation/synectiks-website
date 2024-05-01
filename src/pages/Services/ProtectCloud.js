@@ -85,7 +85,7 @@ const ProtectCloud = () => {
               pageTitle="Protect Cloud"
             />
             <div className="d-flex flex-column flex-md-row mt-4">
-              <div className="Pc-left">
+              <div className="Pc-left pe-md-5 mb-3">
                 <h1>Protect Cloud</h1>
                 <p>
                   Protect Cloud is a SaaS based readily available Innovative and
@@ -125,12 +125,12 @@ const ProtectCloud = () => {
                       form="Protectform"
                       id="Protectform"
                       name="Protectform"
-                      className="was-validated"
+                      className="was-validated px-0"
                       action="#"
                       onSubmit={handleSubmit(submitForm)}
                     >
                       <div className="row d-flex flex-column">
-                        <div className="text-left  col field-group">
+                        <div className="text-left col field-group">
                           <label htmlFor="name">Your Name *</label>
                           <input
                             id="name"
@@ -153,7 +153,7 @@ const ProtectCloud = () => {
                             )}
                           </div>
                         </div>
-                        <div className="text-left  col field-group">
+                        <div className="text-left col field-group">
                           <label for="email">Email *</label>
                           <input
                             id="email"
@@ -176,7 +176,7 @@ const ProtectCloud = () => {
                             )}
                           </div>
                         </div>
-                        <div className="text-center  col field-group">
+                        <div className="text-center col field-group">
                           <input
                             type="submit"
                             name="submit"
@@ -186,29 +186,29 @@ const ProtectCloud = () => {
                           />
                         </div>
                       </div>
-                      {isSuccessfullySubmitted && (
-                        <div
-                          ref={msgAlrt}
-                          id="msgAlert"
-                          className="w-25 alert alert-success"
-                          role="alert"
-                        >
-                          <div className="text-center">
-                            <h1 className="alert-heading text-capitalize text-center">
-                              We have recieved your request for demo
-                            </h1>
-                            <hr />
-                            <h3 className="text-capitalize text-center">
-                              we will get back <br /> to you soon !
-                            </h3>
-                          </div>
-                        </div>
-                      )}
                     </form>
                   </div>
                 </div>
               </div>
             </div>
+            {isSuccessfullySubmitted && (
+              <div
+                ref={msgAlrt}
+                id="msgAlert"
+                className="w-100 alert alert-success"
+                role="alert"
+              >
+                <div className="text-center">
+                  <h1 className="alert-heading text-capitalize text-center">
+                    We have recieved your request for demo
+                  </h1>
+                  <hr />
+                  <h3 className="text-capitalize text-center">
+                    we will get back <br /> to you soon !
+                  </h3>
+                </div>
+              </div>
+            )}
             <div className="mt-2 svg-animation w-60  m-auto">
               <SvgAnimation />
             </div>

@@ -34,7 +34,7 @@ export class AwsManaged extends React.Component {
           />
         </Helmet>
         <SEO title="Aws Manged Services" />
-        <div className="d-block w-100 py-3 px-5">
+        <div className="d-block w-100 py-3 px-md-5">
           <div className="container-fluid">
             <BreadCrumbs
               title="Home"
@@ -72,9 +72,9 @@ export class AwsManaged extends React.Component {
           </div>
         </div>
 
-        <div className="d-block w-100 py-3 px-lg-5 ">
+        <div className="d-block w-100 py-3 px-md-5 ">
           <div className="container-fluid">
-            <div className="row mx-1">
+            <div className="row">
               <div className="col-lg-3 col-12 border-aws-1 p-3 text-center justify-content-center">
                 <img class="w-50 m-auto" src={security} alt="Security" />
                 <div className="d-block w-100">
@@ -155,8 +155,8 @@ export class AwsManaged extends React.Component {
           </div>
         </div>
 
-        <div className="d-block w-100 pt-3 px-lg-5 ">
-          <div className="container-fluid px-lg-0 ">
+        <div className="d-block w-100 pt-3 px-md-5 ">
+          <div className="container-fluid px-md-0 ">
             <h3>AWS Managed Services Features</h3>
             <div className="row g-3 pt-3">
               <div className="col-lg-4 col-md-6 col-12 d-flex align-items-center">
@@ -214,12 +214,11 @@ export class AwsManaged extends React.Component {
                 <a className="aws-services-features">Firewall Management</a>
               </div>
             </div>
-            
           </div>
         </div>
 
         <div className="d-block w-100 py-5 px-md-5">
-          <div className="container-fluid px-lg-0">
+          <div className="container-fluid px-md-0">
             <div className="row">
               <div className="col-lg-6 col-md-6 col-12">
                 <h3 className="my-1 my-md-3">Optimize Your Cloud Management</h3>

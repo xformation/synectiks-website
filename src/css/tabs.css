@@ -207,6 +207,10 @@
   display: none !important;
 }
 
+.mobile-show {
+  display: none;
+}
+
 @media (max-width: 1180px) {
   .solutions-tabs .nav-item > a.nav-link {
     padding: 10px 10px;
@@ -214,6 +218,12 @@
 }
 
 @media (max-width: 992px) {
+  .mobile-hide {
+    display: none !important;
+  }
+  .mobile-show {
+    display: block;
+  }
   .solutions-tabs .navbar-collapse.collapse:not(.show) {
     display: none !important;
   }
@@ -225,12 +235,6 @@
   }
   .solutions-tabs .navbar-collapse .nav {
     display: flex !important;
-  }
-  .mobile-hide {
-    display: none !important;
-  }
-  .mobile-show {
-    display: block;
   }
   .solutions-tabs .toggle-navbar {
     cursor: pointer;
