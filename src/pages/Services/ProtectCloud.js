@@ -7,14 +7,6 @@ import BusinessCrumbs from "../../components/Home/BusinessCrumbs.js";
 import { useForm } from "react-hook-form";
 import SvgAnimation from "../../components/SvgAnimate.js";
 
-const postData = () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({ success: true });
-    }, 100);
-  });
-};
-
 const ProtectCloud = () => {
   // const { buttonLabel, className } = props;
   const [modal, setModal] = useState(false);
@@ -54,14 +46,6 @@ const ProtectCloud = () => {
       // msgAlrt.current.style.display = "none";
     }, 15000);
   });
-  const submitForm = async (data) => {
-    console.log("Submission starting", data);
-    const result = await postData(data);
-    console.log("Submitting complete", result.success);
-    setIsSuccessfullySubmitted(result.success);
-    reset();
-    console.log(data);
-  };
 
   return (
     <Layout>
@@ -111,104 +95,7 @@ const ProtectCloud = () => {
                   the licenses as needed for each device in your environment.
                 </p>
               </div>
-              <div className="Pc-right">
-                <p
-                  id="req-font"
-                  className="font-weight-bold text-center mt-3 mb-0"
-                >
-                  Request for a
-                  <span className="text-black bold">&nbsp;Quick Demo</span>
-                </p>
-                <div>
-                  <div className="text-black py-2 py-md-1">
-                    <form
-                      form="Protectform"
-                      id="Protectform"
-                      name="Protectform"
-                      className="was-validated px-0"
-                      action="#"
-                      onSubmit={handleSubmit(submitForm)}
-                    >
-                      <div className="row d-flex flex-column">
-                        <div className="text-left col field-group">
-                          <label htmlFor="name">Your Name *</label>
-                          <input
-                            id="name"
-                            maxlength="80"
-                            size="20"
-                            type="text"
-                            {...register("first_name", {
-                              required: true,
-                              minLength: 2,
-                              MaxLength: 80,
-                            })}
-                            disabled={isSubmitting || isSuccessfullySubmitted}
-                          />
-                          <div className="error">
-                            {errors.first_name && (
-                              <div className="d-flex align-items-baseline">
-                                <AiOutlineWarning className="mr-2" />
-                                <p>Enter Your Name</p>
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                        <div className="text-left col field-group">
-                          <label for="email">Email *</label>
-                          <input
-                            id="email"
-                            size="20"
-                            type="text"
-                            {...register("email", {
-                              required: true,
-                              pattern: {
-                                value: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/,
-                              },
-                            })}
-                            disabled={isSubmitting || isSuccessfullySubmitted}
-                          />
-                          <div className="errorml">
-                            {errors.email && (
-                              <div className="d-flex align-items-baseline">
-                                <AiOutlineWarning className="mr-2" />
-                                <p>Enter Your Email Id</p>
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                        <div className="text-center col field-group">
-                          <input
-                            type="submit"
-                            name="submit"
-                            value="Submit"
-                            className="btn btn-primary w-50 pos-3 mx-auto"
-                            id="submit-btn"
-                          />
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
             </div>
-            {isSuccessfullySubmitted && (
-              <div
-                ref={msgAlrt}
-                id="msgAlert"
-                className="w-100 alert alert-success"
-                role="alert"
-              >
-                <div className="text-center">
-                  <h1 className="alert-heading text-capitalize text-center">
-                    We have recieved your request for demo
-                  </h1>
-                  <hr />
-                  <h3 className="text-capitalize text-center">
-                    we will get back <br /> to you soon !
-                  </h3>
-                </div>
-              </div>
-            )}
             <div className="mt-2 svg-animation w-60  m-auto">
               <SvgAnimation />
             </div>
