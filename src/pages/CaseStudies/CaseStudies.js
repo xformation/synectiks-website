@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import SM from '../../images/case/CS_Software_Migration.jpg';
-import RM from '../../images/case/CS_Realtime_Monitoring.jpg';
-import ND from '../../images/case/CS_NetworkDesign.jpg';
-import ST from '../../images/case/CS_StorageTier.jpg';
-import DR from '../../images/case/CS_DisasterRecovery.jpg';
-import Layout from '../../components/layout.js';
-import SEO from '../../components/seo.js';
-import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import React from "react";
+import styled from "styled-components";
+import SM from "../../images/case/CS_Software_Migration.jpg";
+import RM from "../../images/case/CS_Realtime_Monitoring.jpg";
+import ND from "../../images/case/CS_NetworkDesign.jpg";
+import ST from "../../images/case/CS_StorageTier.jpg";
+import DR from "../../images/case/CS_DisasterRecovery.jpg";
+import Layout from "../../components/layout.js";
+import SEO from "../../components/seo.js";
+import BreadCrumbs from "../../components/Home/Breadcrumbs.js";
 
 const CaseStudies = () => {
   // const data = useStaticQuery(getImages);
@@ -32,7 +32,7 @@ const CaseStudies = () => {
                     <h3 className="">Software Defined Transformation</h3>
                     <p className="pr-5">
                       AWS Cloud migration for a large motor industry.
-                    </p>{' '}
+                    </p>{" "}
                     <a
                       href="https://synectiks.com/software-defined/index.html"
                       className="noLine fw300"
@@ -63,13 +63,13 @@ const CaseStudies = () => {
 
                 <div className="w-450">
                   <div className="box-shadow">
-                    <img src={SM} alt="Storage Migration" />{' '}
+                    <img src={SM} alt="Storage Migration" />{" "}
                     <div className="text-group align-self-center p-1 p-md-2 bgWhite">
                       <h3 className="">Storage Migration</h3>
                       <p className="pr-5">
                         Petabytes of storage migration for a large financial
                         company with zero down.
-                      </p>{' '}
+                      </p>{" "}
                       <a
                         href="https://synectiks.com/storage-migration/index.html"
                         className="noLine fw300"
@@ -84,7 +84,7 @@ const CaseStudies = () => {
               <div className="d-flex flex-column flex-md-row justify-content-center py-5">
                 <div className="w-450">
                   <div className="box-shadow">
-                    <img src={ND} alt="Network Design" />{' '}
+                    <img src={ND} alt="Network Design" />{" "}
                     <div className="text-group align-self-center p-1 p-md-2 bgWhite">
                       <h3 className="">Network Design</h3>
                       <p className="pr-5">
@@ -110,7 +110,7 @@ const CaseStudies = () => {
                       <p className="pr-5">
                         Moving Bigdata workloads to aggregated platform for a
                         large telco.
-                      </p>{' '}
+                      </p>{" "}
                       <a
                         href="https://synectiks.com/storagetier/index.html"
                         className="noLine fw300"

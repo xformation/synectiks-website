@@ -298,6 +298,7 @@ const FlavorForm = () => {
                 value="Submit"
                 className="btn btn-primary w-50 pos-3"
                 id="submit-btn"
+                style={{ marginTop: "0px" }}
               >
                 Submit
               </button>
@@ -305,15 +306,10 @@ const FlavorForm = () => {
           </div>
           {isSuccessfullySubmitted && (
             <div className="alert alert-success" role="alert">
-              <div className="text-center">
-                <h1 className="alert-heading text-capitalize text-center">
-                  Thank You For Contacting Us
-                </h1>
-                <hr />
-                <h3 className="text-capitalize text-center">
-                  we will get back to you soon !
-                </h3>
-              </div>
+              <p className="alert-heading text-center">
+                Thank You For Contacting Us{" "}
+                <b className="fw-bold">We will get back to you soon !</b>
+              </p>
             </div>
           )}
         </form>

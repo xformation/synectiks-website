@@ -1,37 +1,32 @@
-import * as React from 'react';
-import { Helmet } from 'react-helmet';
-import Layout from '../../components/layout';
-import lc from '../../images/case/LargeMotorCompany.jpg';
-import SEO from '../../components/seo.js';
-import styled from 'styled-components';
-import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
-
-const brdr = {
-  borderRadius: '0 0.25rem 0.25rem 0'
-};
+import * as React from "react";
+import { Helmet } from "react-helmet";
+import Layout from "../../components/layout";
+import lc from "../../images/case/LargeMotorCompany.jpg";
+import SEO from "../../components/seo.js";
+import CaseBreadCrumbs from "../../components/Home/CasestudiesBreads.js";
 
 const Softwaredefined = () => {
   return (
     <Layout>
-      <SoftwaredefinedWrapper>
-        <Helmet>
-          <link
-            rel="canonical"
-            href="https://www.synectiks.com/software-defined/index.html"
-          />
-        </Helmet>
-        <SEO title="Software Defined" />
-        <div className="softwareDefined_wrap">
+      <Helmet>
+        <link
+          rel="canonical"
+          href="https://www.synectiks.com/software-defined/index.html"
+        />
+      </Helmet>
+      <SEO title="Software Defined" />
+      <div className="d-block w-100 py-3 px-md-5">
+        <div className="container-fluid">
           <CaseBreadCrumbs
             title="Home"
             casetitle="Resources"
             subtitle="Case Studies"
             pageTitle="Software Defined"
           />
-          <h1>Software Defined</h1>
+          <h1 className="mt-4">Software Defined</h1>
           <div className="softwareDefined_image">
-            <h5 className="ft">Large Motor Company</h5>
-            <p className="blueBorder pl-2 pl-md-5 py-1 py-3">
+            <h5 className="ft mb-4">Large Motor Company</h5>
+            <p className="blueBorder ps-3 ps-md-5 py-1 py-3">
               The leadership took a decision to become
               Hardware/OS/Operation/vendor agnostic and achieve scalability and
               reliability across the organization. We helped them with all the
@@ -40,21 +35,21 @@ const Softwaredefined = () => {
               operations. We helped them to learn to manage IT in most modern
               way.
             </p>
-            <img src={lc} alt="Network Design" className="w-100" />
+            <img src={lc} alt="Network Design" className="w-100 mt-4" />
           </div>
-          <div className="softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5">
-            <div className="column w-100 px-1 px-5 orangeBorder">
+          <div className="softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-4 py-md-5">
+            <div className="column w-100 px-3 px-md-5 mb-3 orangeBorder">
               <h5 className="ft">Industry</h5>
               <p classname="textAlign">Automobiles</p>
             </div>
-            <div className="column w-100 px-1 px-5 blueBorder">
+            <div className="column w-100 px-3 px-md-5 mb-3 blueBorder">
               <h5 className="ft">Business Objective</h5>
               <p classname="textAlign">
                 Transformation towards becoming hardware / Os / Vender /
                 Operation agnostic. Make everything software defined.
               </p>
             </div>
-            <div className="column w-100 px-1 px-5 redBorder">
+            <div className="column w-100 px-3 px-md-5 mb-3 redBorder">
               <h5 className="ft">Technologies</h5>
               <p classname="pleft">
                 AWS, Infrastructure as a code, microservices, DevOps
@@ -62,14 +57,14 @@ const Softwaredefined = () => {
             </div>
           </div>
           <div>
-            <h5 className="ft">Overview</h5>
-            <p classname="textAlign">
+            <h5 className="ft mb-2">Overview</h5>
+            <p classname="textAlign ">
               Four data centers and more than two thousand servers running 24/7,
               with twenty plus applications and two hundred operations team,
               Large Motor Company handles massive daily operations round the
               clock to give the best world class service to their customers.
             </p>
-            <h5 className="ft">Challenges</h5>
+            <h5 className="ft mb-2 mt-4">Challenges</h5>
             <p classname="textAlign">
               <b className="fw-500"> Scalability</b>: This was the primary and
               pertinent challenge of Large Motor Company as their applications
@@ -91,7 +86,7 @@ const Softwaredefined = () => {
             </p>
           </div>
           <div>
-            <h5 className="ft">Solutions</h5>
+            <h5 className="ft mb-2 mt-4">Solutions</h5>
             <ul>
               <li>
                 We remodeled their legacy IT infrastructure into an entirely
@@ -125,8 +120,8 @@ const Softwaredefined = () => {
               <li> We offered a complete license agnostic solution.</li>
             </ul>
           </div>
-          <div>
-            <h5 className="ft">
+          <div className="d-block mb-4">
+            <h5 className="ft mb-2 mt-4">
               Synectiks providing a customized solution and targeting the pain
               points of Large Motor Systems.
             </h5>
@@ -146,7 +141,7 @@ const Softwaredefined = () => {
               issues. Once fixed, they can outperform in their core areas and
               compete in their line of business for better business prospects.
             </p>
-            <h5 className="ft">
+            <h5 className="ft mb-2 mt-4">
               How did Synectiks Consolidate, Validate and Outline the issues of
               Large Motor Systems?
             </h5>
@@ -169,7 +164,7 @@ const Softwaredefined = () => {
               the cloud.
             </p>
 
-            <h5 className="ft">OUTCOME</h5>
+            <h5 className="ft mb-2 mt-4">OUTCOME</h5>
             <p classname="textAlign">
               The entire business system is now managed by few resources
               reducing CAPEX by 80% and OPEX by 70%. Large Motor Company’s
@@ -187,29 +182,9 @@ const Softwaredefined = () => {
             </p>
           </div>
         </div>
-      </SoftwaredefinedWrapper>
+      </div>
     </Layout>
   );
 };
 
 export default Softwaredefined;
-
-const SoftwaredefinedWrapper = styled.div`
-   {
-    padding: 2rem 1rem;
-    .pleft,
-    p {
-      text-align: left;
-    }
-  }
-
-  @media screen and (min-width: 576px) {
-    padding: 3rem 4rem;
-    .pleft {
-      text-align: left !important;
-    }
-    p {
-      text-align: justify;
-    }
-  }
-`;

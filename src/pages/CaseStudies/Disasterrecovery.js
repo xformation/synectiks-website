@@ -1,32 +1,31 @@
-import * as React from 'react';
-import { Helmet } from 'react-helmet';
-import Layout from '../../components/layout';
-import ds from '../../images/case/DisasterRecovery_Subpage2.jpg';
-import SEO from '../../components/seo.js';
-import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
-import styled from 'styled-components';
+import * as React from "react";
+import { Helmet } from "react-helmet";
+import Layout from "../../components/layout";
+import ds from "../../images/case/DisasterRecovery_Subpage2.jpg";
+import SEO from "../../components/seo.js";
+import CaseBreadCrumbs from "../../components/Home/CasestudiesBreads.js";
+
 const Disasterrecovery = () => {
   return (
     <Layout>
-      <DisasterWrapper>
-        <Helmet>
-          <link
-            rel="canonical"
-            href="https://www.synectiks.com/disaster-recovery/index.html"
-          />
-        </Helmet>
-
-        <SEO title="Disaster Recovery" />
-        <div className="">
+      <Helmet>
+        <link
+          rel="canonical"
+          href="https://www.synectiks.com/disaster-recovery/index.html"
+        />
+      </Helmet>
+      <SEO title="Disaster Recovery" />
+      <div className="d-block w-100 py-3 px-md-5">
+        <div className="container-fluid">
           <CaseBreadCrumbs
             title="Home"
             casetitle="Resources"
             subtitle="Case Studies"
             pageTitle="Disaster Recovery"
           />
-          <h1>Disaster Recovery</h1>
+          <h1 className="mt-4">Disaster Recovery</h1>
           <div className="softwareDefined_image">
-            <p className="blueBorder pl-2 pl-md-5 py-1 py-3">
+            <p className="blueBorder ps-3 ps-md-5 py-1 py-3">
               As we all know, a potential business disorder will directly impact
               CAPEX and OPEX of the business. When a proper disaster recovery
               plan is set, any business can continue to run its critical
@@ -34,32 +33,28 @@ const Disasterrecovery = () => {
               exactly what we offered Indian defense, a solution that can manage
               and provide necessary outcomes in case of any DR issues.
             </p>
-            <img
-              src={ds}
-              alt="Disaster Recovery"
-              className="w-100 my-3 my-md-0"
-            />
+            <img src={ds} alt="Disaster Recovery" className="w-100 mt-4 mb-4" />
           </div>
           <div className="softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5">
-            <div className="column w-100 px-1 px-5 orangeBorder">
+            <div className="column w-100 px-3 px-md-5 mb-3 orangeBorder">
               <h5 className="ft"> Sector - Defence</h5>
               <p>Automobiles</p>
             </div>
-            <div className="column w-100 px-1 px-5 blueBorder">
+            <div className="column w-100 px-3 px-md-5 mb-3 blueBorder">
               <h5 className="ft"> Business Objective</h5>
               <p>
                 Transformation towards becoming hardware / Os / Vender /
                 Operation agnostic. Make everything software defined.
               </p>
             </div>
-            <div className="column w-100 px-1 px-5 redBorder">
+            <div className="column w-100 px-3 px-md-5 mb-3 redBorder">
               <h5 className="ft"> Technologies</h5>
               <p> AWS, Infrastructure as a code, microservices, DevOps</p>
             </div>
           </div>
           <div>
-            <h5 className="ft"> Overview</h5>
-            <p>
+            <h5 className="ft mb-2"> Overview</h5>
+            <p className="mb-3">
               As we all know, a potential business disorder will directly impact
               CAPEX and OPEX of the business. When a proper disaster recovery
               plan is set, any business can continue to run its critical
@@ -67,27 +62,27 @@ const Disasterrecovery = () => {
               exactly what we offered Indian defense, a solution that can manage
               and provide necessary outcomes in case of any DR issues.
             </p>
-            <h5 className="ft"> Challenges</h5>
-            <p>
+            <h5 className="ft mb-2"> Challenges</h5>
+            <p className="mb-3">
               The Indian defense had only 4 Mbps site to site leased line for
-              data transfer.{' '}
+              data transfer.
             </p>
-            <p>
+            <p className="mb-3">
               They were using email, intranet and few BPM applications on
               SAN-based storage.
             </p>
-            <p>
+            <p className="mb-3">
               They were not comfortable to use array-based replication neither
               the FCIP based switch communication.
             </p>
-            <p>
+            <p className="mb-3">
               They were expecting a lightweight, script-based DR solution, that
               is managed with ease and extended as per requirements and with the
               SLA that is less than 10min.
             </p>
           </div>
           <div>
-            <h5 className="ft"> Solutions</h5>
+            <h5 className="ft mb-2"> Solutions</h5>
             <ul>
               <li>
                 Thorough planning and execution proved to be successful.
@@ -120,12 +115,11 @@ const Disasterrecovery = () => {
             </ul>
           </div>
           <div>
-            <h5 className="ft">
-              {' '}
+            <h5 className="ft mb-2">
               That old Cliché “DR is resilient enough to implement in one go” we
               proved it wrong!
             </h5>
-            <p>
+            <p className="mb-3">
               Designing and deploying a total DR solution was not a rocket
               science for us. However, there were few challenges to face though;
               we had only 4 Mbps site to site leased line for data transfer. Due
@@ -138,9 +132,8 @@ const Disasterrecovery = () => {
               Indian defense could recover the application in no time and the
               recovery time is almost zero.
             </p>
-
-            <h5 className="ft"> OUTCOME</h5>
-            <p>
+            <h5 className="ft mb-2"> OUTCOME</h5>
+            <p className="mb-3">
               The DR solution was 10% low compared to a licensed DR product.
               They were able to restore the data instantly and the recovery time
               was less than 10 min which is almost zero. The lightweight script
@@ -148,24 +141,9 @@ const Disasterrecovery = () => {
             </p>
           </div>
         </div>
-      </DisasterWrapper>
+      </div>
     </Layout>
   );
 };
 
 export default Disasterrecovery;
-
-const DisasterWrapper = styled.div`
-   {
-    padding: 2rem 1rem;
-    p {
-      text-align: left;
-    }
-  }
-  @media screen and (min-width: 576px) {
-    padding: 3rem 4rem;
-    p {
-      text-align: justify;
-    }
-  }
-`;

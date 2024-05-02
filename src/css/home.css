@@ -405,7 +405,7 @@ ul.progress > li:last-child {
 .nextbtn {
   border: 1px solid var(--textColor);
   border-radius: 50%;
-  padding: 5px;
+  padding: 8px 5px;
   text-align: center;
   width: 3rem;
   height: 3rem;
@@ -867,8 +867,9 @@ a#tab3.active {
   margin-top: 40px;
 }
 .progressnumb .progress {
+  list-style: none;
   display: block;
-  width: 45%;
+  width: 55%;
 }
 .caseText {
   text-align: center;
@@ -1020,7 +1021,7 @@ a#tab3.active {
   .nextbtn {
     border: 1px solid var(--textColor);
     border-radius: 50%;
-    padding: 5px;
+    padding: 8px 5px;
     text-align: center;
     width: 3rem;
     height: 3rem;

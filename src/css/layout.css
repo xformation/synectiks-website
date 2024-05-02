@@ -2283,6 +2283,10 @@ a.dropdown-toggle.nav-link {
   max-width: 139px !important;
 }
 
+.was-validated #submit-btn {
+  margin-top: 34px;
+}
+
 @media screen and (min-width: 576px) {
   .bk-managed {
     display: flex;
@@ -2394,7 +2398,7 @@ a.dropdown-toggle.nav-link {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .w-60 {
     width: 100% !important;
   }
@@ -2410,5 +2414,8 @@ a.dropdown-toggle.nav-link {
   .was-validated {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .was-validated #submit-btn {
+    margin-top: 0px;
   }
 }
